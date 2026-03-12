@@ -1,0 +1,202 @@
+{
+  "3785522182": {
+    "sf_opp_id": "006WR00000ucJz5YAE",
+    "sf_opp_name": "CitiFront Apartments",
+    "monday_group": "Ready for Engineering",
+    "correct_sf_stage": "Ready for Engineering",
+    "current_sf_stage": "Qualification",
+    "needs_update": true
+  },
+  "4008128613": {
+    "sf_opp_id": "006WR00000ucKjsYAE",
+    "sf_opp_name": "La Costa Paloma",
+    "monday_group": "Under Contract",
+    "correct_sf_stage": "Under Contract",
+    "current_sf_stage": "Negotiation",
+    "needs_update": true
+  },
+  "4163670461": {
+    "sf_opp_id": "006WR00000ucTlaYAE",
+    "sf_opp_name": "The Veranda at Twin Creek Apartments",
+    "monday_group": "Prospects",
+    "correct_sf_stage": "Prospecting",
+    "current_sf_stage": "Prospecting",
+    "needs_update": false
+  },
+  "4283128306": {
+    "sf_opp_id": "006WR00000ucmppYAA",
+    "sf_opp_name": "Temple Square Apts",
+    "monday_group": "Prospects",
+    "correct_sf_stage": "Prospecting",
+    "current_sf_stage": "Prospecting",
+    "needs_update": false
+  },
+  "4536033872": {
+    "sf_opp_id": "006WR00000ucvOQYAY",
+    "sf_opp_name": "Equinox on Country Club",
+    "monday_group": "Under Construction",
+    "correct_sf_stage": "Under Construction",
+    "current_sf_stage": "Qualification",
+    "needs_update": true
+  },
+  "4823483266": {
+    "sf_opp_id": "006WR00000udGO3YAM",
+    "sf_opp_name": "Linea Stillwater",
+    "monday_group": "Prospects",
+    "correct_sf_stage": "Prospecting",
+    "current_sf_stage": "Prospecting",
+    "needs_update": false
+  },
+  "3136295928": {
+    "sf_opp_id": "006WR00000udTrcYAE",
+    "sf_opp_name": "Olympus Waterford",
+    "monday_group": "Complete / Activated",
+    "correct_sf_stage": "Closed Won",
+    "current_sf_stage": "Closed Won",
+    "needs_update": false
+  },
+  "4210794018": {
+    "sf_opp_id": "006WR00000udaZhYAI",
+    "sf_opp_name": "Waterstone Apartments",
+    "monday_group": "Ready for Engineering",
+    "correct_sf_stage": "Ready for Engineering",
+    "current_sf_stage": "Qualification",
+    "needs_update": true
+  },
+  "4232646417": {
+    "sf_opp_id": "006WR00000udnqGYAQ",
+    "sf_opp_name": "Skyview Townhomes",
+    "monday_group": "Prospects",
+    "correct_sf_stage": "Prospecting",
+    "current_sf_stage": "Prospecting",
+    "needs_update": false
+  },
+  "3898731186": {
+    "sf_opp_id": "006WR00000udoJJYAY",
+    "sf_opp_name": "Mission Cove Apartments X",
+    "monday_group": "Closed/Lost",
+    "correct_sf_stage": "Closed Lost",
+    "current_sf_stage": "Closed Lost",
+    "needs_update": false
+  },
+  "3105046842": {
+    "sf_opp_id": "006WR00000udzGLYAY",
+    "sf_opp_name": "Arco and Pilare",
+    "monday_group": "Closed/Lost",
+    "correct_sf_stage": "Closed Lost",
+    "current_sf_stage": "Closed Lost",
+    "needs_update": false
+  },
+  "3105046493": {
+    "sf_opp_id": "006WR00000ue8HyYAI",
+    "sf_opp_name": "Villages of Georgetown",
+    "monday_group": "Closed/Lost",
+    "correct_sf_stage": "Closed Lost",
+    "current_sf_stage": "Closed Lost",
+    "needs_update": false
+  },
+  "3161368443": {
+    "sf_opp_id": "006WR00000ue8LEYAY",
+    "sf_opp_name": "Palmero by the Park (f/k/a Overlook by the Park)",
+    "monday_group": "Under Contract",
+    "correct_sf_stage": "Under Contract",
+    "current_sf_stage": "Negotiation",
+    "needs_update": true
+  },
+  "3157990031": {
+    "sf_opp_id": "006WR00000ue99EYAQ",
+    "sf_opp_name": "Cielo II Apartments",
+    "monday_group": "Under Contract",
+    "correct_sf_stage": "Under Contract",
+    "current_sf_stage": "Negotiation",
+    "needs_update": true
+  },
+  "4227070498": {
+    "sf_opp_id": "006WR00000ueUAQYA2",
+    "sf_opp_name": "Holiday Village Manufactured Home Village",
+    "monday_group": "Ready for Engineering",
+    "correct_sf_stage": "Ready for Engineering",
+    "current_sf_stage": "Qualification",
+    "needs_update": true
+  },
+  "3961462775": {
+    "sf_opp_id": "006WR00000ueV1dYAE",
+    "sf_opp_name": "Sunterra Apartments",
+    "monday_group": "Prospects",
+    "correct_sf_stage": "Prospecting",
+    "current_sf_stage": "Prospecting",
+    "needs_update": false
+  },
+  "4209617677": {
+    "sf_opp_id": "006WR00000ueV3FYAU",
+    "sf_opp_name": "Woodglen Square l",
+    "monday_group": "Prospects",
+    "correct_sf_stage": "Prospecting",
+    "current_sf_stage": "Prospecting",
+    "needs_update": false
+  },
+  "3161346835": {
+    "sf_opp_id": "006WR00000ueV85YAE",
+    "sf_opp_name": "The M at Lakeline",
+    "monday_group": "Under Contract",
+    "correct_sf_stage": "Under Contract",
+    "current_sf_stage": "Negotiation",
+    "needs_update": true
+  },
+  "4543077517": {
+    "sf_opp_id": "006WR00000ueVEXYA2",
+    "sf_opp_name": "500 NE 70th",
+    "monday_group": "Under Contract",
+    "correct_sf_stage": "Under Contract",
+    "current_sf_stage": "Negotiation",
+    "needs_update": true
+  },
+  "3061363457": {
+    "sf_opp_id": "006WR00000ueVJNYA2",
+    "sf_opp_name": "Avalon Wolf Ranch (f/k/a Retreat at Wolf Ranch)",
+    "monday_group": "Complete / Activated",
+    "correct_sf_stage": "Closed Won",
+    "current_sf_stage": "Closed Won",
+    "needs_update": false
+  },
+  "3061795508": {
+    "sf_opp_id": "006WR00000ueVKzYAM",
+    "sf_opp_name": "Lost Spurs",
+    "monday_group": "Complete / Activated",
+    "correct_sf_stage": "Closed Won",
+    "current_sf_stage": "Closed Won",
+    "needs_update": false
+  },
+  "3136295755": {
+    "sf_opp_id": "006WR00000ueVMbYAM",
+    "sf_opp_name": "Grand Estates at Keller",
+    "monday_group": "Complete / Activated",
+    "correct_sf_stage": "Closed Won",
+    "current_sf_stage": "Closed Won",
+    "needs_update": false
+  },
+  "3136295823": {
+    "sf_opp_id": "006WR00000ueVODYA2",
+    "sf_opp_name": "Lexington Place (Monterey)",
+    "monday_group": "Complete / Activated",
+    "correct_sf_stage": "Closed Won",
+    "current_sf_stage": "Closed Won",
+    "needs_update": false
+  },
+  "3105046596": {
+    "sf_opp_id": "006WR00000ueVPpYAM",
+    "sf_opp_name": "Reveal 54",
+    "monday_group": "Closed/Lost",
+    "correct_sf_stage": "Closed Lost",
+    "current_sf_stage": "Closed Lost",
+    "needs_update": false
+  },
+  "3785464940": {
+    "sf_opp_id": "006WR00000ueVRRYA2",
+    "sf_opp_name": "Shores At McIntosh Lake",
+    "monday_group": "Closed/Lost",
+    "correct_sf_stage": "Closed Lost",
+    "current_sf_stage": "Closed Lost",
+    "needs_update": false
+  }
+}

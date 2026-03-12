@@ -1,0 +1,6 @@
+Salesforce_Credentials.txt
+Security_Token.txt
+salesforce-connection.md
+__pycache__/
+*.pyc
+PowerBI_Report/
