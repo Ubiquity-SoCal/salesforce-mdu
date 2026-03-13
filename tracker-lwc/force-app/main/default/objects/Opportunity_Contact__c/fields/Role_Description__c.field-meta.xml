@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/metadataApi">
+    <fullName>Role_Description__c</fullName>
+    <label>Role Description</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+</CustomField>

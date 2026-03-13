@@ -1,0 +1,780 @@
+<template>
+    <div class="tracker-container" onclick={handleContainerClick}>
+        <!-- Header bar -->
+        <div class="tracker-header">
+            <div class="header-left">
+                <h1 class="tracker-title">Tracker</h1>
+                <template lwc:if={hasViews}>
+                    <lightning-combobox
+                        value={selectedViewId}
+                        options={viewOptions}
+                        onchange={handleViewChange}
+                        variant="label-hidden"
+                        class="view-selector"
+                    ></lightning-combobox>
+                </template>
+                <template lwc:if={hasViews}>
+                    <lightning-combobox
+                        value={selectedOwner}
+                        options={ownerOptions}
+                        onchange={handleOwnerChange}
+                        variant="label-hidden"
+                        class="owner-selector"
+                    ></lightning-combobox>
+                </template>
+            </div>
+            <div class="header-right">
+                <!-- Filter -->
+                <template lwc:if={hasViews}>
+                    <lightning-combobox
+                        value={filterField}
+                        options={filterableColumns}
+                        onchange={handleFilterFieldChange}
+                        placeholder="Filter by..."
+                        variant="label-hidden"
+                        class="filter-field"
+                    ></lightning-combobox>
+                    <lightning-input
+                        value={filterValue}
+                        onchange={handleFilterValueChange}
+                        placeholder="Filter value..."
+                        variant="label-hidden"
+                        class="filter-value"
+                    ></lightning-input>
+                    <div class="separator"></div>
+                    <lightning-combobox
+                        value={sortField}
+                        options={sortableColumns}
+                        onchange={handleSortFieldChange}
+                        placeholder="Sort by..."
+                        variant="label-hidden"
+                        class="sort-field"
+                    ></lightning-combobox>
+                    <lightning-button-icon
+                        icon-name={sortDirectionIcon}
+                        alternative-text={sortDirectionLabel}
+                        onclick={handleSortDirectionToggle}
+                        variant="border"
+                        class="sort-dir-btn"
+                    ></lightning-button-icon>
+                </template>
+
+                <!-- Action buttons -->
+                <lightning-button
+                    label="Refresh"
+                    icon-name="utility:refresh"
+                    onclick={handleRefresh}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+                <lightning-button
+                    label="Export"
+                    icon-name="utility:download"
+                    onclick={handleExport}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+<template lwc:if={hasUnsavedChanges}>
+                    <lightning-button
+                        label="Discard"
+                        variant="neutral"
+                        onclick={handleDiscard}
+                        class="slds-m-left_x-small"
+                    ></lightning-button>
+                    <lightning-button
+                        label={saveButtonLabel}
+                        variant="brand"
+                        onclick={handleSave}
+                        disabled={isSaving}
+                        class="slds-m-left_x-small"
+                    ></lightning-button>
+                </template>
+            </div>
+        </div>
+
+        <!-- Loading spinner -->
+        <template lwc:if={isLoading}>
+            <div class="spinner-container">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+
+        <!-- No records message -->
+        <template lwc:if={noRecords}>
+            <div class="no-records">
+                <p>No records match the current view filters.</p>
+            </div>
+        </template>
+
+        <!-- Grid + Side Panel layout -->
+        <div class={panelContainerClass}>
+            <!-- Grid area -->
+            <div class="grid-area">
+                <template lwc:if={displayRows.length}>
+                    <div class="grid-wrapper">
+                        <table class="tracker-table">
+                            <thead>
+                                <tr>
+                                    <th class="tracker-th notes-th frozen-icon-1" title="Notes / Activities / Contacts"></th>
+                                    <th class="tracker-th notes-th frozen-icon-2" title="Agreements"></th>
+                                    <template for:each={columnHeaders} for:item="col">
+                                        <th key={col.field}
+                                            class={col.thClass}
+                                            data-field={col.field}
+                                            onclick={handleColumnSort}
+                                            style={col.thStyle}>
+                                            <span class="th-label">{col.label}</span>
+                                        </th>
+                                    </template>
+                                    <th class="tracker-th agreements-th">Open Activities</th>
+                                    <th class="tracker-th agreements-th">Agreements</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={displayRows} for:item="row">
+                                    <tr key={row.key} class={row.rowClass}>
+                                        <!-- Notes/Activities/Contacts icon -->
+                                        <td class="tracker-td notes-icon-cell frozen-icon-1"
+                                            data-record-id={row.id}
+                                            onclick={handleNotesClick}>
+                                            <span class={row.notesIconClass} title="Notes / Activities / Contacts">
+                                                <lightning-icon icon-name="utility:note" size="xx-small" alternative-text="Notes"></lightning-icon>
+                                                <template lwc:if={row.hasNotesCount}>
+                                                    <span class="notes-count">{row.notesCount}</span>
+                                                </template>
+                                            </span>
+                                        </td>
+                                        <!-- Agreements icon -->
+                                        <td class="tracker-td notes-icon-cell frozen-icon-2"
+                                            data-record-id={row.id}
+                                            onclick={handleAgreementsClick}>
+                                            <span class={row.agrIconClass} title="Agreements">
+                                                <lightning-icon icon-name="utility:description" size="xx-small" alternative-text="Agreements"></lightning-icon>
+                                                <template lwc:if={row.hasAgrCount}>
+                                                    <span class="notes-count">{row.agrCount}</span>
+                                                </template>
+                                            </span>
+                                        </td>
+                                        <template for:each={row.cells} for:item="cell">
+                                            <td key={cell.key}
+                                                class={cell.tdClass}
+                                                style={cell.style}
+                                                data-record-id={row.id}
+                                                data-field={cell.field}
+                                                data-editable={cell.editable}
+                                                onclick={handleCellClick}>
+                                                <template lwc:if={cell.isEditing}>
+                                                    <template lwc:if={cell.isCheckbox}>
+                                                        <input type="checkbox"
+                                                            checked={cell.rawValue}
+                                                            data-record-id={row.id}
+                                                            data-field={cell.field}
+                                                            data-edit-id={cell.key}
+                                                            onchange={handleCellChange}
+                                                            onblur={handleCellBlur}
+                                                            onkeydown={handleCellKeydown}
+                                                            class="cell-input cell-checkbox" />
+                                                    </template>
+                                                    <template lwc:elseif={cell.isPicklist}>
+                                                        <select
+                                                            data-record-id={row.id}
+                                                            data-field={cell.field}
+                                                            data-is-owner={cell.isOwner}
+                                                            data-edit-id={cell.key}
+                                                            onchange={handleSelectChange}
+                                                            onblur={handleCellBlur}
+                                                            class="cell-select">
+                                                            <template for:each={cell.picklistOptions} for:item="opt">
+                                                                <option key={opt.value} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                                                            </template>
+                                                        </select>
+                                                    </template>
+                                                    <template lwc:elseif={cell.isDate}>
+                                                        <input type="date"
+                                                            value={cell.rawValue}
+                                                            data-record-id={row.id}
+                                                            data-field={cell.field}
+                                                            data-edit-id={cell.key}
+                                                            onchange={handleCellChange}
+                                                            onblur={handleCellBlur}
+                                                            onkeydown={handleCellKeydown}
+                                                            class="cell-input" />
+                                                    </template>
+                                                    <template lwc:elseif={cell.isNumber}>
+                                                        <input type="number"
+                                                            value={cell.rawValue}
+                                                            data-record-id={row.id}
+                                                            data-field={cell.field}
+                                                            data-edit-id={cell.key}
+                                                            onchange={handleCellChange}
+                                                            onblur={handleCellBlur}
+                                                            onkeydown={handleCellKeydown}
+                                                            step="any"
+                                                            class="cell-input" />
+                                                    </template>
+                                                    <template lwc:elseif={cell.isText}>
+                                                        <input type="text"
+                                                            value={cell.rawValue}
+                                                            data-record-id={row.id}
+                                                            data-field={cell.field}
+                                                            data-edit-id={cell.key}
+                                                            onchange={handleCellChange}
+                                                            onblur={handleCellBlur}
+                                                            onkeydown={handleCellKeydown}
+                                                            class="cell-input" />
+                                                    </template>
+                                                </template>
+                                                <template lwc:else>
+                                                    <template lwc:if={cell.isLink}>
+                                                        <a class="cell-link"
+                                                            data-record-id={row.id}
+                                                            onclick={handleRecordClick}>{cell.value}</a>
+                                                    </template>
+                                                    <template lwc:else>
+                                                        <span class="cell-value">{cell.value}</span>
+                                                    </template>
+                                                </template>
+                                            </td>
+                                        </template>
+                                        <td class="tracker-td agreements-cell">
+                                            <template lwc:if={row.hasActivities}>
+                                                <template for:each={row.activityBadges} for:item="act">
+                                                    <span key={act.key} class={act.cssClass}>{act.label}</span>
+                                                </template>
+                                            </template>
+                                        </td>
+                                        <td class="tracker-td agreements-cell">
+                                            <template lwc:if={row.hasAgreements}>
+                                                <template for:each={row.agreements} for:item="agr">
+                                                    <span key={agr.key} class={agr.cssClass}>{agr.label}</span>
+                                                </template>
+                                            </template>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <!-- Record count footer -->
+                <template lwc:if={displayRows.length}>
+                    <div class="tracker-footer">
+                        <span>{recordCountLabel}</span>
+                        <template lwc:if={hasUnsavedChanges}>
+                            <span class="unsaved-indicator">{unsavedLabel}</span>
+                        </template>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Side Panel -->
+            <template lwc:if={panelOpen}>
+                <div class="side-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">{panelRecordName}</h2>
+                        <lightning-button-icon
+                            icon-name="utility:close"
+                            alternative-text="Close"
+                            onclick={handleClosePanel}
+                            variant="bare"
+                            class="panel-close"
+                        ></lightning-button-icon>
+                    </div>
+
+                    <!-- Panel tabs -->
+                    <div class="panel-tabs">
+                        <button class={notesTabClass} data-tab="notes" onclick={handlePanelTabClick}>Notes</button>
+                        <button class={activitiesTabClass} data-tab="activities" onclick={handlePanelTabClick}>Activities</button>
+                        <button class={contactsTabClass} data-tab="contacts" onclick={handlePanelTabClick}>Contacts</button>
+                    </div>
+
+                    <!-- Panel loading -->
+                    <template lwc:if={panelLoading}>
+                        <div class="panel-loading">
+                            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                        </div>
+                    </template>
+
+                    <!-- Notes tab -->
+                    <template lwc:if={isNotesTab}>
+                        <template lwc:if={panelLoading}>
+                        </template>
+                        <template lwc:else>
+                            <!-- Add note form -->
+                            <div class="add-note-form">
+                                <lightning-input
+                                    label="Title"
+                                    value={newNoteTitle}
+                                    onchange={handleNoteTitleChange}
+                                    placeholder="Note title..."
+                                    class="note-title-input"
+                                ></lightning-input>
+                                <textarea
+                                    class="note-body-input"
+                                    placeholder="Write a note..."
+                                    onchange={handleNoteBodyChange}
+                                ></textarea>
+                                <lightning-button
+                                    label="Add Note"
+                                    variant="brand"
+                                    onclick={handleSaveNote}
+                                    disabled={isSavingNote}
+                                    class="add-note-btn"
+                                ></lightning-button>
+                            </div>
+
+                            <!-- Notes list -->
+                            <div class="notes-list">
+                                <template lwc:if={hasNotes}>
+                                    <template for:each={panelNotes} for:item="note">
+                                        <div key={note.id} class="note-card">
+                                            <div class="note-header">
+                                                <span class="note-title">{note.title}</span>
+                                                <span class="note-date">{note.formattedDate}</span>
+                                            </div>
+                                            <div class="note-author">{note.createdBy}</div>
+                                            <div class="note-body">{note.preview}</div>
+                                        </div>
+                                    </template>
+                                    <template lwc:if={hasMoreNotes}>
+                                        <div class="load-more-container">
+                                            <lightning-button
+                                                label="Show older notes"
+                                                icon-name="utility:chevrondown"
+                                                variant="neutral"
+                                                onclick={handleLoadMoreNotes}
+                                                disabled={loadingMoreNotes}
+                                                class="load-more-btn"
+                                            ></lightning-button>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template lwc:else>
+                                    <div class="panel-empty">No notes yet.</div>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
+
+                    <!-- Contacts tab -->
+                    <template lwc:if={isContactsTab}>
+                        <template lwc:if={panelLoading}>
+                        </template>
+                        <template lwc:else>
+                            <!-- Add contact form -->
+                            <div class="add-contact-form">
+                                <div class="contact-name-row">
+                                    <lightning-input
+                                        label="First Name"
+                                        value={newContactFirstName}
+                                        data-field="firstName"
+                                        onchange={handleContactFieldChange}
+                                        placeholder="First name..."
+                                        class="contact-field-half"
+                                    ></lightning-input>
+                                    <lightning-input
+                                        label="Last Name"
+                                        value={newContactLastName}
+                                        data-field="lastName"
+                                        onchange={handleContactFieldChange}
+                                        placeholder="Last name..."
+                                        required
+                                        class="contact-field-half"
+                                    ></lightning-input>
+                                </div>
+                                <lightning-input
+                                    label="Email"
+                                    type="email"
+                                    value={newContactEmail}
+                                    data-field="email"
+                                    onchange={handleContactFieldChange}
+                                    placeholder="Email..."
+                                    class="contact-field"
+                                ></lightning-input>
+                                <lightning-input
+                                    label="Phone"
+                                    type="tel"
+                                    value={newContactPhone}
+                                    data-field="phone"
+                                    onchange={handleContactFieldChange}
+                                    placeholder="Phone..."
+                                    class="contact-field"
+                                ></lightning-input>
+                                <div class="contact-field">
+                                    <label class="select-label">Role</label>
+                                    <select
+                                        data-field="role"
+                                        onchange={handleContactSelectChange}
+                                        class="contact-role-select">
+                                        <template for:each={contactRoleOptions} for:item="opt">
+                                            <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                        </template>
+                                    </select>
+                                </div>
+                                <template lwc:if={isOtherRole}>
+                                    <lightning-input
+                                        label="Role Description"
+                                        value={newContactCustomRole}
+                                        onchange={handleCustomRoleChange}
+                                        placeholder="Enter role title..."
+                                        class="contact-field"
+                                    ></lightning-input>
+                                </template>
+                                <lightning-button
+                                    label="Add Contact"
+                                    variant="brand"
+                                    onclick={handleAddContact}
+                                    disabled={isAddingContact}
+                                    class="add-contact-btn"
+                                ></lightning-button>
+                            </div>
+                            <div class="contacts-list">
+                                <template lwc:if={hasContacts}>
+                                    <template for:each={panelContacts} for:item="contact">
+                                        <div key={contact.id} class="contact-card">
+                                            <a class="contact-name"
+                                                data-contact-id={contact.contactId}
+                                                onclick={handleContactClick}>{contact.name}</a>
+                                            <template lwc:if={contact.displayRole}>
+                                                <div class="contact-role">{contact.displayRole}</div>
+                                            </template>
+                                            <template lwc:if={contact.displayEmail}>
+                                                <div class="contact-detail">
+                                                    <lightning-icon icon-name="utility:email" size="xx-small" alternative-text="Email"></lightning-icon>
+                                                    <span>{contact.displayEmail}</span>
+                                                </div>
+                                            </template>
+                                            <template lwc:if={contact.displayPhone}>
+                                                <div class="contact-detail">
+                                                    <lightning-icon icon-name="utility:call" size="xx-small" alternative-text="Phone"></lightning-icon>
+                                                    <span>{contact.displayPhone}</span>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template lwc:else>
+                                    <div class="panel-empty">No contacts linked.</div>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
+
+                    <!-- Activities tab -->
+                    <template lwc:if={isActivitiesTab}>
+                        <template lwc:if={panelLoading}>
+                        </template>
+                        <template lwc:else>
+                            <div class="add-activity-form">
+                                <!-- Type selector - always visible -->
+                                <label class="select-label">Activity Type</label>
+                                <select data-field="type" onchange={handleNewActivityField} class="contact-role-select">
+                                    <template for:each={activityTypeOptions} for:item="opt">
+                                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                    </template>
+                                </select>
+
+                                <!-- Subject - always visible -->
+                                <lightning-input
+                                    label="Subject"
+                                    value={newActivitySubject}
+                                    data-field="subject"
+                                    onchange={handleNewActivityField}
+                                    placeholder={activitySubjectPlaceholder}
+                                    required
+                                    class="contact-field"
+                                ></lightning-input>
+
+                                <!-- Task-specific fields -->
+                                <template lwc:if={isTaskType}>
+                                    <div class="contact-name-row contact-field">
+                                        <div class="contact-field-half">
+                                            <lightning-input
+                                                label="Due Date"
+                                                type="date"
+                                                value={newActivityDueDate}
+                                                data-field="dueDate"
+                                                onchange={handleNewActivityField}
+                                            ></lightning-input>
+                                        </div>
+                                        <div class="contact-field-half">
+                                            <label class="select-label">Priority</label>
+                                            <select data-field="priority" onchange={handleNewActivityField} class="contact-role-select">
+                                                <template for:each={activityPriorityOptions} for:item="opt">
+                                                    <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                                </template>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </template>
+
+                                <!-- Event-specific fields -->
+                                <template lwc:if={isEventType}>
+                                    <lightning-input
+                                        label="Date"
+                                        type="date"
+                                        value={newActivityStartDate}
+                                        data-field="startDate"
+                                        onchange={handleNewActivityField}
+                                        required
+                                        class="contact-field"
+                                    ></lightning-input>
+                                    <div class="contact-name-row contact-field">
+                                        <div class="contact-field-half">
+                                            <lightning-input
+                                                label="Start Time"
+                                                type="time"
+                                                value={newActivityStartTime}
+                                                data-field="startTime"
+                                                onchange={handleNewActivityField}
+                                            ></lightning-input>
+                                        </div>
+                                        <div class="contact-field-half">
+                                            <lightning-input
+                                                label="End Time"
+                                                type="time"
+                                                value={newActivityEndTime}
+                                                data-field="endTime"
+                                                onchange={handleNewActivityField}
+                                            ></lightning-input>
+                                        </div>
+                                    </div>
+                                    <lightning-input
+                                        label="Location"
+                                        value={newActivityLocation}
+                                        data-field="location"
+                                        onchange={handleNewActivityField}
+                                        placeholder="Conference room, address..."
+                                        class="contact-field"
+                                    ></lightning-input>
+                                </template>
+
+                                <!-- Comments/Description - always visible -->
+                                <textarea
+                                    class="note-body-input activity-desc-input"
+                                    placeholder={activityDescPlaceholder}
+                                    onchange={handleNewActivityDescription}
+                                ></textarea>
+                                <lightning-button
+                                    label={activityFormLabel}
+                                    variant="brand"
+                                    onclick={handleAddActivity}
+                                    disabled={isAddingActivity}
+                                    class="add-contact-btn"
+                                ></lightning-button>
+                            </div>
+                            <div class="activities-list">
+                                <template lwc:if={hasActivities}>
+                                    <template for:each={panelActivities} for:item="activity">
+                                        <div key={activity.id} class="activity-card {activity.statusClass}">
+                                            <div class="activity-card-header">
+                                                <lightning-icon icon-name={activity.typeIcon} size="xx-small" alternative-text={activity.activityType}></lightning-icon>
+                                                <span class="activity-subject">{activity.subject}</span>
+                                                <template lwc:if={activity.isTask}>
+                                                    <span class={activity.statusBadgeClass}>{activity.status}</span>
+                                                </template>
+                                            </div>
+                                            <div class="activity-card-details">
+                                                <span class="activity-meta">{activity.activityType}</span>
+                                                <template lwc:if={activity.displayDate}>
+                                                    <span class="activity-meta"> &bull; {activity.displayDate}</span>
+                                                </template>
+                                                <template lwc:if={activity.displayTime}>
+                                                    <span class="activity-meta"> &bull; {activity.displayTime}</span>
+                                                </template>
+                                                <template lwc:if={activity.ownerName}>
+                                                    <span class="activity-meta"> &bull; {activity.ownerName}</span>
+                                                </template>
+                                                <template lwc:if={activity.priority}>
+                                                    <template lwc:if={activity.isTask}>
+                                                        <span class="activity-meta"> &bull; {activity.priority} Priority</span>
+                                                    </template>
+                                                </template>
+                                            </div>
+                                            <template lwc:if={activity.hasLocation}>
+                                                <div class="activity-location">
+                                                    <lightning-icon icon-name="utility:location" size="xx-small" alternative-text="Location"></lightning-icon>
+                                                    {activity.location}
+                                                </div>
+                                            </template>
+                                            <template lwc:if={activity.description}>
+                                                <div class="activity-description">{activity.description}</div>
+                                            </template>
+                                            <template lwc:if={activity.canToggle}>
+                                                <div class="activity-toggle">
+                                                    <lightning-button
+                                                        label="Complete"
+                                                        icon-name="utility:check"
+                                                        variant="brand"
+                                                        data-task-id={activity.id}
+                                                        onclick={handleToggleTaskStatus}
+                                                        class="toggle-btn"
+                                                    ></lightning-button>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                    <template lwc:if={hasMoreCompletedActivities}>
+                                        <div class="load-more-container">
+                                            <lightning-button
+                                                label="Show older activities"
+                                                icon-name="utility:chevrondown"
+                                                variant="neutral"
+                                                onclick={handleLoadMoreActivities}
+                                                disabled={loadingMoreActivities}
+                                                class="load-more-btn"
+                                            ></lightning-button>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template lwc:else>
+                                    <div class="panel-empty">No activities yet.</div>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+            </template>
+
+            <!-- Agreements Panel (separate) -->
+            <template lwc:if={agreementsPanelOpen}>
+                <div class="side-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">{agreementsPanelRecordName} - Agreements</h2>
+                        <lightning-button-icon
+                            icon-name="utility:close"
+                            alternative-text="Close"
+                            onclick={handleCloseAgreementsPanel}
+                            variant="bare"
+                            class="panel-close"
+                        ></lightning-button-icon>
+                    </div>
+
+                    <template lwc:if={agreementsPanelLoading}>
+                        <div class="panel-loading">
+                            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                        </div>
+                    </template>
+                    <template lwc:else>
+                        <div class="add-agreement-form">
+                            <div class="contact-name-row">
+                                <div class="contact-field-half">
+                                    <label class="select-label">Type</label>
+                                    <select data-field="type" onchange={handleNewAgreementField} class="contact-role-select">
+                                        <option value="">-- Select --</option>
+                                        <template for:each={agreementTypeOptions} for:item="opt">
+                                            <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                        </template>
+                                    </select>
+                                </div>
+                                <div class="contact-field-half">
+                                    <label class="select-label">Status</label>
+                                    <select data-field="status" onchange={handleNewAgreementField} class="contact-role-select">
+                                        <template for:each={agreementStatusOptions} for:item="opt">
+                                            <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                        </template>
+                                    </select>
+                                </div>
+                            </div>
+                            <lightning-input
+                                label="Requested Date"
+                                type="date"
+                                value={newAgreementRequestedDate}
+                                data-field="requestedDate"
+                                onchange={handleNewAgreementField}
+                                class="contact-field"
+                            ></lightning-input>
+                            <textarea
+                                class="note-body-input agreement-notes-input"
+                                placeholder="Notes..."
+                                onchange={handleNewAgreementNotes}
+                            ></textarea>
+                            <lightning-button
+                                label="Add Agreement"
+                                variant="brand"
+                                onclick={handleAddAgreement}
+                                disabled={isAddingAgreement}
+                                class="add-contact-btn"
+                            ></lightning-button>
+                        </div>
+
+                        <div class="agreements-list">
+                            <template lwc:if={hasAgreements}>
+                                <template for:each={panelAgreements} for:item="agr">
+                                    <div key={agr.id} class="agreement-card">
+                                        <template lwc:if={agr.isEditing}>
+                                            <div class="agreement-edit-form">
+                                                <div class="contact-name-row">
+                                                    <div class="contact-field-half">
+                                                        <label class="select-label">Type</label>
+                                                        <select data-field="agreementType" onchange={handleEditAgreementField} class="contact-role-select">
+                                                            <template for:each={agreementTypeOptions} for:item="opt">
+                                                                <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                                            </template>
+                                                        </select>
+                                                    </div>
+                                                    <div class="contact-field-half">
+                                                        <label class="select-label">Status</label>
+                                                        <select data-field="status" onchange={handleEditAgreementField} class="contact-role-select">
+                                                            <template for:each={agreementStatusOptions} for:item="opt">
+                                                                <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                                            </template>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <lightning-input label="Requested Date" type="date" value={editAgreementData.requestedDate} data-field="requestedDate" onchange={handleEditAgreementField} class="contact-field"></lightning-input>
+                                                <lightning-input label="Signed Date" type="date" value={editAgreementData.signedDate} data-field="signedDate" onchange={handleEditAgreementField} class="contact-field"></lightning-input>
+                                                <lightning-input label="Expiration Date" type="date" value={editAgreementData.expirationDate} data-field="expirationDate" onchange={handleEditAgreementField} class="contact-field"></lightning-input>
+                                                <div class="contact-field">
+                                                    <label class="select-label">Notes</label>
+                                                    <textarea class="note-body-input" onchange={handleEditAgreementNotes}>{editAgreementData.notes}</textarea>
+                                                </div>
+                                                <div class="agreement-edit-actions">
+                                                    <lightning-button label="Cancel" onclick={handleCancelEditAgreement}></lightning-button>
+                                                    <lightning-button label="Save" variant="brand" onclick={handleSaveAgreement} disabled={isSavingAgreement}></lightning-button>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <template lwc:else>
+                                            <div class="agreement-card-header">
+                                                <span class="agreement-type">{agr.agreementType}</span>
+                                                <span class={agr.statusClass}>{agr.status}</span>
+                                            </div>
+                                            <div class="agreement-card-details">
+                                                <template lwc:if={agr.displayRequestedDate}>
+                                                    <div class="agreement-detail">Requested: {agr.displayRequestedDate}</div>
+                                                </template>
+                                                <template lwc:if={agr.displaySignedDate}>
+                                                    <div class="agreement-detail">Signed: {agr.displaySignedDate}</div>
+                                                </template>
+                                                <template lwc:if={agr.displayExpirationDate}>
+                                                    <div class="agreement-detail">Expires: {agr.displayExpirationDate}</div>
+                                                </template>
+                                                <template lwc:if={agr.hasSignerName}>
+                                                    <div class="agreement-detail">Signer: {agr.signerName}</div>
+                                                </template>
+                                                <template lwc:if={agr.hasIronCladUrl}>
+                                                    <div class="agreement-detail">
+                                                        <a href={agr.ironCladUrl} target="_blank" class="ironclad-link">View in IronClad</a>
+                                                    </div>
+                                                </template>
+                                                <template lwc:if={agr.hasNotes}>
+                                                    <div class="agreement-notes-display">{agr.notes}</div>
+                                                </template>
+                                            </div>
+                                            <div class="agreement-card-actions">
+                                                <lightning-button label="Edit" variant="neutral" data-agreement-id={agr.id} onclick={handleEditAgreement} icon-name="utility:edit" size="small"></lightning-button>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                            <template lwc:else>
+                                <div class="panel-empty">No agreements yet.</div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
