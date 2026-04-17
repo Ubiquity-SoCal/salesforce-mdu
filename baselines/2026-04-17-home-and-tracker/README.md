@@ -47,3 +47,4 @@ Home Page regressions have happened before. The lesson from the Opp page disaste
 - `Executive_Dashboard.flexipage-meta.xml`
 - `InsideSalesDashboard.page`
 - `BusinessSalesDashboard.page`
+- `MDU_Salesfoce_Home_Page.jpg` — visual reference of the expected rendered MDU home page (Koa-supplied). Verify against this after any deploy. Source: `SalesForce/Layout_Pages/`.

@@ -37,3 +37,4 @@ Koa's directive: never lose this page layout again; only build on top of it.
 - `MDU_Opportunity_Record_Page.flexipage-meta.xml`
 - `Business_Opportunity_Record_Page.flexipage-meta.xml`
 - `Opportunity_Record_Page_Three_Column.flexipage-meta.xml`
+- `MDU_Salesfoce_Opportunities_Page.jpg` — visual reference of the expected rendered page (Koa-supplied). Use this to verify that the page still looks right after any deploy. Source: `SalesForce/Layout_Pages/`.
