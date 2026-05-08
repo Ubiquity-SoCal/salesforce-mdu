@@ -1,0 +1,274 @@
+{
+  "generated": "2026-04-23T08:44:27.480308",
+  "counts": {
+    "excel_rows": 234,
+    "sf_mdu_opps": 1075,
+    "matched": 232,
+    "new_in_excel": 0,
+    "drift": 11,
+    "orphan_in_sf": 14
+  },
+  "new_in_excel": [],
+  "drift": [
+    {
+      "sf_id": "006WR00000wkCk7YAE",
+      "agreement_name": "Mesa_MDU_Stone View on Horne",
+      "state": "AZ",
+      "excel_re_status": "Assigned FiberFirst",
+      "changes": {
+        "StageName": {
+          "sf": "Closed Lost",
+          "excel": "Prospecting",
+          "source_re_status": "Assigned FiberFirst"
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wk9SGYAY",
+      "agreement_name": "Mesa_MDU_Taschner Apartments",
+      "state": "AZ",
+      "excel_re_status": "Closed - Market Reviewed",
+      "changes": {
+        "StageName": {
+          "sf": "Contract Negotiations",
+          "excel": "Closed Lost",
+          "source_re_status": "Closed - Market Reviewed"
+        },
+        "Loss_Reason__c": {
+          "sf": null,
+          "excel": "No Contact Info",
+          "source_bucket": "Contact Info"
+        },
+        "Units__c": {
+          "sf": 28,
+          "excel": 21
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkBG5YAM",
+      "agreement_name": "Mesa_MDU_1st Avenue Apartments",
+      "state": "AZ",
+      "excel_re_status": "Closed - Lost",
+      "changes": {
+        "StageName": {
+          "sf": "Prospecting",
+          "excel": "Closed Lost",
+          "source_re_status": "Closed - Lost"
+        },
+        "Loss_Reason__c": {
+          "sf": null,
+          "excel": "Not Interested",
+          "source_bucket": "Not Interested"
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkA8yYAE",
+      "agreement_name": "Omaha_MDU_78th Street Apartments",
+      "state": "NE",
+      "excel_re_status": "Completed",
+      "changes": {
+        "StageName": {
+          "sf": "Prospecting",
+          "excel": "ROE Secured",
+          "source_re_status": "Completed"
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkDtiYAE",
+      "agreement_name": "Omaha_MDU_4903-4905 California St",
+      "state": "NE",
+      "excel_re_status": "Closed - Lost",
+      "changes": {
+        "StageName": {
+          "sf": "Prospecting",
+          "excel": "Closed Lost",
+          "source_re_status": "Closed - Lost"
+        },
+        "Loss_Reason__c": {
+          "sf": null,
+          "excel": "Not Interested",
+          "source_bucket": "Not Interested"
+        },
+        "Units__c": {
+          "sf": 31,
+          "excel": 16
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkDtjYAE",
+      "agreement_name": "Omaha_MDU_6035-6085 Ville De Sante Townhomes",
+      "state": "NE",
+      "excel_re_status": "Closed - Lost",
+      "changes": {
+        "StageName": {
+          "sf": "Prospecting",
+          "excel": "Closed Lost",
+          "source_re_status": "Closed - Lost"
+        },
+        "Loss_Reason__c": {
+          "sf": null,
+          "excel": "Not Interested",
+          "source_bucket": "Not Interested"
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000xuzoQYAQ",
+      "agreement_name": "Killeen_MDU_Bradley Arms",
+      "state": "TX",
+      "excel_re_status": "Completed",
+      "changes": {
+        "StageName": {
+          "sf": "Prospecting",
+          "excel": "ROE Secured",
+          "source_re_status": "Completed"
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wk1EEYAY",
+      "agreement_name": "Bridgeport_MDU_Henderson Terrace",
+      "state": "TX",
+      "excel_re_status": "Completed",
+      "changes": {
+        "Units__c": {
+          "sf": 24,
+          "excel": 25
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkEbPYAU",
+      "agreement_name": "Killeen_MDU_The Gables at 8th Street",
+      "state": "TX",
+      "excel_re_status": "Assigned FiberFirst",
+      "changes": {
+        "StageName": {
+          "sf": "Under Contract",
+          "excel": "Prospecting",
+          "source_re_status": "Assigned FiberFirst"
+        },
+        "Units__c": {
+          "sf": 8,
+          "excel": 16
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkAC1YAM",
+      "agreement_name": "Killeen_MDU_Paul Mark Apts",
+      "state": "TX",
+      "excel_re_status": "Completed",
+      "changes": {
+        "StageName": {
+          "sf": "Prospecting",
+          "excel": "ROE Secured",
+          "source_re_status": "Completed"
+        }
+      }
+    },
+    {
+      "sf_id": "006WR00000wkEbQYAU",
+      "agreement_name": "Killeen_MDU_Paloma Gardens 307 N 14th St",
+      "state": "TX",
+      "excel_re_status": "Completed",
+      "changes": {
+        "Units__c": {
+          "sf": 26,
+          "excel": 25
+        }
+      }
+    }
+  ],
+  "orphan_in_sf": [
+    {
+      "sf_id": "006WR00000wk9RuYAI",
+      "agreement_name": "Killeen_MDU_Town East Apartments",
+      "stage": "Under Contract",
+      "state": "TX"
+    },
+    {
+      "sf_id": "006WR00000wk9RxYAI",
+      "agreement_name": "HARKER HEIGHTS_MDU_Hazel Park",
+      "stage": "Prospecting",
+      "state": "TX"
+    },
+    {
+      "sf_id": "006WR00000wkEbOYAU",
+      "agreement_name": "Killeen_MDU_Patriot Place",
+      "stage": "Under Contract",
+      "state": "TX"
+    },
+    {
+      "sf_id": "006WR00000wkEbRYAU",
+      "agreement_name": "Killeen_MDU_Jerome Apts",
+      "stage": "Under Contract",
+      "state": "TX"
+    },
+    {
+      "sf_id": "006WR00000wkEcAYAU",
+      "agreement_name": "Bridgeport_MDU_Creekside Apartments",
+      "stage": "Under Contract",
+      "state": "TX"
+    },
+    {
+      "sf_id": "006WR00000y2FzkYAE",
+      "agreement_name": "Omaha_MDU_4760 LAFAYETTE AVE",
+      "stage": "ROE Secured",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y2k2dYAA",
+      "agreement_name": "Omaha_MDU_3344-3348 Larimore Ave",
+      "stage": "Under Construction",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y3J0LYAU",
+      "agreement_name": "Omaha_MDU_5004 Davenport St",
+      "stage": "ROE Secured",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y3NdSYAU",
+      "agreement_name": "Omaha_MDU_Benson Crest Apartments 2",
+      "stage": "Under Construction",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y3jyvYAA",
+      "agreement_name": "Omaha_MDU_4612 Redman Ave",
+      "stage": "Under Construction",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y3k29YAA",
+      "agreement_name": "Omaha_MDU_9208 Ohio St",
+      "stage": "Under Construction",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y3k5NYAQ",
+      "agreement_name": "Decatur_MDU_Smallwood Trailer Park",
+      "stage": "ROE Secured",
+      "state": "TX"
+    },
+    {
+      "sf_id": "006WR00000y46nRYAQ",
+      "agreement_name": "Omaha_MDU_Farnam Flats",
+      "stage": "ROE Secured",
+      "state": "NE"
+    },
+    {
+      "sf_id": "006WR00000y4ekIYAQ",
+      "agreement_name": "Mineral Wells_MDU_Shady Oak Circle Housing",
+      "stage": "Engaged",
+      "state": "TX"
+    }
+  ],
+  "excel_dupes_in_sf": []
+}

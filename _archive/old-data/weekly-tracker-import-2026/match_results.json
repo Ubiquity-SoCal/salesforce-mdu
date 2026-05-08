@@ -1,0 +1,594 @@
+{
+  "matched_by_project_id": [
+    {
+      "project_id": "P-006748",
+      "site_name": "Bridgeport_MDU_Creekside Apartments",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need PAL addendum and Bulk Agreement",
+      "notes": "$200/door fee issue with Anita. Must go bulk for build. 4/13:  Left a voicemail for a status update.",
+      "opp_id": "006WR00000wkEcAYAU",
+      "opp_name": "Creekside Apartments",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006862",
+      "site_name": "Killeen_MDU_117 & 121 W Avenue A",
+      "state": "TX",
+      "owner_tracker": "Niraj",
+      "status": "Perfoming walks on 4/15",
+      "notes": "Bulk deal signed By Jeremy Fay",
+      "opp_id": "006WR00000xwGf7YAE",
+      "opp_name": "Killeen_MDU_117-121_W_Avenue_A",
+      "stage": "ROE Secured"
+    },
+    {
+      "project_id": "P-006826",
+      "site_name": "Killeen_MDU_1807 Mulford & 1810 N 8th St",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": "TM: sent multiple requests to Jim Switzer for needed data, with no response. Last FLUP 4/14.",
+      "opp_id": "006WR00000wkEbUYAU",
+      "opp_name": "1807 Mulford Apartments_Colt RE",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006814",
+      "site_name": "KILLEEN_MDU_3103_S_Fort_Hood  MHP",
+      "state": "TX",
+      "owner_tracker": "Christian",
+      "status": "Need Customer sign up for us to build",
+      "notes": null,
+      "opp_id": "006WR00000wkDtMYAU",
+      "opp_name": "Fort_Hood MHP",
+      "stage": "Prospecting"
+    },
+    {
+      "project_id": "P-006820",
+      "site_name": "Killeen_MDU_Jerome Apts",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": "TM: sent multiple requests to Jim Switzer for needed data, with no response. Last FLUP 4/14.",
+      "opp_id": "006WR00000wkEbRYAU",
+      "opp_name": "Jerome Apartments_Colt RE",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006808",
+      "site_name": "Killeen_MDU_Paloma Gardens 307 N 14th St",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": "TM: sent multiple requests to Jim Switzer for needed data, with no response. Last FLUP 4/14.",
+      "opp_id": "006WR00000wkEbQYAU",
+      "opp_name": "307 N Apartments_Colt RE",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006791",
+      "site_name": "Killeen_MDU_Patriot Place",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Marketing decision to build to unit or to NID",
+      "notes": "Owner has decided to move forward with Bulk.",
+      "opp_id": "006WR00000wkEbOYAU",
+      "opp_name": "Patriot Place",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006823",
+      "site_name": "Killeen_MDU_Saffari Apts",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": "TM: sent multiple requests to Jim Switzer for needed data, with no response. Last FLUP 4/14.",
+      "opp_id": "006WR00000wkEbSYAU",
+      "opp_name": "Saffari Apts_Colt RE",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006824",
+      "site_name": "Killeen_MDU_Soaring Eagle Apartments",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": "TM: sent multiple requests to Jim Switzer for needed data, with no response. Last FLUP 4/14.",
+      "opp_id": "006WR00000wkEbTYAU",
+      "opp_name": "Soaring Eagle Apartments_Colt RE",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006818",
+      "site_name": "Killeen_MDU_The Gables at 8th Street",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": "TM: sent multiple requests to Jim Switzer for needed data, with no response. Last FLUP 4/14.",
+      "opp_id": "006WR00000wkEbPYAU",
+      "opp_name": "1507 N 8th Apartments_Colt RE",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006861",
+      "site_name": "Killeen_MDU_Town East Apartments",
+      "state": "TX",
+      "owner_tracker": "Niraj",
+      "status": "Perfoming walks on 4/15",
+      "notes": "Bulk deal signed By Jeremy Fay",
+      "opp_id": "006WR00000wk9RuYAI",
+      "opp_name": "Town East",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006759",
+      "site_name": "Newark_MDU_Heritage of Newark (Newark Beach Estates)",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Need Bulk",
+      "notes": "TM: owner has asked to increase compensation to cover attorneys' fees 4/14.",
+      "opp_id": "006WR00000wkEcBYAU",
+      "opp_name": "Heritage of Newark (FKA Newark Beach Estates)",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006859",
+      "site_name": "Killeen_MDU_Whispering Hills Apartments",
+      "state": "TX",
+      "owner_tracker": "Niraj",
+      "status": "Perfoming walks on 4/15",
+      "notes": "Bulk deal signed By Jeremy Fay",
+      "opp_id": "006WR00000wkDtzYAE",
+      "opp_name": "Whispering Hills Apartments",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006749",
+      "site_name": "Omaha_MDU_1001 Apartments",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "PAL addedndum and Marketing",
+      "notes": "Waiting on Owner to sign Addendum",
+      "opp_id": "006WR00000wkEcDYAU",
+      "opp_name": "The 1001 Apartments",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006738",
+      "site_name": "Omaha_MDU_Bristol Square Apts",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "PAL addedndum and Marketing",
+      "notes": "Design review done Feb 18th. Left message with PM. 4/13:  Sent a calendar invite to get a status update",
+      "opp_id": "006WR00000wkEc8YAE",
+      "opp_name": "Bristol Square Apartments",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006620",
+      "site_name": "Omaha_MDU_Horizon Heights Apartments",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "Need Data and approval to walk",
+      "notes": null,
+      "opp_id": "006WR00000wkEb1YAE",
+      "opp_name": "Horizon Heights",
+      "stage": "On Hold"
+    },
+    {
+      "project_id": "P-006413",
+      "site_name": "Omaha_MDU_Northampton Court Condos",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "PAL addendum and Marketing",
+      "notes": "TM: design review to be held 4/15, to sign PAL addendum and bulk upon completion.",
+      "opp_id": "006WR00000wkEcEYAU",
+      "opp_name": "Northampton Court Condominiums",
+      "stage": "Under Contract"
+    },
+    {
+      "project_id": "P-006154",
+      "site_name": "Killeen_MDU_The Bungalows",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "Owner approval to build",
+      "notes": "Sent Mitch to property, no one on site will continue to reach out to owner",
+      "opp_id": "006WR00000wkEboYAE",
+      "opp_name": "The Bungalows",
+      "stage": "Under Contract"
+    }
+  ],
+  "unmatched_by_project_id": [],
+  "matched_by_name": [
+    {
+      "project_id": null,
+      "site_name": "Omaha_MDU_Orchard Park Apartments",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "Have an ROE, but we were trying for PAL and BULK - Marcon Development",
+      "notes": null,
+      "opp_id": "006WR00000wkBToYAM",
+      "opp_name": "Orchard Park Apartments",
+      "stage": "Prospecting",
+      "agreement_name": "Omaha_MDU_Orchard Park Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Omaha_MDU_Indian Hills Village Apartments",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "Have an ROE, but we were trying for PAL and BULK - Marcon Development",
+      "notes": "We have fiber to the property, working on marketing rights",
+      "opp_id": "006WR00000wkBTuYAM",
+      "opp_name": "Indian Hills Village Apartments",
+      "stage": "Prospecting",
+      "agreement_name": "Omaha_MDU_Indian Hills Village Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Omaha_MDU_Benson Apartments",
+      "state": "NE",
+      "owner_tracker": "Melissa",
+      "status": "Paladino Development - Have ROE, but we were going after PAL and BULK",
+      "notes": "Cannot reach PM, will continue to reach out",
+      "opp_id": "006WR000011bsupYAA",
+      "opp_name": "Benson Apartments",
+      "stage": "Prospecting",
+      "agreement_name": null
+    },
+    {
+      "project_id": null,
+      "site_name": "Killeen_MDU_1507 N 8th Apartments",
+      "state": "TX",
+      "owner_tracker": null,
+      "status": "PAL addedndum and Marketing",
+      "notes": "PAL signed, waitin on PAL addendum and verbal on EMA",
+      "opp_id": "006WR00000wkEbPYAU",
+      "opp_name": "1507 N 8th Apartments_Colt RE",
+      "stage": "Under Contract",
+      "agreement_name": "Killeen_MDU_The Gables at 8th Street"
+    },
+    {
+      "project_id": null,
+      "site_name": "Omaha_MDU_Indian Hills Terrace",
+      "state": "NE",
+      "owner_tracker": null,
+      "status": "Marketing",
+      "notes": "We have fiber to this property now without marketing rights.  ",
+      "opp_id": "006WR00000wk1ERYAY",
+      "opp_name": "Indian Hills Terrace",
+      "stage": "Under Contract",
+      "agreement_name": "Omaha_MDU_Indian Hills Village Court"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Stonebridge Gardens",
+      "state": "AZ",
+      "owner_tracker": null,
+      "status": "PAL addendum and Marketing",
+      "notes": "Find new decision-maker. Previous contact left org.",
+      "opp_id": "006WR00000wkDuOYAU",
+      "opp_name": "Stonebridge Gardens",
+      "stage": "Under Contract",
+      "agreement_name": "Mesa_SFU_StonebridgeGardens"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_La Mesa Village Apartments",
+      "state": "AZ",
+      "owner_tracker": "Brett",
+      "status": "MDUs On Net - Access Agreement in next 30 days",
+      "notes": "Linda Ennabe is trying to time PAL with other construction at property. Should close in April.\u00a0",
+      "opp_id": "006WR00000wk9SEYAY",
+      "opp_name": "La Mesa Village Apartments",
+      "stage": "Contract Negotiations",
+      "agreement_name": "Mesa_MDU_La Mesa Village Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Garden Place Apartments",
+      "state": "AZ",
+      "owner_tracker": "Brett",
+      "status": "MDUs On Net - Access Agreement in next 30 days",
+      "notes": "Rosy viewed the PAL and I sent follow up email and VM to see if she had questions.\u00a0 These two properties are going to take longer to close than anticipated.\u00a0 They\u2019re looking over PAL with their attorney. \u00a0Attorneys are still working on PAL.\u00a0",
+      "opp_id": "006WR00000wk9SYYAY",
+      "opp_name": "Garden Place Apartments",
+      "stage": "Contract Negotiations",
+      "agreement_name": "Mesa_MDU_Garden Place Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Falcon Glen Apartments",
+      "state": "AZ",
+      "owner_tracker": "Brett",
+      "status": "MDUs On Net - Access Agreement in next 60 days",
+      "notes": "Rosy viewed the PAL and I sent follow up email and VM to see if she had questions.\u00a0 These two properties are going to take longer to close than anticipated.\u00a0 They\u2019re looking over PAL with their attorney. \u00a0Attorneys are still working on PAL.\u00a0",
+      "opp_id": "006WR00000wk9SZYAY",
+      "opp_name": "Falcon Glen Apartments",
+      "stage": "Contract Negotiations",
+      "agreement_name": "Mesa_MDU_Falcon Glen Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Solana Beach_MDU_Seascape Sur",
+      "state": "CA",
+      "owner_tracker": "Pankaj",
+      "status": "MDUs On Net - Access Agreement in next 60 days",
+      "notes": "The property is planning to undergo a full renovation project. ",
+      "opp_id": "006WR00000wk9SnYAI",
+      "opp_name": "Seascape Sur",
+      "stage": "Contract Negotiations",
+      "agreement_name": "Solana Beach_MDU_Seascape Sur"
+    },
+    {
+      "project_id": null,
+      "site_name": "Solana Beach_MDU_Santa Helena Park Condominiums",
+      "state": "CA",
+      "owner_tracker": "Pankaj",
+      "status": "MDUs On Net - Access Agreement in next 60 days",
+      "notes": "HOA meeting happened 4/14. Awaiting updates",
+      "opp_id": "006WR00000wkA8kYAE",
+      "opp_name": "Santa Helena Park Condominiums",
+      "stage": "Engaged",
+      "agreement_name": "Solana Beach_MDU_Santa Helena Park Condominiums"
+    },
+    {
+      "project_id": null,
+      "site_name": "Decatur_MDU_The Laredo Apartments",
+      "state": "TX",
+      "owner_tracker": "Brett",
+      "status": "MDUs On Net - Access Agreement in next 60 days",
+      "notes": "Emailed Amy to set up a call.\u00a0 They currently have Vibe internet and are looking to switch.\u00a0 They have another offer from NextLink and I'm trying to get a competitive offer in front of them.",
+      "opp_id": "006WR00000wk9SdYAI",
+      "opp_name": "The Laredo Apartments",
+      "stage": "Contract Negotiations",
+      "agreement_name": "Decatur_MDU_The Laredo Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Killeen_MDU_Eastgate Village Apartments",
+      "state": "TX",
+      "owner_tracker": "Bill",
+      "status": "PAL addedndum and Marketing",
+      "notes": "PAL signed, waitin on PAL addendum",
+      "opp_id": "006WR00000wkEcCYAU",
+      "opp_name": "Eastgate Village Apartments",
+      "stage": "On Hold",
+      "agreement_name": "Killeen_MDU_Eastgate Village Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Westmount at The District Apartments",
+      "state": "AZ",
+      "owner_tracker": "Bill",
+      "status": "MDUs On Net - Access Agreement in next 60 days",
+      "notes": "Teams call went well. PAL in front of owner for signature. ",
+      "opp_id": "006WR00000wkC7YYAU",
+      "opp_name": "Westmount at The District Apartments",
+      "stage": "Prospecting",
+      "agreement_name": "Mesa_MDU_Westmount at The District Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Westmount at Urban Trails",
+      "state": "AZ",
+      "owner_tracker": "Bill",
+      "status": "MDUs On Net - Access Agreement in next 60 days",
+      "notes": "Teams call went well. PAL in front of owner for signature. ",
+      "opp_id": "006WR00000wkC7WYAU",
+      "opp_name": "Westmount at Urban Trails",
+      "stage": "Prospecting",
+      "agreement_name": "Mesa_MDU_Westmount at Urban Trails"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Amberwood Manor",
+      "state": "AZ",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "POC to present to HOA Board",
+      "opp_id": "006WR00000wkA7aYAE",
+      "opp_name": "Amberwood Manor",
+      "stage": "Prospecting",
+      "agreement_name": "Mesa_MDU_Amberwood Manor"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Del Corona Apts",
+      "state": "AZ",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "Admin promised to pass to owner and expressed interest but need direct contact",
+      "opp_id": "006WR00000wkDMHYA2",
+      "opp_name": "Mesa_MDU_Del Corona Apts Del Coronado",
+      "stage": "Prospecting",
+      "agreement_name": "Mesa_MDU_Del Corona Apts"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Bridgewood Townhomes",
+      "state": "AZ",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "POC to present to HOA Board",
+      "opp_id": "006WR00000wkCk8YAE",
+      "opp_name": "Bridgewood Townhomes",
+      "stage": "Prospecting",
+      "agreement_name": "Mesa_MDU_Bridgewood Townhomes"
+    },
+    {
+      "project_id": null,
+      "site_name": "Omaha_MDU_4813-4823 Boyd St Apartments",
+      "state": "NE",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "POC wants to talk but hard to get a hold of",
+      "opp_id": "006WR00000wkA8mYAE",
+      "opp_name": "4813-4823 Boyd St Apartments",
+      "stage": "Prospecting",
+      "agreement_name": "Omaha_MDU_4813-4823 Boyd St Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Omaha_MDU_Boyd Street Apartments",
+      "state": "NE",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "POC has signed ROEs for other properties but hard to reach",
+      "opp_id": "006WR00000wkA8zYAE",
+      "opp_name": "6314 Boyd Street",
+      "stage": "Prospecting",
+      "agreement_name": "Omaha_MDU_Boyd Street Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Killeen_MDU_Williamsburg Townhouses and Apts",
+      "state": "TX",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "SAQ exchanging texts and show interest. Need to set up Teams call",
+      "opp_id": "006WR00000wkC7zYAE",
+      "opp_name": "Williamsburg Townhomes and Apartments",
+      "stage": "Prospecting",
+      "agreement_name": "Killeen_MDU_Williamsburg Townhouses and Apts"
+    },
+    {
+      "project_id": null,
+      "site_name": "Mineral Wells_MDU_Parkwood Apartments",
+      "state": "TX",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "Initial discussion expressed interest, chasing down owner to sign",
+      "opp_id": "006WR00000wkA95YAE",
+      "opp_name": "Parkwood Apartments",
+      "stage": "Prospecting",
+      "agreement_name": "Mineral Wells_MDU_Parkwood Apartments"
+    },
+    {
+      "project_id": null,
+      "site_name": "Jarrell_MDU_Sonterra Apartment Homes",
+      "state": "TX",
+      "owner_tracker": "Melissa",
+      "status": "EMA out for signature",
+      "notes": "EMA out for signature",
+      "opp_id": "006WR00000wkEcpYAE",
+      "opp_name": "Sonterra Apartment Homes",
+      "stage": "Under Contract",
+      "agreement_name": "Jarrell_MDU_Sonterra Apartment Homes"
+    },
+    {
+      "project_id": null,
+      "site_name": "Encinitas_MDU_Sandpiper Point",
+      "state": "CA",
+      "owner_tracker": "Melissa",
+      "status": "PAL/ROE pending",
+      "notes": "Melissa attended HOA board meeting on 4/18; sent in ROE request 4/21.",
+      "opp_id": "006WR00000wk9SsYAI",
+      "opp_name": "Sandpiper Pointe",
+      "stage": "Prospecting",
+      "agreement_name": null
+    },
+    {
+      "project_id": null,
+      "site_name": "Capri on Camelback",
+      "state": "AZ",
+      "owner_tracker": "Brett",
+      "status": "Brett to follow up with Owner about Bulk with FF",
+      "notes": null,
+      "opp_id": "006WR00000wkEc3YAE",
+      "opp_name": "Capri on Camelback",
+      "stage": "Under Contract",
+      "agreement_name": "Phoenix_MDU_Capri on Camelback"
+    },
+    {
+      "project_id": null,
+      "site_name": "Killeen_MDU_Bradley Arms",
+      "state": "TX",
+      "owner_tracker": null,
+      "status": "PAL addedndum and Marketing",
+      "notes": "PAL signed, waitin on PAL addendum and verbal on EMA",
+      "opp_id": "006WR00000xuzoQYAQ",
+      "opp_name": "Killeen_MDU_Bradley Arms",
+      "stage": "ROE Secured",
+      "agreement_name": "Killeen_MDU_Bradley Arms"
+    },
+    {
+      "project_id": null,
+      "site_name": "Killeen_MDU_Liberty Manor",
+      "state": "TX",
+      "owner_tracker": "Bill",
+      "status": "PAL under proposal review with Owner",
+      "notes": "Good Teams call, chasing down owner to sign",
+      "opp_id": "006WR00000wkABpYAM",
+      "opp_name": "Liberty Manor",
+      "stage": "Prospecting",
+      "agreement_name": "Killeen_MDU_Liberty Manor"
+    },
+    {
+      "project_id": null,
+      "site_name": "Bridgeport_MDU_Dry Creek HOA",
+      "state": "TX",
+      "owner_tracker": null,
+      "status": "Marketing",
+      "notes": "Spoke with Builder, we have fiber already, getting HOA contact to discuss EMA",
+      "opp_id": "006WR00000wkF07YAE",
+      "opp_name": "Dry Creek Ranch Apartments",
+      "stage": "Closed Lost",
+      "agreement_name": "Northlake_MDU_Dry Creek Ranch Apartments"
+    }
+  ],
+  "ambiguous_by_name": [],
+  "unmatched_by_name": [
+    {
+      "project_id": null,
+      "site_name": "Mesa_MDU_Woodglen Square Condo II",
+      "state": "AZ",
+      "owner_tracker": "Brett",
+      "status": "Need Data and approval to walk",
+      "notes": "PAL signed; contact working on data and approval to walk.",
+      "retry_candidates": [
+        {
+          "id": "006WR00000wkDNDYA2",
+          "name": "Woodglen Vista Apartments",
+          "stage": "On Hold",
+          "agreement_name": null
+        },
+        {
+          "id": "006WR00000wkDtwYAE",
+          "name": "Woodglen Square ll",
+          "stage": "Under Contract",
+          "agreement_name": "Mesa_MDU_Woodland Square Condo II"
+        },
+        {
+          "id": "006WR00000wk9S3YAI",
+          "name": "Woodglen Square l",
+          "stage": "Prospecting",
+          "agreement_name": "Mesa_MDU_Woodland Square Condominium"
+        }
+      ]
+    },
+    {
+      "project_id": null,
+      "site_name": "Deerfield Apartments",
+      "state": "NE",
+      "owner_tracker": "Brett",
+      "status": "Will require a HUT, Great Plain claims tat they have fiber to the unit, Brett to confirm and Bulk option before we can proceed",
+      "notes": null,
+      "retry_candidates": [
+        {
+          "id": "006WR000011aP8ZYAU",
+          "name": "Deerfield Clubhouse Apartments",
+          "stage": "Prospecting",
+          "agreement_name": null
+        },
+        {
+          "id": "006WR00000wkCjcYAE",
+          "name": "Deerfield Village on Fort Lowell",
+          "stage": "Prospecting",
+          "agreement_name": null
+        }
+      ]
+    }
+  ]
+}

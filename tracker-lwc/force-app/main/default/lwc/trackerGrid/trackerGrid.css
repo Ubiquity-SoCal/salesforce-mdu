@@ -1,8 +1,17 @@
+/* Host element — fixed viewport height so grid scrolls internally */
+:host {
+    display: block;
+    height: calc(100vh - 130px); /* SF header + nav bar ~130px */
+    overflow: hidden;
+}
+
 /* Container */
 .tracker-container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 0;
+    overflow: hidden;
     background: #ffffff;
     font-family: 'Segoe UI', -apple-system, sans-serif;
 }
@@ -44,6 +53,14 @@
     min-width: 180px;
 }
 
+.re-assigned-selector {
+    min-width: 160px;
+}
+
+.date-range-selector {
+    min-width: 160px;
+}
+
 .filter-field {
     min-width: 140px;
 }
@@ -83,19 +100,21 @@
     font-size: 14px;
 }
 
-/* Grid wrapper — horizontal scroll */
+/* Grid wrapper — both scrollbars always visible */
 .grid-wrapper {
     flex: 1;
     overflow: auto;
     border: 1px solid #d8dde6;
     margin: 0;
+    min-height: 0; /* allows flex shrinking so scrollbar stays reachable */
 }
 
 /* Table */
 .tracker-table {
     width: max-content;
     min-width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     font-size: 13px;
 }
 
@@ -248,49 +267,66 @@
     background: inherit;
 }
 
-.frozen-col {
+.frozen-col-1 {
     position: sticky;
     left: 80px;
+    z-index: 2;
+    background: inherit;
+}
+
+.frozen-col-2 {
+    position: sticky;
     z-index: 2;
     background: inherit;
     border-right: 2px solid #d8dde6 !important;
 }
 
-.frozen-col-header {
+.frozen-col-header-1 {
     position: sticky;
     top: 0;
     left: 80px;
+    z-index: 3;
+}
+
+.frozen-col-header-2 {
+    position: sticky;
+    top: 0;
     z-index: 3;
     border-right: 2px solid #d8dde6 !important;
 }
 
 .frozen-icon-1,
 .frozen-icon-2,
-.frozen-col {
+.frozen-col-1,
+.frozen-col-2 {
     background: #ffffff;
 }
 
 .tracker-row:nth-child(even) .frozen-icon-1,
 .tracker-row:nth-child(even) .frozen-icon-2,
-.tracker-row:nth-child(even) .frozen-col {
+.tracker-row:nth-child(even) .frozen-col-1,
+.tracker-row:nth-child(even) .frozen-col-2 {
     background: #fafbfc;
 }
 
 .tracker-row:hover .frozen-icon-1,
 .tracker-row:hover .frozen-icon-2,
-.tracker-row:hover .frozen-col {
+.tracker-row:hover .frozen-col-1,
+.tracker-row:hover .frozen-col-2 {
     background: #f0f4f8;
 }
 
 .dirty-row .frozen-icon-1,
 .dirty-row .frozen-icon-2,
-.dirty-row .frozen-col {
+.dirty-row .frozen-col-1,
+.dirty-row .frozen-col-2 {
     background: #fffef5;
 }
 
 .active-panel-row .frozen-icon-1,
 .active-panel-row .frozen-icon-2,
-.active-panel-row .frozen-col {
+.active-panel-row .frozen-col-1,
+.active-panel-row .frozen-col-2 {
     background: #eaf5fe;
 }
 
@@ -363,6 +399,7 @@ th.frozen-icon-2 {
     flex-direction: column;
     overflow: hidden;
     min-width: 0;
+    min-height: 0;
 }
 
 /* Notes icon column */
@@ -405,7 +442,7 @@ th.frozen-icon-2 {
     background: #eaf5fe !important;
 }
 
-/* Side panel */
+/* Side panel — fills layout height, scrolls internally */
 .side-panel {
     width: 380px;
     min-width: 380px;
@@ -414,6 +451,7 @@ th.frozen-icon-2 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    min-height: 0;
 }
 
 .panel-header {
@@ -944,6 +982,59 @@ th.frozen-icon-2 {
     color: #3e3e3c;
 }
 
+/* Summary bar */
+.summary-bar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 8px 16px;
+    background: #eaf2fb;
+    border-bottom: 1px solid #d8dde6;
+    font-size: 12px;
+    color: #16325c;
+    flex-shrink: 0;
+}
+
+.summary-stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.summary-label {
+    font-weight: 400;
+    color: #706e6b;
+}
+
+.summary-value {
+    font-weight: 700;
+    color: #16325c;
+}
+
+.summary-divider {
+    width: 1px;
+    height: 16px;
+    background: #c9d2da;
+}
+
+.summary-agreements {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.summary-agr-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #d4edda;
+    color: #155724;
+}
+
 /* Footer */
 .tracker-footer {
     display: flex;
@@ -953,6 +1044,10 @@ th.frozen-icon-2 {
     border-top: 1px solid #d8dde6;
     font-size: 12px;
     color: #706e6b;
+}
+
+.load-more-grid-btn {
+    margin: 0 12px;
 }
 
 .unsaved-indicator {

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Type__c</fullName>
+    <label>Address Type</label>
+    <type>Picklist</type>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <description>Vetro properties.addtype: Business (BUS) for commercial addresses keyed by Business Base Address; MDU for multi-dwelling complexes keyed by Agreement Name; SFU for agreement-grouped single-family units (RV resorts, HOAs, mobile-home parks) keyed by Agreement Name.</description>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>MDU</fullName>
+                <default>false</default>
+                <label>MDU</label>
+            </value>
+            <value>
+                <fullName>SFU</fullName>
+                <default>false</default>
+                <label>SFU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

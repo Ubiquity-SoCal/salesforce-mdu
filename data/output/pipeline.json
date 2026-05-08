@@ -1,0 +1,1309 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEcBYAU"
+        },
+        "Id": "006WR00000wkEcBYAU",
+        "Name": "Heritage of Newark (FKA Newark Beach Estates)",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 26,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWO2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZFu12AG"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkDtzYAE"
+        },
+        "Id": "006WR00000wkDtzYAE",
+        "Name": "Whispering Hills Apartments",
+        "StageName": "Marketing/Bulk Complete",
+        "Units__c": 34,
+        "Projected_Close_Date__c": "2026-05-06",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yKb2AI"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yKc2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEcEYAU"
+        },
+        "Id": "006WR00000wkEcEYAU",
+        "Name": "Northampton Court Condominiums",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 22,
+        "Projected_Close_Date__c": "2026-05-15",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWS2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWT2AY"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA6fYAE"
+        },
+        "Id": "006WR00000wkA6fYAE",
+        "Name": "Bedford Square [fmr Maplewood Court]",
+        "StageName": "Contract Negotiations",
+        "Units__c": 52,
+        "Projected_Close_Date__c": "2026-06-02",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008YyJh2AK"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SpYAI"
+        },
+        "Id": "006WR00000wk9SpYAI",
+        "Name": "Carmel Creekside",
+        "StageName": "Prospecting",
+        "Units__c": 424,
+        "Projected_Close_Date__c": "2026-06-26",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk1EpYAI"
+        },
+        "Id": "006WR00000wk1EpYAI",
+        "Name": "Linea Stillwater",
+        "StageName": "Marketing/Bulk Complete",
+        "Units__c": 230,
+        "Projected_Close_Date__c": "2026-03-20",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yaW2AQ"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yaX2AQ"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA6dYAE"
+        },
+        "Id": "006WR00000wkA6dYAE",
+        "Name": "Howard Street",
+        "StageName": "Engaged",
+        "Units__c": 90,
+        "Projected_Close_Date__c": "2026-07-01",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SZYAY"
+        },
+        "Id": "006WR00000wk9SZYAY",
+        "Name": "Falcon Glen Apartments",
+        "StageName": "Contract Negotiations",
+        "Units__c": 402,
+        "Projected_Close_Date__c": "2026-05-29",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBz2AI"
+              },
+              "Status__c": "Sign"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkC7zYAE"
+        },
+        "Id": "006WR00000wkC7zYAE",
+        "Name": "Williamsburg Townhomes and Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 64,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9S2YAI"
+        },
+        "Id": "006WR00000wk9S2YAI",
+        "Name": "The Veranda at Twin Creek Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 88,
+        "Projected_Close_Date__c": "2026-04-24",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9T2YAI"
+        },
+        "Id": "006WR00000wk9T2YAI",
+        "Name": "Cicada Springs RV Park",
+        "StageName": "Contract Negotiations",
+        "Units__c": 175,
+        "Projected_Close_Date__c": "2026-07-31",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yCH2AY"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEcCYAU"
+        },
+        "Id": "006WR00000wkEcCYAU",
+        "Name": "Eastgate Village Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 59,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWP2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWQ2AY"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000xwGf7YAE"
+        },
+        "Id": "006WR00000xwGf7YAE",
+        "Name": "Killeen_MDU_117-121_W_Avenue_A",
+        "StageName": "Marketing/Bulk Complete",
+        "Units__c": 10,
+        "Projected_Close_Date__c": "2026-05-06",
+        "Agreements__r": {
+          "totalSize": 3,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008AyXl2AK"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZIn32AG"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZIof2AG"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkCjuYAE"
+        },
+        "Id": "006WR00000wkCjuYAE",
+        "Name": "Bradley Arms_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 18,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yH22AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkABpYAM"
+        },
+        "Id": "006WR00000wkABpYAM",
+        "Name": "Liberty Manor",
+        "StageName": "Engaged",
+        "Units__c": 36,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEb1YAE"
+        },
+        "Id": "006WR00000wkEb1YAE",
+        "Name": "Horizon Heights",
+        "StageName": "PAL/ROE Complete",
+        "Units__c": 60,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yTn2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SEYAY"
+        },
+        "Id": "006WR00000wk9SEYAY",
+        "Name": "La Mesa Village Apartments",
+        "StageName": "Contract Negotiations",
+        "Units__c": 256,
+        "Projected_Close_Date__c": "2026-05-29",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBa2AI"
+              },
+              "Status__c": "Sign"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBb2AI"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbSYAU"
+        },
+        "Id": "006WR00000wkEbSYAU",
+        "Name": "Saffari Apts_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 38,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUe2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbTYAU"
+        },
+        "Id": "006WR00000wkEbTYAU",
+        "Name": "Soaring Eagle Apartments_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 54,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUf2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SSYAY"
+        },
+        "Id": "006WR00000wk9SSYAY",
+        "Name": "Waters Haven Apartments",
+        "StageName": "Contract Negotiations",
+        "Units__c": 117,
+        "Projected_Close_Date__c": "2026-04-24",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBv2AI"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbOYAU"
+        },
+        "Id": "006WR00000wkEbOYAU",
+        "Name": "Patriot Place",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 12,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUa2AI"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZIv72AG"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SuYAI"
+        },
+        "Id": "006WR00000wk9SuYAI",
+        "Name": "Riverside Villas",
+        "StageName": "Prospecting",
+        "Units__c": 192,
+        "Projected_Close_Date__c": "2026-07-31",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR000013OnjhYAC"
+        },
+        "Id": "006WR000013OnjhYAC",
+        "Name": "Dry Creek",
+        "StageName": "Engaged",
+        "Units__c": 147,
+        "Projected_Close_Date__c": "2026-06-30",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkCjMYAU"
+        },
+        "Id": "006WR00000wkCjMYAU",
+        "Name": "Gardens of Taylor",
+        "StageName": "Contract Negotiations",
+        "Units__c": 36,
+        "Projected_Close_Date__c": "2026-06-03",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008cMqv2AE"
+              },
+              "Status__c": "Create"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkDMHYA2"
+        },
+        "Id": "006WR00000wkDMHYA2",
+        "Name": "Mesa_MDU_Del Corona Apts Del Coronado",
+        "StageName": "Prospecting",
+        "Units__c": 419,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yHR2AY"
+              },
+              "Status__c": "Paused"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yHS2AY"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkC7YYAU"
+        },
+        "Id": "006WR00000wkC7YYAU",
+        "Name": "Westmount at The District Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 154,
+        "Projected_Close_Date__c": "2026-06-15",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yGz2AI"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEcAYAU"
+        },
+        "Id": "006WR00000wkEcAYAU",
+        "Name": "Creekside Apartments",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 24,
+        "Projected_Close_Date__c": "2026-05-15",
+        "Agreements__r": {
+          "totalSize": 3,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWN2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZIwj2AG"
+              },
+              "Status__c": "Review"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZIyL2AW"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR000013NaDUYA0"
+        },
+        "Id": "006WR000013NaDUYA0",
+        "Name": "Walker's Park",
+        "StageName": "Engaged",
+        "Units__c": 742,
+        "Projected_Close_Date__c": "2026-07-31",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbQYAU"
+        },
+        "Id": "006WR00000wkEbQYAU",
+        "Name": "307 N Apartments_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 25,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUc2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9STYAY"
+        },
+        "Id": "006WR00000wk9STYAY",
+        "Name": "Stone Ranch",
+        "StageName": "Prospecting",
+        "Units__c": 152,
+        "Projected_Close_Date__c": "2026-07-31",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SvYAI"
+        },
+        "Id": "006WR00000wk9SvYAI",
+        "Name": "Park_Place",
+        "StageName": "Prospecting",
+        "Units__c": 175,
+        "Projected_Close_Date__c": "2026-07-31",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkDtwYAE"
+        },
+        "Id": "006WR00000wkDtwYAE",
+        "Name": "Woodglen Square ll",
+        "StageName": "PAL/ROE Complete",
+        "Units__c": 280,
+        "Projected_Close_Date__c": "2026-05-06",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yKY2AY"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SoYAI"
+        },
+        "Id": "006WR00000wk9SoYAI",
+        "Name": "Stone Hill",
+        "StageName": "Contract Negotiations",
+        "Units__c": 346,
+        "Projected_Close_Date__c": "2026-06-26",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yCD2AY"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbPYAU"
+        },
+        "Id": "006WR00000wkEbPYAU",
+        "Name": "1507 N 8th Apartments_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 8,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUb2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR000013P1ulYAC"
+        },
+        "Id": "006WR000013P1ulYAC",
+        "Name": "1810 N 8th St_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 24,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SYYAY"
+        },
+        "Id": "006WR00000wk9SYYAY",
+        "Name": "Garden Place Apartments",
+        "StageName": "Contract Negotiations",
+        "Units__c": 286,
+        "Projected_Close_Date__c": "2026-05-29",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBy2AI"
+              },
+              "Status__c": "Sign"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SDYAY"
+        },
+        "Id": "006WR00000wk9SDYAY",
+        "Name": "Meadow Glen Mobile Home Park",
+        "StageName": "Prospecting",
+        "Units__c": 412,
+        "Projected_Close_Date__c": "2026-09-30",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBY2AY"
+              },
+              "Status__c": "Archive"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBZ2AY"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkCk8YAE"
+        },
+        "Id": "006WR00000wkCk8YAE",
+        "Name": "Bridgewood Townhomes",
+        "StageName": "Prospecting",
+        "Units__c": 88,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbUYAU"
+        },
+        "Id": "006WR00000wkEbUYAU",
+        "Name": "1807 Mulford Apartments_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 12,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUg2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SnYAI"
+        },
+        "Id": "006WR00000wk9SnYAI",
+        "Name": "Seascape Sur",
+        "StageName": "Contract Negotiations",
+        "Units__c": 188,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yCC2AY"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA8kYAE"
+        },
+        "Id": "006WR00000wkA8kYAE",
+        "Name": "Santa Helena Park Condominiums",
+        "StageName": "Contract Negotiations",
+        "Units__c": 64,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SsYAI"
+        },
+        "Id": "006WR00000wk9SsYAI",
+        "Name": "Sandpiper Pointe",
+        "StageName": "Engaged",
+        "Units__c": 33,
+        "Projected_Close_Date__c": "2026-06-15",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yCE2AY"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEcDYAU"
+        },
+        "Id": "006WR00000wkEcDYAU",
+        "Name": "The 1001 Apartments",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 111,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": {
+          "totalSize": 3,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWR2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZFvd2AG"
+              },
+              "Status__c": "Review"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZFxF2AW"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEc8YAE"
+        },
+        "Id": "006WR00000wkEc8YAE",
+        "Name": "Bristol Square Apartments",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 183,
+        "Projected_Close_Date__c": "2026-05-30",
+        "Agreements__r": {
+          "totalSize": 3,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yWK2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZFqn2AG"
+              },
+              "Status__c": "Review"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR000008ZFsP2AW"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkEbRYAU"
+        },
+        "Id": "006WR00000wkEbRYAU",
+        "Name": "Jerome Apartments_Colt RE",
+        "StageName": "Marketing/Bulk In Progress",
+        "Units__c": 8,
+        "Projected_Close_Date__c": "2026-06-08",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yUd2AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SdYAI"
+        },
+        "Id": "006WR00000wk9SdYAI",
+        "Name": "The Laredo Apartments",
+        "StageName": "Contract Negotiations",
+        "Units__c": 240,
+        "Projected_Close_Date__c": "2026-05-29",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yC32AI"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9RuYAI"
+        },
+        "Id": "006WR00000wk9RuYAI",
+        "Name": "Town East",
+        "StageName": "Marketing/Bulk Complete",
+        "Units__c": 24,
+        "Projected_Close_Date__c": "2026-05-06",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yB92AI"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBA2AY"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9RtYAI"
+        },
+        "Id": "006WR00000wk9RtYAI",
+        "Name": "117 and 121 E Avenue A Apartments",
+        "StageName": "Marketing/Bulk Complete",
+        "Units__c": 10,
+        "Projected_Close_Date__c": "2026-03-27",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yB72AI"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yB82AI"
+              },
+              "Status__c": "Completed"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA7aYAE"
+        },
+        "Id": "006WR00000wkA7aYAE",
+        "Name": "Amberwood Manor",
+        "StageName": "Prospecting",
+        "Units__c": 60,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SLYAY"
+        },
+        "Id": "006WR00000wk9SLYAY",
+        "Name": "Sierra G Ranch",
+        "StageName": "Contract Negotiations",
+        "Units__c": 800,
+        "Projected_Close_Date__c": "2026-03-27",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBo2AI"
+              },
+              "Status__c": "Review"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBp2AI"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR000013OkHCYA0"
+        },
+        "Id": "006WR000013OkHCYA0",
+        "Name": "Stagecoach Crossing",
+        "StageName": "Engaged",
+        "Units__c": 114,
+        "Projected_Close_Date__c": "2026-06-30",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9RyYAI"
+        },
+        "Id": "006WR00000wk9RyYAI",
+        "Name": "Rivers Edge",
+        "StageName": "Marketing/Bulk Complete",
+        "Units__c": 92,
+        "Projected_Close_Date__c": "2026-03-20",
+        "Agreements__r": {
+          "totalSize": 2,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBF2AY"
+              },
+              "Status__c": "Completed"
+            },
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yBG2AY"
+              },
+              "Status__c": "Paused"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA8mYAE"
+        },
+        "Id": "006WR00000wkA8mYAE",
+        "Name": "4813-4823 Boyd St Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 35,
+        "Projected_Close_Date__c": "2026-06-30",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SqYAI"
+        },
+        "Id": "006WR00000wk9SqYAI",
+        "Name": "Hunter's Glen Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 152,
+        "Projected_Close_Date__c": "2026-06-26",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9SlYAI"
+        },
+        "Id": "006WR00000wk9SlYAI",
+        "Name": "Mariposa Apartment Homes at River Bend",
+        "StageName": "Prospecting",
+        "Units__c": 201,
+        "Projected_Close_Date__c": "2026-05-29",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA95YAE"
+        },
+        "Id": "006WR00000wkA95YAE",
+        "Name": "Parkwood Apartments",
+        "StageName": "Prospecting",
+        "Units__c": 64,
+        "Projected_Close_Date__c": "2026-06-01",
+        "Agreements__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkC7WYAU"
+        },
+        "Id": "006WR00000wkC7WYAU",
+        "Name": "Westmount at Urban Trails",
+        "StageName": "Prospecting",
+        "Units__c": 159,
+        "Projected_Close_Date__c": "2026-06-15",
+        "Agreements__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "Agreement__c",
+                "url": "/services/data/v66.0/sobjects/Agreement__c/a0BWR0000083yGx2AI"
+              },
+              "Status__c": "Review"
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkA7oYAE"
+        },
+        "Id": "006WR00000wkA7oYAE",
+        "Name": "Terrace Garden Apartments",
+        "StageName": "Engaged",
+        "Units__c": 126,
+        "Projected_Close_Date__c": "2026-07-02",
+        "Agreements__r": null
+      }
+    ],
+    "totalSize": 58,
+    "done": true
+  },
+  "warnings": []
+}

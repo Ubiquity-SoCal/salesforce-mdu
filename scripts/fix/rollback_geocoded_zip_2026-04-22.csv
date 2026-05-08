@@ -1,0 +1,484 @@
+Id,Name,prior_value,new_Property_Zip__c,source
+006WR00000wkDOtYAM,Lake Bernardo Mobile Estates,,92026,census_geocoder
+006WR00000wkDMqYAM,Meadow Ridge,,76116,census_geocoder
+006WR00000wkDO3YAM,Valle at Escondido,,92026,census_geocoder
+006WR00000wkDOIYA2,Pacifica Palms Apartments,,92027,census_geocoder
+006WR00000wk9ZoYAI,The Marvely,,68164,census_geocoder
+006WR00000wkACDYA2,Mariposa Apartments [Vista,,92083,census_geocoder
+006WR00000wjnPJYAY,St. James Manor Apartments,,68104,census_geocoder
+006WR00000wkBU6YAM,5400-5408 S. Ingleside,,60615,census_geocoder
+006WR00000wj8KgYAI,5118-5120 S. Greenwood Avenue,,60615,census_geocoder
+006WR00000wk9ZdYAI,Westbrook Gardens Apartments,,68114,census_geocoder
+006WR00000wkBUwYAM,1018 E. 54th Street,,60615,census_geocoder
+006WR00000wkFbvYAE,Plaza 93 West,,68134,census_geocoder
+006WR00000wkBnqYAE,Kenwood Court,,60615,census_geocoder
+006WR00000wkBoGYAU,Enchanted Hills,,87144,census_geocoder
+006WR00000wk9ZzYAI,4651 Dodge St,,68132,census_geocoder
+006WR00000wkBUWYA2,5528 S. Cornell Avenue,,60637,census_geocoder
+006WR00000wk9ZYYAY,La Mision Village,,92058,census_geocoder
+006WR00000wkA72YAE,Trails at Carmel Creek,,78634,census_geocoder
+006WR00000wkDOTYA2,Prominence Luxury Apartments,,92078,census_geocoder
+006WR00000wkC6wYAE,The Avenue at Carlsbad,,92008,census_geocoder
+006WR00000wjqCkYAI,Monaco on the Trail,,75204,census_geocoder
+006WR00000wkCl0YAE,Casa Antiqua Apartments,,92084,census_geocoder
+006WR00000wj8KrYAI,5222-38 S Drexel Ave.,,60615,census_geocoder
+006WR00000wkBosYAE,Park Hacienda,,94588,census_geocoder
+006WR00000wk9ZNYAY,Applewood Pointe Apartments,,68127,census_geocoder
+006WR00000wjKGBYA2,Vale Luxury,,77389,census_geocoder
+006WR00000wkDNhYAM,Meadow Creek Apartments,,92078,census_geocoder
+006WR00000wjnkrYAA,Landmark on Lovers,,75206,census_geocoder
+006WR00000wjqDVYAY,Lone Star Gas Lofts,,75201,census_geocoder
+006WR00000wkDOiYAM,Tamarack Gardens Apartments,,92821,census_geocoder
+006WR00000wkDNHYA2,Casa De Amigos,,92029,census_geocoder
+006WR00000wkA6FYAU,Avidor Omaha,,68144,census_geocoder
+006WR00000wkBTvYAM,5326-5336 S. Greenwood Avenue,,60615,census_geocoder
+006WR00000wkBV8YAM,Campbell Run,,98072,census_geocoder
+006WR00000wkBngYAE,The Delaney at Lake Waco,,76710,census_geocoder
+006WR00000wkDNgYAM,Sierra Vista,,92069,census_geocoder
+006WR00000wjKFvYAM,Alleia Long Meadow Farms,,77407,census_geocoder
+006WR00000wjKGnYAM,Juan Diego Apts,,80211,census_geocoder
+006WR00000wk9ZOYAY,Capitol Place,,68102,census_geocoder
+006WR00000wkA6PYAU,Nobility Point,,68111,census_geocoder
+006WR00000wkBpHYAU,Liberty Trails Apartments,,78642,census_geocoder
+006WR00000wkBTjYAM,5300-5308 S. Greenwood Avenue,,60615,census_geocoder
+006WR00000wkA6EYAU,Chateau at Hillsborough,,68164,census_geocoder
+006WR00000wkDNrYAM,Raintree Apartment Homes,,92821,census_geocoder
+006WR00000wkBGcYAM,211 E 7th St,,85281,census_geocoder
+006WR00000wkBV7YAM,Cotton Wood,,94568,census_geocoder
+006WR00000wkDOHYA2,The Springs of Escondido,,92027,census_geocoder
+006WR00000wj8JPYAY,The Flats at SanTan,,85295,census_geocoder
+006WR00000wkBVBYA2,1515-1521 E. 54th Street,,60616,census_geocoder
+006WR00000wjqCvYAI,The Edge at Glade Parks,,76039,census_geocoder
+006WR00000wkDNRYA2,Ponderosa,,92029,census_geocoder
+006WR00000wkBUlYAM,City Hyde Park,,60615,census_geocoder
+006WR00000wkBUAYA2,5405-5407 S. Woodlawn Avenue,,60615,census_geocoder
+006WR00000wkDNGYA2,Santee Corsican Villas,,92071,census_geocoder
+006WR00000wkBGNYA2,Lakeside,,85224,census_geocoder
+006WR00000wkDOSYA2,La Mores Estates,,92078,census_geocoder
+006WR00000wk3P8YAI,Gateway Northwest Apartments,,78752,census_geocoder
+006WR00000wkBUaYAM,5557-59 S. University Avenue,,60637,census_geocoder
+006WR00000wkDOsYAM,Forest Glen Apartments,,92026,census_geocoder
+006WR00000wkBneYAE,Clarendale at Indian Lake,,37075,census_geocoder
+006WR00000wkCm3YAE,Vida Apartments,,78626,census_geocoder
+006WR00000wjKGAYA2,Vale Frisco,,75033,census_geocoder
+006WR00000wkBFbYAM,HC - Flanders MHP,,14807,census_geocoder
+006WR00000wkDNiYAM,Rancho San Marcos MHP,,92069,census_geocoder
+006WR00000wjqDUYAY,Embry,,75006,census_geocoder
+006WR00000wkDNIYA2,Carefree Ranch MHP,,92027,census_geocoder
+006WR00000wjKG6YAM,Lakes at Westview II,,77304,census_geocoder
+006WR00000wkClRYAU,Grandridge,,68134,census_geocoder
+006WR00000wkAk2YAE,Carlsbad Station,,92008,census_geocoder
+006WR00000wkC6XYAU,Swivel,,68114,census_geocoder
+006WR00000wkA6pYAE,Vivo Living Omaha,,68154,census_geocoder
+006WR00000wkBTwYAM,5335-5337 S. Woodlawn Avenue,,60615,census_geocoder
+006WR00000wkBV9YAM,1413-15 E. 57th St,,60637,census_geocoder
+006WR00000wjKFuYAM,Adley at Gleannloch,,77379,census_geocoder
+006WR00000wkBGCYA2,Avana Coronado,,85224,census_geocoder
+006WR00000wkDNTYA2,Vida,,92025,census_geocoder
+006WR00000wkAkHYAU,Adiamo Palm Valley,,85395,census_geocoder
+006WR00000wkA6OYAU,Sea Bluff,,92056,census_geocoder
+006WR00000wkBUCYA2,5411-5421 S. Ellis Avenue,,60615,census_geocoder
+006WR00000wjnPKYAY,Whelan Ranch Condominiums,,92058,census_geocoder
+006WR00000wkBU7YAM,5401-5403 S. Woodlawn,,60615,census_geocoder
+006WR00000wkBUnYAM,Cloisters,,60637,census_geocoder
+006WR00000wkACCYA2,Foothill Courtyards,,92084,census_geocoder
+006WR00000wk9ToYAI,Villa Loma Apartments,,92011,census_geocoder
+006WR00000wk9YNYAY,Solana Highlands,,92075,census_geocoder
+006WR00000wkDOUYA2,Valle Verde Estates,,92078,census_geocoder
+006WR00000wkCl1YAE,The Meadows Apartments,,92084,census_geocoder
+006WR00000wkDOuYAM,The Grand Rose Apartments,,92027,census_geocoder
+006WR00000wkBnzYAE,The Del Prado,,60615,census_geocoder
+006WR00000wj8KOYAY,Ocean Crest Apartments,,92075,census_geocoder
+006WR00000wkBo1YAE,The Pepperland,,60637,census_geocoder
+006WR00000wkDNSYA2,Elan Felicita Creek,,92025,census_geocoder
+006WR00000wjnPLYAY,The Normandy,,68114,census_geocoder
+006WR00000wkBU8YAM,5401-5405 S. Drexel Boulevard,,60615,census_geocoder
+006WR00000wkBUBYA2,5409 S. Blackstone,,60615,census_geocoder
+006WR00000wk9ZfYAI,Highlander Overlook and Burdette + Wade,,68111,census_geocoder
+006WR00000wkCl2YAE,Vista Manor,,92083,census_geocoder
+006WR00000wkDOjYAM,Carlton Country Club Villas Apartments,,92071,census_geocoder
+006WR00000wj8KZYAY,4721-29 S. Ellis St,,60616,census_geocoder
+006WR00000wkBUbYAM,5623 S. Dorchester,,60637,census_geocoder
+006WR00000wkAsLYAU,Tempe Station,,85288,census_geocoder
+006WR00000wk9UpYAI,Elan Pacifico,,92024,census_geocoder
+006WR00000wk9ZPYAY,Crossroads Village Apartments,,68114,census_geocoder
+006WR00000wkAsaYAE,San Cervantes,,85224,census_geocoder
+006WR00000wkDOJYA2,Midway Gardens,,92027,census_geocoder
+006WR00000wj8KpYAI,4859 S. Champlain Avenue,,60615,census_geocoder
+006WR00000wkBoQYAU,Van Allen Apartments,,12144,census_geocoder
+006WR00000wk9ZpYAI,Rolling Hills Ranch Senior Living,,68164,census_geocoder
+006WR00000wkA6DYAU,46 Dodge Apartments,,68132,census_geocoder
+006WR00000wkBUMYA2,5474-5480 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wkBoqYAE,Harbor Cove,,94404,census_geocoder
+006WR00000wkDNsYAM,Tamarack Woods Apartment Homes,,92821,census_geocoder
+006WR00000wjKG5YAM,Lakes at Westview I,,77304,census_geocoder
+006WR00000wkBUXYA2,5532 S. Kimbark Avenue,,60637,census_geocoder
+006WR00000wkBnpYAE,Adams Bend Apartments,,76504,census_geocoder
+006WR00000wkBTlYAM,5300-5308 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wkA6oYAE,The Vanderbilt Apartments,,68154,census_geocoder
+006WR00000wkDO4YAM,Estancia Apartments,,92025,census_geocoder
+006WR00000wkBGBYA2,Aura Watermark,,85288,census_geocoder
+006WR00000wk9ZQYAY,Cambridge Villas,,68118,census_geocoder
+006WR00000wkBplYAE,Eastbank at Waterside,,76109,census_geocoder
+006WR00000wkBThYAM,5252 S Cornell Ave,,60615,census_geocoder
+006WR00000wkDOaYAM,Elan Northwoods Apartment Homes,,92078,census_geocoder
+006WR00000wkDtmYAE,Mariposa Apartments,,80204,census_geocoder
+006WR00000wjqDIYAY,The Village Dakota,,75206,census_geocoder
+006WR00000wk9TnYAI,Rising Glen,,92008,census_geocoder
+006WR00000yvMEBYA2,Hacienda de la Playa HOA,,92024,census_geocoder
+006WR00000wkAkLYAU,Village on the Green,,75240,census_geocoder
+006WR00000wjqCsYAI,Trinity Mills Apartments,,75006,census_geocoder
+006WR00000wkA6YYAU,The Club at Highland Park Apartments,,68164,census_geocoder
+006WR00000wkAk6YAE,Seagate Condominium Rentals,,92011,census_geocoder
+006WR00000wkBTsYAM,The Cape,,92024,census_geocoder
+006WR00000wkBV5YAM,Bridges of San Ramon,,94583,census_geocoder
+006WR00000wkDOlYAM,Mission Gorge Villa,,92071,census_geocoder
+006WR00000wkAsRYAU,Trevi,,85224,census_geocoder
+006WR00000wkDOLYA2,Benchmark Apartments,,92069,census_geocoder
+006WR00000wjKFyYAM,Aura 36Hundred,,78665,census_geocoder
+006WR00000wk9ZrYAI,Pacific Gardens Apartments,,68124,census_geocoder
+006WR00000wkACGYA2,Bella Vita,,85303,census_geocoder
+006WR00000wj8KjYAI,5400-5406 S. Maryland,,60615,census_geocoder
+006WR00000wkCmJYAU,Park Encinitas,,92024,census_geocoder
+006WR00000wkDNuYAM,The Oaks,,92071,census_geocoder
+006WR00000wkDMTYA2,Martinique Apartments,,68114,census_geocoder
+006WR00000wkA6NYAU,View House,,68131,census_geocoder
+006WR00000wkDO6YAM,Villa Escondido,,92025,census_geocoder
+006WR00000wkBpwYAE,Mission Pointe Club,,76040,census_geocoder
+006WR00000wkDOAYA2,Reidy Ceek II,,92026,census_geocoder
+006WR00000wk9ZqYAI,The Slate,,68102,census_geocoder
+006WR00000wkDOKYA2,Coral Tree Manor,,92069,census_geocoder
+006WR00000wkBGDYA2,Arches at Hidden Creek,,85224,census_geocoder
+006WR00000wkBo5YAE,Windermere House,,60615,census_geocoder
+006WR00000wjqD4YAI,Windsor Westbridge,,75006,census_geocoder
+006WR00000ywTIPYA2,Haidenger Center,,92075,census_geocoder
+006WR00000wkBU4YAM,Copper Ridge HOA,,68154,census_geocoder
+006WR00000wkCmIYAU,Camden Old Creek,,92078,census_geocoder
+006WR00000wkDOVYA2,Las Flores Village,,92069,census_geocoder
+006WR00000wjnPHYAY,The Curry Road Apartments,,85288,census_geocoder
+006WR00000wkAsHYAU,Town Chandler,,85224,census_geocoder
+006WR00000wkBpAYAU,Oakview Apartments,,76502,census_geocoder
+006WR00000wkDsJYAU,Courtyard 72,,68114,census_geocoder
+006WR00000yviUqYAI,Village At Leucadia HOA,,92024,census_geocoder
+006WR00000wkA6nYAE,Raintree Apartments,,68154,census_geocoder
+006WR00000wkDO5YAM,Valle at Park,,92027,census_geocoder
+006WR00000wkDOvYAM,Rowan Apartments,,92025,census_geocoder
+006WR00000wkBUIYA2,5452-5466 S. Ellis Avenue,,60615,census_geocoder
+006WR00000wkBouYAE,Metropolitan Park,,98104,census_geocoder
+006WR00000wkBoUYAU,Long Pond Village,,12306,census_geocoder
+006WR00000wkCm4YAE,Artisan Village Apartments,,76177,census_geocoder
+006WR00000wj8KtYAI,5229 S. Drexel Avenue,,60615,census_geocoder
+006WR00000wkBUTYA2,5512 S. Hyde Park Boulevard,,60637,census_geocoder
+006WR00000wk9ZgYAI,Hello Apartments,,68102,census_geocoder
+006WR00000wkBntYAE,Maple Court,,60653,census_geocoder
+006WR00000wkDNJYA2,Casa Escondida,,92025,census_geocoder
+006WR00000wkDOkYAM,Lantern Crest Senior Living,,92071,census_geocoder
+006WR00000wjKG9YAM,Satori at Long Meadow,,77407,census_geocoder
+006WR00000wkC6tYAE,Madison Apartments,,85201,census_geocoder
+006WR00000wkBoJYAU,Mallard Court,,22309,census_geocoder
+006WR00000wkBUiYAM,918 E. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wkA6XYAU,Fox Ridge,,68164,census_geocoder
+006WR00000ywTYXYA2,978 Hygeia Ave,,92024,census_geocoder
+006WR00000wkBotYAE,Edgewood Park,,98007,census_geocoder
+006WR00000wkArhYAE,Perry & Rio Salado,,85288,census_geocoder
+006WR00000wkBo3YAE,The Sutherland,,60615,census_geocoder
+006WR00000wjKFxYAM,Auberry at Twin Creeks,,75013,census_geocoder
+006WR00000wkDOMYA2,Woodland Village,,92069,census_geocoder
+006WR00000wk9ZsYAI,Maplewood Estates,,68164,census_geocoder
+006WR00000wkBFmYAM,Skyview Terrace,,17543,census_geocoder
+006WR00000wkDOXYA2,Eaves San Marcos,,92069,census_geocoder
+006WR00000wkDMuYAM,Poway Villas,,92064,census_geocoder
+006WR00000wkDO7YAM,Solana at Grand,,92027,census_geocoder
+006WR00000wjqCgYAI,Parks on the Green,,76504,census_geocoder
+006WR00000wkDOxYAM,Summer Creek Apartments,,92026,census_geocoder
+006WR00000wkDtyYAE,Cambria Apartments,,85233,census_geocoder
+006WR00000wk9UnYAI,Encinitas Terrace Senior Apts,,92024,census_geocoder
+006WR00000wkDOBYA2,Reidy Creek,,92026,census_geocoder
+006WR00000wkBUKYA2,5468-70 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wk9ZRYAY,Bluffs at Cherry Hills,,68122,census_geocoder
+006WR00000wkDObYAM,Renaissance Villas,,92069,census_geocoder
+006WR00000wkDs7YAE,Tuscany Hills,,92069,census_geocoder
+006WR00000wkDNlYAM,Birch Hills Apartments,,92821,census_geocoder
+006WR00000wkDLtYAM,Olympus Town Center,,76248,census_geocoder
+006WR00000wjqDRYAY,Vance at Bishop Union,,75208,census_geocoder
+006WR00000wkBnrYAE,Branch Creek Apartments,,75006,census_geocoder
+006WR00000wkBoHYAU,Woods Edge Apartments,,20851,census_geocoder
+006WR00000wkBp4YAE,Avocado Court,,92026,census_geocoder
+006WR00000wkA8OYAU,Elan Solana Pointe,,92075,census_geocoder
+006WR00000wkDNLYA2,Hidden Cove Apartments,,92029,census_geocoder
+006WR00000wkA6mYAE,The Biltmore Apartments,,68154,census_geocoder
+006WR00000wkBUVYA2,5528-5532 S. Everett Avenue,,60637,census_geocoder
+006WR00000wkDNaYAM,Westlake Village,,92069,census_geocoder
+006WR00000wkDOmYAM,Town Center Apts,,92071,census_geocoder
+006WR00000wk9SvYAI,Park_Place,,76543,census_geocoder
+006WR00000wjKGCYA2,Volterra at Westlake,,77084,census_geocoder
+006WR00000wkBUJYA2,5457-5459 S. Blackstone Avenue,,60615,census_geocoder
+006WR00000wkC7aYAE,Butler Ridge,,85302,census_geocoder
+006WR00000wkDswYAE,Crown Tower,,68104,census_geocoder
+006WR00000wkDs6YAE,Rancho Santa Fe Village,,92078,census_geocoder
+006WR00000wkDNkYAM,Avalon Brea Place,,92821,census_geocoder
+006WR00000wj8KGYAY,4455 Greenwood Avenue,,60653,census_geocoder
+006WR00000wk9RtYAI,117 and 121 E Avenue A Apartments,,76541,census_geocoder
+006WR00000wkBUuYAM,3440 S Cottage Grove,,60616,census_geocoder
+006WR00000wk9TlYAI,Lanikai Lane,,92011,census_geocoder
+006WR00000wkDNvYAM,The Arbors,,92071,census_geocoder
+006WR00000wkArSYAU,Peppermill Lofts,,81501,census_geocoder
+006WR00000wkDNKYA2,Friendly Hills Mobile Manor,,92027,census_geocoder
+006WR00000wkC6uYAE,Oak Knoll Villas,,78228,census_geocoder
+006WR00000wkBUUYA2,5524-5526 S. Everett Avenue,,60637,census_geocoder
+006WR00000wkBUjYAM,925 E. 46th Street Apartments,,60653,census_geocoder
+006WR00000yvdF2YAI,Shamrock Mobile Estates,,92024,census_geocoder
+006WR00000wkA6WYAU,Dundee Flats,,68132,census_geocoder
+006WR00000ywT2HYAU,Village Park HOA,,92024,census_geocoder
+006WR00000wkBVAYA2,1440-1450 E. 52nd Street,,60615,census_geocoder
+006WR00000wkBnhYAE,Drexel Grand,,60615,census_geocoder
+006WR00000wkCjGYAU,Country Club Villas ESCONDIDO,,92026,census_geocoder
+006WR00000wj8KRYAY,5053 S. Ellis Avenue,,60615,census_geocoder
+006WR00000wkDNVYA2,Alora Apartments,,92069,census_geocoder
+006WR00000wjnm6YAA,Mission View Manor West,,92058,census_geocoder
+006WR00000wkBU5YAM,5355-5361 S. Cottage Grove,,60615,census_geocoder
+006WR00000wk9ZhYAI,Whispering Ridge,,68116,census_geocoder
+006WR00000wj8KhYAI,5120 S. Hyde Park Boulevard,,60637,census_geocoder
+006WR00000wkBFYYA2,Baxters,,16001,census_geocoder
+006WR00000wkDOWYA2,Widsor Manor II,,92069,census_geocoder
+006WR00000wkA6LYAU,Mission Flats,,92058,census_geocoder
+006WR00000wjqCrYAI,Midtown,,76504,census_geocoder
+006WR00000wkAk5YAE,Flower Fields,,92010,census_geocoder
+006WR00000wkBTtYAM,5325 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wkBV6YAM,Carlyle,,95054,census_geocoder
+006WR00000wkDMJYA2,Beacon Hill Apartments,,68134,census_geocoder
+006WR00000wkDOwYAM,Lilac Hills Ranch,,92026,census_geocoder
+006WR00000yvU0RYAU,3152 Levante,,92009,census_geocoder
+006WR00000wkDs8YAE,Whittier Affordable,,80205,census_geocoder
+006WR00000wkBFFYA2,Luxor MHP,,15601,census_geocoder
+006WR00000wkDNxYAM,Alta Cima Apartment Homes,,92027,census_geocoder
+006WR00000wkBo7YAE,Aberdeen at Bellmar,,75231,census_geocoder
+006WR00000wkDNmYAM,Country Woods Apartment Homes,,92821,census_geocoder
+006WR00000wkBoxYAE,Redmond Place Apartments,,98052,census_geocoder
+006WR00000wkDNBYA2,Sunset Trails,,92071,census_geocoder
+006WR00000wkDNMYA2,Valle at Mission,,92025,census_geocoder
+006WR00000wkDNbYAM,Twin Oaks Valley Park,,92069,census_geocoder
+006WR00000wkBUrYAM,3445 S Rhodes Ave,,60616,census_geocoder
+006WR00000wjnPOYAY,Riviera Court,,68112,census_geocoder
+006WR00000wk9TkYAI,Laurel Tree Apartments,,92011,census_geocoder
+006WR00000wk9ZjYAI,Highpoint,,68134,census_geocoder
+006WR00000wjnPDYAY,Northbend,,85281,census_geocoder
+006WR00000wkBUGYA2,5427 S. Greenwood,,60615,census_geocoder
+006WR00000wkAkOYAU,The Ash at the Branch,,75206,census_geocoder
+006WR00000wkBURYA2,5507-5509 S. Hyde Park Boulevard,,60637,census_geocoder
+006WR00000wkBoLYAU,The Village at Elkridge,,20164,census_geocoder
+006WR00000wkDOyYAM,Villa Madeira,,92029,census_geocoder
+006WR00000wkDNXYA2,Copper Creek Apartment Homes,,92078,census_geocoder
+006WR00000wkCjHYAU,Rancho San Luis Rey 55+,,92058,census_geocoder
+006WR00000wjKGRYA2,Falls At Borough Park,,77380,census_geocoder
+006WR00000wkBUqYAM,Canfield Apartments,,12831,census_geocoder
+006WR00000wkDNWYA2,Barham Villas,,92078,census_geocoder
+006WR00000wkBnAYAU,Solstice on the Park,,60615,census_geocoder
+006WR00000wkBoXYAU,Grover Cleveland Apartments,,12208,census_geocoder
+006WR00000wkC6qYAE,Ten01 on the Lake,,85288,census_geocoder
+006WR00000wk9ZiYAI,Midtown Crossing Contemporary Apartments,,68131,census_geocoder
+006WR00000wjnPEYAY,Marquis at Chandler,,85224,census_geocoder
+006WR00000wkBUFYA2,5416 S. Woodlawn Avenue,,60615,census_geocoder
+006WR00000ywLuMYAU,Flair Encinitas HOA,,92024,census_geocoder
+006WR00000yur0lYAA,1342 Eolus Ave,,92024,census_geocoder
+006WR00000wkBUfYAM,5706-10 S. Blackstone Ave,,60637,census_geocoder
+006WR00000wkBUQYA2,5501 S. Cornell,,60637,census_geocoder
+006WR00000wkAkNYAU,Cedar at the Branch,,75206,census_geocoder
+006WR00000wkBoMYAU,Churchill on the Park,,75251,census_geocoder
+006WR00000wkBnwYAE,Shoreland,,60615,census_geocoder
+006WR00000wkAsPYAU,Skyview,,85281,census_geocoder
+006WR00000wkA6UYAU,Whispering Hills,,68164,census_geocoder
+006WR00000wk3P3YAI,Whitewater II,,83702,census_geocoder
+006WR00000wk9ZtYAI,Wellington Park,,68164,census_geocoder
+006WR00000wkDONYA2,Windsor Manor I,,92069,census_geocoder
+006WR00000wkBU1YAM,5337 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wkBnlYAE,East Park Tower,,60615,census_geocoder
+006WR00000wkDNwYAM,Crosscreek,,92026,census_geocoder
+006WR00000wj8KlYAI,5202-5210 S. Cornell Avenue,,60615,census_geocoder
+006WR00000wk3OgYAI,Summit Lake,,85224,census_geocoder
+006WR00000wkBV2YAM,1358 E. 58th Street,,60637,census_geocoder
+006WR00000wkDMVYA2,The Dorel,,76542,census_geocoder
+006WR00000wkA6kYAE,Preserve at Evans Place [Tudor Heights],,68134,census_geocoder
+006WR00000wkClvYAE,Westminster,,78731,census_geocoder
+006WR00000wkDOCYA2,Oak Hill Apartments,,92027,census_geocoder
+006WR00000wkDO8YAM,Summit Apartments,,92025,census_geocoder
+006WR00000wjqCYYAY,Josey Place Apartments,,75006,census_geocoder
+006WR00000wkBUsYAM,Adams Park Apartments,,12208,census_geocoder
+006WR00000wkACHYA2,Maryland Lakes,,85301,census_geocoder
+006WR00000wj8KkYAI,5128-5132 S. Cornell Avenue,,60615,census_geocoder
+006WR00000wk9TjYAI,Villas at Carlsbad,,92008,census_geocoder
+006WR00000wkBoVYAU,Homeroom Lofts,,12018,census_geocoder
+006WR00000wkBUHYA2,5429 S. Woodlawn Avenue,,60615,census_geocoder
+006WR00000wjnPFYAY,Skye Tempe,,85281,census_geocoder
+006WR00000wjqDEYAY,Ridgeline Townhomes,,75006,census_geocoder
+006WR00000wkA76YAE,One East Tucson,,85701,census_geocoder
+006WR00000wkBolYAE,Apple Creek Apartments,,68144,census_geocoder
+006WR00000wkBUSYA2,5508 S. Cornell Avenue,,60637,census_geocoder
+006WR00000wkBUhYAM,5715-5725 S. Kimbark Avenue,,60637,census_geocoder
+006WR00000wk9ZvYAI,The Reserve at The Knolls,,68154,census_geocoder
+006WR00000wkDNYYA2,Casitas Del Sol,,92078,census_geocoder
+006WR00000wkBnuYAE,Paramour,,60615,census_geocoder
+006WR00000wkClmYAE,The Grandon,,76541,census_geocoder
+006WR00000wkAsgYAE,The Aubrey,,85288,census_geocoder
+006WR00000wkBpxYAE,Kendall Villas,,75220,census_geocoder
+006WR00000wkDOpYAM,Altair,,92029,census_geocoder
+006WR00000wk3P5YAI,Sapphire on the Talbot,,98055,census_geocoder
+006WR00000wkBnjYAE,Drexel Terrace,,60615,census_geocoder
+006WR00000wkDNdYAM,Viewpoint Luxury Apartments,,92078,census_geocoder
+006WR00000wj8KvYAI,5234-5244 S. Ingleside Avenue,,60615,census_geocoder
+006WR00000wkDOPYA2,Grandon Village,,92078,census_geocoder
+006WR00000wkDNyYAM,Alta Vista,,92026,census_geocoder
+006WR00000wkBowYAE,Overlook at Lakemont,,98006,census_geocoder
+006WR00000wkBV4YAM,Amber Court,,94555,census_geocoder
+006WR00000wkDOeYAM,Calligraphy,,92821,census_geocoder
+006WR00000wkDOEYA2,Westwinds MHP,,92025,census_geocoder
+006WR00000wkClMYAU,Southcastle Apartments,,76541,census_geocoder
+006WR00000wk3P4YAI,River House at the Trailhead,,99216,census_geocoder
+006WR00000wkA6TYAU,Mission View Manor,,92058,census_geocoder
+006WR00000wk9ZuYAI,Stonegate Park,,68164,census_geocoder
+006WR00000wj8KuYAI,5232 S. Hyde Park,,60637,census_geocoder
+006WR00000wkDNcYAM,San Marcos View Estates,,92078,census_geocoder
+006WR00000wjKFzYAM,Aura Benbrook,,76126,census_geocoder
+006WR00000wkDOOYA2,Paseo Del Oro,,92069,census_geocoder
+006WR00000wkBovYAE,Nightingale,,98052,census_geocoder
+006WR00000wjqD0YAI,Wildwood Villas,,76502,census_geocoder
+006WR00000wkA6IYAU,Piraeus Point,,92024,census_geocoder
+006WR00000wkBV3YAM,1400 E. 57th Street,,60616,census_geocoder
+006WR00000wkA6jYAE,JC Wade Senior Villas,,68111,census_geocoder
+006WR00000wkDOzYAM,Palomar Heights,,92025,census_geocoder
+006WR00000wkBoAYAU,Woodlawn Terrace,,60615,census_geocoder
+006WR00000wkDODYA2,Escondido Terrace MHP,,92027,census_geocoder
+006WR00000wkDMwYAM,Hillside Village Apartments,,92064,census_geocoder
+006WR00000wkDO9YAM,The Terraces at Escondido,,92026,census_geocoder
+006WR00000wkBpmYAE,Oaks Apartments,,77859,census_geocoder
+006WR00000wkDNNYA2,Manzanita Apartments,,92027,census_geocoder
+006WR00000wkDNnYAM,Birchwood Village Apartment Homes,,92821,census_geocoder
+006WR00000wkDP0YAM,Valley Parkway MHP,,92027,census_geocoder
+006WR00000wk9TiYAI,Portola Senior Housing,,92010,census_geocoder
+006WR00000wj8KJYAY,5301-5307 S. Maryland Avenue,,60615,census_geocoder
+006WR00000wkDNCYA2,La Roca Plaza,,92071,census_geocoder
+006WR00000wjnmCYAQ,Summit Townomes,,68114,census_geocoder
+006WR00000wkA75YAE,Grand View Apartments,,52302,census_geocoder
+006WR00000wkDMBYA2,Rivery Park,,78628,census_geocoder
+006WR00000wkDOoYAM,Laurel Park,,92071,census_geocoder
+006WR00000wj8KoYAI,Siena Apartments,,76132,census_geocoder
+006WR00000wkBUoYAM,Cornell Terrace,,60615,census_geocoder
+006WR00000wkDNeYAM,San Marcos Mobile Estates,,92078,census_geocoder
+006WR00000wkDOQYA2,Villa Serena Apartments,,92069,census_geocoder
+006WR00000wj8KdYAI,5350-5358 S. Maryland,,60615,census_geocoder
+006WR00000wkBoZYAU,Squaw Creek MHP,,52302,census_geocoder
+006WR00000wkAC6YAM,Elan Shadowridge Meadows,,92081,census_geocoder
+006WR00000wkBUdYAM,5700 S. Blackstone,,60637,census_geocoder
+006WR00000ywSvpYAE,Encinitas Town and Country Business Park,,92024,census_geocoder
+006WR00000wkDtRYAU,Mac's Mobile Home Park,,76559,census_geocoder
+006WR00000wkDOFYA2,Village Grove Apartments,,92025,census_geocoder
+006WR00000wkC7EYAU,Green Oak Villas,,92081,census_geocoder
+006WR00000wkDMyYAM,Stone Arbor,,92058,census_geocoder
+006WR00000wkBnyYAE,The Blackwood,,60615,census_geocoder
+006WR00000wkA6SYAU,Old Mill Apartments,,68154,census_geocoder
+006WR00000wkBoOYAU,Potomac Garden,,20164,census_geocoder
+006WR00000wkDNPYA2,Hadley Apartments,,92026,census_geocoder
+006WR00000wk9ZaYAI,Garden Valley Court,,68110,census_geocoder
+006WR00000wkBUOYA2,5500 S. Cornell,,60637,census_geocoder
+006WR00000wkCkAYAU,Florence Towers,,68110,census_geocoder
+006WR00000wkBUzYAM,1154-56 E. 56th Street,,60637,census_geocoder
+006WR00000wkDNpYAM,Town and Country,,92821,census_geocoder
+006WR00000wkDP2YAM,Heritage Park Escondido Senior LIving,,92027,census_geocoder
+006WR00000wkA97YAE,Arbol Residences of Santa Rosa,,95403,census_geocoder
+006WR00000wkDNEYA2,Greystone Ridge Townhomes,,92071,census_geocoder
+006WR00000wjqDNYAY,The Brooke Apartments,,76502,census_geocoder
+006WR00000wkBFtYAM,58 Space Garden Spot Mobile Home Park,,85204,census_geocoder
+006WR00000wjqD9YAI,Summit Ridge,,76502,census_geocoder
+006WR00000wkBTnYAM,5300 South Drexel,,60615,census_geocoder
+006WR00000wkBV0YAM,1321 E. 57th St,,60637,census_geocoder
+006WR00000wkBnnYAE,Greenwood 5201,,60615,census_geocoder
+006WR00000wkBUZYA2,5535 S. Kimbark Avenue,,60637,census_geocoder
+006WR00000wkBoDYAU,Bell Katy Trail,,75201,census_geocoder
+006WR00000wkDOqYAM,Woodlake Apartments,,92027,census_geocoder
+006WR00000wk3PFYAY,Liberty Manor,,78642,census_geocoder
+006WR00000wk9SrYAI,Cottonwood Apartments East,,68132,census_geocoder
+006WR00000yvxC6YAI,Hygeia Court HOA,,92024,census_geocoder
+006WR00000wkBoPYAU,Axis at Wycliff,,75219,census_geocoder
+006WR00000wkCkBYAU,Evans Tower,,68110,census_geocoder
+006WR00000wkDNDYA2,Woodglen Vista Apartments,,92071,census_geocoder
+006WR00000wkDNOYA2,Park,,92025,census_geocoder
+006WR00000wkBUNYA2,5487-5491 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wk9ThYAI,The Tradition,,92011,census_geocoder
+006WR00000wkACBYA2,Oak Manor,,92084,census_geocoder
+006WR00000wkDNoYAM,Rancho Brea,,92821,census_geocoder
+006WR00000wkDP1YAM,Imperial Escondido Mobile Estates,,92027,census_geocoder
+006WR00000wkBUyYAM,1101 E. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wjKG4YAM,Hangar 19,,76155,census_geocoder
+006WR00000wkA74YAE,Goldfinch Meadows,,52404,census_geocoder
+006WR00000wj8KyYAI,5237-5245 S. Kenwood Avenue,,60615,census_geocoder
+006WR00000wkDOfYAM,Country Hills Apartment Homes,,92821,census_geocoder
+006WR00000wkBnoYAE,Harper Court,,60615,census_geocoder
+006WR00000wkBUYYA2,5533 S. Blackstone,,60637,census_geocoder
+006WR00000wkAVYYA2,French Quarter,,80224,census_geocoder
+006WR00000wjqCcYAI,Peters Colony apartments,,75007,census_geocoder
+006WR00000wkDO0YAM,Hendrix Apartments,,92026,census_geocoder
+006WR00000ywTa9YAE,127 W Glaucus St - A,,92024,census_geocoder
+006WR00000yvv0eYAA,Coral Cove HOA,,92024,census_geocoder
+006WR00000wk9ZlYAI,Springhill Ridge in Omaha,,68136,census_geocoder
+006WR00000wjnPMYAY,The Mill,,68104,census_geocoder
+006WR00000wk9ZLYAY,Old Grove,,92057,census_geocoder
+006WR00000wkBU9YAM,5401-5409 S. Cottage Grove Avenue,,60615,census_geocoder
+006WR00000wkC6YYAU,The Centerline Apartments,,68106,census_geocoder
+006WR00000wj8KYYAY,5100-5120 S. Ellis Avenue,,60615,census_geocoder
+006WR00000wk9ZwYAI,Tranquility Pointe,,68164,census_geocoder
+006WR00000wkBpqYAE,The Cooper Apartments,,76104,census_geocoder
+006WR00000ywTDZYA2,512-514 Via De La Valle,,92075,census_geocoder
+006WR00000ywSuDYAU,Santa Fe Business Park,,92024,census_geocoder
+006WR00000wk3P2YAI,Westdale Court Apartments,,52404,census_geocoder
+006WR00000wkBFJYA2,Sunny Creek Estates,,14511,census_geocoder
+006WR00000wkDNQYA2,Mobile Park West,,92027,census_geocoder
+006WR00000wkBoNYAU,Austin Bluff,,75236,census_geocoder
+006WR00000wj8KMYAY,5049 S. Drexel Boulevard,,60615,census_geocoder
+006WR00000wjKG3YAM,Satori Frisco,,75033,census_geocoder
+006WR00000wkA96YAE,Birchway Quarry Falls Apartments,,76179,census_geocoder
+006WR00000wkAVAYA2,Copper Kettle/Paradise Valley Ranch,,85032,census_geocoder
+006WR00000wkDNFYA2,Highline Apartment,,92071,census_geocoder
+006WR00000wjnPCYAY,Norte Town Lake,,85288,census_geocoder
+006WR00000wkAkPYAU,Camden Greenville,,75206,census_geocoder
+006WR00000wkBV1YAM,1323 E. 57th St,,60616,census_geocoder
+006WR00000wkDOhYAM,Heritage Plaza,,92821,census_geocoder
+006WR00000wkA6hYAE,Citadel Apartments,,68127,census_geocoder
+006WR00000wkBnmYAE,Ellis Court,,60615,census_geocoder
+006WR00000wk9SqYAI,Hunter's Glen Apartments,,76542,census_geocoder
+006WR00000wk9S0YAI,Kirshenbaum Apartments,,68132,census_geocoder
+006WR00000wkAsNYAU,Dobson Towne Centre Apartments,,85224,census_geocoder
+006WR00000wkDO2YAM,Madera Ridge,,92026,census_geocoder
+006WR00000wkBo8YAE,Woodlawn Court,,60615,census_geocoder
+006WR00000wkBooYAE,Parcwood,,92882,census_geocoder
+006WR00000wj8KnYAI,5218-5220 S. Kimbark Avenue,,60615,census_geocoder
+006WR00000wkDNqYAM,Vintage Canyon Senior Apartments,,92821,census_geocoder
+006WR00000wkDP3YAM,Eastwood Meadows,,92027,census_geocoder
+006WR00000wkBnWYAU,Country Club Apartments,,75006,census_geocoder
+006WR00000wk9ZyYAI,Camelot VI,,68134,census_geocoder
+006WR00000wkBU0YAM,5336-5338 S. Hyde Park Boulevard,,60615,census_geocoder
+006WR00000wkDO1YAM,Rancho Escondido MHP,,92026,census_geocoder
+006WR00000wj8KbYAI,5111 S. Kimbark Avenue,,60615,census_geocoder
+006WR00000wk9ZmYAI,Torello on Maple,,68164,census_geocoder
+006WR00000wkBo9YAE,Crest at Park Central,,75251,census_geocoder
+006WR00000wjqDCYAY,The Gardens Of Josey Lane,,75006,census_geocoder
+006WR00000wkDtsYAE,The Cliffs at Canyon Ridge,,84401,census_geocoder
+006WR00000wkAk0YAE,Windsor Aviara,,92011,census_geocoder
+006WR00000wkDORYA2,Royal Oaks Senior Living,,92069,census_geocoder
+006WR00000wjKGSYA2,Frisco Satori,,75033,census_geocoder
+006WR00000wkBTyYAM,5335-5345 S. Kimbark Avenue,,60615,census_geocoder
+006WR00000wkDOrYAM,The Willows,,92027,census_geocoder
+006WR00000wkA6QYAU,Oak Brook Park Apartments,,68137,census_geocoder
+006WR00000wkCjxYAE,La Costa View,,92009,census_geocoder
+006WR00000wkDNfYAM,Madrid Manor,,92069,census_geocoder
+006WR00000wjnPdYAI,Walnut Manor,,15478,census_geocoder
+006WR00000wjKG2YAM,Bridgeport,,75227,census_geocoder
+006WR00000wkBUEYA2,5415 S. Woodlawn Avenue,,60615,census_geocoder
+006WR00000wkBoyYAE,Vue Kirkland,,98034,census_geocoder
+006WR00000yvVsYYAU,3156 Levante,,92009,census_geocoder
+006WR00000wkC7qYAE,Lunar Bear 454 West,,85201,census_geocoder
+006WR00000wk9ZXYAY,Elan Playa Mar Apartment Homes,,92024,census_geocoder
+006WR00000wkA6gYAE,Atlas Apartments,,68131,census_geocoder
+006WR00000wkDOgYAM,Brea Woods Senior Apartments,,92821,census_geocoder
+006WR00000wkDOGYA2,Westmont Town Court,,92025,census_geocoder
+006WR00000wkC7FYAU,Green Valley MHP,,92081,census_geocoder
+006WR00000wk9SpYAI,Carmel Creekside,,76137,census_geocoder

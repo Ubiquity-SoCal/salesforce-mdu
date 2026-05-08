@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>SMB ROE - By State</name>
+    <reportType>CustomEntity$Property_Location__c</reportType>
+    <format>Summary</format>
+    <showDetails>true</showDetails>
+    <columns><field>CUST_NAME</field></columns>
+    <columns><field>Property_Location__c.City__c</field></columns>
+    <columns><field>Property_Location__c.Property_Unit_Count__c</field><aggregateTypes>Sum</aggregateTypes></columns>
+    <columns><field>Property_Location__c.Build_Effort__c</field></columns>
+    <columns><field>Property_Location__c.FF_Sales_Assigned_Date__c</field></columns>
+    <columns><field>Property_Location__c.User__c</field></columns>
+    <columns><field>Property_Location__c.ROE_Status__c</field></columns>
+    <columns><field>Property_Location__c.Property_Type__c</field></columns>
+    <groupingsDown>
+        <field>Property_Location__c.State__c</field>
+        <dateGranularity>Day</dateGranularity>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <filter>
+        <criteriaItems><column>Property_Location__c.FF_Sales_Project__c</column><columnToColumn>false</columnToColumn><isUnlocked>true</isUnlocked><operator>equals</operator><value>SMB ROE</value></criteriaItems>
+        <criteriaItems><column>Property_Location__c.Import_Delete_Property__c</column><columnToColumn>false</columnToColumn><isUnlocked>true</isUnlocked><operator>equals</operator><value>0</value></criteriaItems>
+    </filter>
+</Report>

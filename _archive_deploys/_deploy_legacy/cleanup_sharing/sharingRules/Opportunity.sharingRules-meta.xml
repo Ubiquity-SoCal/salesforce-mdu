@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>MDU_Business_Cleanup_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>MDU/Business Cleanup Edit</label>
+        <sharedTo>
+            <group>MDU_Business_Cleanup_Editors</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>MDU_ROE_All_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

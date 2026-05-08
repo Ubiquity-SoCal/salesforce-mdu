@@ -1,0 +1,21 @@
+st_id,st_project_number,st_site_name,st_norm,opp_id,opp_name,opp_stage,matched_via,matched_norm,score,bucket
+a0FWR00000V7AC82AN,P-006320,Omaha_MDU_4704 Cass St,4704 cass st,006WR00000xvwoUYAQ,Omaha_MDU_4704 Cass St,Closed Lost,Opp.Name,4704 cass st,100.0,AUTO
+a0FWR00000V7Wu92AF,P-005517,Omaha_MDU_4402 N 60th Ave,4402 n 60th ave,006WR000012Q2XaYAK,Omaha_MDU_4402 N 60th Ave,PAL/ROE Complete,Opp.Name,4402 n 60th ave,100.0,AUTO
+a0FWR00000V7Xbh2AF,P-005806,Omaha_MDU_4218 N 48th St Apartments,4218 n 48th st,006WR00000xuca7YAA,Omaha_MDU_621 N 48th St,Closed Lost,Opp.Name,621 n 48th st,88.88888888888889,REVIEW
+a0FWR00000V7Xrq2AF,P-006130,Omaha_MDU_4920 Capital Ave,4920 capital ave,006WR00000wjdl7YAA,IPG Capital Mountain View,Prospects,Opp.Name,ipg capital mountain view,85.5,REVIEW
+a0FWR00000VMnUr2AL,P-004454,Encinitas_MDU_Sandpiper Point,sandpiper point,006WR00000wk9SsYAI,Sandpiper Pointe,Engaged,Opp.Name,sandpiper pointe,96.7741935483871,AUTO
+a0FWR00000VMnZi2AL,P-005182,Encinitas_MDU_Encinitas_Village,encinitas village,006WR00000xwGaHYAU,Harker Heights_MDU_Village Apts,Closed Lost,Opp.Name,village,100.0,AUTO
+a0FWR00000VMnbJ2AT,P-004726,SolanaBeach_MDU_Del Mar Downs,del mar downs,006WR00000wkA8ZYAU,Del Mar Downs Condos,Prospects,Opp.Name,del mar downs condos,100.0,AUTO
+a0FWR00000VMnkz2AD,P-005541,Solana Beach_MDU_Sixth Green HOA,sixth green,006WR00000wkCjnYAE,Sixth Green Townhomes,Prospects,Opp.Name,sixth green townhomes,100.0,AUTO
+a0FWR00000VMoif2AD,P-006598,Omaha_MDU_Steelcrest Apts,steelcrest,006WR00000wkDt3YAE,Sea Crest Village Retirement Communities,Prospects,Agreement_Name,sea crest,73.6842105263158,NOMATCH
+a0FWR00000WAOLB2A5,P-006862,Killeen_MDU_117 & 121 W Avenue A,117 & 121 w avenue a,006WR00000wk9RtYAI,117 and 121 E Avenue A Apartments,Marketing/Bulk Complete,Opp.Name,117 and 121 e avenue a,88.88888888888889,REVIEW
+a0FWR00000WbwH72AJ,P-006876,Omaha_MDU_4750 LAFAYETTE AVE,4750 lafayette ave,006WR00000xvRuNYAU,Omaha_MDU_4501 Lafayette Ave,Closed Lost,Opp.Name,4501 lafayette ave,94.44444444444444,AUTO
+a0FWR00000XH7i12AD,P-000978,TX_DFW_THE_MCCALIP_GROUP,group,006WR00000Tq6yIYAR,Skinner Clouse Group,Under Contract,Opp.Name,skinner clouse group,100.0,AUTO
+a0FWR00000XH7wX2AT,P-002501,CA_CARLSBAD_SA07_FB03_SunnyCreekApts,sunnycreekapts,006WR00000wkBFJYA2,Sunny Creek Estates,Prospects,Opp.Name,sunny creek estates,78.78787878787878,NOMATCH
+a0FWR00000XH84b2AD,P-003329,CALIFORNIA_TEST_SITE,site,006WR00000xumrOYAQ,New Added Site,PAL/ROE Complete,Opp.Name,new added site,100.0,AUTO
+a0FWR00000XH8cT2AT,P-003643,CALIFORNIA_TEST_SITE,site,006WR00000xumrOYAQ,New Added Site,PAL/ROE Complete,Opp.Name,new added site,100.0,AUTO
+a0FWR00000XH9VJ2A1,P-004313,TX_DFW_Feeder_Decatur_MDU_Eagle Ridge Terrace,eagle ridge terrace,006WR00000wjnlwYAA,The Ridge Apartments,Prospects,Opp.Name,ridge,100.0,AUTO
+a0FWR00000XH9Wv2AL,P-004315,TX_DFW_Feeder_Azle_MDU_Eagle Lake,eagle lake,006WR00000wkEcZYAU,Eagle Lake Garden Apartments,Marketing/Bulk Complete,Opp.Name,eagle lake garden,100.0,AUTO
+a0FWR00000XH9gb2AD,P-005598,Mesa_MDU_Hallcraft Villas Mesa 2,hallcraft villas mesa 2,006WR00000wk1EnYAI,Hallcraft Villas Mesa 1,Marketing/Bulk Complete,Agreement_Name,hallcraft villas mesa,100.0,AUTO
+a0FWR00000YiZXx2AN,P-006898,Mesa_MDU_Woodglen Square Condo II,woodglen square condo ii,006WR00000wkDtwYAE,Woodglen Square ll,PAL/ROE Complete,Agreement_Name,woodglen square condo ii,100.0,AUTO
+a0FWR00000YiZZZ2A3,P-006899,Omaha_MDU_360 Skyview-2,360 skyview 2,006WR00000wkAsPYAU,Skyview,Prospects,Opp.Name,skyview,100.0,AUTO

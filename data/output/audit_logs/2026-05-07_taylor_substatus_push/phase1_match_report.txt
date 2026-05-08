@@ -1,0 +1,29 @@
+Substatus push — Phase 1 dry-run  (2026-05-07T14:22:52.382987)
+
+Source xlsx: C:\Users\cass\Downloads\Take 2 MDU Sales Review (Living) - TM updates 5.4.xlsx
+
+Substatus updates planned:  191
+  Maps to existing picklist value: 4
+  Needs new picklist value:        187 (will fail until deploy lands)
+
+Sales_Status updates planned:  1
+
+Substatus value distribution:
+  ISP or Funding Needed: 182 [NEEDS PL DEPLOY]
+  Incumbent EMA: 4 [NEEDS PL DEPLOY]
+  Bulk/Marketing Rejected: 3
+  No Marketing/Bulk Needed: 1 [NEEDS PL DEPLOY]
+  Owner Unresponsive: 1
+
+Substatus values per stage:
+  [Marketing/Bulk Complete] ISP or Funding Needed: 53
+  [Marketing/Bulk Complete] Incumbent EMA: 3
+  [Marketing/Bulk In Progress] ISP or Funding Needed: 1
+  [PAL/ROE Complete] ISP or Funding Needed: 128
+  [PAL/ROE Complete] Bulk/Marketing Rejected: 3
+  [PAL/ROE Complete] Incumbent EMA: 1
+  [PAL/ROE Complete] No Marketing/Bulk Needed: 1
+  [PAL/ROE Complete] Owner Unresponsive: 1
+
+Sales_Status updates:
+  [PAL/ROE Complete] [Marty Samuels] Stonebridge Gardens: -> Contact Pending

@@ -1,0 +1,16 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action,Note
+a0BWR000008Xk7W2AS,ROE - 10110 NICHOLAS ST OMAHA NE,Status__c,Review,Sign,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=sign
+a0BWR000008XlOY2A0,ROE - 7010 N 97TH CIR OMAHA NE,Status__c,Review,Sign,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=sign
+a0BWR000008XnQM2A0,ROE - 2653 W GUADALUPE RD MESA AZ,Status__c,Review,Completed,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=evergreen IC.stage=None
+a0BWR000008Xnmv2AC,ROE - 1745 S ALMA SCHOOL RD MESA AZ,Status__c,Review,Completed,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=evergreen IC.stage=None
+a0BWR000008XnoX2AS,ROE - 1660 S ALMA SCHOOL RD MESA AZ,Status__c,Review,Completed,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=evergreen IC.stage=None
+a0BWR000008Xnq92AC,ROE - 10000 CALIFORNIA ST OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xnrl2AC,ROE - 7410 N 30TH ST OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008XntN2AS,ROE - 6901 DODGE ST OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xnuz2AC,ROE - 7101 NEWPORT AVE OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xnwb2AC,ROE - 6910 PACIFIC ST OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008XnyD2AS,ROE - 6916 N 97TH CIR OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xnzp2AC,ROE - 6910 PACIFIC ST OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xo1R2AS,ROE - 1110 S 71ST ST OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xo332AC,ROE - 9300 UNDERWOOD AVE OMAHA NE,Status__c,Review,Cancelled,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=cancelled
+a0BWR000008Xo6H2AS,ROE - 1837 W GUADALUPE RD MESA AZ,Status__c,Review,Sign,fix_business_roe_agreement_status_2026-04-27.py,2026-04-27T08:49:08,UPDATE,IC.contract=None IC.stage=sign

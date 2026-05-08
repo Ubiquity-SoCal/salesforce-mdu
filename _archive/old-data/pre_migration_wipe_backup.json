@@ -1,0 +1,3815 @@
+{
+  "timestamp": "2026-03-23T12:23:29.747637",
+  "purpose": "Pre-migration wipe of MDU test data",
+  "agreements": [
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lqqM2AQ"
+      },
+      "Id": "a0BWR000007lqqM2AQ",
+      "Name": "AGR-0014",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000udaZhYAI"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lrGA2AY"
+      },
+      "Id": "a0BWR000007lrGA2AY",
+      "Name": "AGR-0001",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Under Review",
+      "Opportunity__c": "006WR00000STzxgYAD"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvmn2AA"
+      },
+      "Id": "a0BWR000007lvmn2AA",
+      "Name": "AGR-0000",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000STzxgYAD"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvoP2AQ"
+      },
+      "Id": "a0BWR000007lvoP2AQ",
+      "Name": "AGR-0002",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Drafted",
+      "Opportunity__c": "006WR00000STzxgYAD"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvq12AA"
+      },
+      "Id": "a0BWR000007lvq12AA",
+      "Name": "AGR-0003",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SV2GlYAL"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvrd2AA"
+      },
+      "Id": "a0BWR000007lvrd2AA",
+      "Name": "AGR-0004",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Under Review",
+      "Opportunity__c": "006WR00000SV2GlYAL"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvtF2AQ"
+      },
+      "Id": "a0BWR000007lvtF2AQ",
+      "Name": "AGR-0005",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Drafted",
+      "Opportunity__c": "006WR00000SV2GlYAL"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvur2AA"
+      },
+      "Id": "a0BWR000007lvur2AA",
+      "Name": "AGR-0006",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SiYltYAF"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvwT2AQ"
+      },
+      "Id": "a0BWR000007lvwT2AQ",
+      "Name": "AGR-0007",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Under Review",
+      "Opportunity__c": "006WR00000SiYltYAF"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvy52AA"
+      },
+      "Id": "a0BWR000007lvy52AA",
+      "Name": "AGR-0008",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Drafted",
+      "Opportunity__c": "006WR00000SiYltYAF"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lvzh2AA"
+      },
+      "Id": "a0BWR000007lvzh2AA",
+      "Name": "AGR-0009",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ucJz5YAE"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lw1J2AQ"
+      },
+      "Id": "a0BWR000007lw1J2AQ",
+      "Name": "AGR-0010",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ucJz5YAE"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lw2v2AA"
+      },
+      "Id": "a0BWR000007lw2v2AA",
+      "Name": "AGR-0011",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ucJz5YAE"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lw4X2AQ"
+      },
+      "Id": "a0BWR000007lw4X2AQ",
+      "Name": "AGR-0012",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000udaZhYAI"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lw692AA"
+      },
+      "Id": "a0BWR000007lw692AA",
+      "Name": "AGR-0013",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000udaZhYAI"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lw7l2AA"
+      },
+      "Id": "a0BWR000007lw7l2AA",
+      "Name": "AGR-0015",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ueUAQYA2"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lw9N2AQ"
+      },
+      "Id": "a0BWR000007lw9N2AQ",
+      "Name": "AGR-0016",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ueUAQYA2"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwAz2AI"
+      },
+      "Id": "a0BWR000007lwAz2AI",
+      "Name": "AGR-0017",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ueUAQYA2"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwCb2AI"
+      },
+      "Id": "a0BWR000007lwCb2AI",
+      "Name": "AGR-0018",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SNUwXYAX"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwED2AY"
+      },
+      "Id": "a0BWR000007lwED2AY",
+      "Name": "AGR-0019",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SNUwXYAX"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwFp2AI"
+      },
+      "Id": "a0BWR000007lwFp2AI",
+      "Name": "AGR-0020",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SNUwXYAX"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwHR2AY"
+      },
+      "Id": "a0BWR000007lwHR2AY",
+      "Name": "AGR-0021",
+      "Agreement_Type__c": "Bulk",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SNUwXYAX"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwJ32AI"
+      },
+      "Id": "a0BWR000007lwJ32AI",
+      "Name": "AGR-0022",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SUnnxYAD"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwKf2AI"
+      },
+      "Id": "a0BWR000007lwKf2AI",
+      "Name": "AGR-0023",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SUnnxYAD"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwMH2AY"
+      },
+      "Id": "a0BWR000007lwMH2AY",
+      "Name": "AGR-0024",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SUnnxYAD"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwNt2AI"
+      },
+      "Id": "a0BWR000007lwNt2AI",
+      "Name": "AGR-0025",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SjfoTYAR"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwPV2AY"
+      },
+      "Id": "a0BWR000007lwPV2AY",
+      "Name": "AGR-0026",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SjfoTYAR"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwR72AI"
+      },
+      "Id": "a0BWR000007lwR72AI",
+      "Name": "AGR-0027",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SjfoTYAR"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwSj2AI"
+      },
+      "Id": "a0BWR000007lwSj2AI",
+      "Name": "AGR-0028",
+      "Agreement_Type__c": "Bulk",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000SjfoTYAR"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwUL2AY"
+      },
+      "Id": "a0BWR000007lwUL2AY",
+      "Name": "AGR-0029",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ucvOQYAY"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwVx2AI"
+      },
+      "Id": "a0BWR000007lwVx2AI",
+      "Name": "AGR-0030",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ucvOQYAY"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwXZ2AY"
+      },
+      "Id": "a0BWR000007lwXZ2AY",
+      "Name": "AGR-0031",
+      "Agreement_Type__c": "EMA",
+      "Status__c": "Signed",
+      "Opportunity__c": "006WR00000ucvOQYAY"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwZB2AY"
+      },
+      "Id": "a0BWR000007lwZB2AY",
+      "Name": "AGR-0032",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Requested",
+      "Opportunity__c": "006WR00000ucC3BYAU"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwan2AA"
+      },
+      "Id": "a0BWR000007lwan2AA",
+      "Name": "AGR-0033",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Requested",
+      "Opportunity__c": "006WR00000ucEpoYAE"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007lwcP2AQ"
+      },
+      "Id": "a0BWR000007lwcP2AQ",
+      "Name": "AGR-0034",
+      "Agreement_Type__c": "PAL",
+      "Status__c": "Not Started",
+      "Opportunity__c": "006WR00000ucTlaYAE"
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000007u38r2AA"
+      },
+      "Id": "a0BWR000007u38r2AA",
+      "Name": "AGR-0035",
+      "Agreement_Type__c": "ROE",
+      "Status__c": "Requested",
+      "Opportunity__c": "006WR00000ucEpoYAE"
+    }
+  ],
+  "opportunity_contacts": [
+    {
+      "attributes": {
+        "type": "Opportunity_Contact__c",
+        "url": "/services/data/v59.0/sobjects/Opportunity_Contact__c/a0EWR0000082Dsb2AE"
+      },
+      "Id": "a0EWR0000082Dsb2AE",
+      "Name": "OC-0000",
+      "Opportunity__c": "006WR00000udaZhYAI",
+      "Contact__c": "003WR000013bU8CYAU",
+      "Role__c": "Property Manager"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity_Contact__c",
+        "url": "/services/data/v59.0/sobjects/Opportunity_Contact__c/a0EWR0000083Zkb2AE"
+      },
+      "Id": "a0EWR0000083Zkb2AE",
+      "Name": "OC-0001",
+      "Opportunity__c": "006WR00000udaZhYAI",
+      "Contact__c": "003WR000013xiNlYAI",
+      "Role__c": null
+    },
+    {
+      "attributes": {
+        "type": "Opportunity_Contact__c",
+        "url": "/services/data/v59.0/sobjects/Opportunity_Contact__c/a0EWR0000083iUX2AY"
+      },
+      "Id": "a0EWR0000083iUX2AY",
+      "Name": "OC-0002",
+      "Opportunity__c": "006WR00000udaZhYAI",
+      "Contact__c": "003WR000013yVYAYA2",
+      "Role__c": "Other"
+    }
+  ],
+  "mdu_opportunities": [
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucC3BYAU"
+      },
+      "Id": "006WR00000ucC3BYAU",
+      "Name": "Town East",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "11464022779",
+      "Units__c": 24.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Zephyr Road",
+      "Property_City__c": "Killeen",
+      "Property_State__c": null,
+      "Property_Zip__c": null,
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:10.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucEpoYAE"
+      },
+      "Id": "006WR00000ucEpoYAE",
+      "Name": "Capitol Ave Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "9419859769",
+      "Units__c": 7.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Capitol Avenue",
+      "Property_City__c": "Omaha",
+      "Property_State__c": "Nebraska",
+      "Property_Zip__c": "68132",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:15.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucJz5YAE"
+      },
+      "Id": "006WR00000ucJz5YAE",
+      "Name": "CitiFront Apartments",
+      "StageName": "Ready for Engineering",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3785522182",
+      "Units__c": 166.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "West North Temple Street",
+      "Property_City__c": "Salt Lake City",
+      "Property_State__c": "Utah",
+      "Property_Zip__c": "84116",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucKjsYAE"
+      },
+      "Id": "006WR00000ucKjsYAE",
+      "Name": "La Costa Paloma",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4008128613",
+      "Units__c": 180.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Dove Lane",
+      "Property_City__c": "Carlsbad",
+      "Property_State__c": "California",
+      "Property_Zip__c": "92009",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:17.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucTlaYAE"
+      },
+      "Id": "006WR00000ucTlaYAE",
+      "Name": "The Veranda at Twin Creek Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4163670461",
+      "Units__c": 88.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "North Twin Creek Drive",
+      "Property_City__c": "Killeen",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76543",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:13.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucjDgYAI"
+      },
+      "Id": "006WR00000ucjDgYAI",
+      "Name": "Rivers Edge",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "8373856621",
+      "Units__c": 92.0,
+      "Property_Type__c": "Single Family Rental Homes",
+      "Property_Address__c": "Stone Mountain Road",
+      "Property_City__c": "Georgetown",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78626",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:12.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucmppYAA"
+      },
+      "Id": "006WR00000ucmppYAA",
+      "Name": "Temple Square Apts",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4283128306",
+      "Units__c": 152.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "South Horne",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85204",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:14.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucsyVYAQ"
+      },
+      "Id": "006WR00000ucsyVYAQ",
+      "Name": "Hazel Park",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "10909025393",
+      "Units__c": 29.0,
+      "Property_Type__c": "Manufactured Homes",
+      "Property_Address__c": "Stillhouse Lake Road",
+      "Property_City__c": "Harker Heights",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76548",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:11.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ucvOQYAY"
+      },
+      "Id": "006WR00000ucvOQYAY",
+      "Name": "Equinox on Country Club",
+      "StageName": "Under Construction",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4536033872",
+      "Units__c": 196.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "North Country Club Drive",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85201",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:21.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000uczqHYAQ"
+      },
+      "Id": "006WR00000uczqHYAQ",
+      "Name": "Trailpoint by Trion Living / Trailpoint on Highline",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "5887613575",
+      "Units__c": 198.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "East Virginia Avenue",
+      "Property_City__c": "Aurora",
+      "Property_State__c": "Colorado",
+      "Property_Zip__c": "80012",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:20.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udDmlYAE"
+      },
+      "Id": "006WR00000udDmlYAE",
+      "Name": "120 Sunset Dr",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "11005114785",
+      "Units__c": 5.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Sunset Drive",
+      "Property_City__c": "Encinitas",
+      "Property_State__c": "California",
+      "Property_Zip__c": "92024",
+      "OwnerId": "005WR000003CD6DYAW",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:10.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udGO3YAM"
+      },
+      "Id": "006WR00000udGO3YAM",
+      "Name": "Linea Stillwater",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4823483266",
+      "Units__c": 230.0,
+      "Property_Type__c": "Single Family Rental Homes",
+      "Property_Address__c": "Big Rocky Bend",
+      "Property_City__c": "Georgetown",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78626",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:11.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udMEwYAM"
+      },
+      "Id": "006WR00000udMEwYAM",
+      "Name": "Enclave Villas Condominiums",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "9607274384",
+      "Units__c": 210.0,
+      "Property_Type__c": "Condos",
+      "Property_Address__c": "North 36th Street",
+      "Property_City__c": "Phoenix",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85008",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udS5uYAE"
+      },
+      "Id": "006WR00000udS5uYAE",
+      "Name": "Artistry on 10th",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "9707416973",
+      "Units__c": 307.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "South 10th Street",
+      "Property_City__c": "Minneapolis",
+      "Property_State__c": "Minnesota",
+      "Property_Zip__c": "55403",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udTrcYAE"
+      },
+      "Id": "006WR00000udTrcYAE",
+      "Name": "Olympus Waterford",
+      "StageName": "Closed Won",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3136295928",
+      "Units__c": 187.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Bourland Road",
+      "Property_City__c": "Keller",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76248",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udaZhYAI"
+      },
+      "Id": "006WR00000udaZhYAI",
+      "Name": "Waterstone Apartments",
+      "StageName": "Ready for Engineering",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4210794018",
+      "Units__c": 269.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "South Dobson Road",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85202",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:20.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udchuYAA"
+      },
+      "Id": "006WR00000udchuYAA",
+      "Name": "Chateau Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "6728339344",
+      "Units__c": 39.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "15th Avenue Northeast",
+      "Property_City__c": "Shoreline",
+      "Property_State__c": "Washington",
+      "Property_Zip__c": "98007",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:12.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udnBvYAI"
+      },
+      "Id": "006WR00000udnBvYAI",
+      "Name": "Oakwood Apartments",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "5170801057",
+      "Units__c": 48.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Rhodes Road",
+      "Property_City__c": "Brownwood",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76801",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udnqGYAQ"
+      },
+      "Id": "006WR00000udnqGYAQ",
+      "Name": "Skyview Townhomes",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4232646417",
+      "Units__c": 110.0,
+      "Property_Type__c": "Townhomes",
+      "Property_Address__c": "South Dobson Road",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85202",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:14.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udoJJYAY"
+      },
+      "Id": "006WR00000udoJJYAY",
+      "Name": "Mission Cove Apartments X",
+      "StageName": "Closed Lost",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3898731186",
+      "Units__c": 150.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Anchor Way",
+      "Property_City__c": "Oceanside",
+      "Property_State__c": "California",
+      "Property_Zip__c": "92054",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:24.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udzGLYAY"
+      },
+      "Id": "006WR00000udzGLYAY",
+      "Name": "Arco and Pilare",
+      "StageName": "Closed Lost",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3105046842",
+      "Units__c": 350.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Bell Gin Road",
+      "Property_City__c": "Georgetown",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78626",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:24.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000udzHuYAI"
+      },
+      "Id": "006WR00000udzHuYAI",
+      "Name": "Davenport Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "9419719151",
+      "Units__c": 15.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Davenport Street",
+      "Property_City__c": "Omaha",
+      "Property_State__c": "Nebraska",
+      "Property_Zip__c": "68132",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:15.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ue7fGYAQ"
+      },
+      "Id": "006WR00000ue7fGYAQ",
+      "Name": "Kirshenbaum Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "10778511382",
+      "Units__c": 15.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "California Street",
+      "Property_City__c": "Omaha",
+      "Property_State__c": "Nebraska",
+      "Property_Zip__c": null,
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:12.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ue8HyYAI"
+      },
+      "Id": "006WR00000ue8HyYAI",
+      "Name": "Villages of Georgetown",
+      "StageName": "Closed Lost",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3105046493",
+      "Units__c": 438.0,
+      "Property_Type__c": null,
+      "Property_Address__c": "Westinghouse Road",
+      "Property_City__c": "Georgetown",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78626",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ue8LEYAY"
+      },
+      "Id": "006WR00000ue8LEYAY",
+      "Name": "Palmero by the Park (f/k/a Overlook by the Park)",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3161368443",
+      "Units__c": 384.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Farm to Market Road 423",
+      "Property_City__c": "Frisco",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "75034",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:17.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ue99EYAQ"
+      },
+      "Id": "006WR00000ue99EYAQ",
+      "Name": "Cielo II Apartments",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3157990031",
+      "Units__c": 554.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Ranch Road 620",
+      "Property_City__c": "Austin",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78738",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueDCoYAM"
+      },
+      "Id": "006WR00000ueDCoYAM",
+      "Name": "Ballantrae Apartments",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "7418742231",
+      "Units__c": 204.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Ballantrae Road",
+      "Property_City__c": "Eagan",
+      "Property_State__c": "Minnesota",
+      "Property_Zip__c": "55122",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:21.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueDuMYAU"
+      },
+      "Id": "006WR00000ueDuMYAU",
+      "Name": "Park Village West",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "18070718837",
+      "Units__c": 54.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Everett Street",
+      "Property_City__c": "Arvada",
+      "Property_State__c": "Colorado",
+      "Property_Zip__c": "80002",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:15.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueLv9YAE"
+      },
+      "Id": "006WR00000ueLv9YAE",
+      "Name": "424 Avenida Granada",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "11005102223",
+      "Units__c": 8.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Avenida Granada",
+      "Property_City__c": "San Clemente",
+      "Property_State__c": "California",
+      "Property_Zip__c": "92672",
+      "OwnerId": "005WR000003CD6DYAW",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:11.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueO9qYAE"
+      },
+      "Id": "006WR00000ueO9qYAE",
+      "Name": "The Retreat at City Center",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "7081914671",
+      "Units__c": 225.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "South Cimarron Way",
+      "Property_City__c": "Aurora",
+      "Property_State__c": "Colorado",
+      "Property_Zip__c": "80012",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:21.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueQmkYAE"
+      },
+      "Id": "006WR00000ueQmkYAE",
+      "Name": "Southwest Patio Home Apartments",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "6214309772",
+      "Units__c": 66.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Jordan Loop",
+      "Property_City__c": "Chubbuck",
+      "Property_State__c": "Idaho",
+      "Property_Zip__c": "83202",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:18.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueUAQYA2"
+      },
+      "Id": "006WR00000ueUAQYA2",
+      "Name": "Holiday Village Manufactured Home Village",
+      "StageName": "Ready for Engineering",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4227070498",
+      "Units__c": 578.0,
+      "Property_Type__c": "Manufactured Homes",
+      "Property_Address__c": "South Dobson Road",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85202",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:20.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueUvBYAU"
+      },
+      "Id": "006WR00000ueUvBYAU",
+      "Name": "117 and 121 E Avenue A Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "11464066235",
+      "Units__c": 10.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "East Avenue A",
+      "Property_City__c": "Killeen",
+      "Property_State__c": null,
+      "Property_Zip__c": null,
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:09.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueV1dYAE"
+      },
+      "Id": "006WR00000ueV1dYAE",
+      "Name": "Sunterra Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3961462775",
+      "Units__c": 240.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Sherbourne Drive",
+      "Property_City__c": "Oceanside",
+      "Property_State__c": "California",
+      "Property_Zip__c": null,
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:13.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueV3FYAU"
+      },
+      "Id": "006WR00000ueV3FYAU",
+      "Name": "Woodglen Square l",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4209617677",
+      "Units__c": 192.0,
+      "Property_Type__c": "Condos",
+      "Property_Address__c": "West Guadalupe Road",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85210",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:13.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueV4rYAE"
+      },
+      "Id": "006WR00000ueV4rYAE",
+      "Name": "Hidden Valley Apartments",
+      "StageName": "Prospecting",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "18070719224",
+      "Units__c": 91.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "West 137th Street",
+      "Property_City__c": "Savage",
+      "Property_State__c": "Minnesota",
+      "Property_Zip__c": "55378",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:14.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueV85YAE"
+      },
+      "Id": "006WR00000ueV85YAE",
+      "Name": "The M at Lakeline",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3161346835",
+      "Units__c": 374.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Lakeline Mall Drive",
+      "Property_City__c": "Austin",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78717",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:17.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVBJYA2"
+      },
+      "Id": "006WR00000ueVBJYA2",
+      "Name": "High Country Villas 5&7",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "6707062274",
+      "Units__c": 115.0,
+      "Property_Type__c": "Condos",
+      "Property_Address__c": "Forestdale Drive",
+      "Property_City__c": "Encinitas",
+      "Property_State__c": "California",
+      "Property_Zip__c": "92024",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:18.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVEXYA2"
+      },
+      "Id": "006WR00000ueVEXYA2",
+      "Name": "500 NE 70th",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "4543077517",
+      "Units__c": 19.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Weedin Place Northeast",
+      "Property_City__c": "Seattle",
+      "Property_State__c": "Washington",
+      "Property_Zip__c": "98115",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:18.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVG9YAM"
+      },
+      "Id": "006WR00000ueVG9YAM",
+      "Name": "San Montego Luxury Apartments",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "5716138751",
+      "Units__c": 241.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "East Superstition Springs Boulevard",
+      "Property_City__c": "Mesa",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85206",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVHlYAM"
+      },
+      "Id": "006WR00000ueVHlYAM",
+      "Name": "The Turn Apartments",
+      "StageName": "Under Contract",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "6081559754",
+      "Units__c": 166.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "North 19th Avenue",
+      "Property_City__c": "Phoenix",
+      "Property_State__c": "Arizona",
+      "Property_Zip__c": "85023",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVJNYA2"
+      },
+      "Id": "006WR00000ueVJNYA2",
+      "Name": "Avalon Wolf Ranch (f/k/a Retreat at Wolf Ranch)",
+      "StageName": "Closed Won",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3061363457",
+      "Units__c": 303.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Wolf Ranch Parkway",
+      "Property_City__c": "Georgetown",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78628",
+      "OwnerId": "005WR00000CXEZyYAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVKzYAM"
+      },
+      "Id": "006WR00000ueVKzYAM",
+      "Name": "Lost Spurs",
+      "StageName": "Closed Won",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3061795508",
+      "Units__c": 240.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Alta Vista Road",
+      "Property_City__c": "Roanoke",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76262",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVMbYAM"
+      },
+      "Id": "006WR00000ueVMbYAM",
+      "Name": "Grand Estates at Keller",
+      "StageName": "Closed Won",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3136295755",
+      "Units__c": 160.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "North Tarrant Parkway",
+      "Property_City__c": "Keller",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76244",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVODYA2"
+      },
+      "Id": "006WR00000ueVODYA2",
+      "Name": "Lexington Place (Monterey)",
+      "StageName": "Closed Won",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3136295823",
+      "Units__c": 330.0,
+      "Property_Type__c": "Manufactured Homes",
+      "Property_Address__c": "Rancho Place",
+      "Property_City__c": "Fort Worth",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "76244",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVPpYAM"
+      },
+      "Id": "006WR00000ueVPpYAM",
+      "Name": "Reveal 54",
+      "StageName": "Closed Lost",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3105046596",
+      "Units__c": 418.0,
+      "Property_Type__c": null,
+      "Property_Address__c": "North Mays Street",
+      "Property_City__c": "Georgetown",
+      "Property_State__c": "Texas",
+      "Property_Zip__c": "78626",
+      "OwnerId": "005WR00000CXIX7YAP",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000ueVRRYA2"
+      },
+      "Id": "006WR00000ueVRRYA2",
+      "Name": "Shores At McIntosh Lake",
+      "StageName": "Closed Lost",
+      "Agreement_Name__c": null,
+      "Monday_Item_ID__c": "3785464940",
+      "Units__c": 280.0,
+      "Property_Type__c": "Apartments",
+      "Property_Address__c": "Airport Road",
+      "Property_City__c": "Longmont",
+      "Property_State__c": "Colorado",
+      "Property_Zip__c": "80503",
+      "OwnerId": "005WR000002ieYTYAY",
+      "AccountId": null,
+      "CreatedDate": "2026-03-10T19:42:24.000+0000"
+    }
+  ],
+  "mdu_note_links": [
+    {
+      "ContentDocumentId": "069WR0000152Na0YAE",
+      "LinkedEntityId": "006WR00000ucC3BYAU"
+    },
+    {
+      "ContentDocumentId": "069WR0000153SkPYAU",
+      "LinkedEntityId": "006WR00000ucC3BYAU"
+    },
+    {
+      "ContentDocumentId": "069WR000015qRDdYAM",
+      "LinkedEntityId": "006WR00000ucJz5YAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152x0jYAA",
+      "LinkedEntityId": "006WR00000udDmlYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000151NcFYAU",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000151ZOgYAM",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000151hsdYAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000151iv7YAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000151rbvYAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR00001524HOYAY",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR00001524R5YAI",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR000015258cYAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152JzSYAU",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152SWQYA2",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152iXyYAI",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152j0zYAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152uvmYAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152yZXYAY",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000152yrGYAQ",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR00001536rwYAA",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153CPVYA2",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153EzAYAU",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153HPDYA2",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153JfTYAU",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153RGRYA2",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153YhiYAE",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153ZYzYAM",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153ajWYAQ",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR0000153bNpYAI",
+      "LinkedEntityId": "006WR00000udTrcYAE"
+    },
+    {
+      "ContentDocumentId": "069WR00001513ySYAQ",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR000015171AYAQ",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151NlmYAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151PytYAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151Z5cYAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151dhBYAQ",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151gmnYAA",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151oIxYAI",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000151vQvYAI",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR00001520ouYAA",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR00001529PLYAY",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152A6gYAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152F6LYAU",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152VPUYA2",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152Wq9YAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152ccJYAQ",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152temYAA",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000152tl8YAA",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR00001533SfYAI",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000153BOdYAM",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000153Ki0YAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000153KrhYAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000153ZykYAE",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000153aGUYAY",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR0000153b1FYAQ",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR000015AdJmYAK",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    },
+    {
+      "ContentDocumentId": "069WR000015AipSYAS",
+      "LinkedEntityId": "006WR00000udaZhYAI"
+    }
+  ],
+  "cass_contacts": [
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013L5QjYAK"
+      },
+      "Id": "003WR000013L5QjYAK",
+      "FirstName": "Shakeera",
+      "LastName": "Powell",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Consultant",
+      "CreatedDate": "2026-03-10T19:44:32.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LahSYAS"
+      },
+      "Id": "003WR000013LahSYAS",
+      "FirstName": "Eric",
+      "LastName": "Scheffer",
+      "Email": "eric@schefferproperties.com",
+      "Phone": "512-413-3117",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:31.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LcHoYAK"
+      },
+      "Id": "003WR000013LcHoYAK",
+      "FirstName": "Ben",
+      "LastName": "Miller",
+      "Email": "ben@fundrise.com",
+      "Phone": "(202) 584-0055",
+      "AccountId": null,
+      "Title": "CEO",
+      "CreatedDate": "2026-03-10T19:44:10.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LdFVYA0"
+      },
+      "Id": "003WR000013LdFVYA0",
+      "FirstName": "Tony",
+      "LastName": "Nguyen",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:32.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LejRYAS"
+      },
+      "Id": "003WR000013LejRYAS",
+      "FirstName": "Vikram",
+      "LastName": "Brar",
+      "Email": "vikram@waahecapital.com",
+      "Phone": "313-330-9028",
+      "AccountId": null,
+      "Title": "Owner",
+      "CreatedDate": "2026-03-10T19:44:28.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Ll1oYAC"
+      },
+      "Id": "003WR000013Ll1oYAC",
+      "FirstName": "Michael",
+      "LastName": "Kilroy",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:14.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LpNAYA0"
+      },
+      "Id": "003WR000013LpNAYA0",
+      "FirstName": "Marty",
+      "LastName": "Barassi",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LqhTYAS"
+      },
+      "Id": "003WR000013LqhTYAS",
+      "FirstName": "BIKRAN",
+      "LastName": "SANDHU",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:21.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LrOyYAK"
+      },
+      "Id": "003WR000013LrOyYAK",
+      "FirstName": "Madison (Matty)",
+      "LastName": "Brooks",
+      "Email": "madison.brooks@bridgepm.com",
+      "Phone": "480-659-3400",
+      "AccountId": null,
+      "Title": "Property manager",
+      "CreatedDate": "2026-03-10T19:44:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LrjrYAC"
+      },
+      "Id": "003WR000013LrjrYAC",
+      "FirstName": "Serena (Reg",
+      "LastName": "Mgr)",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:01.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LueXYAS"
+      },
+      "Id": "003WR000013LueXYAS",
+      "FirstName": "Rachel",
+      "LastName": "Arrington",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:25.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Lx2vYAC"
+      },
+      "Id": "003WR000013Lx2vYAC",
+      "FirstName": "Paul",
+      "LastName": "Van",
+      "Email": "paul.van@croataninvestments.com",
+      "Phone": "757) 965-6801 X207",
+      "AccountId": null,
+      "Title": "CEO, Chief Investment Officer",
+      "CreatedDate": "2026-03-10T19:44:10.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LxJ2YAK"
+      },
+      "Id": "003WR000013LxJ2YAK",
+      "FirstName": "David",
+      "LastName": "Shepherd",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:20.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LxkTYAS"
+      },
+      "Id": "003WR000013LxkTYAS",
+      "FirstName": "Krystal",
+      "LastName": "Mora",
+      "Email": null,
+      "Phone": "(817) 746-6500",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:06.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013LzrAYAS"
+      },
+      "Id": "003WR000013LzrAYAS",
+      "FirstName": "Dennis",
+      "LastName": "Andersen",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:29.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013M0yXYAS"
+      },
+      "Id": "003WR000013M0yXYAS",
+      "FirstName": "Martin",
+      "LastName": "Stroble",
+      "Email": "martin@someraroadinc.com",
+      "Phone": "(646) 880-6126",
+      "AccountId": "001WR00001AVKCRYA5",
+      "Title": "Vice President - Construction",
+      "CreatedDate": "2026-03-10T19:44:08.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013M38OYAS"
+      },
+      "Id": "003WR000013M38OYAS",
+      "FirstName": "Tracy",
+      "LastName": "Blumenthal",
+      "Email": "tracyblumenthal777@gmail.com",
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Customer",
+      "CreatedDate": "2026-03-10T19:44:05.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013M4ihYAC"
+      },
+      "Id": "003WR000013M4ihYAC",
+      "FirstName": "The Carroll",
+      "LastName": "Companies",
+      "Email": "info@thecarrollcompanies.com",
+      "Phone": "(336) 274-8531",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:36.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013M5jeYAC"
+      },
+      "Id": "003WR000013M5jeYAC",
+      "FirstName": "Mid-America Apartment",
+      "LastName": "Communitites",
+      "Email": null,
+      "Phone": "(901) 682-6600",
+      "AccountId": null,
+      "Title": "REIT",
+      "CreatedDate": "2026-03-10T19:44:36.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013M97GYAS"
+      },
+      "Id": "003WR000013M97GYAS",
+      "FirstName": "Monse",
+      "LastName": "Marion",
+      "Email": "monsecarl@yahoo.com",
+      "Phone": "512-507-6671",
+      "AccountId": null,
+      "Title": "Owner",
+      "CreatedDate": "2026-03-10T19:44:30.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013M9VXYA0"
+      },
+      "Id": "003WR000013M9VXYA0",
+      "FirstName": "Daniel",
+      "LastName": "Oberste",
+      "Email": "daniel.oberste@bsrtrust.com",
+      "Phone": "(501) 371-6321 (m)",
+      "AccountId": "001WR00001AWPRkYAP",
+      "Title": "REIT",
+      "CreatedDate": "2026-03-10T19:44:09.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MAXzYAO"
+      },
+      "Id": "003WR000013MAXzYAO",
+      "FirstName": "Pat",
+      "LastName": "Whitaker",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:13.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MC5BYAW"
+      },
+      "Id": "003WR000013MC5BYAW",
+      "FirstName": "Mirtha",
+      "LastName": "Chaparro.",
+      "Email": "payables@azmgr.com",
+      "Phone": "480-827-2500",
+      "AccountId": null,
+      "Title": "Property manager",
+      "CreatedDate": "2026-03-10T19:44:28.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MCDCYA4"
+      },
+      "Id": "003WR000013MCDCYA4",
+      "FirstName": "Scott",
+      "LastName": "Polzin",
+      "Email": "spolzin@forefrontliving.org",
+      "Phone": "214-413-1574",
+      "AccountId": "001WR00001AWnYqYAL",
+      "Title": "Customer",
+      "CreatedDate": "2026-03-10T19:43:59.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MCJlYAO"
+      },
+      "Id": "003WR000013MCJlYAO",
+      "FirstName": "Mushtak",
+      "LastName": "Khatri",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:27.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MCRnYAO"
+      },
+      "Id": "003WR000013MCRnYAO",
+      "FirstName": "Ken",
+      "LastName": "Crawford",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Business Devlopment",
+      "CreatedDate": "2026-03-10T19:44:04.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MDXUYA4"
+      },
+      "Id": "003WR000013MDXUYA4",
+      "FirstName": "Karin",
+      "LastName": "Martin",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:24.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MDcMYAW"
+      },
+      "Id": "003WR000013MDcMYAW",
+      "FirstName": "Jeffrey",
+      "LastName": "Fink",
+      "Email": null,
+      "Phone": "512-240-5401",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:01.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MDdzYAG"
+      },
+      "Id": "003WR000013MDdzYAG",
+      "FirstName": "Candice",
+      "LastName": "Osmeyer",
+      "Email": "manager@watersedgeapts-georgetown.com",
+      "Phone": "(512) 948-1990",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:10.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MEzpYAG"
+      },
+      "Id": "003WR000013MEzpYAG",
+      "FirstName": "Heather",
+      "LastName": "McGill",
+      "Email": "heather.mcgill@assetliving.com",
+      "Phone": "2546301030",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:03.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MIH4YAO"
+      },
+      "Id": "003WR000013MIH4YAO",
+      "FirstName": "Melissa",
+      "LastName": "Jordan",
+      "Email": "mjordan@pmg-service.com",
+      "Phone": "480-829-7400, ext 2203",
+      "AccountId": null,
+      "Title": "Community Manager",
+      "CreatedDate": "2026-03-10T19:44:26.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MIfNYAW"
+      },
+      "Id": "003WR000013MIfNYAW",
+      "FirstName": "Judy",
+      "LastName": "Watson",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013ML22YAG"
+      },
+      "Id": "003WR000013ML22YAG",
+      "FirstName": "Russ /",
+      "LastName": "Stephen",
+      "Email": null,
+      "Phone": null,
+      "AccountId": "001WR00001AXIHeYAP",
+      "Title": "General Manager (Texas)",
+      "CreatedDate": "2026-03-10T19:44:07.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013ML23YAG"
+      },
+      "Id": "003WR000013ML23YAG",
+      "FirstName": "Pete",
+      "LastName": "Greason",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MLd9YAG"
+      },
+      "Id": "003WR000013MLd9YAG",
+      "FirstName": "Taylor",
+      "LastName": "Mauney",
+      "Email": "taylor@ubiquitygp.com",
+      "Phone": "14797217982",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:34.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MMioYAG"
+      },
+      "Id": "003WR000013MMioYAG",
+      "FirstName": "Matt",
+      "LastName": "Laird",
+      "Email": "matt@assetessentials.com",
+      "Phone": "210-979-6674",
+      "AccountId": null,
+      "Title": "Director of Account Management",
+      "CreatedDate": "2026-03-10T19:44:20.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MNzwYAG"
+      },
+      "Id": "003WR000013MNzwYAG",
+      "FirstName": "Jeramy",
+      "LastName": "Sahnow",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:28.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MOnqYAG"
+      },
+      "Id": "003WR000013MOnqYAG",
+      "FirstName": "Rich",
+      "LastName": "Orcutt",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:25.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MRp0YAG"
+      },
+      "Id": "003WR000013MRp0YAG",
+      "FirstName": "Ryan",
+      "LastName": "McCarty",
+      "Email": "r.mccarty@ccgconsult.com",
+      "Phone": "(856) 495-4028",
+      "AccountId": "001WR00001AWIRrYAP",
+      "Title": "Corporate Counsel",
+      "CreatedDate": "2026-03-10T19:44:06.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MXj6YAG"
+      },
+      "Id": "003WR000013MXj6YAG",
+      "FirstName": "DHI",
+      "LastName": "Communities",
+      "Email": null,
+      "Phone": "(480) 368-2360",
+      "AccountId": null,
+      "Title": "Builder",
+      "CreatedDate": "2026-03-10T19:44:38.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MY8tYAG"
+      },
+      "Id": "003WR000013MY8tYAG",
+      "FirstName": "Lauren",
+      "LastName": "Coleman",
+      "Email": "lauren@assetessentials.com",
+      "Phone": "970.317.8520",
+      "AccountId": null,
+      "Title": "Senior Account Manager",
+      "CreatedDate": "2026-03-10T19:43:59.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MZjIYAW"
+      },
+      "Id": "003WR000013MZjIYAW",
+      "FirstName": "Mark",
+      "LastName": "Weaver",
+      "Email": "mweaver@ccngpro.com",
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Consultant",
+      "CreatedDate": "2026-03-10T19:44:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Ma12YAC"
+      },
+      "Id": "003WR000013Ma12YAC",
+      "FirstName": "Michael",
+      "LastName": "Joanen",
+      "Email": "michael.joanen@stoneweg.com",
+      "Phone": "(727) 339-6630",
+      "AccountId": null,
+      "Title": "Asset Manager",
+      "CreatedDate": "2026-03-10T19:44:31.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013ManQYAS"
+      },
+      "Id": "003WR000013ManQYAS",
+      "FirstName": "John",
+      "LastName": "Divine",
+      "Email": "johnd@cal-am.com",
+      "Phone": "480-832-4996",
+      "AccountId": "001WR00001AW0WWYA1",
+      "Title": "Community Manager",
+      "CreatedDate": "2026-03-10T19:44:29.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MbA4YAK"
+      },
+      "Id": "003WR000013MbA4YAK",
+      "FirstName": "Mary",
+      "LastName": "Capkanis",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:17.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mc2zYAC"
+      },
+      "Id": "003WR000013Mc2zYAC",
+      "FirstName": "Dell Loy",
+      "LastName": "Hansen",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:14.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MdIHYA0"
+      },
+      "Id": "003WR000013MdIHYA0",
+      "FirstName": "Brendan",
+      "LastName": "?",
+      "Email": null,
+      "Phone": null,
+      "AccountId": "001WR00001AX9pSYAT",
+      "Title": "Partner",
+      "CreatedDate": "2026-03-10T19:44:09.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Me38YAC"
+      },
+      "Id": "003WR000013Me38YAC",
+      "FirstName": "Mayra",
+      "LastName": "Reyes",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MeatYAC"
+      },
+      "Id": "003WR000013MeatYAC",
+      "FirstName": null,
+      "LastName": "Hines",
+      "Email": null,
+      "Phone": "(512) 688-5626",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:37.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mee9YAC"
+      },
+      "Id": "003WR000013Mee9YAC",
+      "FirstName": "Melinda",
+      "LastName": "Dishman",
+      "Email": null,
+      "Phone": "817-748-6700",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:12.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MfNIYA0"
+      },
+      "Id": "003WR000013MfNIYA0",
+      "FirstName": "Tammy",
+      "LastName": "Wilson",
+      "Email": "baycolonymanager@18cg.com",
+      "Phone": "2546906277",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:03.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mfn8YAC"
+      },
+      "Id": "003WR000013Mfn8YAC",
+      "FirstName": "Mark",
+      "LastName": "Delgado",
+      "Email": "mark.a.delgado@lumen.com",
+      "Phone": "858-805-6008",
+      "AccountId": "001WR00001AVcqsYAD",
+      "Title": "Lead Relationship Manager",
+      "CreatedDate": "2026-03-10T19:44:01.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MiEoYAK"
+      },
+      "Id": "003WR000013MiEoYAK",
+      "FirstName": "DANA",
+      "LastName": "STADELMAN",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:21.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MkA8YAK"
+      },
+      "Id": "003WR000013MkA8YAK",
+      "FirstName": "Michael J",
+      "LastName": "Wagner",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:14.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MkehYAC"
+      },
+      "Id": "003WR000013MkehYAC",
+      "FirstName": "Meeks",
+      "LastName": "Partners",
+      "Email": "info@meekspartners.com",
+      "Phone": "(281) 558-8787",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:37.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MkmoYAC"
+      },
+      "Id": "003WR000013MkmoYAC",
+      "FirstName": "Jeff Starrick, Community Manager jeff.st",
+      "LastName": "480-539-1396",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:20.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MmgZYAS"
+      },
+      "Id": "003WR000013MmgZYAS",
+      "FirstName": "Laura",
+      "LastName": "Thatcher",
+      "Email": null,
+      "Phone": "913-307-5925",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:11.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MnPgYAK"
+      },
+      "Id": "003WR000013MnPgYAK",
+      "FirstName": "Dan",
+      "LastName": "O'Connell",
+      "Email": null,
+      "Phone": null,
+      "AccountId": "001WR00001AVcqsYAD",
+      "Title": "MDU VP",
+      "CreatedDate": "2026-03-10T19:44:07.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MnaxYAC"
+      },
+      "Id": "003WR000013MnaxYAC",
+      "FirstName": "Lisa",
+      "LastName": "Niedermeier",
+      "Email": "lniedermeier@aztcorporation.com",
+      "Phone": "214-728-9703",
+      "AccountId": null,
+      "Title": "Asset Manager",
+      "CreatedDate": "2026-03-10T19:44:27.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MpclYAC"
+      },
+      "Id": "003WR000013MpclYAC",
+      "FirstName": "Michael",
+      "LastName": "Chemy",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:33.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MqSSYA0"
+      },
+      "Id": "003WR000013MqSSYA0",
+      "FirstName": "Weinstein",
+      "LastName": "Properties",
+      "Email": null,
+      "Phone": "(804) 967-5100",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:37.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MrEpYAK"
+      },
+      "Id": "003WR000013MrEpYAK",
+      "FirstName": "Mark",
+      "LastName": "Renfroe",
+      "Email": "merenfroe@gmail.com",
+      "Phone": "512-516-9306",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:30.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mu2zYAC"
+      },
+      "Id": "003WR000013Mu2zYAC",
+      "FirstName": "Bianca",
+      "LastName": "Ramon",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:24.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mum9YAC"
+      },
+      "Id": "003WR000013Mum9YAC",
+      "FirstName": "Chris",
+      "LastName": "Wetting",
+      "Email": null,
+      "Phone": "316-616-6288",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:11.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mv8kYAC"
+      },
+      "Id": "003WR000013Mv8kYAC",
+      "FirstName": "KAYLIE",
+      "LastName": "CRISS",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:21.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MxQiYAK"
+      },
+      "Id": "003WR000013MxQiYAK",
+      "FirstName": "Diane",
+      "LastName": "Gonzalez",
+      "Email": null,
+      "Phone": "817-741-6000",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:12.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013MymVYAS"
+      },
+      "Id": "003WR000013MymVYAS",
+      "FirstName": "Omar",
+      "LastName": "Boudiaf",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:17.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Mz2dYAC"
+      },
+      "Id": "003WR000013Mz2dYAC",
+      "FirstName": "Shawn",
+      "LastName": "Richeson",
+      "Email": "shawn@clickanerd.com",
+      "Phone": "(254) 230-9311",
+      "AccountId": null,
+      "Title": "Consultant",
+      "CreatedDate": "2026-03-10T19:44:05.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N1J1YAK"
+      },
+      "Id": "003WR000013N1J1YAK",
+      "FirstName": "Carl",
+      "LastName": "Turnbull",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:34.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N1ngYAC"
+      },
+      "Id": "003WR000013N1ngYAC",
+      "FirstName": "Berkshire Residential",
+      "LastName": "Investments",
+      "Email": null,
+      "Phone": "(617) 646-2300 or (737) 213-1095",
+      "AccountId": null,
+      "Title": "RE Investment Firm",
+      "CreatedDate": "2026-03-10T19:44:35.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N2eqYAC"
+      },
+      "Id": "003WR000013N2eqYAC",
+      "FirstName": "Suzanne",
+      "LastName": "Newcombe",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:34.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N2jhYAC"
+      },
+      "Id": "003WR000013N2jhYAC",
+      "FirstName": null,
+      "LastName": "RPM",
+      "Email": null,
+      "Phone": "512-480-9886",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:38.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N48nYAC"
+      },
+      "Id": "003WR000013N48nYAC",
+      "FirstName": "Mesha",
+      "LastName": "Gilbert",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:25.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N5ZVYA0"
+      },
+      "Id": "003WR000013N5ZVYA0",
+      "FirstName": "Daphnne",
+      "LastName": "Williams",
+      "Email": "daphnne@assetessentials.com",
+      "Phone": "210-979-6674",
+      "AccountId": null,
+      "Title": "Account Manager",
+      "CreatedDate": "2026-03-10T19:43:59.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N87YYAS"
+      },
+      "Id": "003WR000013N87YYAS",
+      "FirstName": "Matt",
+      "LastName": "Stevenson",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:32.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N8XKYA0"
+      },
+      "Id": "003WR000013N8XKYA0",
+      "FirstName": null,
+      "LastName": "Nancy",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013N9EtYAK"
+      },
+      "Id": "003WR000013N9EtYAK",
+      "FirstName": "Kristee",
+      "LastName": "Thomas",
+      "Email": null,
+      "Phone": "817-379-0795 or 254-977-4013",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:13.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NAHOYA4"
+      },
+      "Id": "003WR000013NAHOYA4",
+      "FirstName": "Jennifer",
+      "LastName": "Estep",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:26.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NBlLYAW"
+      },
+      "Id": "003WR000013NBlLYAW",
+      "FirstName": "Andy",
+      "LastName": "Rubin",
+      "Email": null,
+      "Phone": null,
+      "AccountId": "001WR00001AX9pSYAT",
+      "Title": "Partner",
+      "CreatedDate": "2026-03-10T19:44:09.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NBv1YAG"
+      },
+      "Id": "003WR000013NBv1YAG",
+      "FirstName": "Laurie",
+      "LastName": "Nichols",
+      "Email": "dobsongreens@gmail.com",
+      "Phone": "480-839-9079",
+      "AccountId": null,
+      "Title": "Community Manager",
+      "CreatedDate": "2026-03-10T19:44:17.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NE3GYAW"
+      },
+      "Id": "003WR000013NE3GYAW",
+      "FirstName": "Diana",
+      "LastName": "Lujan",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NEBKYA4"
+      },
+      "Id": "003WR000013NEBKYA4",
+      "FirstName": "Steve",
+      "LastName": "Yahnke",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NFLxYAO"
+      },
+      "Id": "003WR000013NFLxYAO",
+      "FirstName": "Carter",
+      "LastName": "Old",
+      "Email": null,
+      "Phone": null,
+      "AccountId": "001WR00001AWVyVYAX",
+      "Title": "Chief Strategy Officer",
+      "CreatedDate": "2026-03-10T19:44:08.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NGMsYAO"
+      },
+      "Id": "003WR000013NGMsYAO",
+      "FirstName": "Micheal",
+      "LastName": "Episcope",
+      "Email": "michael@origininvestments.com",
+      "Phone": "(312) 204-9941",
+      "AccountId": null,
+      "Title": "CEO",
+      "CreatedDate": "2026-03-10T19:44:10.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NGgDYAW"
+      },
+      "Id": "003WR000013NGgDYAW",
+      "FirstName": "Manny",
+      "LastName": "Akiva",
+      "Email": "mannyakiva@gmail.com",
+      "Phone": "5125778879",
+      "AccountId": null,
+      "Title": "CEO and Chief Investment Officer",
+      "CreatedDate": "2026-03-10T19:44:18.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NHypYAG"
+      },
+      "Id": "003WR000013NHypYAG",
+      "FirstName": "Jason",
+      "LastName": "Hagen",
+      "Email": "jhagen@cobblestoneassets.com",
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:28.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NJHcYAO"
+      },
+      "Id": "003WR000013NJHcYAO",
+      "FirstName": "Erin",
+      "LastName": "Dobias",
+      "Email": null,
+      "Phone": "682-200-8922",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:12.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NJapYAG"
+      },
+      "Id": "003WR000013NJapYAG",
+      "FirstName": "Jay",
+      "LastName": "Abbazia",
+      "Email": "jay.abbazia@broadbandagr.com",
+      "Phone": "954-889-1967",
+      "AccountId": "001WR00001AWQUEYA5",
+      "Title": "Consultant",
+      "CreatedDate": "2026-03-10T19:44:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NNOIYA4"
+      },
+      "Id": "003WR000013NNOIYA4",
+      "FirstName": "Webster",
+      "LastName": "Bell",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NPBbYAO"
+      },
+      "Id": "003WR000013NPBbYAO",
+      "FirstName": "Brad",
+      "LastName": "Ullerich",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:27.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NPd0YAG"
+      },
+      "Id": "003WR000013NPd0YAG",
+      "FirstName": "Andrew",
+      "LastName": "Spina",
+      "Email": null,
+      "Phone": "817-431-1000",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:11.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NSEJYA4"
+      },
+      "Id": "003WR000013NSEJYA4",
+      "FirstName": "Daphne",
+      "LastName": "Vanhoe",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NT0jYAG"
+      },
+      "Id": "003WR000013NT0jYAG",
+      "FirstName": "Ashley",
+      "LastName": "Romo",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:16.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NV2UYAW"
+      },
+      "Id": "003WR000013NV2UYAW",
+      "FirstName": "Gregory",
+      "LastName": "Zaniello",
+      "Email": "greg.z@ccgconsult.com",
+      "Phone": "(561) 379-5547",
+      "AccountId": "001WR00001AWIRrYAP",
+      "Title": "Consultant",
+      "CreatedDate": "2026-03-10T19:44:15.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NV7LYAW"
+      },
+      "Id": "003WR000013NV7LYAW",
+      "FirstName": "Valerie",
+      "LastName": "Hurtado",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:19.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NX17YAG"
+      },
+      "Id": "003WR000013NX17YAG",
+      "FirstName": "Jeff",
+      "LastName": "Moody",
+      "Email": "jmoody@moodynational.com",
+      "Phone": "(713) 258-1900",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:05.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NXYwYAO"
+      },
+      "Id": "003WR000013NXYwYAO",
+      "FirstName": "Pat",
+      "LastName": "Gomez",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:15.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NXh1YAG"
+      },
+      "Id": "003WR000013NXh1YAG",
+      "FirstName": "James",
+      "LastName": "Trask",
+      "Email": "jtrask@ccngpro.com",
+      "Phone": null,
+      "AccountId": null,
+      "Title": "Consultant",
+      "CreatedDate": "2026-03-10T19:44:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NXsIYAW"
+      },
+      "Id": "003WR000013NXsIYAW",
+      "FirstName": null,
+      "LastName": "NICHOLHA@gmail.com",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:26.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NYOYYA4"
+      },
+      "Id": "003WR000013NYOYYA4",
+      "FirstName": "Dee",
+      "LastName": "Leasure",
+      "Email": "mgr.remington@gpi-management.com",
+      "Phone": "2546905100",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:02.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Nc0kYAC"
+      },
+      "Id": "003WR000013Nc0kYAC",
+      "FirstName": "Trez",
+      "LastName": "Capital",
+      "Email": "info@trezcapital.com",
+      "Phone": "(604) 689-0821 or 214.545.0951",
+      "AccountId": null,
+      "Title": "RE Investment Firm",
+      "CreatedDate": "2026-03-10T19:44:39.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Ndo5YAC"
+      },
+      "Id": "003WR000013Ndo5YAC",
+      "FirstName": "Jamie",
+      "LastName": "Cruz",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:24.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Ne4AYAS"
+      },
+      "Id": "003WR000013Ne4AYAS",
+      "FirstName": "Morgan",
+      "LastName": "Group",
+      "Email": null,
+      "Phone": "(713) 361-7200",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:36.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NeLvYAK"
+      },
+      "Id": "003WR000013NeLvYAK",
+      "FirstName": "Wood",
+      "LastName": "Partners",
+      "Email": null,
+      "Phone": "(214) 593-0218 for Alta Austin Avenue or",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:38.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NfDBYA0"
+      },
+      "Id": "003WR000013NfDBYA0",
+      "FirstName": "Bryan",
+      "LastName": "Davis",
+      "Email": "bdavis@fiberfirst.com",
+      "Phone": null,
+      "AccountId": "001WR00001AXM8LYAX",
+      "Title": "Affiliate",
+      "CreatedDate": "2026-03-10T19:44:07.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NgVmYAK"
+      },
+      "Id": "003WR000013NgVmYAK",
+      "FirstName": "Jamey",
+      "LastName": "Rush",
+      "Email": "jrush@forefrontliving.org",
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:18.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NgtzYAC"
+      },
+      "Id": "003WR000013NgtzYAC",
+      "FirstName": "Brooke",
+      "LastName": "Foust",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NjyIYAS"
+      },
+      "Id": "003WR000013NjyIYAS",
+      "FirstName": "Corinne",
+      "LastName": "Markle",
+      "Email": "towerpointregistrations@cal-am.com",
+      "Phone": "480-832-4996",
+      "AccountId": "001WR00001AW0WWYA1",
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:29.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NkmKYAS"
+      },
+      "Id": "003WR000013NkmKYAS",
+      "FirstName": null,
+      "LastName": "tom",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:31.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NkpWYAS"
+      },
+      "Id": "003WR000013NkpWYAS",
+      "FirstName": "Tammy",
+      "LastName": "Williams",
+      "Email": "baycolonymanager@18cg.com",
+      "Phone": "254-690-6277",
+      "AccountId": null,
+      "Title": "Customer",
+      "CreatedDate": "2026-03-10T19:44:39.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Nl8sYAC"
+      },
+      "Id": "003WR000013Nl8sYAC",
+      "FirstName": "Adam",
+      "LastName": "Tsakonas",
+      "Email": "adam.t@ccgconsult.com",
+      "Phone": "484-686-7479",
+      "AccountId": "001WR00001AWIRrYAP",
+      "Title": "VP of Business Devlopment",
+      "CreatedDate": "2026-03-10T19:44:04.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NldWYAS"
+      },
+      "Id": "003WR000013NldWYAS",
+      "FirstName": "Trammell Crow",
+      "LastName": "Residential",
+      "Email": "info@crowholdings.com",
+      "Phone": "(512) 426-2700",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:35.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NnVeYAK"
+      },
+      "Id": "003WR000013NnVeYAK",
+      "FirstName": "Joshua",
+      "LastName": "Moon",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:22.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013No1uYAC"
+      },
+      "Id": "003WR000013No1uYAC",
+      "FirstName": "Jeffrey",
+      "LastName": "Langley",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:33.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NrEIYA0"
+      },
+      "Id": "003WR000013NrEIYA0",
+      "FirstName": "Jostin",
+      "LastName": "Burbidge",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:33.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Ns0gYAC"
+      },
+      "Id": "003WR000013Ns0gYAC",
+      "FirstName": "Tanner",
+      "LastName": "Grayham",
+      "Email": "tanner.grayham@bsrreit.com",
+      "Phone": "(501) 371-6324",
+      "AccountId": "001WR00001AWPRkYAP",
+      "Title": "Investment Analyst",
+      "CreatedDate": "2026-03-10T19:44:06.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsQTYA0"
+      },
+      "Id": "003WR000013NsQTYA0",
+      "FirstName": "Michael",
+      "LastName": "Lankford",
+      "Email": "jeffrey.fink@rpmliving.com",
+      "Phone": "2542004553",
+      "AccountId": null,
+      "Title": "REIT",
+      "CreatedDate": "2026-03-10T19:44:02.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsS5YAK"
+      },
+      "Id": "003WR000013NsS5YAK",
+      "FirstName": "Angela",
+      "LastName": "Durcan",
+      "Email": "angela.durcan@assetliving.com",
+      "Phone": "2546905755",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:02.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsWvYAK"
+      },
+      "Id": "003WR000013NsWvYAK",
+      "FirstName": "Lilly",
+      "LastName": "Arriaga",
+      "Email": "lilly.arriaga@assetliving.com",
+      "Phone": "2546805042",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-10T19:44:03.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsYXYA0"
+      },
+      "Id": "003WR000013NsYXYA0",
+      "FirstName": "Bob",
+      "LastName": "Childs",
+      "Email": "rchild@q.com",
+      "Phone": "602-679-0185",
+      "AccountId": null,
+      "Title": "HOA/POA Rep",
+      "CreatedDate": "2026-03-10T19:44:04.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsblYAC"
+      },
+      "Id": "003WR000013NsblYAC",
+      "FirstName": "Josh",
+      "LastName": "Welch",
+      "Email": "jdwelch1010@gmail.com",
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:13.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsgbYAC"
+      },
+      "Id": "003WR000013NsgbYAC",
+      "FirstName": "Mike",
+      "LastName": "Ali",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:15.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsqHYAS"
+      },
+      "Id": "003WR000013NsqHYAS",
+      "FirstName": "JoAnne",
+      "LastName": "Basham",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsrtYAC"
+      },
+      "Id": "003WR000013NsrtYAC",
+      "FirstName": "Cheree",
+      "LastName": "Hanamaikai",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:24.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Nsv7YAC"
+      },
+      "Id": "003WR000013Nsv7YAC",
+      "FirstName": "Daniel",
+      "LastName": "Duffus",
+      "Email": "davidduffus@gmail.com",
+      "Phone": "(480) 970-1910",
+      "AccountId": null,
+      "Title": "Owner",
+      "CreatedDate": "2026-03-10T19:44:26.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013NsyLYAS"
+      },
+      "Id": "003WR000013NsyLYAS",
+      "FirstName": "Brandon",
+      "LastName": "Luke",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:31.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Nt3BYAS"
+      },
+      "Id": "003WR000013Nt3BYAS",
+      "FirstName": "Mia",
+      "LastName": "Mclure",
+      "Email": null,
+      "Phone": null,
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-10T19:44:33.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013Nt6PYAS"
+      },
+      "Id": "003WR000013Nt6PYAS",
+      "FirstName": null,
+      "LastName": "BH",
+      "Email": null,
+      "Phone": "(512) 943-9456",
+      "AccountId": null,
+      "Title": "Developer / Manager",
+      "CreatedDate": "2026-03-10T19:44:38.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013bU8CYAU"
+      },
+      "Id": "003WR000013bU8CYAU",
+      "FirstName": "Test",
+      "LastName": "PropertyManager",
+      "Email": "test.pm@example.com",
+      "Phone": "555-0100",
+      "AccountId": null,
+      "Title": "Property Manager",
+      "CreatedDate": "2026-03-11T21:35:23.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013xiNlYAI"
+      },
+      "Id": "003WR000013xiNlYAI",
+      "FirstName": "New",
+      "LastName": "Name",
+      "Email": null,
+      "Phone": "714-724-5444",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-13T16:30:55.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "url": "/services/data/v59.0/sobjects/Contact/003WR000013yVYAYA2"
+      },
+      "Id": "003WR000013yVYAYA2",
+      "FirstName": "Test 2",
+      "LastName": "Test Name",
+      "Email": "test@test.com",
+      "Phone": "111-111-1111",
+      "AccountId": null,
+      "Title": null,
+      "CreatedDate": "2026-03-13T18:00:15.000+0000"
+    }
+  ],
+  "cass_accounts": [
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00000SixAuYAJ"
+      },
+      "Id": "001WR00000SixAuYAJ",
+      "Name": "Placeholder - Property Contacts",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2025-04-16T17:21:45.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AUywcYAD"
+      },
+      "Id": "001WR00001AUywcYAD",
+      "Name": "Bridge Property & Investment Management",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:49.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AVKCRYA5"
+      },
+      "Id": "001WR00001AVKCRYA5",
+      "Name": "SomeraRoad",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:53.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AVTxDYAX"
+      },
+      "Id": "001WR00001AVTxDYAX",
+      "Name": "Wasatch Group",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:54.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AVcqsYAD"
+      },
+      "Id": "001WR00001AVcqsYAD",
+      "Name": "Lumen",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:52.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AVgWGYA1"
+      },
+      "Id": "001WR00001AVgWGYA1",
+      "Name": "Stanford Properties",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:55.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AVxIcYAL"
+      },
+      "Id": "001WR00001AVxIcYAL",
+      "Name": "Havenpark Management",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:49.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AW0WWYA1"
+      },
+      "Id": "001WR00001AW0WWYA1",
+      "Name": "Cal-Am Properties",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:55.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AW7L7YAL"
+      },
+      "Id": "001WR00001AW7L7YAL",
+      "Name": "Asset Essentials",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:50.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWGbLYAX"
+      },
+      "Id": "001WR00001AWGbLYAX",
+      "Name": "Dobson Greens Condo HOA (Dobson Ranch)",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:55.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWIRrYAP"
+      },
+      "Id": "001WR00001AWIRrYAP",
+      "Name": "CCG",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:52.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWPRkYAP"
+      },
+      "Id": "001WR00001AWPRkYAP",
+      "Name": "BSR",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:52.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWQUEYA5"
+      },
+      "Id": "001WR00001AWQUEYA5",
+      "Name": "Broadband Agreement Specialists, Inc.",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:51.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWVyVYAX"
+      },
+      "Id": "001WR00001AWVyVYAX",
+      "Name": "Tachus",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:53.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWYLJYA5"
+      },
+      "Id": "001WR00001AWYLJYA5",
+      "Name": "Tracy Blumenthal",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:54.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWiQHYA1"
+      },
+      "Id": "001WR00001AWiQHYA1",
+      "Name": "Wasatch Group",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:54.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWnYqYAL"
+      },
+      "Id": "001WR00001AWnYqYAL",
+      "Name": "Forefront Living",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:51.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AWuKCYA1"
+      },
+      "Id": "001WR00001AWuKCYA1",
+      "Name": "Rise 48",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:50.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AX4udYAD"
+      },
+      "Id": "001WR00001AX4udYAD",
+      "Name": "ConAm",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:55.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AX7UIYA1"
+      },
+      "Id": "001WR00001AX7UIYA1",
+      "Name": "Aspen Square Management",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:49.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AX9pSYAT"
+      },
+      "Id": "001WR00001AX9pSYAT",
+      "Name": "Blueprint Power",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:51.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXBUgYAP"
+      },
+      "Id": "001WR00001AXBUgYAP",
+      "Name": "Ting",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:53.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXIHeYAP"
+      },
+      "Id": "001WR00001AXIHeYAP",
+      "Name": "Pulte",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:53.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXM0HYAX"
+      },
+      "Id": "001WR00001AXM0HYAX",
+      "Name": "Cobblestone Assets",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:49.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXM1tYAH"
+      },
+      "Id": "001WR00001AXM1tYAH",
+      "Name": "continental properties",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:50.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXM57YAH"
+      },
+      "Id": "001WR00001AXM57YAH",
+      "Name": "Cable Contract Negotiation Group, LLC",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:51.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXM8LYAX"
+      },
+      "Id": "001WR00001AXM8LYAX",
+      "Name": "FiberFirst",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:52.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXMDBYA5"
+      },
+      "Id": "001WR00001AXMDBYA5",
+      "Name": "National Community Renaissance",
+      "Type": null,
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T19:43:54.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AXzL5YAL"
+      },
+      "Id": "001WR00001AXzL5YAL",
+      "Name": "FiberFirst Networks",
+      "Type": "Technology Partner",
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T21:40:04.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AYxIjYAL"
+      },
+      "Id": "001WR00001AYxIjYAL",
+      "Name": "Ting Internet",
+      "Type": "Technology Partner",
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T21:40:05.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "url": "/services/data/v59.0/sobjects/Account/001WR00001AYxKLYA1"
+      },
+      "Id": "001WR00001AYxKLYA1",
+      "Name": "ClearWave Broadband",
+      "Type": "Technology Partner",
+      "Phone": null,
+      "Website": null,
+      "CreatedDate": "2026-03-10T21:40:05.000+0000"
+    }
+  ]
+}

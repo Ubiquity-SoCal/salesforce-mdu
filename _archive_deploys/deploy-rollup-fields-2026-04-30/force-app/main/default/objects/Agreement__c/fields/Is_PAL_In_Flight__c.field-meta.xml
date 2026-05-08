@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_PAL_In_Flight__c</fullName>
+    <description>True when Agreement is Type=PAL and Status is Sign/Completed/Archive (i.e., a PAL is being signed or already signed). Used by Opportunity rollup to detect Opps missing a PAL.</description>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL(Agreement_Type__c, &quot;PAL&quot;) &amp;&amp; (ISPICKVAL(Status__c, &quot;Sign&quot;) || ISPICKVAL(Status__c, &quot;Completed&quot;) || ISPICKVAL(Status__c, &quot;Archive&quot;))</formula>
+    <label>Is PAL In Flight</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

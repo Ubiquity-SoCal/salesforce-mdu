@@ -1,0 +1,690 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" docType="html-5.0">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+    <apex:slds />
+    <style>
+        body { font-family: 'Salesforce Sans', Arial, sans-serif; background: #f4f6f9; margin: 0; padding: 16px; }
+        .metric-card {
+            background: #fff; border-radius: 8px; padding: 16px 20px; text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08); flex: 1; min-width: 140px;
+        }
+        .metric-value { font-size: 1.75rem; font-weight: 700; color: #032d60; margin: 2px 0; }
+        .metric-label { font-size: 0.75rem; color: #706e6b; text-transform: uppercase; letter-spacing: 0.5px; }
+        .metric-sub { font-size: 0.8rem; color: #0176d3; margin-top: 2px; }
+        .metrics-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+        .section { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); margin-bottom: 16px; }
+        .section-title { font-size: 0.9rem; font-weight: 700; color: #032d60; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #e5e5e5; }
+        .two-col { display: flex; gap: 16px; margin-bottom: 16px; }
+        .two-col > .section { flex: 1; margin-bottom: 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; font-size: 0.7rem; text-transform: uppercase; color: #706e6b; padding: 6px 10px; border-bottom: 2px solid #e5e5e5; }
+        td { padding: 6px 10px; border-bottom: 1px solid #f0f0f0; font-size: 0.825rem; color: #181818; }
+        tr:hover td { background: #f4f6f9; }
+        .amount { color: #2e844a; font-weight: 600; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
+        .badge-open { background: #e5f6fd; color: #0176d3; }
+        .badge-won { background: #d4edda; color: #2e844a; }
+        .badge-lost { background: #fde8e8; color: #c23934; }
+        .badge-warn { background: #fef3cd; color: #8a6d3b; }
+        .links-row { display: flex; gap: 8px; flex-wrap: wrap; }
+        .link-btn { padding: 8px 16px; background: #fff; border-radius: 6px; text-decoration: none; color: #0176d3; font-weight: 600; font-size: 0.825rem; box-shadow: 0 2px 4px rgba(0,0,0,0.08); transition: background 0.15s; cursor: pointer; }
+        .link-btn:hover { background: #e5f6fd; }
+        .activity-row { display: flex; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+        .activity-row:last-child { border-bottom: none; }
+        .activity-name { flex: 1; font-size: 0.825rem; color: #181818; }
+        .activity-num { width: 60px; text-align: center; font-size: 0.825rem; font-weight: 700; color: #032d60; }
+        .activity-change { width: 50px; text-align: right; font-size: 0.75rem; font-weight: 600; }
+        .loading { text-align: center; padding: 40px; color: #706e6b; }
+        .tab-bar { display: flex; gap: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e5e5; }
+        .tab { padding: 10px 20px; font-size: 0.875rem; font-weight: 600; color: #706e6b; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+        .tab:hover { color: #032d60; }
+        .tab.active { color: #0176d3; border-bottom-color: #0176d3; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .opp-link { color: #0176d3; text-decoration: none; }
+        .opp-link:hover { text-decoration: underline; }
+        .note-item { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+        .note-item:last-child { border-bottom: none; }
+        .note-date { font-size: 0.7rem; color: #706e6b; }
+        .note-body { font-size: 0.825rem; color: #181818; margin-top: 2px; }
+        .note-subject { font-size: 0.825rem; font-weight: 600; color: #032d60; }
+        .slicer-bar { display: flex; gap: 0; margin-bottom: 12px; }
+        .slicer-btn { padding: 7px 18px; font-size: 0.8rem; font-weight: 600; color: #706e6b; background: #fff; border: 1px solid #d8dde6; cursor: pointer; transition: all 0.15s; }
+        .slicer-btn:first-child { border-radius: 4px 0 0 4px; }
+        .slicer-btn:last-child { border-radius: 0 4px 4px 0; }
+        .slicer-btn:not(:first-child) { border-left: none; }
+        .slicer-btn:hover { background: #f4f6f9; color: #032d60; }
+        .slicer-btn.active { background: #0176d3; color: #fff; border-color: #0176d3; }
+        .slicer-btn.active + .slicer-btn { border-left-color: #0176d3; }
+        .stale-days { font-weight: 700; }
+        .stale-high { color: #c23934; }
+        .stale-med { color: #e68619; }
+        .stale-low { color: #706e6b; }
+        .empty-state { color: #706e6b; padding: 12px 0; font-size: 0.825rem; }
+    </style>
+</head>
+<body>
+    <div id="header-area"></div>
+    <div id="dashboard" class="loading">Loading dashboard...</div>
+
+    <script>
+    var sid = '{!$Api.Session_ID}';
+    var baseUrl = '{!$Api.Partner_Server_URL_600}';
+    var instanceUrl = baseUrl.substring(0, baseUrl.indexOf('/services'));
+    var lightningUrl = instanceUrl.replace('.my.salesforce.com', '.lightning.force.com');
+    var currentUserId = '{!$User.Id}';
+    var currentUserName = '{!$User.FirstName} {!$User.LastName}';
+    var currentPipeline = 'all';
+    var currentTab = 'team';
+
+    function query(soql) {
+        return fetch(instanceUrl + '/services/data/v59.0/query/?q=' + encodeURIComponent(soql), {
+            headers: { 'Authorization': 'Bearer ' + sid, 'Content-Type': 'application/json' }
+        }).then(function(r) { return r.json(); });
+    }
+
+    function fmt(n) { return '$' + (n || 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}); }
+    function escHtml(s) { var d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+    function rec0(result) { return (result.records && result.records.length > 0) ? result.records[0] : {cnt: 0, total: 0}; }
+    function recs(result) { return (result.records) ? result.records : []; }
+
+    function daysBetween(d1, d2) {
+        return Math.floor((d2 - d1) / (1000 * 60 * 60 * 24));
+    }
+
+    var pieColors = ['#0176d3','#2e844a','#e68619','#c23934','#7f56d9','#06a59a','#ba68c8','#5c6bc0','#ef5350','#66bb6a'];
+
+    function buildPieChart(data, size) {
+        // data = [{label, value, color}]
+        var total = 0;
+        data.forEach(function(d) { total += d.value; });
+        if (total === 0) return '<div class="empty-state">No data</div>';
+
+        var r = size / 2;
+        var cx = r, cy = r;
+        var svg = '<svg width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '">';
+
+        if (data.length === 1) {
+            svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + (r - 2) + '" fill="' + data[0].color + '"/>';
+        } else {
+            var angle = -90;
+            data.forEach(function(d) {
+                var sliceAngle = (d.value / total) * 360;
+                var startRad = angle * Math.PI / 180;
+                var endRad = (angle + sliceAngle) * Math.PI / 180;
+                var x1 = cx + (r - 2) * Math.cos(startRad);
+                var y1 = cy + (r - 2) * Math.sin(startRad);
+                var x2 = cx + (r - 2) * Math.cos(endRad);
+                var y2 = cy + (r - 2) * Math.sin(endRad);
+                var largeArc = sliceAngle > 180 ? 1 : 0;
+                svg += '<path d="M' + cx + ',' + cy + ' L' + x1 + ',' + y1 + ' A' + (r - 2) + ',' + (r - 2) + ' 0 ' + largeArc + ',1 ' + x2 + ',' + y2 + ' Z" fill="' + d.color + '"/>';
+                angle += sliceAngle;
+            });
+        }
+        svg += '</svg>';
+
+        // Legend
+        var legend = '<div style="margin-top:8px;">';
+        data.forEach(function(d) {
+            var pct = total > 0 ? Math.round((d.value / total) * 100) : 0;
+            legend += '<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">';
+            legend += '<div style="width:10px;height:10px;border-radius:2px;background:' + d.color + ';flex-shrink:0;"></div>';
+            legend += '<span style="font-size:0.75rem;color:#181818;">' + escHtml(d.label) + '</span>';
+            legend += '<span style="font-size:0.75rem;color:#706e6b;margin-left:auto;">' + pct + '%</span>';
+            legend += '</div>';
+        });
+        legend += '</div>';
+
+        return '<div style="display:flex;flex-direction:column;align-items:center;">' + svg + legend + '</div>';
+    }
+
+    var yrFilter = 'CreatedDate >= 2026-01-01T00:00:00Z';
+    var yrCloseFilter = 'CloseDate >= 2026-01-01';
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+    // Render static header once
+    (function renderHeader() {
+        var h = '';
+        h += '<div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px;">';
+        h += '<div>';
+        h += '<div style="font-size:1.1rem;font-weight:700;color:#032d60;margin-bottom:8px;">2026 Sales Dashboard</div>';
+        h += '<div class="slicer-bar">';
+        h += '<div class="slicer-btn active" onclick="setPipeline(\'all\',this)">All</div>';
+        h += '<div class="slicer-btn" onclick="setPipeline(\'MDU\',this)">MDU</div>';
+        h += '<div class="slicer-btn" onclick="setPipeline(\'Business\',this)">Business</div>';
+        h += '</div>';
+        h += '</div>';
+        h += '<div class="links-row">';
+        h += '<a class="link-btn" href="' + lightningUrl + '/lightning/o/Report/home" target="_blank">Reports</a>';
+        h += '<a class="link-btn" href="' + lightningUrl + '/lightning/o/Dashboard/home" target="_blank">Dashboards</a>';
+        h += '</div></div>';
+
+        // Tab bar
+        h += '<div class="tab-bar">';
+        h += '<div class="tab active" data-tab="team" onclick="switchTab(\'team\',this)">Team</div>';
+        h += '<div class="tab" data-tab="agreements" onclick="switchTab(\'agreements\',this)">Agreements</div>';
+        h += '<div class="tab" data-tab="mine" onclick="switchTab(\'mine\',this)">My Pipeline</div>';
+        h += '<div class="tab" data-tab="stale" onclick="switchTab(\'stale\',this)">Stale Deals</div>';
+        h += '</div>';
+
+        document.getElementById('header-area').innerHTML = h;
+    })();
+
+    function setPipeline(pipeline, el) {
+        currentPipeline = pipeline;
+        document.querySelectorAll('.slicer-btn').forEach(function(b) { b.classList.remove('active'); });
+        el.classList.add('active');
+        loadDashboard();
+    }
+
+    function switchTab(tabName, el) {
+        currentTab = tabName;
+        document.querySelectorAll('.tab-content').forEach(function(t) { t.classList.remove('active'); });
+        document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+        document.getElementById('tab-' + tabName).classList.add('active');
+        el.classList.add('active');
+    }
+
+    function loadDashboard() {
+        document.getElementById('dashboard').innerHTML = '<div class="loading">Loading...</div>';
+
+        // Build record type filter for Opportunity queries
+        var rtFilter = '';
+        var agrFilter = '';
+        if (currentPipeline === 'MDU') {
+            rtFilter = " AND (RecordType.DeveloperName = 'MDU' OR RecordType.DeveloperName = 'SFU')";
+            agrFilter = " AND (Opportunity__r.RecordType.DeveloperName = 'MDU' OR Opportunity__r.RecordType.DeveloperName = 'SFU')";
+        } else if (currentPipeline === 'Business') {
+            rtFilter = " AND RecordType.DeveloperName = 'Business'";
+            agrFilter = " AND Opportunity__r.RecordType.DeveloperName = 'Business'";
+        }
+
+        Promise.all([
+            // === TEAM TAB (0-8) ===
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND " + yrFilter + rtFilter),
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE StageName = 'Under Contract' AND " + yrFilter + rtFilter),
+            query("SELECT Owner.Name, COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND CompletedDateTime >= THIS_WEEK GROUP BY Owner.Name ORDER BY COUNT(Id) DESC"),
+            query("SELECT Owner.Name, COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND CompletedDateTime >= LAST_WEEK AND CompletedDateTime < THIS_WEEK GROUP BY Owner.Name ORDER BY COUNT(Id) DESC"),
+            query("SELECT Owner.Name, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND " + yrFilter + rtFilter + " GROUP BY Owner.Name ORDER BY SUM(Amount) DESC"),
+            query("SELECT Id, Name, StageName, Amount, Owner.Name FROM Opportunity WHERE " + yrFilter + " AND IsClosed = false" + rtFilter + " ORDER BY CreatedDate DESC LIMIT 5"),
+            query("SELECT CALENDAR_MONTH(CreatedDate) mo, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + yrFilter + rtFilter + " GROUP BY CALENDAR_MONTH(CreatedDate) ORDER BY CALENDAR_MONTH(CreatedDate)"),
+            query("SELECT CALENDAR_MONTH(CreatedDate) mo, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE StageName = 'Under Contract' AND " + yrFilter + rtFilter + " GROUP BY CALENDAR_MONTH(CreatedDate) ORDER BY CALENDAR_MONTH(CreatedDate)"),
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + yrFilter + rtFilter),
+
+            // === MY PIPELINE TAB (9-15) ===
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter),
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE StageName = 'Under Contract' AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter),
+            query("SELECT COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND OwnerId = '" + currentUserId + "' AND CompletedDateTime >= THIS_WEEK"),
+            query("SELECT COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND OwnerId = '" + currentUserId + "' AND CompletedDateTime >= LAST_WEEK AND CompletedDateTime < THIS_WEEK"),
+            query("SELECT Id, Name, StageName, Amount, CloseDate FROM Opportunity WHERE IsClosed = false AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter + " ORDER BY CloseDate ASC"),
+            query("SELECT Id, Subject, Status, ActivityDate, TaskSubtype, Description FROM Task WHERE OwnerId = '" + currentUserId + "' AND Status = 'Completed' ORDER BY CompletedDateTime DESC LIMIT 15"),
+            query("SELECT Id, Subject, ActivityDate, TaskSubtype FROM Task WHERE OwnerId = '" + currentUserId + "' AND Status = 'Open' ORDER BY ActivityDate ASC"),
+
+            // === NEW: Stage Breakdown (16) ===
+            query("SELECT StageName, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND " + yrFilter + rtFilter + " GROUP BY StageName ORDER BY StageName"),
+
+            // === NEW: Agreements Summary - Team (17) ===
+            query("SELECT Status__c, COUNT(Id) cnt FROM Agreement__c WHERE CreatedDate >= 2026-01-01T00:00:00Z" + agrFilter + " GROUP BY Status__c ORDER BY Status__c"),
+
+            // === NEW: Closing Soon - Team (18) ===
+            query("SELECT Id, Name, StageName, Amount, CloseDate, Owner.Name FROM Opportunity WHERE IsClosed = false AND CloseDate >= THIS_MONTH AND CloseDate < NEXT_N_MONTHS:2" + rtFilter + " ORDER BY CloseDate ASC LIMIT 10"),
+
+            // === NEW: My Agreements (19) ===
+            query("SELECT Status__c, COUNT(Id) cnt FROM Agreement__c WHERE Opportunity__r.OwnerId = '" + currentUserId + "'" + agrFilter + " GROUP BY Status__c ORDER BY Status__c"),
+
+            // === NEW: My Closing Soon (20) ===
+            query("SELECT Id, Name, StageName, Amount, CloseDate FROM Opportunity WHERE IsClosed = false AND OwnerId = '" + currentUserId + "' AND CloseDate >= THIS_MONTH AND CloseDate < NEXT_N_MONTHS:2" + rtFilter + " ORDER BY CloseDate ASC"),
+
+            // === AGREEMENTS TAB (23-24) ===
+            query("SELECT Agreement_Type__c, Status__c, COUNT(Id) cnt, SUM(Opportunity__r.Units__c) units FROM Agreement__c WHERE Id != null" + agrFilter + " GROUP BY Agreement_Type__c, Status__c ORDER BY Agreement_Type__c, Status__c"),
+            query("SELECT Agreement_Type__c, COUNT(Id) cnt, SUM(Opportunity__r.Units__c) units FROM Agreement__c WHERE Id != null" + agrFilter + " GROUP BY Agreement_Type__c ORDER BY COUNT(Id) DESC"),
+
+            // === NEW: Stale Deals (25) ===
+            query("SELECT Id, Name, StageName, Owner.Name, LastActivityDate, Amount, CloseDate FROM Opportunity WHERE IsClosed = false AND (LastActivityDate < LAST_N_DAYS:30 OR LastActivityDate = null)" + rtFilter + " ORDER BY LastActivityDate ASC NULLS FIRST LIMIT 50"),
+
+            // === NEW: Stale Deals - count (22) ===
+            query("SELECT COUNT(Id) cnt FROM Opportunity WHERE IsClosed = false AND (LastActivityDate < LAST_N_DAYS:30 OR LastActivityDate = null)" + rtFilter),
+        ]).then(function(results) {
+            // TEAM DATA
+            var openOpps = rec0(results[0]);
+            var closedWon = rec0(results[1]);
+            var tasksThisWeek = recs(results[2]);
+            var tasksLastWeek = recs(results[3]);
+            var oppsByOwner = recs(results[4]);
+            var recentOpps = recs(results[5]);
+            var oppsByMonth = recs(results[6]);
+            var wonByMonth = recs(results[7]);
+            var allOpps2026 = rec0(results[8]);
+
+            // MY DATA
+            var myOpenOpps = rec0(results[9]);
+            var myClosedWon = rec0(results[10]);
+            var myTasksThisWeek = rec0(results[11]).cnt;
+            var myTasksLastWeek = rec0(results[12]).cnt;
+            var myOppsList = recs(results[13]);
+            var myActivities = recs(results[14]);
+            var myOpenTasks = recs(results[15]);
+
+            // NEW DATA
+            var stageBreakdown = recs(results[16]);
+            var teamAgreements = recs(results[17]);
+            var closingSoon = recs(results[18]);
+            var myAgreements = recs(results[19]);
+            var myClosingSoon = recs(results[20]);
+            var agrByTypeStatus = recs(results[21]);
+            var agrByType = recs(results[22]);
+            var staleDeals = recs(results[23]);
+            var staleCount = rec0(results[24]).cnt;
+
+            // Computed values
+            var totalThisWeek = 0;
+            tasksThisWeek.forEach(function(r) { totalThisWeek += r.cnt; });
+            var totalLastWeek = 0;
+            tasksLastWeek.forEach(function(r) { totalLastWeek += r.cnt; });
+            var lastWeekMap = {};
+            tasksLastWeek.forEach(function(r) { lastWeekMap[r.Name] = r.cnt; });
+            var wonByMonthMap = {};
+            wonByMonth.forEach(function(r) { wonByMonthMap[r.mo] = r; });
+
+            var pipelineLabel = currentPipeline === 'all' ? '' : ' (' + currentPipeline + ')';
+            var today = new Date();
+            var html = '';
+
+            // ============================================================
+            // TEAM TAB
+            // ============================================================
+            html += '<div id="tab-team" class="tab-content' + (currentTab === 'team' ? ' active' : '') + '">';
+
+            // KPI cards
+            html += '<div class="metrics-row">';
+            html += '<div class="metric-card"><div class="metric-label">Total Opps' + pipelineLabel + '</div><div class="metric-value">' + allOpps2026.cnt + '</div><div class="metric-sub">' + fmt(allOpps2026.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">Open Pipeline</div><div class="metric-value">' + openOpps.cnt + '</div><div class="metric-sub">' + fmt(openOpps.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">Under Contract</div><div class="metric-value">' + closedWon.cnt + '</div><div class="metric-sub">' + fmt(closedWon.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">Activities This Week</div><div class="metric-value">' + totalThisWeek + '</div><div class="metric-sub">Last week: ' + totalLastWeek + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">Stale Deals</div><div class="metric-value" style="color:#c23934;">' + staleCount + '</div><div class="metric-sub">No activity 30+ days</div></div>';
+            html += '</div>';
+
+            // Stage Breakdown + Agreements side by side
+            html += '<div class="two-col">';
+
+            // Stage breakdown with pie chart
+            html += '<div class="section"><div class="section-title">Pipeline by Stage</div>';
+            if (stageBreakdown.length === 0) {
+                html += '<div class="empty-state">No open opportunities</div>';
+            } else {
+                html += '<div style="display:flex;gap:20px;align-items:flex-start;">';
+                html += '<div style="flex:1;">';
+                html += '<table><tr><th>Stage</th><th style="text-align:right">Count</th><th style="text-align:right">Amount</th></tr>';
+                var stagePieData = [];
+                stageBreakdown.forEach(function(r, i) {
+                    html += '<tr><td><span class="badge badge-open">' + r.StageName + '</span></td>';
+                    html += '<td style="text-align:right">' + r.cnt + '</td>';
+                    html += '<td style="text-align:right" class="amount">' + fmt(r.total) + '</td></tr>';
+                    stagePieData.push({label: r.StageName, value: r.cnt, color: pieColors[i % pieColors.length]});
+                });
+                html += '</table>';
+                html += '</div>';
+                html += '<div style="flex-shrink:0;">' + buildPieChart(stagePieData, 140) + '</div>';
+                html += '</div>';
+            }
+            html += '</div>';
+
+            // Agreements summary with pie chart
+            html += '<div class="section"><div class="section-title">Agreements</div>';
+            if (teamAgreements.length === 0) {
+                html += '<div class="empty-state">No agreements found</div>';
+            } else {
+                html += '<div style="display:flex;gap:20px;align-items:flex-start;">';
+                html += '<div style="flex:1;">';
+                html += '<table><tr><th>Status</th><th style="text-align:right">Count</th></tr>';
+                var agrTotal = 0;
+                var agrPieData = [];
+                var agrColors = {'Signed': '#2e844a', 'Executed': '#2e844a', 'Draft': '#0176d3', 'Sent': '#e68619', 'Expired': '#c23934', 'Cancelled': '#c23934'};
+                teamAgreements.forEach(function(r, i) {
+                    agrTotal += r.cnt;
+                    var badgeClass = (r.Status__c === 'Signed' || r.Status__c === 'Executed') ? 'badge-won' : (r.Status__c === 'Expired' || r.Status__c === 'Cancelled') ? 'badge-lost' : 'badge-open';
+                    html += '<tr><td><span class="badge ' + badgeClass + '">' + (r.Status__c || 'None') + '</span></td>';
+                    html += '<td style="text-align:right">' + r.cnt + '</td></tr>';
+                    var color = agrColors[r.Status__c] || pieColors[i % pieColors.length];
+                    agrPieData.push({label: r.Status__c || 'None', value: r.cnt, color: color});
+                });
+                html += '<tr style="font-weight:700;border-top:2px solid #e5e5e5;"><td>Total</td><td style="text-align:right">' + agrTotal + '</td></tr>';
+                html += '</table>';
+                html += '</div>';
+                html += '<div style="flex-shrink:0;">' + buildPieChart(agrPieData, 140) + '</div>';
+                html += '</div>';
+            }
+            html += '</div>';
+
+            html += '</div>'; // end two-col
+
+            // Closing Soon
+            html += '<div class="section"><div class="section-title">Closing Soon (This Month &amp; Next)</div>';
+            if (closingSoon.length === 0) {
+                html += '<div class="empty-state">No deals closing soon</div>';
+            } else {
+                html += '<table><tr><th>Name</th><th>Stage</th><th style="text-align:right">Amount</th><th>Close Date</th><th>Rep</th></tr>';
+                closingSoon.forEach(function(r) {
+                    var closeDate = r.CloseDate || '-';
+                    var isPast = r.CloseDate && new Date(r.CloseDate + 'T00:00:00') < today;
+                    var dateStyle = isPast ? 'color:#c23934;font-weight:600;' : '';
+                    html += '<tr><td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                    html += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
+                    html += '<td style="text-align:right" class="amount">' + fmt(r.Amount) + '</td>';
+                    html += '<td style="' + dateStyle + '">' + closeDate + '</td>';
+                    html += '<td>' + r.Owner.Name + '</td></tr>';
+                });
+                html += '</table>';
+            }
+            html += '</div>';
+
+            // 2026 by Month
+            html += '<div class="section"><div class="section-title">2026 by Month</div><table>';
+            html += '<tr><th>Month</th><th style="text-align:right">Created</th><th style="text-align:right">Amount</th><th style="text-align:right">Under Contract</th><th style="text-align:right">UC Amt</th></tr>';
+            oppsByMonth.forEach(function(r) {
+                var won = wonByMonthMap[r.mo];
+                html += '<tr><td>' + months[r.mo - 1] + '</td><td style="text-align:right">' + r.cnt + '</td><td style="text-align:right" class="amount">' + fmt(r.total) + '</td>';
+                html += '<td style="text-align:right">' + (won ? won.cnt : 0) + '</td><td style="text-align:right" class="amount">' + fmt(won ? won.total : 0) + '</td></tr>';
+            });
+            html += '</table></div>';
+
+            // Pipeline by Rep
+            html += '<div class="section"><div class="section-title">Pipeline by Rep</div><table>';
+            html += '<tr><th>Rep</th><th style="text-align:right">Open Opps</th><th style="text-align:right">Pipeline</th></tr>';
+            oppsByOwner.forEach(function(r) {
+                html += '<tr><td>' + r.Name + '</td><td style="text-align:right">' + r.cnt + '</td><td style="text-align:right" class="amount">' + fmt(r.total) + '</td></tr>';
+            });
+            html += '</table></div>';
+
+            // Activity by Rep
+            html += '<div class="section"><div class="section-title">Activity by Rep</div>';
+            html += '<div style="display:flex;padding:0 0 6px 0;border-bottom:2px solid #e5e5e5;margin-bottom:4px;">';
+            html += '<div class="activity-name" style="font-size:0.7rem;text-transform:uppercase;color:#706e6b;">Rep</div>';
+            html += '<div class="activity-num" style="font-size:0.7rem;text-transform:uppercase;color:#706e6b;">This Week</div>';
+            html += '<div class="activity-change" style="font-size:0.7rem;text-transform:uppercase;color:#706e6b;">Last Wk</div>';
+            html += '</div>';
+            tasksThisWeek.forEach(function(r) {
+                var last = lastWeekMap[r.Name] || 0;
+                var color = r.cnt > last ? '#2e844a' : (r.cnt < last ? '#c23934' : '#706e6b');
+                html += '<div class="activity-row"><div class="activity-name">' + r.Name + '</div>';
+                html += '<div class="activity-num">' + r.cnt + '</div>';
+                html += '<div class="activity-change" style="color:' + color + '">' + last + '</div></div>';
+            });
+            html += '</div>';
+
+            // Latest Opportunities
+            html += '<div class="section"><div class="section-title">Latest Opportunities</div><table>';
+            html += '<tr><th>Name</th><th>Stage</th><th style="text-align:right">Amount</th><th>Rep</th></tr>';
+            recentOpps.forEach(function(r) {
+                html += '<tr><td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                html += '<td><span class="badge badge-open">' + r.StageName + '</span></td><td style="text-align:right" class="amount">' + fmt(r.Amount) + '</td><td>' + r.Owner.Name + '</td></tr>';
+            });
+            html += '</table></div>';
+
+            html += '</div>'; // end team tab
+
+            // ============================================================
+            // AGREEMENTS TAB
+            // ============================================================
+            html += '<div id="tab-agreements" class="tab-content' + (currentTab === 'agreements' ? ' active' : '') + '">';
+
+            // KPI cards for agreements
+            var totalAgr = 0;
+            var completedAgr = 0;
+            var totalUnits = 0;
+            var completedUnits = 0;
+            agrByTypeStatus.forEach(function(r) {
+                totalAgr += r.cnt;
+                totalUnits += (r.units || 0);
+                if (r.Status__c === 'Completed' || r.Status__c === 'Archive') {
+                    completedAgr += r.cnt;
+                    completedUnits += (r.units || 0);
+                }
+            });
+            html += '<div class="metrics-row">';
+            html += '<div class="metric-card"><div class="metric-label">Total Agreements' + pipelineLabel + '</div><div class="metric-value">' + totalAgr + '</div><div class="metric-sub">' + Number(totalUnits).toLocaleString() + ' units</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">Completed / Archived</div><div class="metric-value" style="color:#2e844a;">' + completedAgr + '</div><div class="metric-sub">' + Number(completedUnits).toLocaleString() + ' units</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">In Progress</div><div class="metric-value" style="color:#0176d3;">' + (totalAgr - completedAgr) + '</div><div class="metric-sub">' + Number(totalUnits - completedUnits).toLocaleString() + ' units</div></div>';
+            html += '</div>';
+
+            // Cross-tab: Agreement Type x Status
+            html += '<div class="section"><div class="section-title">Agreements by Type &amp; Status</div>';
+            if (agrByTypeStatus.length === 0) {
+                html += '<div class="empty-state">No agreements found</div>';
+            } else {
+                // Build matrix
+                var agrTypes = [];
+                var agrStatuses = [];
+                var agrMatrix = {};
+                agrByTypeStatus.forEach(function(r) {
+                    var t = r.Agreement_Type__c || 'None';
+                    var s = r.Status__c || 'None';
+                    if (agrTypes.indexOf(t) === -1) agrTypes.push(t);
+                    if (agrStatuses.indexOf(s) === -1) agrStatuses.push(s);
+                    if (!agrMatrix[t]) agrMatrix[t] = {};
+                    agrMatrix[t][s] = {cnt: r.cnt, units: r.units || 0};
+                });
+
+                // Status column order
+                var statusOrder = ['Create', 'Review', 'Sign', 'Completed', 'Archive', 'Paused', 'Cancelled'];
+                agrStatuses.sort(function(a, b) {
+                    var ai = statusOrder.indexOf(a);
+                    var bi = statusOrder.indexOf(b);
+                    if (ai === -1) ai = 99;
+                    if (bi === -1) bi = 99;
+                    return ai - bi;
+                });
+
+                html += '<table><tr><th>Type</th>';
+                agrStatuses.forEach(function(s) { html += '<th style="text-align:center">' + s + '</th>'; });
+                html += '<th style="text-align:right">Total</th></tr>';
+
+                agrTypes.forEach(function(t) {
+                    html += '<tr><td style="font-weight:600;">' + t + '</td>';
+                    var rowTotal = 0;
+                    var rowUnits = 0;
+                    agrStatuses.forEach(function(s) {
+                        var cell = (agrMatrix[t] && agrMatrix[t][s]) || {cnt: 0, units: 0};
+                        rowTotal += cell.cnt;
+                        rowUnits += cell.units;
+                        var badgeClass = (s === 'Completed' || s === 'Archive') ? 'badge-won' : (s === 'Cancelled' || s === 'Paused') ? 'badge-lost' : 'badge-open';
+                        if (cell.cnt > 0) {
+                            html += '<td style="text-align:center;line-height:1.4;"><span class="badge ' + badgeClass + '">' + cell.cnt + '</span><br><span style="font-size:0.7rem;color:#706e6b;">' + Number(cell.units).toLocaleString() + ' units</span></td>';
+                        } else {
+                            html += '<td style="text-align:center"><span style="color:#d8dde6;">-</span></td>';
+                        }
+                    });
+                    html += '<td style="text-align:right;font-weight:700;line-height:1.4;">' + rowTotal + '<br><span style="font-size:0.7rem;color:#706e6b;font-weight:400;">' + Number(rowUnits).toLocaleString() + ' units</span></td></tr>';
+                });
+
+                // Totals row
+                html += '<tr style="font-weight:700;border-top:2px solid #e5e5e5;"><td>Total</td>';
+                agrStatuses.forEach(function(s) {
+                    var colTotal = 0;
+                    var colUnits = 0;
+                    agrTypes.forEach(function(t) { var c = (agrMatrix[t] && agrMatrix[t][s]) || {cnt:0, units:0}; colTotal += c.cnt; colUnits += c.units; });
+                    html += '<td style="text-align:center;line-height:1.4;">' + colTotal + '<br><span style="font-size:0.7rem;color:#706e6b;font-weight:400;">' + Number(colUnits).toLocaleString() + ' units</span></td>';
+                });
+                html += '<td style="text-align:right;line-height:1.4;">' + totalAgr + '<br><span style="font-size:0.7rem;color:#706e6b;font-weight:400;">' + Number(totalUnits).toLocaleString() + ' units</span></td></tr>';
+                html += '</table>';
+            }
+            html += '</div>';
+
+            // Breakdown by Type with pie chart
+            html += '<div class="section"><div class="section-title">Agreements by Type</div>';
+            if (agrByType.length === 0) {
+                html += '<div class="empty-state">No agreements found</div>';
+            } else {
+                html += '<div style="display:flex;gap:20px;align-items:flex-start;">';
+                html += '<div style="flex:1;">';
+                html += '<table><tr><th>Type</th><th style="text-align:right">Count</th><th style="text-align:right">Units</th></tr>';
+                var typePieData = [];
+                agrByType.forEach(function(r, i) {
+                    var t = r.Agreement_Type__c || 'None';
+                    html += '<tr><td>' + t + '</td><td style="text-align:right;font-weight:600;">' + r.cnt + '</td><td style="text-align:right;color:#706e6b;">' + Number(r.units || 0).toLocaleString() + '</td></tr>';
+                    typePieData.push({label: t, value: r.cnt, color: pieColors[i % pieColors.length]});
+                });
+                html += '</table>';
+                html += '</div>';
+                html += '<div style="flex-shrink:0;">' + buildPieChart(typePieData, 160) + '</div>';
+                html += '</div>';
+            }
+            html += '</div>';
+
+            html += '</div>'; // end agreements tab
+
+            // ============================================================
+            // MY PIPELINE TAB
+            // ============================================================
+            html += '<div id="tab-mine" class="tab-content' + (currentTab === 'mine' ? ' active' : '') + '">';
+
+            // My KPI cards
+            html += '<div class="metrics-row">';
+            html += '<div class="metric-card"><div class="metric-label">My Open Opps' + pipelineLabel + '</div><div class="metric-value">' + myOpenOpps.cnt + '</div><div class="metric-sub">' + fmt(myOpenOpps.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">My Under Contract</div><div class="metric-value">' + myClosedWon.cnt + '</div><div class="metric-sub">' + fmt(myClosedWon.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">My Activities This Week</div><div class="metric-value">' + myTasksThisWeek + '</div><div class="metric-sub">Last week: ' + myTasksLastWeek + '</div></div>';
+            html += '</div>';
+
+            // My Agreements
+            html += '<div class="section"><div class="section-title">My Agreements</div>';
+            if (myAgreements.length === 0) {
+                html += '<div class="empty-state">No agreements</div>';
+            } else {
+                html += '<table><tr><th>Status</th><th style="text-align:right">Count</th></tr>';
+                myAgreements.forEach(function(r) {
+                    var badgeClass = (r.Status__c === 'Signed' || r.Status__c === 'Executed') ? 'badge-won' : (r.Status__c === 'Expired' || r.Status__c === 'Cancelled') ? 'badge-lost' : 'badge-open';
+                    html += '<tr><td><span class="badge ' + badgeClass + '">' + (r.Status__c || 'None') + '</span></td>';
+                    html += '<td style="text-align:right">' + r.cnt + '</td></tr>';
+                });
+                html += '</table>';
+            }
+            html += '</div>';
+
+            // My Closing Soon
+            html += '<div class="section"><div class="section-title">My Closing Soon</div>';
+            if (myClosingSoon.length === 0) {
+                html += '<div class="empty-state">No deals closing soon</div>';
+            } else {
+                html += '<table><tr><th>Name</th><th>Stage</th><th style="text-align:right">Amount</th><th>Close Date</th></tr>';
+                myClosingSoon.forEach(function(r) {
+                    var closeDate = r.CloseDate || '-';
+                    var isPast = r.CloseDate && new Date(r.CloseDate + 'T00:00:00') < today;
+                    var dateStyle = isPast ? 'color:#c23934;font-weight:600;' : '';
+                    html += '<tr><td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                    html += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
+                    html += '<td style="text-align:right" class="amount">' + fmt(r.Amount) + '</td>';
+                    html += '<td style="' + dateStyle + '">' + closeDate + '</td></tr>';
+                });
+                html += '</table>';
+            }
+            html += '</div>';
+
+            // My open tasks
+            if (myOpenTasks.length > 0) {
+                html += '<div class="section"><div class="section-title">Open Tasks</div><table>';
+                html += '<tr><th>Task</th><th>Type</th><th>Due Date</th></tr>';
+                myOpenTasks.forEach(function(r) {
+                    var subtype = r.TaskSubtype === 'Call' ? 'Call' : (r.TaskSubtype === 'Email' ? 'Email' : 'Task');
+                    html += '<tr><td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Task/' + r.Id + '/view" target="_blank">' + escHtml(r.Subject) + '</a></td>';
+                    html += '<td>' + subtype + '</td><td>' + (r.ActivityDate || '-') + '</td></tr>';
+                });
+                html += '</table></div>';
+            }
+
+            // My opportunities
+            html += '<div class="section"><div class="section-title">My Opportunities</div>';
+            if (myOppsList.length === 0) {
+                html += '<div class="empty-state">No open opportunities</div>';
+            } else {
+                html += '<table><tr><th>Name</th><th>Stage</th><th style="text-align:right">Amount</th><th>Close Date</th></tr>';
+                myOppsList.forEach(function(r) {
+                    var badgeClass = r.StageName === 'Closed Won' ? 'badge-won' : (r.StageName === 'Closed Lost' ? 'badge-lost' : 'badge-open');
+                    html += '<tr><td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                    html += '<td><span class="badge ' + badgeClass + '">' + r.StageName + '</span></td>';
+                    html += '<td style="text-align:right" class="amount">' + fmt(r.Amount) + '</td><td>' + (r.CloseDate || '-') + '</td></tr>';
+                });
+                html += '</table>';
+            }
+            html += '</div>';
+
+            // My recent activities
+            html += '<div class="section"><div class="section-title">Recent Activities</div>';
+            if (myActivities.length === 0) {
+                html += '<div class="empty-state">No recent activities</div>';
+            } else {
+                myActivities.forEach(function(r) {
+                    var subtype = r.TaskSubtype === 'Call' ? 'Call' : (r.TaskSubtype === 'Email' ? 'Email' : 'Task');
+                    html += '<div class="note-item">';
+                    html += '<div style="display:flex;justify-content:space-between;"><div class="note-subject"><a class="opp-link" href="' + lightningUrl + '/lightning/r/Task/' + r.Id + '/view" target="_blank">' + escHtml(r.Subject) + '</a></div><div class="note-date">' + subtype + ' - ' + (r.ActivityDate || '') + '</div></div>';
+                    if (r.Description) {
+                        var desc = r.Description.length > 120 ? r.Description.substring(0, 120) + '...' : r.Description;
+                        html += '<div class="note-body">' + escHtml(desc) + '</div>';
+                    }
+                    html += '</div>';
+                });
+            }
+            html += '</div>';
+
+            html += '</div>'; // end my pipeline tab
+
+            // ============================================================
+            // STALE DEALS TAB
+            // ============================================================
+            html += '<div id="tab-stale" class="tab-content' + (currentTab === 'stale' ? ' active' : '') + '">';
+
+            html += '<div class="metrics-row">';
+            html += '<div class="metric-card"><div class="metric-label">Stale Deals' + pipelineLabel + '</div><div class="metric-value" style="color:#c23934;">' + staleCount + '</div><div class="metric-sub">No activity in 30+ days</div></div>';
+            html += '</div>';
+
+            html += '<div class="section"><div class="section-title">Deals Needing Attention</div>';
+            if (staleDeals.length === 0) {
+                html += '<div class="empty-state">No stale deals — looking good!</div>';
+            } else {
+                html += '<table><tr><th>Name</th><th>Stage</th><th>Owner</th><th style="text-align:right">Amount</th><th>Last Activity</th><th style="text-align:right">Days Stale</th><th>Close Date</th></tr>';
+                staleDeals.forEach(function(r) {
+                    var lastAct = r.LastActivityDate || null;
+                    var days = 0;
+                    var daysText = 'Never';
+                    var staleClass = 'stale-high';
+
+                    if (lastAct) {
+                        days = daysBetween(new Date(lastAct + 'T00:00:00'), today);
+                        daysText = days + 'd';
+                        if (days > 90) { staleClass = 'stale-high'; }
+                        else if (days > 60) { staleClass = 'stale-med'; }
+                        else { staleClass = 'stale-low'; }
+                    }
+
+                    var closeDate = r.CloseDate || '-';
+                    var isPastClose = r.CloseDate && new Date(r.CloseDate + 'T00:00:00') < today;
+                    var closeDateStyle = isPastClose ? 'color:#c23934;font-weight:600;' : '';
+
+                    html += '<tr>';
+                    html += '<td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                    html += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
+                    html += '<td>' + r.Owner.Name + '</td>';
+                    html += '<td style="text-align:right" class="amount">' + fmt(r.Amount) + '</td>';
+                    html += '<td>' + (lastAct || 'Never') + '</td>';
+                    html += '<td style="text-align:right"><span class="stale-days ' + staleClass + '">' + daysText + '</span></td>';
+                    html += '<td style="' + closeDateStyle + '">' + closeDate + '</td>';
+                    html += '</tr>';
+                });
+                html += '</table>';
+            }
+            html += '</div>';
+
+            html += '</div>'; // end stale tab
+
+            document.getElementById('dashboard').innerHTML = html;
+            document.getElementById('dashboard').className = '';
+        }).catch(function(err) {
+            document.getElementById('dashboard').innerHTML = '<div style="color:red;">Error loading dashboard: ' + err.message + '</div>';
+        });
+    }
+
+    // Initial load
+    loadDashboard();
+    </script>
+</body>
+</html>
+</apex:page>

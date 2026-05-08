@@ -1,0 +1,25 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR000011cV9lYAE,Converge Justin,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011a3xbYAA,1404 Chico Hwy MHP,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cGDyYAM,University Place Townhomes,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cBNzYAM,Seaside Commons,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cWnNYAU,6302 Boyd Street,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011awSdYAI,Lookout Ridge Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011bxo2YAA,Sunset Arms,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cNVaYAM,Autumn Heights,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011arrAYAQ,740 E 3rd Ave,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011c5C6YAI,5120-5128 NW Radial Hwy,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011bsupYAA,Benson Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011anIzYAI,Alhambra Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011aevbYAA,Church Hill Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011bPfxYAE,Dundee Creek Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cWtpYAE,Heritage Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cWvRYAU,Sandra Ann Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011bOryYAE,Stone Plaza Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011bcuxYAA,Ville de Sante Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011cMfyYAE,Discovery Village at Alliance Town Center (Riverside),Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011aP8ZYAU,Deerfield Clubhouse Apartments,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR000011caB3YAI,Contestoga Crossing,Opportunity.Created,(null),new record,Monday.com/scripts/apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,create
+006WR00000yw09zYAA,Beacons Beach Village,Monday_Item_ID__c,(null),9819343163,orphan_import_preview_2026-04-24.json,2026-04-24T13:49:49,update
+006WR00000wk9SnYAI,Seascape Sur,StageName,(prior),Contract Negotiations,apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,update
+006WR00000wkCmJYAU,Park Encinitas,StageName,(prior),On Hold,apply_orphan_imports_2026-04-24.py,2026-04-24T13:49:49,update

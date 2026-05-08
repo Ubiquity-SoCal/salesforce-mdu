@@ -1,0 +1,105 @@
+=== AFTER SNAPSHOT 2026-05-08 ===
+
+## Top-level entries:
+total 135K
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:55 .
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:49 ..
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 Apr 24 14:19 .git
+-rw-r--r-- 1 AzureAD+CassParker 4096  111 May  8 14:53 .gitignore
+-rw-r--r-- 1 AzureAD+CassParker 4096 3.8K May  8 14:55 README.md
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:54 _archive
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:54 _archive_deploys
+-rw-r--r-- 1 AzureAD+CassParker 4096   57 May  8 14:55 _restructure-after-2026-05-08.txt
+-rw-r--r-- 1 AzureAD+CassParker 4096  12K May  8 14:52 _restructure-before-2026-05-08.txt
+-rw-r--r-- 1 AzureAD+CassParker 4096  409 May  8 14:52 _restructure-log-2026-05-08.md
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:53 admin
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:53 api
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:52 data
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:52 deploys
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:54 docs
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  8 14:52 scripts
+drwxr-xr-x 1 AzureAD+CassParker 4096    0 May  5 15:21 tracker-lwc
+
+## Loose files at root (should be minimal):
+./.gitignore
+./README.md
+./_restructure-after-2026-05-08.txt
+./_restructure-before-2026-05-08.txt
+./_restructure-log-2026-05-08.md
+
+## Folder structure (2 levels):
+.
+./_archive
+./_archive/baselines
+./_archive/legacy-metadata
+./_archive/old-data
+./_archive/old-projects
+./_archive_deploys
+./_archive_deploys/_deploy_legacy
+./_archive_deploys/deploy-accounttype
+./_archive_deploys/deploy-address-type-2026-05-08
+./_archive_deploys/deploy-agreement-field-locks
+./_archive_deploys/deploy-agreement-name-2026-05-08
+./_archive_deploys/deploy-cleanup-reports-rebuild-2026-04-30
+./_archive_deploys/deploy-flexipage
+./_archive_deploys/deploy-flexipage-mdu
+./_archive_deploys/deploy-franchise-type
+./_archive_deploys/deploy-latest-note-fields-2026-05-04
+./_archive_deploys/deploy-latest-note-trigger-2026-05-04
+./_archive_deploys/deploy-mdu-sales-review-report-2026-05-04
+./_archive_deploys/deploy-niraj-notifications
+./_archive_deploys/deploy-pl-page
+./_archive_deploys/deploy-resolution-stage-picklist-2026-05-04
+./_archive_deploys/deploy-rollup-fields-2026-04-30
+./_archive_deploys/deploy-smb-page-tracker-2026-04-29
+./_archive_deploys/deploy-stage-cleanup-2026-04-29
+./_archive_deploys/deploy-stage-restructure-2026-04-29
+./_archive_deploys/deploy-substatus-additions-2026-05-07
+./_archive_deploys/retire-listviews-2026-05-08
+./_archive_deploys/retrieve-cleanup-2026-04-30
+./_archive_deploys/retrieve-dashboard-2026-05-08
+./_archive_deploys/retrieve-listviews-2026-05-08
+./_archive_deploys/retrieve-rollup-pattern
+./_archive_deploys/temp-cleanup-reports
+./_archive_deploys/temp-deploy
+./_archive_deploys/temp-destroy
+./_archive_deploys/temp-layout-deploy
+./admin
+./admin/templates
+./api
+./data
+./data/input
+./data/output
+./deploys
+./docs
+./docs/screenshots
+./docs/superpowers
+./scripts
+./scripts/_probes
+./scripts/analysis
+./scripts/cleanup
+./scripts/dashboard
+./scripts/deploy
+./scripts/fix
+./scripts/import
+./scripts/setup
+./scripts/sync
+./tracker-lwc
+./tracker-lwc/.husky
+./tracker-lwc/.sf
+./tracker-lwc/.vscode
+./tracker-lwc/config
+./tracker-lwc/force-app
+./tracker-lwc/manifest
+./tracker-lwc/scripts
+
+## Folder sizes:
+40M	data/
+7.0M	scripts/
+2.7M	_archive_deploys/
+2.1M	_archive/
+1.8M	docs/
+1.2M	tracker-lwc/
+29K	admin/
+2.0K	api/
+0	deploys/

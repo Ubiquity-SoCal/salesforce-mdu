@@ -1,0 +1,1297 @@
+{
+  "dedup": [
+    {
+      "pair": "Beach Street Encinitas",
+      "keeper": "006WR00000yuqW4YAI",
+      "loser_deleted": "006WR00000ywI25YAE",
+      "fields_copied": {
+        "Property_Type__c": "Condos"
+      }
+    },
+    {
+      "pair": "Beacons Beach Village",
+      "keeper": "006WR00000yw09zYAA",
+      "loser_deleted": "006WR00000wkCknYAE",
+      "fields_copied": {
+        "Agreement_Name__c": "ENCINITAS_MDU_Beacons Beach Village"
+      }
+    },
+    {
+      "pair": "Park Encinitas Mobile Homes",
+      "keeper": "006WR00000wkCmJYAU",
+      "loser_deleted": "006WR00000yv4h6YAA",
+      "fields_copied": {
+        "Property_Type__c": "Manufactured Homes / Mobile Homes",
+        "Property_Classification__c": "MHP"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywTdNYAU",
+      "ca_name": "225 S. HWY 101 , 17",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvU0RYAU",
+      "ca_name": "3152 Levante",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvVsYYAU",
+      "ca_name": "3156 Levante",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywTWvYAM",
+      "ca_name": "127 W. Glaucus",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvv0eYAA",
+      "ca_name": "Coral Cove SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywCuIYAU",
+      "ca_name": "53 Melrose Promenade SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywN6YYAU",
+      "ca_name": "On The Park SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yv9vJYAQ",
+      "ca_name": "Promenade SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywF4AYAU",
+      "ca_name": "Seapoint Tennis Club",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw26xYAA",
+      "ca_name": "The Nest at La Costa",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvz12YAA",
+      "ca_name": "Cambria SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yutSHYAY",
+      "ca_name": "Cardiff Park",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "create",
+      "sf_id": "DRY-RUN-ID",
+      "ca_name": "Fox Point",
+      "opp": {
+        "Name": "Fox Point",
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "StageName": "Prospecting",
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Address__c": "1200 Fox Point Farms Lane, Encinitas, CA 92024",
+        "Property_City__c": "Encinitas",
+        "Property_State__c": "CA",
+        "CloseDate": "2026-12-31",
+        "Property_Classification__c": "SFU",
+        "Units__c": 197
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ytiKQYAY",
+      "ca_name": "Pelican Ridge",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yutTtYAI",
+      "ca_name": "Quentin Court",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "create",
+      "sf_id": "DRY-RUN-ID",
+      "ca_name": "Sand Piper Point",
+      "opp": {
+        "Name": "Sand Piper Point",
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "StageName": "Prospecting",
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Address__c": "321-393 West I street, Encinitas CA 92024",
+        "Property_City__c": "Encinitas",
+        "Property_State__c": "CA",
+        "CloseDate": "2026-12-31",
+        "Property_Classification__c": "SFU",
+        "Units__c": 21
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ytrE5YAI",
+      "ca_name": "Trailer Rancho Mobile",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywT2HYAU",
+      "ca_name": "Village Park SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSPbYAM",
+      "ca_name": "Village Park Manor",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywT8jYAE",
+      "ca_name": "Emerald Point SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yuxKdYAI",
+      "ca_name": "Mission Del Oro SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wjnm6YAA",
+      "ca_name": "Mission View Manor West",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yuYsYYAU",
+      "ca_name": "Montego Village SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkA7PYAU",
+      "ca_name": "Ocean Hills Country Club SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkCjHYAU",
+      "ca_name": "Rancho San Luis Rey 55+",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywTLdYAM",
+      "ca_name": "Seagate Terrace",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yv47cYAA",
+      "ca_name": "Alicante Hills SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywOYtYAM",
+      "ca_name": "Carlsbad Arroyo Vista SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvvYXYAY",
+      "ca_name": "Carlsbad Surfside SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvMMIYA2",
+      "ca_name": "Fairways SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yv7YaYAI",
+      "ca_name": "FoxtailLoop",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywBdGYAU",
+      "ca_name": "La Costa Altezza SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSXdYAM",
+      "ca_name": "La Costa Greens SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw3HWYAY",
+      "ca_name": "La Costa Oaks South SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSkXYAU",
+      "ca_name": "La Costa Ridge1 SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSe5YAE",
+      "ca_name": "La Costa Ridge2 SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk9UkYAI",
+      "ca_name": "Monarch Villas",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvvAJYAY",
+      "ca_name": "Santa Fe Trails SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvSJdYAM",
+      "ca_name": "Traditions At La Costa SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSarYAE",
+      "ca_name": "Via Casa Del Sol SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywB2AYAU",
+      "ca_name": "Villas De La Costa SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yuqW4YAI",
+      "ca_name": "Beach Street Encinitas SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yutvPYAQ",
+      "ca_name": "Cardiff Park SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw0RiYAI",
+      "ca_name": "Encinitas Ranch SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywLuMYAU",
+      "ca_name": "Flair Encinitas SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvINSYA2",
+      "ca_name": "Forrest Bluff Terraces SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw9QBYAY",
+      "ca_name": "Mendocino SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yuOtDYAU",
+      "ca_name": "Pacifica Leucadia SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSqzYAE",
+      "ca_name": "Sandalwood SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSpNYAU",
+      "ca_name": "Seabluffe Villages SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw9YHYAY",
+      "ca_name": "Seaside Highlannds SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSnlYAE",
+      "ca_name": "Seaside Ridge SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSsbYAE",
+      "ca_name": "The Summit SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk9UrYAI",
+      "ca_name": "West Hampton Cove",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk3OAYAY",
+      "ca_name": "El Camino 76 Mobile Estates",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yuj1ZYAQ",
+      "ca_name": "Emerald Lake Village SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywT77YAE",
+      "ca_name": "Pacifica SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yv0X4YAI",
+      "ca_name": "Rancho Hermosa SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkA6MYAU",
+      "ca_name": "Trico Mobile Estates",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywKINYA2",
+      "ca_name": "Villa Trieste SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywScTYAU",
+      "ca_name": "Alga Hills SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSNxYAM",
+      "ca_name": "San Pacifico SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvoqPYAQ",
+      "ca_name": "Monte Mira SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvQkpYAE",
+      "ca_name": "Sky Loft SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywTa9YAE",
+      "ca_name": "127 W Glaucus ST - A",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywG8IYAU",
+      "ca_name": "Casitas De La Costa SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw09zYAA",
+      "ca_name": "Beacons Beach Village",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvnHbYAI",
+      "ca_name": "Hilltop Trailer Park",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvLI6YAM",
+      "ca_name": "Riviera Mobile Homes",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvdF2YAI",
+      "ca_name": "Shamrock Mobile Estates",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywTS5YAM",
+      "ca_name": "Valley of Dreams Mobile Village",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkCmJYAU",
+      "ca_name": "Park Encinitas Mobile Homes",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "StageName": "Prospecting",
+        "Property_Classification__c": "MHP"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yv6m8YAA",
+      "ca_name": "Camino Cabrillo Pvt Road",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvxP0YAI",
+      "ca_name": "Hillside Patio Pvt Road",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywBJuYAM",
+      "ca_name": "Shady Hollow Pvt Road",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk9UuYAI",
+      "ca_name": "Fox Point Farms",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk9ZcYAI",
+      "ca_name": "Park Place Bluffs",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk9SnYAI",
+      "ca_name": "Solana Beach_MDU_Seascape Sur",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Proposal Sent",
+        "StageName": "Engaged",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkA8kYAE",
+      "ca_name": "Solana Beach_MDU_Santa Helena Park Condominiums",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Proposal Sent",
+        "StageName": "Engaged"
+      },
+      "agreement": null,
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywTFBYA2",
+      "ca_name": "Las Vistas SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-01-05"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkA6iYAE",
+      "ca_name": "Green Valley Mobile Estate",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "SFU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywSm9YAE",
+      "ca_name": "North Shore SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-04-04"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvAMgYAM",
+      "ca_name": "Terraces At Cantebria SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "ROE",
+      "signed_date": "2023-05-11"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkDu4YAE",
+      "ca_name": "High Country Villas 5&7",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "PAL",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yuZv2YAE",
+      "ca_name": "Laurel Cove Lane Pvt Road",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-08-15"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywF2ZYAU",
+      "ca_name": "May Private Road",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "ROE",
+      "signed_date": "2025-04-15"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yw5zGYAQ",
+      "ca_name": "Oceanic Drive",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-12-31"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvvrqYAA",
+      "ca_name": "Cantaberia SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "On Net - Access Agreement Complete"
+      },
+      "agreement": "ROE",
+      "signed_date": "2023-03-23"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywEb8YAE",
+      "ca_name": "Portico At Rancho Carrillo SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Near Net - Access Agreement Complete",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-01-26"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000y3jsTYAQ",
+      "ca_name": "Encinitas_MDU_Saxonay at Encinitas Ranch",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wiNoSYAU",
+      "ca_name": "Encinitas_MDU_Haciendas De La Playa",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkEcRYAU",
+      "ca_name": "Oceanside_MDU_Villa Del Mar",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable"
+      },
+      "agreement": "PAL",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkEcQYAU",
+      "ca_name": "Oceanside_MDU_Laguna Vista Mobile Estates",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "PAL",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkClNYAU",
+      "ca_name": "Solana Beach_MDU_Del Mar Beach Club",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkCllYAE",
+      "ca_name": "Solana Beach_MDU_Del Mar Shores Terrace",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wkClkYAE",
+      "ca_name": "Solana Beach_MDU_Las Brisas",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000y2DuoYAE",
+      "ca_name": "Solana Beach_MDU_Seascape Chateau",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000y3iV0YAI",
+      "ca_name": "Solana Beach_MDU_Seascape Shores Condos",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000wk9YTYAY",
+      "ca_name": "Solana Beach_MDU_Solana Beach & Tennis Club",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000y24mZYAQ",
+      "ca_name": "Solana Beach_MDU_Surfsong Condos",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured",
+        "Property_Classification__c": "MDU"
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "create",
+      "sf_id": "DRY-RUN-ID",
+      "ca_name": "Ito San",
+      "opp": {
+        "Name": "Ito San",
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "StageName": "ROE Secured",
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "Property_Address__c": "1354 Rubenstein Ave, Cardiff, CA 92007",
+        "Property_City__c": "Encinitas",
+        "Property_State__c": "CA",
+        "CloseDate": "2026-12-31",
+        "Property_Classification__c": "SFU",
+        "Units__c": 12
+      },
+      "agreement": "ROE",
+      "signed_date": null
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvmgUYAQ",
+      "ca_name": "Cardiff Glen SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-02-29"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvxC6YAI",
+      "ca_name": "Hygeia Court SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-02-06"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yvYteYAE",
+      "ca_name": "Manzanita Cove SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2024-01-19"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywU9dYAE",
+      "ca_name": "Sandy Point SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2023-02-01"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000yviUqYAI",
+      "ca_name": "Village At Leucadia SFU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable",
+        "StageName": "ROE Secured"
+      },
+      "agreement": "ROE",
+      "signed_date": "2023-12-07"
+    },
+    {
+      "action": "update",
+      "sf_id": "006WR00000ywT5VYAU",
+      "ca_name": "Village Park Shady Tree #2",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "ON Air Serviceable"
+      },
+      "agreement": "ROE",
+      "signed_date": "2025-05-24"
+    }
+  ],
+  "stats": {},
+  "mode": "DRY RUN",
+  "ts": "2026-04-21T08:53:41.615792"
+}

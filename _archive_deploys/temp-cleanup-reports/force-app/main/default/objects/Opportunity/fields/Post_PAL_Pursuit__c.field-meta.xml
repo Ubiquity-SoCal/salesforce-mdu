@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_PAL_Pursuit__c</fullName>
+    <description>Indicates which post-PAL agreements are being pursued. Used by the Executive Dashboard to know whether an Opportunity should advance to EMA/Bulk stage or skip it.</description>
+    <inlineHelpText>Set after PAL is signed. If neither EMA nor Bulk is being pursued (e.g., property has exclusive marketing agreement with another ISP), choose Not Pursued so the Opportunity does not sit in EMA/Bulk stage waiting on something that will not happen.</inlineHelpText>
+    <label>Post-PAL Pursuit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pursuing EMA</fullName>
+                <default>false</default>
+                <label>Pursuing EMA</label>
+            </value>
+            <value>
+                <fullName>Pursuing Bulk</fullName>
+                <default>false</default>
+                <label>Pursuing Bulk</label>
+            </value>
+            <value>
+                <fullName>Pursuing Both</fullName>
+                <default>false</default>
+                <label>Pursuing Both</label>
+            </value>
+            <value>
+                <fullName>Not Pursued</fullName>
+                <default>false</default>
+                <label>Not Pursued</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

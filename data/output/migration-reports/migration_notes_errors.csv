@@ -1,0 +1,2 @@
+Opportunity,Title,Error
+San Fernando Apartments,Marty Samuels - 2025-09-17,"Malformed request https://fun-power-747.my.salesforce.com/services/data/v59.0/sobjects/ContentNote/. Response content: [{'message': ""Note can't be saved because it contains HTML tags or unescaped characters that are not allowed in a Note."", 'errorCode': 'UNSAFE_HTML_CONTENT', 'fields': ['VersionData']}]"

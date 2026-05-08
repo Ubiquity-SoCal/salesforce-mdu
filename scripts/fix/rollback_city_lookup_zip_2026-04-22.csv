@@ -1,0 +1,34 @@
+Id,Name,prior_value,new_Property_Zip__c,source,top_count,total,distinct_zips
+006WR00000wj8KxYAI,Silver Creek - Mesa,,85210,city_state_mode,70,431,13
+006WR00000wjqDfYAI,Modera Georgetown,,75287,city_state_mode,15,122,33
+006WR00000wk1FDYAY,Arcadia Place X,,92081,city_state_mode,19,42,3
+006WR00000wk9U2YAI,Exchange on the 8,,85210,city_state_mode,70,431,13
+006WR00000wkA6eYAE,Ovation Heartwood Preserve-Independent Living,,68132,city_state_mode,86,336,24
+006WR00000wkA6yYAE,Irvington Heights,,68132,city_state_mode,86,336,24
+006WR00000wkACIYA2,"Sun City, Georgetown, TX",,78626,city_state_mode,36,61,5
+006WR00000wkAVXYA2,The Boulders,,80026,city_state_mode,2,2,1
+006WR00000wkAk8YAE,Camp Pendleton,,92058,city_state_mode,22,70,6
+006WR00000wkBGTYA2,Trax at Cooley Station,,85295,city_state_mode,24,84,8
+006WR00000wkBTrYAM,5320-5326.5 S. Drexel Boulevard,,60615,city_state_mode,69,103,4
+006WR00000wkBVFYA2,Crystal Falls Crossing,,78758,city_state_mode,3,27,19
+006WR00000wkBopYAE,San Marquis,,85281,city_state_mode,46,94,4
+006WR00000wkBpEYAU,University Club Apartments,,78758,city_state_mode,3,27,19
+006WR00000wkC6oYAE,The Piedmont,,85281,city_state_mode,46,94,4
+006WR00000wkClGYAU,The Grove at Killeen,,76542,city_state_mode,1,1,1
+006WR00000wkCluYAE,SkyView AKA Hoodview Apartments,,76542,city_state_mode,1,1,1
+006WR00000wkDLsYAM,Williamson At The Overlook,,78626,city_state_mode,36,61,5
+006WR00000y24mZYAQ,Solana Beach_MDU_Surfsong Condos,,92075,city_state_mode,30,30,1
+006WR00000y2DuoYAE,Solana Beach_MDU_Seascape Chateau,,92075,city_state_mode,30,30,1
+006WR00000y2k2dYAA,Omaha_MDU_3344-3348 Larimore Ave,,68132,city_state_mode,86,336,24
+006WR00000y3NdSYAU,Omaha_MDU_Benson Crest Apartments 2,,68132,city_state_mode,86,336,24
+006WR00000y3iV0YAI,Solana Beach_MDU_Seascape Shores Condos,,92075,city_state_mode,30,30,1
+006WR00000y3jsTYAQ,Encinitas_MDU_Saxonay at Encinitas Ranch,,92024,city_state_mode,89,96,3
+006WR00000y3jyvYAA,Omaha_MDU_4612 Redman Ave,,68132,city_state_mode,86,336,24
+006WR00000y3k29YAA,Omaha_MDU_9208 Ohio St,,68132,city_state_mode,86,336,24
+006WR00000y3k5NYAQ,Decatur_MDU_Smallwood Trailer Park,,76234,city_state_mode,9,9,1
+006WR00000y46nRYAQ,Omaha_MDU_Farnam Flats,,68132,city_state_mode,86,336,24
+006WR00000yuYsYYAU,Montego Village HOA,,92058,city_state_mode,22,70,6
+006WR00000yuxKdYAI,Mission Del Oro HOA,,92058,city_state_mode,22,70,6
+006WR00000yvYteYAE,Manzanita Cove HOA,,92024,city_state_mode,89,96,3
+006WR00000ywTgbYAE,Surfsong,,92024,city_state_mode,89,96,3
+006WR00000ywU9dYAE,Sandy Point HOA,,92024,city_state_mode,89,96,3

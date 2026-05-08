@@ -1,0 +1,272 @@
+MDU EMA/Bulk In Progress Opps: 102
+
+Stats: {'total': 102, 'clean': 71, 'review_other': 31}
+
+====================================================================================================
+AUTO-BUMP -> EMA/Bulk Complete (all EMA/Bulk children Completed/Signed) — 0
+====================================================================================================
+
+====================================================================================================
+REVIEW — 31
+====================================================================================================
+
+--- Brett Spivey (31) ---
+  Baldwin Manor  Id=006WR00000wkEaRYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0792 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0793 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0794 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003350  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Bali Apartments  Id=006WR00000wkEaTYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0798 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0799 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0800 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003352  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Brody Terrace (Riverside)  Id=006WR00000wkEahYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0840 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0841 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0842 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003331  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Brookside Terrace Apartments  Id=006WR00000wkEbLYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0934 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0935 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0936 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003349  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Casa Linda  Id=006WR00000wkEaXYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0810 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0811 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0812 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003347  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Chatsworth Plaza  Id=006WR00000wkEaVYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0804 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0805 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0806 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003345  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Coliseum Apartments  Id=006WR00000wkEaZYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0816 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0817 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0818 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003343  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Colonial Manor Apartments  Id=006WR00000wkEaaYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0819 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0820 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0821 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003342  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Corbett Avenue Apartments  Id=006WR00000wkEaUYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0801 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0802 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0803 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003383  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  First Casa De Marina  Id=006WR00000wkEbIYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0925 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0926 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0927 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003281  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Jaclyn Terrace  Id=006WR00000wkEagYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0837 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0838 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0839 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003338  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  John Manor  Id=006WR00000wkEaWYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0807 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0808 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0809 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003384  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Kling Trio Apartments  Id=006WR00000wkEafYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0834 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0835 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0836 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003336  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Krystal Terrace  Id=006WR00000wkEadYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0828 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0829 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0830 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003387  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Lombardi Apartments  Id=006WR00000wkEbJYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0928 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0929 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0930 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003335  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Parkview Terrace  Id=006WR00000wkEaiYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0843 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0844 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0845 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003334  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Parkway Terrace  Id=006WR00000wkEaeYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0831 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0832 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0833 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003388  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Parthenia Terrace  Id=006WR00000wkEbNYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0940 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0941 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0942 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003332  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Riverside Villa Apartments  Id=006WR00000wkEakYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0849 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0850 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0851 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003330  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Roxanne Apartments  Id=006WR00000wkEajYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0846 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0847 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0848 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003353  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  San Vicente Apartments  Id=006WR00000wkEabYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0822 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0823 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0824 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003385  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  St. Andrews Manor  Id=006WR00000wkEacYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0825 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0826 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0827 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003386  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  The Banyans  Id=006WR00000wkEalYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0852 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0853 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0854 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003351  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  The Meadows at Westlake Village  Id=006WR00000wkEbKYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0931 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0932 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0933 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003348  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  The Palms  Id=006WR00000wkEapYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0864 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0865 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0866 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003346  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Topanga Apartments  Id=006WR00000wkEamYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0855 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0856 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0857 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003344  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Topanga Terrace  Id=006WR00000wkEanYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0858 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0859 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0860 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003341  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Vista Apartments  Id=006WR00000wkEaoYAE  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0861 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0862 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0863 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003340  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  White Oak Terrace  Id=006WR00000wkEaSYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0795 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0796 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0797 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003337  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Windsor Manor  Id=006WR00000wkEaYYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0813 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0814 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0815 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003381  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+  Woodland Trio The Oaks  Id=006WR00000wkEaQYAU  [other]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-0789 Type=PAL Status=Completed Signed=2023-11-01 IC=None
+      Agr AGR-0790 Type=EMA Status=Review Signed=None IC=None
+      Agr AGR-0791 Type=Bulk Status=Review Signed=None IC=None
+      ST: P-003339  Build_Status=1. Project - PAL/ROE Signed
+    FLAGS: NO 3-signal (no Next_Action, no Projected, no IC link)
+
+====================================================================================================
+CLEAN — 71
+====================================================================================================
+  Chuck McNeely: 35
+  Brett Spivey: 25
+  Melissa Baker: 7
+  Jeff Chao: 1
+  Jeff Wickersham: 1
+  Justin Barry: 1
+  Marty Samuels: 1

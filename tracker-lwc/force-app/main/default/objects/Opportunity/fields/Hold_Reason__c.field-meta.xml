@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hold_Reason__c</fullName>
+    <description>Why an Opp is paused. Required when Stage = On Hold. Helps us decide when conditions have changed enough to revisit.</description>
+    <inlineHelpText>Why is this Opp on hold? Pick the reason so we know when to revisit (e.g. Ownership Change resolves, Build Not Approved gets unblocked).</inlineHelpText>
+    <label>Hold Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ownership Change</fullName>
+                <default>false</default>
+                <label>Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Budget / Timing</fullName>
+                <default>false</default>
+                <label>Budget / Timing</label>
+            </value>
+            <value>
+                <fullName>Pending Legal Review</fullName>
+                <default>false</default>
+                <label>Pending Legal Review</label>
+            </value>
+            <value>
+                <fullName>Market Conditions</fullName>
+                <default>false</default>
+                <label>Market Conditions</label>
+            </value>
+            <value>
+                <fullName>Build Not Approved</fullName>
+                <default>false</default>
+                <label>Build Not Approved</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

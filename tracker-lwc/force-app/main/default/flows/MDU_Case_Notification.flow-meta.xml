@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <description>Sends email notification to Niraj and Kevin when a new Case is created with Address Type containing MDU</description>
+    <interviewLabel>MDU Case Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MDU Case Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_MDU_Notification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Address_Type__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>MDU</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <actionCalls>
+        <name>Send_MDU_Notification</name>
+        <label>Send MDU Notification</label>
+        <locationX>50</locationX>
+        <locationY>200</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>niraj@ubiquitygp.com, kevin@ubiquitygp.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>New MDU AVR Case: {!$Record.CaseNumber} - {!$Record.Subject}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>A new MDU Address Verification Request has been submitted.
+
+AVR Number: {!$Record.AVR_Number__c}
+Requestor: {!$Record.Requestor__c}
+Requestor Email: {!$Record.Requestor_Email__c}
+Requested Address: {!$Record.Requested_Address__c}
+Address Type: {!$Record.Address_Type__c}
+
+Request Description:
+{!$Record.Request_Description__c}
+
+View Case: https://fun-power-747.my.salesforce.com/{!$Record.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>CurrentUser</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+</Flow>

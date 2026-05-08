@@ -1,0 +1,274 @@
+{
+  "total_opps": 3648,
+  "total_flagged": 22,
+  "summary": {
+    "non_ascii_other": 16,
+    "trailing_punct": 6
+  },
+  "flagged": [
+    {
+      "Id": "006WR00000U4tXhYAJ",
+      "Monday_Item_ID__c": null,
+      "Stage": "Under Contract",
+      "RecordType": "Business",
+      "current": "ADVANCED SPINE -",
+      "current_repr": "'ADVANCED SPINE -'",
+      "proposed": "ADVANCED SPINE -",
+      "issues": [
+        "trailing_punct"
+      ]
+    },
+    {
+      "Id": "006WR00000wiNooYAE",
+      "Monday_Item_ID__c": "6214308153",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "The Ridge & Shores Apartments -",
+      "current_repr": "'The Ridge & Shores Apartments -'",
+      "proposed": "The Ridge & Shores Apartments -",
+      "issues": [
+        "trailing_punct"
+      ]
+    },
+    {
+      "Id": "006WR00000wiNowYAE",
+      "Monday_Item_ID__c": "6214309235",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Cinnabar Apts.",
+      "current_repr": "'Cinnabar Apts.'",
+      "proposed": "Cinnabar Apts.",
+      "issues": [
+        "trailing_punct"
+      ]
+    },
+    {
+      "Id": "006WR00000wiNp0YAE",
+      "Monday_Item_ID__c": "6214306910",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Palm Aire Apts.",
+      "current_repr": "'Palm Aire Apts.'",
+      "proposed": "Palm Aire Apts.",
+      "issues": [
+        "trailing_punct"
+      ]
+    },
+    {
+      "Id": "006WR00000wj8KcYAI",
+      "Monday_Item_ID__c": "5579601148",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Camelot Village⚫",
+      "current_repr": "'Camelot Village⚫'",
+      "proposed": "Camelot Village⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wj8KrYAI",
+      "Monday_Item_ID__c": "4637528453",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "5222-38 S Drexel Ave.",
+      "current_repr": "'5222-38 S Drexel Ave.'",
+      "proposed": "5222-38 S Drexel Ave.",
+      "issues": [
+        "trailing_punct"
+      ]
+    },
+    {
+      "Id": "006WR00000wjKGsYAM",
+      "Monday_Item_ID__c": "3785463812",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Chaparral Homeowners Association, Inc.",
+      "current_repr": "'Chaparral Homeowners Association, Inc.'",
+      "proposed": "Chaparral Homeowners Association, Inc.",
+      "issues": [
+        "trailing_punct"
+      ]
+    },
+    {
+      "Id": "006WR00000wk3PGYAY",
+      "Monday_Item_ID__c": "6149652223",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "Village Creek Townhomes⚫",
+      "current_repr": "'Village Creek Townhomes⚫'",
+      "proposed": "Village Creek Townhomes⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wk3PHYAY",
+      "Monday_Item_ID__c": "6268629508",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "Rio Apartments ⚫",
+      "current_repr": "'Rio Apartments ⚫'",
+      "proposed": "Rio Apartments ⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkA8IYAU",
+      "Monday_Item_ID__c": "6067028544",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Keystone Park Apartments⚫",
+      "current_repr": "'Keystone Park Apartments⚫'",
+      "proposed": "Keystone Park Apartments⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkAjeYAE",
+      "Monday_Item_ID__c": "3914604702",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Shadow Ridge Apartments⚫",
+      "current_repr": "'Shadow Ridge Apartments⚫'",
+      "proposed": "Shadow Ridge Apartments⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkBU4YAM",
+      "Monday_Item_ID__c": "6253013588",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Copper Ridge HOA⚫",
+      "current_repr": "'Copper Ridge HOA⚫'",
+      "proposed": "Copper Ridge HOA⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkBpyYAE",
+      "Monday_Item_ID__c": "6082061545",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Station 121 at Town Center⚫",
+      "current_repr": "'Station 121 at Town Center⚫'",
+      "proposed": "Station 121 at Town Center⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkBq5YAE",
+      "Monday_Item_ID__c": "6074272981",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "The Canyons Apartments⚫",
+      "current_repr": "'The Canyons Apartments⚫'",
+      "proposed": "The Canyons Apartments⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkC6VYAU",
+      "Monday_Item_ID__c": "6201888642",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "The Falls & Oaks Village⚫",
+      "current_repr": "'The Falls & Oaks Village⚫'",
+      "proposed": "The Falls & Oaks Village⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkCkTYAU",
+      "Monday_Item_ID__c": "8266621470",
+      "Stage": "Prospecting",
+      "RecordType": "MDU",
+      "current": "Villas de la Montaña",
+      "current_repr": "'Villas de la Montaña'",
+      "proposed": "Villas de la Montaña",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkDMiYAM",
+      "Monday_Item_ID__c": "6073445931",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "The Berkeley Apartments⚫",
+      "current_repr": "'The Berkeley Apartments⚫'",
+      "proposed": "The Berkeley Apartments⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkDMjYAM",
+      "Monday_Item_ID__c": "6081386534",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "Dixon at Stonegate⚫",
+      "current_repr": "'Dixon at Stonegate⚫'",
+      "proposed": "Dixon at Stonegate⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkDMkYAM",
+      "Monday_Item_ID__c": "6268584235",
+      "Stage": "On Hold",
+      "RecordType": "MDU",
+      "current": "Trinity Heights Apartments ⚫",
+      "current_repr": "'Trinity Heights Apartments ⚫'",
+      "proposed": "Trinity Heights Apartments ⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkF0wYAE",
+      "Monday_Item_ID__c": "6215313414",
+      "Stage": "Closed Lost",
+      "RecordType": "MDU",
+      "current": "Presidium at Revelstoke⚫",
+      "current_repr": "'Presidium at Revelstoke⚫'",
+      "proposed": "Presidium at Revelstoke⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkF0zYAE",
+      "Monday_Item_ID__c": "6074713975",
+      "Stage": "Closed Lost",
+      "RecordType": "MDU",
+      "current": "Madera at Leftbank⚫",
+      "current_repr": "'Madera at Leftbank⚫'",
+      "proposed": "Madera at Leftbank⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    },
+    {
+      "Id": "006WR00000wkF10YAE",
+      "Monday_Item_ID__c": "6082147066",
+      "Stage": "Closed Lost",
+      "RecordType": "MDU",
+      "current": "Trinity Urban Apartments - Bluff & District⚫",
+      "current_repr": "'Trinity Urban Apartments - Bluff & District⚫'",
+      "proposed": "Trinity Urban Apartments - Bluff & District⚫",
+      "issues": [
+        "non_ascii_other"
+      ]
+    }
+  ]
+}

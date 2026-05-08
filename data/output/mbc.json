@@ -1,0 +1,118 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk1EpYAI"
+        },
+        "Name": "Linea Stillwater",
+        "Units__c": 230,
+        "Projected_Close_Date__c": "2026-03-20",
+        "SiteTracker_Projects__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "SiteTracker_Project__c",
+                "url": "/services/data/v66.0/sobjects/SiteTracker_Project__c/a0FWR00000XHAMX2A5"
+              },
+              "Activation_Actual__c": null
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9RyYAI"
+        },
+        "Name": "Rivers Edge",
+        "Units__c": 92,
+        "Projected_Close_Date__c": "2026-03-20",
+        "SiteTracker_Projects__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wkDtzYAE"
+        },
+        "Name": "Whispering Hills Apartments",
+        "Units__c": 34,
+        "Projected_Close_Date__c": "2026-05-06",
+        "SiteTracker_Projects__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "SiteTracker_Project__c",
+                "url": "/services/data/v66.0/sobjects/SiteTracker_Project__c/a0FWR00000WAOHx2AP"
+              },
+              "Activation_Actual__c": null
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9RuYAI"
+        },
+        "Name": "Town East",
+        "Units__c": 24,
+        "Projected_Close_Date__c": "2026-05-06",
+        "SiteTracker_Projects__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "SiteTracker_Project__c",
+                "url": "/services/data/v66.0/sobjects/SiteTracker_Project__c/a0FWR00000WAOJZ2A5"
+              },
+              "Activation_Actual__c": null
+            }
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000wk9RtYAI"
+        },
+        "Name": "117 and 121 E Avenue A Apartments",
+        "Units__c": 10,
+        "Projected_Close_Date__c": "2026-03-27",
+        "SiteTracker_Projects__r": null
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v66.0/sobjects/Opportunity/006WR00000xwGf7YAE"
+        },
+        "Name": "Killeen_MDU_117-121_W_Avenue_A",
+        "Units__c": 10,
+        "Projected_Close_Date__c": "2026-05-06",
+        "SiteTracker_Projects__r": {
+          "totalSize": 1,
+          "done": true,
+          "records": [
+            {
+              "attributes": {
+                "type": "SiteTracker_Project__c",
+                "url": "/services/data/v66.0/sobjects/SiteTracker_Project__c/a0FWR00000WAOLB2A5"
+              },
+              "Activation_Actual__c": null
+            }
+          ]
+        }
+      }
+    ],
+    "totalSize": 6,
+    "done": true
+  },
+  "warnings": []
+}

@@ -1,0 +1,14 @@
+.opp-row {
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.opp-row a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.opp-row a:hover {
+    text-decoration: underline;
+}

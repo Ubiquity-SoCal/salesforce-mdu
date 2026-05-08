@@ -20,8 +20,12 @@ private class TrackerControllerTest {
             Name = 'Test Opp',
             AccountId = acc.Id,
             StageName = 'Prospecting',
+            Sales_Status__c = 'Contact Pending',
             CloseDate = Date.today().addDays(30),
-            Amount = 10000
+            Amount = 10000,
+            Property_City__c = 'Test City',
+            Property_State__c = 'Nebraska',
+            Property_Zip__c = '68101'
         );
         insert opp;
     }
@@ -206,6 +210,66 @@ private class TrackerControllerTest {
     }
 
     @isTest
+    static void testGetTrackerDataPaged() {
+        Tracker_View__c view = [SELECT Id FROM Tracker_View__c LIMIT 1];
+        TrackerController.TrackerResult result = TrackerController.getTrackerDataPaged(view.Id, 0, null, null);
+        System.assertNotEquals(null, result.totalCount);
+        System.assert(result.totalCount > 0, 'Should have total count');
+
+        // Test with owner filter
+        TrackerController.TrackerResult filtered = TrackerController.getTrackerDataPaged(view.Id, 0, 'Nonexistent User', null);
+        System.assertEquals(0, filtered.records.size());
+
+        // Test with date range
+        TrackerController.TrackerResult dated = TrackerController.getTrackerDataPaged(view.Id, 0, null, 'NEXT_30_DAYS');
+        System.assertNotEquals(null, dated);
+    }
+
+    @isTest
+    static void testGetTrackerDataFull() {
+        Tracker_View__c view = [SELECT Id FROM Tracker_View__c LIMIT 1];
+
+        // Test with server-side sort override
+        TrackerController.TrackerResult sorted = TrackerController.getTrackerDataFull(
+            view.Id, 0, null, null, null, 'Name', 'DESC', null, null
+        );
+        System.assertNotEquals(null, sorted);
+        System.assert(sorted.records.size() > 0, 'Should return records with sort override');
+
+        // Test with server-side text filter
+        TrackerController.TrackerResult filtered = TrackerController.getTrackerDataFull(
+            view.Id, 0, null, null, null, null, null, 'Name', 'Test'
+        );
+        System.assertNotEquals(null, filtered);
+
+        // Test with both sort and filter
+        TrackerController.TrackerResult both = TrackerController.getTrackerDataFull(
+            view.Id, 0, null, null, null, 'Name', 'ASC', 'Name', 'Nonexistent'
+        );
+        System.assertEquals(0, both.records.size());
+    }
+
+    @isTest
+    static void testGetTrackerSummaryFiltered() {
+        Tracker_View__c view = [SELECT Id FROM Tracker_View__c LIMIT 1];
+        TrackerController.SummaryResult summary = TrackerController.getTrackerSummaryFiltered(view.Id, null, null, null);
+        System.assertNotEquals(null, summary);
+        System.assert(summary.totalOpportunities > 0);
+
+        // Test with date range
+        TrackerController.SummaryResult dated = TrackerController.getTrackerSummaryFiltered(view.Id, null, 'NEXT_90_DAYS', null);
+        System.assertNotEquals(null, dated);
+    }
+
+    @isTest
+    static void testGetTrackerSummary() {
+        Tracker_View__c view = [SELECT Id FROM Tracker_View__c LIMIT 1];
+        TrackerController.SummaryResult summary = TrackerController.getTrackerSummary(view.Id);
+        System.assertNotEquals(null, summary);
+        System.assert(summary.totalOpportunities > 0, 'Should count opportunities');
+    }
+
+    @isTest
     static void testGetContactsForRecord() {
         Opportunity opp = [SELECT Id FROM Opportunity LIMIT 1];
         List<TrackerController.ContactWrapper> contacts = TrackerController.getContactsForRecord(opp.Id);
@@ -230,5 +294,55 @@ private class TrackerControllerTest {
         List<TrackerController.ContactWrapper> contacts = TrackerController.getContactsForRecord(opp.Id);
         System.assertEquals(1, contacts.size());
         System.assertEquals('Test NewContact', contacts[0].name);
+    }
+
+    @isTest
+    static void testGetExecutiveDashboardData() {
+        // Create MDU record type opp with projected close date
+        Id mduRtId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('MDU').getRecordTypeId();
+        Account acc = [SELECT Id FROM Account LIMIT 1];
+
+        Opportunity mduOpp = new Opportunity(
+            Name = 'Test MDU Site',
+            AccountId = acc.Id,
+            RecordTypeId = mduRtId,
+            StageName = 'Prospecting',
+            Sales_Status__c = 'Contact Pending',
+            CloseDate = Date.today().addDays(60),
+            Projected_Close_Date__c = Date.today().addDays(60),
+            Property_City__c = 'Test City',
+            Property_State__c = 'Nebraska',
+            Property_Zip__c = '68101'
+        );
+        insert mduOpp;
+
+        // Create a signed agreement
+        Agreement__c agr = new Agreement__c(
+            Opportunity__c = mduOpp.Id,
+            Agreement_Type__c = 'ROE',
+            Status__c = 'Completed',
+            Signed_Date__c = Date.today()
+        );
+        insert agr;
+
+        TrackerController.ExecutiveDashboardData data = TrackerController.getExecutiveDashboardData();
+        System.assertNotEquals(null, data);
+        System.assertNotEquals(null, data.funnelStages);
+        System.assertEquals(7, data.funnelStages.size(), 'Funnel should have 7 stages');
+        System.assertNotEquals(null, data.completedByMonth);
+        System.assertEquals(12, data.completedByMonth.size());
+        System.assert(data.totalSignedYTD >= 1, 'Should have at least 1 signed agreement');
+
+        // Lane forecasts exist
+        System.assertNotEquals(null, data.palForecast);
+        System.assertNotEquals(null, data.emaBulkForecast);
+        System.assertNotEquals(null, data.saqForecast);
+        System.assertEquals('Brett Spivey',  data.palForecast.ownerName);
+        System.assertEquals('Melissa Baker', data.emaBulkForecast.ownerName);
+        System.assertEquals('Bill Holick',   data.saqForecast.ownerName);
+        System.assertNotEquals(null, data.palForecast.pastDueCount);
+        System.assertNotEquals(null, data.palForecast.next90Count);
+        System.assertNotEquals(null, data.palForecast.over90Count);
+        System.assertNotEquals(null, data.palForecast.pastDueDetails);
     }
 }

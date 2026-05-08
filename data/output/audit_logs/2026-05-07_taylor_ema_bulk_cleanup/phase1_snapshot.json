@@ -1,0 +1,4323 @@
+{
+  "generated_at": "2026-05-07T11:48:48.538158",
+  "source": "TM_review_2026-05-04",
+  "agreements": [
+    {
+      "Id": "a0BWR0000083yKv2AI",
+      "Name": "AGR-0544",
+      "Opportunity__c": "006WR00000wkDuAYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuAYAU"
+        },
+        "Name": "Villas on Horne"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLD2AY",
+      "Name": "AGR-0562",
+      "Opportunity__c": "006WR00000wkDuOYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuOYAU"
+        },
+        "Name": "Stonebridge Gardens"
+      },
+      "Status__c": "Paused",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLO2AY",
+      "Name": "AGR-0573",
+      "Opportunity__c": "006WR00000wkDuUYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuUYAU"
+        },
+        "Name": "Pineforest Park"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLP2AY",
+      "Name": "AGR-0574",
+      "Opportunity__c": "006WR00000wkDuUYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuUYAU"
+        },
+        "Name": "Pineforest Park"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLR2AY",
+      "Name": "AGR-0576",
+      "Opportunity__c": "006WR00000wkDuVYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuVYAU"
+        },
+        "Name": "Crenshaw Townhouse"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLS2AY",
+      "Name": "AGR-0577",
+      "Opportunity__c": "006WR00000wkDuVYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuVYAU"
+        },
+        "Name": "Crenshaw Townhouse"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLU2AY",
+      "Name": "AGR-0579",
+      "Opportunity__c": "006WR00000wkDuWYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuWYAU"
+        },
+        "Name": "West Creek Townhomes"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLV2AY",
+      "Name": "AGR-0580",
+      "Opportunity__c": "006WR00000wkDuWYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuWYAU"
+        },
+        "Name": "West Creek Townhomes"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLX2AY",
+      "Name": "AGR-0582",
+      "Opportunity__c": "006WR00000wkDuXYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuXYAU"
+        },
+        "Name": "Vanowen Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLY2AY",
+      "Name": "AGR-0583",
+      "Opportunity__c": "006WR00000wkDuXYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuXYAU"
+        },
+        "Name": "Vanowen Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLa2AI",
+      "Name": "AGR-0585",
+      "Opportunity__c": "006WR00000wkDuYYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuYYAU"
+        },
+        "Name": "Lord Tennyson"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLb2AI",
+      "Name": "AGR-0586",
+      "Opportunity__c": "006WR00000wkDuYYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuYYAU"
+        },
+        "Name": "Lord Tennyson"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLd2AI",
+      "Name": "AGR-0588",
+      "Opportunity__c": "006WR00000wkDuZYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuZYAU"
+        },
+        "Name": "Crenshaw Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLe2AI",
+      "Name": "AGR-0589",
+      "Opportunity__c": "006WR00000wkDuZYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuZYAU"
+        },
+        "Name": "Crenshaw Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLg2AI",
+      "Name": "AGR-0591",
+      "Opportunity__c": "006WR00000wkDuaYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuaYAE"
+        },
+        "Name": "Columbia Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLh2AI",
+      "Name": "AGR-0592",
+      "Opportunity__c": "006WR00000wkDuaYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuaYAE"
+        },
+        "Name": "Columbia Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLj2AI",
+      "Name": "AGR-0594",
+      "Opportunity__c": "006WR00000wkDubYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDubYAE"
+        },
+        "Name": "Windfaire Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLk2AI",
+      "Name": "AGR-0595",
+      "Opportunity__c": "006WR00000wkDubYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDubYAE"
+        },
+        "Name": "Windfaire Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLm2AI",
+      "Name": "AGR-0597",
+      "Opportunity__c": "006WR00000wkDucYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDucYAE"
+        },
+        "Name": "Woodbury Place Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLn2AI",
+      "Name": "AGR-0598",
+      "Opportunity__c": "006WR00000wkDucYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDucYAE"
+        },
+        "Name": "Woodbury Place Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLp2AI",
+      "Name": "AGR-0600",
+      "Opportunity__c": "006WR00000wkDudYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDudYAE"
+        },
+        "Name": "Strathmore Arms Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLq2AI",
+      "Name": "AGR-0601",
+      "Opportunity__c": "006WR00000wkDudYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDudYAE"
+        },
+        "Name": "Strathmore Arms Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLs2AI",
+      "Name": "AGR-0603",
+      "Opportunity__c": "006WR00000wkDueYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDueYAE"
+        },
+        "Name": "University Club Apartments (Nac)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLt2AI",
+      "Name": "AGR-0604",
+      "Opportunity__c": "006WR00000wkDueYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDueYAE"
+        },
+        "Name": "University Club Apartments (Nac)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLv2AI",
+      "Name": "AGR-0606",
+      "Opportunity__c": "006WR00000wkDufYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDufYAE"
+        },
+        "Name": "714 Veteran"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLw2AI",
+      "Name": "AGR-0607",
+      "Opportunity__c": "006WR00000wkDufYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDufYAE"
+        },
+        "Name": "714 Veteran"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLy2AI",
+      "Name": "AGR-0609",
+      "Opportunity__c": "006WR00000wkDugYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDugYAE"
+        },
+        "Name": "University Square Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yLz2AI",
+      "Name": "AGR-0610",
+      "Opportunity__c": "006WR00000wkDugYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDugYAE"
+        },
+        "Name": "University Square Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yM32AI",
+      "Name": "AGR-0614",
+      "Opportunity__c": "006WR00000wkDuiYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuiYAE"
+        },
+        "Name": "Summerset Village Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yM42AI",
+      "Name": "AGR-0615",
+      "Opportunity__c": "006WR00000wkDuiYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuiYAE"
+        },
+        "Name": "Summerset Village Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yM82AI",
+      "Name": "AGR-0619",
+      "Opportunity__c": "006WR00000wkDukYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDukYAE"
+        },
+        "Name": "Cimarron Estates"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yM92AI",
+      "Name": "AGR-0620",
+      "Opportunity__c": "006WR00000wkDukYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDukYAE"
+        },
+        "Name": "Cimarron Estates"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMD2AY",
+      "Name": "AGR-0624",
+      "Opportunity__c": "006WR00000wkDumYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDumYAE"
+        },
+        "Name": "Misty Ridge"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yME2AY",
+      "Name": "AGR-0625",
+      "Opportunity__c": "006WR00000wkDumYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDumYAE"
+        },
+        "Name": "Misty Ridge"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMI2AY",
+      "Name": "AGR-0629",
+      "Opportunity__c": "006WR00000wkDuoYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuoYAE"
+        },
+        "Name": "Park at Shiloh"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMJ2AY",
+      "Name": "AGR-0630",
+      "Opportunity__c": "006WR00000wkDuoYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuoYAE"
+        },
+        "Name": "Park at Shiloh"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMN2AY",
+      "Name": "AGR-0634",
+      "Opportunity__c": "006WR00000wkDuqYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuqYAE"
+        },
+        "Name": "Villages at Sugar Road"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMO2AY",
+      "Name": "AGR-0635",
+      "Opportunity__c": "006WR00000wkDuqYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuqYAE"
+        },
+        "Name": "Villages at Sugar Road"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:05.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:05.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMU2AY",
+      "Name": "AGR-0641",
+      "Opportunity__c": "006WR00000wkDutYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDutYAE"
+        },
+        "Name": "Windrush Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMV2AY",
+      "Name": "AGR-0642",
+      "Opportunity__c": "006WR00000wkDutYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDutYAE"
+        },
+        "Name": "Windrush Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMZ2AY",
+      "Name": "AGR-0646",
+      "Opportunity__c": "006WR00000wkDuwYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuwYAE"
+        },
+        "Name": "Fairways"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMa2AI",
+      "Name": "AGR-0647",
+      "Opportunity__c": "006WR00000wkDuwYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuwYAE"
+        },
+        "Name": "Fairways"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMd2AI",
+      "Name": "AGR-0650",
+      "Opportunity__c": "006WR00000wkDuyYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuyYAE"
+        },
+        "Name": "Sheppard's Edge"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMe2AI",
+      "Name": "AGR-0651",
+      "Opportunity__c": "006WR00000wkDuyYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDuyYAE"
+        },
+        "Name": "Sheppard's Edge"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMh2AI",
+      "Name": "AGR-0654",
+      "Opportunity__c": "006WR00000wkDv0YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv0YAE"
+        },
+        "Name": "Boulder Springs Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMi2AI",
+      "Name": "AGR-0655",
+      "Opportunity__c": "006WR00000wkDv0YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv0YAE"
+        },
+        "Name": "Boulder Springs Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMl2AI",
+      "Name": "AGR-0658",
+      "Opportunity__c": "006WR00000wkDv2YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv2YAE"
+        },
+        "Name": "St. John's"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMm2AI",
+      "Name": "AGR-0659",
+      "Opportunity__c": "006WR00000wkDv2YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv2YAE"
+        },
+        "Name": "St. John's"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMp2AI",
+      "Name": "AGR-0662",
+      "Opportunity__c": "006WR00000wkDv4YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv4YAE"
+        },
+        "Name": "615 Manhattan"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMq2AI",
+      "Name": "AGR-0663",
+      "Opportunity__c": "006WR00000wkDv4YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv4YAE"
+        },
+        "Name": "615 Manhattan"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMt2AI",
+      "Name": "AGR-0666",
+      "Opportunity__c": "006WR00000wkDv6YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv6YAE"
+        },
+        "Name": "Sunset Street"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMu2AI",
+      "Name": "AGR-0667",
+      "Opportunity__c": "006WR00000wkDv6YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv6YAE"
+        },
+        "Name": "Sunset Street"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMx2AI",
+      "Name": "AGR-0670",
+      "Opportunity__c": "006WR00000wkDv8YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv8YAE"
+        },
+        "Name": "Pineforest Place"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yMy2AI",
+      "Name": "AGR-0671",
+      "Opportunity__c": "006WR00000wkDv8YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDv8YAE"
+        },
+        "Name": "Pineforest Place"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yN12AI",
+      "Name": "AGR-0674",
+      "Opportunity__c": "006WR00000wkDvAYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvAYAU"
+        },
+        "Name": "University Club Apartments (Lubbock)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yN22AI",
+      "Name": "AGR-0675",
+      "Opportunity__c": "006WR00000wkDvAYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvAYAU"
+        },
+        "Name": "University Club Apartments (Lubbock)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yN52AI",
+      "Name": "AGR-0678",
+      "Opportunity__c": "006WR00000wkDvCYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvCYAU"
+        },
+        "Name": "Chaparral Apts"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yN62AI",
+      "Name": "AGR-0679",
+      "Opportunity__c": "006WR00000wkDvCYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvCYAU"
+        },
+        "Name": "Chaparral Apts"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yN82AI",
+      "Name": "AGR-0681",
+      "Opportunity__c": "006WR00000wkDvDYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvDYAU"
+        },
+        "Name": "Lemoli Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yN92AI",
+      "Name": "AGR-0682",
+      "Opportunity__c": "006WR00000wkDvDYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvDYAU"
+        },
+        "Name": "Lemoli Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNB2AY",
+      "Name": "AGR-0684",
+      "Opportunity__c": "006WR00000wkDvEYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvEYAU"
+        },
+        "Name": "Willow Lake"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNC2AY",
+      "Name": "AGR-0685",
+      "Opportunity__c": "006WR00000wkDvEYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvEYAU"
+        },
+        "Name": "Willow Lake"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNE2AY",
+      "Name": "AGR-0687",
+      "Opportunity__c": "006WR00000wkDvFYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvFYAU"
+        },
+        "Name": "Chadron Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNF2AY",
+      "Name": "AGR-0688",
+      "Opportunity__c": "006WR00000wkDvFYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvFYAU"
+        },
+        "Name": "Chadron Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNH2AY",
+      "Name": "AGR-0690",
+      "Opportunity__c": "006WR00000wkDvGYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvGYAU"
+        },
+        "Name": "Forest Gate Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNI2AY",
+      "Name": "AGR-0691",
+      "Opportunity__c": "006WR00000wkDvGYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvGYAU"
+        },
+        "Name": "Forest Gate Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNK2AY",
+      "Name": "AGR-0693",
+      "Opportunity__c": "006WR00000wkDvHYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvHYAU"
+        },
+        "Name": "Vanowen Manor II"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNL2AY",
+      "Name": "AGR-0694",
+      "Opportunity__c": "006WR00000wkDvHYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvHYAU"
+        },
+        "Name": "Vanowen Manor II"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNN2AY",
+      "Name": "AGR-0696",
+      "Opportunity__c": "006WR00000wkDvIYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvIYAU"
+        },
+        "Name": "Alameda Palms"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNO2AY",
+      "Name": "AGR-0697",
+      "Opportunity__c": "006WR00000wkDvIYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDvIYAU"
+        },
+        "Name": "Alameda Palms"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNQ2AY",
+      "Name": "AGR-0699",
+      "Opportunity__c": "006WR00000wkEZdYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZdYAM"
+        },
+        "Name": "Strathmore Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNR2AY",
+      "Name": "AGR-0700",
+      "Opportunity__c": "006WR00000wkEZdYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZdYAM"
+        },
+        "Name": "Strathmore Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNT2AY",
+      "Name": "AGR-0702",
+      "Opportunity__c": "006WR00000wkEZeYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZeYAM"
+        },
+        "Name": "Heritage Park"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNU2AY",
+      "Name": "AGR-0703",
+      "Opportunity__c": "006WR00000wkEZeYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZeYAM"
+        },
+        "Name": "Heritage Park"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNW2AY",
+      "Name": "AGR-0705",
+      "Opportunity__c": "006WR00000wkEZfYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZfYAM"
+        },
+        "Name": "Crenshaw Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNX2AY",
+      "Name": "AGR-0706",
+      "Opportunity__c": "006WR00000wkEZfYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZfYAM"
+        },
+        "Name": "Crenshaw Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNZ2AY",
+      "Name": "AGR-0708",
+      "Opportunity__c": "006WR00000wkEZgYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZgYAM"
+        },
+        "Name": "University Courtyards Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNa2AI",
+      "Name": "AGR-0709",
+      "Opportunity__c": "006WR00000wkEZgYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZgYAM"
+        },
+        "Name": "University Courtyards Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNc2AI",
+      "Name": "AGR-0711",
+      "Opportunity__c": "006WR00000wkEZhYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZhYAM"
+        },
+        "Name": "Leimert Park"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNd2AI",
+      "Name": "AGR-0712",
+      "Opportunity__c": "006WR00000wkEZhYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZhYAM"
+        },
+        "Name": "Leimert Park"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNf2AI",
+      "Name": "AGR-0714",
+      "Opportunity__c": "006WR00000wkEZiYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZiYAM"
+        },
+        "Name": "Saratoga Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNg2AI",
+      "Name": "AGR-0715",
+      "Opportunity__c": "006WR00000wkEZiYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZiYAM"
+        },
+        "Name": "Saratoga Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNi2AI",
+      "Name": "AGR-0717",
+      "Opportunity__c": "006WR00000wkEZjYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZjYAM"
+        },
+        "Name": "Ladera Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNj2AI",
+      "Name": "AGR-0718",
+      "Opportunity__c": "006WR00000wkEZjYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZjYAM"
+        },
+        "Name": "Ladera Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNl2AI",
+      "Name": "AGR-0720",
+      "Opportunity__c": "006WR00000wkEZkYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZkYAM"
+        },
+        "Name": "The Oaks Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNm2AI",
+      "Name": "AGR-0721",
+      "Opportunity__c": "006WR00000wkEZkYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZkYAM"
+        },
+        "Name": "The Oaks Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNo2AI",
+      "Name": "AGR-0723",
+      "Opportunity__c": "006WR00000wkEZlYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZlYAM"
+        },
+        "Name": "Fallbrook View Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNp2AI",
+      "Name": "AGR-0724",
+      "Opportunity__c": "006WR00000wkEZlYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZlYAM"
+        },
+        "Name": "Fallbrook View Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNr2AI",
+      "Name": "AGR-0726",
+      "Opportunity__c": "006WR00000wkEZmYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZmYAM"
+        },
+        "Name": "Turnagain Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yNs2AI",
+      "Name": "AGR-0727",
+      "Opportunity__c": "006WR00000wkEZmYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZmYAM"
+        },
+        "Name": "Turnagain Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yO62AI",
+      "Name": "AGR-0741",
+      "Opportunity__c": "006WR00000wkEZxYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZxYAM"
+        },
+        "Name": "Villa Park Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yO72AI",
+      "Name": "AGR-0742",
+      "Opportunity__c": "006WR00000wkEZxYAM",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEZxYAM"
+        },
+        "Name": "Villa Park Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOV2AY",
+      "Name": "AGR-0766",
+      "Opportunity__c": "006WR00000wkEaHYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaHYAU"
+        },
+        "Name": "Oxnard Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOW2AY",
+      "Name": "AGR-0767",
+      "Opportunity__c": "006WR00000wkEaHYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaHYAU"
+        },
+        "Name": "Oxnard Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOY2AY",
+      "Name": "AGR-0769",
+      "Opportunity__c": "006WR00000wkEaIYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaIYAU"
+        },
+        "Name": "Vassar Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOZ2AY",
+      "Name": "AGR-0770",
+      "Opportunity__c": "006WR00000wkEaIYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaIYAU"
+        },
+        "Name": "Vassar Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOb2AI",
+      "Name": "AGR-0772",
+      "Opportunity__c": "006WR00000wkEaJYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaJYAU"
+        },
+        "Name": "9404 Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOc2AI",
+      "Name": "AGR-0773",
+      "Opportunity__c": "006WR00000wkEaJYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaJYAU"
+        },
+        "Name": "9404 Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOe2AI",
+      "Name": "AGR-0775",
+      "Opportunity__c": "006WR00000wkEaKYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaKYAU"
+        },
+        "Name": "Villa Lago Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOf2AI",
+      "Name": "AGR-0776",
+      "Opportunity__c": "006WR00000wkEaKYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaKYAU"
+        },
+        "Name": "Villa Lago Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOn2AI",
+      "Name": "AGR-0784",
+      "Opportunity__c": "006WR00000wkEaOYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaOYAU"
+        },
+        "Name": "Regents Park Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOo2AI",
+      "Name": "AGR-0785",
+      "Opportunity__c": "006WR00000wkEaOYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaOYAU"
+        },
+        "Name": "Regents Park Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOq2AI",
+      "Name": "AGR-0787",
+      "Opportunity__c": "006WR00000wkEaPYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaPYAU"
+        },
+        "Name": "Lake Meadows Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOr2AI",
+      "Name": "AGR-0788",
+      "Opportunity__c": "006WR00000wkEaPYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaPYAU"
+        },
+        "Name": "Lake Meadows Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOt2AI",
+      "Name": "AGR-0790",
+      "Opportunity__c": "006WR00000wkEaQYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaQYAU"
+        },
+        "Name": "Woodland Trio The Oaks"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOu2AI",
+      "Name": "AGR-0791",
+      "Opportunity__c": "006WR00000wkEaQYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaQYAU"
+        },
+        "Name": "Woodland Trio The Oaks"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOw2AI",
+      "Name": "AGR-0793",
+      "Opportunity__c": "006WR00000wkEaRYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaRYAU"
+        },
+        "Name": "Baldwin Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOx2AI",
+      "Name": "AGR-0794",
+      "Opportunity__c": "006WR00000wkEaRYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaRYAU"
+        },
+        "Name": "Baldwin Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yOz2AI",
+      "Name": "AGR-0796",
+      "Opportunity__c": "006WR00000wkEaSYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaSYAU"
+        },
+        "Name": "White Oak Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP02AI",
+      "Name": "AGR-0797",
+      "Opportunity__c": "006WR00000wkEaSYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaSYAU"
+        },
+        "Name": "White Oak Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP22AI",
+      "Name": "AGR-0799",
+      "Opportunity__c": "006WR00000wkEaTYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaTYAU"
+        },
+        "Name": "Bali Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP32AI",
+      "Name": "AGR-0800",
+      "Opportunity__c": "006WR00000wkEaTYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaTYAU"
+        },
+        "Name": "Bali Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP52AI",
+      "Name": "AGR-0802",
+      "Opportunity__c": "006WR00000wkEaUYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaUYAU"
+        },
+        "Name": "Corbett Avenue Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP62AI",
+      "Name": "AGR-0803",
+      "Opportunity__c": "006WR00000wkEaUYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaUYAU"
+        },
+        "Name": "Corbett Avenue Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP82AI",
+      "Name": "AGR-0805",
+      "Opportunity__c": "006WR00000wkEaVYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaVYAU"
+        },
+        "Name": "Chatsworth Plaza"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yP92AI",
+      "Name": "AGR-0806",
+      "Opportunity__c": "006WR00000wkEaVYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaVYAU"
+        },
+        "Name": "Chatsworth Plaza"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPB2AY",
+      "Name": "AGR-0808",
+      "Opportunity__c": "006WR00000wkEaWYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaWYAU"
+        },
+        "Name": "John Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPC2AY",
+      "Name": "AGR-0809",
+      "Opportunity__c": "006WR00000wkEaWYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaWYAU"
+        },
+        "Name": "John Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPE2AY",
+      "Name": "AGR-0811",
+      "Opportunity__c": "006WR00000wkEaXYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaXYAU"
+        },
+        "Name": "Casa Linda"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPF2AY",
+      "Name": "AGR-0812",
+      "Opportunity__c": "006WR00000wkEaXYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaXYAU"
+        },
+        "Name": "Casa Linda"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPH2AY",
+      "Name": "AGR-0814",
+      "Opportunity__c": "006WR00000wkEaYYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaYYAU"
+        },
+        "Name": "Windsor Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPI2AY",
+      "Name": "AGR-0815",
+      "Opportunity__c": "006WR00000wkEaYYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaYYAU"
+        },
+        "Name": "Windsor Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPK2AY",
+      "Name": "AGR-0817",
+      "Opportunity__c": "006WR00000wkEaZYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaZYAU"
+        },
+        "Name": "Coliseum Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPL2AY",
+      "Name": "AGR-0818",
+      "Opportunity__c": "006WR00000wkEaZYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaZYAU"
+        },
+        "Name": "Coliseum Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPN2AY",
+      "Name": "AGR-0820",
+      "Opportunity__c": "006WR00000wkEaaYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaaYAE"
+        },
+        "Name": "Colonial Manor Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPO2AY",
+      "Name": "AGR-0821",
+      "Opportunity__c": "006WR00000wkEaaYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaaYAE"
+        },
+        "Name": "Colonial Manor Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPQ2AY",
+      "Name": "AGR-0823",
+      "Opportunity__c": "006WR00000wkEabYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEabYAE"
+        },
+        "Name": "San Vicente Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPR2AY",
+      "Name": "AGR-0824",
+      "Opportunity__c": "006WR00000wkEabYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEabYAE"
+        },
+        "Name": "San Vicente Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPT2AY",
+      "Name": "AGR-0826",
+      "Opportunity__c": "006WR00000wkEacYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEacYAE"
+        },
+        "Name": "St. Andrews Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPU2AY",
+      "Name": "AGR-0827",
+      "Opportunity__c": "006WR00000wkEacYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEacYAE"
+        },
+        "Name": "St. Andrews Manor"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPW2AY",
+      "Name": "AGR-0829",
+      "Opportunity__c": "006WR00000wkEadYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEadYAE"
+        },
+        "Name": "Krystal Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPX2AY",
+      "Name": "AGR-0830",
+      "Opportunity__c": "006WR00000wkEadYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEadYAE"
+        },
+        "Name": "Krystal Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPZ2AY",
+      "Name": "AGR-0832",
+      "Opportunity__c": "006WR00000wkEaeYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaeYAE"
+        },
+        "Name": "Parkway Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPa2AI",
+      "Name": "AGR-0833",
+      "Opportunity__c": "006WR00000wkEaeYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaeYAE"
+        },
+        "Name": "Parkway Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yPc2AI",
+      "Name": "AGR-0835",
+      "Opportunity__c": "006WR00000wkEafYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEafYAE"
+        },
+        "Name": "Kling Trio Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:15.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:15.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083ySr2AI",
+      "Name": "AGR-0836",
+      "Opportunity__c": "006WR00000wkEafYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEafYAE"
+        },
+        "Name": "Kling Trio Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083ySt2AI",
+      "Name": "AGR-0838",
+      "Opportunity__c": "006WR00000wkEagYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEagYAE"
+        },
+        "Name": "Jaclyn Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083ySu2AI",
+      "Name": "AGR-0839",
+      "Opportunity__c": "006WR00000wkEagYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEagYAE"
+        },
+        "Name": "Jaclyn Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083ySw2AI",
+      "Name": "AGR-0841",
+      "Opportunity__c": "006WR00000wkEahYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEahYAE"
+        },
+        "Name": "Brody Terrace (Riverside)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083ySx2AI",
+      "Name": "AGR-0842",
+      "Opportunity__c": "006WR00000wkEahYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEahYAE"
+        },
+        "Name": "Brody Terrace (Riverside)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083ySz2AI",
+      "Name": "AGR-0844",
+      "Opportunity__c": "006WR00000wkEaiYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaiYAE"
+        },
+        "Name": "Parkview Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT02AI",
+      "Name": "AGR-0845",
+      "Opportunity__c": "006WR00000wkEaiYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaiYAE"
+        },
+        "Name": "Parkview Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT22AI",
+      "Name": "AGR-0847",
+      "Opportunity__c": "006WR00000wkEajYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEajYAE"
+        },
+        "Name": "Roxanne Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT32AI",
+      "Name": "AGR-0848",
+      "Opportunity__c": "006WR00000wkEajYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEajYAE"
+        },
+        "Name": "Roxanne Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT52AI",
+      "Name": "AGR-0850",
+      "Opportunity__c": "006WR00000wkEakYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEakYAE"
+        },
+        "Name": "Riverside Villa Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT62AI",
+      "Name": "AGR-0851",
+      "Opportunity__c": "006WR00000wkEakYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEakYAE"
+        },
+        "Name": "Riverside Villa Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT82AI",
+      "Name": "AGR-0853",
+      "Opportunity__c": "006WR00000wkEalYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEalYAE"
+        },
+        "Name": "The Banyans"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yT92AI",
+      "Name": "AGR-0854",
+      "Opportunity__c": "006WR00000wkEalYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEalYAE"
+        },
+        "Name": "The Banyans"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTB2AY",
+      "Name": "AGR-0856",
+      "Opportunity__c": "006WR00000wkEamYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEamYAE"
+        },
+        "Name": "Topanga Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTC2AY",
+      "Name": "AGR-0857",
+      "Opportunity__c": "006WR00000wkEamYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEamYAE"
+        },
+        "Name": "Topanga Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTE2AY",
+      "Name": "AGR-0859",
+      "Opportunity__c": "006WR00000wkEanYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEanYAE"
+        },
+        "Name": "Topanga Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTF2AY",
+      "Name": "AGR-0860",
+      "Opportunity__c": "006WR00000wkEanYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEanYAE"
+        },
+        "Name": "Topanga Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTH2AY",
+      "Name": "AGR-0862",
+      "Opportunity__c": "006WR00000wkEaoYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaoYAE"
+        },
+        "Name": "Vista Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTI2AY",
+      "Name": "AGR-0863",
+      "Opportunity__c": "006WR00000wkEaoYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaoYAE"
+        },
+        "Name": "Vista Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTK2AY",
+      "Name": "AGR-0865",
+      "Opportunity__c": "006WR00000wkEapYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEapYAE"
+        },
+        "Name": "The Palms"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTL2AY",
+      "Name": "AGR-0866",
+      "Opportunity__c": "006WR00000wkEapYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEapYAE"
+        },
+        "Name": "The Palms"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTV2AY",
+      "Name": "AGR-0876",
+      "Opportunity__c": "006WR00000wkEauYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEauYAE"
+        },
+        "Name": "Hollypark Knolls Apartments"
+      },
+      "Status__c": "Paused",
+      "Agreement_Type__c": "NEMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": "IC-1695",
+      "IronClad_Stage__c": "paused",
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-05-05T16:06:16.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTW2AY",
+      "Name": "AGR-0877",
+      "Opportunity__c": "006WR00000wkEauYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEauYAE"
+        },
+        "Name": "Hollypark Knolls Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTY2AY",
+      "Name": "AGR-0879",
+      "Opportunity__c": "006WR00000wkEavYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEavYAE"
+        },
+        "Name": "Saticoy Gardens"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTZ2AY",
+      "Name": "AGR-0880",
+      "Opportunity__c": "006WR00000wkEavYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEavYAE"
+        },
+        "Name": "Saticoy Gardens"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTb2AI",
+      "Name": "AGR-0882",
+      "Opportunity__c": "006WR00000wkEawYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEawYAE"
+        },
+        "Name": "Link Canvas (fka The George & The Leonard)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTc2AI",
+      "Name": "AGR-0883",
+      "Opportunity__c": "006WR00000wkEawYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEawYAE"
+        },
+        "Name": "Link Canvas (fka The George & The Leonard)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTe2AI",
+      "Name": "AGR-0885",
+      "Opportunity__c": "006WR00000wkEaxYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaxYAE"
+        },
+        "Name": "Link West End"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTf2AI",
+      "Name": "AGR-0886",
+      "Opportunity__c": "006WR00000wkEaxYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEaxYAE"
+        },
+        "Name": "Link West End"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTh2AI",
+      "Name": "AGR-0888",
+      "Opportunity__c": "006WR00000wkEayYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEayYAE"
+        },
+        "Name": "Mississippi View"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yTi2AI",
+      "Name": "AGR-0889",
+      "Opportunity__c": "006WR00000wkEayYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEayYAE"
+        },
+        "Name": "Mississippi View"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUJ2AY",
+      "Name": "AGR-0926",
+      "Opportunity__c": "006WR00000wkEbIYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbIYAU"
+        },
+        "Name": "First Casa De Marina"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUK2AY",
+      "Name": "AGR-0927",
+      "Opportunity__c": "006WR00000wkEbIYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbIYAU"
+        },
+        "Name": "First Casa De Marina"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUM2AY",
+      "Name": "AGR-0929",
+      "Opportunity__c": "006WR00000wkEbJYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbJYAU"
+        },
+        "Name": "Lombardi Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUN2AY",
+      "Name": "AGR-0930",
+      "Opportunity__c": "006WR00000wkEbJYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbJYAU"
+        },
+        "Name": "Lombardi Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUP2AY",
+      "Name": "AGR-0932",
+      "Opportunity__c": "006WR00000wkEbKYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbKYAU"
+        },
+        "Name": "The Meadows at Westlake Village"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUQ2AY",
+      "Name": "AGR-0933",
+      "Opportunity__c": "006WR00000wkEbKYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbKYAU"
+        },
+        "Name": "The Meadows at Westlake Village"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUS2AY",
+      "Name": "AGR-0935",
+      "Opportunity__c": "006WR00000wkEbLYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbLYAU"
+        },
+        "Name": "Brookside Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUT2AY",
+      "Name": "AGR-0936",
+      "Opportunity__c": "006WR00000wkEbLYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbLYAU"
+        },
+        "Name": "Brookside Terrace Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUV2AY",
+      "Name": "AGR-0938",
+      "Opportunity__c": "006WR00000wkEbMYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbMYAU"
+        },
+        "Name": "Gloria Homes"
+      },
+      "Status__c": "Paused",
+      "Agreement_Type__c": "NEMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": "IC-1696",
+      "IronClad_Stage__c": "paused",
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-05-05T16:06:17.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUW2AY",
+      "Name": "AGR-0939",
+      "Opportunity__c": "006WR00000wkEbMYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbMYAU"
+        },
+        "Name": "Gloria Homes"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUY2AY",
+      "Name": "AGR-0941",
+      "Opportunity__c": "006WR00000wkEbNYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbNYAU"
+        },
+        "Name": "Parthenia Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUZ2AY",
+      "Name": "AGR-0942",
+      "Opportunity__c": "006WR00000wkEbNYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbNYAU"
+        },
+        "Name": "Parthenia Terrace"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUi2AI",
+      "Name": "AGR-0951",
+      "Opportunity__c": "006WR00000wkEbVYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbVYAU"
+        },
+        "Name": "CitiFront Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yUj2AI",
+      "Name": "AGR-0952",
+      "Opportunity__c": "006WR00000wkEbVYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbVYAU"
+        },
+        "Name": "CitiFront Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yVe2AI",
+      "Name": "AGR-1009",
+      "Opportunity__c": "006WR00000wkEbqYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbqYAE"
+        },
+        "Name": "Purgatory Creek Townhomes"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR0000083yVf2AI",
+      "Name": "AGR-1010",
+      "Opportunity__c": "006WR00000wkEbqYAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbqYAE"
+        },
+        "Name": "Purgatory Creek Townhomes"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-03-24T15:26:28.000+0000",
+      "LastModifiedDate": "2026-03-24T15:26:28.000+0000",
+      "Notes__c": null
+    },
+    {
+      "Id": "a0BWR000008ZFsP2AW",
+      "Name": "AGR-1492",
+      "Opportunity__c": "006WR00000wkEc8YAE",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEc8YAE"
+        },
+        "Name": "Bristol Square Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-04-28T23:38:02.000+0000",
+      "LastModifiedDate": "2026-04-28T23:38:02.000+0000",
+      "Notes__c": "Created 2026-04-28 from tracker xref to capture Melissa work-in-progress."
+    },
+    {
+      "Id": "a0BWR000008ZFu12AG",
+      "Name": "AGR-1493",
+      "Opportunity__c": "006WR00000wkEcBYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEcBYAU"
+        },
+        "Name": "Heritage of Newark (FKA Newark Beach Estates)"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-04-28T23:38:03.000+0000",
+      "LastModifiedDate": "2026-04-28T23:38:03.000+0000",
+      "Notes__c": "Created 2026-04-28 from tracker xref to capture Melissa work-in-progress."
+    },
+    {
+      "Id": "a0BWR000008ZFxF2AW",
+      "Name": "AGR-1495",
+      "Opportunity__c": "006WR00000wkEcDYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEcDYAU"
+        },
+        "Name": "The 1001 Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "EMA",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-04-28T23:38:04.000+0000",
+      "LastModifiedDate": "2026-04-28T23:38:04.000+0000",
+      "Notes__c": "Created 2026-04-28 from tracker xref to capture Melissa work-in-progress."
+    },
+    {
+      "Id": "a0BWR000008ZIv72AG",
+      "Name": "AGR-1498",
+      "Opportunity__c": "006WR00000wkEbOYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEbOYAU"
+        },
+        "Name": "Patriot Place"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-04-29T00:29:49.000+0000",
+      "LastModifiedDate": "2026-04-29T00:29:49.000+0000",
+      "Notes__c": "Created 2026-04-28 from Action-text xref to capture pursuit work in flight."
+    },
+    {
+      "Id": "a0BWR000008ZIyL2AW",
+      "Name": "AGR-1500",
+      "Opportunity__c": "006WR00000wkEcAYAU",
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEcAYAU"
+        },
+        "Name": "Creekside Apartments"
+      },
+      "Status__c": "Review",
+      "Agreement_Type__c": "Bulk",
+      "Signed_Date__c": null,
+      "IronClad_ID__c": null,
+      "IronClad_Stage__c": null,
+      "CreatedDate": "2026-04-29T00:29:50.000+0000",
+      "LastModifiedDate": "2026-04-29T00:29:50.000+0000",
+      "Notes__c": "Created 2026-04-28 from Action-text xref to capture pursuit work in flight."
+    }
+  ],
+  "opportunities_full": [
+    {
+      "opportunity": {
+        "Id": "006WR00000xwHL3YAM",
+        "IsDeleted": false,
+        "AccountId": null,
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "Name": "Killeen_MDU_The Bungalows",
+        "Description": null,
+        "StageName": "PAL/ROE Complete",
+        "Amount": null,
+        "Probability": 100.0,
+        "CloseDate": "2025-04-14",
+        "Type": null,
+        "NextStep": null,
+        "LeadSource": null,
+        "IsClosed": false,
+        "IsWon": false,
+        "ForecastCategory": "Closed",
+        "ForecastCategoryName": "Closed",
+        "CampaignId": "701WR00001IwJYsYAN",
+        "HasOpportunityLineItem": false,
+        "Pricebook2Id": null,
+        "OwnerId": "005WR0000030R1hYAE",
+        "CreatedDate": "2026-03-31T22:19:42.000+0000",
+        "AgeInDays": 36,
+        "CreatedById": "005WR000002ieYTYAY",
+        "LastModifiedDate": "2026-05-04T17:00:01.000+0000",
+        "LastModifiedById": "005WR000002ieYTYAY",
+        "SystemModstamp": "2026-05-04T17:00:01.000+0000",
+        "LastActivityDate": null,
+        "LastActivityInDays": null,
+        "PushCount": 0,
+        "LastStageChangeDate": "2026-04-29T22:46:06.000+0000",
+        "LastStageChangeInDays": 7,
+        "FiscalQuarter": 2,
+        "FiscalYear": 2025,
+        "Fiscal": "2025 2",
+        "ContactId": null,
+        "LastViewedDate": null,
+        "LastReferencedDate": null,
+        "SyncedQuoteId": null,
+        "ContractId": null,
+        "HasOpenActivity": false,
+        "HasOverdueTask": false,
+        "LastAmountChangedHistoryId": null,
+        "LastCloseDateChangedHistoryId": null,
+        "IsPriorityRecord": false,
+        "Budget_Confirmed__c": false,
+        "Discovery_Completed__c": false,
+        "ROI_Analysis_Completed__c": false,
+        "Property_Unit__c": null,
+        "Loss_Reason__c": null,
+        "Special_Project__c": null,
+        "Market_Sales_Lead__c": null,
+        "Units__c": 15.0,
+        "Property_Type__c": null,
+        "Property_Category__c": null,
+        "Build_Type__c": null,
+        "Prospective_ISP__c": null,
+        "Confirmed_ISP__c": null,
+        "Property_Address__c": "710 E AVENUE G UNIT 1 KILLEEN TX 76541",
+        "Property_City__c": "Killeen",
+        "Property_State__c": "TX",
+        "Property_Zip__c": "76541",
+        "Monday_Item_ID__c": null,
+        "Agreement_Name__c": "Killeen_MDU_The Bungalows",
+        "SiteTracker_Project_ID__c": null,
+        "SiteTracker_URL__c": null,
+        "IronClad_URL__c": null,
+        "Contact__c": null,
+        "Stage_Icon__c": "?",
+        "In_SiteTracker__c": false,
+        "Agreements_Sign_Missing_IC__c": 0.0,
+        "Sales_Status__c": null,
+        "Notes_Count__c": 1.0,
+        "Agreements_Signed_Missing_IC__c": 1.0,
+        "Agreement_Count__c": 1.0,
+        "Hold_Reason__c": null,
+        "Portfolio__c": null,
+        "Management_Company__c": null,
+        "Incumbent_Provider__c": null,
+        "Incumbent_Agreement_Type__c": null,
+        "Incumbent_Agreement_Expiration__c": null,
+        "Projected_Close_Date__c": null,
+        "RE_Assigned__c": "005WR0000030R1hYAE",
+        "Cancelled_EMA_Bulk_Count__c": 0.0,
+        "Signed_PAL_Count__c": 0.0,
+        "Franchise_Type__c": "In-Franchise",
+        "Next_Action__c": "On hold. Owner Lisa Jean unreachable + doing construction; awaiting NID placement decision",
+        "Next_Action_Date__c": "2026-05-07",
+        "Property_Classification__c": null,
+        "HOA__c": false,
+        "New_Construction__c": false,
+        "Confirmed_ISPs__c": null,
+        "Prospective_ISPs__c": null,
+        "Pipeline_Bucket__c": null,
+        "Submitted_to_FiberFirst__c": false,
+        "Submitted_to_Market__c": false,
+        "Property_Location__c": null,
+        "Closed_Notes__c": null,
+        "FF_Notes__c": null,
+        "Off_Hold_Date__c": null,
+        "Sales_Handoff_Date__c": null,
+        "Active_EMA_Bulk_Count__c": 0.0,
+        "Latest_Note_Date__c": "2026-04-30T15:54:39.000+0000",
+        "Latest_Note_Snippet__c": "[2026-04-30] 2026-04-29 MDU Pipeline Meeting - The Bungalows update from 4/29 call. Owner Lisa Jean is unreachable. Project on hold pending her construction activities. Niraj waiting to confirm whether NID can go on the side of the property. Feet-on-ground stop-bys haven't reached anyone.",
+        "Sub_Bucket__c": null,
+        "Substatus__c": null
+      },
+      "agreements": [
+        {
+          "Id": "a0BWR000008AyzB2AS",
+          "IsDeleted": false,
+          "Name": "AGR-1387",
+          "CreatedDate": "2026-03-31T22:55:57.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-03-31T22:55:57.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-03-31T22:55:57.000+0000",
+          "LastViewedDate": null,
+          "LastReferencedDate": null,
+          "Opportunity__c": "006WR00000xwHL3YAM",
+          "Agreement_Type__c": "ROE",
+          "Expiration_Date__c": null,
+          "IronClad_ID__c": null,
+          "IronClad_URL__c": null,
+          "Notes__c": null,
+          "Requested_Date__c": null,
+          "Signed_Date__c": "2025-04-14",
+          "Signer__c": null,
+          "Status__c": "Completed",
+          "IronClad_Contract_Status__c": null,
+          "IronClad_Stage__c": null,
+          "IronClad_Record__c": null,
+          "Property_Location__c": null,
+          "Is_Cancelled_EMA_Bulk__c": false,
+          "Is_PAL_In_Flight__c": false,
+          "Is_Signed_Status__c": true,
+          "Is_Active_EMA_Bulk__c": false
+        }
+      ],
+      "opportunity_contacts": [
+        {
+          "Id": "a0EWR000008MMeo2AG",
+          "IsDeleted": false,
+          "Name": "OC-0304",
+          "CreatedDate": "2026-04-01T00:00:50.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-01T00:00:50.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-01T00:00:50.000+0000",
+          "LastViewedDate": "2026-04-01T00:00:50.000+0000",
+          "LastReferencedDate": "2026-04-01T00:00:50.000+0000",
+          "Opportunity__c": "006WR00000xwHL3YAM",
+          "Contact__c": "003WR000017D5rsYAC",
+          "Role__c": "Property Manager"
+        },
+        {
+          "Id": "a0EWR000008MSnR2AW",
+          "IsDeleted": false,
+          "Name": "OC-0305",
+          "CreatedDate": "2026-04-01T00:00:51.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-01T00:00:51.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-01T00:00:51.000+0000",
+          "LastViewedDate": "2026-04-01T00:00:51.000+0000",
+          "LastReferencedDate": "2026-04-01T00:00:51.000+0000",
+          "Opportunity__c": "006WR00000xwHL3YAM",
+          "Contact__c": "003WR000017DiGQYA0",
+          "Role__c": "Property Owner"
+        }
+      ],
+      "notes": [],
+      "content_document_links": [
+        {
+          "Id": "06AWR00001BBVpp2AH",
+          "ContentDocumentId": "069WR000018USWTYA4",
+          "LinkedEntityId": "006WR00000xwHL3YAM"
+        },
+        {
+          "Id": "06AWR00001Gr87b2AB",
+          "ContentDocumentId": "069WR00001Dzm6WYAR",
+          "LinkedEntityId": "006WR00000xwHL3YAM"
+        }
+      ]
+    },
+    {
+      "opportunity": {
+        "Id": "006WR00000xuzoQYAQ",
+        "IsDeleted": false,
+        "AccountId": null,
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "Name": "Killeen_MDU_Bradley Arms",
+        "Description": null,
+        "StageName": "PAL/ROE Complete",
+        "Amount": null,
+        "Probability": 100.0,
+        "CloseDate": "2026-12-31",
+        "Type": null,
+        "NextStep": null,
+        "LeadSource": null,
+        "IsClosed": false,
+        "IsWon": false,
+        "ForecastCategory": "Closed",
+        "ForecastCategoryName": "Closed",
+        "CampaignId": "701WR00001IwJYsYAN",
+        "HasOpportunityLineItem": false,
+        "Pricebook2Id": null,
+        "OwnerId": "005WR000003CD6DYAW",
+        "CreatedDate": "2026-03-31T22:19:24.000+0000",
+        "AgeInDays": 36,
+        "CreatedById": "005WR000002ieYTYAY",
+        "LastModifiedDate": "2026-05-06T17:23:08.000+0000",
+        "LastModifiedById": "005WR000002ieYTYAY",
+        "SystemModstamp": "2026-05-06T17:23:08.000+0000",
+        "LastActivityDate": null,
+        "LastActivityInDays": null,
+        "PushCount": 0,
+        "LastStageChangeDate": "2026-04-29T22:46:06.000+0000",
+        "LastStageChangeInDays": 7,
+        "FiscalQuarter": 4,
+        "FiscalYear": 2026,
+        "Fiscal": "2026 4",
+        "ContactId": null,
+        "LastViewedDate": "2026-05-06T17:23:08.000+0000",
+        "LastReferencedDate": "2026-05-06T17:23:08.000+0000",
+        "SyncedQuoteId": null,
+        "ContractId": null,
+        "HasOpenActivity": false,
+        "HasOverdueTask": false,
+        "LastAmountChangedHistoryId": null,
+        "LastCloseDateChangedHistoryId": null,
+        "IsPriorityRecord": false,
+        "Budget_Confirmed__c": false,
+        "Discovery_Completed__c": false,
+        "ROI_Analysis_Completed__c": false,
+        "Property_Unit__c": null,
+        "Loss_Reason__c": null,
+        "Special_Project__c": null,
+        "Market_Sales_Lead__c": null,
+        "Units__c": 18.0,
+        "Property_Type__c": null,
+        "Property_Category__c": null,
+        "Build_Type__c": null,
+        "Prospective_ISP__c": null,
+        "Confirmed_ISP__c": null,
+        "Property_Address__c": "1117 N 8TH ST UNIT 1 KILLEEN TX 76541",
+        "Property_City__c": "Killeen",
+        "Property_State__c": "TX",
+        "Property_Zip__c": "76541",
+        "Monday_Item_ID__c": null,
+        "Agreement_Name__c": "Killeen_MDU_Bradley Arms",
+        "SiteTracker_Project_ID__c": null,
+        "SiteTracker_URL__c": null,
+        "IronClad_URL__c": null,
+        "Contact__c": null,
+        "Stage_Icon__c": "?",
+        "In_SiteTracker__c": false,
+        "Agreements_Sign_Missing_IC__c": 0.0,
+        "Sales_Status__c": "Reached Out - Pending Response",
+        "Notes_Count__c": 1.0,
+        "Agreements_Signed_Missing_IC__c": 0.0,
+        "Agreement_Count__c": 0.0,
+        "Hold_Reason__c": null,
+        "Portfolio__c": null,
+        "Management_Company__c": null,
+        "Incumbent_Provider__c": null,
+        "Incumbent_Agreement_Type__c": null,
+        "Incumbent_Agreement_Expiration__c": null,
+        "Projected_Close_Date__c": null,
+        "RE_Assigned__c": "005WR0000030R1hYAE",
+        "Cancelled_EMA_Bulk_Count__c": 0.0,
+        "Signed_PAL_Count__c": 0.0,
+        "Franchise_Type__c": "In-Franchise",
+        "Next_Action__c": null,
+        "Next_Action_Date__c": null,
+        "Property_Classification__c": null,
+        "HOA__c": false,
+        "New_Construction__c": false,
+        "Confirmed_ISPs__c": null,
+        "Prospective_ISPs__c": null,
+        "Pipeline_Bucket__c": null,
+        "Submitted_to_FiberFirst__c": true,
+        "Submitted_to_Market__c": false,
+        "Property_Location__c": null,
+        "Closed_Notes__c": null,
+        "FF_Notes__c": null,
+        "Off_Hold_Date__c": null,
+        "Sales_Handoff_Date__c": null,
+        "Active_EMA_Bulk_Count__c": 0.0,
+        "Latest_Note_Date__c": "2026-04-24T16:23:27.000+0000",
+        "Latest_Note_Snippet__c": "[2026-04-24] Weekly Tracker - 2026-04-24 - Status: PAL addedndum and Marketing Owner (tracker): (unassigned) PAL signed, waitin on PAL addendum and verbal on EMA",
+        "Sub_Bucket__c": null,
+        "Substatus__c": null
+      },
+      "agreements": [],
+      "opportunity_contacts": [
+        {
+          "Id": "a0EWR000008MQld2AG",
+          "IsDeleted": false,
+          "Name": "OC-0209",
+          "CreatedDate": "2026-04-01T00:00:07.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-01T00:00:07.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-01T00:00:07.000+0000",
+          "LastViewedDate": "2026-04-01T00:00:07.000+0000",
+          "LastReferencedDate": "2026-04-01T00:00:07.000+0000",
+          "Opportunity__c": "006WR00000xuzoQYAQ",
+          "Contact__c": "003WR000017DtWnYAK",
+          "Role__c": "Property Manager"
+        },
+        {
+          "Id": "a0EWR000008MQnF2AW",
+          "IsDeleted": false,
+          "Name": "OC-0210",
+          "CreatedDate": "2026-04-01T00:00:07.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-01T00:00:07.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-01T00:00:07.000+0000",
+          "LastViewedDate": "2026-04-01T00:00:07.000+0000",
+          "LastReferencedDate": "2026-04-01T00:00:07.000+0000",
+          "Opportunity__c": "006WR00000xuzoQYAQ",
+          "Contact__c": "003WR000017D38TYAS",
+          "Role__c": "Property Owner"
+        }
+      ],
+      "notes": [],
+      "content_document_links": [
+        {
+          "Id": "06AWR00001BAlrx2AD",
+          "ContentDocumentId": "069WR000018V0BcYAK",
+          "LinkedEntityId": "006WR00000xuzoQYAQ"
+        },
+        {
+          "Id": "06AWR00001FlvyL2AR",
+          "ContentDocumentId": "069WR00001Cy6uSYAR",
+          "LinkedEntityId": "006WR00000xuzoQYAQ"
+        }
+      ]
+    },
+    {
+      "opportunity": {
+        "Id": "006WR00000xwGf7YAE",
+        "IsDeleted": false,
+        "AccountId": null,
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "Name": "Killeen_MDU_117-121_W_Avenue_A",
+        "Description": null,
+        "StageName": "Marketing/Bulk Complete",
+        "Amount": null,
+        "Probability": 100.0,
+        "CloseDate": "2026-03-31",
+        "Type": null,
+        "NextStep": null,
+        "LeadSource": null,
+        "IsClosed": false,
+        "IsWon": false,
+        "ForecastCategory": "Closed",
+        "ForecastCategoryName": "Closed",
+        "CampaignId": "701WR00001IwJYsYAN",
+        "HasOpportunityLineItem": false,
+        "Pricebook2Id": null,
+        "OwnerId": "005WR000003CD6DYAW",
+        "CreatedDate": "2026-03-31T22:19:24.000+0000",
+        "AgeInDays": 36,
+        "CreatedById": "005WR000002ieYTYAY",
+        "LastModifiedDate": "2026-05-06T18:21:29.000+0000",
+        "LastModifiedById": "005WR000002ieYTYAY",
+        "SystemModstamp": "2026-05-06T18:21:29.000+0000",
+        "LastActivityDate": null,
+        "LastActivityInDays": null,
+        "PushCount": 0,
+        "LastStageChangeDate": "2026-05-06T18:21:29.000+0000",
+        "LastStageChangeInDays": 1,
+        "FiscalQuarter": 1,
+        "FiscalYear": 2026,
+        "Fiscal": "2026 1",
+        "ContactId": null,
+        "LastViewedDate": "2026-05-06T18:21:29.000+0000",
+        "LastReferencedDate": "2026-05-06T18:21:29.000+0000",
+        "SyncedQuoteId": null,
+        "ContractId": null,
+        "HasOpenActivity": false,
+        "HasOverdueTask": false,
+        "LastAmountChangedHistoryId": null,
+        "LastCloseDateChangedHistoryId": null,
+        "IsPriorityRecord": false,
+        "Budget_Confirmed__c": false,
+        "Discovery_Completed__c": false,
+        "ROI_Analysis_Completed__c": false,
+        "Property_Unit__c": null,
+        "Loss_Reason__c": null,
+        "Special_Project__c": null,
+        "Market_Sales_Lead__c": null,
+        "Units__c": 10.0,
+        "Property_Type__c": null,
+        "Property_Category__c": "Cat 1",
+        "Build_Type__c": null,
+        "Prospective_ISP__c": null,
+        "Confirmed_ISP__c": null,
+        "Property_Address__c": "117 W AVENUE A UNIT 1 KILLEEN TX 76541",
+        "Property_City__c": "KILLEEN",
+        "Property_State__c": "TX",
+        "Property_Zip__c": "76541",
+        "Monday_Item_ID__c": null,
+        "Agreement_Name__c": "KILLEEN_MDU_117-121_W_AVENUE_A",
+        "SiteTracker_Project_ID__c": null,
+        "SiteTracker_URL__c": null,
+        "IronClad_URL__c": null,
+        "Contact__c": null,
+        "Stage_Icon__c": "?",
+        "In_SiteTracker__c": false,
+        "Agreements_Sign_Missing_IC__c": 0.0,
+        "Sales_Status__c": null,
+        "Notes_Count__c": 1.0,
+        "Agreements_Signed_Missing_IC__c": 3.0,
+        "Agreement_Count__c": 3.0,
+        "Hold_Reason__c": null,
+        "Portfolio__c": null,
+        "Management_Company__c": null,
+        "Incumbent_Provider__c": null,
+        "Incumbent_Agreement_Type__c": null,
+        "Incumbent_Agreement_Expiration__c": null,
+        "Projected_Close_Date__c": "2026-05-06",
+        "RE_Assigned__c": "005WR0000030R1hYAE",
+        "Cancelled_EMA_Bulk_Count__c": 0.0,
+        "Signed_PAL_Count__c": 1.0,
+        "Franchise_Type__c": "In-Franchise",
+        "Next_Action__c": "Perfoming walks on 4/15 [Placeholder forecast - update with real estimate]",
+        "Next_Action_Date__c": "2026-04-28",
+        "Property_Classification__c": null,
+        "HOA__c": false,
+        "New_Construction__c": false,
+        "Confirmed_ISPs__c": null,
+        "Prospective_ISPs__c": null,
+        "Pipeline_Bucket__c": null,
+        "Submitted_to_FiberFirst__c": true,
+        "Submitted_to_Market__c": false,
+        "Property_Location__c": null,
+        "Closed_Notes__c": null,
+        "FF_Notes__c": null,
+        "Off_Hold_Date__c": null,
+        "Sales_Handoff_Date__c": null,
+        "Active_EMA_Bulk_Count__c": 1.0,
+        "Latest_Note_Date__c": "2026-04-24T16:23:07.000+0000",
+        "Latest_Note_Snippet__c": "[2026-04-24] Weekly Tracker - 2026-04-24 - Status: Perfoming walks on 4/15 Owner (tracker): Niraj Bulk deal signed By Jeremy Fay",
+        "Sub_Bucket__c": null,
+        "Substatus__c": null
+      },
+      "agreements": [
+        {
+          "Id": "a0BWR000008AyXl2AK",
+          "IsDeleted": false,
+          "Name": "AGR-1370",
+          "CreatedDate": "2026-03-31T22:55:52.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-03-31T22:55:52.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-03-31T22:55:52.000+0000",
+          "LastViewedDate": null,
+          "LastReferencedDate": null,
+          "Opportunity__c": "006WR00000xwGf7YAE",
+          "Agreement_Type__c": "ROE",
+          "Expiration_Date__c": null,
+          "IronClad_ID__c": null,
+          "IronClad_URL__c": null,
+          "Notes__c": null,
+          "Requested_Date__c": null,
+          "Signed_Date__c": "2026-03-31",
+          "Signer__c": null,
+          "Status__c": "Completed",
+          "IronClad_Contract_Status__c": null,
+          "IronClad_Stage__c": null,
+          "IronClad_Record__c": null,
+          "Property_Location__c": null,
+          "Is_Cancelled_EMA_Bulk__c": false,
+          "Is_PAL_In_Flight__c": false,
+          "Is_Signed_Status__c": true,
+          "Is_Active_EMA_Bulk__c": false
+        },
+        {
+          "Id": "a0BWR000008ZIn32AG",
+          "IsDeleted": false,
+          "Name": "AGR-1496",
+          "CreatedDate": "2026-04-29T00:25:52.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-29T00:25:52.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-29T00:25:52.000+0000",
+          "LastViewedDate": "2026-04-29T00:25:52.000+0000",
+          "LastReferencedDate": "2026-04-29T00:25:52.000+0000",
+          "Opportunity__c": "006WR00000xwGf7YAE",
+          "Agreement_Type__c": "PAL",
+          "Expiration_Date__c": null,
+          "IronClad_ID__c": null,
+          "IronClad_URL__c": null,
+          "Notes__c": "Created 2026-04-28 from xlsb tracker xref (PAL signed 2026-03-27 per tracker col 13).",
+          "Requested_Date__c": null,
+          "Signed_Date__c": "2026-03-27",
+          "Signer__c": null,
+          "Status__c": "Completed",
+          "IronClad_Contract_Status__c": null,
+          "IronClad_Stage__c": null,
+          "IronClad_Record__c": null,
+          "Property_Location__c": null,
+          "Is_Cancelled_EMA_Bulk__c": false,
+          "Is_PAL_In_Flight__c": true,
+          "Is_Signed_Status__c": true,
+          "Is_Active_EMA_Bulk__c": false
+        },
+        {
+          "Id": "a0BWR000008ZIof2AG",
+          "IsDeleted": false,
+          "Name": "AGR-1497",
+          "CreatedDate": "2026-04-29T00:25:52.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-29T00:25:52.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-29T00:25:52.000+0000",
+          "LastViewedDate": "2026-04-29T00:25:52.000+0000",
+          "LastReferencedDate": "2026-04-29T00:25:52.000+0000",
+          "Opportunity__c": "006WR00000xwGf7YAE",
+          "Agreement_Type__c": "Bulk",
+          "Expiration_Date__c": null,
+          "IronClad_ID__c": null,
+          "IronClad_URL__c": null,
+          "Notes__c": "Created 2026-04-28 from xlsb tracker xref (Bulk signed per 4/24 weekly tracker note - exact date unknown, used 2026-04-15 placeholder).",
+          "Requested_Date__c": null,
+          "Signed_Date__c": "2026-04-15",
+          "Signer__c": null,
+          "Status__c": "Completed",
+          "IronClad_Contract_Status__c": null,
+          "IronClad_Stage__c": null,
+          "IronClad_Record__c": null,
+          "Property_Location__c": null,
+          "Is_Cancelled_EMA_Bulk__c": false,
+          "Is_PAL_In_Flight__c": false,
+          "Is_Signed_Status__c": true,
+          "Is_Active_EMA_Bulk__c": true
+        }
+      ],
+      "opportunity_contacts": [
+        {
+          "Id": "a0EWR000008MQs52AG",
+          "IsDeleted": false,
+          "Name": "OC-0213",
+          "CreatedDate": "2026-04-01T00:00:09.000+0000",
+          "CreatedById": "005WR000002ieYTYAY",
+          "LastModifiedDate": "2026-04-01T00:00:09.000+0000",
+          "LastModifiedById": "005WR000002ieYTYAY",
+          "SystemModstamp": "2026-04-01T00:00:09.000+0000",
+          "LastViewedDate": "2026-04-01T00:00:09.000+0000",
+          "LastReferencedDate": "2026-04-01T00:00:09.000+0000",
+          "Opportunity__c": "006WR00000xwGf7YAE",
+          "Contact__c": "003WR000017CYxXYAW",
+          "Role__c": "Property Manager"
+        }
+      ],
+      "notes": [],
+      "content_document_links": [
+        {
+          "Id": "06AWR00001BB1F92AL",
+          "ContentDocumentId": "069WR000018UlcMYAS",
+          "LinkedEntityId": "006WR00000xwGf7YAE"
+        },
+        {
+          "Id": "06AWR00001FmZVY2A3",
+          "ContentDocumentId": "069WR00001CxctEYAR",
+          "LinkedEntityId": "006WR00000xwGf7YAE"
+        }
+      ]
+    }
+  ]
+}

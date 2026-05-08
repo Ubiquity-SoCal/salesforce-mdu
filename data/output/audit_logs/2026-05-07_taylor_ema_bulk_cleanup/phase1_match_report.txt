@@ -1,0 +1,51 @@
+Phase 1 dry-run summary  (2026-05-07T11:48:48.563101)
+
+Source xlsx: C:\Users\cass\Downloads\Take 2 MDU Sales Review (Living) - TM updates 5.4.xlsx
+Source tag:  TM_review_2026-05-04
+
+== Resolution ==
+  Opps flagged for EMA/Bulk delete:  97
+  Opps resolved to SF:               97
+  Opps flagged for full Opp delete:  3
+  Opps resolved to SF:               3
+
+== Mutations Phase 2 will perform ==
+  Agreement__c records to delete:    187
+  Opportunity records to delete:     3
+  Opps to revert to PAL/ROE Complete: 97
+  Junctions to re-parent:            4
+  ContentDocumentLinks to create:    6
+  Agreements to re-parent:           2
+  No-op Opps (no EMA/Bulk to delete, will be skipped): 0
+
+== Unresolved issues ==
+  (none)
+
+== Per-stage breakdown of Opps in delete-AB scope ==
+  Marketing/Bulk In Progress: 97
+
+== Re-point plan (dupe -> keeper) ==
+  Killeen_MDU_The Bungalows (006WR00000xwHL3YAM) -> keeper 006WR00000wkEboYAE
+    re-parent contact junction: David Jirasek (Property Manager)
+    re-parent contact junction: Cinderella Properties LLC (Property Owner)
+    create doc link to keeper: Tanya Friese - ROE Outreach Notes [069WR000018USWTYA4]
+    create doc link to keeper: 2026-04-29 MDU Pipeline Meeting [069WR00001Dzm6WYAR]
+    re-parent agreement: AGR-1387 (ROE, signed 2025-04-14)
+  Killeen_MDU_Bradley Arms (006WR00000xuzoQYAQ) -> keeper 006WR00000wkCjuYAE
+    re-parent contact junction: Paul Williams (Property Owner)
+    drop dup junction (already on keeper): Jim Switzer
+    create doc link to keeper: Tanya Friese - ROE Outreach Notes [069WR000018V0BcYAK]
+    create doc link to keeper: Weekly Tracker - 2026-04-24 [069WR00001Cy6uSYAR]
+  Killeen_MDU_117-121_W_Avenue_A (006WR00000xwGf7YAE) -> keeper 006WR00000wk9RtYAI
+    re-parent contact junction: Keystone Holdings (Property Manager)
+    create doc link to keeper: Tanya Friese - ROE Outreach Notes [069WR000018UlcMYAS]
+    create doc link to keeper: Weekly Tracker - 2026-04-24 [069WR00001CxctEYAR]
+    re-parent agreement: AGR-1370 (ROE, signed 2026-03-31)
+    cascade-delete agreement: AGR-1496 (PAL, type already on keeper or not durable (no Signed_Date))
+    cascade-delete agreement: AGR-1497 (Bulk, type already on keeper or not durable (no Signed_Date))
+
+== Stage revert (post Agreement-delete) ==
+  Reverting all 97 Opps from Marketing/Bulk In Progress -> PAL/ROE Complete
+
+== No-op Opps (Taylor flagged but no EMA/Bulk Agreement found) ==
+  (none)

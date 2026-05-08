@@ -1,0 +1,1530 @@
+{
+  "006WR00000wkDulYAE": {
+    "Id": "006WR00000wkDulYAE",
+    "Name": "104 North Apt",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZvYAM": {
+    "Id": "006WR00000wkEZvYAM",
+    "Name": "1744 Dexter Avenue Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZzYAM": {
+    "Id": "006WR00000wkEZzYAM",
+    "Name": "430 NE Ravenna",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDu6YAE": {
+    "Id": "006WR00000wkDu6YAE",
+    "Name": "500 NE 70th",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZtYAM": {
+    "Id": "006WR00000wkEZtYAM",
+    "Name": "5307 Ravenna",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv4YAE": {
+    "Id": "006WR00000wkDv4YAE",
+    "Name": "615 Manhattan",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuPYAU": {
+    "Id": "006WR00000wkDuPYAU",
+    "Name": "7000 Roosevelt Way Apt",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDupYAE": {
+    "Id": "006WR00000wkDupYAE",
+    "Name": "8746 Phinney Apt",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaJYAU": {
+    "Id": "006WR00000wkEaJYAU",
+    "Name": "9404 Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvIYAU": {
+    "Id": "006WR00000wkDvIYAU",
+    "Name": "Alameda Palms",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaTYAU": {
+    "Id": "006WR00000wkEaTYAU",
+    "Name": "Bali Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbZYAU": {
+    "Id": "006WR00000wkEbZYAU",
+    "Name": "Ballantrae Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbLYAU": {
+    "Id": "006WR00000wkEbLYAU",
+    "Name": "Brookside Terrace Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaXYAU": {
+    "Id": "006WR00000wkEaXYAU",
+    "Name": "Casa Linda",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbVYAU": {
+    "Id": "006WR00000wkEbVYAU",
+    "Name": "CitiFront Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaaYAE": {
+    "Id": "006WR00000wkEaaYAE",
+    "Name": "Colonial Manor Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEb2YAE": {
+    "Id": "006WR00000wkEb2YAE",
+    "Name": "Columbine Towers",
+    "Owner": "Jeff Wickersham",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaUYAU": {
+    "Id": "006WR00000wkEaUYAU",
+    "Name": "Corbett Avenue Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbfYAE": {
+    "Id": "006WR00000wkEbfYAE",
+    "Name": "Cottage Terrace Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbuYAE": {
+    "Id": "006WR00000wkEbuYAE",
+    "Name": "Coyote Creek",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuZYAU": {
+    "Id": "006WR00000wkDuZYAU",
+    "Name": "Crenshaw Manor",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZfYAM": {
+    "Id": "006WR00000wkEZfYAM",
+    "Name": "Crenshaw Terrace Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuVYAU": {
+    "Id": "006WR00000wkDuVYAU",
+    "Name": "Crenshaw Townhouse",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZpYAM": {
+    "Id": "006WR00000wkEZpYAM",
+    "Name": "Cypress Ridge",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbgYAE": {
+    "Id": "006WR00000wkEbgYAE",
+    "Name": "Edgerton Highlands Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbrYAE": {
+    "Id": "006WR00000wkEbrYAE",
+    "Name": "Equinox on Indian School",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZlYAM": {
+    "Id": "006WR00000wkEZlYAM",
+    "Name": "Fallbrook View Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbIYAU": {
+    "Id": "006WR00000wkEbIYAU",
+    "Name": "First Casa De Marina",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZeYAM": {
+    "Id": "006WR00000wkEZeYAM",
+    "Name": "Heritage Park",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEagYAE": {
+    "Id": "006WR00000wkEagYAE",
+    "Name": "Jaclyn Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaNYAU": {
+    "Id": "006WR00000wkEaNYAU",
+    "Name": "Jem-Wey Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaqYAE": {
+    "Id": "006WR00000wkEaqYAE",
+    "Name": "Katerina Chalet",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEafYAE": {
+    "Id": "006WR00000wkEafYAE",
+    "Name": "Kling Trio Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbiYAE": {
+    "Id": "006WR00000wkEbiYAE",
+    "Name": "LaBlanche Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaPYAU": {
+    "Id": "006WR00000wkEaPYAU",
+    "Name": "Lake Meadows Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaEYAU": {
+    "Id": "006WR00000wkEaEYAU",
+    "Name": "Lakeview Court Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbcYAE": {
+    "Id": "006WR00000wkEbcYAE",
+    "Name": "Larpenteur Manor Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZhYAM": {
+    "Id": "006WR00000wkEZhYAM",
+    "Name": "Leimert Park",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvDYAU": {
+    "Id": "006WR00000wkDvDYAU",
+    "Name": "Lemoli Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEawYAE": {
+    "Id": "006WR00000wkEawYAE",
+    "Name": "Link Canvas (fka The George & The Leonard)",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEc2YAE": {
+    "Id": "006WR00000wkEc2YAE",
+    "Name": "Meeker Commons",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuLYAU": {
+    "Id": "006WR00000wkDuLYAU",
+    "Name": "Mira Vista Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv9YAE": {
+    "Id": "006WR00000wkDv9YAE",
+    "Name": "Misty Hollow Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvBYAU": {
+    "Id": "006WR00000wkDvBYAU",
+    "Name": "Northpark Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaHYAU": {
+    "Id": "006WR00000wkEaHYAU",
+    "Name": "Oxnard Terrace Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZnYAM": {
+    "Id": "006WR00000wkEZnYAM",
+    "Name": "Paris Retirement Village",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZsYAM": {
+    "Id": "006WR00000wkEZsYAM",
+    "Name": "Park at Clear Creek",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaiYAE": {
+    "Id": "006WR00000wkEaiYAE",
+    "Name": "Parkview Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaeYAE": {
+    "Id": "006WR00000wkEaeYAE",
+    "Name": "Parkway Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbNYAU": {
+    "Id": "006WR00000wkEbNYAU",
+    "Name": "Parthenia Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbkYAE": {
+    "Id": "006WR00000wkEbkYAE",
+    "Name": "Pine Tree Park Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbqYAE": {
+    "Id": "006WR00000wkEbqYAE",
+    "Name": "Purgatory Creek Townhomes",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaFYAU": {
+    "Id": "006WR00000wkEaFYAU",
+    "Name": "Regency Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEakYAE": {
+    "Id": "006WR00000wkEakYAE",
+    "Name": "Riverside Villa Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv1YAE": {
+    "Id": "006WR00000wkDv1YAE",
+    "Name": "Rose Villa Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEajYAE": {
+    "Id": "006WR00000wkEajYAE",
+    "Name": "Roxanne Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEabYAE": {
+    "Id": "006WR00000wkEabYAE",
+    "Name": "San Vicente Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZiYAM": {
+    "Id": "006WR00000wkEZiYAM",
+    "Name": "Saratoga Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEavYAE": {
+    "Id": "006WR00000wkEavYAE",
+    "Name": "Saticoy Gardens",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv2YAE": {
+    "Id": "006WR00000wkDv2YAE",
+    "Name": "St. John's",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuOYAU": {
+    "Id": "006WR00000wkDuOYAU",
+    "Name": "Stonebridge Gardens",
+    "Owner": "Marty Samuels",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuiYAE": {
+    "Id": "006WR00000wkDuiYAE",
+    "Name": "Summerset Village Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv6YAE": {
+    "Id": "006WR00000wkDv6YAE",
+    "Name": "Sunset Street",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuDYAU": {
+    "Id": "006WR00000wkDuDYAU",
+    "Name": "Texana Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wk1ElYAI": {
+    "Id": "006WR00000wk1ElYAI",
+    "Name": "The Bluffs of Brookside",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbKYAU": {
+    "Id": "006WR00000wkEbKYAU",
+    "Name": "The Meadows at Westlake Village",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEapYAE": {
+    "Id": "006WR00000wkEapYAE",
+    "Name": "The Palms",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuhYAE": {
+    "Id": "006WR00000wkDuhYAE",
+    "Name": "The Park West",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wk1EjYAI": {
+    "Id": "006WR00000wk1EjYAI",
+    "Name": "The Renaissance at Stoney Creek",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuTYAU": {
+    "Id": "006WR00000wkDuTYAU",
+    "Name": "The Sixth Avenue",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEamYAE": {
+    "Id": "006WR00000wkEamYAE",
+    "Name": "Topanga Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbYYAU": {
+    "Id": "006WR00000wkEbYYAU",
+    "Name": "Trailpoint by Trion Living / Trailpoint on Highline",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZmYAM": {
+    "Id": "006WR00000wkEZmYAM",
+    "Name": "Turnagain Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZgYAM": {
+    "Id": "006WR00000wkEZgYAM",
+    "Name": "University Courtyards Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEasYAE": {
+    "Id": "006WR00000wkEasYAE",
+    "Name": "Villa Boitano 1",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDunYAE": {
+    "Id": "006WR00000wkDunYAE",
+    "Name": "Villa Boitano 3",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZxYAM": {
+    "Id": "006WR00000wkEZxYAM",
+    "Name": "Villa Park Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaoYAE": {
+    "Id": "006WR00000wkEaoYAE",
+    "Name": "Vista Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuWYAU": {
+    "Id": "006WR00000wkDuWYAU",
+    "Name": "West Creek Townhomes",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZwYAM": {
+    "Id": "006WR00000wkEZwYAM",
+    "Name": "Western Hills Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaSYAU": {
+    "Id": "006WR00000wkEaSYAU",
+    "Name": "White Oak Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvEYAU": {
+    "Id": "006WR00000wkDvEYAU",
+    "Name": "Willow Lake",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDubYAE": {
+    "Id": "006WR00000wkDubYAE",
+    "Name": "Windfaire Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDutYAE": {
+    "Id": "006WR00000wkDutYAE",
+    "Name": "Windrush Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaYYAU": {
+    "Id": "006WR00000wkEaYYAU",
+    "Name": "Windsor Manor",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaQYAU": {
+    "Id": "006WR00000wkEaQYAU",
+    "Name": "Woodland Trio The Oaks",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEatYAE": {
+    "Id": "006WR00000wkEatYAE",
+    "Name": "4459 Fremont Ave Apt",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuRYAU": {
+    "Id": "006WR00000wkDuRYAU",
+    "Name": "7101 Roosevelt Way Apt",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDufYAE": {
+    "Id": "006WR00000wkDufYAE",
+    "Name": "714 Veteran",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEarYAE": {
+    "Id": "006WR00000wkEarYAE",
+    "Name": "8409 5th Ave Apt",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wk1EFYAY": {
+    "Id": "006WR00000wk1EFYAY",
+    "Name": "Affordable Storage",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaMYAU": {
+    "Id": "006WR00000wkEaMYAU",
+    "Name": "Aloha Wey Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEcmYAE": {
+    "Id": "006WR00000wkEcmYAE",
+    "Name": "Arbors of Killeen",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbyYAE": {
+    "Id": "006WR00000wkEbyYAE",
+    "Name": "Aspen Oaks",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuuYAE": {
+    "Id": "006WR00000wkDuuYAE",
+    "Name": "Autumn Villas Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuFYAU": {
+    "Id": "006WR00000wkDuFYAU",
+    "Name": "Bahia Palms Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaRYAU": {
+    "Id": "006WR00000wkEaRYAU",
+    "Name": "Baldwin Manor",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEc0YAE": {
+    "Id": "006WR00000wkEc0YAE",
+    "Name": "Barbary Knoll Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa6YAE": {
+    "Id": "006WR00000wkEa6YAE",
+    "Name": "Briarwood Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvCYAU": {
+    "Id": "006WR00000wkDvCYAU",
+    "Name": "Chaparral Apts",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaVYAU": {
+    "Id": "006WR00000wkEaVYAU",
+    "Name": "Chatsworth Plaza",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaZYAU": {
+    "Id": "006WR00000wkEaZYAU",
+    "Name": "Coliseum Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuaYAE": {
+    "Id": "006WR00000wkDuaYAE",
+    "Name": "Columbia Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDusYAE": {
+    "Id": "006WR00000wkDusYAE",
+    "Name": "Espana",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbmYAE": {
+    "Id": "006WR00000wkEbmYAE",
+    "Name": "Evergreen East Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv7YAE": {
+    "Id": "006WR00000wkDv7YAE",
+    "Name": "Gainesville Gardens Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbMYAU": {
+    "Id": "006WR00000wkEbMYAU",
+    "Name": "Gloria Homes",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEblYAE": {
+    "Id": "006WR00000wkEblYAE",
+    "Name": "Goldenstar Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbzYAE": {
+    "Id": "006WR00000wkEbzYAE",
+    "Name": "Highland Shores Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEauYAE": {
+    "Id": "006WR00000wkEauYAE",
+    "Name": "Hollypark Knolls Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaWYAU": {
+    "Id": "006WR00000wkEaWYAU",
+    "Name": "John Manor",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbhYAE": {
+    "Id": "006WR00000wkEbhYAE",
+    "Name": "Johnson Parkway Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEadYAE": {
+    "Id": "006WR00000wkEadYAE",
+    "Name": "Krystal Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDu3YAE": {
+    "Id": "006WR00000wkDu3YAE",
+    "Name": "La Costa Paloma",
+    "Owner": "Jeff Chao",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZjYAM": {
+    "Id": "006WR00000wkEZjYAM",
+    "Name": "Ladera Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa0YAE": {
+    "Id": "006WR00000wkEa0YAE",
+    "Name": "Lakeland",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEcXYAU": {
+    "Id": "006WR00000wkEcXYAU",
+    "Name": "Lakewood Manufactured Home Community",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa5YAE": {
+    "Id": "006WR00000wkEa5YAE",
+    "Name": "La Mirage Villas Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv3YAE": {
+    "Id": "006WR00000wkDv3YAE",
+    "Name": "La Villita Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbJYAU": {
+    "Id": "006WR00000wkEbJYAU",
+    "Name": "Lombardi Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuYYAU": {
+    "Id": "006WR00000wkDuYYAU",
+    "Name": "Lord Tennyson",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaDYAU": {
+    "Id": "006WR00000wkEaDYAU",
+    "Name": "Mesquite Trails Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDumYAE": {
+    "Id": "006WR00000wkDumYAE",
+    "Name": "Misty Ridge",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDu9YAE": {
+    "Id": "006WR00000wkDu9YAE",
+    "Name": "Oakwood Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEcLYAU": {
+    "Id": "006WR00000wkEcLYAU",
+    "Name": "Olympus Waterford",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuoYAE": {
+    "Id": "006WR00000wkDuoYAE",
+    "Name": "Park at Shiloh",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbeYAE": {
+    "Id": "006WR00000wkEbeYAE",
+    "Name": "Parkview Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbjYAE": {
+    "Id": "006WR00000wkEbjYAE",
+    "Name": "Park Vista Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa2YAE": {
+    "Id": "006WR00000wkEa2YAE",
+    "Name": "Pecan Creek Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaAYAU": {
+    "Id": "006WR00000wkEaAYAU",
+    "Name": "Pilot Point Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZuYAM": {
+    "Id": "006WR00000wkEZuYAM",
+    "Name": "Pinnacle Pointe",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbsYAE": {
+    "Id": "006WR00000wkEbsYAE",
+    "Name": "Pomeroy Court",
+    "Owner": "Jeff Chao",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa7YAE": {
+    "Id": "006WR00000wkEa7YAE",
+    "Name": "Prairie Village Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaOYAU": {
+    "Id": "006WR00000wkEaOYAU",
+    "Name": "Regents Park Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaGYAU": {
+    "Id": "006WR00000wkEaGYAU",
+    "Name": "Rio Grande Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbpYAE": {
+    "Id": "006WR00000wkEbpYAE",
+    "Name": "Shadow Green Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbnYAE": {
+    "Id": "006WR00000wkEbnYAE",
+    "Name": "Sherman Forbes Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEacYAE": {
+    "Id": "006WR00000wkEacYAE",
+    "Name": "St. Andrews Manor",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa3YAE": {
+    "Id": "006WR00000wkEa3YAE",
+    "Name": "Stoneridge Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZdYAM": {
+    "Id": "006WR00000wkEZdYAM",
+    "Name": "Strathmore Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbdYAE": {
+    "Id": "006WR00000wkEbdYAE",
+    "Name": "Sun Place Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbbYAE": {
+    "Id": "006WR00000wkEbbYAE",
+    "Name": "Sunshine Portland",
+    "Owner": "Jeff Chao",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wk1EcYAI": {
+    "Id": "006WR00000wk1EcYAI",
+    "Name": "Terrace Heights Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEboYAE": {
+    "Id": "006WR00000wkEboYAE",
+    "Name": "The Bungalows",
+    "Owner": "Melissa Baker",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDurYAE": {
+    "Id": "006WR00000wkDurYAE",
+    "Name": "The Cliffetta",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuSYAU": {
+    "Id": "006WR00000wkDuSYAU",
+    "Name": "The Fifth Avenue",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZkYAM": {
+    "Id": "006WR00000wkEZkYAM",
+    "Name": "The Oaks Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaLYAU": {
+    "Id": "006WR00000wkEaLYAU",
+    "Name": "The Royce",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvAYAU": {
+    "Id": "006WR00000wkDvAYAU",
+    "Name": "University Club Apartments (Lubbock)",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDueYAE": {
+    "Id": "006WR00000wkDueYAE",
+    "Name": "University Club Apartments (Nac)",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDugYAE": {
+    "Id": "006WR00000wkDugYAE",
+    "Name": "University Square Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvHYAU": {
+    "Id": "006WR00000wkDvHYAU",
+    "Name": "Vanowen Manor II",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaIYAU": {
+    "Id": "006WR00000wkEaIYAU",
+    "Name": "Vassar Terrace Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDujYAE": {
+    "Id": "006WR00000wkDujYAE",
+    "Name": "Villa Boitano 2",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaKYAU": {
+    "Id": "006WR00000wkEaKYAU",
+    "Name": "Villa Lago Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuAYAU": {
+    "Id": "006WR00000wkDuAYAU",
+    "Name": "Villas on Horne",
+    "Owner": "Jeff Wickersham",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa1YAE": {
+    "Id": "006WR00000wkEa1YAE",
+    "Name": "Vista Hermosa Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbaYAE": {
+    "Id": "006WR00000wkEbaYAE",
+    "Name": "Westcliff Apartments",
+    "Owner": "Jeff Chao",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbxYAE": {
+    "Id": "006WR00000wkEbxYAE",
+    "Name": "Woodcrest Townhomes",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa4YAE": {
+    "Id": "006WR00000wkEa4YAE",
+    "Name": "Woodstock III Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv0YAE": {
+    "Id": "006WR00000wkDv0YAE",
+    "Name": "Boulder Springs Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEahYAE": {
+    "Id": "006WR00000wkEahYAE",
+    "Name": "Brody Terrace (Riverside)",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEc3YAE": {
+    "Id": "006WR00000wkEc3YAE",
+    "Name": "Capri on Camelback",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk In Progress",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvFYAU": {
+    "Id": "006WR00000wkDvFYAU",
+    "Name": "Chadron Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDukYAE": {
+    "Id": "006WR00000wkDukYAE",
+    "Name": "Cimarron Estates",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuvYAE": {
+    "Id": "006WR00000wkDuvYAE",
+    "Name": "Conquistador Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuwYAE": {
+    "Id": "006WR00000wkDuwYAE",
+    "Name": "Fairways",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDvGYAU": {
+    "Id": "006WR00000wkDvGYAU",
+    "Name": "Forest Gate Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEbwYAE": {
+    "Id": "006WR00000wkEbwYAE",
+    "Name": "Garden Court Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZyYAM": {
+    "Id": "006WR00000wkEZyYAM",
+    "Name": "Green Lake South",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEZrYAM": {
+    "Id": "006WR00000wkEZrYAM",
+    "Name": "Lakeview Park",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEa8YAE": {
+    "Id": "006WR00000wkEa8YAE",
+    "Name": "La Mirage Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaxYAE": {
+    "Id": "006WR00000wkEaxYAE",
+    "Name": "Link West End",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaBYAU": {
+    "Id": "006WR00000wkEaBYAU",
+    "Name": "May Road Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv5YAE": {
+    "Id": "006WR00000wkDv5YAE",
+    "Name": "Mill Creek Square Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEayYAE": {
+    "Id": "006WR00000wkEayYAE",
+    "Name": "Mississippi View",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEc1YAE": {
+    "Id": "006WR00000wkEc1YAE",
+    "Name": "Mountain Terrace",
+    "Owner": "Chuck McNeely",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuUYAU": {
+    "Id": "006WR00000wkDuUYAU",
+    "Name": "Pineforest Park",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDv8YAE": {
+    "Id": "006WR00000wkDv8YAE",
+    "Name": "Pineforest Place",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuxYAE": {
+    "Id": "006WR00000wkDuxYAE",
+    "Name": "Seven Points Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuyYAE": {
+    "Id": "006WR00000wkDuyYAE",
+    "Name": "Sheppard's Edge",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEazYAE": {
+    "Id": "006WR00000wkEazYAE",
+    "Name": "Spring Mountain Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "Marketing/Bulk Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDudYAE": {
+    "Id": "006WR00000wkDudYAE",
+    "Name": "Strathmore Arms Apartments",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEalYAE": {
+    "Id": "006WR00000wkEalYAE",
+    "Name": "The Banyans",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEanYAE": {
+    "Id": "006WR00000wkEanYAE",
+    "Name": "Topanga Terrace",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuJYAU": {
+    "Id": "006WR00000wkDuJYAU",
+    "Name": "Vanderbilt Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuXYAU": {
+    "Id": "006WR00000wkDuXYAU",
+    "Name": "Vanowen Manor",
+    "Owner": "Brett Spivey",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkEaCYAU": {
+    "Id": "006WR00000wkEaCYAU",
+    "Name": "Village Place Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuqYAE": {
+    "Id": "006WR00000wkDuqYAE",
+    "Name": "Villages at Sugar Road",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDuzYAE": {
+    "Id": "006WR00000wkDuzYAE",
+    "Name": "Whispering Oaks Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  },
+  "006WR00000wkDucYAE": {
+    "Id": "006WR00000wkDucYAE",
+    "Name": "Woodbury Place Apartments",
+    "Owner": "Chuck McNeely",
+    "StageName": "PAL/ROE Complete",
+    "Substatus__c": null,
+    "Sales_Status__c": null
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Agreement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PAL</fullName>
+                <default>false</default>
+                <label>PAL</label>
+            </value>
+            <value>
+                <fullName>ROE</fullName>
+                <default>false</default>
+                <label>ROE</label>
+            </value>
+            <value>
+                <fullName>EMA</fullName>
+                <default>false</default>
+                <label>EMA</label>
+            </value>
+            <value>
+                <fullName>Bulk</fullName>
+                <default>false</default>
+                <label>Bulk</label>
+            </value>
+            <value>
+                <fullName>NEMA</fullName>
+                <default>false</default>
+                <label>NEMA</label>
+            </value>
+            <value>
+                <fullName>PAL Addendum</fullName>
+                <default>false</default>
+                <label>PAL Addendum</label>
+            </value>
+            <value>
+                <fullName>MSA Addendum</fullName>
+                <default>false</default>
+                <label>MSA Addendum</label>
+            </value>
+            <value>
+                <fullName>2nd ISP NEMA</fullName>
+                <default>false</default>
+                <label>2nd ISP NEMA</label>
+            </value>
+            <value>
+                <fullName>2nd ISP MSA Addendum</fullName>
+                <default>false</default>
+                <label>2nd ISP MSA Addendum</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

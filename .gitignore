@@ -4,3 +4,4 @@ salesforce-connection.md
 __pycache__/
 *.pyc
 PowerBI_Report/
+api/

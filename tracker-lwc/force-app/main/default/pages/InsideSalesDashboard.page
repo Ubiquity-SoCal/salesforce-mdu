@@ -61,6 +61,34 @@
         .stale-med { color: #e68619; }
         .stale-low { color: #706e6b; }
         .empty-state { color: #706e6b; padding: 12px 0; font-size: 0.825rem; }
+        /* Agreements Signed by Type — subtle column dividers */
+        .agr-signed { table-layout: fixed; width: 100%; }
+        .agr-signed th, .agr-signed td {
+            border-right: 1px solid #eef0f3;
+            border-bottom: 1px solid #eef0f3;
+        }
+        .agr-signed th:last-child, .agr-signed td:last-child { border-right: none; }
+        .agr-signed tr:last-child td { border-bottom: none; }
+        /* Lane forecast tables - tighter so Action + Action Date fit on one row */
+        .lane-forecast { table-layout: fixed; width: 100%; }
+        .lane-forecast th, .lane-forecast td {
+            padding: 4px 6px;
+            font-size: 0.78rem;
+            word-break: break-word;
+            white-space: normal;
+            vertical-align: top;
+        }
+        .lane-forecast th { font-size: 0.65rem; }
+        .lane-forecast .col-site    { width: 17%; }
+        .lane-forecast .col-state   { width: 4%; }
+        .lane-forecast .col-type    { width: 7%; }
+        .lane-forecast .col-stage   { width: 10%; }
+        .lane-forecast .col-agr     { width: 12%; }
+        .lane-forecast .col-close   { width: 8%; }
+        .lane-forecast .col-units   { width: 5%; text-align: right; }
+        .lane-forecast .col-owner   { width: 10%; }
+        .lane-forecast .col-action  { width: 18%; }
+        .lane-forecast .col-acdate  { width: 8%; }
     </style>
 </head>
 <body>
@@ -68,6 +96,26 @@
     <div id="dashboard" class="loading">Loading dashboard...</div>
 
     <script>
+    /* ═══════════════════════════════════════════════════════════════════════
+     * INSIDE SALES DASHBOARD — script roadmap
+     * ═══════════════════════════════════════════════════════════════════════
+     * 1.  GLOBALS + HELPERS         — query(), fmt(), escHtml(), pie chart
+     * 2.  HEADER + TOGGLES          — RT slicer (All/MDU/Business ROE/Sales),
+     *                                  tab bar
+     * 3.  EVENT HANDLERS            — setPipeline, switchTab, setExecState
+     * 4.  loadDashboard()
+     *      4a. RT filter + per-view stage definitions
+     *      4b. SOQL queries (parallel)
+     *      4c. Result destructuring + computed values
+     *      4d. Render TEAM tab
+     *      4e. Render AGREEMENTS tab
+     *      4f. Render MY PIPELINE tab
+     *      4g. Render STALE DEALS tab
+     *      4h. Render EXECUTIVE tab
+     *      4i. Render SITE TRACKER tab
+     * ═══════════════════════════════════════════════════════════════════════ */
+
+    /* ─── 1. GLOBALS + HELPERS ─────────────────────────────────────────── */
     var sid = '{!$Api.Session_ID}';
     var baseUrl = '{!$Api.Partner_Server_URL_600}';
     var instanceUrl = baseUrl.substring(0, baseUrl.indexOf('/services'));
@@ -143,6 +191,7 @@
     var yrCloseFilter = 'CloseDate >= 2026-01-01';
     var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+    /* ─── 2. HEADER + TOGGLES ──────────────────────────────────────────── */
     // Render static header once
     (function renderHeader() {
         var h = '';
@@ -152,12 +201,14 @@
         h += '<div class="slicer-bar">';
         h += '<div class="slicer-btn active" onclick="setPipeline(\'all\',this)">All</div>';
         h += '<div class="slicer-btn" onclick="setPipeline(\'MDU\',this)">MDU</div>';
-        h += '<div class="slicer-btn" onclick="setPipeline(\'Business\',this)">Business</div>';
+        h += '<div class="slicer-btn" onclick="setPipeline(\'Business_ROE\',this)">Business ROE</div>';
+        h += '<div class="slicer-btn" onclick="setPipeline(\'Business\',this)">Business Sales</div>';
         h += '</div>';
         h += '</div>';
         h += '<div class="links-row">';
         h += '<a class="link-btn" href="' + lightningUrl + '/lightning/o/Report/home" target="_blank">Reports</a>';
         h += '<a class="link-btn" href="' + lightningUrl + '/lightning/o/Dashboard/home" target="_blank">Dashboards</a>';
+        h += '<a class="link-btn" href="' + lightningUrl + '/lightning/o/Campaign/home" target="_blank">Campaigns</a>';
         h += '</div></div>';
 
         // Tab bar
@@ -167,11 +218,13 @@
         h += '<div class="tab" data-tab="mine" onclick="switchTab(\'mine\',this)">My Pipeline</div>';
         h += '<div class="tab" data-tab="stale" onclick="switchTab(\'stale\',this)">Stale Deals</div>';
         h += '<div class="tab" data-tab="executive" onclick="switchTab(\'executive\',this)">Executive</div>';
+        h += '<div class="tab" data-tab="sitetracker" onclick="switchTab(\'sitetracker\',this)">Site Tracker</div>';
         h += '</div>';
 
         document.getElementById('header-area').innerHTML = h;
     })();
 
+    /* ─── 3. EVENT HANDLERS ────────────────────────────────────────────── */
     var execStateMap = {
         'AZ': ['Arizona', 'AZ'],
         'CA': ['California', 'CA'],
@@ -200,18 +253,50 @@
         el.classList.add('active');
     }
 
+    /* ─── 4. loadDashboard() — main entry point, called on tab/pipeline change */
     function loadDashboard() {
         document.getElementById('dashboard').innerHTML = '<div class="loading">Loading...</div>';
 
-        // Build record type filter for Opportunity queries
+        // ═══════════════════════════════════════════════════════════════════
+        // 4a. RECORD-TYPE FILTERS + PER-VIEW STAGE DEFINITIONS
+        // ═══════════════════════════════════════════════════════════════════
+        // Each pipeline view (MDU, Business_ROE, Business Sales, All) uses different
+        // RecordTypes and reaches "completed" via different stages.
+        //   - MDU + Business_ROE: PAL/ROE Complete, then Marketing/Bulk In Progress / Marketing/Bulk Complete
+        //   - Business Sales: Engaged → Under Contract → Closed Won
         var rtFilter = '';
         var agrFilter = '';
+        var completedClause;       // SOQL fragment for "deal closed" KPIs
+        var completedStagesList;   // SOQL list of stages considered closed (for funnel/breakdown)
+        var completedLabel;        // KPI card + column header label for the "completed" metric
+        var openPipelineStages;    // SOQL list of in-progress stages for the funnel
         if (currentPipeline === 'MDU') {
             rtFilter = " AND (RecordType.DeveloperName = 'MDU' OR RecordType.DeveloperName = 'SFU')";
             agrFilter = " AND (Opportunity__r.RecordType.DeveloperName = 'MDU' OR Opportunity__r.RecordType.DeveloperName = 'SFU')";
+            completedClause = "StageName = 'PAL/ROE Complete'";
+            completedStagesList = "'PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'";
+            completedLabel = 'PAL/ROE Complete';
+            openPipelineStages = "'Prospecting','Engaged','Proposal Sent','Contract Negotiations','PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'";
+        } else if (currentPipeline === 'Business_ROE') {
+            rtFilter = " AND RecordType.DeveloperName = 'Business_ROE'";
+            agrFilter = " AND Opportunity__r.RecordType.DeveloperName = 'Business_ROE'";
+            completedClause = "StageName = 'PAL/ROE Complete'";
+            completedStagesList = "'PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'";
+            completedLabel = 'PAL/ROE Complete';
+            openPipelineStages = "'Prospecting','Engaged','Proposal Sent','Contract Negotiations','PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'";
         } else if (currentPipeline === 'Business') {
             rtFilter = " AND RecordType.DeveloperName = 'Business'";
             agrFilter = " AND Opportunity__r.RecordType.DeveloperName = 'Business'";
+            completedClause = "StageName = 'Under Contract'";
+            completedStagesList = "'Under Contract','Closed Won'";
+            completedLabel = 'Under Contract';
+            openPipelineStages = "'Prospecting','Engaged','Contract Negotiations','Under Contract'";
+        } else {
+            // All: closed = any of the per-RT terminal stages
+            completedClause = "StageName IN ('PAL/ROE Complete','Under Contract')";
+            completedStagesList = "'PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete','Under Contract','Closed Won'";
+            completedLabel = 'Completed';
+            openPipelineStages = "'Prospecting','Engaged','Proposal Sent','Contract Negotiations','PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete','Under Contract'";
         }
 
         // State filter for executive tab queries
@@ -223,21 +308,24 @@
             execAgrStateFilter = " AND Opportunity__r.Property_State__c IN (" + vals + ")";
         }
 
+        // ═══════════════════════════════════════════════════════════════════
+        // 4b. SOQL QUERIES — fired in parallel; result indices match comments
+        // ═══════════════════════════════════════════════════════════════════
         Promise.all([
-            // === TEAM TAB (0-8) ===
+            // ─── TEAM TAB (0-8) ───
             query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND " + yrFilter + rtFilter),
-            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE StageName = 'Under Contract' AND " + yrFilter + rtFilter),
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + completedClause + " AND " + yrFilter + rtFilter),
             query("SELECT Owner.Name, COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND CompletedDateTime >= THIS_WEEK GROUP BY Owner.Name ORDER BY COUNT(Id) DESC"),
             query("SELECT Owner.Name, COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND CompletedDateTime >= LAST_WEEK AND CompletedDateTime < THIS_WEEK GROUP BY Owner.Name ORDER BY COUNT(Id) DESC"),
             query("SELECT Owner.Name, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND " + yrFilter + rtFilter + " GROUP BY Owner.Name ORDER BY SUM(Amount) DESC"),
             query("SELECT Id, Name, StageName, Amount, Owner.Name FROM Opportunity WHERE " + yrFilter + " AND IsClosed = false" + rtFilter + " ORDER BY CreatedDate DESC LIMIT 5"),
             query("SELECT CALENDAR_MONTH(CreatedDate) mo, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + yrFilter + rtFilter + " GROUP BY CALENDAR_MONTH(CreatedDate) ORDER BY CALENDAR_MONTH(CreatedDate)"),
-            query("SELECT CALENDAR_MONTH(CreatedDate) mo, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE StageName = 'Under Contract' AND " + yrFilter + rtFilter + " GROUP BY CALENDAR_MONTH(CreatedDate) ORDER BY CALENDAR_MONTH(CreatedDate)"),
+            query("SELECT CALENDAR_MONTH(CreatedDate) mo, COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + completedClause + " AND " + yrFilter + rtFilter + " GROUP BY CALENDAR_MONTH(CreatedDate) ORDER BY CALENDAR_MONTH(CreatedDate)"),
             query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + yrFilter + rtFilter),
 
-            // === MY PIPELINE TAB (9-15) ===
+            // ─── MY PIPELINE TAB (9-15) ───
             query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE IsClosed = false AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter),
-            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE StageName = 'Under Contract' AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter),
+            query("SELECT COUNT(Id) cnt, SUM(Amount) total FROM Opportunity WHERE " + completedClause + " AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter),
             query("SELECT COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND OwnerId = '" + currentUserId + "' AND CompletedDateTime >= THIS_WEEK"),
             query("SELECT COUNT(Id) cnt FROM Task WHERE Status = 'Completed' AND OwnerId = '" + currentUserId + "' AND CompletedDateTime >= LAST_WEEK AND CompletedDateTime < THIS_WEEK"),
             query("SELECT Id, Name, StageName, Amount, CloseDate FROM Opportunity WHERE IsClosed = false AND OwnerId = '" + currentUserId + "' AND " + yrFilter + rtFilter + " ORDER BY CloseDate ASC"),
@@ -269,24 +357,34 @@
             // === NEW: Stale Deals - count (22) ===
             query("SELECT COUNT(Id) cnt FROM Opportunity WHERE IsClosed = false AND (LastActivityDate < LAST_N_DAYS:30 OR LastActivityDate = null)" + rtFilter),
 
-            // === EXECUTIVE TAB (25-28) ===
-            // Funnel: active pipeline stages with projected close date
-            query("SELECT StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE Projected_Close_Date__c != null AND StageName IN ('Prospecting','Engaged','ROE Secured','Contract Negotiations')" + rtFilter + execStateFilter + " GROUP BY StageName"),
+            // ─── EXECUTIVE TAB (25-34) ───
+            // Funnel: stages-with-projected-close, scoped to whichever pipeline is active.
+            // Excludes Opps where SiteTracker has activated the build (matches lane forecast filter).
+            query("SELECT StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE Projected_Close_Date__c != null AND StageName IN (" + openPipelineStages + ") AND Id NOT IN (SELECT Opportunity__c FROM SiteTracker_Project__c WHERE Activation_Actual__c != null)" + rtFilter + execStateFilter + " GROUP BY StageName"),
             // Distinct states for slicer (never filtered by state itself)
             query("SELECT Property_State__c, COUNT(Id) cnt FROM Opportunity WHERE Property_State__c != null AND StageName NOT IN ('Closed Lost')" + rtFilter + " GROUP BY Property_State__c ORDER BY Property_State__c"),
             // Agreements signed this year by month and type
             query("SELECT CALENDAR_MONTH(Signed_Date__c) mo, Agreement_Type__c, COUNT(Id) cnt FROM Agreement__c WHERE Signed_Date__c >= " + new Date().getFullYear() + "-01-01 AND Signed_Date__c <= " + new Date().getFullYear() + "-12-31" + agrFilter + execAgrStateFilter + " GROUP BY CALENDAR_MONTH(Signed_Date__c), Agreement_Type__c ORDER BY CALENDAR_MONTH(Signed_Date__c)"),
             // Agreements signed in prior years by year and type
             query("SELECT CALENDAR_YEAR(Signed_Date__c) yr, Agreement_Type__c, COUNT(Id) cnt FROM Agreement__c WHERE Signed_Date__c < " + new Date().getFullYear() + "-01-01 AND Signed_Date__c != null" + agrFilter + execAgrStateFilter + " GROUP BY CALENDAR_YEAR(Signed_Date__c), Agreement_Type__c ORDER BY CALENDAR_YEAR(Signed_Date__c)"),
-            // Pipeline with projected close date (for detail tables)
-            query("SELECT Id, Name, StageName, Projected_Close_Date__c, Units__c, Owner.Name, Property_Type__c, Property_State__c, (SELECT Agreement_Type__c, Status__c FROM Agreements__r) FROM Opportunity WHERE Projected_Close_Date__c != null AND StageName IN ('Prospecting','Engaged','ROE Secured','Contract Negotiations')" + rtFilter + execStateFilter + " ORDER BY Projected_Close_Date__c ASC"),
-            // Total completed (Under Contract+)
-            query("SELECT COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE StageName IN ('Under Contract','Ready for Eng','Under Construction','Activation','Closed Won')" + rtFilter + execStateFilter),
-            // Completed this year by month (for collapsible)
-            query("SELECT CALENDAR_MONTH(CloseDate) mo, StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE CloseDate >= " + new Date().getFullYear() + "-01-01 AND CloseDate <= " + new Date().getFullYear() + "-12-31 AND StageName IN ('Under Contract','Ready for Eng','Under Construction','Activation','Closed Won')" + rtFilter + execStateFilter + " GROUP BY CALENDAR_MONTH(CloseDate), StageName ORDER BY CALENDAR_MONTH(CloseDate)"),
+            // Pipeline with projected close date (pre-PAL through Marketing/Bulk Complete)
+            // Marketing/Bulk Complete Opps stay on Melissa's list until CX/SiteTracker activates the build.
+            // Excludes Opps where SiteTracker has activated the build — those drop off her list.
+            query("SELECT Id, Name, StageName, Projected_Close_Date__c, Units__c, Owner.Name, Property_Type__c, Property_State__c, Next_Action__c, Next_Action_Date__c, (SELECT Agreement_Type__c, Status__c FROM Agreements__r), (SELECT Build_Status__c FROM SiteTracker_Projects__r ORDER BY LastModifiedDate DESC LIMIT 1) FROM Opportunity WHERE Projected_Close_Date__c != null AND StageName IN (" + openPipelineStages + ") AND Id NOT IN (SELECT Opportunity__c FROM SiteTracker_Project__c WHERE Activation_Actual__c != null)" + rtFilter + execStateFilter + " ORDER BY Projected_Close_Date__c ASC"),
+            // Total completed — terminal stages per active pipeline
+            query("SELECT COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE StageName IN (" + completedStagesList + ")" + rtFilter + execStateFilter),
+            // Completed this year by month
+            query("SELECT CALENDAR_MONTH(CloseDate) mo, StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE CloseDate >= " + new Date().getFullYear() + "-01-01 AND CloseDate <= " + new Date().getFullYear() + "-12-31 AND StageName IN (" + completedStagesList + ")" + rtFilter + execStateFilter + " GROUP BY CALENDAR_MONTH(CloseDate), StageName ORDER BY CALENDAR_MONTH(CloseDate)"),
             // Completed this year detail
-            query("SELECT Id, Name, StageName, CloseDate, Units__c, Owner.Name, Property_Type__c, Property_State__c FROM Opportunity WHERE CloseDate >= " + new Date().getFullYear() + "-01-01 AND CloseDate <= " + new Date().getFullYear() + "-12-31 AND StageName IN ('Under Contract','Ready for Eng','Under Construction','Activation','Closed Won')" + rtFilter + execStateFilter + " ORDER BY CloseDate DESC"),
+            query("SELECT Id, Name, StageName, CloseDate, Units__c, Owner.Name, Property_Type__c, Property_State__c FROM Opportunity WHERE CloseDate >= " + new Date().getFullYear() + "-01-01 AND CloseDate <= " + new Date().getFullYear() + "-12-31 AND StageName IN (" + completedStagesList + ")" + rtFilter + execStateFilter + " ORDER BY CloseDate DESC"),
+            // SiteTracker Projects with an Activation Forecast that have not yet activated
+            query("SELECT Id, Name, Site_Name__c, Build_Status__c, Activation_Forecast__c, Opportunity__c, Opportunity__r.Name, Opportunity__r.Property_State__c, Opportunity__r.Units__c, Opportunity__r.Owner.Name FROM SiteTracker_Project__c WHERE Activation_Forecast__c != null AND Activation_Actual__c = null" + execAgrStateFilter + " ORDER BY Activation_Forecast__c ASC"),
+            // Agreements on Opps that have a forecasted (not-yet-actualized) SiteTracker Project
+            query("SELECT Id, Opportunity__c, Agreement_Type__c, Status__c FROM Agreement__c WHERE Opportunity__c IN (SELECT Opportunity__c FROM SiteTracker_Project__c WHERE Activation_Forecast__c != null AND Activation_Actual__c = null)"),
         ]).then(function(results) {
+            // ═══════════════════════════════════════════════════════════
+            // 4c. RESULT DESTRUCTURING + COMPUTED VALUES
+            // ═══════════════════════════════════════════════════════════
             // TEAM DATA
             var openOpps = rec0(results[0]);
             var closedWon = rec0(results[1]);
@@ -308,7 +406,17 @@
             var myOpenTasks = recs(results[15]);
 
             // NEW DATA
-            var stageBreakdown = recs(results[16]);
+            // Canonical MDU stage order — matches picklist + Tracker view order. Used to sort
+            // any breakdown that comes back alphabetical from SOQL.
+            var STAGE_ORDER = ['Closed Lost','On Hold','Prospects','Prospecting','Engaged','Proposal Sent','Contract Negotiations','PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'];
+            function sortByStage(arr) {
+                return arr.slice().sort(function(a, b) {
+                    var ai = STAGE_ORDER.indexOf(a.StageName); if (ai < 0) ai = 999;
+                    var bi = STAGE_ORDER.indexOf(b.StageName); if (bi < 0) bi = 999;
+                    return ai - bi;
+                });
+            }
+            var stageBreakdown = sortByStage(recs(results[16]));
             var teamAgreements = recs(results[17]);
             var closingSoon = recs(results[18]);
             var myAgreements = recs(results[19]);
@@ -327,6 +435,15 @@
             var execCompleted = rec0(results[30]);
             var execCompletedByMonth = recs(results[31]);
             var execCompletedDetail = recs(results[32]);
+            var execInProgressST = recs(results[33]);
+            var execInProgressAgreements = recs(results[34]);
+
+            // Build Opp -> Agreements map for the in-progress SiteTracker section
+            var stAgreementMap = {};
+            execInProgressAgreements.forEach(function(a) {
+                if (!stAgreementMap[a.Opportunity__c]) stAgreementMap[a.Opportunity__c] = [];
+                stAgreementMap[a.Opportunity__c].push(a);
+            });
 
             // Computed values
             var totalThisWeek = 0;
@@ -342,16 +459,16 @@
             var today = new Date();
             var html = '';
 
-            // ============================================================
-            // TEAM TAB
-            // ============================================================
+            // ═══════════════════════════════════════════════════════════
+            // 4d. RENDER: TEAM TAB
+            // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-team" class="tab-content' + (currentTab === 'team' ? ' active' : '') + '">';
 
             // KPI cards
             html += '<div class="metrics-row">';
             html += '<div class="metric-card"><div class="metric-label">Total Opps' + pipelineLabel + '</div><div class="metric-value">' + allOpps2026.cnt + '</div><div class="metric-sub">' + fmt(allOpps2026.total) + '</div></div>';
             html += '<div class="metric-card"><div class="metric-label">Open Pipeline</div><div class="metric-value">' + openOpps.cnt + '</div><div class="metric-sub">' + fmt(openOpps.total) + '</div></div>';
-            html += '<div class="metric-card"><div class="metric-label">Under Contract</div><div class="metric-value">' + closedWon.cnt + '</div><div class="metric-sub">' + fmt(closedWon.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">' + completedLabel + '</div><div class="metric-value">' + closedWon.cnt + '</div><div class="metric-sub">' + fmt(closedWon.total) + '</div></div>';
             html += '<div class="metric-card"><div class="metric-label">Activities This Week</div><div class="metric-value">' + totalThisWeek + '</div><div class="metric-sub">Last week: ' + totalLastWeek + '</div></div>';
             html += '<div class="metric-card"><div class="metric-label">Stale Deals</div><div class="metric-value" style="color:#c23934;">' + staleCount + '</div><div class="metric-sub">No activity 30+ days</div></div>';
             html += '</div>';
@@ -432,7 +549,7 @@
 
             // 2026 by Month
             html += '<div class="section"><div class="section-title">2026 by Month</div><table>';
-            html += '<tr><th>Month</th><th style="text-align:right">Created</th><th style="text-align:right">Amount</th><th style="text-align:right">Under Contract</th><th style="text-align:right">UC Amt</th></tr>';
+            html += '<tr><th>Month</th><th style="text-align:right">Created</th><th style="text-align:right">Amount</th><th style="text-align:right">' + completedLabel + '</th><th style="text-align:right">UC Amt</th></tr>';
             oppsByMonth.forEach(function(r) {
                 var won = wonByMonthMap[r.mo];
                 html += '<tr><td>' + months[r.mo - 1] + '</td><td style="text-align:right">' + r.cnt + '</td><td style="text-align:right" class="amount">' + fmt(r.total) + '</td>';
@@ -475,9 +592,9 @@
 
             html += '</div>'; // end team tab
 
-            // ============================================================
-            // AGREEMENTS TAB
-            // ============================================================
+            // ═══════════════════════════════════════════════════════════
+            // 4e. RENDER: AGREEMENTS TAB
+            // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-agreements" class="tab-content' + (currentTab === 'agreements' ? ' active' : '') + '">';
 
             // KPI cards for agreements
@@ -585,15 +702,15 @@
 
             html += '</div>'; // end agreements tab
 
-            // ============================================================
-            // MY PIPELINE TAB
-            // ============================================================
+            // ═══════════════════════════════════════════════════════════
+            // 4f. RENDER: MY PIPELINE TAB
+            // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-mine" class="tab-content' + (currentTab === 'mine' ? ' active' : '') + '">';
 
             // My KPI cards
             html += '<div class="metrics-row">';
             html += '<div class="metric-card"><div class="metric-label">My Open Opps' + pipelineLabel + '</div><div class="metric-value">' + myOpenOpps.cnt + '</div><div class="metric-sub">' + fmt(myOpenOpps.total) + '</div></div>';
-            html += '<div class="metric-card"><div class="metric-label">My Under Contract</div><div class="metric-value">' + myClosedWon.cnt + '</div><div class="metric-sub">' + fmt(myClosedWon.total) + '</div></div>';
+            html += '<div class="metric-card"><div class="metric-label">My ' + completedLabel + '</div><div class="metric-value">' + myClosedWon.cnt + '</div><div class="metric-sub">' + fmt(myClosedWon.total) + '</div></div>';
             html += '<div class="metric-card"><div class="metric-label">My Activities This Week</div><div class="metric-value">' + myTasksThisWeek + '</div><div class="metric-sub">Last week: ' + myTasksLastWeek + '</div></div>';
             html += '</div>';
 
@@ -679,9 +796,9 @@
 
             html += '</div>'; // end my pipeline tab
 
-            // ============================================================
-            // STALE DEALS TAB
-            // ============================================================
+            // ═══════════════════════════════════════════════════════════
+            // 4g. RENDER: STALE DEALS TAB
+            // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-stale" class="tab-content' + (currentTab === 'stale' ? ' active' : '') + '">';
 
             html += '<div class="metrics-row">';
@@ -727,9 +844,9 @@
 
             html += '</div>'; // end stale tab
 
-            // ============================================================
-            // EXECUTIVE TAB
-            // ============================================================
+            // ═══════════════════════════════════════════════════════════
+            // 4h. RENDER: EXECUTIVE TAB
+            // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-executive" class="tab-content' + (currentTab === 'executive' ? ' active' : '') + '">';
 
             // State slicer
@@ -741,12 +858,38 @@
             });
             html += '</div>';
 
-            // Build funnel data
-            var funnelStages = ['Prospecting', 'Engaged', 'ROE Secured', 'Contract Negotiations'];
+            // Build funnel data — all 7 active MDU stages (visual context, includes CX/Launch).
+            var funnelStages = ['Prospecting', 'Engaged', 'Proposal Sent', 'Contract Negotiations', 'PAL/ROE Complete', 'Marketing/Bulk In Progress', 'Marketing/Bulk Complete'];
             var funnelMap = {};
+            execFunnel.forEach(function(r) { funnelMap[r.StageName] = r; });
+
+            // Active Pipeline KPI: count from execPipeline detail records EXCLUDING CX/Launch
+            // (post-PAL + no active agreements). CX/Launch is post-sales handoff, not active pipeline.
+            function hasActivePursuitDetail(r) {
+                var agrs = (r.Agreements__r && r.Agreements__r.records) ? r.Agreements__r.records : [];
+                for (var i = 0; i < agrs.length; i++) {
+                    var s = agrs[i].Status__c;
+                    if (s === 'Create' || s === 'Review' || s === 'Sign') return true;
+                }
+                return false;
+            }
+            function isCxLaunch(r) {
+                var s = r.StageName;
+                return (s === 'PAL/ROE Complete' || s === 'Marketing/Bulk In Progress' || s === 'Marketing/Bulk Complete') && !hasActivePursuitDetail(r);
+            }
             var totalPipelineCount = 0;
             var totalPipelineUnits = 0;
-            execFunnel.forEach(function(r) { funnelMap[r.StageName] = r; totalPipelineCount += r.cnt; totalPipelineUnits += (r.units || 0); });
+            var cxLaunchCount = 0;
+            var cxLaunchUnits = 0;
+            execPipeline.forEach(function(r) {
+                if (isCxLaunch(r)) {
+                    cxLaunchCount += 1;
+                    cxLaunchUnits += (r.Units__c || 0);
+                } else {
+                    totalPipelineCount += 1;
+                    totalPipelineUnits += (r.Units__c || 0);
+                }
+            });
 
             // Build signed-by-month-and-type data
             var signedByMonthType = {}; // {month: {type: cnt}}
@@ -795,6 +938,9 @@
             // KPI cards
             html += '<div class="metrics-row">';
             html += '<div class="metric-card"><div class="metric-label">Active Pipeline' + pipelineLabel + '</div><div class="metric-value">' + totalPipelineCount + '</div><div class="metric-sub">' + Number(totalPipelineUnits).toLocaleString() + ' units</div></div>';
+            if (cxLaunchCount > 0) {
+                html += '<div class="metric-card"><div class="metric-label">CX/Launch (post-sales)</div><div class="metric-value" style="color:#43A047;">' + cxLaunchCount + '</div><div class="metric-sub">' + Number(cxLaunchUnits).toLocaleString() + ' units</div></div>';
+            }
             html += '<div class="metric-card"><div class="metric-label">Completed</div><div class="metric-value" style="color:#2e844a;">' + execCompleted.cnt + '</div><div class="metric-sub">' + Number(execCompleted.units || 0).toLocaleString() + ' units</div></div>';
             html += '<div class="metric-card"><div class="metric-label">Agreements Signed ' + new Date().getFullYear() + '</div><div class="metric-value" style="color:#e68619;">' + totalSignedYTD + '</div></div>';
             if (pastDueList.length > 0) {
@@ -805,25 +951,41 @@
             // Funnel + Monthly side by side
             html += '<div class="two-col">';
 
-            // Funnel
+            // Funnel — real SVG trapezoid funnel that narrows top-to-bottom
             html += '<div class="section"><div class="section-title">Sales Pipeline Funnel</div>';
-            var funnelColors = ['#0176d3', '#06a59a', '#e68619', '#2e844a'];
-            var funnelWidths = [100, 80, 60, 45];
-            var maxFunnel = 1;
-            funnelStages.forEach(function(s) { var c = funnelMap[s] ? funnelMap[s].cnt : 0; if (c > maxFunnel) maxFunnel = c; });
+            var funnelColors = ['#1F3A68', '#2C5BA0', '#3a7bd5', '#4D9DE0', '#2E7D32', '#43A047', '#66BB6A'];
+            var FW = 600, FH = 350;
+            var FTOP = 1.0, FBOT = 0.30; // 100% wide at top, 30% at bottom
+            var nF = funnelStages.length;
+            var segH = FH / nF;
+            html += '<div style="display:flex;justify-content:center;padding:6px 0;">';
+            html += '<svg viewBox="0 0 ' + FW + ' ' + FH + '" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:' + FW + 'px;height:auto;">';
             funnelStages.forEach(function(s, i) {
                 var cnt = funnelMap[s] ? funnelMap[s].cnt : 0;
                 var units = funnelMap[s] ? (funnelMap[s].units || 0) : 0;
-                var fillPct = Math.max((cnt / maxFunnel) * 100, 8);
-                html += '<div style="display:flex;flex-direction:column;align-items:center;margin-bottom:8px;">';
-                html += '<div style="width:' + funnelWidths[i] + '%;height:32px;background:#f0f0f0;border-radius:4px;overflow:hidden;">';
-                html += '<div style="width:' + fillPct + '%;height:100%;background:' + funnelColors[i] + ';border-radius:4px;"></div>';
-                html += '</div>';
-                html += '<div style="display:flex;justify-content:space-between;width:100%;padding:2px 4px;">';
-                html += '<span style="font-size:0.75rem;font-weight:600;color:#3e3e3c;">' + s + '</span>';
-                html += '<span style="font-size:0.75rem;color:#706e6b;">' + cnt + ' sites' + (units ? ' / ' + Number(units).toLocaleString() + ' units' : '') + '</span>';
-                html += '</div></div>';
+                var topPct = FTOP - ((FTOP - FBOT) * (i / nF));
+                var botPct = FTOP - ((FTOP - FBOT) * ((i + 1) / nF));
+                var topW = FW * topPct, botW = FW * botPct;
+                var topX1 = (FW - topW) / 2, topX2 = topX1 + topW;
+                var botX1 = (FW - botW) / 2, botX2 = botX1 + botW;
+                var yT = i * segH, yB = (i + 1) * segH;
+                var pts = topX1 + ',' + yT + ' ' + topX2 + ',' + yT + ' ' + botX2 + ',' + yB + ' ' + botX1 + ',' + yB;
+                var labelY = yT + segH / 2;
+                var unitText = cnt + ' sites' + (units ? ' &#183; ' + Number(units).toLocaleString() + ' units' : '');
+                html += '<polygon points="' + pts + '" fill="' + funnelColors[i % funnelColors.length] + '" stroke="#fff" stroke-width="1.5"></polygon>';
+                html += '<text x="' + (FW / 2) + '" y="' + (labelY - 6) + '" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" style="font-family:Salesforce Sans, Arial, sans-serif;">' + s + '</text>';
+                html += '<text x="' + (FW / 2) + '" y="' + (labelY + 12) + '" text-anchor="middle" fill="#fff" font-size="11" opacity="0.92" style="font-family:Salesforce Sans, Arial, sans-serif;">' + unitText + '</text>';
             });
+            html += '</svg>';
+            html += '</div>';
+            // Footnote: explain how Active Pipeline + CX/Launch reconcile to the funnel total
+            var funnelTotal = totalPipelineCount + cxLaunchCount;
+            html += '<div style="margin-top:10px;padding:8px 12px;background:#f8f9fa;border-left:3px solid #706e6b;font-size:0.7rem;color:#3e3e3c;line-height:1.5;">';
+            html += '<strong>* How the totals split:</strong> Funnel shows all <strong>' + funnelTotal + '</strong> open sites with a forecast date. ';
+            html += '<strong style="color:#032d60;">Active Pipeline (' + totalPipelineCount + ')</strong> = pre-PAL stages plus any late-stage Opp still working an agreement (Create / Review / Sign). ';
+            html += '<strong style="color:#43A047;">CX/Launch (' + cxLaunchCount + ')</strong> = late-stage Opps (PAL/ROE Complete and beyond) where the agreement is signed and construction owns the build. ';
+            html += 'Active + CX/Launch = funnel total. Sites where SiteTracker has activated the build are excluded from the funnel entirely.';
+            html += '</div>';
             html += '</div>';
 
             // Monthly agreements signed by type (table)
@@ -832,21 +994,31 @@
             if (signedTypes.length === 0 && priorYears.length === 0) {
                 html += '<div class="empty-state">No agreements signed</div>';
             } else {
-                html += '<table><tr><th></th>';
-                signedTypes.forEach(function(t) { html += '<th style="text-align:right">' + t + '</th>'; });
-                html += '<th style="text-align:right;font-weight:700;">Total</th></tr>';
+                // Fixed-layout table so every type column is the same width
+                var labelColPct = 12;
+                var totalColPct = 12;
+                var typeColPct = (100 - labelColPct - totalColPct) / Math.max(signedTypes.length, 1);
+                html += '<table class="agr-signed">';
+                html += '<colgroup>';
+                html += '<col style="width:' + labelColPct + '%;">';
+                signedTypes.forEach(function() { html += '<col style="width:' + typeColPct.toFixed(2) + '%;">'; });
+                html += '<col style="width:' + totalColPct + '%;">';
+                html += '</colgroup>';
+                html += '<tr><th></th>';
+                signedTypes.forEach(function(t) { html += '<th style="text-align:center;">' + t + '</th>'; });
+                html += '<th style="text-align:center;font-weight:700;">Total</th></tr>';
 
                 // Prior year rows
                 priorYears.forEach(function(yr) {
                     var rowData = signedByYearType[yr] || {};
                     var rowTotal = 0;
-                    html += '<tr style="background:#f9f9f9;"><td style="font-weight:600;">' + yr + '</td>';
+                    html += '<tr style="background:#f9f9f9;"><td style="font-weight:600;text-align:left;">' + yr + '</td>';
                     signedTypes.forEach(function(t) {
                         var c = rowData[t] || 0;
                         rowTotal += c;
-                        html += '<td style="text-align:right;">' + (c > 0 ? c : '<span style="color:#d8dde6;">-</span>') + '</td>';
+                        html += '<td style="text-align:center;">' + (c > 0 ? c : '<span style="color:#d8dde6;">-</span>') + '</td>';
                     });
-                    html += '<td style="text-align:right;font-weight:600;">' + rowTotal + '</td></tr>';
+                    html += '<td style="text-align:center;font-weight:600;">' + rowTotal + '</td></tr>';
                 });
 
                 // Separator between years and months
@@ -861,19 +1033,19 @@
                 for (var mi = 1; mi <= currentMonth; mi++) {
                     var rowData = signedByMonthType[mi] || {};
                     var rowTotal = 0;
-                    html += '<tr><td>' + months[mi - 1] + '</td>';
+                    html += '<tr><td style="text-align:left;">' + months[mi - 1] + '</td>';
                     signedTypes.forEach(function(t) {
                         var c = rowData[t] || 0;
                         rowTotal += c;
                         typeTotals[t] += c;
-                        html += '<td style="text-align:right;">' + (c > 0 ? c : '<span style="color:#d8dde6;">-</span>') + '</td>';
+                        html += '<td style="text-align:center;">' + (c > 0 ? c : '<span style="color:#d8dde6;">-</span>') + '</td>';
                     });
                     grandTotal += rowTotal;
-                    html += '<td style="text-align:right;font-weight:600;">' + rowTotal + '</td></tr>';
+                    html += '<td style="text-align:center;font-weight:600;">' + rowTotal + '</td></tr>';
                 }
-                html += '<tr style="font-weight:700;border-top:2px solid #e5e5e5;"><td>' + new Date().getFullYear() + ' Total</td>';
-                signedTypes.forEach(function(t) { html += '<td style="text-align:right;">' + typeTotals[t] + '</td>'; });
-                html += '<td style="text-align:right;">' + grandTotal + '</td></tr>';
+                html += '<tr style="font-weight:700;border-top:2px solid #e5e5e5;background:#f4f6f9;"><td style="text-align:left;">' + new Date().getFullYear() + ' Total</td>';
+                signedTypes.forEach(function(t) { html += '<td style="text-align:center;">' + typeTotals[t] + '</td>'; });
+                html += '<td style="text-align:center;">' + grandTotal + '</td></tr>';
 
                 // Grand total including prior years
                 if (priorYears.length > 0) {
@@ -888,12 +1060,16 @@
                         });
                         Object.keys(rowData).forEach(function(t) { allTimeGrand += rowData[t]; });
                     });
-                    html += '<tr style="font-weight:700;border-top:3px double #032d60;background:#f4f6f9;"><td>Grand Total</td>';
-                    signedTypes.forEach(function(t) { html += '<td style="text-align:right;">' + allTimeTotals[t] + '</td>'; });
-                    html += '<td style="text-align:right;">' + allTimeGrand + '</td></tr>';
+                    html += '<tr style="font-weight:700;border-top:3px double #032d60;background:#e8eef7;"><td style="text-align:left;">Grand Total</td>';
+                    signedTypes.forEach(function(t) { html += '<td style="text-align:center;">' + allTimeTotals[t] + '</td>'; });
+                    html += '<td style="text-align:center;">' + allTimeGrand + '</td></tr>';
                 }
                 html += '</table>';
             }
+            // Footnote: clarify grain — counts agreements (PAL/ROE/EMA/BULK/etc.), not properties
+            html += '<div style="margin-top:10px;padding:8px 12px;background:#f8f9fa;border-left:3px solid #706e6b;font-size:0.7rem;color:#3e3e3c;line-height:1.5;">';
+            html += '<strong>* Grain note:</strong> Counts <strong>agreements signed</strong>, not properties. One property can stack multiple agreements over its lifecycle (PAL &rarr; ROE &rarr; EMA &rarr; BULK), so this total will run higher than the funnel\'s site count. Use the funnel for "how many properties" and this table for "how many contracts executed".';
+            html += '</div>';
             html += '</div>';
 
             html += '</div>'; // end two-col
@@ -944,12 +1120,270 @@
             }
             html += '</div></div>';
 
-            // Pipeline Forecast — single table with section headers
-            html += '<div class="section"><div class="section-title">Pipeline Forecast</div>';
-            html += '<table><tr><th>Site Name</th><th>State</th><th>Type</th><th>Stage</th><th>Agreements</th><th>Projected Close</th><th style="text-align:right">Units</th><th>Owner</th></tr>';
-
+            // Pipeline Forecast — split into 3 lanes (PAL / EMA-Bulk / SAQ)
             function renderAgreementBadges(r) {
                 var agrs = (r.Agreements__r && r.Agreements__r.records) ? r.Agreements__r.records : [];
+                if (agrs.length === 0) return '<span style="color:#d8dde6;">&#8212;</span>';
+                var out = '';
+                agrs.forEach(function(a) {
+                    var s = a.Status__c || '';
+                    var bc = (s === 'Completed' || s === 'Archive') ? 'badge-won' : (s === 'Cancelled' || s === 'Paused') ? 'badge-lost' : (s === 'Sign' || s === 'Review') ? 'badge-warn' : 'badge-open';
+                    out += '<span class="badge ' + bc + '" style="margin:1px 2px;">' + (a.Agreement_Type__c || '') + ' - ' + s + '</span> ';
+                });
+                return out;
+            }
+
+            // Lane dispatch (stage-first):
+            //   Post-PAL stages (PAL/ROE Complete / Marketing/Bulk In Progress / Marketing/Bulk Complete)
+            //     -> emaBulk_pursuing if any agreement is in flight (Create/Review/Sign),
+            //        else emaBulk_coordinating (CX/launch only)
+            //   Pre-PAL stages:
+            //     Owner = Bill Holick -> saq
+            //     Else -> pal
+            function hasActivePursuit(r) {
+                var agrs = (r.Agreements__r && r.Agreements__r.records) ? r.Agreements__r.records : [];
+                for (var i = 0; i < agrs.length; i++) {
+                    var s = agrs[i].Status__c;
+                    if (s === 'Create' || s === 'Review' || s === 'Sign') return true;
+                }
+                return false;
+            }
+            function getLane(r) {
+                var s = r.StageName;
+                if (s === 'PAL/ROE Complete' || s === 'Marketing/Bulk In Progress' || s === 'Marketing/Bulk Complete') {
+                    return hasActivePursuit(r) ? 'emaBulk_pursuing' : 'emaBulk_coordinating';
+                }
+                var ownerName = (r.Owner && r.Owner.Name) ? r.Owner.Name : '';
+                if (ownerName === 'Bill Holick') return 'saq';
+                return 'pal';
+            }
+
+            // Bucket each list further by lane (4 lanes: pal, emaBulk_pursuing, emaBulk_coordinating, saq)
+            function bucketByLane(list) {
+                var out = { pal: [], emaBulk_pursuing: [], emaBulk_coordinating: [], saq: [] };
+                list.forEach(function(r) { out[getLane(r)].push(r); });
+                return out;
+            }
+            var byLane = {
+                pastDue: bucketByLane(pastDueList),
+                next30:  bucketByLane(next30List),
+                next60:  bucketByLane(next60List),
+                next90:  bucketByLane(next90List),
+                over90:  bucketByLane(over90List)
+            };
+
+            function laneTotals(laneKey) {
+                var pd = byLane.pastDue[laneKey].length;
+                var n30 = byLane.next30[laneKey].length;
+                var n60 = byLane.next60[laneKey].length;
+                var n90 = byLane.next90[laneKey].length;
+                var ov = byLane.over90[laneKey].length;
+                function sumUnits(list) {
+                    var u = 0;
+                    list.forEach(function(r) { u += (r.Units__c || 0); });
+                    return u;
+                }
+                return {
+                    pastDue: pd, pastDueUnits: sumUnits(byLane.pastDue[laneKey]),
+                    next30:  n30, next30Units:  sumUnits(byLane.next30[laneKey]),
+                    next60:  n60, next60Units:  sumUnits(byLane.next60[laneKey]),
+                    next90:  n90, next90Units:  sumUnits(byLane.next90[laneKey]),
+                    over90:  ov,  over90Units:  sumUnits(byLane.over90[laneKey]),
+                    total:   pd + n30 + n60 + n90 + ov
+                };
+            }
+
+            function getBuildStatus(r) {
+                var stProjects = (r.SiteTracker_Projects__r && r.SiteTracker_Projects__r.records) ? r.SiteTracker_Projects__r.records : [];
+                if (stProjects.length === 0) return '';
+                return stProjects[0].Build_Status__c || '';
+            }
+
+            function renderBucketRowsHTML(list) {
+                var s = '';
+                list.forEach(function(r) {
+                    var bs = getBuildStatus(r);
+                    s += '<tr>';
+                    s += '<td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                    s += '<td>' + (r.Property_State__c || '') + '</td>';
+                    s += '<td>' + (r.Property_Type__c || '') + '</td>';
+                    s += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
+                    s += '<td>' + renderAgreementBadges(r) + '</td>';
+                    s += '<td>' + (r.Projected_Close_Date__c || '') + '</td>';
+                    s += '<td style="text-align:right">' + (r.Units__c || 0) + '</td>';
+                    s += '<td>' + r.Owner.Name + '</td>';
+                    s += '<td>' + (r.Next_Action__c ? escHtml(r.Next_Action__c) : '<span style="color:#d8dde6;">&#8212;</span>') + '</td>';
+                    s += '<td>' + (r.Next_Action_Date__c || '<span style="color:#d8dde6;">&#8212;</span>') + '</td>';
+                    s += '<td>' + (bs ? escHtml(bs) : '<span style="color:#d8dde6;">&#8212;</span>') + '</td>';
+                    s += '</tr>';
+                });
+                return s;
+            }
+
+            function renderPastDueRowsHTML(list) {
+                var s = '';
+                list.forEach(function(r) {
+                    var bs = getBuildStatus(r);
+                    s += '<tr style="color:#c23934;">';
+                    s += '<td><a class="opp-link" style="color:#c23934;" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
+                    s += '<td>' + (r.Property_State__c || '') + '</td>';
+                    s += '<td>' + (r.Property_Type__c || '') + '</td>';
+                    s += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
+                    s += '<td>' + renderAgreementBadges(r) + '</td>';
+                    s += '<td>' + (r.Projected_Close_Date__c || '') + '</td>';
+                    s += '<td style="text-align:right">' + (r.Units__c || 0) + '</td>';
+                    s += '<td>' + r.Owner.Name + '</td>';
+                    s += '<td>' + (r.Next_Action__c ? escHtml(r.Next_Action__c) : '<span style="color:#d8dde6;">&#8212;</span>') + '</td>';
+                    s += '<td>' + (r.Next_Action_Date__c || '<span style="color:#d8dde6;">&#8212;</span>') + '</td>';
+                    s += '<td>' + (bs ? escHtml(bs) : '<span style="color:#d8dde6;">&#8212;</span>') + '</td>';
+                    s += '</tr>';
+                });
+                return s;
+            }
+
+            function bucketHeaderRow(label, count, units, bg, color) {
+                var unitText = Number(units).toLocaleString();
+                return '<tr><td colspan="11" style="background:' + bg + ';padding:6px 10px;font-weight:700;font-size:0.8rem;color:' + color + ';border-bottom:2px solid ' + color + ';">' +
+                    label + ' (' + count + ' / ' + unitText + ' units)</td></tr>';
+            }
+
+            function renderLaneSection(title, subtitle, laneKey, accent) {
+                var t = laneTotals(laneKey);
+                var totalUnits = t.pastDueUnits + t.next30Units + t.next60Units + t.next90Units + t.over90Units;
+                var section = '<div class="section" style="border-top:4px solid ' + accent + ';">';
+                section += '<div class="section-title" style="display:flex;justify-content:space-between;align-items:baseline;">';
+                section += '<span>' + title + ' <span style="font-weight:400;color:#706e6b;font-size:0.8rem;">(' + subtitle + ')</span></span>';
+                section += '<span style="font-size:0.8rem;color:' + accent + ';font-weight:700;">' + t.total + ' opps &#183; ' + Number(totalUnits).toLocaleString() + ' units</span>';
+                section += '</div>';
+
+                if (t.total === 0) {
+                    section += '<div class="empty-state">No forecasted opportunities in this lane</div>';
+                } else {
+                    section += '<table class="lane-forecast">';
+                    section += '<tr>';
+                    section += '<th style="width:15%;">Site Name</th>';
+                    section += '<th style="width:4%;">State</th>';
+                    section += '<th style="width:6%;">Type</th>';
+                    section += '<th style="width:10%;">Stage</th>';
+                    section += '<th style="width:12%;">Agreements</th>';
+                    section += '<th style="width:7%;">Proj Close</th>';
+                    section += '<th style="width:5%;text-align:right;">Units</th>';
+                    section += '<th style="width:8%;">Owner</th>';
+                    section += '<th style="width:15%;">Action</th>';
+                    section += '<th style="width:7%;">Action Date</th>';
+                    section += '<th style="width:11%;">Build Status</th>';
+                    section += '</tr>';
+                    if (t.pastDue > 0) {
+                        section += bucketHeaderRow('Past Due',     t.pastDue, t.pastDueUnits, '#fef0ef', '#c23934');
+                        section += renderPastDueRowsHTML(byLane.pastDue[laneKey]);
+                    }
+                    if (t.next30 > 0) {
+                        section += bucketHeaderRow('Next 30 Days', t.next30, t.next30Units, '#e5f6fd', '#0176d3');
+                        section += renderBucketRowsHTML(byLane.next30[laneKey]);
+                    }
+                    if (t.next60 > 0) {
+                        section += bucketHeaderRow('30-60 Days',   t.next60, t.next60Units, '#e0f2f1', '#06a59a');
+                        section += renderBucketRowsHTML(byLane.next60[laneKey]);
+                    }
+                    if (t.next90 > 0) {
+                        section += bucketHeaderRow('60-90 Days',   t.next90, t.next90Units, '#fff8e1', '#e68619');
+                        section += renderBucketRowsHTML(byLane.next90[laneKey]);
+                    }
+                    if (t.over90 > 0) {
+                        section += bucketHeaderRow('90+ Days',     t.over90, t.over90Units, '#e8f5e9', '#2e7d32');
+                        section += renderBucketRowsHTML(byLane.over90[laneKey]);
+                    }
+                    // Total row
+                    section += '<tr style="background:#f4f6f9;border-top:2px solid #032d60;">';
+                    section += '<td colspan="6" style="padding:8px 10px;font-weight:700;font-size:0.85rem;color:#032d60;">Total</td>';
+                    section += '<td style="text-align:right;padding:8px 10px;font-weight:700;font-size:0.85rem;color:#032d60;">' + Number(totalUnits).toLocaleString() + '</td>';
+                    section += '<td style="padding:8px 10px;font-weight:700;font-size:0.85rem;color:#032d60;">' + t.total + ' opps</td>';
+                    section += '<td colspan="3"></td>';
+                    section += '</tr>';
+                    section += '</table>';
+                }
+                section += '</div>';
+                return section;
+            }
+
+            // Summary table across the 4 lane sub-buckets.
+            // CX/Launch Coordination is informational only - excluded from pipeline TOTAL
+            // because those Opps are post-sales (build/launch handoff, not active selling).
+            var laneSpec = [
+                { title: 'PAL Forecast',                       key: 'pal',                  accent: '#1F3A68', sub: 'Inside Sales pursuing PAL signing',          inTotal: true  },
+                { title: 'Post-PAL: Pursuing Marketing/Bulk',  key: 'emaBulk_pursuing',     accent: '#2E7D32', sub: 'Active agreement pursuit after PAL signed',  inTotal: true  },
+                { title: 'SAQ Forecast',                       key: 'saq',                  accent: '#e68619', sub: 'Site Acquisition pursuing PAL on SAQ properties', inTotal: true  },
+                { title: 'Post-PAL: CX/Launch Coordination',   key: 'emaBulk_coordinating', accent: '#43A047', sub: 'Post-sales build / launch handoff (informational, not in pipeline total)', inTotal: false },
+            ];
+            html += '<div class="section"><div class="section-title">Pipeline Summary</div>';
+            html += '<table class="lane-summary" style="width:100%;border-collapse:collapse;">';
+            html += '<tr style="background:#f4f6f9;"><th style="text-align:left;padding:8px 10px;font-size:0.7rem;color:#706e6b;text-transform:uppercase;letter-spacing:0.5px;border-bottom:2px solid #e5e5e5;">Lane</th>'
+                  + '<th style="text-align:right;padding:8px 10px;font-size:0.7rem;color:#706e6b;text-transform:uppercase;letter-spacing:0.5px;border-bottom:2px solid #e5e5e5;">Opps</th>'
+                  + '<th style="text-align:right;padding:8px 10px;font-size:0.7rem;color:#706e6b;text-transform:uppercase;letter-spacing:0.5px;border-bottom:2px solid #e5e5e5;">Units</th></tr>';
+            var grandOpps = 0, grandUnits = 0;
+            laneSpec.forEach(function(L) {
+                var tt = laneTotals(L.key);
+                var u = tt.pastDueUnits + tt.next30Units + tt.next60Units + tt.next90Units + tt.over90Units;
+                if (L.inTotal) {
+                    grandOpps += tt.total;
+                    grandUnits += u;
+                }
+                if (L.inTotal) {
+                    html += '<tr style="border-bottom:1px solid #eef0f3;">';
+                    html += '<td style="padding:8px 10px;border-left:4px solid ' + L.accent + ';">';
+                    html += '<div style="font-weight:700;color:' + L.accent + ';font-size:0.875rem;">' + L.title + '</div>';
+                    html += '<div style="font-size:0.72rem;color:#706e6b;">' + L.sub + '</div>';
+                    html += '</td>';
+                    html += '<td style="text-align:right;padding:8px 10px;font-weight:700;color:#032d60;font-size:0.95rem;">' + tt.total + '</td>';
+                    html += '<td style="text-align:right;padding:8px 10px;color:#0176d3;font-size:0.875rem;">' + Number(u).toLocaleString() + '</td>';
+                    html += '</tr>';
+                } else {
+                    // Grayed-out row (not counted in pipeline total) - darker gray
+                    html += '<tr style="border-bottom:1px solid #b0b8c4;background:#c8cdd5;">';
+                    html += '<td style="padding:8px 10px;border-left:4px solid #909090;">';
+                    html += '<div style="font-weight:700;color:#666;font-size:0.875rem;">' + L.title + ' <span style="font-weight:400;font-size:0.7rem;font-style:italic;">(not counted in pipeline)</span></div>';
+                    html += '<div style="font-size:0.72rem;color:#777;font-style:italic;">' + L.sub + '</div>';
+                    html += '</td>';
+                    html += '<td style="text-align:right;padding:8px 10px;font-weight:700;color:#666;font-size:0.95rem;">' + tt.total + '</td>';
+                    html += '<td style="text-align:right;padding:8px 10px;color:#777;font-size:0.875rem;">' + Number(u).toLocaleString() + '</td>';
+                    html += '</tr>';
+                }
+            });
+            html += '<tr style="background:#e8eef7;border-top:2px solid #032d60;">';
+            html += '<td style="padding:10px;font-weight:700;color:#032d60;">PIPELINE TOTAL <span style="font-weight:400;font-size:0.7rem;color:#706e6b;">(excludes CX/Launch)</span></td>';
+            html += '<td style="text-align:right;padding:10px;font-weight:700;color:#032d60;font-size:1rem;">' + grandOpps + '</td>';
+            html += '<td style="text-align:right;padding:10px;font-weight:700;color:#032d60;">' + Number(grandUnits).toLocaleString() + '</td>';
+            html += '</tr>';
+            html += '</table></div>';
+
+            html += renderLaneSection('PAL Forecast',                          'Inside Sales pursuing PAL signing',  'pal',                  '#1F3A68');
+            html += renderLaneSection('Post-PAL: Pursuing Marketing/Bulk',     'Actively chasing Marketing/Bulk/PAL Addendum agreements after PAL signed', 'emaBulk_pursuing',     '#2E7D32');
+            html += renderLaneSection('Post-PAL: CX/Launch Coordination',      'Coordinating build/launch handoff (sales agreements settled)', 'emaBulk_coordinating', '#43A047');
+            html += renderLaneSection('SAQ Forecast',                          'Site Acquisition pursuing PAL on SAQ properties', 'saq',                  '#e68619');
+
+            html += '</div>'; // end executive tab
+
+            // ═══════════════════════════════════════════════════════════
+            // 4i. RENDER: SITE TRACKER TAB — Forecasted Activations
+            // ═══════════════════════════════════════════════════════════
+            html += '<div id="tab-sitetracker" class="tab-content' + (currentTab === 'sitetracker' ? ' active' : '') + '">';
+
+            // In-Progress Build Projects (SiteTracker). Bucketed by Activation Forecast.
+            var stPastDue = [], stNext30 = [], stNext60 = [], stNext90 = [], stOver90 = [];
+            var stNow30 = new Date(); stNow30.setDate(stNow30.getDate() + 30);
+            var stNow60 = new Date(); stNow60.setDate(stNow60.getDate() + 60);
+            var stNow90 = new Date(); stNow90.setDate(stNow90.getDate() + 90);
+            execInProgressST.forEach(function(r) {
+                var d = new Date(r.Activation_Forecast__c + 'T00:00:00');
+                if (d < today) stPastDue.push(r);
+                else if (d <= stNow30) stNext30.push(r);
+                else if (d <= stNow60) stNext60.push(r);
+                else if (d <= stNow90) stNext90.push(r);
+                else stOver90.push(r);
+            });
+
+            function renderSTAgreementBadges(oppId) {
+                var agrs = stAgreementMap[oppId] || [];
                 if (agrs.length === 0) return '<span style="color:#d8dde6;">—</span>';
                 var out = '';
                 agrs.forEach(function(a) {
@@ -960,63 +1394,69 @@
                 return out;
             }
 
-            function renderBucketRows(list) {
+            function renderSTBucketRows(list) {
                 list.forEach(function(r) {
+                    var stUrl  = lightningUrl + '/lightning/r/SiteTracker_Project__c/' + r.Id + '/view';
+                    var hasOpp = !!r.Opportunity__c;
+                    var oppUrl = hasOpp ? (lightningUrl + '/lightning/r/Opportunity/' + r.Opportunity__c + '/view') : '';
+                    var oppName = hasOpp && r.Opportunity__r ? r.Opportunity__r.Name : '';
+                    var state   = r.Opportunity__r ? (r.Opportunity__r.Property_State__c || '') : '';
+                    var units   = (r.Opportunity__r && r.Opportunity__r.Units__c) ? r.Opportunity__r.Units__c : 0;
+                    var owner   = (r.Opportunity__r && r.Opportunity__r.Owner) ? r.Opportunity__r.Owner.Name : '';
+                    var siteLabel = (r.Site_Name__c || r.Name || '');
+                    var projNum = r.Name || '';
                     html += '<tr>';
-                    html += '<td><a class="opp-link" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
-                    html += '<td>' + (r.Property_State__c || '') + '</td>';
-                    html += '<td>' + (r.Property_Type__c || '') + '</td>';
-                    html += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
-                    html += '<td>' + renderAgreementBadges(r) + '</td>';
-                    html += '<td>' + (r.Projected_Close_Date__c || '') + '</td>';
-                    html += '<td style="text-align:right">' + (r.Units__c || 0) + '</td>';
-                    html += '<td>' + r.Owner.Name + '</td></tr>';
+                    if (hasOpp) {
+                        html += '<td><a class="opp-link" href="' + oppUrl + '" target="_blank">' + oppName + '</a></td>';
+                    } else {
+                        html += '<td></td>';
+                    }
+                    html += '<td><a class="opp-link" href="' + stUrl + '" target="_blank">' + siteLabel + '</a>';
+                    if (projNum && projNum !== siteLabel) {
+                        html += ' <span style="color:#706e6b;font-size:0.75rem;">(' + projNum + ')</span>';
+                    }
+                    html += '</td>';
+                    html += '<td>' + (r.Build_Status__c || '') + '</td>';
+                    html += '<td>' + (r.Activation_Forecast__c || '') + '</td>';
+                    html += '<td>' + state + '</td>';
+                    html += '<td style="text-align:right">' + units + '</td>';
+                    html += '<td>' + owner + '</td>';
+                    html += '<td>' + renderSTAgreementBadges(r.Opportunity__c) + '</td>';
+                    html += '</tr>';
                 });
             }
 
-            // Past Due
-            if (pastDueList.length > 0) {
-                html += '<tr><td colspan="8" style="background:#fef0ef;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#c23934;border-bottom:2px solid #c23934;">Past Due (' + pastDueList.length + ')</td></tr>';
-                pastDueList.forEach(function(r) {
-                    html += '<tr style="color:#c23934;">';
-                    html += '<td><a class="opp-link" style="color:#c23934;" href="' + lightningUrl + '/lightning/r/Opportunity/' + r.Id + '/view" target="_blank">' + escHtml(r.Name) + '</a></td>';
-                    html += '<td>' + (r.Property_State__c || '') + '</td>';
-                    html += '<td>' + (r.Property_Type__c || '') + '</td>';
-                    html += '<td><span class="badge badge-open">' + r.StageName + '</span></td>';
-                    html += '<td>' + renderAgreementBadges(r) + '</td>';
-                    html += '<td>' + (r.Projected_Close_Date__c || '') + '</td>';
-                    html += '<td style="text-align:right">' + (r.Units__c || 0) + '</td>';
-                    html += '<td>' + r.Owner.Name + '</td></tr>';
-                });
+            html += '<div class="section"><div class="section-title">Forecasted Activations (' + execInProgressST.length + ')</div>';
+            if (execInProgressST.length === 0) {
+                html += '<div class="empty-state">No projects with a forecasted activation date</div>';
+            } else {
+                html += '<table><thead><tr><th>Opportunity</th><th>SiteTracker Project</th><th>Build Status</th><th>Activation Forecast</th><th>State</th><th style="text-align:right">Units</th><th>Owner</th><th>Agreements</th></tr></thead><tbody>';
+
+                // Past Due
+                html += '<tr><td colspan="8" style="background:#fef0ef;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#c23934;border-bottom:2px solid #c23934;">Past Due (' + stPastDue.length + ')</td></tr>';
+                if (stPastDue.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stPastDue); }
+
+                // Next 30
+                html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#0176d3;border-bottom:2px solid #0176d3;">Next 30 Days (' + stNext30.length + ')</td></tr>';
+                if (stNext30.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stNext30); }
+
+                // 30-60
+                html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#06a59a;border-bottom:2px solid #06a59a;">30-60 Days (' + stNext60.length + ')</td></tr>';
+                if (stNext60.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stNext60); }
+
+                // 60-90
+                html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#e68619;border-bottom:2px solid #e68619;">60-90 Days (' + stNext90.length + ')</td></tr>';
+                if (stNext90.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stNext90); }
+
+                // 90+
+                html += '<tr><td colspan="8" style="background:#f4f6f9;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#706e6b;border-bottom:2px solid #706e6b;">90+ Days (' + stOver90.length + ')</td></tr>';
+                if (stOver90.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stOver90); }
+
+                html += '</tbody></table>';
             }
+            html += '</div>';
 
-            // Next 30 Days
-            html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#0176d3;border-bottom:2px solid #0176d3;">Next 30 Days (' + next30List.length + ')</td></tr>';
-            if (next30List.length === 0) {
-                html += '<tr><td colspan="8" class="empty-state">None</td></tr>';
-            } else { renderBucketRows(next30List); }
-
-            // 30–60 Days
-            html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#06a59a;border-bottom:2px solid #06a59a;">30–60 Days (' + next60List.length + ')</td></tr>';
-            if (next60List.length === 0) {
-                html += '<tr><td colspan="8" class="empty-state">None</td></tr>';
-            } else { renderBucketRows(next60List); }
-
-            // 60–90 Days
-            html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#e68619;border-bottom:2px solid #e68619;">60–90 Days (' + next90List.length + ')</td></tr>';
-            if (next90List.length === 0) {
-                html += '<tr><td colspan="8" class="empty-state">None</td></tr>';
-            } else { renderBucketRows(next90List); }
-
-            // 90+ Days
-            html += '<tr><td colspan="8" style="background:#f4f6f9;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#706e6b;border-bottom:2px solid #706e6b;">90+ Days (' + over90List.length + ')</td></tr>';
-            if (over90List.length === 0) {
-                html += '<tr><td colspan="8" class="empty-state">None</td></tr>';
-            } else { renderBucketRows(over90List); }
-
-            html += '</table></div>';
-
-            html += '</div>'; // end executive tab
+            html += '</div>'; // end sitetracker tab
 
             document.getElementById('dashboard').innerHTML = html;
             document.getElementById('dashboard').className = '';

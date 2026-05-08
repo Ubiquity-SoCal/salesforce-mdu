@@ -1,0 +1,102 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wkEcCYAU,Eastgate Village Apartments,StageName,On Hold,Prospecting,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcCYAU,Eastgate Village Apartments,Projected_Close_Date__c,2026-05-01,2026-06-01,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcCYAU,Eastgate Village Apartments,Next_Action__c,,Bill coordinating with Angie to revive (reach Sean Darden); waiting on W-9 + PAL addendum signature,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcCYAU,Eastgate Village Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6dYAE,Howard Street,StageName,Prospects,Engaged,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6dYAE,Howard Street,Projected_Close_Date__c,,2026-07-01,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6dYAE,Howard Street,Next_Action__c,,"Kelly wants in-person meeting this week; Melissa setting up face-to-face (same owner as Terrace Garden, ~90 units)",apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6dYAE,Howard Street,Next_Action_Date__c,,2026-05-02,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA7oYAE,Terrace Garden Apartments,StageName,Prospects,Engaged,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA7oYAE,Terrace Garden Apartments,Projected_Close_Date__c,,2026-07-02,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA7oYAE,Terrace Garden Apartments,Next_Action__c,,"Kelly wants in-person meeting this week; Melissa setting up face-to-face (same owner as Howard Street, ~90 units)",apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA7oYAE,Terrace Garden Apartments,Next_Action_Date__c,,2026-05-02,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkCjMYAU,Gardens of Taylor,StageName,Prospects,Prospecting,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkCjMYAU,Gardens of Taylor,Projected_Close_Date__c,,2026-06-03,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkCjMYAU,Gardens of Taylor,Next_Action__c,,Melissa to send PAL request to Caitlin (Taylor on break) cc Brett today; legal description received from Linda,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkCjMYAU,Gardens of Taylor,Next_Action_Date__c,,2026-04-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc3YAE,Capri on Camelback,StageName,EMA/Bulk Complete,Contract Negotiations,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc3YAE,Capri on Camelback,Next_Action__c,,Brett to contact owner re bulk requirement (hut needs bulk); owner asking when construction starts,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc3YAE,Capri on Camelback,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc3YAE,Capri on Camelback,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbvYAE,The Traditions Apartments,StageName,EMA/Bulk Complete,On Hold,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbvYAE,The Traditions Apartments,Hold_Reason__c,,Build Not Approved,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbvYAE,The Traditions Apartments,Next_Action__c,,Niraj sending legal note to Caitlin re cancellation comm to owner; PAL not being canceled (may build as FiberFirst future),apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbvYAE,The Traditions Apartments,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbvYAE,The Traditions Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbuYAE,Coyote Creek,Next_Action__c,,Brett to follow up with leadership and owner,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbuYAE,Coyote Creek,OwnerId,005WR00000CXIX7YAP,005WR00000Ewjj3YAB,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbuYAE,Coyote Creek,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SZYAY,Falcon Glen Apartments,Projected_Close_Date__c,2026-05-30,2026-05-29,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SZYAY,Falcon Glen Apartments,Next_Action__c,,Brett to forward to owner Linda Inabe (CA) and pitch proposal; team open to CA trip,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SZYAY,Falcon Glen Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SdYAI,The Laredo Apartments,Projected_Close_Date__c,2026-04-30,2026-05-29,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SdYAI,The Laredo Apartments,Next_Action__c,,Melissa to schedule meeting with Brett + Amy on NextLink offering; aggressive bulk pricing,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SdYAI,The Laredo Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkDtwYAE,Woodglen Square ll,Next_Action__c,,Maps + floor plans received from Taylor 4/29; awaiting address list to start engineering,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkDtwYAE,Woodglen Square ll,OwnerId,005WR00000DEU6oYAH,005WR00000Ewjj3YAB,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkDtwYAE,Woodglen Square ll,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SEYAY,La Mesa Village Apartments,Projected_Close_Date__c,2026-04-30,2026-05-29,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SEYAY,La Mesa Village Apartments,Next_Action__c,,MDU On Net. Access Agreement targeted in next 30 days,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SEYAY,La Mesa Village Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SYYAY,Garden Place Apartments,Projected_Close_Date__c,2026-05-30,2026-05-29,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SYYAY,Garden Place Apartments,Next_Action__c,,MDU On Net. Access Agreement targeted in next 30 days,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SYYAY,Garden Place Apartments,OwnerId,005WR00000DEU6oYAH,005WR00000Ewjj3YAB,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SYYAY,Garden Place Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7YYAU,Westmount at The District Apartments,Projected_Close_Date__c,2026-05-01,2026-06-15,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7YYAU,Westmount at The District Apartments,Next_Action__c,,Push PAL signature before Walker's paternity leave (early May); Kyle reaching out to backup contact,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7YYAU,Westmount at The District Apartments,Next_Action_Date__c,,2026-05-08,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7WYAU,Westmount at Urban Trails,Projected_Close_Date__c,2026-05-01,2026-06-15,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7WYAU,Westmount at Urban Trails,Next_Action__c,,Push PAL signature before Walker's paternity leave (early May); Kyle reaching out to backup contact,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7WYAU,Westmount at Urban Trails,Next_Action_Date__c,,2026-05-08,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA7aYAE,Amberwood Manor,Next_Action__c,,"On HOA agenda for May; asked to participate in meeting, awaiting response",apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA7aYAE,Amberwood Manor,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkCk8YAE,Bridgewood Townhomes,Next_Action__c,,"On HOA agenda for May; asked to participate in meeting, awaiting response",apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkCk8YAE,Bridgewood Townhomes,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,Projected_Close_Date__c,2026-06-01,2026-06-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,Next_Action__c,,Calling Dr. Kumar. Hard to reach but willing to sign once contacted,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8zYAE,6314 Boyd Street,Projected_Close_Date__c,2026-06-01,2026-07-01,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8zYAE,6314 Boyd Street,Next_Action__c,,Calling Dr. Kumar. Hard to reach but willing to sign once contacted,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8zYAE,6314 Boyd Street,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkABpYAM,Liberty Manor,Next_Action__c,,Melissa to follow up. Went radio silent after good initial call; SITAC and Bill calls unanswered,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkABpYAM,Liberty Manor,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7zYAE,Williamsburg Townhomes and Apartments,Next_Action__c,,Good text exchange showing interest; PAL under proposal review with owner,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkC7zYAE,Williamsburg Townhomes and Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6fYAE,Bedford Square [fmr Maplewood Court],Projected_Close_Date__c,,2026-06-02,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6fYAE,Bedford Square [fmr Maplewood Court],Next_Action__c,,Belinda interested; Taylor sent PAL 4/28 before going on break. Owner reviewing,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA6fYAE,Bedford Square [fmr Maplewood Court],Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA95YAE,Parkwood Apartments,Next_Action__c,,Still under discussion with owner,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA95YAE,Parkwood Apartments,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcAYAU,Creekside Apartments,Projected_Close_Date__c,2026-06-27,2026-05-15,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcAYAU,Creekside Apartments,Next_Action__c,Need PAL addendum and Bulk Agreement [Placeholder forecast - update with real estimate],Melissa to call. Chasing PAL addendum (already have bulk agreement),apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcAYAU,Creekside Apartments,Next_Action_Date__c,2026-04-28,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbOYAU,Patriot Place,Projected_Close_Date__c,2026-05-28,2026-05-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbOYAU,Patriot Place,Next_Action__c,Need Marketing decision to build to unit or to NID [Placeholder forecast - update with real estimate],Melissa to solidify bulk vs EMA decision by end of 4/30; owner ready to send EMA contracts,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEbOYAU,Patriot Place,Next_Action_Date__c,2026-04-28,2026-04-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),Projected_Close_Date__c,2026-06-27,2026-05-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),Next_Action__c,Need Bulk [Placeholder forecast - update with real estimate],Going bulk; bulk language change needed. Waiting for Taylor back Monday 5/4,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),Next_Action_Date__c,2026-04-28,2026-05-04,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcDYAU,The 1001 Apartments,Projected_Close_Date__c,2026-05-28,2026-05-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcDYAU,The 1001 Apartments,Next_Action__c,PAL addedndum and Marketing [Placeholder forecast - update with real estimate],Owner Bob sitting on decision; Melissa to reach out again,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcDYAU,The 1001 Apartments,Next_Action_Date__c,2026-04-28,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc8YAE,Bristol Square Apartments,Projected_Close_Date__c,2026-06-27,2026-05-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc8YAE,Bristol Square Apartments,Next_Action__c,PAL addedndum and Marketing [Placeholder forecast - update with real estimate],Melissa to schedule mtg w/ Brett + Niraj; equipment-in-closet/no-power confusion to resolve in person,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEc8YAE,Bristol Square Apartments,Next_Action_Date__c,2026-04-28,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcEYAU,Northampton Court Condominiums,Projected_Close_Date__c,2026-03-13,2026-05-15,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcEYAU,Northampton Court Condominiums,Next_Action__c,PAL addendum and Marketing,PAL signed; verbal on bulk by end of week. Melissa to follow up today,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcEYAU,Northampton Court Condominiums,Next_Action_Date__c,2026-04-28,2026-04-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcEYAU,Northampton Court Condominiums,OwnerId,005WR00000Ewjj3YAB,005WR000003CD6DYAW,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000xwHL3YAM,Killeen_MDU_The Bungalows,Next_Action__c,,On hold. Owner Lisa Jean unreachable + doing construction; awaiting NID placement decision,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000xwHL3YAM,Killeen_MDU_The Bungalows,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcpYAE,Sonterra Apartment Homes,Next_Action__c,,EMA out for signature; owner Manny + daughters agreed; 48hr review. Melissa to follow up today,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcpYAE,Sonterra Apartment Homes,Next_Action_Date__c,,2026-04-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkEcpYAE,Sonterra Apartment Homes,OwnerId,005WR00000Ewjj3YAB,005WR000003CD6DYAW,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SsYAI,Sandpiper Pointe,Projected_Close_Date__c,,2026-06-15,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SsYAI,Sandpiper Pointe,Next_Action__c,,"Decision: send ROE today (not PAL); HOA willing EMA, not bulk (50% only); SFU homes",apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SsYAI,Sandpiper Pointe,Next_Action_Date__c,,2026-04-30,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SsYAI,Sandpiper Pointe,OwnerId,005WR00000DE3zRYAT,005WR000003CD6DYAW,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SnYAI,Seascape Sur,Next_Action__c,,Pankaj working w/ Pam Walker on PAL questions; PAL expected 45-60d; bulk required for feasibility,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wk9SnYAI,Seascape Sur,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8kYAE,Santa Helena Park Condominiums,Next_Action__c,,Pankaj working through telecom consultant questions; PAL revisions sent,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE
+006WR00000wkA8kYAE,Santa Helena Park Condominiums,Next_Action_Date__c,,2026-05-07,apply_meeting_updates_2026-04-29.py,2026-04-30T08-50-37,UPDATE

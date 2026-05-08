@@ -1,0 +1,508 @@
+<template>
+    <div class="cd">
+        <template if:true={isLoading}>
+            <div class="loading">Loading campaign data...</div>
+        </template>
+
+        <template if:true={error}>
+            <div class="error">{error}</div>
+        </template>
+
+        <template if:true={summary}>
+            <template if:true={isEmpty}>
+                <div class="empty">No Opportunities linked to this Campaign yet.</div>
+            </template>
+
+            <template if:false={isEmpty}>
+                <!-- Campaign description -->
+                <template if:true={summary.campaign.Description}>
+                    <div class="description">
+                        <div class="description-label">Campaign Description</div>
+                        <div class="description-body">{summary.campaign.Description}</div>
+                    </div>
+                </template>
+
+                <!-- KPI hero -->
+                <div class="hero">
+                    <div class="kpi kpi--total">
+                        <div class="kpi-label">Total</div>
+                        <div class="kpi-value">{kpis.total.sites}</div>
+                        <div class="kpi-sub">{kpis.total.units} units</div>
+                    </div>
+                    <template for:each={kpis.stateRows} for:item="s">
+                        <div key={s.name} class="kpi">
+                            <div class="kpi-label">{s.name}</div>
+                            <div class="kpi-value">{s.sites}</div>
+                            <div class="kpi-sub">{s.units} units</div>
+                            <div class="kpi-note">{s.avg} avg units/site</div>
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Role toggle -->
+                <div class="role-toggle">
+                    <span class="role-label">View:</span>
+                    <button class={roleAllClass} data-role="all" onclick={handleRoleView}>All</button>
+                    <button class={roleReClass} data-role="re" onclick={handleRoleView}>RE Team</button>
+                    <button class={roleSalesClass} data-role="sales" onclick={handleRoleView}>Sales Team</button>
+                </div>
+
+                <!-- Slicers -->
+                <div class="slicers">
+                    <span class="slicer-label">State:</span>
+                    <template for:each={allStates} for:item="st">
+                        <button key={st} class="slicer" data-state={st} onclick={handleStateFilter}>
+                            {st}
+                        </button>
+                    </template>
+                    <input type="text" class="search" placeholder="Search name, city, agreement..."
+                           value={searchTerm} oninput={handleSearch}/>
+                    <button class="btn-clear" onclick={handleClear}>Clear</button>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class={pipelineTabClass} data-tab="pipeline" onclick={handleTabClick}>Pipeline by State</button>
+                    <button class={closedTabClass} data-tab="closed" onclick={handleTabClick}>Closed Buckets</button>
+                    <button class={roeTabClass} data-tab="roe" onclick={handleTabClick}>2026 PAL/ROE Complete</button>
+                    <button class={securedTabClass} data-tab="secured" onclick={handleTabClick}>Secured</button>
+                    <button class={ffTabClass} data-tab="ff" onclick={handleTabClick}>Fiber First</button>
+                    <button class={marketTabClass} data-tab="market" onclick={handleTabClick}>Submit to Market</button>
+                    <button class={buildTabClass} data-tab="build" onclick={handleTabClick}>Build Status</button>
+                    <button class={dataTabClass} data-tab="data" onclick={handleTabClick}>All Data</button>
+                </div>
+
+                <!-- Pipeline by State -->
+                <template if:true={showPipeline}>
+                    <div class="panel">
+                        <div class="pipeline-summary">
+                            <div class="bucket bucket--active">
+                                <div class="bucket-label">Active Pipeline</div>
+                                <div class="bucket-value">{pipelineByState.activeCount}</div>
+                                <div class="bucket-sub">{pipelineByState.activeUnits} units ({pipelineByState.activePct}%)</div>
+                            </div>
+                            <div class="bucket bucket--resolved">
+                                <div class="bucket-label">Resolved (at {pipelineByState.resolutionStageLabel}+)</div>
+                                <div class="bucket-value">{pipelineByState.resolvedCount}</div>
+                                <div class="bucket-sub">{pipelineByState.resolvedUnits} units ({pipelineByState.resolvedPct}%)</div>
+                            </div>
+                        </div>
+
+                        <h4 class="section-title">Active Pipeline</h4>
+                        <table class="data-table pipeline-table">
+                            <colgroup>
+                                <col class="col-stage"/>
+                                <col class="col-count"/>
+                                <col class="col-units"/>
+                                <col class="col-pct"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Stage</th>
+                                    <th class="num">Count</th>
+                                    <th class="num">Units</th>
+                                    <th class="num">%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={pipelineByState.active} for:item="row">
+                                    <template if:false={row.hidden}>
+                                        <tr key={row.stage} class="stage-row">
+                                            <td>
+                                                <span class="dot" style={row.dotStyle}></span>
+                                                {row.stage}
+                                            </td>
+                                            <td class="num">{row.count}</td>
+                                            <td class="num">{row.units}</td>
+                                            <td class="num">{row.pct}%</td>
+                                        </tr>
+                                        <template if:true={row.hasSubs}>
+                                            <template for:each={row.subs} for:item="s">
+                                                <tr key={s.name} class="sub-row">
+                                                    <td class="sub-name">└ {s.name}</td>
+                                                    <td class="num">{s.count}</td>
+                                                    <td class="num">{s.units}</td>
+                                                    <td class="num"></td>
+                                                </tr>
+                                            </template>
+                                        </template>
+                                    </template>
+                                </template>
+                                <tr class="total-row">
+                                    <td>Active Total</td>
+                                    <td class="num">{pipelineByState.activeCount}</td>
+                                    <td class="num">{pipelineByState.activeUnits}</td>
+                                    <td class="num">{pipelineByState.activePct}%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 class="section-title">Resolved</h4>
+                        <table class="data-table pipeline-table">
+                            <colgroup>
+                                <col class="col-stage"/>
+                                <col class="col-count"/>
+                                <col class="col-units"/>
+                                <col class="col-pct"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Stage</th>
+                                    <th class="num">Count</th>
+                                    <th class="num">Units</th>
+                                    <th class="num">%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={pipelineByState.resolved} for:item="row">
+                                    <template if:false={row.hidden}>
+                                        <tr key={row.stage} class="stage-row">
+                                            <td>
+                                                <span class="dot" style={row.dotStyle}></span>
+                                                {row.stage}
+                                            </td>
+                                            <td class="num">{row.count}</td>
+                                            <td class="num">{row.units}</td>
+                                            <td class="num">{row.pct}%</td>
+                                        </tr>
+                                    </template>
+                                </template>
+                                <tr class="total-row">
+                                    <td>Resolved Total</td>
+                                    <td class="num">{pipelineByState.resolvedCount}</td>
+                                    <td class="num">{pipelineByState.resolvedUnits}</td>
+                                    <td class="num">{pipelineByState.resolvedPct}%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="data-table pipeline-table grand-total-table">
+                            <colgroup>
+                                <col class="col-stage"/>
+                                <col class="col-count"/>
+                                <col class="col-units"/>
+                                <col class="col-pct"/>
+                            </colgroup>
+                            <tbody>
+                                <tr class="grand-total-row">
+                                    <td>Grand Total</td>
+                                    <td class="num">{pipelineByState.total}</td>
+                                    <td class="num">{pipelineByState.totalUnits}</td>
+                                    <td class="num"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <!-- Closed Buckets -->
+                <template if:true={showClosed}>
+                    <div class="panel">
+                        <h4 class="section-title">Closed Lost by Loss Reason ({closedTotalCount})</h4>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Loss Reason</th>
+                                    <th class="num">Count</th>
+                                    <th class="num">Units</th>
+                                    <th class="num">%</th>
+                                    <th>By State</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={closedBuckets} for:item="row">
+                                    <tr key={row.reason}>
+                                        <td>{row.reason}</td>
+                                        <td class="num">{row.count}</td>
+                                        <td class="num">{row.units}</td>
+                                        <td class="num">{row.pct}%</td>
+                                        <td class="small">{row.states}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <!-- 2026 PAL/ROE Complete -->
+                <template if:true={showRoe}>
+                    <div class="panel">
+                        <h4 class="section-title">ROEs Secured in 2026 ({roe2026.length})</h4>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>State</th>
+                                    <th class="num">Units</th>
+                                    <th>Date</th>
+                                    <th>Owner</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={roe2026} for:item="o">
+                                    <tr key={o.id}>
+                                        <td><a href={o.url} target="_blank">{o.name}</a></td>
+                                        <td>{o.state}</td>
+                                        <td class="num">{o.units}</td>
+                                        <td>{o.date}</td>
+                                        <td>{o.owner}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <!-- Secured Agreements -->
+                <template if:true={showSecured}>
+                    <div class="panel">
+                        <h4 class="section-title">Agreements Secured (Completed) — {securedByType.grandTotal}</h4>
+                        <template if:false={securedByType.hasData}>
+                            <div class="help-note">No completed agreements on this campaign yet.</div>
+                        </template>
+                        <template if:true={securedByType.hasData}>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Agreement Type</th>
+                                        <th class="num">Total</th>
+                                        <template for:each={securedByType.yearHeaders} for:item="y">
+                                            <th key={y.year} class="num">{y.year}</th>
+                                        </template>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={securedByType.rows} for:item="row">
+                                        <tr key={row.type}>
+                                            <td>{row.type}</td>
+                                            <td class="num"><strong>{row.total}</strong></td>
+                                            <template for:each={row.cells} for:item="c">
+                                                <td key={c.year} class="num">{c.count}</td>
+                                            </template>
+                                        </tr>
+                                    </template>
+                                    <tr class="total-row">
+                                        <td>Grand Total</td>
+                                        <td class="num"><strong>{securedByType.grandTotal}</strong></td>
+                                        <template for:each={securedByType.yearTotals} for:item="yt">
+                                            <td key={yt.year} class="num">{yt.count}</td>
+                                        </template>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 class="section-title">Details</h4>
+                            <table class="data-table data-table--compact">
+                                <thead>
+                                    <tr>
+                                        <th>Property</th>
+                                        <th>Type</th>
+                                        <th>Signed</th>
+                                        <th>State</th>
+                                        <th class="num">Units</th>
+                                        <th>Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={securedList} for:item="a">
+                                        <tr key={a.id}>
+                                            <td><a href={a.oppUrl} target="_blank">{a.oppName}</a></td>
+                                            <td><a href={a.agUrl} target="_blank">{a.type}</a></td>
+                                            <td>{a.signed}</td>
+                                            <td>{a.state}</td>
+                                            <td class="num">{a.units}</td>
+                                            <td>{a.owner}</td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </template>
+                    </div>
+                </template>
+
+                <!-- Fiber First -->
+                <template if:true={showFF}>
+                    <div class="panel">
+                        <h4 class="section-title">Submitted to Fiber First ({fiberFirstList.length})</h4>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Stage</th>
+                                    <th>State</th>
+                                    <th class="num">Units</th>
+                                    <th>RE Assigned</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={fiberFirstList} for:item="o">
+                                    <tr key={o.id}>
+                                        <td><a href={o.url} target="_blank">{o.name}</a></td>
+                                        <td>{o.stage}</td>
+                                        <td>{o.state}</td>
+                                        <td class="num">{o.units}</td>
+                                        <td>{o.re}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <!-- Submit to Market -->
+                <template if:true={showMarket}>
+                    <div class="panel">
+                        <h4 class="section-title">Submitted to Market ({submitMarketList.length})</h4>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Stage</th>
+                                    <th>State</th>
+                                    <th class="num">Units</th>
+                                    <th>RE Assigned</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={submitMarketList} for:item="o">
+                                    <tr key={o.id}>
+                                        <td><a href={o.url} target="_blank">{o.name}</a></td>
+                                        <td>{o.stage}</td>
+                                        <td>{o.state}</td>
+                                        <td class="num">{o.units}</td>
+                                        <td>{o.re}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <!-- Build Status -->
+                <template if:true={showBuild}>
+                    <div class="panel">
+                        <h4 class="section-title">SiteTracker Build Status ({buildStatus.total} projects / {buildStatus.totalUnits} units)</h4>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Build Status</th>
+                                    <th class="num">Count</th>
+                                    <th class="num">Units</th>
+                                    <th class="num">%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={buildStatus.rows} for:item="r">
+                                    <tr key={r.name}>
+                                        <td>{r.name}</td>
+                                        <td class="num">{r.count}</td>
+                                        <td class="num">{r.units}</td>
+                                        <td class="num">{r.pct}%</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+
+                        <h4 class="section-title">Projects</h4>
+                        <table class="data-table data-table--compact">
+                            <thead>
+                                <tr>
+                                    <th>Opportunity</th>
+                                    <th>SiteTracker Project</th>
+                                    <th>Build Status</th>
+                                    <th>Site Status</th>
+                                    <th>State</th>
+                                    <th class="num">Units</th>
+                                    <th>Design Complete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={buildStatus.list} for:item="p">
+                                    <tr key={p.id}>
+                                        <td><a href={p.oppUrl} target="_blank">{p.oppName}</a></td>
+                                        <td><a href={p.stUrl} target="_blank">{p.name}</a></td>
+                                        <td>{p.buildStatus}</td>
+                                        <td>{p.siteStatus}</td>
+                                        <td>{p.state}</td>
+                                        <td class="num">{p.units}</td>
+                                        <td>{p.designComplete}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+
+                        <h4 class="section-title section-title--warn">ROE+ without SiteTracker Project ({orphanRoes.length})</h4>
+                        <div class="help-note">Opps at PAL/ROE Complete or beyond with no linked SiteTracker project. Review for sync gaps or pending construction kickoff.</div>
+                        <template if:true={orphanRoes.length}>
+                            <table class="data-table data-table--compact">
+                                <thead>
+                                    <tr>
+                                        <th>Opportunity</th>
+                                        <th>Stage</th>
+                                        <th>State</th>
+                                        <th>City</th>
+                                        <th class="num">Units</th>
+                                        <th>RE</th>
+                                        <th>Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={orphanRoes} for:item="o">
+                                        <tr key={o.id}>
+                                            <td><a href={o.url} target="_blank">{o.name}</a></td>
+                                            <td>{o.stage}</td>
+                                            <td>{o.state}</td>
+                                            <td>{o.city}</td>
+                                            <td class="num">{o.units}</td>
+                                            <td>{o.re}</td>
+                                            <td>{o.owner}</td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </template>
+                    </div>
+                </template>
+
+                <!-- All Data -->
+                <template if:true={showData}>
+                    <div class="panel">
+                        <h4 class="section-title">All Data ({allDataRows.length})</h4>
+                        <table class="data-table data-table--compact">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Stage</th>
+                                    <th>Sales Status</th>
+                                    <th>RE</th>
+                                    <th>Owner</th>
+                                    <th class="num">Units</th>
+                                    <th>State</th>
+                                    <th>City</th>
+                                    <th>Loss Reason</th>
+                                    <th>Close Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={allDataRows} for:item="o">
+                                    <tr key={o.id}>
+                                        <td><a href={o.url} target="_blank">{o.name}</a></td>
+                                        <td>{o.stage}</td>
+                                        <td>{o.salesStatus}</td>
+                                        <td>{o.re}</td>
+                                        <td>{o.owner}</td>
+                                        <td class="num">{o.units}</td>
+                                        <td>{o.state}</td>
+                                        <td>{o.city}</td>
+                                        <td>{o.lossReason}</td>
+                                        <td>{o.closeDate}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+            </template>
+        </template>
+    </div>
+</template>

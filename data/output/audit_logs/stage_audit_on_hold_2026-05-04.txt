@@ -1,0 +1,93 @@
+MDU On Hold Opps: 282
+Hold reason field: Hold_Reason__c
+Off-hold date field: Off_Hold_Date__c
+
+Owner distribution:
+  Jeff Chao: 148
+  Chuck McNeely: 64
+  Brett Spivey: 35
+  Marty Samuels: 17
+  Bill Holick: 7
+  Jeff Wickersham: 5
+  Melissa Baker: 3
+  Justin Barry: 2
+  Taylor Mauney: 1
+
+Hold_Reason distribution:
+  'Other': 277
+  'Build Not Approved': 3
+  'Budget / Timing': 1
+  'Ownership Change': 1
+
+NO Hold_Reason: 0
+STALE (has reason, no signal, no 2025/2026 activity): 47
+Owned by inactive (Chuck McNeely): 64
+
+====================================================================================================
+NO HOLD REASON — 0
+====================================================================================================
+
+====================================================================================================
+STALE HOLDS BY REASON — 47
+====================================================================================================
+
+Other — 47
+  [Jeff Chao] 45
+  [Brett Spivey] 1
+  [Chuck McNeely] 1
+
+====================================================================================================
+INACTIVE OWNER (Chuck McNeely) — 64
+====================================================================================================
+  1010 on the Lake  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEbAYAU
+  Apache Bend Apartments  Reason='Other'  LastAct=2026-04-24T16:49:21.000+0000  Id=006WR00000wkDMzYAM
+  Azle Village  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEbCYAU
+  Benson Crest  Reason='Other'  LastAct=2026-04-24T21:06:39.000+0000  Id=006WR00000wkEc5YAE
+  Big Oaks Estates  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEbEYAU
+  Boardwalk Caper  Reason='Other'  LastAct=2026-04-24T16:49:19.000+0000  Id=006WR00000wk9UMYAY
+  Bryce Avenue Apartments  Reason='Other'  LastAct=2026-04-24T16:49:21.000+0000  Id=006WR00000wkClVYAU
+  Casa Mesa Estates  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDtpYAE
+  Cedar Ridge Apartments  Reason='Other'  LastAct=2026-04-24T16:49:18.000+0000  Id=006WR00000wkA9BYAU
+  Centerpoint Landing  Reason='Other'  LastAct=2026-04-24T16:49:20.000+0000  Id=006WR00000wkBn6YAE
+  Chalk Hill Ranch Phase 1  Reason='Other'  LastAct=2026-04-24T16:49:24.000+0000  Id=006WR00000wkEbtYAE
+  Cimarron Hills  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDtSYAU
+  Colonial Plaza  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDuMYAU
+  Copper Commons  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDuQYAU
+  Country Square  Reason='Other'  LastAct=2026-04-24T16:49:20.000+0000  Id=006WR00000wkBVJYA2
+  Cypress View Villas  Reason='Other'  LastAct=2026-04-24T19:44:22.000+0000  Id=006WR00000wkA9HYAU
+  Dayton Commons  Reason='Other'  LastAct=2026-04-24T16:49:27.000+0000  Id=006WR00000wjnlcYAA
+  Dixon at Stonegate  Reason='Other'  LastAct=2026-04-24T16:49:21.000+0000  Id=006WR00000wkDMjYAM
+  Ellipse on Excelsior  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDtqYAE
+  Fowler's RV Park  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDuKYAU
+  Heatherwilde Park AKA Cove at Heatherwilde  Reason='Build Not Approved'  LastAct=2026-04-24T16:49:24.000+0000  Id=006WR00000wkEc9YAE
+  Heritage Oaks  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEbDYAU
+  Heritage Village Apartments  Reason='Other'  LastAct=2026-04-24T16:49:20.000+0000  Id=006WR00000wkBpDYAU
+  Holiday Village Manufactured Home Village  Reason='Other'  LastAct=2026-04-24T16:49:24.000+0000  Id=006WR00000wkEbXYAU
+  Holly Oaks Apartments  Reason='Other'  LastAct=2026-04-24T16:49:20.000+0000  Id=006WR00000wkBp8YAE
+  Jarrell RV Park  Reason='Other'  LastAct=2026-04-24T16:49:19.000+0000  Id=006WR00000wk9UYYAY
+  Lakeline Apartments  Reason='Other'  LastAct=2026-04-24T16:49:20.000+0000  Id=006WR00000wkBp7YAE
+  Lakeside Estates  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkDteYAE
+  Legend of Fort Worth: Senior Living_OneSource project  Reason='Other'  LastAct=2026-04-24T19:44:22.000+0000  Id=006WR00000wkDttYAE
+  Live Oak Apartment Homes  Reason='Other'  LastAct=2026-04-24T16:49:18.000+0000  Id=006WR00000wk3P7YAI
+  Main Street Commons  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEb4YAE
+  Oak Creek & Cedar Knob Mobile Home Park  Reason='Other'  LastAct=2026-04-24T16:49:19.000+0000  Id=006WR00000wk9YyYAI
+  Oaks Apartments  Reason='Other'  LastAct=2026-04-24T16:49:20.000+0000  Id=006WR00000wkBpmYAE
+  Park View Terrace  Reason='Other'  LastAct=2026-04-24T16:49:27.000+0000  Id=006WR00000wjqCfYAI
+  Parkside Townhomes  Reason='Other'  LastAct=2026-04-24T19:44:22.000+0000  Id=006WR00000wjnluYAA
+  Pecan Acres RV Park  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEb6YAE
+  Pecan Branch  Reason='Other'  LastAct=2026-04-24T16:49:18.000+0000  Id=006WR00000wk3PJYAY
+  Reynolds Crossing  Reason='Other'  LastAct=2026-04-24T16:49:23.000+0000  Id=006WR00000wjKGPYA2
+  Rio Apartments  Reason='Other'  LastAct=2026-04-24T16:49:18.000+0000  Id=006WR00000wk3PHYAY
+  SkyView AKA Hoodview Apartments  Reason='Other'  LastAct=2026-04-24T16:49:21.000+0000  Id=006WR00000wkCluYAE
+  Southcastle Apartments  Reason='Other'  LastAct=2026-04-24T16:49:21.000+0000  Id=006WR00000wkClMYAU
+  Southern Hills Manufactured Home Community  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEbFYAU
+  Stillhouse Flats  Reason='Other'  LastAct=2026-04-24T16:49:19.000+0000  Id=006WR00000wk9Z6YAI
+  Summer Park _ FF Freddy  Reason='Other'  LastAct=2026-04-24T16:49:18.000+0000  Id=006WR00000wk9StYAI
+  Sunridge Patio Homes  Reason='Other'  LastAct=2026-04-24T21:06:36.000+0000  Id=006WR00000wkEb3YAE
+  The Beckham  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEbBYAU
+  The Berkeley Apartments  Reason='Other'  LastAct=2026-04-24T16:49:21.000+0000  Id=006WR00000wkDMiYAM
+  The Bungalows on 204  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEb7YAE
+  The Bungalows on the Lake at Prairie Queen  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEb8YAE
+  The Bungalows on the Lake at Prairie Queen_The View  Reason='Other'  LastAct=2026-04-24T16:49:22.000+0000  Id=006WR00000wkEb9YAE
+
+Saved CSV: audit_logs/stage_audit_on_hold_2026-05-04.csv (282 rows)

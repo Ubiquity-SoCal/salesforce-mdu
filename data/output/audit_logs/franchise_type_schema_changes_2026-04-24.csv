@@ -1,0 +1,7 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+(schema),Opportunity.Franchise_Type__c,CustomField.Created,(no field),"picklist: 'In-Franchise','National'",deploy-franchise-type/force-app via sf project deploy start,2026-04-24T13:49:49,deploy
+(schema),Opportunity.MDU record type,RecordType.picklistValues,(no Franchise_Type),added Franchise_Type picklist values,deploy-franchise-type,2026-04-24T13:49:49,deploy
+(schema),Opportunity.Business record type,RecordType.picklistValues,(no Franchise_Type),added Franchise_Type picklist values,deploy-franchise-type,2026-04-24T13:49:49,deploy
+(FLS),Profile: System Administrator,FieldPermissions on Opportunity.Franchise_Type__c,(no access),Read+Edit granted,simple_salesforce FieldPermissions.create,2026-04-24T13:49:49,grant
+(FLS),Profile: Standard User,FieldPermissions on Opportunity.Franchise_Type__c,(no access),Read+Edit granted,simple_salesforce FieldPermissions.create,2026-04-24T13:49:49,grant
+(FLS),Profile: B2B Vendor,FieldPermissions on Opportunity.Franchise_Type__c,(no access),Read+Edit granted,simple_salesforce FieldPermissions.create,2026-04-24T13:49:49,grant

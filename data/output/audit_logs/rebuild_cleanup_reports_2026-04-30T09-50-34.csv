@@ -1,0 +1,18 @@
+Old_Report_Id,New_Report_Id,Report_Name,Action,Source,Timestamp
+00OWR00000ImYwH2AV,00OWR00000IuGhF2AV,Cleanup: PAL/ROE Complete: No PAL,CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE32AN,00OWR00000IuGir2AF,Cleanup: No Projected Close Date,CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE52AN,00OWR00000IuGkT2AV,Cleanup: Stale Active Opps (60+ days),CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE22AN,00OWR00000IuGm52AF,Cleanup: Need IronClad ID (Signed),CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE42AN,00OWR00000IuGnh2AF,Cleanup: No RE Assigned,CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000InCk12AF,00OWR00000IuGqv2AF,Cleanup: Stale EMA/Bulk on wrong stage,CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE12AN,00OWR00000IuGu92AF,Cleanup: Need IC ID (Out for Sign),CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImYRd2AN,00OWR00000IuGxN2AV,Cleanup: No Property Location,CLONED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+01ZWR000004LNk52AG,,MDU Cleanup Dashboard,DASHBOARD_REPOINTED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImYwH2AV,,Cleanup: PAL/ROE Complete: No PAL,DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE32AN,,Cleanup: No Projected Close Date,DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE52AN,,Cleanup: Stale Active Opps (60+ days),DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE22AN,,Cleanup: Need IronClad ID (Signed),DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE42AN,,Cleanup: No RE Assigned,DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000InCk12AF,,Cleanup: Stale EMA/Bulk on wrong stage,DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImZE12AN,,Cleanup: Need IC ID (Out for Sign),DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34
+00OWR00000ImYRd2AN,,Cleanup: No Property Location,DELETED,rebuild_cleanup_dashboard_reports.py,2026-04-30T09-50-34

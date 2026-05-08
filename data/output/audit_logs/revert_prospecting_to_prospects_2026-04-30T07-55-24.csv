@@ -1,0 +1,95 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000ywTa9YAE,127 W Glaucus St - A,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTWvYAM,127 W. Glaucus,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTdNYAU,"225 S. Hwy 101 , 17",StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvU0RYAU,3152 Levante,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvVsYYAU,3156 Levante,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTblYAE,"437 S Highway 101, 101-110",StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywCuIYAU,53 Melrose Promenade HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTGnYAM,674 Via De La Valle,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywScTYAU,Alga Hills HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yv47cYAA,Alicante Hills HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yueI2YAI,Calypso Legends Heritage,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvz12YAA,Cambria HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yv6m8YAA,Camino Cabrillo Pvt Road,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yutvPYAQ,Cardiff Park HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywOYtYAM,Carlsbad Arroyo Vista HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvvYXYAY,Carlsbad Surfside HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywG8IYAU,Casitas De La Costa HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvv0eYAA,Coral Cove HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wk3OAYAY,El Camino 76 Mobile Estates,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yuj1ZYAQ,Emerald Lake Village HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywT8jYAE,Emerald Point HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywCPfYAM,Encinitas Corporate Center,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yw4jqYAA,Encinitas Town and Country Plaza,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvMMIYA2,Fairways HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywLuMYAU,Flair Encinitas HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvINSYA2,Forrest Bluff Terraces HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR0000112fikYAA,Fox Point,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yv7YaYAI,FoxtailLoop,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTIPYA2,Haidenger Center,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvxP0YAI,Hillside Patio Pvt Road,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvnHbYAI,Hilltop Trailer Park,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywBdGYAU,La Costa Altezza HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSXdYAM,La Costa Greens HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yw3HWYAY,La Costa Oaks South HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSkXYAU,La Costa Ridge1 HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSe5YAE,La Costa Ridge2 HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywQveYAE,La Costa Town Square,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yw9QBYAY,Mendocino HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yuxKdYAI,Mission Del Oro HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wjnm6YAA,Mission View Manor West,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wk9UkYAI,Monarch Villas,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvoqPYAQ,Monte Mira HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yuYsYYAU,Montego Village HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wkA7PYAU,Ocean Hills Country Club HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywN6YYAU,On The Park HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywT77YAE,Pacifica HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yuOtDYAU,Pacifica Leucadia HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yv9vJYAQ,Promenade HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTThYAM,Quail Gardens,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yv0X4YAI,Rancho Hermosa HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywIQEYA2,Rancho Montecito,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wkCjHYAU,Rancho San Luis Rey 55+,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTALYA2,Rancho Santalina HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvLI6YAM,Riviera Mobile Homes,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSNxYAM,San Pacifico HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR000011367rYAA,Sand Piper Point,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSqzYAE,Sandalwood HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvvAJYAY,Santa Fe Trails HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSpNYAU,Seabluffe Villages HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTLdYAM,Seagate Terrace,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywF4AYAU,Seapoint Tennis Club,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yw9YHYAY,Seaside Highlannds HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSnlYAE,Seaside Ridge HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywBJuYAM,Shady Hollow Pvt Road,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvdF2YAI,Shamrock Mobile Estates,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvQkpYAE,Sky Loft HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yw26xYAA,The Nest at La Costa,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSsbYAE,The Summit HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvxthYAA,Tiki Village HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000yvSJdYAM,Traditions At La Costa HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wkA6MYAU,Trico Mobile Estates,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywTS5YAM,Valley of Dreams Mobile Village,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSarYAE,Via Casa Del Sol HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywKINYA2,Villa Trieste HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywSPbYAM,Village Park Manor,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000ywB2AYAU,Villas De La Costa HOA,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000wk9UrYAI,West Hampton Cove,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xuqjXYAQ,Bridgeport_MDU_Edgewood Apartments,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xuFKAYA2,Bridgeport_MDU_Federal Housing Administration,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xuvORYAY,HARKER HEIGHTS_MDU_700 S Amy Ln apt,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xw9XDYAY,Killeen_MDU_127-129 N 1th St,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xw5JvYAI,Killeen_MDU_191 N 1th St,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwGqPYAU,Killeen_MDU_204 E Harrison Ave,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwGvFYAU,Killeen_MDU_Tee Top Apartments,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwFvyYAE,Killeen_MDU_Twin Apartments,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xv3nEYAQ,Mesa_MDU_447-451 S Olive,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwEqDYAU,Mesa_MDU_El Rancho Del Sol Apts,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xveMwYAI,Mineral Wells_MDU_305-309 NW 4th St Apartments,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xvlrSYAQ,NE_MDU_Larimore Senior Living,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xvtfKYAQ,Omaha_MDU_1115-1117 N 48TH ST,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xuog7YAA,Omaha_MDU_1121 N 48TH ST,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwFazYAE,Omaha_MDU_4524 Lafayette Ave,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwFsjYAE,Omaha_MDU_4752 NICHOLAS ST,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE
+006WR00000xwGs1YAE,Taylor_MDU_Tejas Apartments,StageName,Prospecting,Prospects,revert_prospecting_to_prospects.py,2026-04-30T07-55-24,UPDATE

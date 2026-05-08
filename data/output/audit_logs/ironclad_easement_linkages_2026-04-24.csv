@@ -1,0 +1,38 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+a0BWR000008WErF2AW,Haciendas De La Playa HOA -> Haciendas de la Playa,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WEsr2AG,Solana Beach and Tennis Club HOA -> Solana Beach and Tennis Club,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WEuT2AW,Terraces at Cantebria HOA -> Terraces At Cantebria HOA,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WEw52AG,Cardiff Glen HOA -> Cardiff Glen HOA,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WExh2AG,PORTICO AT RANCHO CARRILLO HOMEOWNERS ASSOCIATION -> Portico At Rancho Carrillo HOA,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WCJF2A4,Las Vistas HOA -> Las Vistas HOA,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WEzJ2AW,Village Park -> Village Park HOA,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WF0v2AG,Saxony at Encinitas Ranch HOA -> Encinitas Ranch HOA,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WF2X2AW,Beacons Beach Homeowners Association -> Beacons Beach Village,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+a0BWR000008WF492AG,Laurel Cove Homeowners Association -> Laurel Cove Lane Pvt Road,Agreement__c.Created,(none),"new Agreement_Type=ROE, IronClad_Record__c linked",link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,create
+(opp),Village Park HOA,StageName,Prospecting,ROE Secured,link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,update
+(opp),Encinitas Ranch HOA,StageName,Prospecting,ROE Secured,link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,update
+(opp),Beacons Beach Village,StageName,Prospecting,ROE Secured,link_ironclad_easements_2026-04-24.py,2026-04-24T13:49:49,update
+a0BWR000008WErF2AW,Haciendas de la Playa,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WEsr2AG,Solana Beach and Tennis Club,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WEuT2AW,Terraces At Cantebria HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WEw52AG,Cardiff Glen HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WExh2AG,Portico At Rancho Carrillo HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WCJF2A4,Las Vistas HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WEzJ2AW,Village Park HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WF0v2AG,Encinitas Ranch HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WF2X2AW,Beacons Beach Village,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WF492AG,Laurel Cove Lane Pvt Road,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH...",backfill_notes_easement_linkages.py,2026-04-24T14:04:32,update
+a0BWR000008WF5l2AG,Oceanic Drive,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_revie...",backfill_notes_easement_linkages.py (pass 2),2026-04-24T14:06:48,update
+a0BWR000008WF7N2AW,North Shore HOA,Notes__c,(blank),"AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_revie...",backfill_notes_easement_linkages.py (pass 2),2026-04-24T14:06:48,update

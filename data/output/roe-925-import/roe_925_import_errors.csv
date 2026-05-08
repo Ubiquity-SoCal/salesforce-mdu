@@ -1,0 +1,3 @@
+Type,Name,Error
+Opportunity,NEW ADDED SITE,"Malformed request https://fun-power-747.my.salesforce.com/services/data/v59.0/sobjects/Opportunity/. Response content: [{'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000xumrOYAQ', 'errorCode': 'DUPLICATE_VALUE', 'fields': []}]"
+Opportunity,NEW ADDED SITE,"Malformed request https://fun-power-747.my.salesforce.com/services/data/v59.0/sobjects/Opportunity/. Response content: [{'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000xumrOYAQ', 'errorCode': 'DUPLICATE_VALUE', 'fields': []}]"

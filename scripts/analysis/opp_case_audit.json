@@ -1,0 +1,766 @@
+{
+  "all_upper": [
+    {
+      "Id": "006WR00000SNUwXYAX",
+      "Name": "OVERCOMERS CHURCH - SMB 1G"
+    },
+    {
+      "Id": "006WR00000STzxgYAD",
+      "Name": "DRIP ATHLETIC - SMB 1G"
+    },
+    {
+      "Id": "006WR00000SUnnxYAD",
+      "Name": "GESU HOUSING - SMB 300M & (1) VOICELINE"
+    },
+    {
+      "Id": "006WR00000SV2GlYAL",
+      "Name": "COMPASSION & CARE - SMB 2G"
+    },
+    {
+      "Id": "006WR00000SiYltYAF",
+      "Name": "AJ CAFE - 1G SMB"
+    },
+    {
+      "Id": "006WR00000SoRGDYA3",
+      "Name": "GREATER OMAHA REFRIG - COMMERCIAL 1G"
+    },
+    {
+      "Id": "006WR00000SonztYAB",
+      "Name": "CREATIVE STRUCTURES - SMB 1G"
+    },
+    {
+      "Id": "006WR00000SuRVGYA3",
+      "Name": "KOZY LAWN CARE - SMB 1G"
+    },
+    {
+      "Id": "006WR00000SuzOsYAJ",
+      "Name": "NORTHWEST CHIRO - SMB 1G"
+    },
+    {
+      "Id": "006WR00000T0q9CYAR",
+      "Name": "KEYSTONE TAVERN - BL(1)"
+    },
+    {
+      "Id": "006WR00000TytLvYAJ",
+      "Name": "NEBRASKA HEALTH NETWORK - SLA - 1G/3 BL"
+    },
+    {
+      "Id": "006WR00000U4lohYAB",
+      "Name": "ELEMENT PRIMARY - SMB 1G"
+    },
+    {
+      "Id": "006WR00000U4tXhYAJ",
+      "Name": "ADVANCED SPINE -"
+    },
+    {
+      "Id": "006WR00000UJUYzYAP",
+      "Name": "BROWN CONSULTING - SMB 1G"
+    },
+    {
+      "Id": "006WR00000UQj0FYAT",
+      "Name": "OUTSOURCE ONE - SMB 1G"
+    },
+    {
+      "Id": "006WR00000UlqBZYAZ",
+      "Name": "CODE BLACK TECH - SLA 1G"
+    },
+    {
+      "Id": "006WR00000XKjNlYAL",
+      "Name": "PRIMETIME - PHONE PROSPECT"
+    },
+    {
+      "Id": "006WR00000XKyZjYAL",
+      "Name": "HAUSMANN - PHONE PROSPECT"
+    },
+    {
+      "Id": "006WR00000wiNntYAE",
+      "Name": "CHANDLER MEADOWS"
+    },
+    {
+      "Id": "006WR00000wjKGoYAM",
+      "Name": "CANADA HILLS"
+    },
+    {
+      "Id": "006WR00000wjKHAYA2",
+      "Name": "BARCELONA MANOR"
+    },
+    {
+      "Id": "006WR00000wjnljYAA",
+      "Name": "COURTYARD TOWERS"
+    },
+    {
+      "Id": "006WR00000wjqD6YAI",
+      "Name": "VISTA ARBOR APARTMENTS"
+    },
+    {
+      "Id": "006WR00000wk1EnYAI",
+      "Name": "HALLCRAFT VILLAS MESA 1"
+    },
+    {
+      "Id": "006WR00000wk1FOYAY",
+      "Name": "THE ASPECT"
+    },
+    {
+      "Id": "006WR00000wk1FRYAY",
+      "Name": "THE GROVE AT AUSTIN"
+    },
+    {
+      "Id": "006WR00000wk1FSYAY",
+      "Name": "TERRACE COVE APARTMENTS"
+    },
+    {
+      "Id": "006WR00000wk1FVYAY",
+      "Name": "TRAMOR AT THE QUEST"
+    },
+    {
+      "Id": "006WR00000wk1FXYAY",
+      "Name": "THE LOLA"
+    },
+    {
+      "Id": "006WR00000wk1FZYAY",
+      "Name": "SUMMIT AT HYDE PARK"
+    },
+    {
+      "Id": "006WR00000wk9T3YAI",
+      "Name": "MCQUEEN LANDING HOA"
+    },
+    {
+      "Id": "006WR00000wk9T5YAI",
+      "Name": "PARK PLACE VILLAGE CONDOMINIUM"
+    },
+    {
+      "Id": "006WR00000wk9ZFYAY",
+      "Name": "AVONDALE HOUSING DEVELOPMENT"
+    },
+    {
+      "Id": "006WR00000wkABfYAM",
+      "Name": "INGERSOLL SQUARE PHASE I/II"
+    },
+    {
+      "Id": "006WR00000wkABgYAM",
+      "Name": "INGERSOLL SQUARE PHASE III"
+    },
+    {
+      "Id": "006WR00000wkAkZYAU",
+      "Name": "VILLAS MESA 3"
+    },
+    {
+      "Id": "006WR00000wkAr3YAE",
+      "Name": "SALT"
+    },
+    {
+      "Id": "006WR00000wkBo9YAE",
+      "Name": "CREST AT PARK CENTRAL"
+    },
+    {
+      "Id": "006WR00000wkBoNYAU",
+      "Name": "AUSTIN BLUFF"
+    },
+    {
+      "Id": "006WR00000wkC6RYAU",
+      "Name": "GABLES UPTOWN TRAIL"
+    },
+    {
+      "Id": "006WR00000wkC6SYAU",
+      "Name": "STRATA"
+    },
+    {
+      "Id": "006WR00000wkC6TYAU",
+      "Name": "INDIE DEEP ELLUM"
+    },
+    {
+      "Id": "006WR00000wkC7MYAU",
+      "Name": "TRAMOR AT THE OAKS APARTMENTS"
+    },
+    {
+      "Id": "006WR00000wkC7XYAU",
+      "Name": "VILLAS MESA 2"
+    },
+    {
+      "Id": "006WR00000wkCk1YAE",
+      "Name": "SORELLE"
+    },
+    {
+      "Id": "006WR00000wkCk3YAE",
+      "Name": "VILLAS ON SIXTH"
+    },
+    {
+      "Id": "006WR00000wkCk6YAE",
+      "Name": "MAIN STREET SQUARE"
+    },
+    {
+      "Id": "006WR00000wkClKYAU",
+      "Name": "HUE97"
+    },
+    {
+      "Id": "006WR00000wkCmCYAU",
+      "Name": "502 NORTH"
+    },
+    {
+      "Id": "006WR00000wkCmDYAU",
+      "Name": "HIGHLAND ESTATES"
+    },
+    {
+      "Id": "006WR00000wkCmFYAU",
+      "Name": "BRISTOL HEIGHTS"
+    },
+    {
+      "Id": "006WR00000wkDt8YAE",
+      "Name": "DIMPLE ST MHP"
+    },
+    {
+      "Id": "006WR00000wkFc3YAE",
+      "Name": "MAPLE CREST CONDOMINIUMS"
+    },
+    {
+      "Id": "006WR00000wkFdoYAE",
+      "Name": "B AND I APARTMENTS"
+    },
+    {
+      "Id": "006WR00000xuAVsYAM",
+      "Name": "KILLEEN_MDU_505 UTAH ST"
+    },
+    {
+      "Id": "006WR00000xumrOYAQ",
+      "Name": "NEW ADDED SITE"
+    },
+    {
+      "Id": "006WR00000xv9auYAA",
+      "Name": "BRIDGEPORT_SA01_FDH08_PA02"
+    },
+    {
+      "Id": "006WR00000xvCKIYA2",
+      "Name": "OMAHA_MDU_AMBASSADOR APARTMENTS"
+    },
+    {
+      "Id": "006WR00000xvJNLYA2",
+      "Name": "OMAHA_MDU_108 S 49TH AVE"
+    },
+    {
+      "Id": "006WR00000xvVRkYAM",
+      "Name": "NE_OMAHA_SA12_FDH26_MDU_ARLON HUNT LLC"
+    },
+    {
+      "Id": "006WR00000xvY31YAE",
+      "Name": "NE_OMAHA_SA12_FDH12_MDU_OMAHA HOME FOR BOYS"
+    },
+    {
+      "Id": "006WR00000xvlrSYAQ",
+      "Name": "NE_MDU_LARIMORE SENIOR LIVING"
+    },
+    {
+      "Id": "006WR00000xw41GYAQ",
+      "Name": "BRIDGEPORT_SA01_FDH08_PA01"
+    },
+    {
+      "Id": "006WR00000xwFEPYA2",
+      "Name": "NE_OMAHA_SA06_FDH37_MDU_ EGAD LLC"
+    },
+    {
+      "Id": "006WR00000xwGC5YAM",
+      "Name": "NE_OMAHA_SA12_FDH26_PA12"
+    },
+    {
+      "Id": "006WR00000xwGf7YAE",
+      "Name": "KILLEEN_MDU_117-121_W_AVENUE_A"
+    },
+    {
+      "Id": "006WR00000yur0lYAA",
+      "Name": "1342 EOLUS AVE"
+    },
+    {
+      "Id": "006WR00000ywTYXYA2",
+      "Name": "978 HYGEIA AVE"
+    },
+    {
+      "Id": "006WR00000ywTa9YAE",
+      "Name": "127 W GLAUCUS ST - A"
+    },
+    {
+      "Id": "006WR00000ywTdNYAU",
+      "Name": "225 S. HWY 101 , 17"
+    },
+    {
+      "Id": "006WR000010BbmwYAC",
+      "Name": "TEST PROPERTY"
+    }
+  ],
+  "mixed_has_caps_word": [
+    {
+      "Id": "006WR00000SjfoTYAR",
+      "Name": "ANDERSON SIGNS - SMB 300m"
+    },
+    {
+      "Id": "006WR00000SksjfYAB",
+      "Name": "SHEPHERD OF THE HILLS - SMB 300m"
+    },
+    {
+      "Id": "006WR00000SlO5DYAV",
+      "Name": "HOUSE OF BEERS - SMB 300m"
+    },
+    {
+      "Id": "006WR00000Sv4pxYAB",
+      "Name": "CIRCLE OF LOVE - SMB 300m"
+    },
+    {
+      "Id": "006WR00000SzarFYAR",
+      "Name": "ANDERSON SIGNS - SMB 300m & VoIP(1)"
+    },
+    {
+      "Id": "006WR00000TLz2zYAD",
+      "Name": "WSBUNCH - SMB 500m"
+    },
+    {
+      "Id": "006WR00000VXoqbYAD",
+      "Name": "NORTHWESTERN MEDIA - SMB 300m"
+    },
+    {
+      "Id": "006WR00000nTsYfYAK",
+      "Name": "Malibu Galleries- MARY"
+    },
+    {
+      "Id": "006WR00000qe6VQYAY",
+      "Name": "ABC Seamless of Nebraska"
+    },
+    {
+      "Id": "006WR00000wiNo8YAE",
+      "Name": "IMT Chandler"
+    },
+    {
+      "Id": "006WR00000wiNp3YAE",
+      "Name": "Cimarron Apartments LV"
+    },
+    {
+      "Id": "006WR00000wj8JsYAI",
+      "Name": "BB Living at Val Vista"
+    },
+    {
+      "Id": "006WR00000wjKGvYAM",
+      "Name": "Terrace Park- IPG"
+    },
+    {
+      "Id": "006WR00000wjdl7YAA",
+      "Name": "IPG Capital Mountain View"
+    },
+    {
+      "Id": "006WR00000wjnOCYAY",
+      "Name": "Murietta at ASU"
+    },
+    {
+      "Id": "006WR00000wjnORYAY",
+      "Name": "Sunridge Manor Apts - NOW - The Manhattan"
+    },
+    {
+      "Id": "006WR00000wjnOnYAI",
+      "Name": "The ONE at Mountain Vista"
+    },
+    {
+      "Id": "006WR00000wjnPSYAY",
+      "Name": "Hillside CP LLC"
+    },
+    {
+      "Id": "006WR00000wjnPUYAY",
+      "Name": "Fredonia Estates CP LLC"
+    },
+    {
+      "Id": "006WR00000wjnlVYAQ",
+      "Name": "MAA Copper Ridge"
+    },
+    {
+      "Id": "006WR00000wjnlWYAQ",
+      "Name": "MAA Watermark"
+    },
+    {
+      "Id": "006WR00000wjnlXYAQ",
+      "Name": "MAA Boulder Ridge"
+    },
+    {
+      "Id": "006WR00000wjnlpYAA",
+      "Name": "Bella Vista LOST"
+    },
+    {
+      "Id": "006WR00000wjqCtYAI",
+      "Name": "IMT Prestonwood"
+    },
+    {
+      "Id": "006WR00000wjqDBYAY",
+      "Name": "LYV Broadway"
+    },
+    {
+      "Id": "006WR00000wjqDWYAY",
+      "Name": "LTD West Commerce"
+    },
+    {
+      "Id": "006WR00000wk1FIYAY",
+      "Name": "Artisan Luxury Apartments [JEFFERSON CENTER I]"
+    },
+    {
+      "Id": "006WR00000wk1FJYAY",
+      "Name": "Cortland Southpark Terraces [ESTATES AT SOUTHPARK MEADOWS]\\"
+    },
+    {
+      "Id": "006WR00000wk1FmYAI",
+      "Name": "MAA Lyon's Gate"
+    },
+    {
+      "Id": "006WR00000wk1FnYAI",
+      "Name": "MAA Sky View"
+    },
+    {
+      "Id": "006WR00000wk9StYAI",
+      "Name": "Summer Park _ FF Freddy"
+    },
+    {
+      "Id": "006WR00000wk9T6YAI",
+      "Name": "Terrace Villa_Morris RE"
+    },
+    {
+      "Id": "006WR00000wk9T7YAI",
+      "Name": "Village West Apartments_Morris RE"
+    },
+    {
+      "Id": "006WR00000wk9T8YAI",
+      "Name": "Quail Hollow Apts_Morris RE"
+    },
+    {
+      "Id": "006WR00000wk9T9YAI",
+      "Name": "Killeen_MDU_512 W Green Ave_Morris RE"
+    },
+    {
+      "Id": "006WR00000wk9TyYAI",
+      "Name": "Brookside AMD Condos"
+    },
+    {
+      "Id": "006WR00000wk9YiYAI",
+      "Name": "417 4TH AVE (Portfolio)"
+    },
+    {
+      "Id": "006WR00000wkA6jYAE",
+      "Name": "JC Wade Senior Villas"
+    },
+    {
+      "Id": "006WR00000wkA7AYAU",
+      "Name": "Lincoln Apartments _ FF Freddy"
+    },
+    {
+      "Id": "006WR00000wkA8xYAE",
+      "Name": "IMT Desert Palm Village"
+    },
+    {
+      "Id": "006WR00000wkA90YAE",
+      "Name": "Villa Del Rey _ FF Freddy"
+    },
+    {
+      "Id": "006WR00000wkABxYAM",
+      "Name": "Liberty Landing AKA Century Park Apartments"
+    },
+    {
+      "Id": "006WR00000wkACYYA2",
+      "Name": "The Townes at PV Landing Condo                     (The Vistas)"
+    },
+    {
+      "Id": "006WR00000wkAUtYAM",
+      "Name": "Mercury on Mill ABACUS"
+    },
+    {
+      "Id": "006WR00000wkAVgYAM",
+      "Name": "HAWC Apartments"
+    },
+    {
+      "Id": "006WR00000wkAViYAM",
+      "Name": "Strada I & II - UP"
+    },
+    {
+      "Id": "006WR00000wkAVoYAM",
+      "Name": "Tides at East Glendale - UP"
+    },
+    {
+      "Id": "006WR00000wkAj1YAE",
+      "Name": "IPG Capital Green Acres"
+    },
+    {
+      "Id": "006WR00000wkAjkYAE",
+      "Name": "Sunshine RV Resort MH / RV (3)"
+    },
+    {
+      "Id": "006WR00000wkAkKYAU",
+      "Name": "MAA McKinney Avenue"
+    },
+    {
+      "Id": "006WR00000wkAkRYAU",
+      "Name": "2 Vista Vallley Apartments/LONGMORE ESTATES CONDOS NORTH & SOUTH"
+    },
+    {
+      "Id": "006WR00000wkAs8YAE",
+      "Name": "CW Moore Apartments"
+    },
+    {
+      "Id": "006WR00000wkBFbYAM",
+      "Name": "HC - Flanders MHP"
+    },
+    {
+      "Id": "006WR00000wkBFdYAM",
+      "Name": "Jones Estates Greentree OH LLC"
+    },
+    {
+      "Id": "006WR00000wkBFeYAM",
+      "Name": "Jones Estates Miamisport IN LLC"
+    },
+    {
+      "Id": "006WR00000wkBG3YAM",
+      "Name": "NOVEL Val Vista"
+    },
+    {
+      "Id": "006WR00000wkBGFYA2",
+      "Name": "BB Living at Higley Park"
+    },
+    {
+      "Id": "006WR00000wkBGIYA2",
+      "Name": "IMT Riverview"
+    },
+    {
+      "Id": "006WR00000wkBGJYA2",
+      "Name": "MAA City Gate"
+    },
+    {
+      "Id": "006WR00000wkBnLYAU",
+      "Name": "AAA Properties dba Chateau Apartments"
+    },
+    {
+      "Id": "006WR00000wkBnRYAU",
+      "Name": "Copperfield Village AKA Morada Victoria East"
+    },
+    {
+      "Id": "006WR00000wkBpTYAU",
+      "Name": "MAA Willow Creek"
+    },
+    {
+      "Id": "006WR00000wkBpUYAU",
+      "Name": "MAA Shoal Creek"
+    },
+    {
+      "Id": "006WR00000wkBpVYAU",
+      "Name": "MAA Windmill Hill"
+    },
+    {
+      "Id": "006WR00000wkCjGYAU",
+      "Name": "Country Club Villas ESCONDIDO"
+    },
+    {
+      "Id": "006WR00000wkCjhYAE",
+      "Name": "TAYLOR_MDU_DEBUS_APTS AKA Boxwoods at Taylor Condo Community"
+    },
+    {
+      "Id": "006WR00000wkCjuYAE",
+      "Name": "Bradley Arms_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkCk2YAE",
+      "Name": "The Brooke by ARIUM"
+    },
+    {
+      "Id": "006WR00000wkCk5YAE",
+      "Name": "Foxfire. BRUSHY CREEK VILLAGE"
+    },
+    {
+      "Id": "006WR00000wkCl8YAE",
+      "Name": "VELA Apartments"
+    },
+    {
+      "Id": "006WR00000wkCleYAE",
+      "Name": "Tucker Apts AKA Brickstone Villas"
+    },
+    {
+      "Id": "006WR00000wkCluYAE",
+      "Name": "SkyView AKA Hoodview Apartments"
+    },
+    {
+      "Id": "006WR00000wkCmAYAU",
+      "Name": "Elmwood Tower - EXISTING BULK"
+    },
+    {
+      "Id": "006WR00000wkDM2YAM",
+      "Name": "The Forum Apartments FKA Archstone Apartments"
+    },
+    {
+      "Id": "006WR00000wkDMYYA2",
+      "Name": "ZAG Apartments"
+    },
+    {
+      "Id": "006WR00000wkDssYAE",
+      "Name": "Fiesta Village MH & RV Resort"
+    },
+    {
+      "Id": "006WR00000wkDtWYAU",
+      "Name": "GEORGETOWN_MDU_101_FM971 AKA Vered at San Gabriel"
+    },
+    {
+      "Id": "006WR00000wkDtcYAE",
+      "Name": "OMAHA_MDU_3331-3337 Meredith AVE APTS"
+    },
+    {
+      "Id": "006WR00000wkEbPYAU",
+      "Name": "1507 N 8th Apartments_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkEbQYAU",
+      "Name": "307 N Apartments_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkEbRYAU",
+      "Name": "Jerome Apartments_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkEbSYAU",
+      "Name": "Saffari Apts_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkEbTYAU",
+      "Name": "Soaring Eagle Apartments_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkEbUYAU",
+      "Name": "1807 Mulford Apartments_Colt RE"
+    },
+    {
+      "Id": "006WR00000wkEc9YAE",
+      "Name": "Heatherwilde Park AKA Cove at Heatherwilde"
+    },
+    {
+      "Id": "006WR00000wkEzSYAU",
+      "Name": "ACERO Hawes Crossing"
+    },
+    {
+      "Id": "006WR00000wkF0AYAU",
+      "Name": "Tacara Apartments NKA Bluestem Village"
+    },
+    {
+      "Id": "006WR00000wkF0MYAU",
+      "Name": "Cortland Presidio West AKA Aspire Presidio West"
+    },
+    {
+      "Id": "006WR00000wkFbnYAE",
+      "Name": "REVL Crockett Row"
+    },
+    {
+      "Id": "006WR00000xnw5jYAA",
+      "Name": "IT Referral Program Prospect"
+    },
+    {
+      "Id": "006WR00000xuog7YAA",
+      "Name": "Omaha_MDU_1121 N 48TH ST"
+    },
+    {
+      "Id": "006WR00000xuvORYAY",
+      "Name": "HARKER HEIGHTS_MDU_700 S Amy Ln apt"
+    },
+    {
+      "Id": "006WR00000xvBUcYAM",
+      "Name": "Omaha_MDU_4023 HAMILTON ST"
+    },
+    {
+      "Id": "006WR00000xvElsYAE",
+      "Name": "Omaha_MDU_1016 N 47TH AVE"
+    },
+    {
+      "Id": "006WR00000xvcMkYAI",
+      "Name": "Omaha_MDU_1015 N 47TH AVE"
+    },
+    {
+      "Id": "006WR00000xvtfKYAQ",
+      "Name": "Omaha_MDU_1115-1117 N 48TH ST"
+    },
+    {
+      "Id": "006WR00000xw49MYAQ",
+      "Name": "Omaha_MDU_4544 NICHOLAS ST"
+    },
+    {
+      "Id": "006WR00000xwBIsYAM",
+      "Name": "Mineral Wells_MDU_707 NW 4TH AVE"
+    },
+    {
+      "Id": "006WR00000xwElNYAU",
+      "Name": "Mesa_MDU_SOUTHERN AND STAPLEY TOWNHOMES"
+    },
+    {
+      "Id": "006WR00000xwFCnYAM",
+      "Name": "Omaha_MDU_4015 HAMILTON ST"
+    },
+    {
+      "Id": "006WR00000xwFUXYA2",
+      "Name": "OMAHA_MDU_Redman AVE APTS"
+    },
+    {
+      "Id": "006WR00000xwFsjYAE",
+      "Name": "Omaha_MDU_4752 NICHOLAS ST"
+    },
+    {
+      "Id": "006WR00000xwGLlYAM",
+      "Name": "OMAHA_MDU_6569-6571 Military Ave APTS"
+    },
+    {
+      "Id": "006WR00000xwGTpYAM",
+      "Name": "Omaha_MDU_915 N 48TH ST"
+    },
+    {
+      "Id": "006WR00000xwGdVYAU",
+      "Name": "HARKER HEIGHTS_MDU_JR's_Trailer_Park"
+    },
+    {
+      "Id": "006WR00000xwGtdYAE",
+      "Name": "HARKER HEIGHTS_MDU_Cedar_Knob_RD MHP"
+    },
+    {
+      "Id": "006WR00000y2FzkYAE",
+      "Name": "Omaha_MDU_4760 LAFAYETTE AVE"
+    },
+    {
+      "Id": "006WR00000ywMAUYA2",
+      "Name": "247-263 HWY 101 Solana Beach, CA"
+    },
+    {
+      "Id": "006WR00000zvH95YAE",
+      "Name": "SMB ROE Project- 127 W JUANITA AVE MESA AZ 105"
+    },
+    {
+      "Id": "006WR00000zveAWYAY",
+      "Name": "SMB ROE Project- 127 W JUANITA AVE MESA AZ 106"
+    },
+    {
+      "Id": "006WR00000zw4xnYAA",
+      "Name": "SMB ROE Project- 127 W JUANITA AVE MESA AZ 109"
+    },
+    {
+      "Id": "006WR00000zwVEnYAM",
+      "Name": "SMB ROE Project- 127 W JUANITA AVE MESA AZ 101"
+    },
+    {
+      "Id": "006WR00000zx55NYAQ",
+      "Name": "SMB ROE Project- 127 W JUANITA AVE MESA AZ 108"
+    },
+    {
+      "Id": "006WR00000zxFfpYAE",
+      "Name": "SMB ROE Project- 127 W JUANITA AVE MESA AZ 110"
+    }
+  ],
+  "lower_start": [
+    {
+      "Id": "006WR00000wk1FBYAY",
+      "Name": "now called (The Clifford) Tides on Country Club"
+    },
+    {
+      "Id": "006WR00000wkC6sYAE",
+      "Name": "sandshell At Fossil Creek"
+    }
+  ],
+  "all_lower": [
+    {
+      "Id": "006WR00000wk1FaYAI",
+      "Name": "latitude33"
+    },
+    {
+      "Id": "006WR00000wkBp2YAE",
+      "Name": "college park apartments"
+    }
+  ]
+}

@@ -21,6 +21,27 @@
                         variant="label-hidden"
                         class="owner-selector"
                     ></lightning-combobox>
+                    <lightning-combobox
+                        value={selectedREAssigned}
+                        options={reAssignedOptions}
+                        onchange={handleREAssignedChange}
+                        variant="label-hidden"
+                        class="re-assigned-selector"
+                    ></lightning-combobox>
+                    <lightning-combobox
+                        value={selectedDateRange}
+                        options={dateRangeOptions}
+                        onchange={handleDateRangeChange}
+                        variant="label-hidden"
+                        class="date-range-selector"
+                    ></lightning-combobox>
+                    <lightning-combobox
+                        value={selectedCampaign}
+                        options={campaignOptions}
+                        onchange={handleCampaignChange}
+                        variant="label-hidden"
+                        class="campaign-selector"
+                    ></lightning-combobox>
                 </template>
             </div>
             <div class="header-right">
@@ -101,6 +122,34 @@
         <template lwc:if={noRecords}>
             <div class="no-records">
                 <p>No records match the current view filters.</p>
+            </div>
+        </template>
+
+        <!-- Summary bar -->
+        <template lwc:if={displayRows.length}>
+            <div class="summary-bar">
+                <div class="summary-stat">
+                    <span class="summary-label">Opportunities:</span>
+                    <span class="summary-value">{summaryOpps}</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-stat">
+                    <span class="summary-label">Units:</span>
+                    <span class="summary-value">{summaryUnits}</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-stat">
+                    <span class="summary-label">Completed Agreements:</span>
+                    <span class="summary-value">{summaryTotalAgreements}</span>
+                </div>
+                <template lwc:if={hasSummaryAgreements}>
+                    <div class="summary-divider"></div>
+                    <div class="summary-agreements">
+                        <template for:each={summaryAgreements} for:item="agr">
+                            <span key={agr.key} class="summary-agr-badge">{agr.label}</span>
+                        </template>
+                    </div>
+                </template>
             </div>
         </template>
 
@@ -259,6 +308,16 @@
                 <template lwc:if={displayRows.length}>
                     <div class="tracker-footer">
                         <span>{recordCountLabel}</span>
+                        <template lwc:if={hasMoreRecords}>
+                            <lightning-button
+                                label="Load More"
+                                icon-name="utility:chevrondown"
+                                variant="neutral"
+                                onclick={handleLoadMore}
+                                disabled={isLoadingMore}
+                                class="load-more-grid-btn"
+                            ></lightning-button>
+                        </template>
                         <template lwc:if={hasUnsavedChanges}>
                             <span class="unsaved-indicator">{unsavedLabel}</span>
                         </template>
@@ -777,4 +836,37 @@
             </template>
         </div>
     </div>
+
+    <!-- Stage-change reason modal (On Hold / Prospecting / Closed Lost) -->
+    <template lwc:if={stageReasonModalOpen}>
+        <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_small">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={handleStageReasonCancel}>
+                        <lightning-icon icon-name="utility:close" alternative-text="Close" size="small" variant="inverse"></lightning-icon>
+                    </button>
+                    <h2 class="slds-modal__title slds-hyphenate">{stageReasonModalLabel} required</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p class="slds-m-bottom_small">
+                        Moving <strong>{stageReasonModalRecordName}</strong> to stage <strong>{stageReasonModalStage}</strong> requires a {stageReasonModalLabel}.
+                    </p>
+                    <lightning-combobox
+                        name="stageReason"
+                        label={stageReasonModalLabel}
+                        value={stageReasonModalValue}
+                        options={stageReasonModalOptions}
+                        onchange={handleStageReasonChange}
+                        placeholder="-- Select --"
+                        required>
+                    </lightning-combobox>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={handleStageReasonCancel}>Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={handleStageReasonSave}>Save</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
 </template>

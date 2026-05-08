@@ -1,0 +1,1041 @@
+{
+  "generated_at": "2026-04-25T08:06:37",
+  "record_types": [
+    {
+      "attributes": {
+        "type": "RecordType",
+        "url": "/services/data/v59.0/sobjects/RecordType/012WR00000Ra0mjYAB"
+      },
+      "Id": "012WR00000Ra0mjYAB",
+      "Name": "Business",
+      "DeveloperName": "Business",
+      "IsActive": true,
+      "BusinessProcessId": "019WR00000JHpD3YAL",
+      "Description": "Business/commercial sales"
+    },
+    {
+      "attributes": {
+        "type": "RecordType",
+        "url": "/services/data/v59.0/sobjects/RecordType/012WR00000Ra0mkYAB"
+      },
+      "Id": "012WR00000Ra0mkYAB",
+      "Name": "MDU",
+      "DeveloperName": "MDU",
+      "IsActive": true,
+      "BusinessProcessId": "019WR00000JHpD4YAL",
+      "Description": "Multi-Dwelling Unit property pursuits"
+    },
+    {
+      "attributes": {
+        "type": "RecordType",
+        "url": "/services/data/v59.0/sobjects/RecordType/012WR00000S2ne1YAB"
+      },
+      "Id": "012WR00000S2ne1YAB",
+      "Name": "SFU",
+      "DeveloperName": "SFU",
+      "IsActive": true,
+      "BusinessProcessId": "019WR00000JHpD4YAL",
+      "Description": "Single Family Unit opportunities"
+    }
+  ],
+  "business_processes": [
+    {
+      "attributes": {
+        "type": "BusinessProcess",
+        "url": "/services/data/v59.0/tooling/sobjects/BusinessProcess/019WR00000JHpD3YAL"
+      },
+      "Id": "019WR00000JHpD3YAL",
+      "Name": "Business Sales Process",
+      "Description": null,
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "BusinessProcess",
+        "url": "/services/data/v59.0/tooling/sobjects/BusinessProcess/019WR00000JHpD4YAL"
+      },
+      "Id": "019WR00000JHpD4YAL",
+      "Name": "MDU Sales Process",
+      "Description": null,
+      "IsActive": true
+    }
+  ],
+  "stage_picklist": [
+    {
+      "label": "On Hold",
+      "value": "On Hold",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Prospecting",
+      "value": "Prospecting",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Engaged",
+      "value": "Engaged",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "ROE Secured",
+      "value": "ROE Secured",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Contract Negotiations",
+      "value": "Contract Negotiations",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Under Contract",
+      "value": "Under Contract",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Ready for Engineering",
+      "value": "Ready for Engineering",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Under Construction",
+      "value": "Under Construction",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Activation",
+      "value": "Activation",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Closed Won",
+      "value": "Closed Won",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Closed Lost",
+      "value": "Closed Lost",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Negotiation",
+      "value": "Negotiation",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Construction",
+      "value": "Construction",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Qualification",
+      "value": "Qualification",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Needs Analysis",
+      "value": "Needs Analysis",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Engineering",
+      "value": "Engineering",
+      "active": true,
+      "defaultValue": false
+    },
+    {
+      "label": "Proposal",
+      "value": "Proposal",
+      "active": true,
+      "defaultValue": false
+    }
+  ],
+  "stage_per_rt": {
+    "Business": [
+      "On Hold",
+      "Prospecting",
+      "Engaged",
+      "Contract Negotiations",
+      "Under Contract",
+      "Ready for Engineering",
+      "Under Construction",
+      "Activation",
+      "Closed Won",
+      "Closed Lost"
+    ],
+    "MDU": [
+      "On Hold",
+      "Prospecting",
+      "Engaged",
+      "Contract Negotiations",
+      "Under Contract",
+      "Closed Won",
+      "Closed Lost"
+    ],
+    "SFU": [
+      "On Hold",
+      "Prospecting",
+      "Engaged",
+      "Contract Negotiations",
+      "Under Contract",
+      "Closed Won",
+      "Closed Lost"
+    ]
+  },
+  "profiles": [
+    {
+      "Id": "00eHs0000031c6CIAQ",
+      "Name": "Analytics Cloud Integration User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c6DIAQ",
+      "Name": "Analytics Cloud Security User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eWR00000HM129YAD",
+      "Name": "Anypoint Integration",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eWR00000QPNbxYAH",
+      "Name": "B2B Vendor",
+      "UserType": "Standard",
+      "active_users": 2
+    },
+    {
+      "Id": "00eHs0000031c68IAA",
+      "Name": "Chatter External User",
+      "UserType": "CsnOnly",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c5yIAA",
+      "Name": "Chatter Free User",
+      "UserType": "CsnOnly",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c67IAA",
+      "Name": "Chatter Moderator User",
+      "UserType": "CsnOnly",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c65IAA",
+      "Name": "Contract Manager",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c69IAA",
+      "Name": "CPQ Integration User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c5tIAA",
+      "Name": "End User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c5sIAA",
+      "Name": "Executive Sponsor",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c6BIAQ",
+      "Name": "Guest License User",
+      "UserType": "Guest",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c60IAA",
+      "Name": "Identity User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c64IAA",
+      "Name": "Marketing User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c6EIAQ",
+      "Name": "Minimum Access - API Only Integrations",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c61IAA",
+      "Name": "Minimum Access - Salesforce",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c62IAA",
+      "Name": "Read Only",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs000001XUOeIAO",
+      "Name": "Sales Insights Integration User",
+      "UserType": "Standard",
+      "active_users": 1
+    },
+    {
+      "Id": "00eHs0000031c6AIAQ",
+      "Name": "Salesforce API Only System Integrations",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c63IAA",
+      "Name": "Solution Manager",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eHs0000031c5rIAA",
+      "Name": "Standard User",
+      "UserType": "Standard",
+      "active_users": 0
+    },
+    {
+      "Id": "00eWR00000LoGLdYAN",
+      "Name": "Standard User - Custom",
+      "UserType": "Standard",
+      "active_users": 15
+    },
+    {
+      "Id": "00eHs0000031c5qIAA",
+      "Name": "System Administrator",
+      "UserType": "Standard",
+      "active_users": 5
+    }
+  ],
+  "active_users": [
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000009mRITYA2"
+      },
+      "Id": "005WR000009mRITYA2",
+      "Name": "Jamie Doyle",
+      "Email": "jdoyle@salesfocusinc.com",
+      "ProfileId": "00eWR00000QPNbxYAH",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000QPNbxYAH"
+        },
+        "Name": "B2B Vendor"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000005Ln7hYAC"
+      },
+      "Id": "005WR000005Ln7hYAC",
+      "Name": "Julian Harrell",
+      "Email": "jharrell@salesfocusinc.com",
+      "ProfileId": "00eWR00000QPNbxYAH",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000QPNbxYAH"
+        },
+        "Name": "B2B Vendor"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005Hs00000EzTyTIAV"
+      },
+      "Id": "005Hs00000EzTyTIAV",
+      "Name": "Insights Integration",
+      "Email": "insightsintegration@00dhs000003xbrsmak.ext",
+      "ProfileId": "00eHs000001XUOeIAO",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eHs000001XUOeIAO"
+        },
+        "Name": "Sales Insights Integration User"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR00000DEU6oYAH"
+      },
+      "Id": "005WR00000DEU6oYAH",
+      "Name": "Bill Holick",
+      "Email": "bill.holick@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR00000CXEZyYAP"
+      },
+      "Id": "005WR00000CXEZyYAP",
+      "Name": "Brett Spivey",
+      "Email": "bspivey@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000003dFofYAE"
+      },
+      "Id": "005WR000003dFofYAE",
+      "Name": "Craig Birch",
+      "Email": "cbirch@fiberfirst.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000009NOZ8YAO"
+      },
+      "Id": "005WR000009NOZ8YAO",
+      "Name": "Eric Dana",
+      "Email": "ericd@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000003CD7pYAG"
+      },
+      "Id": "005WR000003CD7pYAG",
+      "Name": "John Fetter",
+      "Email": "jfetter@fiberfirst.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR0000030RCzYAM"
+      },
+      "Id": "005WR0000030RCzYAM",
+      "Name": "Justin Barry",
+      "Email": "justin.barry@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR00000153G1YAI"
+      },
+      "Id": "005WR00000153G1YAI",
+      "Name": "Ken Carter",
+      "Email": "ken@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000008VPf5YAG"
+      },
+      "Id": "005WR000008VPf5YAG",
+      "Name": "Kevin Reyes",
+      "Email": "kevin@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000003CD6DYAW"
+      },
+      "Id": "005WR000003CD6DYAW",
+      "Name": "Melissa Baker",
+      "Email": "mbaker@fiberfirst.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000008V4VoYAK"
+      },
+      "Id": "005WR000008V4VoYAK",
+      "Name": "Niraj Patel",
+      "Email": "niraj@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR0000030R9lYAE"
+      },
+      "Id": "005WR0000030R9lYAE",
+      "Name": "Rosemarie Shortino",
+      "Email": "rosemarie.shortino@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000003CDZFYA4"
+      },
+      "Id": "005WR000003CDZFYA4",
+      "Name": "Scott Avanzo",
+      "Email": "savanzo@fiberfirst.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR0000030R1hYAE"
+      },
+      "Id": "005WR0000030R1hYAE",
+      "Name": "Tanya Friese",
+      "Email": "tanya@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000003aLsDYAU"
+      },
+      "Id": "005WR000003aLsDYAU",
+      "Name": "Warren Nunley",
+      "Email": "warren.nunley@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000003PXwjYAG"
+      },
+      "Id": "005WR000003PXwjYAG",
+      "Name": "Zak Dubree",
+      "Email": "zak@ubiquitygp.com",
+      "ProfileId": "00eWR00000LoGLdYAN",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eWR00000LoGLdYAN"
+        },
+        "Name": "Standard User - Custom"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000002ieYTYAY"
+      },
+      "Id": "005WR000002ieYTYAY",
+      "Name": "Cass Parker",
+      "Email": "cass@ubiquitygp.com",
+      "ProfileId": "00eHs0000031c5qIAA",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eHs0000031c5qIAA"
+        },
+        "Name": "System Administrator"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000002nvjxYAA"
+      },
+      "Id": "005WR000002nvjxYAA",
+      "Name": "Jake Stebbins",
+      "Email": "jake@ubiquitygp.com",
+      "ProfileId": "00eHs0000031c5qIAA",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eHs0000031c5qIAA"
+        },
+        "Name": "System Administrator"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000002zi6DYAQ"
+      },
+      "Id": "005WR000002zi6DYAQ",
+      "Name": "Lucas Dixon",
+      "Email": "ldixon@fiberfirst.com",
+      "ProfileId": "00eHs0000031c5qIAA",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eHs0000031c5qIAA"
+        },
+        "Name": "System Administrator"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005Hs00000Eo9rcIAB"
+      },
+      "Id": "005Hs00000Eo9rcIAB",
+      "Name": "Pankaj Gulati",
+      "Email": "pankaj@ubiquitygp.com",
+      "ProfileId": "00eHs0000031c5qIAA",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eHs0000031c5qIAA"
+        },
+        "Name": "System Administrator"
+      },
+      "IsActive": true
+    },
+    {
+      "attributes": {
+        "type": "User",
+        "url": "/services/data/v59.0/sobjects/User/005WR000009SCtuYAG"
+      },
+      "Id": "005WR000009SCtuYAG",
+      "Name": "Taylor Mauney",
+      "Email": "taylor@ubiquitygp.com",
+      "ProfileId": "00eHs0000031c5qIAA",
+      "Profile": {
+        "attributes": {
+          "type": "Profile",
+          "url": "/services/data/v59.0/sobjects/Profile/00eHs0000031c5qIAA"
+        },
+        "Name": "System Administrator"
+      },
+      "IsActive": true
+    }
+  ],
+  "permission_sets": [
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR000000AqlJ4AS"
+      },
+      "Id": "0PSWR000000AqlJ4AS",
+      "Name": "Campaign_Dashboard_Access",
+      "Label": "Campaign Dashboard Access",
+      "IsCustom": true,
+      "Description": "Grants access needed to view the Campaign record page dashboard (campaignDashboard LWC): Apex controller + FLS on fields not in the default profile grants. Assign to non-admin users who need to see Campaign project dashboards."
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR000000AsTl4AK"
+      },
+      "Id": "0PSWR000000AsTl4AK",
+      "Name": "SMB_RE_Field_Access",
+      "Label": "SMB RE Field Access",
+      "IsCustom": true,
+      "Description": "Read/Edit access to fields added 2026-04-24 for SMB ROE Project + cross-segment Property_Location linkage."
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR0000007dMQ4AY"
+      },
+      "Id": "0PSWR0000007dMQ4AY",
+      "Name": "SalesWorkspacePSG",
+      "Label": "SalesWorkspacePSG",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSHs0000049bIHOAY"
+      },
+      "Id": "0PSHs0000049bIHOAY",
+      "Name": "Sales_User",
+      "Label": "Sales User",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR00000060F84AI"
+      },
+      "Id": "0PSWR00000060F84AI",
+      "Name": "ScaleCenterUsers",
+      "Label": "ScaleCenterUsers",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR0000009flV4AQ"
+      },
+      "Id": "0PSWR0000009flV4AQ",
+      "Name": "Tracker_Admin",
+      "Label": "Tracker Admin",
+      "IsCustom": true,
+      "Description": "Full access to Tracker View configuration and grid"
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSHs0000049bI0OAI"
+      },
+      "Id": "0PSHs0000049bI0OAI",
+      "Name": "X00e3i000000Qpg4AAC",
+      "Label": "00e3i000000Qpg4AAC",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSHs0000049bI4OAI"
+      },
+      "Id": "0PSHs0000049bI4OAI",
+      "Name": "X00e3i000000Qrm9AAC",
+      "Label": "00e3i000000Qrm9AAC",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSHs0000049bI8OAI"
+      },
+      "Id": "0PSHs0000049bI8OAI",
+      "Name": "X00eHn000001mn7BIAQ",
+      "Label": "00eHn000001mn7BIAQ",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR0000004GuD4AU"
+      },
+      "Id": "0PSWR0000004GuD4AU",
+      "Name": "X00eWR00000LoGLdYAN",
+      "Label": "00eWR00000LoGLdYAN",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR0000005lvx4AA"
+      },
+      "Id": "0PSWR0000005lvx4AA",
+      "Name": "X00eWR00000QPNbxYAH",
+      "Label": "00eWR00000QPNbxYAH",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSHs0000049bHxOAI"
+      },
+      "Id": "0PSHs0000049bHxOAI",
+      "Name": "X00ex00000018ozW_128_09_43_34_4",
+      "Label": "00ex00000018ozW_128_09_43_34_4",
+      "IsCustom": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSHs0000049bHrOAI"
+      },
+      "Id": "0PSHs0000049bHrOAI",
+      "Name": "sfdc_activityplatform",
+      "Label": "sfdc.activityplatform",
+      "IsCustom": true,
+      "Description": "Permset for the 'sfdc.activityplatform' C2C integration"
+    },
+    {
+      "attributes": {
+        "type": "PermissionSet",
+        "url": "/services/data/v59.0/sobjects/PermissionSet/0PSWR00000096Ks4AI"
+      },
+      "Id": "0PSWR00000096Ks4AI",
+      "Name": "sfdc_nc_constraints_engine_deploy",
+      "Label": "Constraint Rules Engine Licenseless permission set",
+      "IsCustom": true,
+      "Description": "Create and manage constraint types and rules in Advanced Configurator."
+    }
+  ],
+  "layouts": [
+    {
+      "attributes": {
+        "type": "Layout",
+        "url": "/services/data/v59.0/tooling/sobjects/Layout/00hWR000008ctLRYAY"
+      },
+      "Id": "00hWR000008ctLRYAY",
+      "Name": "Business Opportunity Layout",
+      "TableEnumOrId": "Opportunity"
+    },
+    {
+      "attributes": {
+        "type": "Layout",
+        "url": "/services/data/v59.0/tooling/sobjects/Layout/00hWR000008ctLSYAY"
+      },
+      "Id": "00hWR000008ctLSYAY",
+      "Name": "MDU Opportunity Layout",
+      "TableEnumOrId": "Opportunity"
+    },
+    {
+      "attributes": {
+        "type": "Layout",
+        "url": "/services/data/v59.0/tooling/sobjects/Layout/00hHs00000dMIY9IAO"
+      },
+      "Id": "00hHs00000dMIY9IAO",
+      "Name": "Opportunity Layout",
+      "TableEnumOrId": "Opportunity"
+    }
+  ],
+  "flexipages": [
+    {
+      "attributes": {
+        "type": "FlexiPage",
+        "url": "/services/data/v59.0/tooling/sobjects/FlexiPage/0M0Hs000001HrilKAC"
+      },
+      "Id": "0M0Hs000001HrilKAC",
+      "DeveloperName": "Opportunity_Record_Page_Three_Column",
+      "MasterLabel": "Opportunity Record Page - Three Column",
+      "Type": "RecordPage"
+    },
+    {
+      "attributes": {
+        "type": "FlexiPage",
+        "url": "/services/data/v59.0/tooling/sobjects/FlexiPage/0M0WR0000004IKv0AM"
+      },
+      "Id": "0M0WR0000004IKv0AM",
+      "DeveloperName": "Business_Opportunity_Record_Page",
+      "MasterLabel": "Business Opportunity Record Page",
+      "Type": "RecordPage"
+    },
+    {
+      "attributes": {
+        "type": "FlexiPage",
+        "url": "/services/data/v59.0/tooling/sobjects/FlexiPage/0M0WR0000004IKw0AM"
+      },
+      "Id": "0M0WR0000004IKw0AM",
+      "DeveloperName": "MDU_Opportunity_Record_Page",
+      "MasterLabel": "MDU Opportunity Record Page",
+      "Type": "RecordPage"
+    }
+  ],
+  "validation_rules": [
+    {
+      "attributes": {
+        "type": "ValidationRule",
+        "url": "/services/data/v59.0/tooling/sobjects/ValidationRule/03dWR00000047KfYAI"
+      },
+      "Id": "03dWR00000047KfYAI",
+      "ValidationName": "MDU_No_Closed_Won",
+      "Active": true,
+      "Description": "MDU opportunities cannot be set to Closed Won. The MDU pipeline ends at Under Contract."
+    },
+    {
+      "attributes": {
+        "type": "ValidationRule",
+        "url": "/services/data/v59.0/tooling/sobjects/ValidationRule/03dWR0000004BZZYA2"
+      },
+      "Id": "03dWR0000004BZZYA2",
+      "ValidationName": "Prevent_Opportunity_Name_Change",
+      "Active": true,
+      "Description": "Prevents non-admin users from changing the Opportunity Name after creation. Name changes affect other systems (SiteTracker, IronClad) and should go through a request process."
+    },
+    {
+      "attributes": {
+        "type": "ValidationRule",
+        "url": "/services/data/v59.0/tooling/sobjects/ValidationRule/03dWR0000004FDNYA2"
+      },
+      "Id": "03dWR0000004FDNYA2",
+      "ValidationName": "Require_Loss_Reason_Closed_Lost",
+      "Active": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "ValidationRule",
+        "url": "/services/data/v59.0/tooling/sobjects/ValidationRule/03dWR0000004FQHYA2"
+      },
+      "Id": "03dWR0000004FQHYA2",
+      "ValidationName": "Require_Hold_Reason_On_Hold",
+      "Active": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "ValidationRule",
+        "url": "/services/data/v59.0/tooling/sobjects/ValidationRule/03dWR0000004FQIYA2"
+      },
+      "Id": "03dWR0000004FQIYA2",
+      "ValidationName": "Require_Sales_Status_Prospecting",
+      "Active": true,
+      "Description": null
+    },
+    {
+      "attributes": {
+        "type": "ValidationRule",
+        "url": "/services/data/v59.0/tooling/sobjects/ValidationRule/03dWR0000004GCfYAM"
+      },
+      "Id": "03dWR0000004GCfYAM",
+      "ValidationName": "Require_City_State_Zip_On_New_MDU",
+      "Active": true,
+      "Description": "Require Property City, State, Zip on new MDU Opportunity creation (Taylor request 2026-04-21)."
+    }
+  ],
+  "relevant_existing_fields": [
+    {
+      "name": "Hold_Reason__c",
+      "label": "Hold Reason",
+      "type": "picklist"
+    }
+  ]
+}

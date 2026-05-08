@@ -1,0 +1,17 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "cnt": 452,
+        "units": 46300
+      }
+    ],
+    "totalSize": 1,
+    "done": true
+  },
+  "warnings": []
+}

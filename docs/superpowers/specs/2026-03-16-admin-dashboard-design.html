@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Admin Dashboard - Design Spec</title>
+<style>
+  body { font-family: Segoe UI, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a2e; background: #f8f9fa; line-height: 1.6; }
+  h1 { color: #2c5aa0; border-bottom: 2px solid #2c5aa0; padding-bottom: 8px; }
+  h2 { color: #2c5aa0; margin-top: 32px; }
+  h3 { color: #334155; margin-top: 24px; }
+  h4 { color: #475569; }
+  blockquote { border-left: 4px solid #2c5aa0; margin: 16px 0; padding: 8px 16px; background: #e8f0fe; color: #1a1a2e; }
+  code { font-family: Consolas, monospace; background: #e2e8f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 6px; overflow-x: auto; }
+  pre code { background: none; padding: 0; color: inherit; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th { background: #2c5aa0; color: white; padding: 10px 14px; text-align: left; }
+  td { padding: 8px 14px; border-bottom: 1px solid #e2e8f0; }
+  tr:nth-child(even) { background: #f1f5f9; }
+  hr { border: none; border-top: 1px solid #cbd5e1; margin: 32px 0; }
+  ul, ol { padding-left: 24px; }
+  li { margin: 4px 0; }
+  strong { color: #1e293b; }
+</style>
+</head><body>
+<h1>Admin Dashboard - Design Spec</h1>
+<blockquote>
+<p>Local control panel for running and monitoring Salesforce sync operations. Lives in the SalesForce project folder, launched via .bat file, runs a Flask server that serves the HTML and executes sync scripts on demand.</p>
+</blockquote>
+<hr />
+<h2>File Structure</h2>
+<pre class="codehilite"><code>SalesForce/
+  admin/
+    admin_server.py              # Flask app (serves HTML + API endpoints)
+    templates/
+      admin.html                 # Dashboard page
+  scripts/
+    sync_sitetracker.py          # Refactored sync (upsert, structured output)
+  Launch_Admin_Dashboard.bat     # Starts Flask server + opens browser
+  load_sitetracker_data.py       # Original script (reference, unchanged)
+  sync_sitetracker.py            # Original script (reference, unchanged)
+</code></pre>
+
+<hr />
+<h2>Server Architecture</h2>
+<h3>Technology</h3>
+<ul>
+<li><strong>Flask</strong> (<code>pip install flask</code>) — single process serves HTML and API</li>
+<li>Runs on <code>localhost:5050</code></li>
+<li>Single .bat file starts the server and opens the browser</li>
+</ul>
+<h3>Routes</h3>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>GET</td>
+<td>Serves the admin dashboard HTML</td>
+</tr>
+<tr>
+<td><code>/syncs</code></td>
+<td>GET</td>
+<td>Returns available syncs as JSON (for dynamic tab building)</td>
+</tr>
+<tr>
+<td><code>/run/&lt;sync_name&gt;</code></td>
+<td>POST</td>
+<td>Triggers sync script as subprocess, streams stdout via SSE</td>
+</tr>
+<tr>
+<td><code>/status/&lt;sync_name&gt;</code></td>
+<td>GET</td>
+<td>Returns last sync time + record counts from Salesforce</td>
+</tr>
+</tbody>
+</table>
+<h3>Sync Registry</h3>
+<p>A config dict in <code>admin_server.py</code> maps sync names to their scripts and metadata:</p>
+<pre class="codehilite"><code class="language-python">SYNCS = {
+    &quot;sitetracker&quot;: {
+        &quot;script&quot;: &quot;scripts/sync_sitetracker.py&quot;,
+        &quot;label&quot;: &quot;SiteTracker Projects&quot;,
+        &quot;description&quot;: &quot;Syncs MDU Fiber records from SiteTracker org into SiteTracker_Project__c&quot;
+    },
+    # Future syncs added here:
+    # &quot;monday&quot;: {
+    #     &quot;script&quot;: &quot;scripts/sync_monday.py&quot;,
+    #     &quot;label&quot;: &quot;Monday.com Import&quot;,
+    #     &quot;description&quot;: &quot;Imports Opportunities from Monday.com&quot;
+    # }
+}
+</code></pre>
+
+<p>Adding a new sync = add a dict entry + drop a script in <code>scripts/</code>.</p>
+<h3>Execution Flow</h3>
+<ol>
+<li>User clicks "Run Sync" on SiteTracker tab</li>
+<li>JS sends <code>POST /run/sitetracker</code></li>
+<li>Flask spawns <code>scripts/sync_sitetracker.py</code> as a subprocess</li>
+<li>stdout is piped line-by-line back to the browser via Server-Sent Events (SSE)</li>
+<li>HTML parses prefixed lines to update progress card and log panel</li>
+<li>On completion, JS calls <code>GET /status/sitetracker</code> to refresh the status card with live data from Salesforce</li>
+</ol>
+<h3>Concurrency</h3>
+<p>Only one sync can run at a time. If a sync is already running, the button is disabled and the endpoint returns a 409.</p>
+<hr />
+<h2>Dashboard HTML</h2>
+<h3>Layout</h3>
+<p>Control panel aesthetic -- functional, clean, utility-focused. Not the blue dashboard header style.</p>
+<p><strong>Top Bar:</strong>
+- Title: "Admin Dashboard"
+- Server status indicator (green dot = connected)</p>
+<p><strong>Tabbed Interface:</strong>
+- One tab per sync, built dynamically from <code>GET /syncs</code>
+- Starts with one tab: SiteTracker</p>
+<p><strong>Each Sync Tab Contains:</strong></p>
+<h4>Status Card (top of tab)</h4>
+<ul>
+<li>Sync name + description</li>
+<li>Last Synced: timestamp (from <code>Last_Synced__c</code> in SF)</li>
+<li>Record Count: total synced, matched to Opportunities, standalone</li>
+<li>Status badge: Ready (gray) / Running (blue) / Success (green) / Error (red)</li>
+</ul>
+<h4>Action Area (middle)</h4>
+<ul>
+<li>"Run Sync" button -- disabled while running, shows spinner</li>
+<li>Progress bar that fills as <code>[PROGRESS]</code> lines arrive</li>
+</ul>
+<h4>Log Panel (bottom, collapsible)</h4>
+<ul>
+<li>Monospace scrolling text output</li>
+<li>Auto-scrolls to bottom as new lines arrive</li>
+<li>Collapsed by default, expands when sync starts</li>
+<li>Color-coded lines: green for <code>[SUCCESS]</code>, red for <code>[ERROR]</code>, default for <code>[INFO]</code></li>
+</ul>
+<h3>Color Scheme</h3>
+<ul>
+<li>Dark or muted header (control panel feel)</li>
+<li>Light content area</li>
+<li>Status colors: green (#22c55e), red (#ef4444), yellow (#eab308), blue (#2563eb), gray (#64748b)</li>
+<li>Monospace font for log panel (Consolas)</li>
+<li>Segoe UI for labels and headers (consistent with Koa's other projects)</li>
+</ul>
+<hr />
+<h2>Sync Script: <code>scripts/sync_sitetracker.py</code></h2>
+<p>Refactored from <code>load_sitetracker_data.py</code> with two changes:</p>
+<h3>1. Upsert Instead of Create</h3>
+<p>Use <code>SiteTracker_Record_Id__c</code> as the external ID for upsert operations. Safe to re-run anytime -- updates existing records, creates new ones, no duplicates.</p>
+<pre class="codehilite"><code class="language-python">sf_main.SiteTracker_Project__c.upsert(
+    f&quot;SiteTracker_Record_Id__c/{rec['SiteTracker_Record_Id__c']}&quot;,
+    rec
+)
+</code></pre>
+
+<h3>2. Structured Output for Parsing</h3>
+<p>Print statements use prefixed format so the HTML can parse progress:</p>
+<pre class="codehilite"><code>[INFO] Connecting to SiteTracker org...
+[INFO] Pulled 384 MDU Fiber records
+[INFO] Matched 47 to Opportunities, 337 standalone
+[PROGRESS] 50/384
+[PROGRESS] 100/384
+[PROGRESS] 200/384
+[PROGRESS] 384/384
+[SUCCESS] Done! 384 synced, 47 matched, 337 standalone, 0 errors
+[ERROR] Failed: P-002258 - some error message
+</code></pre>
+
+<ul>
+<li><code>[PROGRESS] N/TOTAL</code> -- updates progress bar</li>
+<li><code>[SUCCESS]</code> -- final line on success, updates status card to green</li>
+<li><code>[ERROR]</code> -- individual errors shown in log, final status turns red if any errors</li>
+<li><code>[INFO]</code> -- informational, goes to log panel only</li>
+</ul>
+<h3>Credentials</h3>
+<p>Same approach as original script -- credentials in the script file, read from <code>salesforce-connection.md</code> pattern. No change to auth.</p>
+<h3>Logic</h3>
+<p>Same as <code>load_sitetracker_data.py</code>:
+1. Connect to both SF orgs (main + SiteTracker)
+2. Query MDU Fiber records from SiteTracker org (WHERE Site_Type = 'MDU' AND Status != 'Cancelled')
+3. Get MDU Opportunities from main org for name matching
+4. Match by Monday.com name, site name, or extracted MDU name
+5. Upsert into SiteTracker_Project__c with <code>Last_Synced__c</code> = now</p>
+<hr />
+<h2>Launcher</h2>
+<h3><code>Launch_Admin_Dashboard.bat</code></h3>
+<pre class="codehilite"><code class="language-bat">@echo off
+cd /d &quot;%~dp0&quot;
+pip install flask &gt;nul 2&gt;&amp;1
+start &quot;&quot; python admin/admin_server.py
+timeout /t 2 &gt;nul
+start &quot;&quot; http://localhost:5050
+</code></pre>
+
+<ul>
+<li>Ensures Flask is installed (silent, idempotent)</li>
+<li>Starts the server in background</li>
+<li>Waits 2 seconds for startup</li>
+<li>Opens browser to the dashboard</li>
+</ul>
+<hr />
+<h2>Future Extensibility</h2>
+<ul>
+<li>New sync = new entry in SYNCS dict + new script in <code>scripts/</code></li>
+<li>Tabs auto-populate from the registry</li>
+<li>Monday.com sync is the likely next addition</li>
+<li>Could add scheduled runs (cron-style) later, but not in scope now</li>
+</ul>
+</body></html>

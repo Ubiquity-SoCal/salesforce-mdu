@@ -1,0 +1,417 @@
+{
+  "actionCalls": [
+    {
+      "actionName": "emailSimple",
+      "actionType": "emailSimple",
+      "connector": null,
+      "dataTypeMappings": [],
+      "description": null,
+      "elementSubtype": null,
+      "faultConnector": null,
+      "flowTransactionModel": "CurrentTransaction",
+      "inputParameters": [
+        {
+          "name": "emailSubject",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": null,
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": "New Opportunity Created: {!$Record.Name}"
+          }
+        },
+        {
+          "name": "emailBody",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": null,
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": "New Opportunity Created\n========================\n\nA new opportunity has been created. Please review the details below:\n\nView Opportunity: https://fun-power-747.lightning.force.com/{!$Record.Id}\n\nOpportunity Name: {!$Record.Name}\n\nAmount: {!$Record.Amount}\n\nClose Date: {!$Record.CloseDate}\n\nStage: {!$Record.StageName}\n\nAddress: {!$Record.Property_Address__c}, {!$Record.Property_City__c}, {!$Record.Property_State__c} {!$Record.Property_Zip__c}\n\nProperty Unit: {!Get_Property_Unit.Name}\n\nProbability: {!$Record.Probability}\n\nType: {!$Record.Type}\n\nLead Source: {!$Record.LeadSource}\n\nOpportunity Owner: {!Get_Opportunity_Record.Name}\n\nMarket Sales Lead: {!Get_Opportunity_MarketManager.Name}\n\n========================\nPlease review at your earliest convenience."
+          }
+        },
+        {
+          "name": "recipientId",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": "$Record.Market_Sales_Lead__c",
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": null
+          }
+        },
+        {
+          "name": "ccAddresses",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": null,
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": "ldixon@fiberfirst.com"
+          }
+        },
+        {
+          "name": "senderType",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": null,
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": "CurrentUser"
+          }
+        },
+        {
+          "name": "relatedRecordId",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": "$Record.Id",
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": null
+          }
+        }
+      ],
+      "label": "New_Opportunity",
+      "locationX": 0,
+      "locationY": 0,
+      "name": "New_Opportunity",
+      "nameSegment": "emailSimple",
+      "outputConfigParams": [],
+      "outputParameters": [],
+      "processMetadataValues": [],
+      "storeOutputAutomatically": null,
+      "versionSegment": null
+    }
+  ],
+  "apexPluginCalls": [],
+  "apiVersion": 65.0,
+  "assignments": [],
+  "choices": [],
+  "collectionProcessors": [],
+  "constants": [],
+  "customErrors": [],
+  "decisions": [],
+  "description": "Sends notification when new Opportunity is created. Includes address, property unit name, CC to Lucas Dixon.",
+  "dynamicChoiceSets": [],
+  "environments": [
+    "Default"
+  ],
+  "exitRules": [],
+  "formulas": [],
+  "interviewLabel": "New_Opportunity_Notification {!$Flow.CurrentDateTime}",
+  "isAdditionalPermissionRequiredToRun": null,
+  "isOverridable": null,
+  "isTemplate": null,
+  "label": "New_Opportunity_Notification",
+  "loops": [],
+  "migratedFromWorkflowRuleName": null,
+  "orchestratedStages": [],
+  "overriddenFlow": null,
+  "processMetadataValues": [
+    {
+      "name": "BuilderType",
+      "value": {
+        "apexValue": null,
+        "booleanValue": null,
+        "dateTimeValue": null,
+        "dateValue": null,
+        "elementReference": null,
+        "formulaDataType": null,
+        "formulaExpression": null,
+        "numberValue": null,
+        "setupReference": null,
+        "setupReferenceType": null,
+        "sobjectValue": null,
+        "stringValue": "LightningFlowBuilder"
+      }
+    },
+    {
+      "name": "CanvasMode",
+      "value": {
+        "apexValue": null,
+        "booleanValue": null,
+        "dateTimeValue": null,
+        "dateValue": null,
+        "elementReference": null,
+        "formulaDataType": null,
+        "formulaExpression": null,
+        "numberValue": null,
+        "setupReference": null,
+        "setupReferenceType": null,
+        "sobjectValue": null,
+        "stringValue": "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      "name": "OriginBuilderType",
+      "value": {
+        "apexValue": null,
+        "booleanValue": null,
+        "dateTimeValue": null,
+        "dateValue": null,
+        "elementReference": null,
+        "formulaDataType": null,
+        "formulaExpression": null,
+        "numberValue": null,
+        "setupReference": null,
+        "setupReferenceType": null,
+        "sobjectValue": null,
+        "stringValue": "LightningFlowBuilder"
+      }
+    }
+  ],
+  "processType": "AutoLaunchedFlow",
+  "recordCreates": [],
+  "recordDeletes": [],
+  "recordLookups": [
+    {
+      "assignNullValuesIfNoRecordsFound": false,
+      "connector": {
+        "isGoTo": null,
+        "processMetadataValues": [],
+        "targetReference": "Get_Property_Unit"
+      },
+      "description": null,
+      "elementSubtype": null,
+      "faultConnector": null,
+      "filterLogic": "and",
+      "filters": [
+        {
+          "field": "Id",
+          "operator": "EqualTo",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": "$Record.Market_Sales_Lead__c",
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": null
+          }
+        }
+      ],
+      "getFirstRecordOnly": true,
+      "label": "Get_Opportunity_MarketManager",
+      "locationX": 0,
+      "locationY": 0,
+      "name": "Get_Opportunity_MarketManager",
+      "object": "User",
+      "outputAssignments": [],
+      "outputReference": null,
+      "processMetadataValues": [],
+      "queriedFields": null,
+      "sortField": null,
+      "sortOrder": null,
+      "storeOutputAutomatically": true
+    },
+    {
+      "assignNullValuesIfNoRecordsFound": false,
+      "connector": {
+        "isGoTo": null,
+        "processMetadataValues": [],
+        "targetReference": "Get_Opportunity_MarketManager"
+      },
+      "description": null,
+      "elementSubtype": null,
+      "faultConnector": null,
+      "filterLogic": "and",
+      "filters": [
+        {
+          "field": "Id",
+          "operator": "EqualTo",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": "$Record.OwnerId",
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": null
+          }
+        }
+      ],
+      "getFirstRecordOnly": true,
+      "label": "Get_Opportunity_OwnerID",
+      "locationX": 0,
+      "locationY": 0,
+      "name": "Get_Opportunity_Record",
+      "object": "User",
+      "outputAssignments": [],
+      "outputReference": null,
+      "processMetadataValues": [],
+      "queriedFields": null,
+      "sortField": null,
+      "sortOrder": null,
+      "storeOutputAutomatically": true
+    },
+    {
+      "assignNullValuesIfNoRecordsFound": false,
+      "connector": {
+        "isGoTo": null,
+        "processMetadataValues": [],
+        "targetReference": "New_Opportunity"
+      },
+      "description": null,
+      "elementSubtype": null,
+      "faultConnector": null,
+      "filterLogic": "and",
+      "filters": [
+        {
+          "field": "Id",
+          "operator": "EqualTo",
+          "processMetadataValues": [],
+          "value": {
+            "apexValue": null,
+            "booleanValue": null,
+            "dateTimeValue": null,
+            "dateValue": null,
+            "elementReference": "$Record.Property_Unit__c",
+            "formulaDataType": null,
+            "formulaExpression": null,
+            "numberValue": null,
+            "setupReference": null,
+            "setupReferenceType": null,
+            "sobjectValue": null,
+            "stringValue": null
+          }
+        }
+      ],
+      "getFirstRecordOnly": true,
+      "label": "Get_Property_Unit",
+      "locationX": 0,
+      "locationY": 0,
+      "name": "Get_Property_Unit",
+      "object": "Property_Unit__c",
+      "outputAssignments": [],
+      "outputReference": null,
+      "processMetadataValues": [],
+      "queriedFields": null,
+      "sortField": null,
+      "sortOrder": null,
+      "storeOutputAutomatically": true
+    }
+  ],
+  "recordRollbacks": [],
+  "recordUpdates": [],
+  "runInMode": null,
+  "screens": [],
+  "sourceTemplate": null,
+  "start": {
+    "connector": {
+      "isGoTo": null,
+      "processMetadataValues": [],
+      "targetReference": "Get_Opportunity_Record"
+    },
+    "description": null,
+    "doesRequireRecordChangedToMeetCriteria": true,
+    "elementSubtype": null,
+    "entryType": null,
+    "filterFormula": null,
+    "filterLogic": "and",
+    "filters": [
+      {
+        "field": "Market_Sales_Lead__c",
+        "operator": "NotEqualTo",
+        "processMetadataValues": [],
+        "value": {
+          "apexValue": null,
+          "booleanValue": null,
+          "dateTimeValue": null,
+          "dateValue": null,
+          "elementReference": null,
+          "formulaDataType": null,
+          "formulaExpression": null,
+          "numberValue": null,
+          "setupReference": null,
+          "setupReferenceType": null,
+          "sobjectValue": null,
+          "stringValue": ""
+        }
+      }
+    ],
+    "form": null,
+    "label": null,
+    "locationX": 0,
+    "locationY": 0,
+    "name": null,
+    "object": "Opportunity",
+    "objectContainer": null,
+    "processMetadataValues": [],
+    "recordTriggerType": "CreateAndUpdate",
+    "schedule": null,
+    "scheduledPaths": [],
+    "segment": null,
+    "triggerType": "RecordAfterSave"
+  },
+  "startElementReference": null,
+  "status": "Active",
+  "steps": [],
+  "subflows": [],
+  "textTemplates": [],
+  "timeZoneSidKey": null,
+  "transforms": [],
+  "triggerOrder": null,
+  "urls": null,
+  "variables": [],
+  "waits": []
+}

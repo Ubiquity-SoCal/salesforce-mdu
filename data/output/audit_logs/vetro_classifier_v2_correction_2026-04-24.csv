@@ -1,0 +1,151 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wkBqCYAU,Woodchase Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkCmKYAU,Brickstone Villas,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBVIYA2,Chappell Oaks Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011bcuxYAA,Ville de Sante Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011arrAYAQ,740 E 3rd Ave,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkClpYAE,Copper Mountain,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkABSYA2,Somervell Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBndYAE,Abbey Glenn,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkDtlYAE,350 E 5th Ave,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wjnlLYAQ,Ridge Point,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wjnlKYAQ,Tremont Sr Apartment Homes,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wk9YbYAI,Mesa Senior Meadows,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011bsupYAA,Benson Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000yugutYAA,Ocean View Private Road,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011cGDyYAM,University Place Townhomes,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011cWvRYAU,Sandra Ann Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkDO8YAM,Summit Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wjdk9YAA,The Junction at Iron Horse,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBpPYAU,The Kyle,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011bPfxYAE,Dundee Creek Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011cWtpYAE,Heritage Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBG5YAM,1st Avenue Apartments (Old Name - Southwest Villa),Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkCl5YAE,Landings,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkACEYA2,Birchwood Apts,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkAsDYAU,Stillwater Rivulon,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011aevbYAA,Church Hill Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wk1FYYAY,30 Metro,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wk3OJYAY,The Bronte East,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkA7BYAU,Town & Country Mobile Homes,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkAkZYAU,Villas Mesa 3,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkCldYAE,Keystone Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wk9U8YAI,Mesa Coronado II,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wjnl0YAA,Country Cousins Mobile Home & RV Park,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkDuBYAU,Riverview Townhomes,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkCk7YAE,Stone View on Horne,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011c5C6YAI,5120-5128 NW Radial Hwy,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzeYAE,Sire Wellington Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBpCYAU,Grove at Nolan Creek,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBqFYAU,The Langford,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzhYAE,SageWater Village,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wjnlMYAQ,Riverside Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzfYAE,Bell Presidio,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011cMfyYAE,Discovery Village at Alliance Town Center (Riverside),Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEa6YAE,Briarwood Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEaEYAU,Lakeview Court Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEZwYAM,Western Hills Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzlYAE,Watermere at Southlake,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkF0wYAE,Presidium at Revelstoke,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkCk6YAE,Main Street Square,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEznYAE,Forena Revelstoke Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkABaYAM,Waterwood Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011awSdYAI,Lookout Ridge Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkBokYAE,Shady Creek Ranch Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkA9HYAU,Cypress View Villas,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzdYAE,The Wyatt at Presidio Junction Apartment Homes,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzoYAE,The Legends at Eagle Mountain,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzkYAE,Solay Fort Worth Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEziYAE,Cortland Presidio West,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wjnldYAA,Town and Country Apartments,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR000011bxo2YAA,Sunset Arms,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000wkEzgYAE,SageStone Village,Property_Category__c,(v1 Cat 1 or Cat 2),(null),vetro_tightened.py v2,2026-04-24T13:49:49,revert
+006WR00000ywQveYAE,La Costa Town Square,Property_Category__c,Cat 1,Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,flip
+006WR000011cWnNYAU,6302 Boyd Street,Property_Category__c,Cat 1,Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,flip
+006WR00000wkClSYAU,Brickstone Villas / Tucker Apts,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkCjxYAE,La Costa View,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk1EEYAY,Henderson Terrace Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000ywSPbYAM,Village Park Manor,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yvnHbYAI,Hilltop Trailer Park,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkArbYAE,Greenhouse Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkA6iYAE,Green Valley Mobile Estates Encinitas,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkC7oYAE,Reflections at Red Mountain,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkEcXYAU,Lakewood Manufactured Home Community,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk1EGYAY,Monaghan Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9S8YAI,Capitol Ave Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9RvYAI,120 Sunset Dr,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000ytrE5YAI,Trailer Rancho Mobile,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkCkWYAU,Liberty Landing Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9ZcYAI,Park Place Bluffs,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR0000112vHHYAY,Ito San,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yvAMgYAM,Terraces At Cantebria HOA,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk1ERYAY,Indian Hills Terrace,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yutvPYAQ,Cardiff Park HOA,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkCm7YAE,Century Oaks,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000ywT2HYAU,Village Park HOA,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yvU0RYAU,3152 Levante,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR0000112fikYAA,Fox Point,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yutSHYAY,Cardiff Park,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9UIYAY,Spanish Arcos Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9UuYAI,Fox Point Farms,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkA9MYAU,Grace Place Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wjnluYAA,Parkside Townhomes,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yvVsYYAU,3156 Levante,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yvvAJYAY,Santa Fe Trails HOA,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9ZOYAY,Capitol Place,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9SsYAI,Sandpiper Pointe,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkACFYA2,Blondo Plaza Apartments,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkEcQYAU,Laguna Vista Mobile Estates,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wkA6HYAU,148th Place,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yuZv2YAE,Laurel Cove Lane Pvt Road,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wiNocYAE,Jones13,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000yw5zGYAQ,Oceanic Drive,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk9RyYAI,Rivers Edge,Property_Category__c,(null/Cat 3),Cat 1,vetro_tightened.py v2 (strict: SA+FDH activated + serviceable),2026-04-24T13:49:49,backfill
+006WR00000wk1ELYAY,Arcos De Mesa,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EWYAY,Ladera Townhouse,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEciYAE,Discovery Village at Alliance Town Center,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EMYAY,Hunters Pointe (Mesa),Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000yutTtYAI,Quentin Court,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcZYAU,Eagle Lake Garden Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEzyYAE,Magnolia on Oak Street,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkClkYAE,Las Brisas,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkA8ZYAU,Del Mar Downs Condos,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EVYAY,The Reserve,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EgYAI,Sun Valley Ranch Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1ElYAI,The Bluffs of Brookside,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcUYAU,Dobson Ranch Condos,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcjYAE,Lakeside Apartment Homes,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkA8zYAE,6314 Boyd Street,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcFYAU,Equinox on Country Club,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcfYAE,Enclave at Westport,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcgYAE,Northampton Arms Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EjYAI,The Renaissance at Stoney Creek,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk9SDYAY,Meadow Glen Mobile Home Park,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkDttYAE,Legend of Fort Worth: Senior Living_OneSource project,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000yuqW4YAI,Beach Street Encinitas,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EJYAY,Aspen Ridge,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkClPYAU,Crestwood Apartment Homes,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EUYAY,Parkway Plaza,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcIYAU,Lost Spurs,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcSYAU,Dobson Greens Condo HOA,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkCllYAE,Del Mar Shores Terrace,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkF0jYAE,Rhome Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EnYAI,Hallcraft Villas Mesa 1,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcHYAU,Avalon Wolf Ranch (f/k/a Retreat at Wolf Ranch),Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcLYAU,Olympus Waterford,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcnYAE,Paloma Gardens Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcKYAU,Lexington Place (Monterey),Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEc5YAE,Benson Crest,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EXYAY,Crestview Place Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EmYAI,Bay Colony Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EHYAY,Boyd South Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EYYAY,Cielo Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcWYAU,Twin Palms Condominiums,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcoYAE,Mallard Run Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EhYAI,Tallgrass Village,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEccYAE,Arthouse Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEchYAE,Watervue Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wkEcMYAU,Park Vista Townhomes,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EIYAY,Eagle Ridge Terrace Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill
+006WR00000wk1EeYAI,The Sterling Apartments,Property_Category__c,(null/Cat 3),Cat 2,vetro_tightened.py v2,2026-04-24T13:49:49,backfill

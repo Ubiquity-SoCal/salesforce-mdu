@@ -1,0 +1,4 @@
+Id,Name,prior_value,new_Property_Zip__c,source,inferred_city
+006WR00000wk9ZeYAI,Glenwood Manor,,68132,name_parse_city,omaha
+006WR00000wkCl3YAE,Meridian at the Hermitage,,83646,name_parse_city,meridian
+006WR00000ywMAUYA2,"247-263 HWY 101 Solana Beach, CA",,92075,name_parse_city,solana beach

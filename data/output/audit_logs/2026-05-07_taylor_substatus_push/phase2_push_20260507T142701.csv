@@ -1,0 +1,193 @@
+SF_Id,Name,Object,Field,Before,After,Source,Action,Result,Error,Timestamp
+006WR00000wkEcXYAU,Lakewood Manufactured Home Community,Opportunity,Substatus__c,,Bulk/Marketing Rejected,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:02.564870
+006WR00000wkEcLYAU,Olympus Waterford,Opportunity,Substatus__c,,Bulk/Marketing Rejected,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:02.896203
+006WR00000wkEc3YAE,Capri on Camelback,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:03.335902
+006WR00000wkEboYAE,The Bungalows,Opportunity,Substatus__c,,Bulk/Marketing Rejected,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:03.636886
+006WR00000wkEaGYAU,Rio Grande Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:03.995673
+006WR00000wkEaFYAU,Regency Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:04.410027
+006WR00000wkEaEYAU,Lakeview Court Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:04.762572
+006WR00000wkEaDYAU,Mesquite Trails Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:05.069573
+006WR00000wkEaCYAU,Village Place Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:05.448537
+006WR00000wkEaBYAU,May Road Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:05.818052
+006WR00000wkEaAYAU,Pilot Point Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:06.177214
+006WR00000wkEa8YAE,La Mirage Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:06.511403
+006WR00000wkEa7YAE,Prairie Village Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:06.851159
+006WR00000wkEa6YAE,Briarwood Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:07.212662
+006WR00000wkEa5YAE,La Mirage Villas Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:07.494552
+006WR00000wkEa4YAE,Woodstock III Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:07.850379
+006WR00000wkEa3YAE,Stoneridge Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:08.717887
+006WR00000wkEa2YAE,Pecan Creek Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:09.085609
+006WR00000wkEa1YAE,Vista Hermosa Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:09.484364
+006WR00000wkEZwYAM,Western Hills Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:09.792170
+006WR00000wkEZuYAM,Pinnacle Pointe,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:10.146970
+006WR00000wkEZsYAM,Park at Clear Creek,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:10.492463
+006WR00000wkEZrYAM,Lakeview Park,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:10.768381
+006WR00000wkEZpYAM,Cypress Ridge,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:11.129967
+006WR00000wkEZnYAM,Paris Retirement Village,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:12.011231
+006WR00000wkDvBYAU,Northpark Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:12.333555
+006WR00000wkDv9YAE,Misty Hollow Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:12.648136
+006WR00000wkDv7YAE,Gainesville Gardens Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:12.931092
+006WR00000wkDv5YAE,Mill Creek Square Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:13.162387
+006WR00000wkDv3YAE,La Villita Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:13.547517
+006WR00000wkDv1YAE,Rose Villa Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:13.864414
+006WR00000wkDuzYAE,Whispering Oaks Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:14.181679
+006WR00000wkDuxYAE,Seven Points Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:14.550367
+006WR00000wkDuvYAE,Conquistador Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:14.839269
+006WR00000wkDuuYAE,Autumn Villas Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:15.146997
+006WR00000wkDuLYAU,Mira Vista Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:15.419190
+006WR00000wkDuJYAU,Vanderbilt Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:15.629977
+006WR00000wkDuFYAU,Bahia Palms Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:15.900113
+006WR00000wkDuDYAU,Texana Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:16.167953
+006WR00000wkDu9YAE,Oakwood Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:16.526299
+006WR00000wkDu3YAE,La Costa Paloma,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:16.778178
+006WR00000wk1EcYAI,Terrace Heights Apartments,Opportunity,Substatus__c,,Incumbent EMA,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:17.126830
+006WR00000wk1EFYAY,Affordable Storage,Opportunity,Substatus__c,,No Marketing/Bulk Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:17.460218
+006WR00000wkEbqYAE,Purgatory Creek Townhomes,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:17.794515
+006WR00000wkEbVYAU,CitiFront Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:18.068296
+006WR00000wkEbNYAU,Parthenia Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:18.323394
+006WR00000wkEbMYAU,Gloria Homes,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:18.569973
+006WR00000wkEbLYAU,Brookside Terrace Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:18.856598
+006WR00000wkEbKYAU,The Meadows at Westlake Village,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:19.196479
+006WR00000wkEbJYAU,Lombardi Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:19.520842
+006WR00000wkEbIYAU,First Casa De Marina,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:19.831614
+006WR00000wkEayYAE,Mississippi View,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:20.156028
+006WR00000wkEaxYAE,Link West End,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:20.481237
+006WR00000wkEawYAE,Link Canvas (fka The George & The Leonard),Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:20.781077
+006WR00000wkEavYAE,Saticoy Gardens,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:21.109452
+006WR00000wkEauYAE,Hollypark Knolls Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:21.477708
+006WR00000wkEapYAE,The Palms,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:21.745001
+006WR00000wkEaoYAE,Vista Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:22.006504
+006WR00000wkEanYAE,Topanga Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:22.341517
+006WR00000wkEamYAE,Topanga Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:22.644856
+006WR00000wkEalYAE,The Banyans,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:22.865736
+006WR00000wkEakYAE,Riverside Villa Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:23.222104
+006WR00000wkEajYAE,Roxanne Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:23.501211
+006WR00000wkEaiYAE,Parkview Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:23.727706
+006WR00000wkEahYAE,Brody Terrace (Riverside),Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:24.354272
+006WR00000wkEagYAE,Jaclyn Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:24.611570
+006WR00000wkEafYAE,Kling Trio Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:24.961108
+006WR00000wkEaeYAE,Parkway Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:25.199956
+006WR00000wkEadYAE,Krystal Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:25.477613
+006WR00000wkEacYAE,St. Andrews Manor,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:25.693586
+006WR00000wkEabYAE,San Vicente Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:26.019072
+006WR00000wkEaaYAE,Colonial Manor Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:26.425359
+006WR00000wkEaZYAU,Coliseum Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:26.731043
+006WR00000wkEaYYAU,Windsor Manor,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:27.042215
+006WR00000wkEaXYAU,Casa Linda,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:27.435535
+006WR00000wkEaWYAU,John Manor,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:27.665933
+006WR00000wkEaVYAU,Chatsworth Plaza,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:27.915030
+006WR00000wkEaUYAU,Corbett Avenue Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:28.221844
+006WR00000wkEaTYAU,Bali Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:28.564008
+006WR00000wkEaSYAU,White Oak Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:28.916635
+006WR00000wkEaRYAU,Baldwin Manor,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:29.226784
+006WR00000wkEaQYAU,Woodland Trio The Oaks,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:29.532075
+006WR00000wkEaPYAU,Lake Meadows Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:29.920926
+006WR00000wkEaOYAU,Regents Park Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:30.162621
+006WR00000wkEaKYAU,Villa Lago Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:30.456217
+006WR00000wkEaJYAU,9404 Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:30.718461
+006WR00000wkEaIYAU,Vassar Terrace Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:31.019054
+006WR00000wkEaHYAU,Oxnard Terrace Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:31.288449
+006WR00000wkEZxYAM,Villa Park Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:31.580962
+006WR00000wkEZmYAM,Turnagain Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:31.941140
+006WR00000wkEZlYAM,Fallbrook View Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:32.285891
+006WR00000wkEZkYAM,The Oaks Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:32.536612
+006WR00000wkEZjYAM,Ladera Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:32.829660
+006WR00000wkEZiYAM,Saratoga Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:33.072045
+006WR00000wkEZhYAM,Leimert Park,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:33.346671
+006WR00000wkEZgYAM,University Courtyards Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:33.783404
+006WR00000wkEZfYAM,Crenshaw Terrace Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:34.040536
+006WR00000wkEZeYAM,Heritage Park,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:34.333796
+006WR00000wkEZdYAM,Strathmore Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:34.606231
+006WR00000wkDvIYAU,Alameda Palms,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:34.885017
+006WR00000wkDvHYAU,Vanowen Manor II,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:35.259088
+006WR00000wkDvGYAU,Forest Gate Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:35.468722
+006WR00000wkDvFYAU,Chadron Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:35.686165
+006WR00000wkDvEYAU,Willow Lake,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:35.995206
+006WR00000wkDvDYAU,Lemoli Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:36.307447
+006WR00000wkDvCYAU,Chaparral Apts,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:36.655977
+006WR00000wkDvAYAU,University Club Apartments (Lubbock),Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:36.926608
+006WR00000wkDv8YAE,Pineforest Place,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:37.142693
+006WR00000wkDv6YAE,Sunset Street,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:37.409290
+006WR00000wkDv4YAE,615 Manhattan,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:37.736412
+006WR00000wkDv2YAE,St. John's,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:37.982640
+006WR00000wkDv0YAE,Boulder Springs Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:38.251301
+006WR00000wkDuyYAE,Sheppard's Edge,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:38.466130
+006WR00000wkDuwYAE,Fairways,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:38.713505
+006WR00000wkDutYAE,Windrush Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:38.992907
+006WR00000wkDuqYAE,Villages at Sugar Road,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:39.235212
+006WR00000wkDuoYAE,Park at Shiloh,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:39.614386
+006WR00000wkDumYAE,Misty Ridge,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:39.896265
+006WR00000wkDukYAE,Cimarron Estates,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:40.172649
+006WR00000wkDuiYAE,Summerset Village Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:40.438346
+006WR00000wkDugYAE,University Square Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:40.943574
+006WR00000wkDufYAE,714 Veteran,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:41.189267
+006WR00000wkDueYAE,University Club Apartments (Nac),Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:41.532244
+006WR00000wkDudYAE,Strathmore Arms Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:41.748940
+006WR00000wkDucYAE,Woodbury Place Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:42.034961
+006WR00000wkDubYAE,Windfaire Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:42.260990
+006WR00000wkDuaYAE,Columbia Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:42.514164
+006WR00000wkDuZYAU,Crenshaw Manor,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:42.756564
+006WR00000wkDuYYAU,Lord Tennyson,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:43.022753
+006WR00000wkDuXYAU,Vanowen Manor,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:43.235674
+006WR00000wkDuWYAU,West Creek Townhomes,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:43.473439
+006WR00000wkDuVYAU,Crenshaw Townhouse,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:43.690443
+006WR00000wkDuUYAU,Pineforest Park,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:43.908509
+006WR00000wkDuOYAU,Stonebridge Gardens,Opportunity,Substatus__c,,Owner Unresponsive,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:44.120598
+006WR00000wkDuAYAU,Villas on Horne,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:44.353955
+006WR00000wkEcmYAE,Arbors of Killeen,Opportunity,Substatus__c,,Incumbent EMA,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:44.583446
+006WR00000wkEc2YAE,Meeker Commons,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:44.850811
+006WR00000wkEc1YAE,Mountain Terrace,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:45.110806
+006WR00000wkEbwYAE,Garden Court Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:45.812877
+006WR00000wkEc0YAE,Barbary Knoll Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:46.182249
+006WR00000wkEbzYAE,Highland Shores Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:46.504770
+006WR00000wkEbrYAE,Equinox on Indian School,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:46.715515
+006WR00000wkEbyYAE,Aspen Oaks,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:47.030912
+006WR00000wkEbxYAE,Woodcrest Townhomes,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:47.328055
+006WR00000wkEbpYAE,Shadow Green Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:47.630087
+006WR00000wkEbnYAE,Sherman Forbes Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:47.844948
+006WR00000wkEbmYAE,Evergreen East Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:48.133798
+006WR00000wkEblYAE,Goldenstar Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:48.367424
+006WR00000wkEbkYAE,Pine Tree Park Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:48.607840
+006WR00000wkEbjYAE,Park Vista Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:48.885352
+006WR00000wkEbiYAE,LaBlanche Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:49.106754
+006WR00000wkEbhYAE,Johnson Parkway Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:49.399735
+006WR00000wkEbgYAE,Edgerton Highlands Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:49.630358
+006WR00000wkEbfYAE,Cottage Terrace Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:49.867408
+006WR00000wkEbeYAE,Parkview Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:50.136622
+006WR00000wkEbdYAE,Sun Place Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:50.383768
+006WR00000wkEbaYAE,Westcliff Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:50.603460
+006WR00000wkEbcYAE,Larpenteur Manor Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:50.839798
+006WR00000wkEbYYAU,Trailpoint by Trion Living / Trailpoint on Highline,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:51.070243
+006WR00000wkEb2YAE,Columbine Towers,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:51.344391
+006WR00000wkEbZYAU,Ballantrae Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:51.711157
+006WR00000wkEbbYAE,Sunshine Portland,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:52.053702
+006WR00000wkEazYAE,Spring Mountain Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:52.261234
+006WR00000wkEbuYAE,Coyote Creek,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:52.540356
+006WR00000wkEbsYAE,Pomeroy Court,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:52.830417
+006WR00000wkEatYAE,4459 Fremont Ave Apt,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:53.084055
+006WR00000wkEasYAE,Villa Boitano 1,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:53.388808
+006WR00000wkEarYAE,8409 5th Ave Apt,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:53.615034
+006WR00000wkEaqYAE,Katerina Chalet,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:53.883179
+006WR00000wkEaNYAU,Jem-Wey Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:54.148948
+006WR00000wkEaMYAU,Aloha Wey Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:54.476376
+006WR00000wkEaLYAU,The Royce,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:54.686516
+006WR00000wkEa0YAE,Lakeland,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:54.966767
+006WR00000wkEZzYAM,430 NE Ravenna,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:55.230258
+006WR00000wkEZyYAM,Green Lake South,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:55.477239
+006WR00000wkEZvYAM,1744 Dexter Avenue Apartments,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:55.691876
+006WR00000wkEZtYAM,5307 Ravenna,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:55.998019
+006WR00000wkDusYAE,Espana,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:56.254260
+006WR00000wkDurYAE,The Cliffetta,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:56.590719
+006WR00000wkDupYAE,8746 Phinney Apt,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:56.876938
+006WR00000wkDunYAE,Villa Boitano 3,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:57.143532
+006WR00000wk1ElYAI,The Bluffs of Brookside,Opportunity,Substatus__c,,Incumbent EMA,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:57.455245
+006WR00000wk1EjYAI,The Renaissance at Stoney Creek,Opportunity,Substatus__c,,Incumbent EMA,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:57.742703
+006WR00000wkDulYAE,104 North Apt,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:58.001917
+006WR00000wkDujYAE,Villa Boitano 2,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:58.464237
+006WR00000wkDuhYAE,The Park West,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:58.898245
+006WR00000wkDuTYAU,The Sixth Avenue,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:59.121691
+006WR00000wkDuSYAU,The Fifth Avenue,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:59.392134
+006WR00000wkDuRYAU,7101 Roosevelt Way Apt,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:59.732280
+006WR00000wkDuPYAU,7000 Roosevelt Way Apt,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:27:59.974243
+006WR00000wkDu6YAE,500 NE 70th,Opportunity,Substatus__c,,ISP or Funding Needed,TM_review_2026-05-04,Update,OK,,2026-05-07T14:28:00.299925
+006WR00000wkDuOYAU,Stonebridge Gardens,Opportunity,Sales_Status__c,,Contact Pending,TM_review_2026-05-04,Update,OK,,2026-05-07T14:28:00.527680

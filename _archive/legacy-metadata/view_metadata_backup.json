@@ -1,0 +1,1373 @@
+{
+  "loc_Address_Review_Required": {
+    "id": "00BWR000004QaS92AK",
+    "name": "Address Review Required - AM",
+    "dev": "Address_Review_Required",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Address_Review_Required__c",
+      "Categorize_as_MTU__c",
+      "User__r.Name",
+      "MTU_Group_Name__c",
+      "Related_MTU_Addresses__c",
+      "MTU_Notes__c",
+      "GIS_Notes__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "User__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Categorize_as_MTU__c",
+          "operator": "equals",
+          "values": [
+            "true"
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "field": "MTU_Notes__c",
+              "operator": "like",
+              "values": [
+                "'%Suite%'"
+              ]
+            },
+            {
+              "field": "MTU_Notes__c",
+              "operator": "like",
+              "values": [
+                "'%Missing%'"
+              ]
+            },
+            {
+              "field": "MTU_Notes__c",
+              "operator": "like",
+              "values": [
+                "'%Not Found%'"
+              ]
+            },
+            {
+              "field": "MTU_Notes__c",
+              "operator": "like",
+              "values": [
+                "'%Unit%'"
+              ]
+            },
+            {
+              "field": "Related_MTU_Addresses__c",
+              "operator": "like",
+              "values": [
+                "'%Suite%'"
+              ]
+            },
+            {
+              "field": "Related_MTU_Addresses__c",
+              "operator": "like",
+              "values": [
+                "'%Unit%'"
+              ]
+            }
+          ],
+          "conjunction": "or"
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_All": {
+    "id": "00BWR000003PJYo2AO",
+    "name": "All",
+    "dev": "All",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Building_Floor_Type__c",
+      "Sales_Assigned__r.Name",
+      "Units_in_Progress__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "conditions": [],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Unit_Count__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_Assign_Sales": {
+    "id": "00BWR000003rkW12AI",
+    "name": "Assign Sales",
+    "dev": "Assign_Sales",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "City__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Sales_Assigned__r.Name",
+      "Assignment_Reference__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "field": "Sales_Assigned__r.Name",
+      "operator": "equals",
+      "values": [
+        "null"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_AZ_Category_2": {
+    "id": "00BWR000003coN32AI",
+    "name": "Review AZ \u2013 Category 2",
+    "dev": "AZ_Category_2",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Type_of_Property__c",
+      "Building_Floor_Type__c",
+      "Property_Type__c",
+      "ROE_Executed__c",
+      "Categorize_as_MTU__c",
+      "Related_MTU_Addresses__c",
+      "RE_Notes__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Priority__c",
+          "operator": "equals",
+          "values": [
+            "'Category 2'"
+          ]
+        },
+        {
+          "field": "State__c",
+          "operator": "equals",
+          "values": [
+            "'AZ'"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Unit_Count__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_Category_1": {
+    "id": "00BWR000003cGlB2AU",
+    "name": "General - Category 1",
+    "dev": "Category_1",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "City__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Sales_Assigned__r.Name",
+      "Units_in_Progress__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "field": "Priority__c",
+      "operator": "equals",
+      "values": [
+        "'Category 1'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_Category_1_SalesFocus": {
+    "id": "00BWR000005RYxB2AW",
+    "name": "Category 1 - SalesFocus",
+    "dev": "Category_1_SalesFocus",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "City__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Sales_Assigned__r.Name",
+      "Units_in_Progress__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Priority__c",
+          "operator": "equals",
+          "values": [
+            "'Category 1'"
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'AZ'"
+              ]
+            },
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'CA'"
+              ]
+            },
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'NE'"
+              ]
+            }
+          ],
+          "conjunction": "or"
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Unit_Count__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_Category_2": {
+    "id": "00BWR000003cGmn2AE",
+    "name": "General - Category 2",
+    "dev": "Category_2",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Sales_Assigned__r.Name",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "field": "Priority__c",
+      "operator": "equals",
+      "values": [
+        "'Category 2'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Unit_Count__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_Category_3": {
+    "id": "00BWR000003cGq12AE",
+    "name": "General - Category 3",
+    "dev": "Category_3",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Type_of_Property__c",
+      "Building_Floor_Type__c",
+      "Property_Type__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp"
+    ],
+    "where": {
+      "field": "Priority__c",
+      "operator": "equals",
+      "values": [
+        "'Category 3'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Active_Unit_Count__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_CA_Cat_2": {
+    "id": "00BWR000003dSAn2AM",
+    "name": "Review CA \u2013 Category 2",
+    "dev": "CA_Cat_2",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Type_of_Property__c",
+      "Building_Floor_Type__c",
+      "Property_Type__c",
+      "RE_Notes__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Priority__c",
+          "operator": "equals",
+          "values": [
+            "'Category 2'"
+          ]
+        },
+        {
+          "field": "State__c",
+          "operator": "equals",
+          "values": [
+            "'CA'"
+          ]
+        },
+        {
+          "field": "Hold__c",
+          "operator": "notEquals",
+          "values": [
+            "true"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Unit_Count__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_CA_Not_on_Hold": {
+    "id": "00BWR000004L2m52AC",
+    "name": "CA Not on Hold - Carlsbad/Enc",
+    "dev": "CA_Not_on_Hold",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Hold__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Hold__c",
+          "operator": "equals",
+          "values": [
+            "false"
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "field": "City__c",
+              "operator": "equals",
+              "values": [
+                "'Encinitas'"
+              ]
+            },
+            {
+              "field": "City__c",
+              "operator": "equals",
+              "values": [
+                "'Carlsbad'"
+              ]
+            }
+          ],
+          "conjunction": "or"
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_GIS_need_RE_Review": {
+    "id": "00BWR000004WkOn2AK",
+    "name": "GIS need RE Review",
+    "dev": "GIS_need_RE_Review",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "State__c",
+      "GIS_Reviewer__r.Name",
+      "GIS_Notes__c",
+      "AM_Suite_Numbers__c",
+      "Additional_Units_found__c",
+      "AM_Flag_RE_to_Review__c",
+      "RE_Reviewer_AM__r.Name",
+      "RE_Review_Date_AM__c",
+      "RE_Review_Notes_AM__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "GIS_Reviewer__c",
+      "RE_Reviewer_AM__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "GIS_API_Match__c",
+          "operator": "equals",
+          "values": [
+            "'partial match'"
+          ]
+        },
+        {
+          "field": "AM_Flag_RE_to_Review__c",
+          "operator": "equals",
+          "values": [
+            "true"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_GIS_Partial_Review": {
+    "id": "00BWR000004Wfc12AC",
+    "name": "GIS Partial Review",
+    "dev": "GIS_Partial_Review",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "State__c",
+      "Property_Unit_Count__c",
+      "GIS_API_Match__c",
+      "GIS_Reviewer__r.Name",
+      "GIS_Review_Date__c",
+      "GIS_Notes__c",
+      "AM_Status__c",
+      "AM_Suite_Numbers__c",
+      "Additional_Units_found__c",
+      "AVR_Project_ID__c",
+      "AM_Flag_RE_to_Review__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "GIS_Reviewer__c"
+    ],
+    "where": {
+      "field": "GIS_API_Match__c",
+      "operator": "equals",
+      "values": [
+        "'partial match'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "GIS_Review_Date__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "loc_MTU_Addresses_Identified": {
+    "id": "00BWR0000044vIL2AY",
+    "name": "MTU Addresses Identified",
+    "dev": "MTU_Addresses_Identified",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Categorize_as_MTU__c",
+      "Related_MTU_Addresses__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp"
+    ],
+    "where": {
+      "field": "Categorize_as_MTU__c",
+      "operator": "equals",
+      "values": [
+        "true"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_NE_Cat_2": {
+    "id": "00BWR000003dSCP2A2",
+    "name": "Review NE \u2013 Category 2",
+    "dev": "NE_Cat_2",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Type_of_Property__c",
+      "Building_Floor_Type__c",
+      "Property_Type__c",
+      "RE_Notes__c",
+      "Sales_Assigned__r.Name",
+      "Units_in_Progress__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Priority__c",
+          "operator": "equals",
+          "values": [
+            "'Category 2'"
+          ]
+        },
+        {
+          "field": "State__c",
+          "operator": "equals",
+          "values": [
+            "'NE'"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_Review_Single_Active": {
+    "id": "00BWR000003mIs92AE",
+    "name": "Review Single Active",
+    "dev": "Review_Single_Active",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "ROE_Executed__c",
+      "Building_Floor_Type__c",
+      "Categorize_as_MTU__c",
+      "Related_MTU_Addresses__c",
+      "User__r.Name",
+      "RE_Notes__c",
+      "RE_Reviewed__c",
+      "LastModifiedBy.Name",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "User__c",
+      "LastModifiedBy.Id",
+      "LastModifiedById"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Property_Unit_Count__c",
+          "operator": "equals",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "field": "Active_Unit_Count__c",
+          "operator": "equals",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'AZ'"
+              ]
+            },
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'CA'"
+              ]
+            },
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'NE'"
+              ]
+            },
+            {
+              "field": "State__c",
+              "operator": "equals",
+              "values": [
+                "'TX'"
+              ]
+            }
+          ],
+          "conjunction": "or"
+        },
+        {
+          "field": "Hold__c",
+          "operator": "equals",
+          "values": [
+            "false"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_RE_Assign_To_Review": {
+    "id": "00BWR000003uTjx2AE",
+    "name": "RE Assign To Review",
+    "dev": "RE_Assign_To_Review",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "City__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "ROE_Executed__c",
+      "Building_Floor_Type__c",
+      "Categorize_as_MTU__c",
+      "Related_MTU_Addresses__c",
+      "User__r.Name",
+      "RE_Notes__c",
+      "RE_Reviewed__c",
+      "LastModifiedBy.Name",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "User__c",
+      "LastModifiedBy.Id",
+      "LastModifiedById"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Property_Unit_Count__c",
+          "operator": "equals",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "field": "Active_Unit_Count__c",
+          "operator": "equals",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "field": "State__c",
+          "operator": "equals",
+          "values": [
+            "'TX'"
+          ]
+        },
+        {
+          "field": "Hold__c",
+          "operator": "equals",
+          "values": [
+            "false"
+          ]
+        },
+        {
+          "field": "User__r.Name",
+          "operator": "like",
+          "values": [
+            "'%rose%'"
+          ]
+        },
+        {
+          "field": "LastModifiedBy.Name",
+          "operator": "like",
+          "values": [
+            "'%cass%'"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "LastModifiedBy.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_TX_Cat_2": {
+    "id": "00BWR000003dSFd2AM",
+    "name": "Review TX \u2013 Category 2",
+    "dev": "TX_Cat_2",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "User__r.Name",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Type_of_Property__c",
+      "Building_Floor_Type__c",
+      "Property_Type__c",
+      "RE_Notes__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "User__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Priority__c",
+          "operator": "equals",
+          "values": [
+            "'Category 2'"
+          ]
+        },
+        {
+          "field": "State__c",
+          "operator": "equals",
+          "values": [
+            "'TX'"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "loc_Units_In_Progress": {
+    "id": "00BWR000003kEuH2AU",
+    "name": "Units In Progress",
+    "dev": "Units_In_Progress",
+    "object": "Property_Location__c",
+    "columns": [
+      "Name",
+      "Priority__c",
+      "State__c",
+      "City__c",
+      "Property_Unit_Count__c",
+      "Active_Unit_Count__c",
+      "Sales_Assigned__r.Name",
+      "Units_in_Progress__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "field": "Units_in_Progress__c",
+      "operator": "notEquals",
+      "values": [
+        "null"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_All": {
+    "id": "00BWR000003R9dO2AS",
+    "name": "All",
+    "dev": "All",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Sales_Status__c",
+      "Unit__c",
+      "Activation_Status_Icon__c",
+      "Coho__c",
+      "Address_Activation_Date__c",
+      "Initial_Contact__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c"
+    ],
+    "where": {
+      "conditions": [],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Sales_Status__c",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "last",
+        "sortDirection": "descending"
+      }
+    ]
+  },
+  "unit_AZ": {
+    "id": "00BWR000003jd3V2AQ",
+    "name": "AZ",
+    "dev": "AZ",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Available_for_Sales_Date_From_Location__c",
+      "Sales_Status__c",
+      "Unit__c",
+      "Activation_Status_Icon__c",
+      "Coho__c",
+      "Address_Activation_Date__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c"
+    ],
+    "where": {
+      "field": "State_from_Property_Location__c",
+      "operator": "equals",
+      "values": [
+        "'AZ'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_CA": {
+    "id": "00BWR000003jd572AA",
+    "name": "CA",
+    "dev": "CA",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Available_for_Sales_Date_From_Location__c",
+      "Sales_Status__c",
+      "Unit__c",
+      "Activation_Status_Icon__c",
+      "Coho__c",
+      "Address_Activation_Date__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c"
+    ],
+    "where": {
+      "field": "State_from_Property_Location__c",
+      "operator": "equals",
+      "values": [
+        "'CA'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_Closed_Lost": {
+    "id": "00BWR000003y6Oz2AI",
+    "name": "Closed/Lost",
+    "dev": "Closed_Lost",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Sales_Status__c",
+      "Sales_Assigned__r.Name",
+      "Unit__c",
+      "Initial_Contact__c",
+      "Closed_Date__c",
+      "Closed_Bucket__c",
+      "Closed_Notes__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Sales_Status__c",
+          "operator": "equals",
+          "values": [
+            "'Closed - Lost'"
+          ]
+        },
+        {
+          "field": "Sales_Status__c",
+          "operator": "equals",
+          "values": [
+            "'Closed - Not Feasible'"
+          ]
+        }
+      ],
+      "conjunction": "or"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_NE": {
+    "id": "00BWR000003jd6j2AA",
+    "name": "NE",
+    "dev": "NE",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Available_for_Sales_Date_From_Location__c",
+      "Sales_Status__c",
+      "Unit__c",
+      "Activation_Status_Icon__c",
+      "Coho__c",
+      "Address_Activation_Date__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c"
+    ],
+    "where": {
+      "field": "State_from_Property_Location__c",
+      "operator": "equals",
+      "values": [
+        "'NE'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_Research_Required": {
+    "id": "00BWR000003y3fd2AA",
+    "name": "Research Required",
+    "dev": "Research_Required",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Sales_Status__c",
+      "Sales_Assigned__r.Name",
+      "Unit__c",
+      "Initial_Contact__c",
+      "Research_Required_Notes__c",
+      "Need_more_Info__c",
+      "Need_more_Info_Notes__c",
+      "LastModifiedBy.Name",
+      "LastModifiedDate",
+      "Id",
+      "CreatedDate",
+      "SystemModstamp",
+      "Property_Location__c",
+      "Sales_Assigned__c",
+      "LastModifiedBy.Id",
+      "LastModifiedById"
+    ],
+    "where": {
+      "field": "Sales_Status__c",
+      "operator": "equals",
+      "values": [
+        "'Research Required'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_TX": {
+    "id": "00BWR000003jcH82AI",
+    "name": "TX",
+    "dev": "TX",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Available_for_Sales_Date_From_Location__c",
+      "Sales_Status__c",
+      "Unit__c",
+      "Activation_Status_Icon__c",
+      "Coho__c",
+      "Address_Activation_Date__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c"
+    ],
+    "where": {
+      "field": "State_from_Property_Location__c",
+      "operator": "equals",
+      "values": [
+        "'TX'"
+      ]
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  },
+  "unit_Unit_In_Progress": {
+    "id": "00BWR000003kEvt2AE",
+    "name": "Unit In Progress",
+    "dev": "Unit_In_Progress",
+    "object": "Property_Unit__c",
+    "columns": [
+      "Property_Location__r.Name",
+      "Name",
+      "Activation_Status_Icon__c",
+      "Sales_Status__c",
+      "Sales_Assigned__r.Name",
+      "Unit__c",
+      "Initial_Contact__c",
+      "Id",
+      "CreatedDate",
+      "LastModifiedDate",
+      "SystemModstamp",
+      "Property_Location__c",
+      "Sales_Assigned__c"
+    ],
+    "where": {
+      "conditions": [
+        {
+          "field": "Sales_Status__c",
+          "operator": "notEquals",
+          "values": [
+            "null"
+          ]
+        },
+        {
+          "field": "Sales_Status__c",
+          "operator": "notEquals",
+          "values": [
+            "'Completed'"
+          ]
+        },
+        {
+          "field": "Sales_Status__c",
+          "operator": "notEquals",
+          "values": [
+            "'Closed - Lost'"
+          ]
+        },
+        {
+          "field": "Sales_Status__c",
+          "operator": "notEquals",
+          "values": [
+            "'Closed - Not Feasible'"
+          ]
+        }
+      ],
+      "conjunction": "and"
+    },
+    "orderBy": [
+      {
+        "fieldNameOrPath": "Property_Location__r.Name",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      },
+      {
+        "fieldNameOrPath": "Id",
+        "nullsPosition": "first",
+        "sortDirection": "ascending"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+a01WR00000UGVr4YAH,1179 SOUTHEAST PKWY AZLE TX,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update
+a01WR00000UGWKFYA5,1855 W BASELINE RD MESA AZ,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update
+a01WR00000UGXfhYAH,6237 N 89TH CIR OMAHA NE,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update
+a01WR00000YlMXIYA3,303 E SOUTHERN AVE MESA AZ,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update
+a01WR00000YlMXNYA3,320 E 10TH DR MESA AZ,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update
+a01WR00000YlMXSYA3,347 E SOUTHERN AVE MESA AZ,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update
+a01WR00000YlMY9YAN,5139 LEAVENWORTH ST OMAHA NE,FF_Sales_Project__c,null,SMB ROE,flag_smb_roe_property_locations_2026-05-01.py,20260501T124632,update

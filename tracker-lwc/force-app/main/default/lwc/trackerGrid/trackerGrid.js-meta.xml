@@ -6,4 +6,10 @@
         <target>lightning__Tab</target>
         <target>lightning__AppPage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+            <property name="appContext" label="App Context" type="String" default=""
+                description="Filter views by app context (e.g. MDU_Sales, Business_Sales). Leave blank to show all views." />
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>

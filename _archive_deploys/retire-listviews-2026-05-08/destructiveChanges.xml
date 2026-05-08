@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Property_Location__c.Review_Single_Active</members>
+        <members>Property_Location__c.Units_In_Progress</members>
+        <members>Property_Location__c.GIS_Partial_Review</members>
+        <members>Property_Location__c.GIS_need_RE_Review</members>
+        <members>Property_Location__c.RE_Assign_To_Review</members>
+        <name>ListView</name>
+    </types>
+</Package>

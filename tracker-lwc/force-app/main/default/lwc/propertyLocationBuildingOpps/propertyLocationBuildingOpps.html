@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title={cardTitle} icon-name="standard:opportunity">
+        <template lwc:if={hasRows}>
+            <div class="slds-p-horizontal_medium slds-p-bottom_small">
+                <template for:each={rows} for:item="r">
+                    <div key={r.id} class="slds-box slds-box_xx-small slds-m-bottom_small opp-row">
+                        <a href={r.url} class="slds-text-heading_small">{r.name}</a>
+                        <div class="slds-grid slds-grid_align-spread slds-text-body_small slds-text-color_weak slds-m-top_xx-small">
+                            <span><strong>Stage:</strong> {r.stage}</span>
+                            <span><strong>RT:</strong> {r.recordType}</span>
+                        </div>
+                        <div class="slds-grid slds-grid_align-spread slds-text-body_small slds-text-color_weak">
+                            <span><strong>Close:</strong> <lightning-formatted-date-time value={r.closeDate} year="numeric" month="short" day="2-digit"></lightning-formatted-date-time></span>
+                            <span><strong>Owner:</strong> {r.ownerName}</span>
+                        </div>
+                        <template lwc:if={r.salesStatus}>
+                            <div class="slds-text-body_small slds-text-color_weak">
+                                <strong>Sales Status:</strong> {r.salesStatus}
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </template>
+        <template lwc:else>
+            <div class="slds-p-horizontal_medium slds-p-bottom_small slds-text-color_weak">
+                No building-level Opportunities. Unit-level Opps are shown in the Property Units list above.
+            </div>
+        </template>
+    </lightning-card>
+</template>

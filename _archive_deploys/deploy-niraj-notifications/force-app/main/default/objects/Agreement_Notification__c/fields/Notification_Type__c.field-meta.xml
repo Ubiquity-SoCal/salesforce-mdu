@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Notification Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>PAL Signed</fullName><default>false</default><label>PAL Signed</label></value>
+            <value><fullName>EMA Signed</fullName><default>false</default><label>EMA Signed</label></value>
+            <value><fullName>NEMA Signed</fullName><default>false</default><label>NEMA Signed</label></value>
+            <value><fullName>Bulk Signed</fullName><default>false</default><label>Bulk Signed</label></value>
+            <value><fullName>PAL Addendum Signed</fullName><default>false</default><label>PAL Addendum Signed</label></value>
+            <value><fullName>MSA Addendum Signed</fullName><default>false</default><label>MSA Addendum Signed</label></value>
+            <value><fullName>2nd ISP MSA Addendum Signed</fullName><default>false</default><label>2nd ISP MSA Addendum Signed</label></value>
+            <value><fullName>2nd ISP NEMA Signed</fullName><default>false</default><label>2nd ISP NEMA Signed</label></value>
+            <value><fullName>Bulk Under Review</fullName><default>false</default><label>Bulk Under Review</label></value>
+            <value><fullName>PAL Terminated</fullName><default>false</default><label>PAL Terminated</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

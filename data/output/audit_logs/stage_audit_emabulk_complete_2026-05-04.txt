@@ -1,0 +1,44 @@
+MDU EMA/Bulk Complete Opps: 128
+
+Stats: {'total': 128, 'clean': 125, 'no_signed_emabulk': 3}  IronClad-linked: 98/128
+
+====================================================================================================
+REVIEW — 3
+====================================================================================================
+
+--- Chuck McNeely (3) ---
+  Arbors of Killeen  Id=006WR00000wkEcmYAE  [no_signed_emabulk]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-1165 Type=PAL Status=Completed Signed=2024-03-11 IC=IC-1084
+      Agr AGR-1166 Type=EMA Status=Archive Signed=None IC=None
+      Agr AGR-1167 Type=PAL Addendum Status=Completed Signed=2024-10-22 IC=None
+      ST: P-004231  Build_Status=4. Project - Completed
+    FLAGS: No SIGNED/Completed EMA/Bulk child
+  The Bluffs of Brookside  Id=006WR00000wk1ElYAI  [no_signed_emabulk]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-1298 Type=PAL Status=Completed Signed=2025-06-02 IC=IC-1499
+      Agr AGR-1299 Type=EMA Status=Archive Signed=None IC=None
+      Agr AGR-1300 Type=PAL Addendum Status=Completed Signed=2025-09-10 IC=None
+      ST: P-006292  Build_Status=4. Project - Completed
+    FLAGS: No SIGNED/Completed EMA/Bulk child
+  The Renaissance at Stoney Creek  Id=006WR00000wk1EjYAI  [no_signed_emabulk]
+    Sales_Status: None  Projected: None
+    Next_Action: None
+      Agr AGR-1291 Type=PAL Status=Completed Signed=2025-06-02 IC=IC-1504
+      Agr AGR-1292 Type=EMA Status=Archive Signed=None IC=None
+      Agr AGR-1293 Type=PAL Addendum Status=Completed Signed=2025-09-10 IC=None
+      ST: P-006296  Build_Status=4. Project - Completed
+    FLAGS: No SIGNED/Completed EMA/Bulk child
+
+====================================================================================================
+CLEAN — 125
+====================================================================================================
+  Brett Spivey: 55
+  Chuck McNeely: 41
+  Jeff Chao: 12
+  Marty Samuels: 9
+  Justin Barry: 3
+  Melissa Baker: 3
+  Jeff Wickersham: 2

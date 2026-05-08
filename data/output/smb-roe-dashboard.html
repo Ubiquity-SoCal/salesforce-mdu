@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMB ROE - FF Sales Dashboard</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 50%, #f5f0eb 100%);
+    color: #1d2a38;
+    min-height: 100vh;
+    padding: 24px;
+}
+.header { text-align: center; margin-bottom: 28px; }
+.header h1 { font-size: clamp(22px, 3vw, 32px); color: #1d2a38; margin-bottom: 6px; }
+.header .subtitle { color: #5a6a7b; font-size: 14px; }
+
+.kpi-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; justify-content: center; }
+.kpi {
+    background: white; border: 1px solid #d8e1ea; border-radius: 14px;
+    padding: 20px 28px; text-align: center;
+    box-shadow: 0 8px 24px rgba(20,40,60,0.08);
+    min-width: 140px; flex: 1; max-width: 200px;
+}
+.kpi .value { font-size: 32px; font-weight: 700; color: #1f6f8b; }
+.kpi .label { font-size: 12px; color: #5a6a7b; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+
+.cards-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.card {
+    background: white; border: 1px solid #d8e1ea; border-radius: 14px;
+    padding: 20px; box-shadow: 0 8px 24px rgba(20,40,60,0.08); flex: 1; min-width: 260px;
+}
+.card h3 { font-size: 15px; color: #1d2a38; margin-bottom: 14px; border-bottom: 2px solid #d8e1ea; padding-bottom: 8px; }
+.stat-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #f0f4f8; font-size: 14px; }
+.stat-row:last-child { border-bottom: none; }
+.stat-row .stat-label { display: flex; align-items: center; gap: 8px; }
+.stat-row .stat-value { font-weight: 600; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.slicer-row { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+.slicer-label { font-size: 13px; color: #5a6a7b; font-weight: 600; margin-right: 4px; }
+.slicer-btn {
+    padding: 6px 14px; border: 1px solid #d8e1ea; border-radius: 8px;
+    background: white; cursor: pointer; font-size: 13px; font-family: inherit; transition: all 0.15s;
+}
+.slicer-btn:hover { background: #f0f4f8; }
+.slicer-btn.active { background: #1f6f8b; color: white; border-color: #1f6f8b; }
+
+.table-card {
+    background: white; border: 1px solid #d8e1ea; border-radius: 14px;
+    padding: 20px; box-shadow: 0 16px 40px rgba(20,40,60,0.12); overflow-x: auto;
+}
+.table-card h3 { font-size: 15px; margin-bottom: 12px; }
+.search-box {
+    padding: 8px 14px; border: 1px solid #d8e1ea; border-radius: 8px;
+    font-size: 13px; width: 260px; margin-bottom: 12px; font-family: inherit;
+}
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+    background: #1f6f8b; color: white; padding: 10px 12px; text-align: left;
+    cursor: pointer; white-space: nowrap; position: sticky; top: 0; user-select: none;
+}
+th:hover { background: #1a5f78; }
+td { padding: 8px 12px; border-bottom: 1px solid #e8eef5; white-space: nowrap; }
+tr:nth-child(even) { background: #f8fafc; }
+tr:hover { background: #edf2f7; }
+
+.effort-badge { padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; color: white; }
+.effort-Easy { background: #16a085; }
+.effort-Medium { background: #e67e22; }
+.effort-Hard { background: #c0392b; }
+.row-count { font-size: 13px; color: #5a6a7b; margin-top: 10px; }
+.notes-cell { max-width: 350px; white-space: normal; font-size: 12px; line-height: 1.4; color: #5a6a7b; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>SMB ROE &mdash; FiberFirst Sales Assignment</h1>
+    <div class="subtitle">Assigned 04/06/2026 &bull; 20 Properties &bull; 233 Total Units</div>
+</div>
+
+<div class="kpi-row">
+    <div class="kpi"><div class="value">20</div><div class="label">Properties</div></div>
+    <div class="kpi"><div class="value">233</div><div class="label">Total Units</div></div>
+    <div class="kpi"><div class="value">3</div><div class="label">States</div></div>
+    <div class="kpi"><div class="value">6</div><div class="label">Easy Build</div></div>
+    <div class="kpi"><div class="value">11</div><div class="label">Medium Build</div></div>
+    <div class="kpi"><div class="value">3</div><div class="label">Hard Build</div></div>
+</div>
+
+<div class="cards-row">
+    <div class="card"><h3>By State</h3><div class="stat-row"><span class="stat-label"><span class="dot" style="background:#2471a3"></span>AZ</span><span class="stat-value">3 props &bull; 59 units</span></div>
+<div class="stat-row"><span class="stat-label"><span class="dot" style="background:#1a5276"></span>NE</span><span class="stat-value">5 props &bull; 41 units</span></div>
+<div class="stat-row"><span class="stat-label"><span class="dot" style="background:#6c3483"></span>TX</span><span class="stat-value">12 props &bull; 133 units</span></div>
+</div>
+    <div class="card"><h3>By Build Effort</h3><div class="stat-row"><span class="stat-label"><span class="dot" style="background:#16a085"></span>Easy</span><span class="stat-value">6</span></div>
+<div class="stat-row"><span class="stat-label"><span class="dot" style="background:#e67e22"></span>Medium</span><span class="stat-value">11</span></div>
+<div class="stat-row"><span class="stat-label"><span class="dot" style="background:#c0392b"></span>Hard</span><span class="stat-value">3</span></div>
+</div>
+    <div class="card"><h3>By RE Assigned</h3><div class="stat-row"><span class="stat-label">JB</span><span class="stat-value">9 props &bull; 99 units</span></div>
+<div class="stat-row"><span class="stat-label">RS</span><span class="stat-value">8 props &bull; 75 units</span></div>
+<div class="stat-row"><span class="stat-label">TF</span><span class="stat-value">3 props &bull; 59 units</span></div>
+</div>
+</div>
+
+<div class="slicer-row">
+    <span class="slicer-label">State:</span>
+    <button class="slicer-btn active" onclick="filterState('all')">All</button>
+    <button class="slicer-btn" onclick="filterState('AZ')">AZ</button>
+<button class="slicer-btn" onclick="filterState('NE')">NE</button>
+<button class="slicer-btn" onclick="filterState('TX')">TX</button>
+
+    <span class="slicer-label" style="margin-left:16px">Effort:</span>
+    <button class="slicer-btn active" onclick="filterEffort('all')">All</button>
+    <button class="slicer-btn" onclick="filterEffort('Easy')">Easy</button>
+    <button class="slicer-btn" onclick="filterEffort('Medium')">Medium</button>
+    <button class="slicer-btn" onclick="filterEffort('Hard')">Hard</button>
+</div>
+
+<div class="table-card">
+    <h3>Property Details</h3>
+    <input type="text" class="search-box" placeholder="Search address, city, notes..." oninput="searchTable(this.value)">
+    <div style="max-height:600px;overflow-y:auto">
+    <table id="propTable">
+        <thead><tr>
+            <th onclick="sortTable(0)">Address</th>
+            <th onclick="sortTable(1)">City</th>
+            <th onclick="sortTable(2)">State</th>
+            <th onclick="sortTable(3)">Units</th>
+            <th onclick="sortTable(4)">Build Effort</th>
+            <th onclick="sortTable(5)">RE</th>
+            <th onclick="sortTable(6)">Property Type</th>
+            <th>RE Notes</th>
+        </tr></thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    </div>
+    <div class="row-count" id="rowCount"></div>
+</div>
+
+<script>
+var DATA = [{"name": "127 W JUANITA AVE MESA AZ", "city": "MESA", "state": "AZ", "units": 20, "buildEffort": "Easy", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "TF", "roeStatus": "", "propertyStatus": "", "propertyType": "Business Park", "activeUnits": 0, "reNotes": "Empire Place. Same owner as next door 145 Juanita where denied ROE. Owner not allowing ANY cuts to asphalt. 3/10/26 spoke w/ Eric. Joe is new PM. Spoke, asked about fiber installation design, sent ROE. 3/24/26 spoke, owner let him know Friday eve that he'll sign ROE once a tenant orders FF. Since no"}, {"name": "1811 S ALMA SCHOOL RD MESA AZ", "city": "MESA", "state": "AZ", "units": 30, "buildEffort": "Hard", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "TF", "roeStatus": "", "propertyStatus": "", "propertyType": "Business Park", "activeUnits": 0, "reNotes": "same parcel as 1745 S Alma where we have ROE. Will need a customer and fiber path before owner signs. ROE had NON-STANDARD language added"}, {"name": "415 N VAL VISTA DR MESA AZ", "city": "MESA", "state": "AZ", "units": 9, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "TF", "roeStatus": "", "propertyStatus": "", "propertyType": "Strip Mall", "activeUnits": 0, "reNotes": "Same parcel as 459 where we have a ROE (+ active customer) but owner didn't want to allow that building at the time. 3/19/26 VM for Alana, sent ROE. She replied that the owner will sign ROE with a tenant order and they can see a fiber design. Assigned to FF sales."}, {"name": "5103 LEAVENWORTH ST OMAHA NE", "city": "OMAHA", "state": "NE", "units": 1, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/6 Melissa Baker working w/ FF to see if they can reach out to Tenants / 3/5 SPk to Justin / ROE to Justin Hynek  / Notifed FF team to go market the property for Serv.Orders\nJustinhynek@gmail.com - Said he would sign ROE if we get a service order. \n3/4 Investors Realty said we would have to contact"}, {"name": "6201 N 89TH CIR OMAHA NE", "city": "OMAHA", "state": "NE", "units": 1, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/31 LL will sign ROE if we get service order\n3/27 VM/EM to Allen requesting interest or not is signing ROE. \n3/17 VM/EM to Allen Freilich / sent ROE \n3/9 FU EM/ VM to all POC's / FU to proposal \n3/3 EM/VM to Andrew & Holly regarding proposal \n6201-6237 N 89th Cir - Robert Thomas Plaza II - Legal Ad"}, {"name": "6304 N 73RD PLZ OMAHA NE", "city": "OMAHA", "state": "NE", "units": 9, "buildEffort": "Hard", "assignedDate": "2026-04-01", "reAssigned": "Rosemarie Shortino", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "Shopping Plaza", "activeUnits": 0, "reNotes": "Large Parcel w/ several Big Box Stores / 10 different buildings / all included on Parcel ID (PIN) - 2233970007\nColliers is the Market Manager for the property / Dan Smith 402-763-1718\n3/6 Spoke to Dan today, he is fine with signing ROE if we get a tenant service order.  He also said he does not like"}, {"name": "6910 PACIFIC ST OMAHA NE", "city": "OMAHA", "state": "NE", "units": 21, "buildEffort": "Easy", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/11 LL not interested unless we get Service Order / assigned to FF \n3/9 ROE to Katlyn Croft, she will forward to Owner for review/approval. \n3/4 ROE to Kaitlyn - Kaitlyn Croft manages this property- 6910 Pacific St - Overland Wolf\n3/3 EM/ VM to Investor Realty Agent / Proposal sent \n2/26/ RMS spk w"}, {"name": "7010 N 97TH CIR OMAHA NE", "city": "OMAHA", "state": "NE", "units": 9, "buildEffort": "Easy", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/24 Howard Hahn stated HE MIGHT SIGN ROE if he gets a order \n3/18 VM to Howard \n3/17 VM/EM to Howard / no response. \n3/9  EM to Howard Hahn / Shannon does not manage this building / trying Lake Resources LLC \n3/6 LMTCB w Shannon \n3/3 EM to Shannon at REBC regarding proposal "}, {"name": "1121 SOUTHEAST PKWY AZLE TX", "city": "AZLE", "state": "TX", "units": 1, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/30 Spoke to owner they just paved their parking lot and do not want any new trenching work.  Sending to FF to try and get tenant service order first.  Need to find alternative solution to trenching."}, {"name": "1208 S FM 51 DECATUR TX", "city": "DECATUR", "state": "TX", "units": 14, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "Strip Mall", "activeUnits": 0, "reNotes": "3/25:  Owner prefers to have site walk / service order first before signing ROE. Assigning to FF. Decatur Plaza"}, {"name": "2301 S FM 51 DECATUR TX", "city": "DECATUR", "state": "TX", "units": 10, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "Medical", "activeUnits": 0, "reNotes": "3/31Prefer tenant service order first before doing ROE.  The Corner at Center Creek"}, {"name": "5250 N TARRANT PKWY FORT WORTH TX", "city": "FORT WORTH", "state": "TX", "units": 10, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "Strip Mall", "activeUnits": 0, "reNotes": "3/25 LL wants to know which tenant  ordered service, and how we  will be installing  &\n what we need to do to the the property for installation. \n3/24 ROE to LL/ LMTCB Hunter Hayes\nSohigh Village"}, {"name": "1911 N AUSTIN AVE GEORGETOWN TX", "city": "GEORGETOWN", "state": "TX", "units": 18, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "Business Park", "activeUnits": 0, "reNotes": "3/23 Spoke to Catherine, owner wont sign an ROE unless there is service order first from tenant.  Owner is willing to do so after."}, {"name": "2701 FM 1460 GEORGETOWN TX", "city": "GEORGETOWN", "state": "TX", "units": 12, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/26: LM /  Self Storage Facility only one tenant"}, {"name": "108 E FM 2410 RD HARKER HEIGHTS TX", "city": "HARKER HEIGHTS", "state": "TX", "units": 15, "buildEffort": "Easy", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "Strip Mall", "activeUnits": 0, "reNotes": "3/23 Landlord needs to have service order from tenant before agreeing to ROE.  Cheyanne Center"}, {"name": "750 S MAIN ST KELLER TX", "city": "KELLER", "state": "TX", "units": 13, "buildEffort": "Easy", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "Strip Mall", "activeUnits": 0, "reNotes": "3/25 Connie Allen responded ROE's signed only with Service Order \n3/24 LMTCB w/ LL & EM proposal sent\nBear Creek Plaza"}, {"name": "900 S MAIN ST KELLER TX", "city": "KELLER", "state": "TX", "units": 11, "buildEffort": "Easy", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "RS", "roeStatus": "", "propertyStatus": "", "propertyType": "Strip Mall", "activeUnits": 0, "reNotes": "3/25 Connie Allen responded ROE's signed only with a Service Order \n3/24 LMTCB w/LL & proposal sent\n900 S Main St - Building A, Phase I\nBear Creek Plaza"}, {"name": "102 GARRETT MORRIS PKWY MINERAL WELLS TX", "city": "MINERAL WELLS", "state": "TX", "units": 1, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/26 Spoke to Nathan.  He would be willing to sign ROE once there is tenant service orders.  The Crossing "}, {"name": "6402 RUFE SNOW DR N RICHLAND HILLS TX", "city": "N RICHLAND HILLS", "state": "TX", "units": 1, "buildEffort": "Hard", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "", "activeUnits": 0, "reNotes": "3/30 LM for Mason / Vista no longer manages the property"}, {"name": "410 W 7TH ST TAYLOR TX", "city": "TAYLOR", "state": "TX", "units": 27, "buildEffort": "Medium", "assignedDate": "2026-04-01", "reAssigned": "", "reInitials": "JB", "roeStatus": "", "propertyStatus": "", "propertyType": "Shopping Plaza", "activeUnits": 0, "reNotes": "3/25 Spoke to Clifton.  This property provides internet for free to tenants and he would want to get tenant service order before signing ROE.  Assigned to FF to sell to tenants first before ROE> 3/24 LM for PM.  Shops at Old Taylor High"}];
+var currentState = "all";
+var currentEffort = "all";
+var currentSearch = "";
+
+function renderTable() {
+    var filtered = DATA.filter(function(d) {
+        if (currentState !== "all" && d.state !== currentState) return false;
+        if (currentEffort !== "all" && d.buildEffort !== currentEffort) return false;
+        if (currentSearch) {
+            var s = currentSearch.toLowerCase();
+            var hay = (d.name + d.city + d.state + d.reInitials + d.reNotes + d.propertyType).toLowerCase();
+            if (hay.indexOf(s) === -1) return false;
+        }
+        return true;
+    });
+    var tbody = document.getElementById("tableBody");
+    tbody.innerHTML = "";
+    for (var i = 0; i < filtered.length; i++) {
+        var d = filtered[i];
+        var tr = document.createElement("tr");
+        tr.innerHTML =
+            "<td>" + d.name + "</td>" +
+            "<td>" + d.city + "</td>" +
+            "<td>" + d.state + "</td>" +
+            "<td style='text-align:right'>" + d.units + "</td>" +
+            "<td><span class='effort-badge effort-" + d.buildEffort + "'>" + d.buildEffort + "</span></td>" +
+            "<td>" + (d.reInitials || "") + "</td>" +
+            "<td>" + (d.propertyType || "") + "</td>" +
+            "<td class='notes-cell'>" + (d.reNotes || "") + "</td>";
+        tbody.appendChild(tr);
+    }
+    var totalUnits = filtered.reduce(function(s, d) { return s + d.units; }, 0);
+    document.getElementById("rowCount").textContent =
+        "Showing " + filtered.length + " of " + DATA.length + " properties (" + totalUnits + " units)";
+}
+
+function filterState(s) {
+    currentState = s;
+    document.querySelectorAll(".slicer-row .slicer-btn").forEach(function(b) {
+        if (b.getAttribute("onclick") && b.getAttribute("onclick").indexOf("filterState") !== -1) {
+            b.classList.remove("active");
+            if ((s === "all" && b.textContent === "All") || b.textContent === s) b.classList.add("active");
+        }
+    });
+    renderTable();
+}
+
+function filterEffort(e) {
+    currentEffort = e;
+    document.querySelectorAll(".slicer-row .slicer-btn").forEach(function(b) {
+        if (b.getAttribute("onclick") && b.getAttribute("onclick").indexOf("filterEffort") !== -1) {
+            b.classList.remove("active");
+            if ((e === "all" && b.textContent === "All") || b.textContent === e) b.classList.add("active");
+        }
+    });
+    renderTable();
+}
+
+function searchTable(val) { currentSearch = val; renderTable(); }
+
+var sortDir = {};
+function sortTable(col) {
+    sortDir[col] = !sortDir[col];
+    var keys = ["name","city","state","units","buildEffort","reInitials","propertyType","reNotes"];
+    var key = keys[col];
+    var dir = sortDir[col] ? 1 : -1;
+    DATA.sort(function(a, b) {
+        var va = a[key] || "";
+        var vb = b[key] || "";
+        if (typeof va === "number") return (va - vb) * dir;
+        return va.toString().localeCompare(vb.toString()) * dir;
+    });
+    renderTable();
+}
+
+renderTable();
+</script>
+</body>
+</html>

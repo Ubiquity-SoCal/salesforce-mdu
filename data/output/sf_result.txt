@@ -1,0 +1,157 @@
+====================================================================================================
+AGREEMENT LOOKUP FOR 8 TARGET PROPERTIES  (main Salesforce org)
+====================================================================================================
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Del Mar Beach Club  (137 S Shore, Solana Beach)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 1
+    • Del Mar Beach Club  [MDU]
+      Stage: ROE Secured | Units: 198.0 | Cat: Cat 1 | Franchise: In-Franchise
+      Addr: 137 S SHORE DR SOLANA BEACH CA 92075, Solana Beach, CA 92075
+      Agreement_Name__c: Solana Beach_MDU_Del Mar Beach Club | In_SiteTracker: True | Owner: Justin Barry
+      Agreements (1):
+        · AGR-1427     | ROE  | Status: Completed  | Signed: unsigned    
+      SiteTracker Projects (1):
+        · P-006836 | Solana Beach_MDU_Del Mar Beach Club | Build: 4. Project - Completed | Site: In Service
+          PAL signed: None | Act A: 2024-06-03 | Act F: None | Units: 198.0
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Del Mar Shores Terrace  (180 Del Mar Shores, Solana Beach)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 1
+    • 180 DEL MAR SHORES TER SOLANA BEACH CA — Del Mar Shores Terrace
+      City: SOLANA BEACH, CA | Status: None | Type: Mixed Use
+      Units total: 1.0 / active: 1.0 | FDH: CA_SOLANA BEACH_SA01_FDH08 | Circuit: CA1001-008000030B
+      ROE Status: None | ROE Executed: False | AAA Req: False
+
+  [2] Opportunity matches: 1
+    • Del Mar Shores Terrace  [MDU]
+      Stage: ROE Secured | Units: 90.0 | Cat: Cat 2 | Franchise: In-Franchise
+      Addr: 190 Del Mar Shores Terrace, Solana Beach, CA, USA, Solana Beach, CA 92075
+      Agreement_Name__c: Solana Beach_MDU_Del Mar Shores Terrace | In_SiteTracker: True | Owner: Justin Barry
+      Agreements (1):
+        · AGR-1428     | ROE  | Status: Completed  | Signed: unsigned    
+      SiteTracker Projects (1):
+        · P-006842 | Solana Beach_MDU_Del Mar Shores Terrace | Build: 4. Project - Completed | Site: In Service
+          PAL signed: None | Act A: 2024-06-03 | Act F: None | Units: 90.0
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Las Brisas  (135 S Sierra, Solana Beach)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 1
+    • Las Brisas  [MDU]
+      Stage: ROE Secured | Units: 35.0 | Cat: Cat 2 | Franchise: In-Franchise
+      Addr: 135 South Sierra Avenue, Solana Beach, CA, USA, Solana Beach, CA 92075
+      Agreement_Name__c: Solana Beach_MDU_Las Brisas | In_SiteTracker: True | Owner: Justin Barry
+      Agreements (1):
+        · AGR-1429     | ROE  | Status: Completed  | Signed: unsigned    
+      SiteTracker Projects (1):
+        · P-006843 | Solana Beach_MDU_Las Brisas | Build: 4. Project - Completed | Site: In Service
+          PAL signed: None | Act A: 2024-06-03 | Act F: None | Units: 38.0
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Seascape Chateau  (707 S Sierra, Solana Beach)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 1
+    • Solana Beach_MDU_Seascape Chateau  [MDU]
+      Stage: ROE Secured | Units: 31.0 | Cat: Cat 1 | Franchise: In-Franchise
+      Addr: None, Solana Beach, CA 92075
+      Agreement_Name__c: Solana Beach_MDU_Seascape Chateau | In_SiteTracker: False | Owner: Justin Barry
+      Agreements (1):
+        · AGR-1430     | ROE  | Status: Completed  | Signed: unsigned    
+      SiteTracker Projects (1):
+        · P-006844 | Solana Beach_MDU_Seascape Chateau | Build: 4. Project - Completed | Site: In Service
+          PAL signed: None | Act A: 2024-06-03 | Act F: None | Units: 31.0
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Seascape Shores Condos  (325 S Sierra, Solana Beach)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 1
+    • Solana Beach_MDU_Seascape Shores Condos  [MDU]
+      Stage: ROE Secured | Units: 52.0 | Cat: Cat 1 | Franchise: In-Franchise
+      Addr: None, Solana Beach, CA 92075
+      Agreement_Name__c: Solana Beach_MDU_Seascape Shores Condos | In_SiteTracker: False | Owner: Justin Barry
+      Agreements (1):
+        · AGR-1431     | ROE  | Status: Completed  | Signed: unsigned    
+      SiteTracker Projects (1):
+        · P-006845 | Solana Beach_MDU_Seascape Shores Condos | Build: 4. Project - Completed | Site: In Service
+          PAL signed: None | Act A: 2024-06-03 | Act F: None | Units: 52.0
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Surfsong Condos  (205 S Helix, Solana Beach)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 2
+    • Solana Beach_MDU_Surfsong Condos  [MDU]
+      Stage: ROE Secured | Units: 74.0 | Cat: Cat 1 | Franchise: In-Franchise
+      Addr: None, Solana Beach, CA 92075
+      Agreement_Name__c: Solana Beach_MDU_Surfsong Condos | In_SiteTracker: False | Owner: Justin Barry
+      Agreements (1):
+        · AGR-1433     | ROE  | Status: Completed  | Signed: unsigned    
+      SiteTracker Projects (1):
+        · P-006847 | Solana Beach_MDU_Surfsong Condos | Build: 4. Project - Completed | Site: In Service
+          PAL signed: None | Act A: 2024-06-03 | Act F: None | Units: 74.0
+    • Surfsong  [MDU]
+      Stage: Prospecting | Units: None | Cat: None | Franchise: In-Franchise
+      Addr: None, Encinitas, CA 92024
+      Agreement_Name__c: None | In_SiteTracker: False | Owner: Justin Barry
+      Agreements (0):
+        (no agreements)
+      SiteTracker Projects (0):
+        (no ST projects)
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Oceanic Drive  (1145 Oceanic, Encinitas)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 1
+    • Oceanic Drive  [MDU]
+      Stage: ROE Secured | Units: 28.0 | Cat: Cat 1 | Franchise: In-Franchise
+      Addr: 1145 Oceanic Drive, Encinitas, CA 92024
+      Agreement_Name__c: None | In_SiteTracker: False | Owner: Justin Barry
+      Agreements (3):
+        · AGR-1402     | PAL  | Status: Completed  | Signed: 2024-12-31  
+        · AGR-1422     | ROE  | Status: Completed  | Signed: 2024-12-31  
+        · AGR-1451     | ROE  | Status: Completed  | Signed: 2024-10-31   | IC: IC-3291 (active)
+      SiteTracker Projects (0):
+        (no ST projects)
+
+████████████████████████████████████████████████████████████████████████████████████████████████████
+▶ Portico At Rancho Carrillo  (6471 Terraza Portico, Carlsbad)
+████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  [1] Property_Location__c matches: 0
+
+  [2] Opportunity matches: 1
+    • Portico At Rancho Carrillo HOA  [MDU]
+      Stage: ROE Secured | Units: 105.0 | Cat: Cat 2 | Franchise: In-Franchise
+      Addr: 6471 Terraza Portico, Carlsbad, CA 92009
+      Agreement_Name__c: None | In_SiteTracker: False | Owner: Justin Barry
+      Agreements (3):
+        · AGR-1391     | PAL  | Status: Completed  | Signed: 2024-01-26  
+        · AGR-1424     | ROE  | Status: Completed  | Signed: 2024-01-26  
+        · AGR-1445     | ROE  | Status: Completed  | Signed: 2023-12-22   | IC: IC-3283 (active)
+      SiteTracker Projects (0):
+        (no ST projects)
+
+====================================================================================================
+DONE
+====================================================================================================

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Status__c</fullName>
+    <description>Where we are in early-pipeline outreach. Use during Prospects, Prospecting, and Engaged stages.</description>
+    <inlineHelpText>What's the current sales activity on this Opp? Update as outreach progresses (e.g. Reached Out -> Research Completed). Used during Prospecting and Engaged stages.</inlineHelpText>
+    <label>Sales Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contact Pending</fullName>
+                <default>false</default>
+                <label>Contact Pending</label>
+            </value>
+            <value>
+                <fullName>Reached Out - Pending Response</fullName>
+                <default>false</default>
+                <label>Reached Out - Pending Response</label>
+            </value>
+            <value>
+                <fullName>Research Completed</fullName>
+                <default>false</default>
+                <label>Research Completed</label>
+            </value>
+            <value>
+                <fullName>FF Sales - Tenant Interest Required</fullName>
+                <default>false</default>
+                <label>FF Sales - Tenant Interest Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

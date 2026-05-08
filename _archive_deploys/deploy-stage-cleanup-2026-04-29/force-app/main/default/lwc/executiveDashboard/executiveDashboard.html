@@ -1,0 +1,390 @@
+<template>
+    <div class="exec-dashboard">
+        <!-- Loading -->
+        <template lwc:if={isLoading}>
+            <div class="loading-container">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+
+        <!-- Error -->
+        <template lwc:if={error}>
+            <div class="error-banner">{error}</div>
+        </template>
+
+        <template lwc:if={hasData}>
+            <!-- Header -->
+            <div class="exec-header">
+                <h1>MDU Executive Summary</h1>
+                <button class="refresh-btn" onclick={handleRefresh} title="Refresh">
+                    <lightning-icon icon-name="utility:refresh" size="x-small"></lightning-icon>
+                </button>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="summary-cards">
+                <div class="summary-card pipeline">
+                    <div class="card-value">{data.totalPipeline}</div>
+                    <div class="card-label">Active Pipeline</div>
+                </div>
+                <div class="summary-card completed">
+                    <div class="card-value">{data.totalCompleted}</div>
+                    <div class="card-label">Completed</div>
+                </div>
+                <div class="summary-card signed">
+                    <div class="card-value">{data.totalSignedYTD}</div>
+                    <div class="card-label">Agreements Signed {currentYear}</div>
+                </div>
+                <template lwc:if={hasPastDue}>
+                    <div class="summary-card past-due">
+                        <div class="card-value">{data.pastDueCount}</div>
+                        <div class="card-label">Past Due (all lanes)</div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Middle Section: Funnel + Monthly -->
+            <div class="middle-section">
+                <!-- Real SVG Funnel -->
+                <div class="panel funnel-panel">
+                    <h2>Sales Pipeline Funnel</h2>
+                    <div class="funnel-svg-wrap">
+                        <svg viewBox={funnelViewBox} class="funnel-svg" preserveAspectRatio="xMidYMid meet">
+                            <template for:each={funnelSegments} for:item="seg">
+                                <g key={seg.key} class="funnel-seg">
+                                    <polygon points={seg.points} fill={seg.fill}></polygon>
+                                    <text x={seg.labelX} y={seg.stageLabelY} text-anchor="middle"
+                                          class="funnel-stage-label">{seg.stage}</text>
+                                    <text x={seg.labelX} y={seg.countLabelY} text-anchor="middle"
+                                          class="funnel-count-label">{seg.unitText}</text>
+                                </g>
+                            </template>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Monthly Agreements -->
+                <div class="panel monthly-panel">
+                    <h2>Agreements Signed {currentYear}</h2>
+                    <div class="monthly-container">
+                        <template for:each={monthlyBars} for:item="bar">
+                            <div key={bar.key} class="monthly-row">
+                                <span class="month-label">{bar.monthName}</span>
+                                <div class="monthly-bar-wrapper">
+                                    <div class="monthly-fill" style={bar.barStyle}></div>
+                                </div>
+                                <span class="month-count">{bar.count}</span>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three-Lane Forecasts -->
+            <div class="lanes-grid">
+                <!-- PAL / Inside Sales (Brett) -->
+                <div class="lane-panel">
+                    <div class="lane-header">
+                        <h2>{palLane.title}</h2>
+                        <div class="lane-subtitle">{palLane.subtitle}</div>
+                    </div>
+                    <div class="lane-buckets">
+                        <div class="bucket past-due-bucket">
+                            <div class="bucket-count">{palLane.pastDueCount}</div>
+                            <div class="bucket-units">{palLane.pastDueUnits} units</div>
+                            <div class="bucket-label">Past Due</div>
+                        </div>
+                        <div class="bucket next90-bucket">
+                            <div class="bucket-count">{palLane.next90Count}</div>
+                            <div class="bucket-units">{palLane.next90Units} units</div>
+                            <div class="bucket-label">Next 90 Days</div>
+                        </div>
+                        <div class="bucket over90-bucket">
+                            <div class="bucket-count">{palLane.over90Count}</div>
+                            <div class="bucket-units">{palLane.over90Units} units</div>
+                            <div class="bucket-label">90+ Days</div>
+                        </div>
+                    </div>
+                    <template lwc:if={palLane.isEmpty}>
+                        <div class="empty-state lane-empty">No forecasted opportunities</div>
+                    </template>
+                </div>
+
+                <!-- EMA/Bulk (Melissa) -->
+                <div class="lane-panel">
+                    <div class="lane-header">
+                        <h2>{emaBulkLane.title}</h2>
+                        <div class="lane-subtitle">{emaBulkLane.subtitle}</div>
+                    </div>
+                    <div class="lane-buckets">
+                        <div class="bucket past-due-bucket">
+                            <div class="bucket-count">{emaBulkLane.pastDueCount}</div>
+                            <div class="bucket-units">{emaBulkLane.pastDueUnits} units</div>
+                            <div class="bucket-label">Past Due</div>
+                        </div>
+                        <div class="bucket next90-bucket">
+                            <div class="bucket-count">{emaBulkLane.next90Count}</div>
+                            <div class="bucket-units">{emaBulkLane.next90Units} units</div>
+                            <div class="bucket-label">Next 90 Days</div>
+                        </div>
+                        <div class="bucket over90-bucket">
+                            <div class="bucket-count">{emaBulkLane.over90Count}</div>
+                            <div class="bucket-units">{emaBulkLane.over90Units} units</div>
+                            <div class="bucket-label">90+ Days</div>
+                        </div>
+                    </div>
+                    <template lwc:if={emaBulkLane.isEmpty}>
+                        <div class="empty-state lane-empty">No forecasted opportunities</div>
+                    </template>
+                </div>
+
+                <!-- SAQ / Site Acquisition (Bill) -->
+                <div class="lane-panel">
+                    <div class="lane-header">
+                        <h2>{saqLane.title}</h2>
+                        <div class="lane-subtitle">{saqLane.subtitle}</div>
+                    </div>
+                    <div class="lane-buckets">
+                        <div class="bucket past-due-bucket">
+                            <div class="bucket-count">{saqLane.pastDueCount}</div>
+                            <div class="bucket-units">{saqLane.pastDueUnits} units</div>
+                            <div class="bucket-label">Past Due</div>
+                        </div>
+                        <div class="bucket next90-bucket">
+                            <div class="bucket-count">{saqLane.next90Count}</div>
+                            <div class="bucket-units">{saqLane.next90Units} units</div>
+                            <div class="bucket-label">Next 90 Days</div>
+                        </div>
+                        <div class="bucket over90-bucket">
+                            <div class="bucket-count">{saqLane.over90Count}</div>
+                            <div class="bucket-units">{saqLane.over90Units} units</div>
+                            <div class="bucket-label">90+ Days</div>
+                        </div>
+                    </div>
+                    <template lwc:if={saqLane.isEmpty}>
+                        <div class="empty-state lane-empty">No forecasted opportunities</div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Detailed lane rows: PAL -->
+            <template lwc:if={palLane.hasPastDue}>
+                <div class="panel detail-panel past-due-panel">
+                    <h2 class="past-due-header">PAL — Past Due ({palLane.pastDueCount})</h2>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Projected Close</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={palLane.pastDueRows} for:item="row">
+                                <tr key={row.id} class="past-due-row">
+                                    <td><a href={row.url}>{row.name}</a></td>
+                                    <td>{row.accountName}</td>
+                                    <td>{row.stage}</td>
+                                    <td>{row.formattedDate}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <template lwc:if={palLane.hasNext90}>
+                <div class="panel detail-panel">
+                    <h2>PAL — Closing Next 90 Days ({palLane.next90Count})</h2>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Projected Close</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={palLane.next90Rows} for:item="row">
+                                <tr key={row.id}>
+                                    <td><a href={row.url}>{row.name}</a></td>
+                                    <td>{row.accountName}</td>
+                                    <td>{row.stage}</td>
+                                    <td>{row.formattedDate}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <!-- Detailed lane rows: EMA/Bulk -->
+            <template lwc:if={emaBulkLane.hasPastDue}>
+                <div class="panel detail-panel past-due-panel">
+                    <h2 class="past-due-header">EMA/Bulk — Past Due ({emaBulkLane.pastDueCount})</h2>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Projected Close</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={emaBulkLane.pastDueRows} for:item="row">
+                                <tr key={row.id} class="past-due-row">
+                                    <td><a href={row.url}>{row.name}</a></td>
+                                    <td>{row.accountName}</td>
+                                    <td>{row.stage}</td>
+                                    <td>{row.formattedDate}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <template lwc:if={emaBulkLane.hasNext90}>
+                <div class="panel detail-panel">
+                    <h2>EMA/Bulk — Closing Next 90 Days ({emaBulkLane.next90Count})</h2>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Projected Close</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={emaBulkLane.next90Rows} for:item="row">
+                                <tr key={row.id}>
+                                    <td><a href={row.url}>{row.name}</a></td>
+                                    <td>{row.accountName}</td>
+                                    <td>{row.stage}</td>
+                                    <td>{row.formattedDate}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <!-- Detailed lane rows: SAQ -->
+            <template lwc:if={saqLane.hasPastDue}>
+                <div class="panel detail-panel past-due-panel">
+                    <h2 class="past-due-header">SAQ — Past Due ({saqLane.pastDueCount})</h2>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Projected Close</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={saqLane.pastDueRows} for:item="row">
+                                <tr key={row.id} class="past-due-row">
+                                    <td><a href={row.url}>{row.name}</a></td>
+                                    <td>{row.accountName}</td>
+                                    <td>{row.stage}</td>
+                                    <td>{row.formattedDate}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <template lwc:if={saqLane.hasNext90}>
+                <div class="panel detail-panel">
+                    <h2>SAQ — Closing Next 90 Days ({saqLane.next90Count})</h2>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Projected Close</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={saqLane.next90Rows} for:item="row">
+                                <tr key={row.id}>
+                                    <td><a href={row.url}>{row.name}</a></td>
+                                    <td>{row.accountName}</td>
+                                    <td>{row.stage}</td>
+                                    <td>{row.formattedDate}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+
+            <!-- In-Progress SiteTracker Projects -->
+            <div class="panel detail-panel">
+                <h2>In-Progress Build Projects ({data.inProgressSiteTrackerCount})</h2>
+                <template lwc:if={hasInProgressSiteTrackers}>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>Opportunity</th>
+                                <th>SiteTracker Project</th>
+                                <th>Build Status</th>
+                                <th>Activation Forecast</th>
+                                <th>State</th>
+                                <th>Units</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={inProgressSiteTrackerRows} for:item="row">
+                                <tr key={row.id}>
+                                    <td><a href={row.oppUrl}>{row.oppName}</a></td>
+                                    <td><a href={row.stUrl}>{row.name}</a></td>
+                                    <td>{row.buildStatus}</td>
+                                    <td>{row.formattedActivation}</td>
+                                    <td>{row.state}</td>
+                                    <td>{row.units}</td>
+                                    <td>{row.ownerName}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+                <template lwc:else>
+                    <div class="empty-state">No build projects currently in progress</div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

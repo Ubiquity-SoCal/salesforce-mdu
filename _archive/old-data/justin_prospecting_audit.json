@@ -1,0 +1,693 @@
+{
+  "jb_id": "005WR0000030RCzYAM",
+  "stage_counts": {
+    "Prospecting": 84,
+    "Prospects": 39,
+    "PAL/ROE Complete": 38,
+    "Closed Lost": 20,
+    "Engaged": 8,
+    "EMA/Bulk Complete": 2,
+    "EMA/Bulk In Progress": 1,
+    "On Hold": 1
+  },
+  "prospecting_total": 84,
+  "classification_counts": {
+    "has_real_2026_note": 84,
+    "has_close_date": 0,
+    "only_bulk_notes": 0,
+    "no_notes_no_date": 0
+  },
+  "all_note_date_histogram": {
+    "2026-04-07": 86,
+    "2026-04-21": 73,
+    "2026-03-24": 78
+  },
+  "opps_with_real_2026": [
+    {
+      "Id": "006WR00000ywTa9YAE",
+      "Name": "127 W Glaucus St - A",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTWvYAM",
+      "Name": "127 W. Glaucus",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTdNYAU",
+      "Name": "225 S. Hwy 101 , 17",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvU0RYAU",
+      "Name": "3152 Levante",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvVsYYAU",
+      "Name": "3156 Levante",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTblYAE",
+      "Name": "437 S Highway 101, 101-110",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywCuIYAU",
+      "Name": "53 Melrose Promenade HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTGnYAM",
+      "Name": "674 Via De La Valle",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywScTYAU",
+      "Name": "Alga Hills HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yv47cYAA",
+      "Name": "Alicante Hills HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yuqW4YAI",
+      "Name": "Beach Street Encinitas",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yueI2YAI",
+      "Name": "Calypso Legends Heritage",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvz12YAA",
+      "Name": "Cambria HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yv6m8YAA",
+      "Name": "Camino Cabrillo Pvt Road",
+      "real_dates": [
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yutSHYAY",
+      "Name": "Cardiff Park",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yutvPYAQ",
+      "Name": "Cardiff Park HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywOYtYAM",
+      "Name": "Carlsbad Arroyo Vista HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvvYXYAY",
+      "Name": "Carlsbad Surfside HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywG8IYAU",
+      "Name": "Casitas De La Costa HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvv0eYAA",
+      "Name": "Coral Cove HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wk3OAYAY",
+      "Name": "El Camino 76 Mobile Estates",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yuj1ZYAQ",
+      "Name": "Emerald Lake Village HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywT8jYAE",
+      "Name": "Emerald Point HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywCPfYAM",
+      "Name": "Encinitas Corporate Center",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yw4jqYAA",
+      "Name": "Encinitas Town and Country Plaza",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvMMIYA2",
+      "Name": "Fairways HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywLuMYAU",
+      "Name": "Flair Encinitas HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yvINSYA2",
+      "Name": "Forrest Bluff Terraces HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR0000112fikYAA",
+      "Name": "Fox Point",
+      "real_dates": [
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wk9UuYAI",
+      "Name": "Fox Point Farms",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yv7YaYAI",
+      "Name": "FoxtailLoop",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTIPYA2",
+      "Name": "Haidenger Center",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvxP0YAI",
+      "Name": "Hillside Patio Pvt Road",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yvnHbYAI",
+      "Name": "Hilltop Trailer Park",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywBdGYAU",
+      "Name": "La Costa Altezza HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSXdYAM",
+      "Name": "La Costa Greens HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yw3HWYAY",
+      "Name": "La Costa Oaks South HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSkXYAU",
+      "Name": "La Costa Ridge1 HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSe5YAE",
+      "Name": "La Costa Ridge2 HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywQveYAE",
+      "Name": "La Costa Town Square",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yw9QBYAY",
+      "Name": "Mendocino HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yuxKdYAI",
+      "Name": "Mission Del Oro HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wjnm6YAA",
+      "Name": "Mission View Manor West",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wk9UkYAI",
+      "Name": "Monarch Villas",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yvoqPYAQ",
+      "Name": "Monte Mira HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yuYsYYAU",
+      "Name": "Montego Village HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000wkA7PYAU",
+      "Name": "Ocean Hills Country Club HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywN6YYAU",
+      "Name": "On The Park HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywT77YAE",
+      "Name": "Pacifica HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yuOtDYAU",
+      "Name": "Pacifica Leucadia HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wk9ZcYAI",
+      "Name": "Park Place Bluffs",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ytiKQYAY",
+      "Name": "Pelican Ridge",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yv9vJYAQ",
+      "Name": "Promenade HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTThYAM",
+      "Name": "Quail Gardens",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yutTtYAI",
+      "Name": "Quentin Court",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yv0X4YAI",
+      "Name": "Rancho Hermosa HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywIQEYA2",
+      "Name": "Rancho Montecito",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000wkCjHYAU",
+      "Name": "Rancho San Luis Rey 55+",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTALYA2",
+      "Name": "Rancho Santalina HOA",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvLI6YAM",
+      "Name": "Riviera Mobile Homes",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSNxYAM",
+      "Name": "San Pacifico HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR000011367rYAA",
+      "Name": "Sand Piper Point",
+      "real_dates": [
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSqzYAE",
+      "Name": "Sandalwood HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvvAJYAY",
+      "Name": "Santa Fe Trails HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSpNYAU",
+      "Name": "Seabluffe Villages HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTLdYAM",
+      "Name": "Seagate Terrace",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywF4AYAU",
+      "Name": "Seapoint Tennis Club",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yw9YHYAY",
+      "Name": "Seaside Highlannds HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSnlYAE",
+      "Name": "Seaside Ridge HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywBJuYAM",
+      "Name": "Shady Hollow Pvt Road",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yvdF2YAI",
+      "Name": "Shamrock Mobile Estates",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvQkpYAE",
+      "Name": "Sky Loft HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yw26xYAA",
+      "Name": "The Nest at La Costa",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSsbYAE",
+      "Name": "The Summit HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000yvxthYAA",
+      "Name": "Tiki Village HOA",
+      "real_dates": [
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000yvSJdYAM",
+      "Name": "Traditions At La Costa HOA",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ytrE5YAI",
+      "Name": "Trailer Rancho Mobile",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wkA6MYAU",
+      "Name": "Trico Mobile Estates",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywTS5YAM",
+      "Name": "Valley of Dreams Mobile Village",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSarYAE",
+      "Name": "Via Casa Del Sol HOA",
+      "real_dates": [
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywKINYA2",
+      "Name": "Villa Trieste HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000ywSPbYAM",
+      "Name": "Village Park Manor",
+      "real_dates": [
+        "2026-04-21",
+        "2026-04-07"
+      ]
+    },
+    {
+      "Id": "006WR00000ywB2AYAU",
+      "Name": "Villas De La Costa HOA",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    },
+    {
+      "Id": "006WR00000wk9UrYAI",
+      "Name": "West Hampton Cove",
+      "real_dates": [
+        "2026-04-07",
+        "2026-04-21"
+      ]
+    }
+  ],
+  "opps_only_bulk": [],
+  "opps_close_only": [],
+  "opps_no_notes_no_date": []
+}

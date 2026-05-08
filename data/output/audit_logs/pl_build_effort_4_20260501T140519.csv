@@ -1,0 +1,9 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+a01WR00000UGWKFYA5,1855 W BASELINE RD MESA AZ,Build_Effort__c,null,Hard,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000UGWKFYA5,1855 W BASELINE RD MESA AZ,User__c,null,005WR0000030R1hYAE,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000YlMXNYA3,320 E 10TH DR MESA AZ,Build_Effort__c,null,Easy,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000YlMXNYA3,320 E 10TH DR MESA AZ,User__c,null,005WR0000030R1hYAE,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000YlMXIYA3,303 E SOUTHERN AVE MESA AZ,Build_Effort__c,null,Hard,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000YlMXIYA3,303 E SOUTHERN AVE MESA AZ,User__c,null,005WR0000030R1hYAE,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000YlMXSYA3,347 E SOUTHERN AVE MESA AZ,Build_Effort__c,null,Hard,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update
+a01WR00000YlMXSYA3,347 E SOUTHERN AVE MESA AZ,User__c,null,005WR0000030R1hYAE,backfill_4pl_build_effort_2026-05-01.py,20260501T140519,update

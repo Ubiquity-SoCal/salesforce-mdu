@@ -1,0 +1,121 @@
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Del Mar Beach Club  —  Opp: Del Mar Beach Club
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (1):
+    • AGR-1427 | ROE | Status: Completed
+      Requested: None | Signed: None | Exp: None
+
+  Attached Files (4):
+    • Jeff Chao - 2024-10-08.snote (64 bytes) — 2026-03-24T17:28:35.000+0000
+    • Jeff Chao - 2024-10-03.snote (68 bytes) — 2026-03-24T17:28:34.000+0000
+    • Jeff Chao - 2024-10-03.snote (70 bytes) — 2026-03-24T17:28:34.000+0000
+    • CA MDU Merge Import 2026-04-21 - Solana Beach_MDU_Del Mar Beach Club.snote (268 bytes) — 2026-04-21T15:57:49.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Del Mar Shores Terrace  —  Opp: Del Mar Shores Terrace
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (1):
+    • AGR-1428 | ROE | Status: Completed
+      Requested: None | Signed: None | Exp: None
+
+  Attached Files (4):
+    • Jeff Chao - 2024-06-12.snote (149 bytes) — 2026-03-24T17:29:17.000+0000
+    • Jeff Chao - 2024-08-21.snote (130 bytes) — 2026-03-24T17:29:18.000+0000
+    • Jeff Chao - 2024-10-08.snote (64 bytes) — 2026-03-24T17:29:19.000+0000
+    • CA MDU Merge Import 2026-04-21 - Solana Beach_MDU_Del Mar Shores Terrace.snote (268 bytes) — 2026-04-21T15:57:51.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Las Brisas  —  Opp: Las Brisas
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (1):
+    • AGR-1429 | ROE | Status: Completed
+      Requested: None | Signed: None | Exp: None
+
+  Attached Files (3):
+    • Jeff Chao - 2025-09-25.snote (42 bytes) — 2026-03-24T17:29:24.000+0000
+    • Jeff Chao - 2024-10-08.snote (64 bytes) — 2026-03-24T17:29:23.000+0000
+    • CA MDU Merge Import 2026-04-21 - Solana Beach_MDU_Las Brisas.snote (268 bytes) — 2026-04-21T15:57:53.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Seascape Chateau  —  Opp: Solana Beach_MDU_Seascape Chateau
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (1):
+    • AGR-1430 | ROE | Status: Completed
+      Requested: None | Signed: None | Exp: None
+
+  Attached Files (1):
+    • CA MDU Merge Import 2026-04-21 - Solana Beach_MDU_Seascape Chateau.snote (268 bytes) — 2026-04-21T15:57:55.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Seascape Shores Condos  —  Opp: Solana Beach_MDU_Seascape Shores Condos
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (1):
+    • AGR-1431 | ROE | Status: Completed
+      Requested: None | Signed: None | Exp: None
+
+  Attached Files (1):
+    • CA MDU Merge Import 2026-04-21 - Solana Beach_MDU_Seascape Shores Condos.snote (268 bytes) — 2026-04-21T15:57:57.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Surfsong Condos  —  Opp: Solana Beach_MDU_Surfsong Condos
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (1):
+    • AGR-1433 | ROE | Status: Completed
+      Requested: None | Signed: None | Exp: None
+
+  Attached Files (1):
+    • CA MDU Merge Import 2026-04-21 - Solana Beach_MDU_Surfsong Condos.snote (268 bytes) — 2026-04-21T15:58:01.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Oceanic Drive  —  Opp: Oceanic Drive
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (3):
+    • AGR-1402 | PAL | Status: Completed
+      Requested: None | Signed: 2024-12-31 | Exp: None
+    • AGR-1422 | ROE | Status: Completed
+      Requested: None | Signed: 2024-12-31 | Exp: None
+    • AGR-1451 | ROE | Status: Completed
+      Requested: None | Signed: 2024-10-31 | Exp: None
+      IronClad: IC-3291 | Stage: None | Status: active
+      URL: None
+      Notes: AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH — approved by Koa)
+IronClad Counterparty: Oceanic Drive-Private Ro
+Matched SF O
+
+  Attached Files (2):
+    • RE Notes - Justin Barry.snote (198 bytes) — 2026-04-07T17:54:16.000+0000
+    • CA MDU Merge Import 2026-04-21 - Oceanic Drive.snote (844 bytes) — 2026-04-21T15:57:36.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+▶ Portico At Rancho Carrillo  —  Opp: Portico At Rancho Carrillo HOA
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Agreements (3):
+    • AGR-1391 | PAL | Status: Completed
+      Requested: None | Signed: 2024-01-26 | Exp: None
+      Notes: PAL signed but rejected per budget
+    • AGR-1424 | ROE | Status: Completed
+      Requested: None | Signed: 2024-01-26 | Exp: None
+    • AGR-1445 | ROE | Status: Completed
+      Requested: None | Signed: 2023-12-22 | Exp: None
+      IronClad: IC-3283 | Stage: None | Status: active
+      URL: None
+      Notes: AUTO-LINKED via IronClad Easement Linker on 2026-04-24.
+Match method: counterparty_name_manual_review  (confidence: HIGH — approved by Koa)
+IronClad Counterparty: PORTICO AT RANCHO CARRILLO HOMEOWNERS
+
+  Attached Files (2):
+    • RE Notes - Justin Barry.snote (149 bytes) — 2026-04-07T17:53:31.000+0000
+    • CA MDU Merge Import 2026-04-21 - Portico At Rancho Carrillo SFU.snote (783 bytes) — 2026-04-21T15:57:40.000+0000
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+DONE

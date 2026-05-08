@@ -1,0 +1,227 @@
+SF_Id,Name,Field,Before,After,TriggeringAgreements,Source,Action,Timestamp
+006WR00000wk1EEYAY,Henderson Terrace Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1179 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666897
+006WR00000wk1EGYAY,Monaghan Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1186 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666925
+006WR00000wk1EHYAY,Boyd South Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1189 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666938
+006WR00000wk1EIYAY,Eagle Ridge Terrace Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1192 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666949
+006WR00000wk1EJYAY,Aspen Ridge,StageName,Under Contract,EMA/Bulk Completed,AGR-1195 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666960
+006WR00000wk1EKYAY,Overlook 380,StageName,Under Contract,EMA/Bulk Completed,AGR-1199 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666970
+006WR00000wk1ELYAY,Arcos De Mesa,StageName,Under Contract,EMA/Bulk Completed,AGR-1203 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666979
+006WR00000wk1EMYAY,Hunters Pointe (Mesa),StageName,Under Contract,EMA/Bulk Completed,AGR-1207 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.666989
+006WR00000wk1ENYAY,Valencia Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1210 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667006
+006WR00000wk1EOYAY,Midwest Patio Home Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1214 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667016
+006WR00000wk1EPYAY,Big Sky Patio Home Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1218 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667026
+006WR00000wk1EQYAY,Hitt Road Patio Home Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1222 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667037
+006WR00000wk1ESYAY,Willow Creek,StageName,Under Contract,EMA/Bulk Completed,AGR-1229 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667047
+006WR00000wk1ETYAY,Centennial Patio Home Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1233 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667056
+006WR00000wk1EUYAY,Parkway Plaza,StageName,Under Contract,EMA/Bulk Completed,AGR-1237 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667066
+006WR00000wk1EVYAY,The Reserve,StageName,Under Contract,EMA/Bulk Completed,AGR-1241 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667076
+006WR00000wk1EWYAY,Ladera Townhouse,StageName,Under Contract,EMA/Bulk Completed,AGR-1245 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667089
+006WR00000wk1EXYAY,Crestview Place Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1249 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667099
+006WR00000wk1EYYAY,Cielo Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1252 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667108
+006WR00000wk1EZYAY,The Overlook at Thornton,StageName,Under Contract,EMA/Bulk Completed,AGR-1256 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667118
+006WR00000wk1EaYAI,Southgate Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1260 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667128
+006WR00000wk1EbYAI,Valley View Estates,StageName,Under Contract,EMA/Bulk Completed,AGR-1264 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667137
+006WR00000wk1EdYAI,Cougar Creek Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1270 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667147
+006WR00000wk1EeYAI,The Sterling Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1274 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667157
+006WR00000wk1EfYAI,Navajo Hills,StageName,Under Contract,EMA/Bulk Completed,AGR-1278 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667167
+006WR00000wk1EgYAI,Sun Valley Ranch Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1282 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667176
+006WR00000wk1EhYAI,Tallgrass Village,StageName,Under Contract,EMA/Bulk Completed,AGR-1286 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667186
+006WR00000wk1EiYAI,Yavapai Hills Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1288 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667196
+006WR00000wk1EjYAI,The Renaissance at Stoney Creek,StageName,Under Contract,EMA/Bulk Completed,AGR-1292 EMA (Archive),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667207
+006WR00000wk1EkYAI,Cielo on 5th (f/k/a Equinox on 5th),StageName,Under Contract,EMA/Bulk Completed,AGR-1295 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667216
+006WR00000wk1ElYAI,The Bluffs of Brookside,StageName,Under Contract,EMA/Bulk Completed,AGR-1299 EMA (Archive),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667226
+006WR00000wk1EmYAI,Bay Colony Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1302 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667239
+006WR00000wk1EnYAI,Hallcraft Villas Mesa 1,StageName,Under Contract,EMA/Bulk Completed,AGR-1305 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667249
+006WR00000wk1EoYAI,Villa Pacifica Apartments - Tucson,StageName,Under Contract,EMA/Bulk Completed,AGR-1308 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667258
+006WR00000wk1EpYAI,Linea Stillwater,StageName,Under Contract,EMA/Bulk Completed,AGR-1312 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667268
+006WR00000wkDu6YAE,500 NE 70th,StageName,Under Contract,EMA/Bulk Completed,AGR-0539 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667277
+006WR00000wkDuPYAU,7000 Roosevelt Way Apt,StageName,Under Contract,EMA/Bulk Completed,AGR-0564 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667287
+006WR00000wkDuRYAU,7101 Roosevelt Way Apt,StageName,Under Contract,EMA/Bulk Completed,AGR-0567 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667297
+006WR00000wkDuSYAU,The Fifth Avenue,StageName,Under Contract,EMA/Bulk Completed,AGR-0569 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667306
+006WR00000wkDuTYAU,The Sixth Avenue,StageName,Under Contract,EMA/Bulk Completed,AGR-0571 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667316
+006WR00000wkDuhYAE,The Park West,StageName,Under Contract,EMA/Bulk Completed,AGR-0612 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667326
+006WR00000wkDujYAE,Villa Boitano 2,StageName,Under Contract,EMA/Bulk Completed,AGR-0617 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667335
+006WR00000wkDulYAE,104 North Apt,StageName,Under Contract,EMA/Bulk Completed,AGR-0622 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667344
+006WR00000wkDunYAE,Villa Boitano 3,StageName,Under Contract,EMA/Bulk Completed,AGR-0627 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667353
+006WR00000wkDupYAE,8746 Phinney Apt,StageName,Under Contract,EMA/Bulk Completed,AGR-0632 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667371
+006WR00000wkDurYAE,The Cliffetta,StageName,Under Contract,EMA/Bulk Completed,AGR-0637 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667381
+006WR00000wkDusYAE,Espana,StageName,Under Contract,EMA/Bulk Completed,AGR-0639 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667390
+006WR00000wkEZtYAM,5307 Ravenna,StageName,Under Contract,EMA/Bulk Completed,AGR-0735 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667400
+006WR00000wkEZvYAM,1744 Dexter Avenue Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0738 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667409
+006WR00000wkEZyYAM,Green Lake South,StageName,Under Contract,EMA/Bulk Completed,AGR-0744 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667418
+006WR00000wkEZzYAM,430 NE Ravenna,StageName,Under Contract,EMA/Bulk Completed,AGR-0746 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667428
+006WR00000wkEa0YAE,Lakeland,StageName,Under Contract,EMA/Bulk Completed,AGR-0748 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667437
+006WR00000wkEaLYAU,The Royce,StageName,Under Contract,EMA/Bulk Completed,AGR-0778 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667446
+006WR00000wkEaMYAU,Aloha Wey Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0780 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667456
+006WR00000wkEaNYAU,Jem-Wey Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0782 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667465
+006WR00000wkEaqYAE,Katerina Chalet,StageName,Under Contract,EMA/Bulk Completed,AGR-0868 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667475
+006WR00000wkEarYAE,8409 5th Ave Apt,StageName,Under Contract,EMA/Bulk Completed,AGR-0870 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667484
+006WR00000wkEasYAE,Villa Boitano 1,StageName,Under Contract,EMA/Bulk Completed,AGR-0872 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667493
+006WR00000wkEatYAE,4459 Fremont Ave Apt,StageName,Under Contract,EMA/Bulk Completed,AGR-0874 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667503
+006WR00000wkEazYAE,Spring Mountain Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0891 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667512
+006WR00000wkEb0YAE,Aspen Hills,StageName,Under Contract,EMA/Bulk Completed,AGR-0893 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667522
+006WR00000wkEb2YAE,Columbine Towers,StageName,Under Contract,EMA/Bulk Completed,AGR-0896 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667531
+006WR00000wkEbYYAU,Trailpoint by Trion Living / Trailpoint on Highline,StageName,Under Contract,EMA/Bulk Completed,AGR-0957 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667541
+006WR00000wkEbZYAU,Ballantrae Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0960 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667551
+006WR00000wkEbaYAE,Westcliff Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0964 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667561
+006WR00000wkEbbYAE,Sunshine Portland,StageName,Under Contract,EMA/Bulk Completed,AGR-0966 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667570
+006WR00000wkEbcYAE,Larpenteur Manor Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0968 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667579
+006WR00000wkEbdYAE,Sun Place Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0971 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667589
+006WR00000wkEbeYAE,Parkview Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0974 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667598
+006WR00000wkEbfYAE,Cottage Terrace Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0977 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667607
+006WR00000wkEbgYAE,Edgerton Highlands Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0980 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667616
+006WR00000wkEbhYAE,Johnson Parkway Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0983 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667626
+006WR00000wkEbiYAE,LaBlanche Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0986 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667636
+006WR00000wkEbjYAE,Park Vista Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0989 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667645
+006WR00000wkEbkYAE,Pine Tree Park Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0992 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667654
+006WR00000wkEblYAE,Goldenstar Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0995 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667664
+006WR00000wkEbmYAE,Evergreen East Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-0998 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667673
+006WR00000wkEbnYAE,Sherman Forbes Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1001 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667683
+006WR00000wkEbpYAE,Shadow Green Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1007 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667692
+006WR00000wkEbrYAE,Equinox on Indian School,StageName,Under Contract,EMA/Bulk Completed,AGR-1012 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667702
+006WR00000wkEbsYAE,Pomeroy Court,StageName,Under Contract,EMA/Bulk Completed,AGR-1016 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667711
+006WR00000wkEbuYAE,Coyote Creek,StageName,Under Contract,EMA/Bulk Completed,AGR-1020 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667720
+006WR00000wkEbvYAE,The Traditions Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1022 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667729
+006WR00000wkEbwYAE,Garden Court Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1026 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667739
+006WR00000wkEbxYAE,Woodcrest Townhomes,StageName,Under Contract,EMA/Bulk Completed,AGR-1028 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667748
+006WR00000wkEbyYAE,Aspen Oaks,StageName,Under Contract,EMA/Bulk Completed,AGR-1030 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667758
+006WR00000wkEbzYAE,Highland Shores Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1032 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667767
+006WR00000wkEc0YAE,Barbary Knoll Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1034 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667777
+006WR00000wkEc1YAE,Mountain Terrace,StageName,Under Contract,EMA/Bulk Completed,AGR-1036 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667786
+006WR00000wkEc2YAE,Meeker Commons,StageName,Under Contract,EMA/Bulk Completed,AGR-1038 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667808
+006WR00000wkEc3YAE,Capri on Camelback,StageName,Under Contract,EMA/Bulk Completed,AGR-1040 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667818
+006WR00000wkEc4YAE,Mansions at Hemingway,StageName,Under Contract,EMA/Bulk Completed,AGR-1043 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667827
+006WR00000wkEc7YAE,Maple Grove Villas,StageName,Under Contract,EMA/Bulk Completed,AGR-1050 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667837
+006WR00000wkEcFYAU,Equinox on Country Club,StageName,Under Contract,EMA/Bulk Completed,AGR-1062 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667846
+006WR00000wkEcGYAU,The Retreat at City Center,StageName,Under Contract,EMA/Bulk Completed,AGR-1066 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667856
+006WR00000wkEcHYAU,Avalon Wolf Ranch (f/k/a Retreat at Wolf Ranch),StageName,Under Contract,EMA/Bulk Completed,AGR-1070 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667866
+006WR00000wkEcIYAU,Lost Spurs,StageName,Under Contract,EMA/Bulk Completed,AGR-1073 EMA (Completed); AGR-1074 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667878
+006WR00000wkEcJYAU,Grand Estates at Keller,StageName,Under Contract,EMA/Bulk Completed,AGR-1077 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667888
+006WR00000wkEcMYAU,Park Vista Townhomes,StageName,Under Contract,EMA/Bulk Completed,AGR-1081 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667898
+006WR00000wkEcNYAU,Eaves by Avalon (f/k/a Wimberly Apartments),StageName,Under Contract,EMA/Bulk Completed,AGR-1084 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667907
+006WR00000wkEcOYAU,Avalon at Castle Hills (f/k/a Lakeway Castle Hills),StageName,Under Contract,EMA/Bulk Completed,AGR-1087 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667917
+006WR00000wkEcPYAU,Liggins Tower,StageName,Under Contract,EMA/Bulk Completed,AGR-1090 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667927
+006WR00000wkEcQYAU,Laguna Vista Mobile Estates,StageName,Under Contract,EMA/Bulk Completed,AGR-1094 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667936
+006WR00000wkEcRYAU,Villa Del Mar,StageName,Under Contract,EMA/Bulk Completed,AGR-1097 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667946
+006WR00000wkEcSYAU,Dobson Greens Condo HOA,StageName,Under Contract,EMA/Bulk Completed,AGR-1100 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667955
+006WR00000wkEcTYAU,Dobson Bay Club HOA,StageName,Under Contract,EMA/Bulk Completed,AGR-1103 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667965
+006WR00000wkEcUYAU,Dobson Ranch Condos,StageName,Under Contract,EMA/Bulk Completed,AGR-1106 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667974
+006WR00000wkEcVYAU,Woodcreek Townhomes,StageName,Under Contract,EMA/Bulk Completed,AGR-1109 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667984
+006WR00000wkEcWYAU,Twin Palms Condominiums,StageName,Under Contract,EMA/Bulk Completed,AGR-1112 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.667993
+006WR00000wkEcYYAU,Waterfront Landing,StageName,Under Contract,EMA/Bulk Completed,AGR-1118 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668002
+006WR00000wkEcZYAU,Eagle Lake Garden Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1122 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668011
+006WR00000wkEcaYAE,Wheatbaker Patio Home Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1125 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668021
+006WR00000wkEcbYAE,Alexandra Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1129 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668031
+006WR00000wkEccYAE,Arthouse Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1133 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668040
+006WR00000wkEcdYAE,The Retreat on 6th,StageName,Under Contract,EMA/Bulk Completed,AGR-1135 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668049
+006WR00000wkEceYAE,Pheasant Run Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1139 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668059
+006WR00000wkEcfYAE,Enclave at Westport,StageName,Under Contract,EMA/Bulk Completed,AGR-1143 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668068
+006WR00000wkEcgYAE,Northampton Arms Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1145 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668080
+006WR00000wkEchYAE,Watervue Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1148 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668090
+006WR00000wkEciYAE,Discovery Village at Alliance Town Center,StageName,Under Contract,EMA/Bulk Completed,AGR-1151 Bulk (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668099
+006WR00000wkEcjYAE,Lakeside Apartment Homes,StageName,Under Contract,EMA/Bulk Completed,AGR-1153 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668110
+006WR00000wkEckYAE,Crosspointe Vista,StageName,Under Contract,EMA/Bulk Completed,AGR-1156 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668120
+006WR00000wkEclYAE,Lucille on Roosevelt,StageName,Under Contract,EMA/Bulk Completed,AGR-1162 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668129
+006WR00000wkEcmYAE,Arbors of Killeen,StageName,Under Contract,EMA/Bulk Completed,AGR-1166 EMA (Archive),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668139
+006WR00000wkEcnYAE,Paloma Gardens Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1169 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668148
+006WR00000wkEcoYAE,Mallard Run Apartments,StageName,Under Contract,EMA/Bulk Completed,AGR-1172 EMA (Completed),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668157
+006WR00000wk1ERYAY,Indian Hills Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-1226 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668167
+006WR00000wk9RtYAI,117 and 121 E Avenue A Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0037 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668177
+006WR00000wk9RuYAI,Town East,StageName,Under Contract,EMA/Bulk In Progress,AGR-0039 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668187
+006WR00000wk9RyYAI,Rivers Edge,StageName,Under Contract,EMA/Bulk In Progress,AGR-0045 EMA (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668196
+006WR00000wkDtzYAE,Whispering Hills Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0525 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668206
+006WR00000wkDu4YAE,High Country Villas 5&7,StageName,Under Contract,EMA/Bulk In Progress,AGR-0534 EMA (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668215
+006WR00000wkDuAYAU,Villas on Horne,StageName,Under Contract,EMA/Bulk In Progress,AGR-0544 EMA (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668225
+006WR00000wkDuOYAU,Stonebridge Gardens,StageName,Under Contract,EMA/Bulk In Progress,AGR-0562 EMA (Paused),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668245
+006WR00000wkDuUYAU,Pineforest Park,StageName,Under Contract,EMA/Bulk In Progress,AGR-0573 EMA (Review); AGR-0574 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668256
+006WR00000wkDuVYAU,Crenshaw Townhouse,StageName,Under Contract,EMA/Bulk In Progress,AGR-0576 EMA (Review); AGR-0577 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668267
+006WR00000wkDuWYAU,West Creek Townhomes,StageName,Under Contract,EMA/Bulk In Progress,AGR-0579 EMA (Review); AGR-0580 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668277
+006WR00000wkDuXYAU,Vanowen Manor,StageName,Under Contract,EMA/Bulk In Progress,AGR-0582 EMA (Review); AGR-0583 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668288
+006WR00000wkDuYYAU,Lord Tennyson,StageName,Under Contract,EMA/Bulk In Progress,AGR-0585 EMA (Review); AGR-0586 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668298
+006WR00000wkDuZYAU,Crenshaw Manor,StageName,Under Contract,EMA/Bulk In Progress,AGR-0588 EMA (Review); AGR-0589 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668308
+006WR00000wkDuaYAE,Columbia Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0591 EMA (Review); AGR-0592 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668318
+006WR00000wkDubYAE,Windfaire Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0594 EMA (Review); AGR-0595 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668328
+006WR00000wkDucYAE,Woodbury Place Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0597 EMA (Review); AGR-0598 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668339
+006WR00000wkDudYAE,Strathmore Arms Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0600 EMA (Review); AGR-0601 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668349
+006WR00000wkDueYAE,University Club Apartments (Nac),StageName,Under Contract,EMA/Bulk In Progress,AGR-0603 EMA (Review); AGR-0604 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668360
+006WR00000wkDufYAE,714 Veteran,StageName,Under Contract,EMA/Bulk In Progress,AGR-0606 EMA (Review); AGR-0607 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668370
+006WR00000wkDugYAE,University Square Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0609 EMA (Review); AGR-0610 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668380
+006WR00000wkDuiYAE,Summerset Village Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0614 EMA (Review); AGR-0615 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668390
+006WR00000wkDukYAE,Cimarron Estates,StageName,Under Contract,EMA/Bulk In Progress,AGR-0619 EMA (Review); AGR-0620 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668401
+006WR00000wkDumYAE,Misty Ridge,StageName,Under Contract,EMA/Bulk In Progress,AGR-0624 EMA (Review); AGR-0625 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668411
+006WR00000wkDuoYAE,Park at Shiloh,StageName,Under Contract,EMA/Bulk In Progress,AGR-0629 EMA (Review); AGR-0630 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668421
+006WR00000wkDuqYAE,Villages at Sugar Road,StageName,Under Contract,EMA/Bulk In Progress,AGR-0634 EMA (Review); AGR-0635 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668431
+006WR00000wkDutYAE,Windrush Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0641 EMA (Review); AGR-0642 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668442
+006WR00000wkDuwYAE,Fairways,StageName,Under Contract,EMA/Bulk In Progress,AGR-0646 EMA (Review); AGR-0647 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668452
+006WR00000wkDuyYAE,Sheppard's Edge,StageName,Under Contract,EMA/Bulk In Progress,AGR-0650 EMA (Review); AGR-0651 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668462
+006WR00000wkDv0YAE,Boulder Springs Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0654 EMA (Review); AGR-0655 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668472
+006WR00000wkDv2YAE,St. John's,StageName,Under Contract,EMA/Bulk In Progress,AGR-0658 EMA (Review); AGR-0659 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668482
+006WR00000wkDv4YAE,615 Manhattan,StageName,Under Contract,EMA/Bulk In Progress,AGR-0662 EMA (Review); AGR-0663 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668492
+006WR00000wkDv6YAE,Sunset Street,StageName,Under Contract,EMA/Bulk In Progress,AGR-0666 EMA (Review); AGR-0667 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668506
+006WR00000wkDv8YAE,Pineforest Place,StageName,Under Contract,EMA/Bulk In Progress,AGR-0670 EMA (Review); AGR-0671 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668517
+006WR00000wkDvAYAU,University Club Apartments (Lubbock),StageName,Under Contract,EMA/Bulk In Progress,AGR-0674 EMA (Review); AGR-0675 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668527
+006WR00000wkDvCYAU,Chaparral Apts,StageName,Under Contract,EMA/Bulk In Progress,AGR-0678 EMA (Review); AGR-0679 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668538
+006WR00000wkDvDYAU,Lemoli Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0681 EMA (Review); AGR-0682 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668548
+006WR00000wkDvEYAU,Willow Lake,StageName,Under Contract,EMA/Bulk In Progress,AGR-0684 EMA (Review); AGR-0685 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668558
+006WR00000wkDvFYAU,Chadron Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0687 EMA (Review); AGR-0688 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668568
+006WR00000wkDvGYAU,Forest Gate Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0690 EMA (Review); AGR-0691 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668579
+006WR00000wkDvHYAU,Vanowen Manor II,StageName,Under Contract,EMA/Bulk In Progress,AGR-0693 EMA (Review); AGR-0694 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668590
+006WR00000wkDvIYAU,Alameda Palms,StageName,Under Contract,EMA/Bulk In Progress,AGR-0696 EMA (Review); AGR-0697 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668600
+006WR00000wkEZdYAM,Strathmore Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0699 EMA (Review); AGR-0700 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668610
+006WR00000wkEZeYAM,Heritage Park,StageName,Under Contract,EMA/Bulk In Progress,AGR-0702 EMA (Review); AGR-0703 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668620
+006WR00000wkEZfYAM,Crenshaw Terrace Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0705 EMA (Review); AGR-0706 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668630
+006WR00000wkEZgYAM,University Courtyards Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0708 EMA (Review); AGR-0709 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668641
+006WR00000wkEZhYAM,Leimert Park,StageName,Under Contract,EMA/Bulk In Progress,AGR-0711 EMA (Review); AGR-0712 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668651
+006WR00000wkEZiYAM,Saratoga Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0714 EMA (Review); AGR-0715 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668672
+006WR00000wkEZjYAM,Ladera Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0717 EMA (Review); AGR-0718 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668683
+006WR00000wkEZkYAM,The Oaks Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0720 EMA (Review); AGR-0721 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668693
+006WR00000wkEZlYAM,Fallbrook View Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0723 EMA (Review); AGR-0724 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668703
+006WR00000wkEZmYAM,Turnagain Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0726 EMA (Review); AGR-0727 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668714
+006WR00000wkEZxYAM,Villa Park Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0741 EMA (Review); AGR-0742 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668724
+006WR00000wkEaHYAU,Oxnard Terrace Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0766 EMA (Review); AGR-0767 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668735
+006WR00000wkEaIYAU,Vassar Terrace Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0769 EMA (Review); AGR-0770 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668745
+006WR00000wkEaJYAU,9404 Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0772 EMA (Review); AGR-0773 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668756
+006WR00000wkEaKYAU,Villa Lago Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0775 EMA (Review); AGR-0776 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668766
+006WR00000wkEaOYAU,Regents Park Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0784 EMA (Review); AGR-0785 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668776
+006WR00000wkEaPYAU,Lake Meadows Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0787 EMA (Review); AGR-0788 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668786
+006WR00000wkEaQYAU,Woodland Trio The Oaks,StageName,Under Contract,EMA/Bulk In Progress,AGR-0790 EMA (Review); AGR-0791 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668797
+006WR00000wkEaRYAU,Baldwin Manor,StageName,Under Contract,EMA/Bulk In Progress,AGR-0793 EMA (Review); AGR-0794 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668807
+006WR00000wkEaSYAU,White Oak Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0796 EMA (Review); AGR-0797 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668817
+006WR00000wkEaTYAU,Bali Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0799 EMA (Review); AGR-0800 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668827
+006WR00000wkEaUYAU,Corbett Avenue Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0802 EMA (Review); AGR-0803 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668838
+006WR00000wkEaVYAU,Chatsworth Plaza,StageName,Under Contract,EMA/Bulk In Progress,AGR-0805 EMA (Review); AGR-0806 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668848
+006WR00000wkEaWYAU,John Manor,StageName,Under Contract,EMA/Bulk In Progress,AGR-0808 EMA (Review); AGR-0809 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668858
+006WR00000wkEaXYAU,Casa Linda,StageName,Under Contract,EMA/Bulk In Progress,AGR-0811 EMA (Review); AGR-0812 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668868
+006WR00000wkEaYYAU,Windsor Manor,StageName,Under Contract,EMA/Bulk In Progress,AGR-0814 EMA (Review); AGR-0815 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668878
+006WR00000wkEaZYAU,Coliseum Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0817 EMA (Review); AGR-0818 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668888
+006WR00000wkEaaYAE,Colonial Manor Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0820 EMA (Review); AGR-0821 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668898
+006WR00000wkEabYAE,San Vicente Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0823 EMA (Review); AGR-0824 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668909
+006WR00000wkEacYAE,St. Andrews Manor,StageName,Under Contract,EMA/Bulk In Progress,AGR-0826 EMA (Review); AGR-0827 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668919
+006WR00000wkEadYAE,Krystal Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0829 EMA (Review); AGR-0830 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668929
+006WR00000wkEaeYAE,Parkway Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0832 EMA (Review); AGR-0833 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668939
+006WR00000wkEafYAE,Kling Trio Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0835 EMA (Review); AGR-0836 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668949
+006WR00000wkEagYAE,Jaclyn Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0838 EMA (Review); AGR-0839 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668960
+006WR00000wkEahYAE,Brody Terrace (Riverside),StageName,Under Contract,EMA/Bulk In Progress,AGR-0841 EMA (Review); AGR-0842 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668970
+006WR00000wkEaiYAE,Parkview Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0844 EMA (Review); AGR-0845 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668980
+006WR00000wkEajYAE,Roxanne Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0847 EMA (Review); AGR-0848 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.668990
+006WR00000wkEakYAE,Riverside Villa Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0850 EMA (Review); AGR-0851 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669000
+006WR00000wkEalYAE,The Banyans,StageName,Under Contract,EMA/Bulk In Progress,AGR-0853 EMA (Review); AGR-0854 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669011
+006WR00000wkEamYAE,Topanga Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0856 EMA (Review); AGR-0857 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669021
+006WR00000wkEanYAE,Topanga Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0859 EMA (Review); AGR-0860 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669031
+006WR00000wkEaoYAE,Vista Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0862 EMA (Review); AGR-0863 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669041
+006WR00000wkEapYAE,The Palms,StageName,Under Contract,EMA/Bulk In Progress,AGR-0865 EMA (Review); AGR-0866 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669051
+006WR00000wkEauYAE,Hollypark Knolls Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0876 EMA (Review); AGR-0877 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669061
+006WR00000wkEavYAE,Saticoy Gardens,StageName,Under Contract,EMA/Bulk In Progress,AGR-0879 EMA (Review); AGR-0880 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669071
+006WR00000wkEawYAE,Link Canvas (fka The George & The Leonard),StageName,Under Contract,EMA/Bulk In Progress,AGR-0882 EMA (Review); AGR-0883 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669092
+006WR00000wkEaxYAE,Link West End,StageName,Under Contract,EMA/Bulk In Progress,AGR-0885 EMA (Review); AGR-0886 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669103
+006WR00000wkEayYAE,Mississippi View,StageName,Under Contract,EMA/Bulk In Progress,AGR-0888 EMA (Review); AGR-0889 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669114
+006WR00000wkEbIYAU,First Casa De Marina,StageName,Under Contract,EMA/Bulk In Progress,AGR-0926 EMA (Review); AGR-0927 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669124
+006WR00000wkEbJYAU,Lombardi Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0929 EMA (Review); AGR-0930 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669135
+006WR00000wkEbKYAU,The Meadows at Westlake Village,StageName,Under Contract,EMA/Bulk In Progress,AGR-0932 EMA (Review); AGR-0933 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669145
+006WR00000wkEbLYAU,Brookside Terrace Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0935 EMA (Review); AGR-0936 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669155
+006WR00000wkEbMYAU,Gloria Homes,StageName,Under Contract,EMA/Bulk In Progress,AGR-0938 EMA (Review); AGR-0939 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669166
+006WR00000wkEbNYAU,Parthenia Terrace,StageName,Under Contract,EMA/Bulk In Progress,AGR-0941 EMA (Review); AGR-0942 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669176
+006WR00000wkEbVYAU,CitiFront Apartments,StageName,Under Contract,EMA/Bulk In Progress,AGR-0951 EMA (Review); AGR-0952 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669186
+006WR00000wkEbqYAE,Purgatory Creek Townhomes,StageName,Under Contract,EMA/Bulk In Progress,AGR-1009 EMA (Review); AGR-1010 Bulk (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669196
+006WR00000wkEcEYAU,Northampton Court Condominiums,StageName,Under Contract,EMA/Bulk In Progress,AGR-1060 Bulk (Sign),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669206
+006WR00000wkEcpYAE,Sonterra Apartment Homes,StageName,Under Contract,EMA/Bulk In Progress,AGR-1175 EMA (Review),bulk_advance_ema_bulk_stage_2026-04-28.py,UPDATE,2026-04-28T14:55:56.669216

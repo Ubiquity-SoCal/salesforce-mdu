@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Franchise_Type__c</fullName>
+    <description>Classifies the opportunity as part of the In-Franchise build pipeline (Ubiquity-operated markets) or the National program (partner/national-lead). Populated from Monday.com franchise mapping at migration; used for weekly PAL reporting splits.</description>
+    <label>Franchise Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-Franchise</fullName>
+                <default>false</default>
+                <label>In-Franchise</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <label>National</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

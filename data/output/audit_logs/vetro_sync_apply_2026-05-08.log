@@ -1,0 +1,87 @@
+[WARN] pyarrow is not installed by default since databricks-sql-connector 4.0.0,any arrow specific api (e.g. fetchmany_arrow) and cloud fetch will be disabled.If you need these features, please run pip install pyarrow or pip install databricks-sql-connector[pyarrow] to install
+[1/5] Pulling Vetro + SiteTracker FDH activations from Databricks (states=('TX', 'NE', 'AZ', 'CA'))...
+  Raw rows pulled (post FDH-active gate): 72,051
+
+[2/5] Building target Property_Location + Unit records...
+  Distinct PLs by kind:
+    bus        17,036
+    agreement  360
+  Total unique units (circuits): 41,962
+
+[3/5] Pulling current SF state...
+  SF PLs: 17,755  (by BBA=17,755, by AgreeName=0)
+  SF Units: 28,876
+
+[4/5] Computing diff...
+
+======================================================================
+VETRO -> SF SYNC PLAN (PREVIEW)
+======================================================================
+  New PLs to create:                   402
+    of which agreement  360
+    of which bus        42
+  PLs with field updates:              16,994
+  New Units to create:                 17,644
+  Units with field updates:            91
+  Units to re-parent (FK move):        353
+  Newly-stale PLs (flag with note):    92
+  Newly-stale Units (flag with note):  3,929
+
+  PL update field breakdown:
+    16,994  Address_Type__c
+    1,353  Agreement_Name__c
+      389  FDH_Name__c
+      388  FDH_Activated_Date__c
+      188  Business_Building_Id__c
+        7  Serving_Area__c
+        1  Market__c
+
+  Unit update field breakdown:
+       63  Activated__c
+       60  Coho__c
+       41  Address_Deactivated__c
+       13  AreaId__c
+        1  Unit__c
+
+  Sample new PLs (first 8):
+    [agreement] AZ Mesa_MDU_Dobson Ranch Condos
+    [agreement] TX TX_KILLEEN_SA10_FDH14_PA01
+    [agreement] TX TX_KILLEEN_SA10_FDH14_PA03
+    [agreement] TX TX_KILLEEN_SA10_FDH14_PA02
+    [agreement] NE Omaha_MDU_Woodgate Townhomes
+    [agreement] TX TX_KILLEEN_SA10_FDH02_PA02
+    [agreement] AZ AZ_MESA_SA02_FDH13_PA01
+    [agreement] TX TX_JARRELL_SA01_FDH09_PA02
+
+  Sample PL updates (first 5):
+    [bus      ] 550 N HORNE ST GILBERT AZ: {'Address_Type__c': 'Business'}
+    [bus      ] 1007 N WS YOUNG DR KILLEEN TX: {'Address_Type__c': 'Business'}
+    [bus      ] 1501 E RANCIER AVE KILLEEN TX: {'Address_Type__c': 'Business'}
+    [bus      ] 1101 N WS YOUNG DR KILLEEN TX: {'Address_Type__c': 'Business'}
+    [bus      ] 1202 RUIZ DR KILLEEN TX: {'Address_Type__c': 'Business'}
+
+======================================================================
+APPLYING
+======================================================================
+
+[A] Creating 402 new PLs
+   FAIL: 3300 VALENCIA DR KILLEEN TX - [{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Business_Base_Address__c duplicates value on record with id: a01WR00000UGWxTYAX', 'fields': []}]
+   FAIL: 3204 VALENCIA DR KILLEEN TX - [{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Business_Base_Address__c duplicates value on record with id: a01WR00000UGWvcYAH', 'fields': []}]
+   FAIL: 3203 VALENCIA DR KILLEEN TX - [{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Business_Base_Address__c duplicates value on record with id: a01WR00000UGWvaYAH', 'fields': []}]
+
+[B] Updating 16,994 PLs
+
+[C] Creating 17,644 new Units
+
+[D] Updating 91 Units
+
+[D2] Re-parenting 353 Units
+   skip reparent Unit TX1314-009000192A: no target PL for ('bus', '3300 VALENCIA DR KILLEEN TX')
+   skip reparent Unit TX1314-009000185A: no target PL for ('bus', '3204 VALENCIA DR KILLEEN TX')
+   skip reparent Unit TX1314-009000187A: no target PL for ('bus', '3203 VALENCIA DR KILLEEN TX')
+
+[E] Flagging 92 newly-stale PLs
+
+[F] Flagging 3,929 newly-stale Units
+
+Audit log: C:\Users\cass\Work_Projects\SalesForce\audit_logs\vetro_sync_2026-05-08T12-04-11.csv (41,912 rows)

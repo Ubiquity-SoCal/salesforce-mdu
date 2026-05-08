@@ -1,0 +1,9 @@
+SF_Id,Name,Field,Before,After,Source,Action,Timestamp
+a0BWR000008ZFqn2AG,Bristol Square Apartments - PAL Addendum,Agreement,(none),PAL Addendum (Review),tracker_xref_2026-04-28,CREATE,2026-04-28T16:38:02.656963
+a0BWR000008ZFsP2AW,Bristol Square Apartments - EMA,Agreement,(none),EMA (Review),tracker_xref_2026-04-28,CREATE,2026-04-28T16:38:03.094290
+006WR00000wkEc8YAE,Bristol Square Apartments,StageName,Under Contract,EMA/Bulk In Progress,tracker_xref_2026-04-28,UPDATE,2026-04-28T16:38:03.669243
+a0BWR000008ZFu12AG,Heritage of Newark (FKA Newark Beach Estates) - Bulk,Agreement,(none),Bulk (Review),tracker_xref_2026-04-28,CREATE,2026-04-28T16:38:04.014329
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),StageName,Under Contract,EMA/Bulk In Progress,tracker_xref_2026-04-28,UPDATE,2026-04-28T16:38:04.519461
+a0BWR000008ZFvd2AG,The 1001 Apartments - PAL Addendum,Agreement,(none),PAL Addendum (Review),tracker_xref_2026-04-28,CREATE,2026-04-28T16:38:04.791112
+a0BWR000008ZFxF2AW,The 1001 Apartments - EMA,Agreement,(none),EMA (Review),tracker_xref_2026-04-28,CREATE,2026-04-28T16:38:05.071918
+006WR00000wkEcDYAU,The 1001 Apartments,StageName,Under Contract,EMA/Bulk In Progress,tracker_xref_2026-04-28,UPDATE,2026-04-28T16:38:05.541868

@@ -1,0 +1,6 @@
+SF_Id,Name,Field,Before,After,Source,Action,Timestamp
+a0BWR000008ZIv72AG,Patriot Place - Bulk,Agreement,(none),Bulk (Review),action_text_xref,CREATE,2026-04-28T17:29:49.741511
+006WR00000wkEbOYAU,Patriot Place,StageName,Under Contract,EMA/Bulk In Progress,action_text_xref,UPDATE,2026-04-28T17:29:50.056314
+a0BWR000008ZIwj2AG,Creekside Apartments - PAL Addendum,Agreement,(none),PAL Addendum (Review),action_text_xref,CREATE,2026-04-28T17:29:50.515444
+a0BWR000008ZIyL2AW,Creekside Apartments - Bulk,Agreement,(none),Bulk (Review),action_text_xref,CREATE,2026-04-28T17:29:50.908353
+006WR00000wkEcAYAU,Creekside Apartments,StageName,Under Contract,EMA/Bulk In Progress,action_text_xref,UPDATE,2026-04-28T17:29:51.271641

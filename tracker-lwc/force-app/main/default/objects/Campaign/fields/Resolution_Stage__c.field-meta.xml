@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Stage__c</fullName>
+    <description>Opps at this stage or later are considered resolved for this project. Closed Lost is always resolved.</description>
+    <inlineHelpText>Opps at this stage or later count as resolved for this project. Blank defaults to PAL/ROE Complete.</inlineHelpText>
+    <label>Resolution Stage</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prospects</fullName>
+                <default>false</default>
+                <label>Prospects</label>
+            </value>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>Engaged</fullName>
+                <default>false</default>
+                <label>Engaged</label>
+            </value>
+            <value>
+                <fullName>Proposal Sent</fullName>
+                <default>false</default>
+                <label>Proposal Sent</label>
+            </value>
+            <value>
+                <fullName>Contract Negotiations</fullName>
+                <default>false</default>
+                <label>Contract Negotiations</label>
+            </value>
+            <value>
+                <fullName>PAL/ROE Complete</fullName>
+                <default>true</default>
+                <label>PAL/ROE Complete</label>
+            </value>
+            <value>
+                <fullName>EMA/Bulk In Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EMA/Bulk In Progress</label>
+            </value>
+            <value>
+                <fullName>EMA/Bulk Complete</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EMA/Bulk Complete</label>
+            </value>
+            <value>
+                <fullName>Marketing/Bulk In Progress</fullName>
+                <default>false</default>
+                <label>Marketing/Bulk In Progress</label>
+            </value>
+            <value>
+                <fullName>Marketing/Bulk Complete</fullName>
+                <default>false</default>
+                <label>Marketing/Bulk Complete</label>
+            </value>
+            <value>
+                <fullName>Under Contract</fullName>
+                <default>false</default>
+                <label>Under Contract</label>
+            </value>
+            <value>
+                <fullName>Activation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Activation</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>ROE Secured</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ROE Secured</label>
+            </value>
+            <value>
+                <fullName>Ready for Engineering</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ready for Engineering</label>
+            </value>
+            <value>
+                <fullName>Under Construction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Under Construction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

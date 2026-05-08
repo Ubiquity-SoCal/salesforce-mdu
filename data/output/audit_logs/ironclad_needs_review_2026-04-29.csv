@@ -1,0 +1,16 @@
+IronClad_ID,Counterparty,Record_Name,State,Counterparty_Addr,Agreement_Date,Source,Reason
+IC-333,114 Collision Center - NRG Performance - Texas Born Performance,FF - ROE - TX114 Business Park,TX,,2024-10-06,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty 114 Collision Center.
+IC-1525,City of Fargo,FE ROW Agreement City of Fargo Ubiquity Fiber Agreement.pdf,,,2025-06-09,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty City of Fargo.
+IC-1527,M & M KELLOGG PROPERTIES LLC,MM Kellogg properties llc  - 2 Documents to sign - - signed.pdf,,,,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty M & M Kellogg Properties.
+IC-1528,Dundee Group LLC,Signed Right of Entry Form (002) - signed.pdf,,,,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Dundee Group LLC.
+IC-1039,Eagle Ridge Terrace,Right of Entry Agreement with Eagle Ridge Terrace,,,2025-07-30,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Eagle Ridge Terrace.
+IC-265,"Woodcrest Capital, LLC","Right of Entry Agreement with Woodcrest Capital, LLC",,,2025-06-25,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Woodcrest Capital.
+IC-331,Ketos Creative,FF - ROE - Ketos Creative,,,2024-06-24,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Ketos Creative.
+IC-736,Investors Realty,Right of Entry Agreement with Investors Realty,,,,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Investors Realty.
+IC-673,Boy,Right of Entry Agreement with Boyd Housing,,,2024-10-22,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Boyd Housing.
+IC-1530,Lashawn Kellogg,2209 Military Ave Omaha NE - signed.pdf,NE,,2025-07-11,AZ ROE 9.30.25 / ROE_ALL 10.15.25,No address; counterparty Lashawn Kellogg.
+IC-657,"1245 Baseline LLC
+_","Right of Entry Agreement with 1245 Baseline LLC
+_",AZ,"1245 W Baseline Rd, Mesa, AZ 85202",2024-11-05,AZ ROE 9.30.25 / ROE_ALL 10.15.25,Flagged: matched 1245 W Baseline Rd Opp which is Closed Lost; conflicting agreement history.
+IC-687,"Davis Contracting, LLC","Right of Entry Agreement with Davis Contracting, LLC",NE,"4005 Hartman Circle, Omaha NE 68111",,AZ ROE 9.30.25 / ROE_ALL 10.15.25,"Flagged: duplicate of IC-689 at Omaha_MDU_4005 Hartman Circle (no signed date in IronClad export, looks like a draft)."
+IC-696,Leo Vaughan Manor LTD,Right of Entry Agreement with Leo Vaughan Manor LTD,NE,"3450 N 45th Court, Omaha Nebraska 68104",,AZ ROE 9.30.25 / ROE_ALL 10.15.25,Flagged: matched Omaha_MDU_Fontenelle Cottages Opp which is Closed Lost; needs human eyeball.

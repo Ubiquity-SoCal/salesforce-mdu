@@ -1,0 +1,48 @@
+SF_Id,Name,Object,Field,Before,After,Source,Timestamp,Action
+006WR00000wkDMfYAM,Lakeshore Gardens,Opportunity,StageName,On Hold,Closed Lost,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDMfYAM,Lakeshore Gardens,Opportunity,Loss_Reason__c,nan,Other (note: PAL Terminated),tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDMzYAM,Apache Bend Apartments,Opportunity,StageName,On Hold,Closed Lost,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDMzYAM,Apache Bend Apartments,Opportunity,Loss_Reason__c,nan,Other (note: PAL Terminated),tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDu7YAE,San Montego Luxury Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDu8YAE,The Turn Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuCYAU,Avenue 8 Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuEYAU,Brookwood Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuGYAU,Mission Palms Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuHYAU,River Oaks Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuIYAU,Zona Village,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuKYAU,Fowler's RV Park,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuMYAU,Colonial Plaza,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuQYAU,Copper Commons,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEZoYAM,Tierra Pointe,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEZqYAM,Comanche Wells,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb1YAE,Horizon Heights,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb4YAE,Main Street Commons,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb7YAE,The Bungalows on 204,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb9YAE,The Bungalows on the Lake at Prairie Queen_The View,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbAYAU,1010 on the Lake,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbBYAU,The Beckham,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbDYAU,Heritage Oaks,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbWYAU,Waterstone Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDtPYAU,Yale Park,Opportunity,StageName,On Hold,Closed Lost,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDtPYAU,Yale Park,Opportunity,Loss_Reason__c,nan,Other (note: PAL Terminated),tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDu0YAE,Cielo II Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDu1YAE,The M at Lakeline,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDu2YAE,Palmero by the Park (f/k/a Overlook by the Park),Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDuBYAU,Riverview Townhomes,Opportunity,StageName,On Hold,Marketing/Bulk Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb6YAE,Pecan Acres RV Park,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb8YAE,The Bungalows on the Lake at Prairie Queen,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbCYAU,Azle Village,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbGYAU,Sahara & Playa Palms Apartments,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbHYAU,Arcadia Walk,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbXYAU,Holiday Village Manufactured Home Village,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbtYAE,Chalk Hill Ranch Phase 1,Opportunity,StageName,On Hold,Marketing/Bulk Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEc5YAE,Benson Crest,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEc9YAE,Heatherwilde Park AKA Cove at Heatherwilde,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb5YAE,Greenfield Village RV Resort,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbEYAU,Big Oaks Estates,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEbFYAU,Southern Hills Manufactured Home Community,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEb3YAE,Sunridge Patio Homes,Opportunity,StageName,On Hold,Marketing/Bulk Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkEc6YAE,Wright Senior,Opportunity,StageName,On Hold,PAL/ROE Complete,tm_onhold_updates_5.5.xlsx,2026-05-05,UPDATE
+006WR00000wkDMfYAM,Lakeshore Gardens,ContentNote,Title,,PAL Terminated (note id=069WR00001ErRw8YAF),tm_onhold_updates_5.5.xlsx,2026-05-05,CREATE
+006WR00000wkDMzYAM,Apache Bend Apartments,ContentNote,Title,,PAL Terminated (note id=069WR00001ErIHhYAN),tm_onhold_updates_5.5.xlsx,2026-05-05,CREATE
+006WR00000wkDtPYAU,Yale Park,ContentNote,Title,,PAL Terminated (note id=069WR00001ErJP7YAN),tm_onhold_updates_5.5.xlsx,2026-05-05,CREATE

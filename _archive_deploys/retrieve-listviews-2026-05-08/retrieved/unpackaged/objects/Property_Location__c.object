@@ -1,0 +1,1871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Property_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AM_Flag_RE_to_Review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Management Flag for RE to Review</inlineHelpText>
+        <label>AM - Flag RE to Review</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AM_Review_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    NOT(ISBLANK(RE_Review_Notes_AM__c)),
+    &quot;RE Reviewed&quot;,
+    IF(
+        AM_Flag_RE_to_Review__c,
+        &quot;Pending RE Review&quot;,
+        IF(
+            NOT(ISBLANK(TEXT(AM_Status__c))),
+            TEXT(AM_Status__c),
+            &quot;&quot;
+        )
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AM Review Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AM_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>AM Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Added to Vetro</fullName>
+                    <default>false</default>
+                    <label>Added to Vetro</label>
+                </value>
+                <value>
+                    <fullName>No Change</fullName>
+                    <default>false</default>
+                    <label>No Change</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AM_Suite_Numbers__c</fullName>
+        <externalId>false</externalId>
+        <label>AM - Suite Numbers</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVR_Project_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>AVR Project ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Access_Agreement_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Access Agreement Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Active_Unit_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Active Unit Count</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Activated__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Units_found__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Units found</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Review_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Address Review Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Address_Type__c</fullName>
+        <description>Vetro properties.addtype: Business (BUS) for commercial addresses keyed by Business Base Address; MDU for multi-dwelling complexes keyed by Agreement Name; SFU for agreement-grouped single-family units (RV resorts, HOAs, mobile-home parks) keyed by Agreement Name.</description>
+        <externalId>false</externalId>
+        <label>Address Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business</fullName>
+                    <default>false</default>
+                    <label>Business</label>
+                </value>
+                <value>
+                    <fullName>MDU</fullName>
+                    <default>false</default>
+                    <label>MDU</label>
+                </value>
+                <value>
+                    <fullName>SFU</fullName>
+                    <default>false</default>
+                    <label>SFU</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agreement_Name__c</fullName>
+        <description>Cross-system agreement identifier from Vetro properties.agreename. Used to group MDU and SFU Property_Locations under a single pursuit (e.g. &quot;Mesa_MDU_Mesa Regal RV Resort&quot;). For business addresses, this field is generally blank since each address is its own pursuit.</description>
+        <externalId>false</externalId>
+        <label>Agreement Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>All_Units_Active_Icon__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  Property_Unit_Count__c = Active_Unit_Count__c,
+  &quot;✅ All Active&quot;,
+  &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>All Units Active</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assignment_Reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Assignment Reference</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_for_Sales_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Available for Sales Unit Count</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.ValidForFF__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Activated__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Available_for_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Available for Sales</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Build_Effort__c</fullName>
+        <description>Estimated build effort level for the property</description>
+        <externalId>false</externalId>
+        <label>Build Effort</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Easy</fullName>
+                    <default>false</default>
+                    <label>Easy</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Hard</fullName>
+                    <default>false</default>
+                    <label>Hard</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Building_Floor_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Building Floor Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Multi Floor Establishment</fullName>
+                    <default>false</default>
+                    <label>Multi Floor Establishment</label>
+                </value>
+                <value>
+                    <fullName>Single-floor Establishment</fullName>
+                    <default>false</default>
+                    <label>Single-floor Establishment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bulk_Deal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bulk Deal</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Business_Base_Address__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Business Base Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Building_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Building Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Categorize_as_MTU__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when address is tied to multiple units or in same strip mall/center etc. Only Checked when some addresses are missing per Review</inlineHelpText>
+        <label>Categorize as MTU</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Circuit_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Circuit ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deactive_Unit_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Deactive Unit Count</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Address_Deactivated__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Existing_Fiber_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Existing Fiber Provider</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FDH_Activated_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>FDH Activated Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FDH_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>FDH Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FF_Sales_Assigned_Date__c</fullName>
+        <description>Date property was assigned to FiberFirst sales</description>
+        <externalId>false</externalId>
+        <label>FF Sales Assigned Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FF_Sales_Project__c</fullName>
+        <description>FiberFirst sales project assignment (e.g. SMB ROE)</description>
+        <externalId>false</externalId>
+        <label>FF Sales Project</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GIS_API_Match__c</fullName>
+        <externalId>false</externalId>
+        <label>GIS API Match</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GIS_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>GIS Notes</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GIS_Review_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>GIS Review Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GIS_Review_Quarter__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(GIS_Review_Date__c)) &amp;
+&quot;Q&quot; &amp;
+CASE(
+  CEILING(MONTH(GIS_Review_Date__c) / 3),
+  1, &quot;1&quot;,
+  2, &quot;2&quot;,
+  3, &quot;3&quot;,
+  4, &quot;4&quot;,
+  &quot;?&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GIS Review Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GIS_Reviewer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>GIS Reviewer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Property_Locations3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Hold</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Import_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>Import DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Import_Delete_Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Import Delete Note</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Import_Delete_Property__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Import Delete Property</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Location_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTU_Address_Reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>For Address Management Team</inlineHelpText>
+        <label>MTU Address Reviewed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MTU_Group_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Format: ALL CAPS
+Lowest Address # _STREET NAME_ CITY_MTU
+Example: 115_ACACIA_SOLANA BEACH_MTU</inlineHelpText>
+        <label>MTU Group Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTU_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>MTU Notes</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Management_Company__c</fullName>
+        <externalId>false</externalId>
+        <label>Management Company</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Market</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_Property_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Owner / Property Contact</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parcel__c</fullName>
+        <externalId>false</externalId>
+        <label>Parcel #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Potential_Issues__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Issues</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  Hold__c = TRUE,
+  &quot;Hold&quot;,
+
+  IF(
+    Active_Unit_Count__c = Property_Unit_Count__c,
+    &quot;All Active&quot;,
+
+    IF(
+      AND(Property_Unit_Count__c = 1, Active_Unit_Count__c = 0),
+      &quot;Category 3&quot;,
+
+      IF(
+        AND(
+          Property_Unit_Count__c &gt; 1,
+          OR(
+            Active_Unit_Count__c &gt; 0,
+            Deactive_Unit_Count__c &gt; 0
+          )
+        ),
+        &quot;Category 1&quot;,
+
+        IF(
+          AND(Property_Unit_Count__c &gt; 1, Active_Unit_Count__c = 0),
+          &quot;Category 2&quot;,
+          &quot;&quot;
+        )
+      )
+    )
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Customer_Bucket__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  AND(NOT(ISBLANK(Active_Unit_Count__c)), Active_Unit_Count__c = Property_Unit_Count__c),
+  &quot;All units have customer&quot;,
+  IF(
+    Active_Unit_Count__c &gt; 0,
+    &quot;Units with active customer&quot;,
+    &quot;Units with no active customer&quot;
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Property Customer Bucket</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Location_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Location Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assigned</fullName>
+                    <default>false</default>
+                    <label>Assigned</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Type__c</fullName>
+        <description>Business Park –  
+Cluster of office buildings, not intended for retail businesses
+
+Industrial –  
+Warehouses, workshops, distribution centers, or manufacturing facilities
+
+Medical –  
+Hospital campuses, clinics, or office complexes dedicated to healthcare
+
+Mixed Use –  
+Developments combining residential, office, and/or retail spaces
+
+Self Storage –  
+Facilities with multiple rentable storage units for personal or business use
+
+Shopping Plaza –  
+Enclosed malls or large open-air centers with multiple retail/service tenants
+
+Strip Mall –  
+Linear retail complexes with side-by-side storefronts and shared parking
+
+Other –  
+Does not fit standard complex types</description>
+        <externalId>false</externalId>
+        <inlineHelpText>•	Business Park: Office use only  
+•	Government / Municipal: City/fire/public buildings  
+•	Hotel: Lodging  
+•	Industrial: Warehouses, workshops  
+•	Medical: Clinics, hospitals  
+•	Mixed Use: Residential + retail/office  
+•	Other: Doesn’t fit other types  
+•	Restaurant: Food service buildings  
+•	Self Storage: Rentable storage units  
+•	Shopping Plaza: Enclosed/multi-building retail  
+•	Strip Mall: Linear storefronts</inlineHelpText>
+        <label>Property Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business Park</fullName>
+                    <default>false</default>
+                    <label>Business Park</label>
+                </value>
+                <value>
+                    <fullName>Government / Municipal</fullName>
+                    <default>false</default>
+                    <label>Government / Municipal</label>
+                </value>
+                <value>
+                    <fullName>Hotel</fullName>
+                    <default>false</default>
+                    <label>Hotel</label>
+                </value>
+                <value>
+                    <fullName>Industrial</fullName>
+                    <default>false</default>
+                    <label>Industrial</label>
+                </value>
+                <value>
+                    <fullName>Medical</fullName>
+                    <default>false</default>
+                    <label>Medical</label>
+                </value>
+                <value>
+                    <fullName>Mixed Use</fullName>
+                    <default>false</default>
+                    <label>Mixed Use</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Restaurant</fullName>
+                    <default>false</default>
+                    <label>Restaurant</label>
+                </value>
+                <value>
+                    <fullName>Self Storage</fullName>
+                    <default>false</default>
+                    <label>Self Storage</label>
+                </value>
+                <value>
+                    <fullName>Shopping Plaza</fullName>
+                    <default>false</default>
+                    <label>Shopping Plaza</label>
+                </value>
+                <value>
+                    <fullName>Strip Mall</fullName>
+                    <default>false</default>
+                    <label>Strip Mall</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Unit_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Unit Count</label>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>RE_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RE_Review_Date_AM__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Review Date - AM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RE_Review_Notes_AM__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Review Notes - AM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RE_Reviewed__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(
+  number_of_buildings__c != 0,
+  number_of_parcels__c != 0,
+  number_of_tenants__c != 0,
+  number_of_owners__c != 0,
+  NOT(ISBLANK(RE_Notes__c))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RE Reviewed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RE_Reviewer_AM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RE Reviewer - AM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Property_Locations2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ROE_Date_AC__c</fullName>
+        <externalId>false</externalId>
+        <label>ROE Date AC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ROE_Date_FC__c</fullName>
+        <externalId>false</externalId>
+        <label>ROE Date FC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ROE_Executed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ROE Executed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ROE_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>ROE Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+                <value>
+                    <fullName>ROE Sent</fullName>
+                    <default>false</default>
+                    <label>ROE Sent</label>
+                </value>
+                <value>
+                    <fullName>ROE Signed</fullName>
+                    <default>false</default>
+                    <label>ROE Signed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Record_ID_Property__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record ID Property</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_MTU_Addresses__c</fullName>
+        <externalId>false</externalId>
+        <label>Related MTU Addresses</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMB_RE_In_Scope__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SMB RE In Scope</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Assigned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Assigned</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Property_Locations1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Estimate_Baseline__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Estimate Baseline</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Notes__c</fullName>
+        <description>Notes from FF Sales team</description>
+        <externalId>false</externalId>
+        <label>Sales Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Serving_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Serving Area</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site_Walk_AC__c</fullName>
+        <externalId>false</externalId>
+        <label>Site_Walk_AC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Site_Walk_FC__c</fullName>
+        <externalId>false</externalId>
+        <label>Site Walk FC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AZ</fullName>
+                    <default>false</default>
+                    <label>AZ</label>
+                </value>
+                <value>
+                    <fullName>CA</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>NE</fullName>
+                    <default>false</default>
+                    <label>NE</label>
+                </value>
+                <value>
+                    <fullName>TX</fullName>
+                    <default>false</default>
+                    <label>TX</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_Property__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Property</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business</fullName>
+                    <default>false</default>
+                    <label>Business</label>
+                </value>
+                <value>
+                    <fullName>HOA</fullName>
+                    <default>false</default>
+                    <label>HOA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit_Count_Engaged__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Count Engaged</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Sales_Status__c</field>
+            <operation>equals</operation>
+            <value>Engaged</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Unit_Count_Pending_Signature__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Count Pending Signature</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Sales_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Signature</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Unit_Count_Proposal_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Count Proposal Sent</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Sales_Status__c</field>
+            <operation>equals</operation>
+            <value>Proposal Sent</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Unit_Count_Research_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Count Research Required</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.Sales_Status__c</field>
+            <operation>equals</operation>
+            <value>Research Required</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Units_in_Progress__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  OR(
+    Unit_Count_Research_Required__c &gt; 0,
+    Unit_Count_Engaged__c &gt; 0,
+    Unit_Count_Proposal_Sent__c &gt; 0,
+    Unit_Count_Pending_Signature__c &gt; 0
+  ),
+  &quot;Unit(s) In Progress&quot;,
+  &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Units in Progress</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RE Assigned</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Property_Locations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Year_Month_FDH_Activation__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(FDH_Activated_Date__c)) &amp; &quot;-&quot; &amp; 
+CASE(
+  MONTH(FDH_Activated_Date__c),
+  1, &quot;01&quot;,
+  2, &quot;02&quot;,
+  3, &quot;03&quot;,
+  4, &quot;04&quot;,
+  5, &quot;05&quot;,
+  6, &quot;06&quot;,
+  7, &quot;07&quot;,
+  8, &quot;08&quot;,
+  9, &quot;09&quot;,
+ 10, &quot;10&quot;,
+ 11, &quot;11&quot;,
+ 12, &quot;12&quot;,
+  &quot;00&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Year - Month FDH Activation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>number_of_buildings__c</fullName>
+        <externalId>false</externalId>
+        <label># of buildings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>number_of_owners__c</fullName>
+        <externalId>false</externalId>
+        <label># of owners</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>number_of_parcels__c</fullName>
+        <externalId>false</externalId>
+        <label># of parcels</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>number_of_roes__c</fullName>
+        <externalId>false</externalId>
+        <label># of ROEs</label>
+        <summaryFilterItems>
+            <field>Property_Unit__c.ROE__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Property_Unit__c.Property_Location__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>number_of_tenants__c</fullName>
+        <externalId>false</externalId>
+        <label># of tenants</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Property Location</label>
+    <listViews>
+        <fullName>AZ_Category_2</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Type_of_Property__c</columns>
+        <columns>Building_Floor_Type__c</columns>
+        <columns>Property_Type__c</columns>
+        <columns>ROE_Executed__c</columns>
+        <columns>Categorize_as_MTU__c</columns>
+        <columns>Related_MTU_Addresses__c</columns>
+        <columns>RE_Notes__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Review AZ – Category 2</label>
+    </listViews>
+    <listViews>
+        <fullName>Address_Review_Required</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Address_Review_Required__c</columns>
+        <columns>Categorize_as_MTU__c</columns>
+        <columns>User__c</columns>
+        <columns>MTU_Group_Name__c</columns>
+        <columns>Related_MTU_Addresses__c</columns>
+        <columns>MTU_Notes__c</columns>
+        <columns>GIS_Notes__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Categorize_as_MTU__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>MTU_Notes__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>MTU_Notes__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>MTU_Notes__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>MTU_Notes__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>Related_MTU_Addresses__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>Related_MTU_Addresses__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Address Review Required - AM</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Building_Floor_Type__c</columns>
+        <columns>Sales_Assigned__c</columns>
+        <columns>Units_in_Progress__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Assign_Sales</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>City__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Sales_Assigned__c</columns>
+        <columns>Assignment_Reference__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sales_Assigned__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Assign Sales</label>
+    </listViews>
+    <listViews>
+        <fullName>CA_Cat_2</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Type_of_Property__c</columns>
+        <columns>Building_Floor_Type__c</columns>
+        <columns>Property_Type__c</columns>
+        <columns>RE_Notes__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Hold__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Review CA – Category 2</label>
+    </listViews>
+    <listViews>
+        <fullName>CA_Not_on_Hold</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Hold__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Hold__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>City__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>City__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>CA Not on Hold - Carlsbad/Enc</label>
+    </listViews>
+    <listViews>
+        <fullName>Category_1</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>City__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Sales_Assigned__c</columns>
+        <columns>Units_in_Progress__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>General - Category 1</label>
+    </listViews>
+    <listViews>
+        <fullName>Category_1_SalesFocus</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>City__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Sales_Assigned__c</columns>
+        <columns>Units_in_Progress__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Category 1 - SalesFocus</label>
+    </listViews>
+    <listViews>
+        <fullName>Category_2</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Sales_Assigned__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>General - Category 2</label>
+    </listViews>
+    <listViews>
+        <fullName>Category_3</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Type_of_Property__c</columns>
+        <columns>Building_Floor_Type__c</columns>
+        <columns>Property_Type__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>General - Category 3</label>
+    </listViews>
+    <listViews>
+        <fullName>FF_SMB_ROE</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Build_Effort__c</columns>
+        <columns>FF_Sales_Project__c</columns>
+        <columns>FF_Sales_Assigned_Date__c</columns>
+        <columns>User__c</columns>
+        <columns>RE_Notes__c</columns>
+        <columns>Sales_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>FF_Sales_Project__c</field>
+            <operation>equals</operation>
+            <value>SMB ROE</value>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>FF Sales - SMB ROE</label>
+    </listViews>
+    <listViews>
+        <fullName>MTU_Addresses_Identified</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Categorize_as_MTU__c</columns>
+        <columns>Related_MTU_Addresses__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Categorize_as_MTU__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>MTU Addresses Identified</label>
+    </listViews>
+    <listViews>
+        <fullName>NE_Cat_2</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Type_of_Property__c</columns>
+        <columns>Building_Floor_Type__c</columns>
+        <columns>Property_Type__c</columns>
+        <columns>RE_Notes__c</columns>
+        <columns>Sales_Assigned__c</columns>
+        <columns>Units_in_Progress__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Review NE – Category 2</label>
+    </listViews>
+    <listViews>
+        <fullName>TX_Cat_2</fullName>
+        <columns>NAME</columns>
+        <columns>Address_Type__c</columns>
+        <columns>Priority__c</columns>
+        <columns>State__c</columns>
+        <columns>User__c</columns>
+        <columns>Property_Unit_Count__c</columns>
+        <columns>Active_Unit_Count__c</columns>
+        <columns>Type_of_Property__c</columns>
+        <columns>Building_Floor_Type__c</columns>
+        <columns>Property_Type__c</columns>
+        <columns>RE_Notes__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Priority__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>State__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Import_Delete_Property__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Review TX – Category 2</label>
+    </listViews>
+    <nameField>
+        <label>Property Location ID</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Property Locations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Lock_Property_Location_ID</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+  ISCHANGED(Name),
+  NOT(ISNEW())
+)</errorConditionFormula>
+        <errorMessage>Property Location ID cannot be changed after the record is created.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

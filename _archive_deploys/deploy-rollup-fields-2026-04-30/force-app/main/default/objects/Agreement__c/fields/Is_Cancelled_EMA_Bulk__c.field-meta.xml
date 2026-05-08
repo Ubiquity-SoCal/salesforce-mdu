@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Cancelled_EMA_Bulk__c</fullName>
+    <description>True when Agreement Type is EMA or Bulk and Status is Cancelled. Used by Opportunity rollup for cleanup dashboard.</description>
+    <externalId>false</externalId>
+    <formula>(ISPICKVAL(Agreement_Type__c, &quot;EMA&quot;) || ISPICKVAL(Agreement_Type__c, &quot;Bulk&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Cancelled&quot;)</formula>
+    <label>Is Cancelled EMA/Bulk</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

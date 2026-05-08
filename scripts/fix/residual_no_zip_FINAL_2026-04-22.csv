@@ -1,0 +1,10 @@
+Id,Name,Property_Address,Property_City,Property_State,notes
+006WR00000ywTVJYA2,1471 Rubenstein,1471,1475 Rubenstein,CA,City field corrupted ('1475 Rubenstein'). Rubenstein Ave is in Cardiff/Encinitas CA
+006WR00000ywTdNYAU,"225 S. Hwy 101 , 17",225 S. HWY 101,17,CA,City field corrupted ('17'). S Hwy 101 CA likely Solana Beach/Encinitas
+006WR00000ywTblYAE,"437 S Highway 101, 101-110",437 S Highway 101,101-110,CA,City field corrupted ('101-110'). S Hwy 101 CA likely Solana Beach/Encinitas
+006WR00000wjqDKYAY,Heritage at Brentwood,"900 Heritage Way, Brentwood, TN, USA",Brentwood,TX,Address says Brentwood TN but state field = TX - data error
+006WR00000wkCl3YAE,Meridian at the Hermitage,"5610 Old Hickory Blvd, Hermitage, TN, USA",Hermitage,TX,"Hermitage TN suburb - no other TN MDU records, real city not in our lookup"
+006WR00000wkBoTYAU,Mohawk River Apartments,"3 Nautical Way North, Cohoes, NY, USA",Cohoes,NY,Cohoes NY - no other NY MDU records in lookup
+006WR00000ywTThYAM,Quail Gardens,Quail Gardens Lane,,CA,No Property_City. Quail Gardens Ln is in Encinitas CA
+006WR00000wkBoRYAU,Sunrise Solar,"1 Solar Way, Latham, NY, USA",Latham,NY,Latham NY - no other NY MDU records in lookup
+006WR00000wkA6qYAE,Woodland Meadows,102 Double Road,Bengaluru,PA,City = Bengaluru (India) state = PA - fully corrupted migration row

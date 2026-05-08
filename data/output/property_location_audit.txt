@@ -1,0 +1,170 @@
+Total Property_Location__c records: 17752
+
+Computing fill rate for each field (this may take ~90s)...
+
+  Name                                          string       cat=CORE-Identity             fill=17752/17752 (100.0%) 
+  Property_Status__c                            picklist     cat=CORE-Status               fill=2/17752 (0.0%) 
+  City__c                                       string       cat=CORE-Identity             fill=17752/17752 (100.0%) 
+  State__c                                      picklist     cat=CORE-Identity             fill=17752/17752 (100.0%) 
+  Hold__c                                       boolean      cat=CORE-Status               fill=1432/17752 (8.1%) true=1432
+  Type_of_Property__c                           picklist     cat=CORE-Identity             fill=771/17752 (4.3%) 
+  Import_DateTime__c                            datetime     cat=???-Other                 fill=17752/17752 (100.0%) 
+  FDH_Name__c                                   string       cat=CORE-Network              fill=17665/17752 (99.5%) 
+  Sales_Estimate_Baseline__c                    date         cat=RE-Sales                  fill=0/17752 (0.0%) 
+  User__c                                       reference    cat=RE-Sales                  fill=646/17752 (3.6%) 
+  ROE_Status__c                                 picklist     cat=RE-Legacy-Status          fill=22/17752 (0.1%) 
+  Site_Walk_FC__c                               date         cat=RE-Legacy-Status          fill=0/17752 (0.0%) 
+  Site_Walk_AC__c                               date         cat=RE-Legacy-Status          fill=0/17752 (0.0%) 
+  ROE_Date_FC__c                                date         cat=RE-Legacy-Status          fill=2/17752 (0.0%) 
+  ROE_Date_AC__c                                date         cat=RE-Legacy-Status          fill=24/17752 (0.1%) 
+  Categorize_as_MTU__c                          boolean      cat=AM-MTU                    fill=329/17752 (1.9%) true=329
+  Circuit_ID__c                                 string       cat=CORE-Network              fill=17752/17752 (100.0%) 
+  Related_MTU_Addresses__c                      textarea     cat=AM-MTU                    fill=291/17752 (1.6%) 
+  RE_Reviewed__c                                boolean      cat=AM-AVR                    fill=1666/17752 (9.4%) true=1666
+  Market__c                                     string       cat=CORE-Status               fill=17752/17752 (100.0%) 
+  Sales_Assigned__c                             reference    cat=RE-Sales                  fill=9086/17752 (51.2%) 
+  Bulk_Deal__c                                  boolean      cat=RE-Sales                  fill=0/17752 (0.0%) true=0
+  Access_Agreement_Required__c                  boolean      cat=RE-Sales                  fill=0/17752 (0.0%) true=0
+  Building_Floor_Type__c                        picklist     cat=CORE-Identity             fill=1488/17752 (8.4%) 
+  Business_Base_Address__c                      string       cat=CORE-Identity             fill=17752/17752 (100.0%) 
+  Serving_Area__c                               string       cat=CORE-Identity             fill=17752/17752 (100.0%) 
+  Potential_Issues__c                           textarea     cat=RE-Sales                  fill=-1/17752 (err%) err: Malformed request https://fun-power-747.my.salesforce.com/se
+  Property_Location_Name__c                     string       cat=CORE-Identity             fill=529/17752 (3.0%) 
+  Property_Unit_Count__c                        double       cat=CORE-Counts               fill=17752/17752 (100.0%) 
+  Active_Unit_Count__c                          double       cat=CORE-Counts               fill=17752/17752 (100.0%) 
+  Available_for_Sales__c                        date         cat=CORE-Counts               fill=2/17752 (0.0%) 
+  All_Units_Active_Icon__c                      string       cat=CORE-Counts               fill=570/17752 (3.2%) 
+  Location_Count__c                             double       cat=CORE-Counts               fill=17752/17752 (100.0%) 
+  Deactive_Unit_Count__c                        double       cat=CORE-Counts               fill=17752/17752 (100.0%) 
+  Property_Customer_Bucket__c                   string       cat=CORE-Counts               fill=17752/17752 (100.0%) 
+  number_of_buildings__c                        double       cat=CORE-Counts               fill=1445/17752 (8.1%) 
+  number_of_parcels__c                          double       cat=CORE-Counts               fill=1389/17752 (7.8%) 
+  number_of_owners__c                           double       cat=CORE-Counts               fill=1345/17752 (7.6%) 
+  RE_Notes__c                                   textarea     cat=RE-Sales                  fill=1076/17752 (6.1%) 
+  ROE_Executed__c                               boolean      cat=RE-Legacy-Status          fill=24/17752 (0.1%) true=24
+  number_of_tenants__c                          double       cat=CORE-Counts               fill=430/17752 (2.4%) 
+  Priority__c                                   string       cat=CORE-Status               fill=17752/17752 (100.0%) 
+  Property_Type__c                              picklist     cat=CORE-Identity             fill=1492/17752 (8.4%) 
+  Available_for_Sales_Count__c                  double       cat=CORE-Counts               fill=17752/17752 (100.0%) 
+  Unit_Count_Research_Required__c               double       cat=Sales-Pipeline-Manual     fill=17752/17752 (100.0%) 
+  Unit_Count_Engaged__c                         double       cat=Sales-Pipeline-Manual     fill=17752/17752 (100.0%) 
+  Unit_Count_Proposal_Sent__c                   double       cat=Sales-Pipeline-Manual     fill=17752/17752 (100.0%) 
+  Unit_Count_Pending_Signature__c               double       cat=Sales-Pipeline-Manual     fill=17752/17752 (100.0%) 
+  Units_in_Progress__c                          string       cat=Sales-Pipeline-Manual     fill=202/17752 (1.1%) 
+  Parcel__c                                     string       cat=CORE-Network              fill=1082/17752 (6.1%) 
+  Assignment_Reference__c                       string       cat=IDs-Sync                  fill=9034/17752 (50.9%) 
+  Record_ID_Property__c                         string       cat=IDs-Sync                  fill=17752/17752 (100.0%) 
+  MTU_Group_Name__c                             string       cat=AM-MTU                    fill=356/17752 (2.0%) 
+  MTU_Notes__c                                  string       cat=AM-MTU                    fill=71/17752 (0.4%) 
+  MTU_Address_Reviewed__c                       boolean      cat=AM-MTU                    fill=0/17752 (0.0%) true=0
+  Address_Review_Required__c                    boolean      cat=AM-AVR                    fill=34/17752 (0.2%) true=34
+  GIS_Notes__c                                  textarea     cat=AM-AVR                    fill=-1/17752 (err%) err: Malformed request https://fun-power-747.my.salesforce.com/se
+  AM_Flag_RE_to_Review__c                       boolean      cat=AM-AVR                    fill=140/17752 (0.8%) true=140
+  RE_Review_Notes_AM__c                         textarea     cat=AM-AVR                    fill=287/17752 (1.6%) 
+  FDH_Activated_Date__c                         date         cat=CORE-Network              fill=17749/17752 (100.0%) 
+  Year_Month_FDH_Activation__c                  string       cat=CORE-Network              fill=17752/17752 (100.0%) 
+  AM_Suite_Numbers__c                           string       cat=AM-AVR                    fill=594/17752 (3.3%) 
+  RE_Reviewer_AM__c                             reference    cat=AM-AVR                    fill=289/17752 (1.6%) 
+  GIS_Reviewer__c                               reference    cat=AM-AVR                    fill=187/17752 (1.1%) 
+  GIS_Review_Date__c                            date         cat=AM-AVR                    fill=632/17752 (3.6%) 
+  RE_Review_Date_AM__c                          date         cat=AM-AVR                    fill=287/17752 (1.6%) 
+  GIS_Review_Quarter__c                         string       cat=AM-AVR                    fill=17752/17752 (100.0%) 
+  AVR_Project_ID__c                             string       cat=AM-AVR                    fill=619/17752 (3.5%) 
+  GIS_API_Match__c                              string       cat=AM-AVR                    fill=8317/17752 (46.9%) 
+  AM_Status__c                                  picklist     cat=AM-AVR                    fill=530/17752 (3.0%) 
+  Additional_Units_found__c                     double       cat=AM-AVR                    fill=443/17752 (2.5%) 
+  AM_Review_Status__c                           string       cat=AM-AVR                    fill=788/17752 (4.4%) 
+  Import_Delete_Property__c                     boolean      cat=IDs-Sync                  fill=668/17752 (3.8%) true=668
+  Business_Building_Id__c                       string       cat=IDs-Sync                  fill=12222/17752 (68.8%) 
+  number_of_roes__c                             double       cat=RE-Legacy-Status          fill=17752/17752 (100.0%) 
+  Import_Delete_Note__c                         string       cat=IDs-Sync                  fill=668/17752 (3.8%) 
+  FF_Sales_Project__c                           string       cat=Misc-FF                   fill=30/17752 (0.2%) 
+  FF_Sales_Assigned_Date__c                     date         cat=Misc-FF                   fill=30/17752 (0.2%) 
+  Build_Effort__c                               picklist     cat=CORE-Network              fill=30/17752 (0.2%) 
+  Sales_Notes__c                                textarea     cat=RE-Sales                  fill=18/17752 (0.1%) 
+
+==================================================================================================================================
+AUDIT SUMMARY — sorted by category, then fill rate desc
+==================================================================================================================================
+NAME                                          TYPE         CATEGORY                       FILL     PCT  FORMULA
+----------------------------------------------------------------------------------------------------------------------------------
+  Import_DateTime__c                            datetime     ???-Other                     17752  100.0%
+  GIS_Review_Quarter__c                         string       AM-AVR                        17752  100.0% [F]
+  GIS_API_Match__c                              string       AM-AVR                         8317   46.9%
+  RE_Reviewed__c                                boolean      AM-AVR                         1666    9.4% [F]
+  AM_Review_Status__c                           string       AM-AVR                          788    4.4% [F] ⚠ low
+  GIS_Review_Date__c                            date         AM-AVR                          632    3.6% ⚠ low
+  AVR_Project_ID__c                             string       AM-AVR                          619    3.5% ⚠ low
+  AM_Suite_Numbers__c                           string       AM-AVR                          594    3.3% ⚠ low
+  AM_Status__c                                  picklist     AM-AVR                          530    3.0% ⚠ low
+  Additional_Units_found__c                     double       AM-AVR                          443    2.5% ⚠ low
+  RE_Reviewer_AM__c                             reference    AM-AVR                          289    1.6% ⚠ low
+  RE_Review_Notes_AM__c                         textarea     AM-AVR                          287    1.6% ⚠ low
+  RE_Review_Date_AM__c                          date         AM-AVR                          287    1.6% ⚠ low
+  GIS_Reviewer__c                               reference    AM-AVR                          187    1.1% ⚠ low
+  AM_Flag_RE_to_Review__c                       boolean      AM-AVR                          140    0.8% ⚠ low
+  Address_Review_Required__c                    boolean      AM-AVR                           34    0.2% ⚠ low
+  GIS_Notes__c                                  textarea     AM-AVR                           -1    err%
+  MTU_Group_Name__c                             string       AM-MTU                          356    2.0% ⚠ low
+  Categorize_as_MTU__c                          boolean      AM-MTU                          329    1.9% ⚠ low
+  Related_MTU_Addresses__c                      textarea     AM-MTU                          291    1.6% ⚠ low
+  MTU_Notes__c                                  string       AM-MTU                           71    0.4% ⚠ low
+  MTU_Address_Reviewed__c                       boolean      AM-MTU                            0    0.0% ⚠ low
+  Property_Unit_Count__c                        double       CORE-Counts                   17752  100.0%
+  Active_Unit_Count__c                          double       CORE-Counts                   17752  100.0%
+  Location_Count__c                             double       CORE-Counts                   17752  100.0% [F]
+  Deactive_Unit_Count__c                        double       CORE-Counts                   17752  100.0%
+  Property_Customer_Bucket__c                   string       CORE-Counts                   17752  100.0% [F]
+  Available_for_Sales_Count__c                  double       CORE-Counts                   17752  100.0%
+  number_of_buildings__c                        double       CORE-Counts                    1445    8.1%
+  number_of_parcels__c                          double       CORE-Counts                    1389    7.8%
+  number_of_owners__c                           double       CORE-Counts                    1345    7.6%
+  All_Units_Active_Icon__c                      string       CORE-Counts                     570    3.2% [F] ⚠ low
+  number_of_tenants__c                          double       CORE-Counts                     430    2.4% ⚠ low
+  Available_for_Sales__c                        date         CORE-Counts                       2    0.0% ⚠ low
+  Name                                          string       CORE-Identity                 17752  100.0%
+  City__c                                       string       CORE-Identity                 17752  100.0%
+  State__c                                      picklist     CORE-Identity                 17752  100.0%
+  Business_Base_Address__c                      string       CORE-Identity                 17752  100.0%
+  Serving_Area__c                               string       CORE-Identity                 17752  100.0%
+  Property_Type__c                              picklist     CORE-Identity                  1492    8.4%
+  Building_Floor_Type__c                        picklist     CORE-Identity                  1488    8.4%
+  Type_of_Property__c                           picklist     CORE-Identity                   771    4.3% ⚠ low
+  Property_Location_Name__c                     string       CORE-Identity                   529    3.0% ⚠ low
+  Circuit_ID__c                                 string       CORE-Network                  17752  100.0%
+  Year_Month_FDH_Activation__c                  string       CORE-Network                  17752  100.0% [F]
+  FDH_Activated_Date__c                         date         CORE-Network                  17749  100.0%
+  FDH_Name__c                                   string       CORE-Network                  17665   99.5%
+  Parcel__c                                     string       CORE-Network                   1082    6.1%
+  Build_Effort__c                               picklist     CORE-Network                     30    0.2% ⚠ low
+  Market__c                                     string       CORE-Status                   17752  100.0%
+  Priority__c                                   string       CORE-Status                   17752  100.0% [F]
+  Hold__c                                       boolean      CORE-Status                    1432    8.1%
+  Property_Status__c                            picklist     CORE-Status                       2    0.0% ⚠ low
+  Record_ID_Property__c                         string       IDs-Sync                      17752  100.0% [F]
+  Business_Building_Id__c                       string       IDs-Sync                      12222   68.8%
+  Assignment_Reference__c                       string       IDs-Sync                       9034   50.9%
+  Import_Delete_Property__c                     boolean      IDs-Sync                        668    3.8% ⚠ low
+  Import_Delete_Note__c                         string       IDs-Sync                        668    3.8% ⚠ low
+  FF_Sales_Project__c                           string       Misc-FF                          30    0.2% ⚠ low
+  FF_Sales_Assigned_Date__c                     date         Misc-FF                          30    0.2% ⚠ low
+  number_of_roes__c                             double       RE-Legacy-Status              17752  100.0%
+  ROE_Date_AC__c                                date         RE-Legacy-Status                 24    0.1% ⚠ low
+  ROE_Executed__c                               boolean      RE-Legacy-Status                 24    0.1% ⚠ low
+  ROE_Status__c                                 picklist     RE-Legacy-Status                 22    0.1% ⚠ low
+  ROE_Date_FC__c                                date         RE-Legacy-Status                  2    0.0% ⚠ low
+  Site_Walk_FC__c                               date         RE-Legacy-Status                  0    0.0% ⚠ low
+  Site_Walk_AC__c                               date         RE-Legacy-Status                  0    0.0% ⚠ low
+  Sales_Assigned__c                             reference    RE-Sales                       9086   51.2%
+  RE_Notes__c                                   textarea     RE-Sales                       1076    6.1%
+  User__c                                       reference    RE-Sales                        646    3.6% ⚠ low
+  Sales_Notes__c                                textarea     RE-Sales                         18    0.1% ⚠ low
+  Sales_Estimate_Baseline__c                    date         RE-Sales                          0    0.0% ⚠ low
+  Bulk_Deal__c                                  boolean      RE-Sales                          0    0.0% ⚠ low
+  Access_Agreement_Required__c                  boolean      RE-Sales                          0    0.0% ⚠ low
+  Potential_Issues__c                           textarea     RE-Sales                         -1    err%
+  Unit_Count_Research_Required__c               double       Sales-Pipeline-Manual         17752  100.0%
+  Unit_Count_Engaged__c                         double       Sales-Pipeline-Manual         17752  100.0%
+  Unit_Count_Proposal_Sent__c                   double       Sales-Pipeline-Manual         17752  100.0%
+  Unit_Count_Pending_Signature__c               double       Sales-Pipeline-Manual         17752  100.0%
+  Units_in_Progress__c                          string       Sales-Pipeline-Manual           202    1.1% [F] ⚠ low

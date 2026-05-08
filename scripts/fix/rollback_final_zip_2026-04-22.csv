@@ -1,0 +1,4 @@
+Id,Name,prior_value,new_Property_Zip__c,source
+006WR00000ywAsVYAU,Island View - Private Road,,92024,concat_field_regex
+006WR00000ywF4AYAU,Seapoint Tennis Club,,92009,concat_field_regex
+006WR00000ywTLdYAM,Seagate Terrace,,92056,concat_field_regex

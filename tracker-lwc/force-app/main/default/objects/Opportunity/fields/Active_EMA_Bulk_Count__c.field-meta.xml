@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_EMA_Bulk_Count__c</fullName>
+    <description>Count of child Agreements where Type is EMA/Bulk and Status is NOT Cancelled. Used by Stale EMA/Bulk on wrong stage cleanup tile (filters Opps where Active_EMA_Bulk_Count &gt; 0 but Stage hasn&apos;t progressed).</description>
+    <label>Active EMA/Bulk Count</label>
+    <summaryFilterItems>
+        <field>Agreement__c.Is_Active_EMA_Bulk__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Agreement__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>

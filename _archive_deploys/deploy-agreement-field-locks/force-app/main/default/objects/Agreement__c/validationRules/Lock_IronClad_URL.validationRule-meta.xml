@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_IronClad_URL</fullName>
+    <active>true</active>
+    <description>Allows users to add an IronClad URL when blank but blocks changes once populated. System Administrator bypasses.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(IronClad_URL__c),
+  NOT(ISBLANK(PRIORVALUE(IronClad_URL__c))),
+  $Profile.Name &lt;&gt; "System Administrator"
+)</errorConditionFormula>
+    <errorDisplayField>IronClad_URL__c</errorDisplayField>
+    <errorMessage>IronClad URL is locked once populated. Contact a System Administrator to change it.</errorMessage>
+</ValidationRule>

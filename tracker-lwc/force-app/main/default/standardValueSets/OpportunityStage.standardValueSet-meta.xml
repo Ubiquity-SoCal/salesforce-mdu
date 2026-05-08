@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <label>Closed Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospects</fullName>
+        <default>false</default>
+        <label>Prospects</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>5</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+        <label>Prospecting</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Engaged</fullName>
+        <default>false</default>
+        <label>Engaged</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>30</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Sent</fullName>
+        <default>false</default>
+        <label>Proposal Sent</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Negotiations</fullName>
+        <default>false</default>
+        <label>Contract Negotiations</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>PAL/ROE Complete</fullName>
+        <default>false</default>
+        <label>PAL/ROE Complete</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Under Contract</fullName>
+        <default>false</default>
+        <label>Under Contract</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>EMA/Bulk In Progress</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMA/Bulk In Progress</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>EMA/Bulk Complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMA/Bulk Complete</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>EMA/Bulk Completed</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EMA/Bulk Completed</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing/Bulk In Progress</fullName>
+        <default>false</default>
+        <label>Marketing/Bulk In Progress</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing/Bulk Complete</fullName>
+        <default>false</default>
+        <label>Marketing/Bulk Complete</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>ROE Secured</fullName>
+        <default>false</default>
+        <label>ROE Secured</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Ready for Engineering</fullName>
+        <default>false</default>
+        <label>Ready for Engineering</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Under Construction</fullName>
+        <default>false</default>
+        <label>Under Construction</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Activation</fullName>
+        <default>false</default>
+        <label>Activation</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+        <label>Closed Won</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <label>Negotiation</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+        <label>Qualification</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs Analysis</fullName>
+        <default>false</default>
+        <label>Needs Analysis</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>35</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>70</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal</fullName>
+        <default>false</default>
+        <label>Proposal</label>
+        <closed>false</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

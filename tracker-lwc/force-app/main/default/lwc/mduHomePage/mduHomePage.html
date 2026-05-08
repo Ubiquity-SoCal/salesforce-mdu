@@ -1,0 +1,12 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Tracker">
+            <c-tracker-grid app-context="MDU_Sales"></c-tracker-grid>
+        </lightning-tab>
+        <lightning-tab label="Executive" onactive={handleExecutiveActive}>
+            <template lwc:if={executiveLoaded}>
+                <c-executive-dashboard></c-executive-dashboard>
+            </template>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

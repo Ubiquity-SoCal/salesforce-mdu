@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Stage__c</fullName>
+    <description>Stage of the directly-linked Opportunity (via Property_Unit__c.Opportunity__c). Blank when the Unit has no Opp link.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Opportunity__r.StageName)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <label>Opportunity Stage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

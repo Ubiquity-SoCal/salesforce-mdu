@@ -1,0 +1,13 @@
+agr_id,agr_name,opp,type,status,sf_date,ic_date,src,diff_days,ic_id,ic_record_name
+a0BWR0000083yXe2AI,AGR-1133,Arthouse Apartments,EMA,Completed,2024-06-07,2024-02-12,effective_date,116,IC-1332,Exclusive Marketing Agreement - Arthouse Apartments
+a0BWR000008AyKr2AK,AGR-1360,Omaha_MDU_5240 Ames Ave,ROE,Completed,2024-09-13,2024-07-16,agreement_date,59,IC-682,Right of Entry Agreement with Jim Bone 5240 LLC
+a0BWR000008Axwf2AC,AGR-1343,Omaha_MDU_4502 N 49th St,ROE,Completed,2024-09-13,2024-07-30,agreement_date,45,IC-674,Right of Entry Agreement with Paladino Development Group
+a0BWR000008WSZF2A4,AGR-1457,Birchwood Apts,ROE,Cancelled,2025-12-21,2026-02-03,executed_date,44,IC-2112,Right of Entry Agreement with Parallel Properties LLC / Jerry Banks Group
+a0BWR000008AxtR2AS,AGR-1341,Omaha_MDU_The Redman Townhomes & Apartments,ROE,Completed,2024-12-11,2024-11-01,agreement_date,40,IC-690,Right of Entry Agreement with 20th Street LLC
+a0BWR000008AyBB2A0,AGR-1352,Omaha_MDU_Brewer Apartments,ROE,Completed,2024-12-18,2024-11-18,agreement_date,30,IC-688,Right of Entry Agreement with Bayview Apartments LLC c/o Landmark Group
+a0BWR000008a5pN2AQ,AGR-1502,ROE - 1835 S EXTENSION RD MESA AZ,ROE,Completed,2025-03-01,2025-03-28,agreement_date,27,IC-659,Right of Entry Agreement with Ponder & Prey LLC
+a0BWR000008a65V2AQ,AGR-1511,ROE - 540 W IRON AVE MESA AZ,ROE,Completed,2025-04-01,2025-04-28,agreement_date,27,IC-654,Right of Entry Agreement with Pioneer Title Agency Inc
+a0BWR000008a63t2AA,AGR-1510,ROE - 540 W IRON AVE MESA AZ,ROE,Completed,2025-04-01,2025-04-22,agreement_date,21,IC-652,Right of Entry Agreement with FAE Holdings 470819R LLC
+a0BWR000008a5vp2AA,AGR-1505,ROE - 2651 W GUADALUPE RD MESA AZ,ROE,Completed,2025-04-01,2025-04-16,agreement_date,15,IC-660,Right of Entry Agreement with SPH Executive Suites LLC
+a0BWR000008AvDK2A0,AGR-1332,Omaha_MDU_4005 Hartman Circle,ROE,Completed,2025-02-10,2025-02-21,agreement_date,11,IC-689,"Right of Entry Agreement with Davis Contracting, LLC"
+a0BWR000008aAPF2A2,AGR-1524,Omaha_MDU_6301 Military Ave,ROE,Completed,2025-02-05,2025-01-27,agreement_date,9,IC-669,Right of Entry Agreement with Rosemary Baumwart Trust

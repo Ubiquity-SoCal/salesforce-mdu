@@ -1,0 +1,53 @@
+To: Tanya Friese; Rosemarie Shortino
+Cc: Taylor Mauney
+Subject: ROE backfill in Salesforce — 13 IronClad IDs need your review
+
+Hi Tanya and Rose,
+
+Thanks for the AZ ROE and ROE_ALL spreadsheets you sent over. I used them to backfill 62 ROE Agreements into Salesforce today (13 existing Agreements got IronClad IDs populated, 47 new Opps and Agreements were created, plus 2 new Agreements added to existing Opps).
+
+There are 13 IronClad IDs from those files that I couldn't link automatically. Each falls into one of three buckets:
+
+  1. No property address in either spreadsheet (just a counterparty name)
+  2. Matched an existing Opp that's already Closed Lost, where the linkage doesn't fit the Opp's history
+  3. Likely a duplicate or draft entry on the IronClad side
+
+I've split them by who I think owns the follow-up. Could you each take a quick look at your list and let me know how you'd like to handle them?
+
+----- Tanya (1 record) -----
+
+  IC-657  | 1245 Baseline LLC, Mesa AZ
+          | Matched 1245 W Baseline Rd Mesa, but that Opp is Closed Lost and already has two Agreements
+            (a Cancelled PAL and a Review-status ROE). The signed date in IronClad is 11/05/2024.
+            Want me to link IC-657 to the existing ROE on that Opp, or treat differently?
+
+----- Rose (12 records) -----
+
+  Closed Lost / duplicate review:
+
+  IC-687  | Davis Contracting, LLC at 4005 Hartman Circle Omaha — appears to be a draft/placeholder.
+            IC-689 (same counterparty, same address) was the actually-signed one and got linked.
+            OK to leave IC-687 unlinked or do you want a placeholder Agreement created?
+
+  IC-696  | Omaha_MDU_Fontenelle Cottages (3450 N 45th Court) — Opp is Closed Lost. Signed ROE exists in IronClad.
+            Should this Agreement be created on the Closed Lost Opp for history, or skipped?
+
+  No address in source spreadsheet (need an address or property name to link):
+
+  IC-1530 | Lashawn Kellogg
+  IC-333  | 114 Collision Center - NRG Performance / Texas Born Performance
+  IC-1525 | City of Fargo (state unclear; Fargo ND or another Fargo?)
+  IC-1527 | M & M Kellogg Properties LLC (record name mentions "2 Documents to sign")
+  IC-1528 | Dundee Group LLC (record name "Signed Right of Entry Form (002)")
+  IC-1039 | Eagle Ridge Terrace
+  IC-265  | Woodcrest Capital, LLC
+  IC-331  | Ketos Creative ("FF - ROE - Ketos Creative")
+  IC-736  | Investors Realty
+  IC-673  | Boyd Housing
+
+Either reply with the property addresses and I'll create the Opp + Agreement records, or let me know if any should stay manual.
+
+Audit logs and the full needs-review CSV are saved in the SalesForce repo at SalesForce/audit_logs/ironclad_needs_review_2026-04-29.csv if you want the source of truth.
+
+Thanks!
+Koa

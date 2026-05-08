@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomNotificationType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customNotifTypeName>Agreement_Activity</customNotifTypeName>
+    <desktop>true</desktop>
+    <description>Bell-icon notifications fired when an Agreement reaches a key milestone (signed, terminated, under review).</description>
+    <mobile>true</mobile>
+    <masterLabel>Agreement Activity</masterLabel>
+</CustomNotificationType>

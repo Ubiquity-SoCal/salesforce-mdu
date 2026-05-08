@@ -1,0 +1,588 @@
+{
+  "mode": "LIVE",
+  "entries": [
+    {
+      "action": "retry_update",
+      "ca_name": "3152 Levante",
+      "sf_id": "006WR00000yvU0RYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "3156 Levante",
+      "sf_id": "006WR00000yvVsYYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "127 W. Glaucus",
+      "sf_id": "006WR00000ywTWvYAM",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Coral Cove SFU",
+      "sf_id": "006WR00000yvv0eYAA",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "53 Melrose Promenade SFU",
+      "sf_id": "006WR00000ywCuIYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "On The Park SFU",
+      "sf_id": "006WR00000ywN6YYAU"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Promenade SFU",
+      "sf_id": "006WR00000yv9vJYAQ",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Seapoint Tennis Club",
+      "sf_id": "006WR00000ywF4AYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "The Nest at La Costa",
+      "sf_id": "006WR00000yw26xYAA"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Cambria SFU",
+      "sf_id": "006WR00000yvz12YAA"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Cardiff Park",
+      "sf_id": "006WR00000yutSHYAY"
+    },
+    {
+      "action": "retry_create",
+      "ca_name": "Fox Point",
+      "sf_id": "006WR0000112fikYAA",
+      "opp": {
+        "Name": "Fox Point",
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "StageName": "Prospecting",
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Address__c": "1200 Fox Point Farms Lane, Encinitas, CA 92024",
+        "Property_City__c": "Encinitas",
+        "Property_State__c": "CA",
+        "CloseDate": "2026-12-31",
+        "HOA__c": true,
+        "Sales_Status__c": "Contact Pending",
+        "Property_Classification__c": "SFU",
+        "Units__c": 197
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Pelican Ridge",
+      "sf_id": "006WR00000ytiKQYAY"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Quentin Court",
+      "sf_id": "006WR00000yutTtYAI"
+    },
+    {
+      "action": "retry_create",
+      "ca_name": "Sand Piper Point",
+      "sf_id": "006WR000011367rYAA",
+      "opp": {
+        "Name": "Sand Piper Point",
+        "RecordTypeId": "012WR00000Ra0mkYAB",
+        "StageName": "Prospecting",
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "Property_Address__c": "321-393 West I street, Encinitas CA 92024",
+        "Property_City__c": "Encinitas",
+        "Property_State__c": "CA",
+        "CloseDate": "2026-12-31",
+        "HOA__c": true,
+        "Sales_Status__c": "Contact Pending",
+        "Property_Classification__c": "SFU",
+        "Units__c": 21
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Trailer Rancho Mobile",
+      "sf_id": "006WR00000ytrE5YAI"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Village Park SFU",
+      "sf_id": "006WR00000ywT2HYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Village Park Manor",
+      "sf_id": "006WR00000ywSPbYAM",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Emerald Point SFU",
+      "sf_id": "006WR00000ywT8jYAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Mission Del Oro SFU",
+      "sf_id": "006WR00000yuxKdYAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Mission View Manor West",
+      "sf_id": "006WR00000wjnm6YAA"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Montego Village SFU",
+      "sf_id": "006WR00000yuYsYYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Ocean Hills Country Club SFU",
+      "sf_id": "006WR00000wkA7PYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Rancho San Luis Rey 55+",
+      "sf_id": "006WR00000wkCjHYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Seagate Terrace",
+      "sf_id": "006WR00000ywTLdYAM"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Alicante Hills SFU",
+      "sf_id": "006WR00000yv47cYAA"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Carlsbad Arroyo Vista SFU",
+      "sf_id": "006WR00000ywOYtYAM"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Carlsbad Surfside SFU",
+      "sf_id": "006WR00000yvvYXYAY"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Fairways SFU",
+      "sf_id": "006WR00000yvMMIYA2"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "FoxtailLoop",
+      "sf_id": "006WR00000yv7YaYAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "La Costa Altezza SFU",
+      "sf_id": "006WR00000ywBdGYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "La Costa Greens SFU",
+      "sf_id": "006WR00000ywSXdYAM"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "La Costa Oaks South SFU",
+      "sf_id": "006WR00000yw3HWYAY"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "La Costa Ridge1 SFU",
+      "sf_id": "006WR00000ywSkXYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "La Costa Ridge2 SFU",
+      "sf_id": "006WR00000ywSe5YAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Monarch Villas",
+      "sf_id": "006WR00000wk9UkYAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Santa Fe Trails SFU",
+      "sf_id": "006WR00000yvvAJYAY"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Traditions At La Costa SFU",
+      "sf_id": "006WR00000yvSJdYAM"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Via Casa Del Sol SFU",
+      "sf_id": "006WR00000ywSarYAE"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Villas De La Costa SFU",
+      "sf_id": "006WR00000ywB2AYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Beach Street Encinitas SFU",
+      "sf_id": "006WR00000yuqW4YAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Cardiff Park SFU",
+      "sf_id": "006WR00000yutvPYAQ"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Encinitas Ranch SFU",
+      "sf_id": "006WR00000yw0RiYAI"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Flair Encinitas SFU",
+      "sf_id": "006WR00000ywLuMYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Forrest Bluff Terraces SFU",
+      "sf_id": "006WR00000yvINSYA2",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Mendocino SFU",
+      "sf_id": "006WR00000yw9QBYAY",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Pacifica Leucadia SFU",
+      "sf_id": "006WR00000yuOtDYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Sandalwood SFU",
+      "sf_id": "006WR00000ywSqzYAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Seabluffe Villages SFU",
+      "sf_id": "006WR00000ywSpNYAU"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Seaside Highlannds SFU",
+      "sf_id": "006WR00000yw9YHYAY",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Seaside Ridge SFU",
+      "sf_id": "006WR00000ywSnlYAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "The Summit SFU",
+      "sf_id": "006WR00000ywSsbYAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "West Hampton Cove",
+      "sf_id": "006WR00000wk9UrYAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "El Camino 76 Mobile Estates",
+      "sf_id": "006WR00000wk3OAYAY"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Emerald Lake Village SFU",
+      "sf_id": "006WR00000yuj1ZYAQ"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Pacifica SFU",
+      "sf_id": "006WR00000ywT77YAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Rancho Hermosa SFU",
+      "sf_id": "006WR00000yv0X4YAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Trico Mobile Estates",
+      "sf_id": "006WR00000wkA6MYAU"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Villa Trieste SFU",
+      "sf_id": "006WR00000ywKINYA2"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Alga Hills SFU",
+      "sf_id": "006WR00000ywScTYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "San Pacifico SFU",
+      "sf_id": "006WR00000ywSNxYAM",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Monte Mira SFU",
+      "sf_id": "006WR00000yvoqPYAQ",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Sky Loft SFU",
+      "sf_id": "006WR00000yvQkpYAE",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": true,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": true
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "127 W Glaucus ST - A",
+      "sf_id": "006WR00000ywTa9YAE",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": false,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": false
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Casitas De La Costa SFU",
+      "sf_id": "006WR00000ywG8IYAU"
+    },
+    {
+      "action": "retry_update",
+      "ca_name": "Park Encinitas Mobile Homes",
+      "sf_id": "006WR00000wkCmJYAU",
+      "updates": {
+        "OwnerId": "005WR0000030RCzYAM",
+        "Pipeline_Bucket__c": "Prospects",
+        "HOA__c": false,
+        "StageName": "Prospecting",
+        "Sales_Status__c": "Contact Pending"
+      },
+      "hoa": false
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Las Vistas SFU",
+      "sf_id": "006WR00000ywTFBYA2"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "North Shore SFU",
+      "sf_id": "006WR00000ywSm9YAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Terraces At Cantebria SFU",
+      "sf_id": "006WR00000yvAMgYAM"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Cantaberia SFU",
+      "sf_id": "006WR00000yvvrqYAA"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Portico At Rancho Carrillo SFU",
+      "sf_id": "006WR00000ywEb8YAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Cardiff Glen SFU",
+      "sf_id": "006WR00000yvmgUYAQ"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Hygeia Court SFU",
+      "sf_id": "006WR00000yvxC6YAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Manzanita Cove SFU",
+      "sf_id": "006WR00000yvYteYAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Sandy Point SFU",
+      "sf_id": "006WR00000ywU9dYAE"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Village At Leucadia SFU",
+      "sf_id": "006WR00000yviUqYAI"
+    },
+    {
+      "action": "hoa_update",
+      "ca_name": "Village Park Shady Tree #2",
+      "sf_id": "006WR00000ywT5VYAU"
+    }
+  ],
+  "stats": {
+    "retry_updated": 20,
+    "notes_attached": 22,
+    "hoa_updated": 55,
+    "retry_created": 2
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "close_date_updates": [
+    {
+      "opp_id": "006WR00000wk9SEYAY",
+      "opp_name": "La Mesa Village Apartments",
+      "old": "2026-03-21",
+      "new": "2026-04-30"
+    },
+    {
+      "opp_id": "006WR00000wkDtwYAE",
+      "opp_name": "Woodglen Square ll",
+      "old": "2026-03-28",
+      "new": "2026-04-17"
+    },
+    {
+      "opp_id": "006WR00000wk9SYYAY",
+      "opp_name": "Garden Place Apartments",
+      "old": "2026-04-30",
+      "new": "2026-05-30"
+    },
+    {
+      "opp_id": "006WR00000wk9SZYAY",
+      "opp_name": "Falcon Glen Apartments",
+      "old": "2026-04-30",
+      "new": "2026-05-30"
+    },
+    {
+      "opp_id": "006WR00000wk9SnYAI",
+      "opp_name": "Seascape Sur",
+      "old": "2024-09-11",
+      "new": "2026-05-30"
+    },
+    {
+      "opp_id": "006WR00000wkA8kYAE",
+      "opp_name": "Santa Helena Park Condominiums",
+      "old": "2024-06-18",
+      "new": "2026-05-15"
+    },
+    {
+      "opp_id": "006WR00000wkEcCYAU",
+      "opp_name": "Eastgate Village Apartments",
+      "old": "2025-12-31",
+      "new": "2026-05-01"
+    },
+    {
+      "opp_id": "006WR00000wkC7YYAU",
+      "opp_name": "Westmount at The District Apartments",
+      "old": "2023-03-31",
+      "new": "2026-05-01"
+    },
+    {
+      "opp_id": "006WR00000wkC7WYAU",
+      "opp_name": "Westmount at Urban Trails",
+      "old": "2023-03-30",
+      "new": "2026-05-01"
+    },
+    {
+      "opp_id": "006WR00000wkA7aYAE",
+      "opp_name": "Amberwood Manor",
+      "old": "2023-04-13",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkDMHYA2",
+      "opp_name": "Mesa_MDU_Del Corona Apts Del Coronado",
+      "old": "2023-06-09",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkCk8YAE",
+      "opp_name": "Bridgewood Townhomes",
+      "old": "2023-03-30",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkA8mYAE",
+      "opp_name": "4813-4823 Boyd St Apartments",
+      "old": "2024-07-30",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkA8zYAE",
+      "opp_name": "6314 Boyd Street",
+      "old": "2024-09-13",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkABpYAM",
+      "opp_name": "Liberty Manor",
+      "old": "2025-08-18",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkC7zYAE",
+      "opp_name": "Williamsburg Townhomes and Apartments",
+      "old": "2024-02-09",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkA95YAE",
+      "opp_name": "Parkwood Apartments",
+      "old": "2024-07-29",
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkEcpYAE",
+      "opp_name": "Sonterra Apartment Homes",
+      "old": "2023-05-12",
+      "new": "2026-04-30"
+    }
+  ],
+  "notes_created": [
+    {
+      "opp_id": "006WR00000wkEcAYAU",
+      "opp_name": "Creekside Apartments",
+      "note_id": "069WR00001CxtNiYAJ"
+    },
+    {
+      "opp_id": "006WR00000xwGf7YAE",
+      "opp_name": "Killeen_MDU_117-121_W_Avenue_A",
+      "note_id": "069WR00001CxctEYAR"
+    },
+    {
+      "opp_id": "006WR00000wkEbUYAU",
+      "opp_name": "1807 Mulford Apartments_Colt RE",
+      "note_id": "069WR00001CyFXuYAN"
+    },
+    {
+      "opp_id": "006WR00000wkEbRYAU",
+      "opp_name": "Jerome Apartments_Colt RE",
+      "note_id": "069WR00001CyKJ4YAN"
+    },
+    {
+      "opp_id": "006WR00000wkEbQYAU",
+      "opp_name": "307 N Apartments_Colt RE",
+      "note_id": "069WR00001Cy6j6YAB"
+    },
+    {
+      "opp_id": "006WR00000wkEbOYAU",
+      "opp_name": "Patriot Place",
+      "note_id": "069WR00001CwodGYAR"
+    },
+    {
+      "opp_id": "006WR00000wkEbSYAU",
+      "opp_name": "Saffari Apts_Colt RE",
+      "note_id": "069WR00001CxoJGYAZ"
+    },
+    {
+      "opp_id": "006WR00000wkEbTYAU",
+      "opp_name": "Soaring Eagle Apartments_Colt RE",
+      "note_id": "069WR00001CxYuNYAV"
+    },
+    {
+      "opp_id": "006WR00000wkEbPYAU",
+      "opp_name": "1507 N 8th Apartments_Colt RE",
+      "note_id": "069WR00001CxxWDYAZ"
+    },
+    {
+      "opp_id": "006WR00000wk9RuYAI",
+      "opp_name": "Town East",
+      "note_id": "069WR00001CxfHgYAJ"
+    },
+    {
+      "opp_id": "006WR00000wkEcBYAU",
+      "opp_name": "Heritage of Newark (FKA Newark Beach Estates)",
+      "note_id": "069WR00001CyaIxYAJ"
+    },
+    {
+      "opp_id": "006WR00000wkDtzYAE",
+      "opp_name": "Whispering Hills Apartments",
+      "note_id": "069WR00001CwvJgYAJ"
+    },
+    {
+      "opp_id": "006WR00000wkEcDYAU",
+      "opp_name": "The 1001 Apartments",
+      "note_id": "069WR00001Cy92hYAB"
+    },
+    {
+      "opp_id": "006WR00000wkEc8YAE",
+      "opp_name": "Bristol Square Apartments",
+      "note_id": "069WR00001CwVp9YAF"
+    },
+    {
+      "opp_id": "006WR00000wkEcEYAU",
+      "opp_name": "Northampton Court Condominiums",
+      "note_id": "069WR00001Cw3rWYAR"
+    },
+    {
+      "opp_id": "006WR00000wkEboYAE",
+      "opp_name": "The Bungalows",
+      "note_id": "069WR00001CybZyYAJ"
+    },
+    {
+      "opp_id": "006WR00000wkBTuYAM",
+      "opp_name": "Indian Hills Village Apartments",
+      "note_id": "069WR00001CwkGLYAZ"
+    },
+    {
+      "opp_id": "006WR000011bsupYAA",
+      "opp_name": "Benson Apartments",
+      "note_id": "069WR00001CwXagYAF"
+    },
+    {
+      "opp_id": "006WR00000xuzoQYAQ",
+      "opp_name": "Killeen_MDU_Bradley Arms",
+      "note_id": "069WR00001Cy6uSYAR"
+    },
+    {
+      "opp_id": "006WR00000wkEbPYAU",
+      "opp_name": "1507 N 8th Apartments_Colt RE",
+      "note_id": "069WR00001CyYx4YAF"
+    },
+    {
+      "opp_id": "006WR00000wk1ERYAY",
+      "opp_name": "Indian Hills Terrace",
+      "note_id": "069WR00001Cx5FmYAJ"
+    },
+    {
+      "opp_id": "006WR00000wkDuOYAU",
+      "opp_name": "Stonebridge Gardens",
+      "note_id": "069WR00001CxOqQYAV"
+    },
+    {
+      "opp_id": "006WR00000wk9SEYAY",
+      "opp_name": "La Mesa Village Apartments",
+      "note_id": "069WR00001CwtOBYAZ"
+    },
+    {
+      "opp_id": "006WR00000wkDtwYAE",
+      "opp_name": "Woodglen Square ll",
+      "note_id": "069WR00001CyQbKYAV"
+    },
+    {
+      "opp_id": "006WR00000wk9SYYAY",
+      "opp_name": "Garden Place Apartments",
+      "note_id": "069WR00001CwrO3YAJ"
+    },
+    {
+      "opp_id": "006WR00000wk9SZYAY",
+      "opp_name": "Falcon Glen Apartments",
+      "note_id": "069WR00001CyGnKYAV"
+    },
+    {
+      "opp_id": "006WR00000wk9SnYAI",
+      "opp_name": "Seascape Sur",
+      "note_id": "069WR00001CxAfHYAV"
+    },
+    {
+      "opp_id": "006WR00000wkA8kYAE",
+      "opp_name": "Santa Helena Park Condominiums",
+      "note_id": "069WR00001CydwjYAB"
+    },
+    {
+      "opp_id": "006WR00000wkEcCYAU",
+      "opp_name": "Eastgate Village Apartments",
+      "note_id": "069WR00001Cy8ktYAB"
+    },
+    {
+      "opp_id": "006WR00000wkC7YYAU",
+      "opp_name": "Westmount at The District Apartments",
+      "note_id": "069WR00001CxcZyYAJ"
+    },
+    {
+      "opp_id": "006WR00000wkC7WYAU",
+      "opp_name": "Westmount at Urban Trails",
+      "note_id": "069WR00001CwhTXYAZ"
+    },
+    {
+      "opp_id": "006WR00000wkA7aYAE",
+      "opp_name": "Amberwood Manor",
+      "note_id": "069WR00001Cy86fYAB"
+    },
+    {
+      "opp_id": "006WR00000wkDMHYA2",
+      "opp_name": "Mesa_MDU_Del Corona Apts Del Coronado",
+      "note_id": "069WR00001CxGSzYAN"
+    },
+    {
+      "opp_id": "006WR00000wkCk8YAE",
+      "opp_name": "Bridgewood Townhomes",
+      "note_id": "069WR00001Cye4nYAB"
+    },
+    {
+      "opp_id": "006WR00000wkA8mYAE",
+      "opp_name": "4813-4823 Boyd St Apartments",
+      "note_id": "069WR00001Cye81YAB"
+    },
+    {
+      "opp_id": "006WR00000wkA8zYAE",
+      "opp_name": "6314 Boyd Street",
+      "note_id": "069WR00001CySjcYAF"
+    },
+    {
+      "opp_id": "006WR00000wkABpYAM",
+      "opp_name": "Liberty Manor",
+      "note_id": "069WR00001Cwy3BYAR"
+    },
+    {
+      "opp_id": "006WR00000wkC7zYAE",
+      "opp_name": "Williamsburg Townhomes and Apartments",
+      "note_id": "069WR00001Cx2w7YAB"
+    },
+    {
+      "opp_id": "006WR00000wkA95YAE",
+      "opp_name": "Parkwood Apartments",
+      "note_id": "069WR00001CwHcXYAV"
+    },
+    {
+      "opp_id": "006WR00000wkEcpYAE",
+      "opp_name": "Sonterra Apartment Homes",
+      "note_id": "069WR00001CxxknYAB"
+    },
+    {
+      "opp_id": "006WR00000wk9SsYAI",
+      "opp_name": "Sandpiper Pointe",
+      "note_id": "069WR00001Cxv9QYAR"
+    }
+  ],
+  "errors": [],
+  "projected_close_date_updates": [
+    {
+      "opp_id": "006WR00000wk9SEYAY",
+      "opp_name": "La Mesa Village Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": "2026-03-21",
+      "new": "2026-04-30"
+    },
+    {
+      "opp_id": "006WR00000wkDtwYAE",
+      "opp_name": "Woodglen Square ll",
+      "field": "Projected_Close_Date__c",
+      "old": "2026-03-28",
+      "new": "2026-04-17"
+    },
+    {
+      "opp_id": "006WR00000wk9SYYAY",
+      "opp_name": "Garden Place Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": "2026-04-30",
+      "new": "2026-05-30"
+    },
+    {
+      "opp_id": "006WR00000wk9SZYAY",
+      "opp_name": "Falcon Glen Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": "2026-04-30",
+      "new": "2026-05-30"
+    },
+    {
+      "opp_id": "006WR00000wk9SnYAI",
+      "opp_name": "Seascape Sur",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-05-30"
+    },
+    {
+      "opp_id": "006WR00000wkA8kYAE",
+      "opp_name": "Santa Helena Park Condominiums",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-05-15"
+    },
+    {
+      "opp_id": "006WR00000wkEcCYAU",
+      "opp_name": "Eastgate Village Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-05-01"
+    },
+    {
+      "opp_id": "006WR00000wkC7YYAU",
+      "opp_name": "Westmount at The District Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-05-01"
+    },
+    {
+      "opp_id": "006WR00000wkC7WYAU",
+      "opp_name": "Westmount at Urban Trails",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-05-01"
+    },
+    {
+      "opp_id": "006WR00000wkA7aYAE",
+      "opp_name": "Amberwood Manor",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkDMHYA2",
+      "opp_name": "Mesa_MDU_Del Corona Apts Del Coronado",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkCk8YAE",
+      "opp_name": "Bridgewood Townhomes",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkA8mYAE",
+      "opp_name": "4813-4823 Boyd St Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkA8zYAE",
+      "opp_name": "6314 Boyd Street",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkABpYAM",
+      "opp_name": "Liberty Manor",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkC7zYAE",
+      "opp_name": "Williamsburg Townhomes and Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkA95YAE",
+      "opp_name": "Parkwood Apartments",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-06-01"
+    },
+    {
+      "opp_id": "006WR00000wkEcpYAE",
+      "opp_name": "Sonterra Apartment Homes",
+      "field": "Projected_Close_Date__c",
+      "old": null,
+      "new": "2026-04-30"
+    }
+  ],
+  "close_date_reverted": true
+}

@@ -1,0 +1,13 @@
+SF_Id,SF_Name,Field,Before,After,Source,Action,Timestamp
+006WR00000xwGf7YAE,Killeen_MDU_117-121_W_Avenue_A,Projected_Close_Date__c,2026-06-27,2026-05-06,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344012
+006WR00000wkEbUYAU,1807 Mulford Apartments_Colt RE,Projected_Close_Date__c,2026-03-20,2026-06-01,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344048
+006WR00000wkDtMYAU,Fort_Hood MHP,Projected_Close_Date__c,,2026-06-30,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344065
+006WR00000wkEbRYAU,Jerome Apartments_Colt RE,Projected_Close_Date__c,2026-03-20,2026-06-01,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344077
+006WR00000wkEbQYAU,307 N Apartments_Colt RE,Projected_Close_Date__c,2026-03-20,2026-06-01,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344089
+006WR00000wkEbSYAU,Saffari Apts_Colt RE,Projected_Close_Date__c,2026-03-20,2026-06-01,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344101
+006WR00000wkEbTYAU,Soaring Eagle Apartments_Colt RE,Projected_Close_Date__c,2026-03-20,2026-06-01,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344115
+006WR00000wkEbPYAU,1507 N 8th Apartments_Colt RE,Projected_Close_Date__c,2026-03-20,2026-06-01,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344130
+006WR00000wk9RuYAI,Town East,Projected_Close_Date__c,2026-03-27,2026-05-06,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344147
+006WR00000wkDtzYAE,Whispering Hills Apartments,Projected_Close_Date__c,2026-03-27,2026-05-06,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344162
+006WR00000wkEb1YAE,Horizon Heights,Projected_Close_Date__c,2026-07-27,2026-05-30,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344178
+006WR00000wkEboYAE,The Bungalows,Projected_Close_Date__c,2026-06-27,2026-05-30,tracker_xlsb_2026-05-06,UPDATE,2026-05-06T09:54:02.344193

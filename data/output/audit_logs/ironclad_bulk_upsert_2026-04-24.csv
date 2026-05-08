@@ -1,0 +1,2 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+(IronClad__c),"1,143 records upserted",IronClad__c.*,prior state,"88 new + 1,055 updates",SalesForce/scripts/import/import_ironclad_data.py + ironclad_export_2026-04-24_162341_all_export.xlsx,2026-04-24T13:49:49,bulk upsert

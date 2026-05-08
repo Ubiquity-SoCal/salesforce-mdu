@@ -1,0 +1,10 @@
+Name,Error
+6302 Boyd Street,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkA8uYAE', 'fields': []}]"
+6518 Boyd Street,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkA8zYAE', 'fields': []}]"
+6303 Taylor Circle,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkA8zYAE', 'fields': []}]"
+Corals Apartments,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkA8XYAU', 'fields': []}]"
+Seaside Commons,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkA8cYAE', 'fields': []}]"
+Lookout Ridge Apartments,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkDMNYA2', 'fields': []}]"
+Mercy Housing California,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkCjlYAE', 'fields': []}]"
+1810 N 8th Apartments_Colt RE,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkEbUYAU', 'fields': []}]"
+Dundee Flats,"[{'statusCode': 'DUPLICATE_VALUE', 'message': 'duplicate value found: Agreement_Name__c duplicates value on record with id: 006WR00000wkA6WYAU', 'fields': []}]"

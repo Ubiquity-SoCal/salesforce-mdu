@@ -1,0 +1,414 @@
+:host {
+    display: block;
+}
+
+.exec-dashboard {
+    padding: 16px;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    background: #f4f6f9;
+    min-height: 600px;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.error-banner {
+    background: #fef0ef;
+    color: #c23934;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border-left: 4px solid #c23934;
+}
+
+/* Header */
+.exec-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.exec-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #181818;
+    margin: 0;
+}
+
+.refresh-btn {
+    background: #fff;
+    border: 1px solid #d8dde6;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.refresh-btn:hover {
+    background: #f3f3f3;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 4px solid #d8dde6;
+}
+
+.summary-card.pipeline {
+    border-top-color: #1b96ff;
+}
+
+.summary-card.completed {
+    border-top-color: #4bca81;
+}
+
+.summary-card.signed {
+    border-top-color: #f59b00;
+}
+
+.summary-card.past-due {
+    border-top-color: #c23934;
+}
+
+.card-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #181818;
+    line-height: 1.1;
+}
+
+.card-label {
+    font-size: 13px;
+    color: #706e6b;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* Middle Section */
+.middle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.panel {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #3e3e3c;
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Funnel */
+.funnel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.funnel-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.funnel-bar-wrapper {
+    height: 36px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.funnel-fill {
+    height: 100%;
+    border-radius: 4px;
+    min-width: 20px;
+    transition: width 0.5s ease;
+}
+
+.funnel-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4px;
+}
+
+.funnel-stage {
+    font-size: 12px;
+    font-weight: 600;
+    color: #3e3e3c;
+}
+
+.funnel-count {
+    font-size: 12px;
+    color: #706e6b;
+    font-weight: 500;
+}
+
+/* Monthly bars */
+.monthly-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.monthly-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.month-label {
+    width: 32px;
+    font-size: 12px;
+    color: #706e6b;
+    font-weight: 500;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.monthly-bar-wrapper {
+    flex: 1;
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.monthly-fill {
+    height: 100%;
+    border-radius: 3px;
+    min-width: 4px;
+    transition: width 0.5s ease;
+}
+
+.month-count {
+    width: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #3e3e3c;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* Buckets */
+.buckets-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Detail tables */
+.detail-panel {
+    margin-bottom: 16px;
+}
+
+.past-due-panel {
+    margin-bottom: 4px;
+}
+
+.past-due-header {
+    color: #c23934 !important;
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.detail-table th {
+    text-align: left;
+    padding: 8px 10px;
+    background: #fafaf9;
+    color: #706e6b;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.detail-table td {
+    padding: 8px 10px;
+    color: #3e3e3c;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-table tbody tr:hover {
+    background: #f7f9fb;
+}
+
+.detail-table a {
+    color: #0070d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.detail-table a:hover {
+    text-decoration: underline;
+}
+
+.past-due-row td {
+    color: #c23934;
+}
+
+.past-due-row a {
+    color: #c23934;
+}
+
+.empty-state {
+    text-align: center;
+    color: #706e6b;
+    padding: 24px;
+    font-size: 13px;
+}
+
+/* ─── Real SVG funnel ─── */
+.funnel-svg-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+.funnel-svg {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.funnel-seg polygon {
+    stroke: #fff;
+    stroke-width: 1.5;
+    transition: opacity 0.15s ease;
+}
+.funnel-seg:hover polygon {
+    opacity: 0.85;
+}
+.funnel-stage-label {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    fill: #fff;
+    pointer-events: none;
+}
+.funnel-count-label {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    font-size: 11px;
+    fill: #fff;
+    opacity: 0.92;
+    pointer-events: none;
+}
+
+/* ─── Three-lane forecasts ─── */
+.lanes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.lane-panel {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid #eef1f6;
+}
+.lane-header h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F3A68;
+}
+.lane-subtitle {
+    font-size: 11px;
+    color: #706e6b;
+    margin-top: 2px;
+    font-style: italic;
+}
+.lane-buckets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+}
+.bucket {
+    border-radius: 6px;
+    padding: 10px 8px;
+    text-align: center;
+    background: #f4f6f9;
+    border: 1px solid #e0e6ed;
+}
+.bucket-count {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F3A68;
+    line-height: 1.1;
+}
+.bucket-units {
+    font-size: 11px;
+    color: #555;
+    margin-top: 2px;
+}
+.bucket-label {
+    font-size: 10px;
+    color: #706e6b;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.past-due-bucket .bucket-count {
+    color: #B71C1C;
+}
+.past-due-bucket {
+    background: #fce4ec;
+    border-color: #f3a4a4;
+}
+.next90-bucket {
+    background: #fff8e1;
+    border-color: #ffe082;
+}
+.over90-bucket {
+    background: #e8f5e9;
+    border-color: #a5d6a7;
+}
+.lane-empty {
+    margin-top: 12px;
+    font-size: 11px;
+    padding: 12px;
+}
+
+/* Responsive: stack lanes on narrow screens */
+@media (max-width: 900px) {
+    .lanes-grid {
+        grid-template-columns: 1fr;
+    }
+}

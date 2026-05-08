@@ -1,10 +1,20 @@
-import { LightningElement, wire, track } from 'lwc';
+import { LightningElement, api, wire, track } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { getObjectInfo } from 'lightning/uiObjectInfoApi';
 import { getPicklistValues } from 'lightning/uiObjectInfoApi';
 import getActiveViews from '@salesforce/apex/TrackerController.getActiveViews';
+import getActiveViewsForApp from '@salesforce/apex/TrackerController.getActiveViewsForApp';
 import getTrackerData from '@salesforce/apex/TrackerController.getTrackerData';
+import getTrackerDataPaged from '@salesforce/apex/TrackerController.getTrackerDataPaged';
+import getTrackerSummary from '@salesforce/apex/TrackerController.getTrackerSummary';
+import getTrackerSummaryFiltered from '@salesforce/apex/TrackerController.getTrackerSummaryFiltered';
+import getTrackerDataPagedWithRE from '@salesforce/apex/TrackerController.getTrackerDataPagedWithRE';
+import getTrackerDataFull from '@salesforce/apex/TrackerController.getTrackerDataFull';
+import getTrackerDataFullWithCampaign from '@salesforce/apex/TrackerController.getTrackerDataFullWithCampaign';
+import getTrackerSummaryFilteredWithCampaign from '@salesforce/apex/TrackerController.getTrackerSummaryFilteredWithCampaign';
+import getActiveCampaignsForFilter from '@salesforce/apex/TrackerController.getActiveCampaignsForFilter';
+// getTrackerSummaryFiltered now accepts 4 params (viewId, ownerName, dateRange, reAssignedName)
 import saveRecords from '@salesforce/apex/TrackerController.saveRecords';
 import getNotesForRecord from '@salesforce/apex/TrackerController.getNotesForRecord';
 import getNotesForRecordPaged from '@salesforce/apex/TrackerController.getNotesForRecordPaged';
@@ -25,6 +35,9 @@ import updateTaskStatus from '@salesforce/apex/TrackerController.updateTaskStatu
 import OPPORTUNITY_OBJECT from '@salesforce/schema/Opportunity';
 
 export default class TrackerGrid extends NavigationMixin(LightningElement) {
+    // App context — set via design property in App Builder
+    @api appContext = '';
+
     // View state
     views = [];
     selectedViewId = '';
@@ -58,6 +71,37 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     objectInfo;
     picklistOptionsCache = {};
     ownerOptions = [];
+
+    // Server-side summary (full dataset, not limited by page)
+    serverSummary = null;
+
+    // Pagination
+    currentOffset = 0;
+    hasMoreRecords = false;
+    totalRecordCount = 0;
+    isLoadingMore = false;
+
+    // Date range filter
+    selectedDateRange = '';
+
+    // RE Assigned filter
+    selectedREAssigned = '';
+    reAssignedOptions = [];
+
+    // Campaign filter
+    selectedCampaign = '';
+    campaignOptions = [];
+
+    // Stage-change reason modal (On Hold / Prospecting / Closed Lost)
+    stageReasonModalOpen = false;
+    stageReasonModalRecordId = '';
+    stageReasonModalRecordName = '';
+    stageReasonModalStage = '';
+    stageReasonModalField = '';
+    stageReasonModalLabel = '';
+    stageReasonModalValue = '';
+    stageReasonModalOptions = [];
+    stageReasonModalOriginalStage = '';
 
     // Side panel state (notes/activities/contacts)
     panelOpen = false;
@@ -184,7 +228,76 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     get recordCountLabel() {
+        if (this.totalRecordCount && this.totalRecordCount > this.records.length) {
+            return this.displayRows.length + ' of ' + this.totalRecordCount + ' records (showing ' + this.records.length + ' loaded)';
+        }
         return this.displayRows.length + ' records';
+    }
+
+    // Summary stats — server data when no text filter, client-side when text filter active
+    get _useClientSummary() {
+        return this.filterField && this.filterValue;
+    }
+
+    get summaryOpps() {
+        if (this._useClientSummary) return this.displayRows.length.toLocaleString();
+        if (this.serverSummary) return this.serverSummary.totalOpportunities.toLocaleString();
+        return this.displayRows.length.toLocaleString();
+    }
+
+    get summaryUnits() {
+        if (this._useClientSummary) {
+            let total = 0;
+            for (const row of this.displayRows) {
+                const val = row['Units__c'];
+                if (val != null) total += Number(val) || 0;
+            }
+            return total.toLocaleString();
+        }
+        if (this.serverSummary) return this.serverSummary.totalUnits.toLocaleString();
+        return '0';
+    }
+
+    get summaryAgreements() {
+        if (this._useClientSummary) {
+            const counts = {};
+            for (const row of this.displayRows) {
+                const agrs = row['_agreements'] || [];
+                for (const agr of agrs) {
+                    if (agr.Status__c === 'Completed') {
+                        const t = agr.Agreement_Type__c || 'Other';
+                        counts[t] = (counts[t] || 0) + 1;
+                    }
+                }
+            }
+            return Object.entries(counts)
+                .sort((a, b) => b[1] - a[1])
+                .map(([type, count]) => ({ key: type, label: type + ' ' + count, count }));
+        }
+        if (!this.serverSummary || !this.serverSummary.agreementsByType) return [];
+        return this.serverSummary.agreementsByType.map(a => ({
+            key: a.agreementType,
+            label: a.agreementType + ' ' + a.count,
+            count: a.count
+        }));
+    }
+
+    get hasSummaryAgreements() {
+        return this.summaryAgreements.length > 0;
+    }
+
+    get summaryTotalAgreements() {
+        if (this._useClientSummary) {
+            let total = 0;
+            for (const row of this.displayRows) {
+                for (const agr of (row['_agreements'] || [])) {
+                    if (agr.Status__c === 'Completed') total++;
+                }
+            }
+            return total.toLocaleString();
+        }
+        if (this.serverSummary) return this.serverSummary.totalAgreements.toLocaleString();
+        return '0';
     }
 
     get unsavedLabel() {
@@ -204,12 +317,19 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     get columnHeaders() {
-        return this.columns.map((col, idx) => ({
-            field: col.field,
-            label: col.label,
-            thStyle: 'width:' + (col.width || 150) + 'px; min-width:' + (col.width || 150) + 'px;',
-            thClass: 'tracker-th' + (idx === 0 ? ' frozen-col-header' : '')
-        }));
+        const col0Width = this.columns.length > 0 ? (this.columns[0].width || 150) : 150;
+        const col2Left = 80 + col0Width;
+        return this.columns.map((col, idx) => {
+            let thClass = 'tracker-th';
+            let thStyle = 'width:' + (col.width || 150) + 'px; min-width:' + (col.width || 150) + 'px;';
+            if (idx === 0) {
+                thClass += ' frozen-col-header-1';
+            } else if (idx === 1) {
+                thClass += ' frozen-col-header-2';
+                thStyle += ' left:' + col2Left + 'px;';
+            }
+            return { field: col.field, label: col.label, thStyle, thClass };
+        });
     }
 
     get hasViews() {
@@ -236,9 +356,27 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
             this.loadPicklistValues(),
             this.loadOwnerOptions(),
             this.loadContactRoleOptions(),
-            this.loadAgreementPicklists()
+            this.loadAgreementPicklists(),
+            this.loadCampaignOptions()
         ]);
         await this.loadViews();
+    }
+
+    async loadCampaignOptions() {
+        try {
+            const campaigns = await getActiveCampaignsForFilter();
+            this.campaignOptions = [
+                { label: 'All Campaigns', value: '' },
+                ...campaigns.map(c => ({ label: c.Name, value: c.Id }))
+            ];
+        } catch (e) {
+            this.campaignOptions = [{ label: 'All Campaigns', value: '' }];
+        }
+    }
+
+    async handleCampaignChange(event) {
+        this.selectedCampaign = event.detail.value;
+        await this.reloadWithFilters();
     }
 
     disconnectedCallback() {
@@ -252,6 +390,37 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         }
     }
 
+    get dateRangeOptions() {
+        return [
+            { label: 'All Dates', value: '' },
+            { label: 'Next 7 Days', value: 'NEXT_7_DAYS' },
+            { label: 'Next 30 Days', value: 'NEXT_30_DAYS' },
+            { label: 'Next 60 Days', value: 'NEXT_60_DAYS' },
+            { label: 'Next 90 Days', value: 'NEXT_90_DAYS' },
+            { label: 'Past Due', value: 'PAST_DUE' },
+        ];
+    }
+
+    async handleDateRangeChange(event) {
+        this.selectedDateRange = event.detail.value;
+        await this.reloadWithFilters();
+    }
+
+    // Stages relevant to each app context
+    static MDU_STAGES = [
+        'Closed Lost', 'On Hold', 'Prospects', 'Prospecting', 'Engaged',
+        'Proposal Sent', 'Contract Negotiations', 'PAL/ROE Complete',
+        'Marketing/Bulk In Progress', 'Marketing/Bulk Complete'
+    ];
+
+    // Stage transitions that require a dependent reason field
+    // Validation rules block save unless the reason is set
+    static STAGE_REASON_MAP = {
+        'On Hold':     { field: 'Hold_Reason__c',   label: 'Hold Reason' },
+        'Prospecting': { field: 'Sales_Status__c',  label: 'Sales Status' },
+        'Closed Lost': { field: 'Loss_Reason__c',   label: 'Loss Reason' }
+    };
+
     async loadPicklistValues() {
         try {
             const result = await getPicklistValuesApex({ objectName: 'Opportunity' });
@@ -263,6 +432,14 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                     value: opt.value
                 }));
             }
+
+            // Filter stages based on app context
+            if (this.appContext === 'MDU_Sales' && cache['StageName']) {
+                cache['StageName'] = cache['StageName'].filter(
+                    opt => TrackerGrid.MDU_STAGES.includes(opt.value)
+                );
+            }
+
             this.picklistOptionsCache = cache;
         } catch (error) {
             this.picklistOptionsCache = {};
@@ -302,7 +479,9 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     async loadViews() {
         try {
             this.isLoading = true;
-            const views = await getActiveViews();
+            const views = this.appContext
+                ? await getActiveViewsForApp({ appContext: this.appContext })
+                : await getActiveViews();
             this.views = views;
             if (views.length > 0) {
                 this.selectedViewId = views[0].Id;
@@ -327,6 +506,9 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         this.filterField = '';
         this.filterValue = '';
         this.selectedOwner = '';
+        this.selectedDateRange = '';
+        this.selectedCampaign = '';
+        this.selectedREAssigned = '';
         this.loadViewData();
     }
 
@@ -334,7 +516,14 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         if (!this.selectedViewId) return;
         try {
             this.isLoading = true;
-            const result = await getTrackerData({ viewId: this.selectedViewId });
+            this.currentOffset = 0;
+
+            // Load data and summary in parallel
+            const [result, summary] = await Promise.all([
+                getTrackerData({ viewId: this.selectedViewId }),
+                getTrackerSummary({ viewId: this.selectedViewId })
+            ]);
+
             const config = JSON.parse(result.viewConfig.Config__c);
 
             this.columns = config.columns || [];
@@ -343,12 +532,84 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
             this.sortDirection = config.sort ? config.sort.direction : 'ASC';
 
             this.records = result.records.map(rec => this.flattenRecord(rec));
+            this.totalRecordCount = result.totalCount || this.records.length;
+            this.hasMoreRecords = result.hasMore || false;
+            this.currentOffset = this.records.length;
+            this.serverSummary = summary;
+
             this.buildOwnerOptions();
+            this.buildREAssignedOptions();
             this.applyDisplayRows();
         } catch (error) {
             this.showToast('Error', 'Failed to load data: ' + this.reduceError(error), 'error');
         } finally {
             this.isLoading = false;
+        }
+    }
+
+    async reloadFromServer() {
+        if (!this.selectedViewId) return;
+        try {
+            this.isLoading = true;
+            this.currentOffset = 0;
+
+            const result = await getTrackerDataFullWithCampaign({
+                viewId: this.selectedViewId,
+                recordOffset: 0,
+                ownerName: this.selectedOwner || null,
+                dateRange: this.selectedDateRange || null,
+                reAssignedName: this.selectedREAssigned || null,
+                userSortField: this.sortField || null,
+                userSortDir: this.sortDirection || null,
+                filterField: this.filterField || null,
+                filterValue: this.filterValue || null,
+                campaignId: this.selectedCampaign || null
+            });
+
+            this.records = result.records.map(rec => this.flattenRecord(rec));
+            this.totalRecordCount = result.totalCount || this.records.length;
+            this.hasMoreRecords = result.hasMore || false;
+            this.currentOffset = this.records.length;
+
+            this.buildOwnerOptions();
+            this.buildREAssignedOptions();
+            this.applyDisplayRows();
+        } catch (error) {
+            this.showToast('Error', 'Failed to reload: ' + this.reduceError(error), 'error');
+        } finally {
+            this.isLoading = false;
+        }
+    }
+
+    async handleLoadMore() {
+        if (!this.hasMoreRecords || this.isLoadingMore) return;
+        try {
+            this.isLoadingMore = true;
+            const result = await getTrackerDataFullWithCampaign({
+                viewId: this.selectedViewId,
+                recordOffset: this.currentOffset,
+                ownerName: this.selectedOwner || null,
+                dateRange: this.selectedDateRange || null,
+                reAssignedName: this.selectedREAssigned || null,
+                userSortField: this.sortField || null,
+                userSortDir: this.sortDirection || null,
+                filterField: this.filterField || null,
+                filterValue: this.filterValue || null,
+                campaignId: this.selectedCampaign || null
+            });
+
+            const newRecords = result.records.map(rec => this.flattenRecord(rec));
+            this.records = [...this.records, ...newRecords];
+            this.currentOffset += newRecords.length;
+            this.hasMoreRecords = result.hasMore || false;
+
+            this.buildOwnerOptions();
+            this.buildREAssignedOptions();
+            this.applyDisplayRows();
+        } catch (error) {
+            this.showToast('Error', 'Failed to load more: ' + this.reduceError(error), 'error');
+        } finally {
+            this.isLoadingMore = false;
         }
     }
 
@@ -360,17 +621,23 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         for (const key of Object.keys(record)) {
             if (key === 'Agreements__r') {
                 flat._agreements = record[key] || [];
+            } else if (key === 'SiteTracker_Projects__r') {
+                // Extract Build Status from the first (should be only) related ST project
+                const stProjects = record[key] || [];
+                if (stProjects.length > 0) {
+                    flat['ST_Build_Status'] = stProjects[0].Build_Status__c || '';
+                    flat['ST_Site_Status'] = stProjects[0].Site_Status__c || '';
+                } else {
+                    flat['ST_Build_Status'] = '';
+                    flat['ST_Site_Status'] = '';
+                }
             } else if (key === 'Tasks') {
                 flat._openTasks = record[key] || [];
             } else if (key === 'Events') {
                 flat._upcomingEvents = record[key] || [];
             } else if (typeof record[key] === 'object' && record[key] !== null && key !== 'attributes') {
-                // Relationship object — flatten its fields
-                for (const subKey of Object.keys(record[key])) {
-                    if (subKey !== 'attributes') {
-                        flat[key + '.' + subKey] = record[key][subKey];
-                    }
-                }
+                // Relationship object — flatten its fields, recurse for nested relationships
+                this.flattenRelationship(flat, key, record[key]);
             } else if (key !== 'attributes') {
                 flat[key] = record[key];
             }
@@ -386,12 +653,35 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         return flat;
     }
 
+    flattenRelationship(flat, prefix, obj) {
+        for (const key of Object.keys(obj)) {
+            if (key === 'attributes') continue;
+            const val = obj[key];
+            if (typeof val === 'object' && val !== null) {
+                // Recurse deeper (e.g., Property_Unit__r.Property_Location__r.City__c)
+                this.flattenRelationship(flat, prefix + '.' + key, val);
+            } else {
+                flat[prefix + '.' + key] = val;
+            }
+        }
+    }
+
     buildOwnerOptions() {
+        // Build from loaded records — shows only owners who actually have MDU deals
         const owners = new Map();
         for (const rec of this.records) {
             const ownerName = rec['Owner.Name'];
             if (ownerName && !owners.has(ownerName)) {
                 owners.set(ownerName, ownerName);
+            }
+        }
+        // Always include MDU team members even if their records aren't in the current page
+        const mduTeam = ['Bill Holick', 'Brett Spivey', 'Chuck McNeely', 'Melissa Baker', 'Taylor Mauney',
+                         'Jeff Chao', 'Marty Samuels', 'Jeff Wickersham', 'Tanya Friese',
+                         'Rosemarie Shortino', 'Justin Barry', 'Pankaj Gulati'];
+        for (const name of mduTeam) {
+            if (!owners.has(name)) {
+                owners.set(name, name);
             }
         }
         const opts = [{ label: 'All Owners', value: '' }];
@@ -402,18 +692,70 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         this.ownerOptions = opts;
     }
 
-    handleOwnerChange(event) {
+    buildREAssignedOptions() {
+        const reNames = new Set();
+        for (const rec of this.records) {
+            const name = rec['RE_Assigned__r.Name'];
+            if (name) reNames.add(name);
+        }
+        // Always include known RE team
+        const reTeam = ['Justin Barry', 'Rosemarie Shortino', 'Tanya Friese'];
+        for (const name of reTeam) reNames.add(name);
+
+        const opts = [{ label: 'All RE', value: '' }];
+        for (const name of [...reNames].sort()) {
+            opts.push({ label: name, value: name });
+        }
+        this.reAssignedOptions = opts;
+    }
+
+    async handleREAssignedChange(event) {
+        this.selectedREAssigned = event.detail.value;
+        await this.reloadWithFilters();
+    }
+
+    async handleOwnerChange(event) {
         this.selectedOwner = event.detail.value;
-        this.applyDisplayRows();
+        await this.reloadWithFilters();
+    }
+
+    async reloadWithFilters() {
+        if (!this.selectedViewId) return;
+        try {
+            this.isLoading = true;
+            this.currentOffset = 0;
+            const ownerParam = this.selectedOwner || null;
+            const dateParam = this.selectedDateRange || null;
+            const reParam = this.selectedREAssigned || null;
+            const campaignParam = this.selectedCampaign || null;
+
+            const [result, summary] = await Promise.all([
+                getTrackerDataFullWithCampaign({ viewId: this.selectedViewId, recordOffset: 0, ownerName: ownerParam, dateRange: dateParam, reAssignedName: reParam, userSortField: this.sortField || null, userSortDir: this.sortDirection || null, filterField: this.filterField || null, filterValue: this.filterValue || null, campaignId: campaignParam }),
+                getTrackerSummaryFilteredWithCampaign({ viewId: this.selectedViewId, ownerName: ownerParam, dateRange: dateParam, reAssignedName: reParam, campaignId: campaignParam })
+            ]);
+
+            const config = JSON.parse(result.viewConfig.Config__c);
+            this.columns = config.columns || [];
+            this.formattingRules = config.formatting_rules || [];
+
+            this.records = result.records.map(rec => this.flattenRecord(rec));
+            this.totalRecordCount = result.totalCount || this.records.length;
+            this.hasMoreRecords = result.hasMore || false;
+            this.currentOffset = this.records.length;
+            this.serverSummary = summary;
+
+            this.applyDisplayRows();
+        } catch (error) {
+            this.showToast('Error', 'Failed to load data: ' + this.reduceError(error), 'error');
+        } finally {
+            this.isLoading = false;
+        }
     }
 
     applyDisplayRows() {
         let rows = [...this.records];
 
-        // Owner filter
-        if (this.selectedOwner) {
-            rows = rows.filter(r => r['Owner.Name'] === this.selectedOwner);
-        }
+        // Owner filter is now server-side (handleOwnerChange reloads data)
 
         // Client-side filter
         if (this.filterField && this.filterValue) {
@@ -452,8 +794,10 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
                 const fieldType = this.getFieldType(col);
                 const isEditable = col.editable !== false && !col.field.includes('.');
+                const col0Width = this.columns.length > 0 ? (this.columns[0].width || 150) : 150;
                 let tdClass = 'tracker-td';
-                if (colIdx === 0) tdClass += ' frozen-col';
+                if (colIdx === 0) tdClass += ' frozen-col-1';
+                else if (colIdx === 1) tdClass += ' frozen-col-2';
                 if (isDirty) tdClass += ' dirty-cell';
                 tdClass += isEditable ? ' editable-cell' : ' readonly-cell';
 
@@ -484,6 +828,13 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                     }));
                 }
 
+                // Frozen col 2 needs dynamic left based on col 0 width
+                let cellStyle = cellFormatting || rowFormatting || '';
+                if (colIdx === 1) {
+                    const frozenLeft = 80 + col0Width;
+                    cellStyle = 'left:' + frozenLeft + 'px;' + (cellStyle ? ' ' + cellStyle : '');
+                }
+
                 return {
                     key: row.Id + '-' + col.field,
                     field: col.field,
@@ -494,7 +845,7 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                     isEditing: isEditing,
                     isDirty: isDirty,
                     width: col.width || 150,
-                    style: cellFormatting || rowFormatting || '',
+                    style: cellStyle,
                     tdClass: isOwner ? tdClass.replace('readonly-cell', 'editable-cell') : tdClass,
                     isCheckbox: isCheckbox,
                     isDate: isDate,
@@ -756,6 +1107,81 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         // Close editing and refresh display
         this.editingCell = null;
         this.applyDisplayRows();
+
+        // If stage changed to a value that requires a dependent reason, prompt for it
+        if (!isOwner && field === 'StageName') {
+            const reasonMeta = TrackerGrid.STAGE_REASON_MAP[value];
+            if (reasonMeta && !record[reasonMeta.field]) {
+                this.openStageReasonModal(record, value, reasonMeta);
+            }
+        }
+    }
+
+    openStageReasonModal(record, newStage, reasonMeta) {
+        const options = (this.picklistOptionsCache && this.picklistOptionsCache[reasonMeta.field]) || [];
+        this.stageReasonModalRecordId = record.Id;
+        this.stageReasonModalRecordName = record.Name || '';
+        this.stageReasonModalStage = newStage;
+        this.stageReasonModalField = reasonMeta.field;
+        this.stageReasonModalLabel = reasonMeta.label;
+        this.stageReasonModalValue = '';
+        this.stageReasonModalOptions = options;
+        this.stageReasonModalOriginalStage = record._original ? record._original.StageName : '';
+        this.stageReasonModalOpen = true;
+    }
+
+    handleStageReasonChange(event) {
+        this.stageReasonModalValue = event.detail ? event.detail.value : event.target.value;
+    }
+
+    handleStageReasonSave() {
+        if (!this.stageReasonModalValue) {
+            this.showToast('Required', this.stageReasonModalLabel + ' is required.', 'warning');
+            return;
+        }
+        const recordId = this.stageReasonModalRecordId;
+        const field = this.stageReasonModalField;
+        const value = this.stageReasonModalValue;
+        const record = this.records.find(r => r.Id === recordId);
+        if (record) {
+            record[field] = value;
+            if (!this.dirtyRecords.has(recordId)) {
+                this.dirtyRecords.set(recordId, {});
+            }
+            this.dirtyRecords.get(recordId)[field] = value;
+        }
+        this.closeStageReasonModal();
+        this.applyDisplayRows();
+    }
+
+    handleStageReasonCancel() {
+        // Revert the stage change since user bailed on providing the reason
+        const recordId = this.stageReasonModalRecordId;
+        const originalStage = this.stageReasonModalOriginalStage;
+        const record = this.records.find(r => r.Id === recordId);
+        if (record) {
+            record.StageName = originalStage;
+            if (this.dirtyRecords.has(recordId)) {
+                delete this.dirtyRecords.get(recordId).StageName;
+                if (Object.keys(this.dirtyRecords.get(recordId)).length === 0) {
+                    this.dirtyRecords.delete(recordId);
+                }
+            }
+        }
+        this.closeStageReasonModal();
+        this.applyDisplayRows();
+    }
+
+    closeStageReasonModal() {
+        this.stageReasonModalOpen = false;
+        this.stageReasonModalRecordId = '';
+        this.stageReasonModalRecordName = '';
+        this.stageReasonModalStage = '';
+        this.stageReasonModalField = '';
+        this.stageReasonModalLabel = '';
+        this.stageReasonModalValue = '';
+        this.stageReasonModalOptions = [];
+        this.stageReasonModalOriginalStage = '';
     }
 
     handleCellBlur(event) {
@@ -852,24 +1278,30 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
     handleSortFieldChange(event) {
         this.sortField = event.detail.value;
-        this.applyDisplayRows();
+        this.reloadFromServer();
     }
 
     handleSortDirectionToggle() {
         this.sortDirection = this.sortDirection === 'ASC' ? 'DESC' : 'ASC';
-        this.applyDisplayRows();
+        this.reloadFromServer();
     }
 
     // --- Filtering ---
 
     handleFilterFieldChange(event) {
         this.filterField = event.detail.value;
-        this.applyDisplayRows();
+        if (this.filterValue) {
+            this.reloadFromServer();
+        }
     }
 
     handleFilterValueChange(event) {
         this.filterValue = event.target.value;
-        this.applyDisplayRows();
+        // Debounce: reload after user stops typing
+        clearTimeout(this._filterDebounce);
+        this._filterDebounce = setTimeout(() => {
+            this.reloadFromServer();
+        }, 400);
     }
 
     get filterableColumns() {
@@ -1297,6 +1729,13 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     async handleAddActivity() {
+        const missing = [];
+        if (!this.newActivitySubject || !this.newActivitySubject.trim()) missing.push('Subject');
+        if (this.newActivityType === 'Meeting' && !this.newActivityStartDate) missing.push('Start Date');
+        if (missing.length > 0) {
+            this.showToast('Required Fields', 'Please fill in: ' + missing.join(', '), 'warning');
+            return;
+        }
         if (!this.canAddActivity) return;
         this.isAddingActivity = true;
         try {
@@ -1452,6 +1891,14 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     async handleAddAgreement() {
+        // Validate required fields before calling server
+        const missing = [];
+        if (!this.newAgreementType) missing.push('Agreement Type');
+        if (!this.newAgreementStatus) missing.push('Status');
+        if (missing.length > 0) {
+            this.showToast('Required Fields', 'Please fill in: ' + missing.join(', '), 'warning');
+            return;
+        }
         if (!this.canAddAgreement) return;
         this.isAddingAgreement = true;
         try {
@@ -1571,6 +2018,12 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     async handleAddContact() {
+        const missing = [];
+        if (!this.newContactLastName || !this.newContactLastName.trim()) missing.push('Last Name');
+        if (missing.length > 0) {
+            this.showToast('Required Fields', 'Please fill in: ' + missing.join(', '), 'warning');
+            return;
+        }
         if (!this.canAddContact) return;
         this.isAddingContact = true;
         try {
@@ -1625,7 +2078,41 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
     reduceError(error) {
         if (typeof error === 'string') return error;
-        if (error.body && error.body.message) return error.body.message;
+
+        // Apex action errors with field-level details
+        if (error.body) {
+            const messages = [];
+
+            // Field-level validation errors (e.g., required fields)
+            if (error.body.output && error.body.output.fieldErrors) {
+                const fieldErrors = error.body.output.fieldErrors;
+                for (const field of Object.keys(fieldErrors)) {
+                    for (const err of fieldErrors[field]) {
+                        messages.push(err.message || `${field}: validation error`);
+                    }
+                }
+            }
+
+            // Record-level errors
+            if (error.body.output && error.body.output.errors) {
+                for (const err of error.body.output.errors) {
+                    messages.push(err.message);
+                }
+            }
+
+            // DML / trigger errors often come as an array in body
+            if (Array.isArray(error.body)) {
+                for (const err of error.body) {
+                    if (err.message) messages.push(err.message);
+                }
+            }
+
+            if (messages.length > 0) return messages.join('; ');
+
+            // Fallback to body.message
+            if (error.body.message) return error.body.message;
+        }
+
         if (error.message) return error.message;
         return JSON.stringify(error);
     }

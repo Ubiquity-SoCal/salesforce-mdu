@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Substatus__c</fullName>
+    <description>Why a post-PAL Opp is stalled. Use when Stage is PAL/ROE Complete or Marketing/Bulk Complete to track the blocker. Dependent on StageName.</description>
+    <inlineHelpText>Why is this post-PAL pursuit stalled? Pick the blocker so we can prioritize follow-up. Only available on PAL/ROE Complete and Marketing/Bulk Complete stages.</inlineHelpText>
+    <label>Pursuit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Owner Unresponsive</fullName>
+                <default>false</default>
+                <label>Owner Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Budget Not Approved / Business Case</fullName>
+                <default>false</default>
+                <label>Budget Not Approved / Business Case</label>
+            </value>
+            <value>
+                <fullName>Chose Another Provider</fullName>
+                <default>false</default>
+                <label>Chose Another Provider</label>
+            </value>
+            <value>
+                <fullName>Bulk/Marketing Rejected</fullName>
+                <default>false</default>
+                <label>Bulk/Marketing Rejected</label>
+            </value>
+            <value>
+                <fullName>ISP or Funding Needed</fullName>
+                <default>false</default>
+                <label>ISP or Funding Needed</label>
+            </value>
+            <value>
+                <fullName>Incumbent EMA</fullName>
+                <default>false</default>
+                <label>Incumbent EMA</label>
+            </value>
+            <value>
+                <fullName>No Marketing/Bulk Needed</fullName>
+                <default>false</default>
+                <label>No Marketing/Bulk Needed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <controllingFieldValue>Marketing/Bulk Complete</controllingFieldValue>
+            <valueName>Owner Unresponsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <valueName>Budget Not Approved / Business Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <controllingFieldValue>Marketing/Bulk Complete</controllingFieldValue>
+            <valueName>Chose Another Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <valueName>Bulk/Marketing Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <controllingFieldValue>Marketing/Bulk Complete</controllingFieldValue>
+            <controllingFieldValue>Marketing/Bulk In Progress</controllingFieldValue>
+            <valueName>ISP or Funding Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <controllingFieldValue>Marketing/Bulk Complete</controllingFieldValue>
+            <valueName>Incumbent EMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PAL/ROE Complete</controllingFieldValue>
+            <valueName>No Marketing/Bulk Needed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

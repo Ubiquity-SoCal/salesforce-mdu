@@ -1,0 +1,108 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wiNoSYAU,Haciendas de la Playa,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wjnm6YAA,Mission View Manor West,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk3OAYAY,El Camino 76 Mobile Estates,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk9SnYAI,Seascape Sur,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk9UkYAI,Monarch Villas,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk9UrYAI,West Hampton Cove,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk9UuYAI,Fox Point Farms,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk9YTYAY,Solana Beach and Tennis Club,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wk9ZcYAI,Park Place Bluffs,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkA6MYAU,Trico Mobile Estates,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkA6iYAE,Green Valley Mobile Estates Encinitas,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkA7PYAU,Ocean Hills Country Club HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkA8kYAE,Santa Helena Park Condominiums,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkCjHYAU,Rancho San Luis Rey 55+,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkClNYAU,Del Mar Beach Club,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkClkYAE,Las Brisas,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkCllYAE,Del Mar Shores Terrace,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkCmJYAU,Park Encinitas,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkDu4YAE,High Country Villas 5&7,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkEcQYAU,Laguna Vista Mobile Estates,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000wkEcRYAU,Villa Del Mar,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000y24mZYAQ,Solana Beach_MDU_Surfsong Condos,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000y2DuoYAE,Solana Beach_MDU_Seascape Chateau,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000y3iV0YAI,Solana Beach_MDU_Seascape Shores Condos,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000y3jsTYAQ,Encinitas_MDU_Saxonay at Encinitas Ranch,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ytiKQYAY,Pelican Ridge,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ytrE5YAI,Trailer Rancho Mobile,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yuOtDYAU,Pacifica Leucadia HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yuYsYYAU,Montego Village HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yuZv2YAE,Laurel Cove Lane Pvt Road,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yuj1ZYAQ,Emerald Lake Village HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yuqW4YAI,Beach Street Encinitas,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yutSHYAY,Cardiff Park,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yutTtYAI,Quentin Court,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yutvPYAQ,Cardiff Park HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yuxKdYAI,Mission Del Oro HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yv0X4YAI,Rancho Hermosa HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yv47cYAA,Alicante Hills HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yv6m8YAA,Camino Cabrillo Pvt Road,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yv7YaYAI,FoxtailLoop,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yv9vJYAQ,Promenade HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvAMgYAM,Terraces At Cantebria HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvINSYA2,Forrest Bluff Terraces HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvLI6YAM,Riviera Mobile Homes,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvMMIYA2,Fairways HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvQkpYAE,Sky Loft HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvSJdYAM,Traditions At La Costa HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvU0RYAU,3152 Levante,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvVsYYAU,3156 Levante,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvYteYAE,Manzanita Cove HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvdF2YAI,Shamrock Mobile Estates,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yviUqYAI,Village At Leucadia HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvmgUYAQ,Cardiff Glen HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvnHbYAI,Hilltop Trailer Park,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvoqPYAQ,Monte Mira HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvv0eYAA,Coral Cove HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvvAJYAY,Santa Fe Trails HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvvYXYAY,Carlsbad Surfside HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvvrqYAA,Cantaberia HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvxC6YAI,Hygeia Court HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvxP0YAI,Hillside Patio Pvt Road,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yvz12YAA,Cambria HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw09zYAA,Beacons Beach Village,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw0RiYAI,Encinitas Ranch HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw26xYAA,The Nest at La Costa,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw3HWYAY,La Costa Oaks South HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw5zGYAQ,Oceanic Drive,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw9QBYAY,Mendocino HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000yw9YHYAY,Seaside Highlannds HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywB2AYAU,Villas De La Costa HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywBJuYAM,Shady Hollow Pvt Road,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywBdGYAU,La Costa Altezza HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywCuIYAU,53 Melrose Promenade HOA,Property_Category__c,"(prior, mostly null)",(null),CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywEb8YAE,Portico At Rancho Carrillo HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywF2ZYAU,May Private Road,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywF4AYAU,Seapoint Tennis Club,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywG8IYAU,Casitas De La Costa HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywKINYA2,Villa Trieste HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywLuMYAU,Flair Encinitas HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywN6YYAU,On The Park HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywOYtYAM,Carlsbad Arroyo Vista HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSNxYAM,San Pacifico HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSPbYAM,Village Park Manor,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSXdYAM,La Costa Greens HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSarYAE,Via Casa Del Sol HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywScTYAU,Alga Hills HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSe5YAE,La Costa Ridge2 HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSkXYAU,La Costa Ridge1 HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSm9YAE,North Shore HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSnlYAE,Seaside Ridge HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSpNYAU,Seabluffe Villages HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSqzYAE,Sandalwood HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywSsbYAE,The Summit HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywT2HYAU,Village Park HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywT5VYAU,Village Park Shady Tree #2,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywT77YAE,Pacifica HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywT8jYAE,Emerald Point HOA,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywTFBYA2,Las Vistas HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywTLdYAM,Seagate Terrace,Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywTS5YAM,Valley of Dreams Mobile Village,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywTWvYAM,127 W. Glaucus,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywTa9YAE,127 W Glaucus St - A,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywTdNYAU,"225 S. Hwy 101 , 17",Property_Category__c,"(prior, mostly null)",Cat 2,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR00000ywU9dYAE,Sandy Point HOA,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR0000112fikYAA,Fox Point,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR0000112vHHYAY,Ito San,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill
+006WR000011367rYAA,Sand Piper Point,Property_Category__c,"(prior, mostly null)",Cat 1,CA MDU Agreement Status 04172026.xlsx (On Net? Yes/No),2026-04-24T13:49:49,backfill

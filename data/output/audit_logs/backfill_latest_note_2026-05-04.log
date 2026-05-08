@@ -1,0 +1,29 @@
+Opps to scan: 4061
+Fetching 3027 note bodies via VersionData...
+  fetched 500/3027
+  fetched 1000/3027
+  fetched 1500/3027
+  fetched 2000/3027
+  fetched 2500/3027
+  fetched 3000/3027
+  fetched 3027/3027
+Opps with notes: 3027
+Updates queued: 3027  (clears: 0)
+Pushing 16 batches of up to 200 records via composite API...
+  pushed batch 1/16 (success so far: 200)
+  pushed batch 2/16 (success so far: 400)
+  pushed batch 3/16 (success so far: 600)
+  pushed batch 4/16 (success so far: 800)
+  pushed batch 5/16 (success so far: 1000)
+  pushed batch 6/16 (success so far: 1200)
+  pushed batch 7/16 (success so far: 1400)
+  pushed batch 8/16 (success so far: 1600)
+  pushed batch 9/16 (success so far: 1800)
+  pushed batch 10/16 (success so far: 2000)
+  pushed batch 11/16 (success so far: 2200)
+  pushed batch 12/16 (success so far: 2400)
+  pushed batch 13/16 (success so far: 2427)
+  pushed batch 14/16 (success so far: 2627)
+  pushed batch 15/16 (success so far: 2827)
+  pushed batch 16/16 (success so far: 3027)
+Updated: 3027  Errors: 0

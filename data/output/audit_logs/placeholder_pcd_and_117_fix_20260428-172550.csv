@@ -1,0 +1,20 @@
+SF_Id,Name,Field,Before,After,Source,Action,Timestamp
+006WR00000wkEbOYAU,Patriot Place,Projected_Close_Date__c,,2026-05-28,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:50.723983
+006WR00000wkEbOYAU,Patriot Place,Next_Action__c,Need Marketing decision to build to unit or to NID,Need Marketing decision to build to unit or to NID [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:50.724021
+006WR00000wkEcDYAU,The 1001 Apartments,Projected_Close_Date__c,,2026-05-28,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:51.096416
+006WR00000wkEcDYAU,The 1001 Apartments,Next_Action__c,PAL addedndum and Marketing,PAL addedndum and Marketing [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:51.096443
+006WR00000wkEc8YAE,Bristol Square Apartments,Projected_Close_Date__c,,2026-06-27,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:51.388118
+006WR00000wkEc8YAE,Bristol Square Apartments,Next_Action__c,PAL addedndum and Marketing,PAL addedndum and Marketing [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:51.388132
+006WR00000wkEcAYAU,Creekside Apartments,Projected_Close_Date__c,,2026-06-27,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:51.730574
+006WR00000wkEcAYAU,Creekside Apartments,Next_Action__c,Need PAL addendum and Bulk Agreement,Need PAL addendum and Bulk Agreement [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:51.730597
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),Projected_Close_Date__c,,2026-06-27,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:52.014467
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),Next_Action__c,Need Bulk,Need Bulk [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:52.014483
+006WR00000wkEboYAE,The Bungalows,Projected_Close_Date__c,,2026-06-27,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:52.367426
+006WR00000wkEboYAE,The Bungalows,Next_Action__c,Owner approval to build,Owner approval to build [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:52.367449
+006WR00000wkEb1YAE,Horizon Heights,Projected_Close_Date__c,,2026-07-27,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:52.591968
+006WR00000wkEb1YAE,Horizon Heights,Next_Action__c,Need Data and approval to walk,Need Data and approval to walk [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:52.591997
+006WR00000xwGf7YAE,Killeen_MDU_117-121_W_Avenue_A,Agreement (PAL Completed),(none),PAL Completed 2026-03-27,tracker_xref,CREATE,2026-04-28T17:25:53.298962
+006WR00000xwGf7YAE,Killeen_MDU_117-121_W_Avenue_A,Agreement (Bulk Completed),(none),Bulk Completed (placeholder),tracker_xref,CREATE,2026-04-28T17:25:53.298981
+006WR00000xwGf7YAE,Killeen_MDU_117-121_W_Avenue_A,StageName,ROE Secured,EMA/Bulk Completed,tracker_xref,UPDATE,2026-04-28T17:25:53.298990
+006WR00000xwGf7YAE,Killeen_MDU_117-121_W_Avenue_A,Projected_Close_Date__c,,2026-06-27,tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:53.716404
+006WR00000xwGf7YAE,Killeen_MDU_117-121_W_Avenue_A,Next_Action__c,Perfoming walks on 4/15,Perfoming walks on 4/15 [Placeholder forecast - update with real estimate],tracker_xref_2026-04-28,UPDATE,2026-04-28T17:25:53.716432

@@ -1,0 +1,11 @@
+SF_Id,Name,Object,Field,Before,After,Source,Timestamp,Action
+a0BWR000008Op4n2AC,AGR-1415,Agreement__c,Status__c,Completed,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+a0BWR000008Op4n2AC,AGR-1415,Agreement__c,Agreement_Type__c,PAL,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+a0BWR000008Op4n2AC,AGR-1415,Agreement__c,Opportunity__c,006WR000010BbmwYAC,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR000010BbmwYAC,TEST PROPERTY,Opportunity,StageName,PAL/ROE Complete,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR000010BbmwYAC,TEST PROPERTY,Opportunity,OwnerId,Taylor Mauney,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR000010BbmwYAC,TEST PROPERTY,Opportunity,AccountId,001WR00001DBIHmYAP (CCG),(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR0000112YsXYAU,TEST PROPERTY 2,Opportunity,StageName,On Hold,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR0000112YsXYAU,TEST PROPERTY 2,Opportunity,OwnerId,Taylor Mauney,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR000011CrIpYAK,TEST PROPERTY 3,Opportunity,StageName,Prospecting,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE
+006WR000011CrIpYAK,TEST PROPERTY 3,Opportunity,OwnerId,Taylor Mauney,(deleted),test_opp_cleanup_2026-05-05,2026-05-05,DELETE

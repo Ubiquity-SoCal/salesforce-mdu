@@ -1,0 +1,13 @@
+SF_Id,Name,OppName,Type,FromStatus,ToStatus,FromSigned,ToSigned,Source,Action,Timestamp
+a0BWR0000083yC02AI,AGR-0091,"Dundee Court",PAL,Review,Paused,None,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135496
+a0BWR0000083yC12AI,AGR-0092,"Benson Gardens Blvd",PAL,Review,Paused,None,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135527
+a0BWR0000083yC22AI,AGR-0093,"Cass Street Apartments",PAL,Review,Paused,None,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135541
+a0BWR0000083yGx2AI,AGR-0398,"Westmount at Urban Trails",PAL,Paused,Review,None,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135552
+a0BWR0000083yGz2AI,AGR-0400,"Westmount at The District Apartments",PAL,Paused,Review,None,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135561
+a0BWR0000083yH22AI,AGR-0403,"Bradley Arms_Colt RE",PAL,Sign,Completed,None,2026-04-13,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135570
+a0BWR0000083yKY2AY,AGR-0521,"Woodglen Square ll",PAL,Sign,Completed,None,2026-04-15,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135578
+a0BWR0000083yYK2AY,AGR-1175,"Sonterra Apartment Homes",EMA,Completed,Review,None,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135587
+a0BWR000008HuUD2A0,AGR-1403,"Pacific Villas",PAL,Completed,Paused,2024-10-04,None,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135595
+a0BWR000008WSW12AO,AGR-1455,"Sunridge Patio Homes",PAL,Review,Completed,2024-01-23,2024-01-23,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135603
+a0BWR000008WSXd2AO,AGR-1456,"Trailpoint by Trion Living / Trailpoint on Highline",PAL,Review,Completed,2025-01-21,2025-01-21,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135610
+a0BWR000008WSvp2AG,AGR-1472,"Hunters Pointe (Mesa)",PAL,Review,Completed,2024-09-24,2024-09-24,Monday.com fresh_pull_20260424,PREVIEW,2026-04-28T08:31:17.135619

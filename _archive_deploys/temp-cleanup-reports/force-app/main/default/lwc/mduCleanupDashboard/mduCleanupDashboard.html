@@ -1,0 +1,118 @@
+<template>
+    <div class="cleanup-root">
+        <div class="header">
+            <div>
+                <h2 class="title">MDU Cleanup Dashboard</h2>
+                <p class="subtitle">Items needing attention. Goal: get every tile to zero.</p>
+            </div>
+            <div class="header-actions">
+                <lightning-input
+                    type="search"
+                    label="Filter by owner or RE"
+                    variant="label-hidden"
+                    placeholder="Filter by owner / RE Assigned"
+                    onchange={handleOwnerFilterChange}
+                    class="owner-filter">
+                </lightning-input>
+                <lightning-button
+                    label="Refresh"
+                    icon-name="utility:refresh"
+                    onclick={handleRefresh}>
+                </lightning-button>
+            </div>
+        </div>
+
+        <template if:true={error}>
+            <div class="error">
+                <lightning-icon icon-name="utility:error" size="x-small" alternative-text="error"></lightning-icon>
+                {error}
+            </div>
+        </template>
+
+        <template if:true={allClear}>
+            <div class="all-clear">
+                <lightning-icon icon-name="utility:success" size="medium" alternative-text="all clear"></lightning-icon>
+                <h3>All clear. Nothing to clean up right now.</h3>
+            </div>
+        </template>
+
+        <div class="tile-grid">
+            <template for:each={categories} for:item="cat">
+                <div key={cat.key}
+                     class={cat.tileClass}
+                     data-key={cat.key}
+                     onclick={handleTileClick}>
+                    <div class="tile-count">{cat.count}</div>
+                    <div class="tile-label">{cat.label}</div>
+                    <div class="tile-hint">
+                        <template if:true={cat.isExpanded}>Hide rows</template>
+                        <template if:false={cat.isExpanded}>
+                            <template if:false={cat.blank}>Click to view</template>
+                            <template if:true={cat.blank}>&nbsp;</template>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <template if:true={expandedCategory}>
+            <div class="expanded-panel">
+                <div class="expanded-header">
+                    <h3>{expandedCategory.label}</h3>
+                    <span class="record-count">
+                        Showing {expandedCategory.filteredCount} of {expandedCategory.count}
+                    </span>
+                </div>
+
+                <template if:true={expandedCategory.filteredCount}>
+                    <div class="table-wrap">
+                        <table class="cleanup-table">
+                            <thead>
+                                <tr>
+                                    <th>Property / Agreement</th>
+                                    <th>Type / Stage</th>
+                                    <th>Status</th>
+                                    <th>Opp Owner</th>
+                                    <th>RE Assigned</th>
+                                    <th>City, State</th>
+                                    <th>Last Modified</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={expandedCategory.filteredRows} for:item="row">
+                                    <tr key={row.recordId} class="cleanup-row" data-id={row.recordId} data-type={row.recordType} onclick={handleRowClick}>
+                                        <td>
+                                            <strong>{row.name}</strong>
+                                            <template if:true={row.oppName}>
+                                                <template if:false={row.recordTypeIsOpp}>
+                                                    <div class="muted">
+                                                        <a data-id={row.oppId} onclick={handleOppClick}>{row.oppName}</a>
+                                                    </div>
+                                                </template>
+                                            </template>
+                                        </td>
+                                        <td>
+                                            <template if:true={row.agreementType}>{row.agreementType}</template>
+                                            <template if:false={row.agreementType}>{row.stage}</template>
+                                        </td>
+                                        <td>{row.status}</td>
+                                        <td>{row.oppOwner}</td>
+                                        <td>{row.reAssigned}</td>
+                                        <td>{row.city}<template if:true={row.stateCode}>, {row.stateCode}</template></td>
+                                        <td>
+                                            <lightning-formatted-date-time value={row.lastModified} year="numeric" month="short" day="2-digit"></lightning-formatted-date-time>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+
+                <template if:false={expandedCategory.filteredCount}>
+                    <div class="empty">No matching records.</div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

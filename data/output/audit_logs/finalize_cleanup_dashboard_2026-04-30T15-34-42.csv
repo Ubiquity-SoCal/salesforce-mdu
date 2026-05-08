@@ -1,0 +1,10 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+01ZWR000004LNk52AG,MDU Cleanup Dashboard,components.reportId,8 clone refs,8 original refs,finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,REPOINT
+00OWR00000IuGhF2AV,broken clone,(report),00OWR00000IuGhF2AV,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGir2AF,broken clone,(report),00OWR00000IuGir2AF,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGkT2AV,broken clone,(report),00OWR00000IuGkT2AV,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGm52AF,broken clone,(report),00OWR00000IuGm52AF,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGnh2AF,broken clone,(report),00OWR00000IuGnh2AF,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGqv2AF,broken clone,(report),00OWR00000IuGqv2AF,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGu92AF,broken clone,(report),00OWR00000IuGu92AF,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED
+00OWR00000IuGxN2AV,broken clone,(report),00OWR00000IuGxN2AV,(deleted),finalize_cleanup_dashboard_2026-04-30.py,2026-04-30T15-34-42,DELETED

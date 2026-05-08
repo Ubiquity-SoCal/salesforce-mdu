@@ -1,0 +1,58 @@
+{
+  "status": 0,
+  "result": {
+    "records": [
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "StageName": "PAL/ROE Complete",
+        "cnt": 2,
+        "units": 340
+      },
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "StageName": "Marketing/Bulk Complete",
+        "cnt": 6,
+        "units": 400
+      },
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "StageName": "Prospecting",
+        "cnt": 17,
+        "units": 2898
+      },
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "StageName": "Marketing/Bulk In Progress",
+        "cnt": 14,
+        "units": 565
+      },
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "StageName": "Engaged",
+        "cnt": 7,
+        "units": 1288
+      },
+      {
+        "attributes": {
+          "type": "AggregateResult"
+        },
+        "StageName": "Contract Negotiations",
+        "cnt": 12,
+        "units": 2962
+      }
+    ],
+    "totalSize": 6,
+    "done": true
+  },
+  "warnings": []
+}
