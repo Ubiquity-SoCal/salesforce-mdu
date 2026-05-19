@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projected_Close_Date__c</fullName>
+    <description>Forecasted close date for pipeline reporting. Team should keep this current.</description>
+    <inlineHelpText>Used for forecasting on the Executive Dashboard. Set to the date you expect the PAL/ROE to be signed. Keep current — it drives the Sales Pipeline Funnel, past-due alerts, and the Active Pipeline / CX/Launch top tiles. This is NOT the standard Close Date.</inlineHelpText>
+    <label>Projected Close Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>
