@@ -6,6 +6,21 @@
     <description>B2B tenant revenue sales at the Property Unit (suite) level. Create from a Property Unit page.</description>
     <label>Business Sales</label>
     <picklistValues>
+        <picklist>MDU_Categorization__c</picklist>
+        <values>
+            <fullName>OnNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OffNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NearNet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
             <fullName>Best Case</fullName>

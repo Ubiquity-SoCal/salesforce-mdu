@@ -1,0 +1,3 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wkACEYA2,Birchwood Apts,StageName,Prospects,PAL/ROE Complete,ST In-Service evidence (Koa 2026-05-19),2026-05-19T15-52-57,update
+006WR00000wkACEYA2,Birchwood Apts,Sales_Status__c,Contact Pending,(cleared),required to advance past Engaged,2026-05-19T15-52-57,update

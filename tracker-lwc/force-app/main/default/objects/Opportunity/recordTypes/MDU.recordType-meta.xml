@@ -6,6 +6,21 @@
     <description>Residential property pursuits (apartments, condos, townhomes, single family, etc) at the Property Location level. Use Business ROE for commercial buildings.</description>
     <label>MDU/SFU</label>
     <picklistValues>
+        <picklist>MDU_Categorization__c</picklist>
+        <values>
+            <fullName>OnNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OffNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NearNet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
             <fullName>Best Case</fullName>
