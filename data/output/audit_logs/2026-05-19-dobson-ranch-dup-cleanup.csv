@@ -1,0 +1,12 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action,Note
+006WR00000wkEcUYAU,Dobson Ranch Condos,Incumbent_Provider__c,Cox,FiberFirst,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,UPDATE,Migrated from dup 006WR000015Ifm7YAC
+006WR00000wkEcUYAU,Dobson Ranch Condos,Incumbent_Agreement_Type__c,,EMA,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,UPDATE,Migrated from dup 006WR000015Ifm7YAC
+006WR00000wkEcUYAU,Dobson Ranch Condos,Incumbent_Agreement_Expiration__c,,2035-02-17,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,UPDATE,Migrated from dup 006WR000015Ifm7YAC
+006WR00000wkEcUYAU,Dobson Ranch Condos,Projected_Close_Date__c,,2026-07-31,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,UPDATE,Migrated from dup 006WR000015Ifm7YAC
+a0EWR0000091v5V2AQ,clone of OC-0926,(created),,"Opp=006WR00000wkEcUYAU, Contact=Susan Thompson, Role=HOA Contact",2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,CREATE,Cloned from dup OC a0EWR0000091mQP2AY
+a0EWR0000091v772AA,clone of OC-0927,(created),,"Opp=006WR00000wkEcUYAU, Contact=Patsy Fawcett, Role=Other",2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,CREATE,Cloned from dup OC a0EWR0000091mWr2AI
+a0EWR0000091v8j2AA,clone of OC-0928,(created),,"Opp=006WR00000wkEcUYAU, Contact=Shelly Loomer, Role=HOA Contact",2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,CREATE,Cloned from dup OC a0EWR0000091mbh2AA
+006WR000015Ifm7YAC,Dobson Ranch Condos,(deleted),present,deleted,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,DELETE,"Dup of 006WR00000wkEcUYAU; 3 OCs cascade-deleted: ['a0EWR0000091mQP2AY', 'a0EWR0000091mWr2AI', 'a0EWR0000091mbh2AA']"
+a0EWR0000091mQP2AY,OC-0926,(deleted),present,deleted,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,DELETE_CASCADE,Cascade-deleted with parent Opp 006WR000015Ifm7YAC
+a0EWR0000091mWr2AI,OC-0927,(deleted),present,deleted,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,DELETE_CASCADE,Cascade-deleted with parent Opp 006WR000015Ifm7YAC
+a0EWR0000091mbh2AA,OC-0928,(deleted),present,deleted,2026-05-19-dobson-ranch-dup-cleanup.py,2026-05-19T10:03:55,DELETE_CASCADE,Cascade-deleted with parent Opp 006WR000015Ifm7YAC
