@@ -243,7 +243,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.CloseDate</fieldItem>
                 <identifier>RecordCloseDateField</identifier>
@@ -307,6 +307,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Property_Location__c</fieldItem>
+                <identifier>RecordProperty_Location_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -395,8 +405,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Prospective_ISP__c</fieldItem>
-                <identifier>RecordProspective_ISP_cField</identifier>
+                <fieldItem>Record.Prospective_ISPs__c</fieldItem>
+                <identifier>RecordProspective_ISPs_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet_s3_l</name>
@@ -409,8 +419,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Confirmed_ISP__c</fieldItem>
-                <identifier>RecordConfirmed_ISP_cField</identifier>
+                <fieldItem>Record.Confirmed_ISPs__c</fieldItem>
+                <identifier>RecordConfirmed_ISPs_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet_s3_r</name>
@@ -907,6 +917,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-tabsetTabs</value>
