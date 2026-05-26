@@ -144,6 +144,22 @@
         }).then(function(r) { return r.json(); });
     }
 
+    // Paginating version: follows nextRecordsUrl until done. Returns a {records: [...]}
+    // object shaped like a single SOQL response so callers using recs(r) keep working.
+    function queryAll(soql) {
+        var all = [];
+        var fetchPage = function(rs) {
+            all = all.concat(rs.records || []);
+            if (rs.done === false && rs.nextRecordsUrl) {
+                return fetch(instanceUrl + rs.nextRecordsUrl, {
+                    headers: { 'Authorization': 'Bearer ' + sid, 'Content-Type': 'application/json' }
+                }).then(function(r) { return r.json(); }).then(fetchPage);
+            }
+            return { records: all, done: true, totalSize: all.length };
+        };
+        return query(soql).then(fetchPage);
+    }
+
     function fmt(n) { return '$' + (n || 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}); }
     function escHtml(s) { var d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
     function rec0(result) { return (result.records && result.records.length > 0) ? result.records[0] : {cnt: 0, total: 0}; }
@@ -623,8 +639,9 @@
             query("SELECT Id, StageName, Substatus__c, (SELECT Activation_Actual__c FROM SiteTracker_Projects__r) FROM Opportunity WHERE StageName IN ('PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete')" + rtFilter + catFilter),
 
             // ── Market Penetration tab queries ──────────────────────────────
-            // Q-A: all Business PLs (drives sections 1 + 2 rollups)
-            query("SELECT Id, Property_Unit_Count__c, Active_Unit_Count__c, Deactive_Unit_Count__c, State__c, Lit__c FROM Property_Location__c WHERE Address_Type__c='Business' AND Import_Delete_Property__c=false"),
+            // Q-A: all Business PLs (drives sections 1 + 2 rollups). Uses queryAll
+            // because the result set exceeds the default 2000-row SOQL page.
+            queryAll("SELECT Id, Property_Unit_Count__c, Active_Unit_Count__c, Deactive_Unit_Count__c, State__c, Lit__c FROM Property_Location__c WHERE Address_Type__c='Business' AND Import_Delete_Property__c=false"),
             // Q-C: detail rows for the section 3 table (only the not-yet-lit ones)
             query("SELECT Id, Name, Agreement_Type__c, Signed_Date__c, Opportunity__r.Owner.Name, Property_Location__c, Property_Location__r.Name, Property_Location__r.Property_Unit_Count__c, Property_Location__r.State__c FROM Agreement__c WHERE Status__c='Completed' AND Agreement_Type__c IN ('ROE','PAL','PAL/ROE','PAL Addendum','ROE Addendum') AND Opportunity__r.RecordType.DeveloperName='Business_ROE' AND Property_Location__c != null AND Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = false ORDER BY Signed_Date__c DESC NULLS LAST")
         ]).then(function(results) {
