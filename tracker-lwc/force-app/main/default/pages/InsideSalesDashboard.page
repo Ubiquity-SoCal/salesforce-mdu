@@ -360,6 +360,15 @@
         var el = document.getElementById('marketpen-content');
         if (!el) return;
 
+        // Audience slicer guard. MDU/SFU not built yet.
+        var isMduOrSfu = (currentPipeline === 'MDU');
+        if (isMduOrSfu) {
+            el.innerHTML = '<div class="empty-state"><h2 class="section-h">Market Penetration</h2>'
+              + '<p>This view currently covers Business properties only. The MDU/SFU audience is selected.</p>'
+              + '<p>MDU and SFU penetration views are planned for a future iteration.</p></div>';
+            return;
+        }
+
         // ── Section 1: Single-Unit ────────────────────────────────────
         var singles = qaRows.filter(function(r){ return r.Property_Unit_Count__c === 1; });
         var litSingles = singles.filter(function(r){ return r.Lit__c === true; });
