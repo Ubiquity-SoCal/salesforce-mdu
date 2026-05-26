@@ -390,7 +390,49 @@
         });
         html += '</tbody></table>';
 
-        // sections 2 + 3 added in later tasks
+            // ── Section 2: Multi-Unit ─────────────────────────────────────
+            var multis = qaRows.filter(function(r){ return r.Property_Unit_Count__c > 1; });
+            var litMultis = multis.filter(function(r){ return r.Lit__c === true; });
+
+            var unitsInLit = 0;
+            var activeInLit = 0;
+            litMultis.forEach(function(r){
+                unitsInLit += (r.Property_Unit_Count__c || 0);
+                activeInLit += (r.Active_Unit_Count__c || 0);
+            });
+            var doorPen = unitsInLit === 0 ? 0 : (activeInLit / unitsInLit * 100);
+
+            // State rollup
+            var byStateMulti = {};
+            multis.forEach(function(r){
+                var s = r.State__c || '(none)';
+                if (!byStateMulti[s]) byStateMulti[s] = { total:0, lit:0, unitsInLit:0, activeInLit:0 };
+                byStateMulti[s].total += 1;
+                if (r.Lit__c === true) {
+                    byStateMulti[s].lit += 1;
+                    byStateMulti[s].unitsInLit += (r.Property_Unit_Count__c || 0);
+                    byStateMulti[s].activeInLit += (r.Active_Unit_Count__c || 0);
+                }
+            });
+
+            html += '<h2 class="section-h">Multi-Unit Buildings</h2>';
+            html += '<div class="kpi-row">';
+            html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + multis.length.toLocaleString() + '</div></div>';
+            html += '  <div class="kpi"><div class="kpi-label">Lit</div><div class="kpi-value">' + litMultis.length.toLocaleString() + '</div></div>';
+            html += '  <div class="kpi"><div class="kpi-label">Units in Lit</div><div class="kpi-value">' + unitsInLit.toLocaleString() + '</div></div>';
+            html += '  <div class="kpi"><div class="kpi-label">Active</div><div class="kpi-value">' + activeInLit.toLocaleString() + '</div></div>';
+            html += '  <div class="kpi"><div class="kpi-label">Door-Weighted Pen</div><div class="kpi-value">' + doorPen.toFixed(1) + '%</div></div>';
+            html += '</div>';
+
+            html += '<table class="data-table"><thead><tr><th>State</th><th class="num">Bldgs</th><th class="num">Lit</th><th class="num">Units in Lit</th><th class="num">Active</th><th class="num">Door-Weighted</th></tr></thead><tbody>';
+            Object.keys(byStateMulti).sort().forEach(function(s){
+                var row = byStateMulti[s];
+                var pct = row.unitsInLit === 0 ? 0 : (row.activeInLit / row.unitsInLit * 100);
+                html += '<tr><td>' + s + '</td><td class="num">' + row.total + '</td><td class="num">' + row.lit + '</td><td class="num">' + row.unitsInLit + '</td><td class="num">' + row.activeInLit + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
+            });
+            html += '</tbody></table>';
+
+        // section 3 added in later task
 
         el.innerHTML = html;
     }
