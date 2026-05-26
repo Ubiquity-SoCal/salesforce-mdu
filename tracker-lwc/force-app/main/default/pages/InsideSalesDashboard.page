@@ -432,7 +432,41 @@
             });
             html += '</tbody></table>';
 
-        // section 3 added in later task
+            // ── Section 3: ROE Completed but Not Yet Lit ──────────────────
+            var section3Single = qcRows.filter(function(r){
+                var pl = r.Property_Location__r || {};
+                return pl.Property_Unit_Count__c === 1;
+            });
+            var section3Multi = qcRows.filter(function(r){
+                var pl = r.Property_Location__r || {};
+                return pl.Property_Unit_Count__c > 1;
+            });
+
+            html += '<h2 class="section-h">ROE Completed but Not Yet Lit</h2>';
+            html += '<div class="kpi-row">';
+            html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + qcRows.length + '</div></div>';
+            html += '  <div class="kpi"><div class="kpi-label">Single-Unit</div><div class="kpi-value">' + section3Single.length + '</div></div>';
+            html += '  <div class="kpi"><div class="kpi-label">Multi-Unit</div><div class="kpi-value">' + section3Multi.length + '</div></div>';
+            html += '</div>';
+
+            html += '<table class="data-table"><thead><tr><th>Property</th><th>State</th><th class="num">Units</th><th>Agreement</th><th>ROE Signed</th><th>Owner</th></tr></thead><tbody>';
+            qcRows.forEach(function(r){
+                var pl = r.Property_Location__r || {};
+                var opp = r.Opportunity__r || {};
+                var owner = (opp.Owner || {}).Name || '';
+                var plUrl = '/lightning/r/Property_Location__c/' + r.Property_Location__c + '/view';
+                var agUrl = '/lightning/r/Agreement__c/' + r.Id + '/view';
+                var signed = (r.Signed_Date__c || '').slice(0, 10);
+                html += '<tr>';
+                html += '  <td><a href="' + plUrl + '" target="_blank">' + (pl.Name || '') + '</a></td>';
+                html += '  <td>' + (pl.State__c || '') + '</td>';
+                html += '  <td class="num">' + (pl.Property_Unit_Count__c || '') + '</td>';
+                html += '  <td><a href="' + agUrl + '" target="_blank">' + (r.Name || '') + ' (' + (r.Agreement_Type__c || '') + ')</a></td>';
+                html += '  <td>' + signed + '</td>';
+                html += '  <td>' + owner + '</td>';
+                html += '</tr>';
+            });
+            html += '</tbody></table>';
 
         el.innerHTML = html;
     }
