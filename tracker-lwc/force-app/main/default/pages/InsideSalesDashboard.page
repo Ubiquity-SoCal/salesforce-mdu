@@ -91,6 +91,16 @@
         .lane-forecast .col-owner   { width: 10%; }
         .lane-forecast .col-action  { width: 18%; }
         .lane-forecast .col-acdate  { width: 8%; }
+        /* Market Penetration tab */
+        .section-h { margin: 1.5rem 0 0.5rem; font-size: 1.05rem; font-weight: 600; color: #1F4E78; border-bottom: 1px solid #d0d0d0; padding-bottom: 0.25rem; }
+        .kpi-row { display: flex; gap: 1rem; margin: 0.5rem 0 1rem; }
+        .kpi { background: #f7f9fa; border-radius: 6px; padding: 0.75rem 1rem; min-width: 130px; }
+        .kpi-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.04em; }
+        .kpi-value { font-size: 1.5rem; font-weight: 600; color: #1F4E78; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; }
+        .data-table th, .data-table td { padding: 6px 10px; border-bottom: 1px solid #e5e5e5; font-size: 0.825rem; }
+        .data-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; color: #706e6b; }
+        .data-table th.num, .data-table td.num { text-align: right; }
     </style>
 </head>
 <body>
@@ -345,6 +355,46 @@
         el.classList.add('active');
     }
 
+    /* ─── 3b. renderMarketPen() — renders the Market Penetration tab body */
+    function renderMarketPen(qaRows, qcRows) {
+        var el = document.getElementById('marketpen-content');
+        if (!el) return;
+
+        // ── Section 1: Single-Unit ────────────────────────────────────
+        var singles = qaRows.filter(function(r){ return r.Property_Unit_Count__c === 1; });
+        var litSingles = singles.filter(function(r){ return r.Lit__c === true; });
+        var sPen = singles.length === 0 ? 0 : (litSingles.length / singles.length * 100);
+
+        // State rollup for single-unit
+        var byStateSingle = {};
+        singles.forEach(function(r){
+            var s = r.State__c || '(none)';
+            if (!byStateSingle[s]) byStateSingle[s] = { total:0, lit:0 };
+            byStateSingle[s].total += 1;
+            if (r.Lit__c === true) byStateSingle[s].lit += 1;
+        });
+
+        var html = '';
+        html += '<h2 class="section-h">Single-Unit Buildings</h2>';
+        html += '<div class="kpi-row">';
+        html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + singles.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Lit</div><div class="kpi-value">' + litSingles.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Penetration</div><div class="kpi-value">' + sPen.toFixed(1) + '%</div></div>';
+        html += '</div>';
+
+        html += '<table class="data-table"><thead><tr><th>State</th><th class="num">Total</th><th class="num">Lit</th><th class="num">Penetration</th></tr></thead><tbody>';
+        Object.keys(byStateSingle).sort().forEach(function(s){
+            var row = byStateSingle[s];
+            var pct = row.total === 0 ? 0 : (row.lit / row.total * 100);
+            html += '<tr><td>' + s + '</td><td class="num">' + row.total + '</td><td class="num">' + row.lit + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
+        });
+        html += '</tbody></table>';
+
+        // sections 2 + 3 added in later tasks
+
+        el.innerHTML = html;
+    }
+
     /* ─── 4. loadDashboard() — main entry point, called on tab/pipeline change */
     function loadDashboard() {
         document.getElementById('dashboard').innerHTML = '<div class="loading">Loading...</div>';
@@ -493,9 +543,6 @@
             // Q-C: detail rows for the section 3 table (only the not-yet-lit ones)
             query("SELECT Id, Name, Agreement_Type__c, Signed_Date__c, Opportunity__r.Owner.Name, Property_Location__c, Property_Location__r.Name, Property_Location__r.Property_Unit_Count__c, Property_Location__r.State__c FROM Agreement__c WHERE Status__c='Completed' AND Agreement_Type__c IN ('ROE','PAL','PAL/ROE','PAL Addendum','ROE Addendum') AND Opportunity__r.RecordType.DeveloperName='Business_ROE' AND Property_Location__c != null AND Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = false ORDER BY Signed_Date__c DESC NULLS LAST")
         ]).then(function(results) {
-            // Market Penetration tab — sanity log of new query results
-            console.log('[marketpen] Q-A rows:', (results[36] || []).length);
-            console.log('[marketpen] Q-C rows:', (results[37] || []).length);
             // ═══════════════════════════════════════════════════════════
             // 4c. RESULT DESTRUCTURING + COMPUTED VALUES
             // ═══════════════════════════════════════════════════════════
@@ -1586,6 +1633,10 @@
 
             document.getElementById('dashboard').innerHTML = html;
             document.getElementById('dashboard').className = '';
+
+            // Render the Market Penetration tab body now that its container exists in the DOM.
+            // recs() extracts the .records array from the SOQL response wrapper.
+            renderMarketPen(recs(results[36]), recs(results[37]));
         }).catch(function(err) {
             document.getElementById('dashboard').innerHTML = '<div style="color:red;">Error loading dashboard: ' + err.message + '</div>';
         });
