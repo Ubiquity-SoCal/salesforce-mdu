@@ -486,7 +486,16 @@
             query("SELECT Id, Opportunity__c, Agreement_Type__c, Status__c FROM Agreement__c WHERE Opportunity__c IN (SELECT Opportunity__c FROM SiteTracker_Project__c WHERE Activation_Forecast__c != null AND Activation_Actual__c = null)"),
             // Post-PAL Substatus x Build state (35) — disposition matrix across PAL/ROE Complete, Marketing/Bulk In Progress, Marketing/Bulk Complete
             query("SELECT Id, StageName, Substatus__c, (SELECT Activation_Actual__c FROM SiteTracker_Projects__r) FROM Opportunity WHERE StageName IN ('PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete')" + rtFilter + catFilter),
+
+            // ── Market Penetration tab queries ──────────────────────────────
+            // Q-A: all Business PLs (drives sections 1 + 2 rollups)
+            query("SELECT Id, Property_Unit_Count__c, Active_Unit_Count__c, Deactive_Unit_Count__c, State__c, Lit__c FROM Property_Location__c WHERE Address_Type__c='Business' AND Import_Delete_Property__c=false"),
+            // Q-C: detail rows for the section 3 table (only the not-yet-lit ones)
+            query("SELECT Id, Name, Agreement_Type__c, Signed_Date__c, Opportunity__r.Owner.Name, Property_Location__c, Property_Location__r.Name, Property_Location__r.Property_Unit_Count__c, Property_Location__r.State__c FROM Agreement__c WHERE Status__c='Completed' AND Agreement_Type__c IN ('ROE','PAL','PAL/ROE','PAL Addendum','ROE Addendum') AND Opportunity__r.RecordType.DeveloperName='Business_ROE' AND Property_Location__c != null AND Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = false ORDER BY Signed_Date__c DESC NULLS LAST")
         ]).then(function(results) {
+            // Market Penetration tab — sanity log of new query results
+            console.log('[marketpen] Q-A rows:', (results[36] || []).length);
+            console.log('[marketpen] Q-C rows:', (results[37] || []).length);
             // ═══════════════════════════════════════════════════════════
             // 4c. RESULT DESTRUCTURING + COMPUTED VALUES
             // ═══════════════════════════════════════════════════════════
