@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lit__c</fullName>
+    <description>True if the building has at least one drop installed (active or churned). Centralizes the "lit" definition used by the Market Penetration dashboard tab.</description>
+    <externalId>false</externalId>
+    <formula>Active_Unit_Count__c &gt; 0 || Deactive_Unit_Count__c &gt; 0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
