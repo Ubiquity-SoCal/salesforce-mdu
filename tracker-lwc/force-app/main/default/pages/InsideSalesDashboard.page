@@ -94,8 +94,20 @@
         /* Market Penetration tab */
         .section-h { margin: 1.5rem 0 0.5rem; font-size: 1.05rem; font-weight: 600; color: #1F4E78; border-bottom: 1px solid #d0d0d0; padding-bottom: 0.25rem; }
         .kpi-row { display: flex; gap: 1rem; margin: 0.5rem 0 1rem; }
-        .kpi { background: #f7f9fa; border-radius: 6px; padding: 0.75rem 1rem; min-width: 130px; }
+        .kpi { background: #f7f9fa; border-radius: 6px; padding: 0.75rem 1rem; min-width: 130px; flex: 1; }
         .kpi-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.04em; }
+        .mp-charts { display: flex; gap: 1rem; margin: 0.5rem 0 1rem; flex-wrap: wrap; align-items: flex-start; }
+        .mp-chart { background: #f7f9fa; border-radius: 6px; padding: 1rem; flex: 0 0 auto; }
+        .mp-chart-wide { flex: 1 1 300px; min-width: 300px; }
+        .mp-chart-title { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.5rem; text-align: center; }
+        .mp-header { background: #eaf4fd; border-left: 4px solid #0176d3; padding: 1rem 1.25rem; margin-bottom: 1.5rem; border-radius: 4px; }
+        .mp-header h3 { margin: 0 0 0.25rem; font-size: 1rem; color: #032d60; }
+        .mp-source { font-size: 0.75rem; color: #444; margin-bottom: 0.75rem; }
+        .mp-defs { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .mp-defs-block { flex: 1 1 320px; min-width: 280px; }
+        .mp-defs-block h4 { margin: 0 0 0.4rem; font-size: 0.75rem; color: #1F4E78; text-transform: uppercase; letter-spacing: 0.04em; }
+        .mp-defs-block ul { margin: 0; padding-left: 1.1rem; font-size: 0.78rem; color: #181818; line-height: 1.5; }
+        .mp-defs-block li { margin-bottom: 0.15rem; }
         .kpi-value { font-size: 1.5rem; font-weight: 600; color: #1F4E78; }
         .data-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; }
         .data-table th, .data-table td { padding: 6px 10px; border-bottom: 1px solid #e5e5e5; font-size: 0.825rem; }
@@ -372,7 +384,29 @@
     }
 
     /* ─── 3b. renderMarketPen() — renders the Market Penetration tab body */
-    function renderMarketPen(qaRows, qcRows) {
+
+    // Horizontal bar chart helper. data = [{label, value, pct}]. Returns HTML.
+    function buildBarChart(data, title) {
+        if (!data || data.length === 0) return '<div class="empty-state">No data</div>';
+        var maxPct = data.reduce(function(m, d){ return Math.max(m, d.pct || 0); }, 0);
+        // Scale bars so the largest hits ~92% of available width, leaving room for the label.
+        var scale = maxPct > 0 ? (92 / maxPct) : 0;
+        var html = '<div style="font-size:0.75rem;color:#181818;font-weight:600;margin-bottom:6px;">' + escHtml(title) + '</div>';
+        data.forEach(function(d){
+            var w = Math.max(2, (d.pct || 0) * scale);
+            html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;font-size:0.75rem;">';
+            html += '  <div style="width:30px;color:#181818;">' + escHtml(d.label) + '</div>';
+            html += '  <div style="flex:1;background:#f0f0f0;border-radius:2px;height:18px;position:relative;">';
+            html += '    <div style="width:' + w.toFixed(1) + '%;height:100%;background:#0176d3;border-radius:2px;"></div>';
+            html += '    <div style="position:absolute;left:6px;top:0;line-height:18px;color:#fff;font-weight:600;">' + (d.value !== undefined ? d.value : '') + '</div>';
+            html += '  </div>';
+            html += '  <div style="width:60px;text-align:right;color:#706e6b;">' + (d.pct || 0).toFixed(1) + '%</div>';
+            html += '</div>';
+        });
+        return html;
+    }
+
+    function renderMarketPen(qaRows, qcRows, qdRows) {
         var el = document.getElementById('marketpen-content');
         if (!el) return;
 
@@ -385,113 +419,203 @@
             return;
         }
 
-        // ── Section 1: Single-Unit ────────────────────────────────────
+        // ════════════════════════════════════════════════════════════════
+        // Header: parameters + definitions
+        // ════════════════════════════════════════════════════════════════
+        var html = '';
+        html += '<div class="mp-header">';
+        html += '  <h3>Business Footprint Penetration</h3>';
+        html += '  <div class="mp-source">Live from Salesforce (<code>Property_Location__c</code>, Vetro-synced). Refreshes each time you load the page.</div>';
+        html += '  <div class="mp-defs">';
+        html += '    <div class="mp-defs-block">';
+        html += '      <h4>Universe (what is included)</h4>';
+        html += '      <ul>';
+        html += '        <li>Business addresses only (<code>Address_Type__c = \'Business\'</code>)</li>';
+        html += '        <li>All Priority states (Solana Beach + Encinitas included)</li>';
+        html += '        <li>States in footprint: AZ, CA, NE, TX</li>';
+        html += '      </ul>';
+        html += '    </div>';
+        html += '    <div class="mp-defs-block">';
+        html += '      <h4>Definitions</h4>';
+        html += '      <ul>';
+        html += '        <li><strong>Active</strong>: unit with a current paying customer (<code>Active_Unit_Count__c &gt; 0</code>)</li>';
+        html += '        <li><strong>Deactivated</strong>: former customer (churned); proves the building was lit</li>';
+        html += '        <li><strong>Lit</strong>: building has at least 1 Active OR 1 Deactivated unit (drop installed)</li>';
+        html += '        <li><strong>Penetration</strong>: Active / Total Units within lit buildings (door-weighted)</li>';
+        html += '        <li><strong>Single-Unit</strong>: <code>Property_Unit_Count = 1</code> (standalone storefront / single-tenant)</li>';
+        html += '        <li><strong>Multi-Unit</strong>: <code>Property_Unit_Count &gt; 1</code> (strip mall, business park, multi-tenant)</li>';
+        html += '        <li><strong>ROE Not Yet Lit</strong>: property with a completed ROE/PAL agreement (Business_ROE record type) where no drops have been installed yet</li>';
+        html += '      </ul>';
+        html += '      <div style="font-size:0.7rem;color:#706e6b;margin-top:0.5rem;font-style:italic;">SF does not track "Drop Completed" or "Serviceable Idle" unit-level status (Vetro does). Total Units excludes those buckets here.</div>';
+        html += '    </div>';
+        html += '  </div>';
+        html += '</div>';
+
+        // ════════════════════════════════════════════════════════════════
+        // Section 1: Single-Unit Buildings
+        // ════════════════════════════════════════════════════════════════
         var singles = qaRows.filter(function(r){ return r.Property_Unit_Count__c === 1; });
         var litSingles = singles.filter(function(r){ return r.Lit__c === true; });
+        var activeSingles = singles.filter(function(r){ return (r.Active_Unit_Count__c || 0) > 0; });
+        var deactSingles = singles.filter(function(r){ return (r.Deactive_Unit_Count__c || 0) > 0; });
         var sPen = singles.length === 0 ? 0 : (litSingles.length / singles.length * 100);
 
-        // State rollup for single-unit
         var byStateSingle = {};
         singles.forEach(function(r){
             var s = r.State__c || '(none)';
-            if (!byStateSingle[s]) byStateSingle[s] = { total:0, lit:0 };
+            if (!byStateSingle[s]) byStateSingle[s] = { total:0, lit:0, active:0, deact:0 };
             byStateSingle[s].total += 1;
             if (r.Lit__c === true) byStateSingle[s].lit += 1;
+            if ((r.Active_Unit_Count__c || 0) > 0) byStateSingle[s].active += 1;
+            if ((r.Deactive_Unit_Count__c || 0) > 0) byStateSingle[s].deact += 1;
         });
 
-        var html = '';
         html += '<h2 class="section-h">Single-Unit Buildings</h2>';
         html += '<div class="kpi-row">';
-        html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + singles.length.toLocaleString() + '</div></div>';
-        html += '  <div class="kpi"><div class="kpi-label">Lit</div><div class="kpi-value">' + litSingles.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Buildings</div><div class="kpi-value">' + singles.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Lit Buildings</div><div class="kpi-value">' + litSingles.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Active Customers</div><div class="kpi-value">' + activeSingles.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Deactivated</div><div class="kpi-value">' + deactSingles.length.toLocaleString() + '</div></div>';
         html += '  <div class="kpi"><div class="kpi-label">Penetration</div><div class="kpi-value">' + sPen.toFixed(1) + '%</div></div>';
         html += '</div>';
 
-        html += '<table class="data-table"><thead><tr><th>State</th><th class="num">Total</th><th class="num">Lit</th><th class="num">Penetration</th></tr></thead><tbody>';
+        // Charts: Lit/Not-Lit donut + state bar
+        var singlePieData = [
+            { label: 'Lit (' + litSingles.length.toLocaleString() + ')', value: litSingles.length, color: '#0176d3' },
+            { label: 'Not Lit (' + (singles.length - litSingles.length).toLocaleString() + ')', value: singles.length - litSingles.length, color: '#e5e5e5' }
+        ];
+        var singleStateBars = Object.keys(byStateSingle).sort().map(function(s){
+            var row = byStateSingle[s];
+            return { label: s, value: row.lit, pct: row.total === 0 ? 0 : (row.lit / row.total * 100) };
+        });
+        html += '<div class="mp-charts">';
+        html += '  <div class="mp-chart"><div class="mp-chart-title">Penetration</div>' + buildPieChart(singlePieData, 140) + '</div>';
+        html += '  <div class="mp-chart mp-chart-wide">' + buildBarChart(singleStateBars, 'Penetration % by State') + '</div>';
+        html += '</div>';
+
+        html += '<table class="data-table"><thead><tr><th>State</th><th class="num">Buildings</th><th class="num">Lit Buildings</th><th class="num">Active Customers</th><th class="num">Deactivated</th><th class="num">Penetration</th></tr></thead><tbody>';
         Object.keys(byStateSingle).sort().forEach(function(s){
             var row = byStateSingle[s];
             var pct = row.total === 0 ? 0 : (row.lit / row.total * 100);
-            html += '<tr><td>' + s + '</td><td class="num">' + row.total + '</td><td class="num">' + row.lit + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
+            html += '<tr><td>' + s + '</td><td class="num">' + row.total + '</td><td class="num">' + row.lit + '</td><td class="num">' + row.active + '</td><td class="num">' + row.deact + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
         });
         html += '</tbody></table>';
 
-            // ── Section 2: Multi-Unit ─────────────────────────────────────
-            var multis = qaRows.filter(function(r){ return r.Property_Unit_Count__c > 1; });
-            var litMultis = multis.filter(function(r){ return r.Lit__c === true; });
+        // ════════════════════════════════════════════════════════════════
+        // Section 2: Multi-Unit Buildings
+        // ════════════════════════════════════════════════════════════════
+        var multis = qaRows.filter(function(r){ return r.Property_Unit_Count__c > 1; });
+        var litMultis = multis.filter(function(r){ return r.Lit__c === true; });
 
-            var unitsInLit = 0;
-            var activeInLit = 0;
-            litMultis.forEach(function(r){
-                unitsInLit += (r.Property_Unit_Count__c || 0);
-                activeInLit += (r.Active_Unit_Count__c || 0);
-            });
-            var doorPen = unitsInLit === 0 ? 0 : (activeInLit / unitsInLit * 100);
+        var unitsInLit = 0;
+        var activeInLit = 0;
+        var deactiveInLit = 0;
+        litMultis.forEach(function(r){
+            unitsInLit += (r.Property_Unit_Count__c || 0);
+            activeInLit += (r.Active_Unit_Count__c || 0);
+            deactiveInLit += (r.Deactive_Unit_Count__c || 0);
+        });
+        var idleInLit = Math.max(0, unitsInLit - activeInLit - deactiveInLit);
+        var doorPen = unitsInLit === 0 ? 0 : (activeInLit / unitsInLit * 100);
 
-            // State rollup
-            var byStateMulti = {};
-            multis.forEach(function(r){
-                var s = r.State__c || '(none)';
-                if (!byStateMulti[s]) byStateMulti[s] = { total:0, lit:0, unitsInLit:0, activeInLit:0 };
-                byStateMulti[s].total += 1;
-                if (r.Lit__c === true) {
-                    byStateMulti[s].lit += 1;
-                    byStateMulti[s].unitsInLit += (r.Property_Unit_Count__c || 0);
-                    byStateMulti[s].activeInLit += (r.Active_Unit_Count__c || 0);
-                }
-            });
+        var byStateMulti = {};
+        multis.forEach(function(r){
+            var s = r.State__c || '(none)';
+            if (!byStateMulti[s]) byStateMulti[s] = { total:0, lit:0, unitsInLit:0, activeInLit:0, deactInLit:0 };
+            byStateMulti[s].total += 1;
+            if (r.Lit__c === true) {
+                byStateMulti[s].lit += 1;
+                byStateMulti[s].unitsInLit += (r.Property_Unit_Count__c || 0);
+                byStateMulti[s].activeInLit += (r.Active_Unit_Count__c || 0);
+                byStateMulti[s].deactInLit += (r.Deactive_Unit_Count__c || 0);
+            }
+        });
 
-            html += '<h2 class="section-h">Multi-Unit Buildings</h2>';
-            html += '<div class="kpi-row">';
-            html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + multis.length.toLocaleString() + '</div></div>';
-            html += '  <div class="kpi"><div class="kpi-label">Lit</div><div class="kpi-value">' + litMultis.length.toLocaleString() + '</div></div>';
-            html += '  <div class="kpi"><div class="kpi-label">Units in Lit</div><div class="kpi-value">' + unitsInLit.toLocaleString() + '</div></div>';
-            html += '  <div class="kpi"><div class="kpi-label">Active</div><div class="kpi-value">' + activeInLit.toLocaleString() + '</div></div>';
-            html += '  <div class="kpi"><div class="kpi-label">Door-Weighted Pen</div><div class="kpi-value">' + doorPen.toFixed(1) + '%</div></div>';
-            html += '</div>';
+        html += '<h2 class="section-h">Multi-Unit Buildings</h2>';
+        html += '<div class="kpi-row">';
+        html += '  <div class="kpi"><div class="kpi-label">Buildings</div><div class="kpi-value">' + multis.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Lit Buildings</div><div class="kpi-value">' + litMultis.length.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Units</div><div class="kpi-value">' + unitsInLit.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Active Customers</div><div class="kpi-value">' + activeInLit.toLocaleString() + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Penetration</div><div class="kpi-value">' + doorPen.toFixed(1) + '%</div></div>';
+        html += '</div>';
 
-            html += '<table class="data-table"><thead><tr><th>State</th><th class="num">Bldgs</th><th class="num">Lit</th><th class="num">Units in Lit</th><th class="num">Active</th><th class="num">Door-Weighted</th></tr></thead><tbody>';
-            Object.keys(byStateMulti).sort().forEach(function(s){
-                var row = byStateMulti[s];
-                var pct = row.unitsInLit === 0 ? 0 : (row.activeInLit / row.unitsInLit * 100);
-                html += '<tr><td>' + s + '</td><td class="num">' + row.total + '</td><td class="num">' + row.lit + '</td><td class="num">' + row.unitsInLit + '</td><td class="num">' + row.activeInLit + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
-            });
-            html += '</tbody></table>';
+        // Charts: Lit/Not-Lit donut + state bar + unit-status pie
+        var multiPieData = [
+            { label: 'Lit (' + litMultis.length.toLocaleString() + ')', value: litMultis.length, color: '#0176d3' },
+            { label: 'Not Lit (' + (multis.length - litMultis.length).toLocaleString() + ')', value: multis.length - litMultis.length, color: '#e5e5e5' }
+        ];
+        var multiStateBars = Object.keys(byStateMulti).sort().map(function(s){
+            var row = byStateMulti[s];
+            return { label: s, value: row.lit, pct: row.unitsInLit === 0 ? 0 : (row.activeInLit / row.unitsInLit * 100) };
+        });
+        // Unit status from Property_Unit.Coho__c (Q-D). Four-bucket breakdown matching Excel.
+        // Note: CA Hold buildings have a known PowerBI-import gap (parent rollup > Coho children),
+        // so Activated here may undercount vs the KPI tile. KPI uses Active_Unit_Count rollup.
+        var cohoCounts = { 'Activated': 0, 'De-Activated': 0, 'Drop Completed': 0, 'Serviceable': 0 };
+        (qdRows || []).forEach(function(r){
+            var key = r.Coho__c || 'Serviceable';
+            // SF aggregate result uses 'expr0' for COUNT(Id) when no alias resolves; 'c' if alias works.
+            var v = (r.c !== undefined) ? r.c : (r.expr0 !== undefined ? r.expr0 : 0);
+            if (cohoCounts[key] !== undefined) cohoCounts[key] = v;
+        });
+        var unitStatusData = [
+            { label: 'Active (' + cohoCounts['Activated'].toLocaleString() + ')', value: cohoCounts['Activated'], color: '#2e844a' },
+            { label: 'Deactivated (' + cohoCounts['De-Activated'].toLocaleString() + ')', value: cohoCounts['De-Activated'], color: '#c23934' },
+            { label: 'Drop Completed (' + cohoCounts['Drop Completed'].toLocaleString() + ')', value: cohoCounts['Drop Completed'], color: '#e68619' },
+            { label: 'Serviceable Idle (' + cohoCounts['Serviceable'].toLocaleString() + ')', value: cohoCounts['Serviceable'], color: '#e5e5e5' }
+        ];
+        html += '<div class="mp-charts">';
+        html += '  <div class="mp-chart"><div class="mp-chart-title">Penetration (Buildings)</div>' + buildPieChart(multiPieData, 140) + '</div>';
+        html += '  <div class="mp-chart"><div class="mp-chart-title">Units in Lit Buildings</div>' + buildPieChart(unitStatusData, 140) + '</div>';
+        html += '  <div class="mp-chart mp-chart-wide">' + buildBarChart(multiStateBars, 'Penetration % by State') + '</div>';
+        html += '</div>';
 
-            // ── Section 3: ROE Completed but Not Yet Lit ──────────────────
-            var section3Single = qcRows.filter(function(r){
-                var pl = r.Property_Location__r || {};
-                return pl.Property_Unit_Count__c === 1;
-            });
-            var section3Multi = qcRows.filter(function(r){
-                var pl = r.Property_Location__r || {};
-                return pl.Property_Unit_Count__c > 1;
-            });
+        html += '<table class="data-table"><thead><tr><th>State</th><th class="num">Buildings</th><th class="num">Lit Buildings</th><th class="num">Units</th><th class="num">Active Customers</th><th class="num">Deactivated</th><th class="num">Penetration</th></tr></thead><tbody>';
+        Object.keys(byStateMulti).sort().forEach(function(s){
+            var row = byStateMulti[s];
+            var pct = row.unitsInLit === 0 ? 0 : (row.activeInLit / row.unitsInLit * 100);
+            html += '<tr><td>' + s + '</td><td class="num">' + row.total + '</td><td class="num">' + row.lit + '</td><td class="num">' + row.unitsInLit + '</td><td class="num">' + row.activeInLit + '</td><td class="num">' + row.deactInLit + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
+        });
+        html += '</tbody></table>';
 
-            html += '<h2 class="section-h">ROE Completed but Not Yet Lit</h2>';
-            html += '<div class="kpi-row">';
-            html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + qcRows.length + '</div></div>';
-            html += '  <div class="kpi"><div class="kpi-label">Single-Unit</div><div class="kpi-value">' + section3Single.length + '</div></div>';
-            html += '  <div class="kpi"><div class="kpi-label">Multi-Unit</div><div class="kpi-value">' + section3Multi.length + '</div></div>';
-            html += '</div>';
+        // ════════════════════════════════════════════════════════════════
+        // Section 3: ROE Completed but Not Yet Lit
+        // ════════════════════════════════════════════════════════════════
+        var section3Single = qcRows.filter(function(r){
+            var pl = r.Property_Location__r || {};
+            return pl.Property_Unit_Count__c === 1;
+        });
+        var section3Multi = qcRows.filter(function(r){
+            var pl = r.Property_Location__r || {};
+            return pl.Property_Unit_Count__c > 1;
+        });
 
-            html += '<table class="data-table"><thead><tr><th>Property</th><th>State</th><th class="num">Units</th><th>Agreement</th><th>ROE Signed</th><th>Owner</th></tr></thead><tbody>';
-            qcRows.forEach(function(r){
-                var pl = r.Property_Location__r || {};
-                var opp = r.Opportunity__r || {};
-                var owner = (opp.Owner || {}).Name || '';
-                var plUrl = '/lightning/r/Property_Location__c/' + r.Property_Location__c + '/view';
-                var agUrl = '/lightning/r/Agreement__c/' + r.Id + '/view';
-                var signed = (r.Signed_Date__c || '').slice(0, 10);
-                html += '<tr>';
-                html += '  <td><a href="' + plUrl + '" target="_blank">' + (pl.Name || '') + '</a></td>';
-                html += '  <td>' + (pl.State__c || '') + '</td>';
-                html += '  <td class="num">' + (pl.Property_Unit_Count__c || '') + '</td>';
-                html += '  <td><a href="' + agUrl + '" target="_blank">' + (r.Name || '') + ' (' + (r.Agreement_Type__c || '') + ')</a></td>';
-                html += '  <td>' + signed + '</td>';
-                html += '  <td>' + owner + '</td>';
-                html += '</tr>';
-            });
-            html += '</tbody></table>';
+        html += '<h2 class="section-h">ROE Completed but Not Yet Lit</h2>';
+        html += '<div class="kpi-row">';
+        html += '  <div class="kpi"><div class="kpi-label">Total</div><div class="kpi-value">' + qcRows.length + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Single-Unit</div><div class="kpi-value">' + section3Single.length + '</div></div>';
+        html += '  <div class="kpi"><div class="kpi-label">Multi-Unit</div><div class="kpi-value">' + section3Multi.length + '</div></div>';
+        html += '</div>';
+
+        html += '<table class="data-table"><thead><tr><th>Property</th><th>State</th><th class="num">Units</th><th>Agreement</th><th>ROE Signed</th><th>Owner</th></tr></thead><tbody>';
+        qcRows.forEach(function(r){
+            var pl = r.Property_Location__r || {};
+            var opp = r.Opportunity__r || {};
+            var owner = (opp.Owner || {}).Name || '';
+            var plUrl = '/lightning/r/Property_Location__c/' + r.Property_Location__c + '/view';
+            var agUrl = '/lightning/r/Agreement__c/' + r.Id + '/view';
+            var signed = (r.Signed_Date__c || '').slice(0, 10);
+            html += '<tr>';
+            html += '  <td><a href="' + plUrl + '" target="_blank">' + (pl.Name || '') + '</a></td>';
+            html += '  <td>' + (pl.State__c || '') + '</td>';
+            html += '  <td class="num">' + (pl.Property_Unit_Count__c || '') + '</td>';
+            html += '  <td><a href="' + agUrl + '" target="_blank">' + (r.Name || '') + ' (' + (r.Agreement_Type__c || '') + ')</a></td>';
+            html += '  <td>' + signed + '</td>';
+            html += '  <td>' + owner + '</td>';
+            html += '</tr>';
+        });
+        html += '</tbody></table>';
 
         el.innerHTML = html;
     }
@@ -643,7 +767,11 @@
             // because the result set exceeds the default 2000-row SOQL page.
             queryAll("SELECT Id, Property_Unit_Count__c, Active_Unit_Count__c, Deactive_Unit_Count__c, State__c, Lit__c FROM Property_Location__c WHERE Address_Type__c='Business' AND Import_Delete_Property__c=false"),
             // Q-C: detail rows for the section 3 table (only the not-yet-lit ones)
-            query("SELECT Id, Name, Agreement_Type__c, Signed_Date__c, Opportunity__r.Owner.Name, Property_Location__c, Property_Location__r.Name, Property_Location__r.Property_Unit_Count__c, Property_Location__r.State__c FROM Agreement__c WHERE Status__c='Completed' AND Agreement_Type__c IN ('ROE','PAL','PAL/ROE','PAL Addendum','ROE Addendum') AND Opportunity__r.RecordType.DeveloperName='Business_ROE' AND Property_Location__c != null AND Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = false ORDER BY Signed_Date__c DESC NULLS LAST")
+            query("SELECT Id, Name, Agreement_Type__c, Signed_Date__c, Opportunity__r.Owner.Name, Property_Location__c, Property_Location__r.Name, Property_Location__r.Property_Unit_Count__c, Property_Location__r.State__c FROM Agreement__c WHERE Status__c='Completed' AND Agreement_Type__c IN ('ROE','PAL','PAL/ROE','PAL Addendum','ROE Addendum') AND Opportunity__r.RecordType.DeveloperName='Business_ROE' AND Property_Location__c != null AND Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = false ORDER BY Signed_Date__c DESC NULLS LAST"),
+            // Q-D: Coho__c (unit status) aggregate for units inside lit MULTI-unit Business buildings.
+            // Powers the unit-status pie. CA Hold buildings have a known PowerBI-import gap where parent
+            // rollup counts > Coho child counts; the pie undercounts those by design.
+            query("SELECT Coho__c, COUNT(Id) c FROM Property_Unit__c WHERE Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = true AND Property_Location__r.Property_Unit_Count__c > 1 GROUP BY Coho__c")
         ]).then(function(results) {
             // ═══════════════════════════════════════════════════════════
             // 4c. RESULT DESTRUCTURING + COMPUTED VALUES
@@ -1738,7 +1866,7 @@
 
             // Render the Market Penetration tab body now that its container exists in the DOM.
             // recs() extracts the .records array from the SOQL response wrapper.
-            renderMarketPen(recs(results[36]), recs(results[37]));
+            renderMarketPen(recs(results[36]), recs(results[37]), recs(results[38]));
         }).catch(function(err) {
             document.getElementById('dashboard').innerHTML = '<div style="color:red;">Error loading dashboard: ' + err.message + '</div>';
         });
