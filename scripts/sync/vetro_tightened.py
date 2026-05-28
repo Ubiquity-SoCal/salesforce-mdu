@@ -1,9 +1,18 @@
-"""Tightened Vetro classifier — dry-run comparison vs previously applied."""
+"""Tightened Vetro classifier — dry-run comparison vs previously applied.
+
+Vetro side now reads the unified Vetro snapshot
+(Vetro/data/snapshot/vetro-unified.parquet) instead of the broken
+vetro_fiber_jack_table which undercounted SFU service_locations by ~70%.
+See Vetro/docs/vetro-snapshot-schema.md.
+"""
 import sys, io, re, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 from collections import Counter
+from pathlib import Path
 from simple_salesforce import Salesforce
-from databricks import sql
+
+sys.path.insert(0, r'C:\Users\cass\Work_Projects\Vetro\scripts\lib')
+from load_vetro import load_vetro, service_locations, serviceable
 
 sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
 st = Salesforce(username='cass@ubiquitygp.com', password='Hawaiian84', security_token='fe2pen6ceQeqGhWXhBeOIjqP', domain='login')
@@ -22,29 +31,37 @@ for o in r['records']:
         activ[key] = o['FDH_Activation_A__c']
 print(f"Activated FDH keys: {len(activ)}")
 
-# 2) Vetro — STRICT: serviceable-only; preserve FB vs FDH distinction
-with sql.connect(server_hostname="adb-1444374860642533.13.azuredatabricks.net",
-                 http_path="/sql/1.0/warehouses/9116e9c573d36d1c",
-                 auth_type="databricks-oauth") as conn:
-    with conn.cursor() as cur:
-        cur.execute(r"""
-          SELECT trim(upper(`properties.state`)), trim(upper(`properties.city`)),
-                 trim(`properties.housenum`),
-                 regexp_replace(regexp_replace(regexp_replace(trim(upper(`properties.streetname`)),
-                   '[.,#]',''),'\s+',' '),
-                   '\b(STREET|ST|AVENUE|AVE|ROAD|RD|DRIVE|DR|BOULEVARD|BLVD|LANE|LN|COURT|CT|CIRCLE|CIR|PLACE|PL|PARKWAY|PKWY|TRAIL|TRL|TERRACE|TER|HIGHWAY|HWY|NORTH|SOUTH|EAST|WEST|N|S|E|W|NE|NW|SE|SW)\b',''),
-                 substr(regexp_replace(`properties.zipcode`, '[^0-9]', ''), 1, 5),
-                 `properties.servarea`, `properties.fdh`
-          FROM hive_metastore.default.vetro_fiber_jack_table
-          WHERE `properties.housenum` IS NOT NULL AND `properties.streetname` IS NOT NULL
-            AND trim(`properties.state`) IN ('TX','NE','AZ','CA')
-            AND `properties.addrstatus` = 'serviceable'
-        """)
-        rows = cur.fetchall()
+# 2) Vetro — STRICT: serviceable-only service_location rows from the snapshot.
+#    Apply the same hygiene the old SQL did: upper+strip housenum/street/state,
+#    regex-strip suffixes, 5-digit zip. Preserve FB vs FDH distinction in fdh.
+_SUFFIX_RE = re.compile(
+    r'\b(STREET|ST|AVENUE|AVE|ROAD|RD|DRIVE|DR|BOULEVARD|BLVD|LANE|LN|'
+    r'COURT|CT|CIRCLE|CIR|PLACE|PL|PARKWAY|PKWY|TRAIL|TRL|TERRACE|TER|'
+    r'HIGHWAY|HWY|NORTH|SOUTH|EAST|WEST|N|S|E|W|NE|NW|SE|SW)\b'
+)
+def _norm_sn(s):
+    if not s: return None
+    out = re.sub(r'[.,#]', '', str(s).upper())
+    out = re.sub(r'\s+', ' ', out)
+    return _SUFFIX_RE.sub('', out).strip()
+def _zip5(s):
+    if not s: return ''
+    return re.sub(r'[^0-9]', '', str(s))[:5]
+
+vdf = serviceable(service_locations(load_vetro()))
+vdf = vdf[vdf.state.isin(('TX','NE','AZ','CA'))
+         & vdf.housenum.notna() & vdf.streetname.notna()]
+print(f"Vetro snapshot serviceable rows in 4 states: {len(vdf):,}")
 
 vetro_idx = {}
-for row in rows:
-    state, city, hn, sn, z, servarea, fdh = row
+for r in vdf.to_dict(orient='records'):
+    state = (r.get('state') or '').strip().upper()
+    city  = (r.get('city')  or '').strip().upper()
+    hn    = (r.get('housenum') or '').strip()
+    sn    = _norm_sn(r.get('streetname'))
+    z     = _zip5(r.get('zipcode'))
+    servarea = r.get('servarea')
+    fdh   = r.get('fdh')
     key = (state, (hn or '').strip(), (sn or '').strip(), z or '')
     fm = re.match(r'^\s*(FDH|FB)\s*(\d+)\s*$', (fdh or '').upper()) if fdh else None
     fdh_token = f"{fm.group(1)}{fm.group(2).zfill(2)}" if fm else None

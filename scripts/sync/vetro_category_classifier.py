@@ -2,20 +2,26 @@
 Vetro-driven Property_Category classifier.
 
 For each SF Opp with null or Cat 3 Property_Category, look up its address in
-Vetro (via Databricks) and classify:
+Vetro (via the unified snapshot) and classify:
   Cat 1  — address serviceable AND on an activated FDH (fiber live today)
   Cat 2  — address in Vetro but not serviceable OR FDH not activated (fiber planned)
   ?      — address not in Vetro (stays as-is; we do NOT assume Cat 3)
 
 Vetro only covers TX / NE / AZ / CA today. Opps outside those states are skipped.
 
+Reads from Vetro/data/snapshot/vetro-unified.parquet, NOT vetro_fiber_jack_table
+(which undercounts SFU service_locations by ~70%). See
+Vetro/docs/vetro-snapshot-schema.md.
+
 PREVIEW ONLY by default. Pass --apply to execute the Property_Category updates.
 """
 import sys, io, re, argparse, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
-from collections import Counter
+from collections import Counter, defaultdict
 from simple_salesforce import Salesforce
-from databricks import sql
+
+sys.path.insert(0, r'C:\Users\cass\Work_Projects\Vetro\scripts\lib')
+from load_vetro import load_vetro, service_locations
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--apply', action='store_true', help='Apply Property_Category updates to SF')
@@ -57,52 +63,34 @@ def norm_state(s):
     return _STATE_FULL_TO_ABBR.get(s.lower(), s.upper())
 
 
-# ── 1. Pull Vetro address keys with status from Databricks ────────────────
-print("Connecting to Databricks...")
-query = """
-WITH vetro_full AS (
-  SELECT
-    trim(v.`properties.state`)                                       AS state,
-    trim(v.`properties.housenum`)                                    AS housenum,
-    regexp_replace(regexp_replace(regexp_replace(trim(upper(v.`properties.streetname`)),
-      '[.,#]',''),'\\\\s+',' '),
-      '\\\\b(STREET|ST|AVENUE|AVE|ROAD|RD|DRIVE|DR|BOULEVARD|BLVD|LANE|LN|COURT|CT|CIRCLE|CIR|PLACE|PL|PARKWAY|PKWY|TRAIL|TRL|TERRACE|TER|HIGHWAY|HWY|NORTH|SOUTH|EAST|WEST|N|S|E|W|NE|NW|SE|SW)\\\\b','') AS street_n,
-    substr(regexp_replace(v.`properties.zipcode`, '[^0-9]', ''), 1, 5) AS zip5,
-    v.`properties.addrstatus`                                        AS addrstatus,
-    v.`properties.ckta_insvc`                                        AS ckta_insvc
-  FROM hive_metastore.default.vetro_fiber_jack_table v
-  WHERE v.`properties.housenum` IS NOT NULL
-    AND v.`properties.streetname` IS NOT NULL
-    AND trim(v.`properties.state`) IN ('TX','NE','AZ','CA')
-)
-SELECT state, housenum, street_n, zip5,
-       max(CASE WHEN addrstatus = 'serviceable' THEN 1 ELSE 0 END) AS has_serviceable,
-       -- Cat 1 evidence: drop physically built to the address (active customer now, or drop completed)
-       max(CASE WHEN ckta_insvc IN ('Active customer','Drop completed') THEN 1 ELSE 0 END) AS has_drop_built,
-       max(CASE WHEN ckta_insvc = 'Active customer' THEN 1 ELSE 0 END) AS has_active_customer,
-       count(*) AS drops_at_addr
-FROM vetro_full
-GROUP BY state, housenum, street_n, zip5
-"""
-with sql.connect(
-    server_hostname="adb-1444374860642533.13.azuredatabricks.net",
-    http_path="/sql/1.0/warehouses/9116e9c573d36d1c",
-    auth_type="databricks-oauth",
-) as conn:
-    with conn.cursor() as cur:
-        cur.execute(query)
-        vetro_rows = cur.fetchall()
+# ── 1. Build Vetro address index from snapshot ────────────────────────────
+print("Loading Vetro snapshot...")
+vdf = service_locations(load_vetro())
+vdf = vdf[vdf.state.isin(FOOTPRINT) & vdf.housenum.notna() & vdf.streetname.notna()]
+print(f"Vetro snapshot rows in footprint: {len(vdf):,}")
 
-vetro_idx = {}
-for r in vetro_rows:
-    state, housenum, street_n, zip5, has_serv, has_drop_built, has_active, n = r
-    key_zip = (state, (housenum or '').strip(), (street_n or '').strip(), zip5 or '')
-    vetro_idx[key_zip] = {
-        'has_serviceable': has_serv,
-        'has_drop_built': has_drop_built,
-        'has_active_customer': has_active,
-        'drops': n,
-    }
+# Aggregate per (state, housenum, street_n, zip5) -- same grain as the old SQL.
+# Use the local norm_street / norm_zip helpers already defined above so the
+# index keys match the SF-side classifier keys exactly.
+agg = defaultdict(lambda: {'has_serviceable': 0, 'has_drop_built': 0,
+                           'has_active_customer': 0, 'drops': 0})
+DROP_BUILT_STATES = {'Active customer', 'Drop completed'}
+for r in vdf.to_dict(orient='records'):
+    state = (r.get('state') or '').strip()
+    hn    = (r.get('housenum') or '').strip()
+    sn    = norm_street(r.get('streetname'))
+    z     = norm_zip(r.get('zipcode'))
+    key = (state, hn, sn, z)
+    a = agg[key]
+    if r.get('addrstatus') == 'serviceable':
+        a['has_serviceable'] = 1
+    insvc = r.get('ckta_insvc')
+    if insvc in DROP_BUILT_STATES:
+        a['has_drop_built'] = 1
+    if insvc == 'Active customer':
+        a['has_active_customer'] = 1
+    a['drops'] += 1
+vetro_idx = dict(agg)
 
 # Also index without zip for fallback matching
 vetro_no_zip = {}
