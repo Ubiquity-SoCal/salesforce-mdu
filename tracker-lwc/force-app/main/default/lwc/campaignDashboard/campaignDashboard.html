@@ -178,6 +178,16 @@
                                             <td class="num">{row.units}</td>
                                             <td class="num">{row.pct}%</td>
                                         </tr>
+                                        <template if:true={row.hasSubs}>
+                                            <template for:each={row.subs} for:item="s">
+                                                <tr key={s.name} class="sub-row">
+                                                    <td class="sub-name">└ {s.name}</td>
+                                                    <td class="num">{s.count}</td>
+                                                    <td class="num">{s.units}</td>
+                                                    <td class="num"></td>
+                                                </tr>
+                                            </template>
+                                        </template>
                                     </template>
                                 </template>
                                 <tr class="total-row">
@@ -254,6 +264,7 @@
                                             <th>State</th>
                                             <th class="num">Units</th>
                                             <th>Signed Date</th>
+                                            <th>IC Workflow Completed</th>
                                             <th>Owner</th>
                                         </tr>
                                     </thead>
@@ -264,6 +275,7 @@
                                                 <td>{o.state}</td>
                                                 <td class="num">{o.units}</td>
                                                 <td>{o.date}</td>
+                                                <td>{o.workflowCompleted}</td>
                                                 <td>{o.owner}</td>
                                             </tr>
                                         </template>
@@ -319,6 +331,7 @@
                                         <th>Property</th>
                                         <th>Type</th>
                                         <th>Signed</th>
+                                        <th>IC Workflow Completed</th>
                                         <th>State</th>
                                         <th class="num">Units</th>
                                         <th>Owner</th>
@@ -330,6 +343,7 @@
                                             <td><a href={a.oppUrl} target="_blank">{a.oppName}</a></td>
                                             <td><a href={a.agUrl} target="_blank">{a.type}</a></td>
                                             <td>{a.signed}</td>
+                                            <td>{a.workflowCompleted}</td>
                                             <td>{a.state}</td>
                                             <td class="num">{a.units}</td>
                                             <td>{a.owner}</td>

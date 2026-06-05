@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Address_Display__c</fullName>
+    <label>Property Address (Display)</label>
+    <description>Coalesced address for tracker/reporting: uses the Opportunity's own Property_Address__c (Business ROE / MDU pursuits) and falls back to the Property Unit -&gt; Property Location base address (Business Sales tenant Opps).</description>
+    <type>Text</type>
+    <formula>IF(ISBLANK(Property_Address__c), Property_Unit__r.Property_Location__r.Business_Base_Address__c, Property_Address__c)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <externalId>false</externalId>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+</CustomField>

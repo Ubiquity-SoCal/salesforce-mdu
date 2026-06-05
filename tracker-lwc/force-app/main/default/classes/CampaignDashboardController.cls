@@ -14,7 +14,7 @@ public with sharing class CampaignDashboardController {
         result.campaign = camp;
 
         result.opps = [
-            SELECT Id, Name, StageName, Sales_Status__c, CloseDate,
+            SELECT Id, Name, StageName, Sales_Status__c, Sub_Bucket__c, CloseDate,
                    LastStageChangeDate, OwnerId, Owner.Name,
                    RE_Assigned__c, RE_Assigned__r.Name,
                    Loss_Reason__c, Units__c,
@@ -39,6 +39,7 @@ public with sharing class CampaignDashboardController {
 
         result.agreements = [
             SELECT Id, Agreement_Type__c, Status__c, Signed_Date__c,
+                   IronClad_Record__r.Workflow_Completed_Date__c,
                    Opportunity__c, Opportunity__r.Name, Opportunity__r.Property_State__c,
                    Opportunity__r.Units__c, Opportunity__r.Owner.Name
             FROM Agreement__c

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>FLS for Opportunity Substatus (Pursuit Status) and Sub_Bucket (Stage Status). Assign to MDU sales users and admins.</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>MDU Stage Status Access</label>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Substatus__c</field>
+        <editable>false</editable>
+        <field>Opportunity.Property_Address_Display__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Property_City_Display__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Property_State_Display__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13,4 +21,16 @@
         <field>Opportunity.Sub_Bucket__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Substatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Units_Display__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>MDU Stage Status Access</label>
 </PermissionSet>

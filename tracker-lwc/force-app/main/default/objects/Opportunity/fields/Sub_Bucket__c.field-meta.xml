@@ -12,8 +12,6 @@
   "Prospects",                TEXT(Sales_Status__c),
   "Prospecting",              TEXT(Sales_Status__c),
   "Engaged",                  TEXT(Sales_Status__c),
-  "Proposal Sent",            TEXT(Sales_Status__c),
-  "Contract Negotiations",    TEXT(Sales_Status__c),
   ""
 )</formula>
     <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>

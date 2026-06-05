@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Status_Stage_Scope</fullName>
+    <active>true</active>
+    <description>Sales Status only applies to Prospects/Prospecting/Engaged. UI picklist dependency covers Lightning users; this rule covers API/integration writes too.</description>
+    <errorConditionFormula>NOT(ISBLANK(TEXT(Sales_Status__c)))
+&amp;&amp; NOT(ISPICKVAL(StageName, &quot;Prospects&quot;))
+&amp;&amp; NOT(ISPICKVAL(StageName, &quot;Prospecting&quot;))
+&amp;&amp; NOT(ISPICKVAL(StageName, &quot;Engaged&quot;))</errorConditionFormula>
+    <errorDisplayField>Sales_Status__c</errorDisplayField>
+    <errorMessage>Sales Status can only be set during Prospects, Prospecting, or Engaged stages. Clear Sales Status before advancing past Engaged.</errorMessage>
+</ValidationRule>

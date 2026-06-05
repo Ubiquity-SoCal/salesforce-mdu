@@ -53,10 +53,17 @@ public with sharing class LatestNoteHandler {
                 continue;
             }
             ContentDocumentLink existing = latestLinkByOpp.get(cdl.LinkedEntityId);
-            if (existing == null
-                || cdl.ContentDocument.LatestPublishedVersion.LastModifiedDate
-                   > existing.ContentDocument.LatestPublishedVersion.LastModifiedDate) {
+            if (existing == null) {
                 latestLinkByOpp.put(cdl.LinkedEntityId, cdl);
+            } else {
+                Datetime newLmd = cdl.ContentDocument.LatestPublishedVersion.LastModifiedDate;
+                Datetime oldLmd = existing.ContentDocument.LatestPublishedVersion.LastModifiedDate;
+                // Tie-break on ContentDocumentId (monotonic, so the more recently
+                // created note wins when LastModifiedDate is identical to ms).
+                if (newLmd > oldLmd
+                    || (newLmd == oldLmd && cdl.ContentDocumentId > existing.ContentDocumentId)) {
+                    latestLinkByOpp.put(cdl.LinkedEntityId, cdl);
+                }
             }
         }
 

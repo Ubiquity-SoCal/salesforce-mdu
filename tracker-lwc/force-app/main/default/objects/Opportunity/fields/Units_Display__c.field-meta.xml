@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Units_Display__c</fullName>
+    <label>Units (Display)</label>
+    <description>Coalesced unit count for tracker/reporting: uses the Opportunity's own Units__c, and for building-level pursuits (Business ROE / MDU linked directly to a Property Location) falls back to Property_Location.Property_Unit_Count__c when Units__c is blank. Property_Unit-linked Business Sales Opps have no direct Property_Location, so they keep Units__c only.</description>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <formula>IF(ISBLANK(Units__c), Property_Location__r.Property_Unit_Count__c, Units__c)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <externalId>false</externalId>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+</CustomField>

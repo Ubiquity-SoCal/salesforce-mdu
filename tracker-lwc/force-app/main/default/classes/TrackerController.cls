@@ -95,6 +95,14 @@ public with sharing class TrackerController {
 
         // Build SOQL
         String objectName = view.Object__c;
+        // Always query the fields the grid's row-highlighting rules depend on, even when a
+        // view config does not list them as columns (Substatus__c / ST_Activation_Actual__c
+        // drive the stalled + activated row colors; StageName drives the marketing-complete color).
+        if (objectName == 'Opportunity') {
+            directFields.add('StageName');
+            directFields.add('Substatus__c');
+            directFields.add('ST_Activation_Actual__c');
+        }
         List<String> allFields = new List<String>(directFields);
         allFields.addAll(relationshipFields);
         String fieldList = String.join(allFields, ', ');
@@ -156,7 +164,11 @@ public with sharing class TrackerController {
             } else if (dateRange == 'NEXT_90_DAYS') {
                 whereClauses.add('Projected_Close_Date__c >= TODAY AND Projected_Close_Date__c <= NEXT_N_DAYS:90');
             } else if (dateRange == 'PAST_DUE') {
-                whereClauses.add('Projected_Close_Date__c < TODAY AND Projected_Close_Date__c != null AND StageName NOT IN (\'Closed Lost\', \'Under Contract\', \'On Hold\')');
+                // Past Due = overdue projected close, still in flight. Exclude done/parked:
+                // activated (truly complete), Marketing/Bulk Complete, and terminal/hold/Business-closed stages.
+                // "Not activated" = no real activation date. Placeholder dates (e.g. 1900-01-01
+                // that engineering sometimes enters) do not count as activated, so they stay eligible.
+                whereClauses.add('Projected_Close_Date__c < TODAY AND Projected_Close_Date__c != null AND (ST_Activation_Actual__c = null OR ST_Activation_Actual__c < 2015-01-01) AND StageName NOT IN (\'Closed Lost\', \'Closed Won\', \'Under Contract\', \'On Hold\', \'Marketing/Bulk Complete\')');
             }
         }
 
@@ -173,7 +185,27 @@ public with sharing class TrackerController {
         if (sortConfig != null) {
             String sortField = (String) sortConfig.get('field');
             String sortDir = (String) sortConfig.get('direction');
-            soql += ' ORDER BY ' + sortField + ' ' + sortDir + ' NULLS LAST';
+            // Optional nulls ordering (default LAST). Lets a view put null-valued rows
+            // first, e.g. sort Marketing/Bulk Complete by activation date NULLS FIRST so
+            // not-yet-activated (in-progress) rows lead and activated rows sink to the bottom.
+            String nullsOrder = (String) sortConfig.get('nulls');
+            nullsOrder = (nullsOrder == 'FIRST') ? 'FIRST' : 'LAST';
+            soql += ' ORDER BY ' + sortField + ' ' + sortDir + ' NULLS ' + nullsOrder;
+            // Optional secondary sort (tiebreaker). Used on Marketing/Bulk Complete to order
+            // the not-yet-activated block by Substatus so blue (no stalled status) leads gray.
+            String sortField2 = (String) sortConfig.get('field2');
+            if (String.isNotBlank(sortField2)) {
+                String sortDir2 = (String) sortConfig.get('direction2');
+                sortDir2 = (sortDir2 == 'DESC') ? 'DESC' : 'ASC';
+                String nulls2 = (String) sortConfig.get('nulls2');
+                nulls2 = (nulls2 == 'FIRST') ? 'FIRST' : 'LAST';
+                soql += ', ' + sortField2 + ' ' + sortDir2 + ' NULLS ' + nulls2;
+            }
+            // Unique final tiebreaker so OFFSET paging ("Load More") is deterministic.
+            // Without this, rows tied on the sort key(s) can reorder across pages.
+            soql += ', Id ASC';
+        } else {
+            soql += ' ORDER BY Id ASC';
         }
 
         // Count total matching records (without LIMIT) for summary
@@ -771,7 +803,11 @@ public with sharing class TrackerController {
             } else if (dateRange == 'NEXT_90_DAYS') {
                 whereClauses.add('Projected_Close_Date__c >= TODAY AND Projected_Close_Date__c <= NEXT_N_DAYS:90');
             } else if (dateRange == 'PAST_DUE') {
-                whereClauses.add('Projected_Close_Date__c < TODAY AND Projected_Close_Date__c != null AND StageName NOT IN (\'Closed Lost\', \'Under Contract\', \'On Hold\')');
+                // Past Due = overdue projected close, still in flight. Exclude done/parked:
+                // activated (truly complete), Marketing/Bulk Complete, and terminal/hold/Business-closed stages.
+                // "Not activated" = no real activation date. Placeholder dates (e.g. 1900-01-01
+                // that engineering sometimes enters) do not count as activated, so they stay eligible.
+                whereClauses.add('Projected_Close_Date__c < TODAY AND Projected_Close_Date__c != null AND (ST_Activation_Actual__c = null OR ST_Activation_Actual__c < 2015-01-01) AND StageName NOT IN (\'Closed Lost\', \'Closed Won\', \'Under Contract\', \'On Hold\', \'Marketing/Bulk Complete\')');
             }
         }
         if (String.isNotBlank(campaignId)) {

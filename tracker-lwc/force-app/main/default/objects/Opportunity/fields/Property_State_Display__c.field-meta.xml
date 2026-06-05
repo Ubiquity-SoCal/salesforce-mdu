@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_State_Display__c</fullName>
+    <label>Property State (Display)</label>
+    <description>Coalesced state for tracker/reporting: uses the Opportunity's own Property_State__c (Business ROE / MDU pursuits) and falls back to the Property Unit -&gt; Property Location state (Business Sales tenant Opps).</description>
+    <type>Text</type>
+    <formula>IF(ISBLANK(Property_State__c), TEXT(Property_Unit__r.Property_Location__r.State__c), Property_State__c)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <externalId>false</externalId>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+</CustomField>

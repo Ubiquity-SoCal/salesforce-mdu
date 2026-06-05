@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_City_Display__c</fullName>
+    <label>Property City (Display)</label>
+    <description>Coalesced city for tracker/reporting: uses the Opportunity's own Property_City__c (Business ROE / MDU pursuits) and falls back to the Property Unit -&gt; Property Location city (Business Sales tenant Opps).</description>
+    <type>Text</type>
+    <formula>IF(ISBLANK(Property_City__c), Property_Unit__r.Property_Location__r.City__c, Property_City__c)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <externalId>false</externalId>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_City_State_Zip_On_New_MDU</fullName>
+    <active>true</active>
+    <description>Require Property City, State, Zip on new MDU and Business ROE Opportunity creation.</description>
+    <errorConditionFormula>AND(
+    OR(RecordType.DeveloperName = &apos;MDU&apos;, RecordType.DeveloperName = &apos;Business_ROE&apos;),
+    OR(
+        AND(ISNEW(), OR(ISBLANK(Property_City__c), ISBLANK(Property_State__c), ISBLANK(Property_Zip__c))),
+        AND(ISCHANGED(Property_City__c), ISBLANK(Property_City__c)),
+        AND(ISCHANGED(Property_State__c), ISBLANK(Property_State__c)),
+        AND(ISCHANGED(Property_Zip__c), ISBLANK(Property_Zip__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>City, State, and Zip are required for MDU and Business ROE opportunities. These fields cannot be left blank or cleared once set.</errorMessage>
+</ValidationRule>

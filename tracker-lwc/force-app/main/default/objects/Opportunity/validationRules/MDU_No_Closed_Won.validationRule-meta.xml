@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDU_No_Closed_Won</fullName>
+    <active>true</active>
+    <description>MDU and Business ROE opportunities cannot be set to Closed Won. Building-pursuit pipelines end at Under Contract.</description>
+    <errorConditionFormula>AND(
+    OR(RecordType.DeveloperName = &quot;MDU&quot;, RecordType.DeveloperName = &quot;Business_ROE&quot;),
+    ISPICKVAL(StageName, &quot;Closed Won&quot;)
+)</errorConditionFormula>
+    <errorMessage>MDU and Business ROE opportunities end at Under Contract. Closed Won is only available for Business Sales (tenant revenue) opportunities.</errorMessage>
+</ValidationRule>

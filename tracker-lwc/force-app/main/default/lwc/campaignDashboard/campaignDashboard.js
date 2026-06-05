@@ -189,18 +189,21 @@ export default class CampaignDashboard extends LightningElement {
     get pipelineByState() {
         const opps = this.filteredOpps;
         const stages = {};
-        for (const stage of STAGE_ORDER) stages[stage] = { count: 0, units: 0, subStatus: {} };
+        for (const stage of STAGE_ORDER) stages[stage] = { count: 0, units: 0, subBucket: {} };
 
         for (const o of opps) {
             const stage = o.StageName;
             if (!stages[stage]) continue;
             stages[stage].count += 1;
             stages[stage].units += Number(o.Units__c || 0);
-            if (o.Sales_Status__c) {
-                const ss = o.Sales_Status__c;
-                if (!stages[stage].subStatus[ss]) stages[stage].subStatus[ss] = { count: 0, units: 0 };
-                stages[stage].subStatus[ss].count += 1;
-                stages[stage].subStatus[ss].units += Number(o.Units__c || 0);
+            // Sub_Bucket__c is a stage-aware formula: routes to Sales_Status / Substatus /
+            // Hold_Reason / Loss_Reason per stage. Only Sales_Status leaks across stages by
+            // design (it's not a dependent picklist); the other source fields are stage-scoped.
+            const sb = o.Sub_Bucket__c;
+            if (sb) {
+                if (!stages[stage].subBucket[sb]) stages[stage].subBucket[sb] = { count: 0, units: 0 };
+                stages[stage].subBucket[sb].count += 1;
+                stages[stage].subBucket[sb].units += Number(o.Units__c || 0);
             }
         }
 
@@ -216,7 +219,7 @@ export default class CampaignDashboard extends LightningElement {
 
         const toRow = stage => {
             const d = stages[stage];
-            const subs = Object.entries(d.subStatus)
+            const subs = Object.entries(d.subBucket)
                 .sort(([a], [b]) => a.localeCompare(b))
                 .map(([name, s]) => ({ name, count: s.count, units: s.units }));
             return {
@@ -325,6 +328,7 @@ export default class CampaignDashboard extends LightningElement {
                 state: o.Property_State__c,
                 units: o.Units__c,
                 date: (sd || '').slice(0, 10) || '—',
+                workflowCompleted: (a.IronClad_Record__r?.Workflow_Completed_Date__c || '').slice(0, 10) || '—',
                 owner: o.Owner?.Name,
                 url: `/lightning/r/Opportunity/${o.Id}/view`,
                 period,
@@ -529,6 +533,7 @@ export default class CampaignDashboard extends LightningElement {
                 id: a.Id,
                 type: a.Agreement_Type__c,
                 signed: (a.Signed_Date__c || '').slice(0, 10) || '—',
+                workflowCompleted: (a.IronClad_Record__r?.Workflow_Completed_Date__c || '').slice(0, 10) || '—',
                 oppName: a.Opportunity__r?.Name,
                 state: a.Opportunity__r?.Property_State__c,
                 units: a.Opportunity__r?.Units__c,
