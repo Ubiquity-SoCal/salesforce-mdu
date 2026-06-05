@@ -1,0 +1,1531 @@
+{
+  "attributes": {
+    "type": "Flow",
+    "url": "/services/data/v59.0/tooling/sobjects/Flow/301WR00001K3WiYYAV"
+  },
+  "Id": "301WR00001K3WiYYAV",
+  "FullName": "Agreement_Niraj_Notifications",
+  "Metadata": {
+    "actionCalls": [
+      {
+        "actionName": "customNotificationAction",
+        "actionType": "customNotificationAction",
+        "connector": null,
+        "dataTypeMappings": [],
+        "description": null,
+        "elementSubtype": null,
+        "faultConnector": null,
+        "flowTransactionModel": "CurrentTransaction",
+        "inputParameters": [
+          {
+            "name": "customNotifTypeId",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "notif_type_id",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "name": "recipientIds",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "recipient_ids",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "name": "title",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "title",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "name": "body",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "body",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "name": "targetId",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "$Record.Opportunity__c",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          }
+        ],
+        "label": "Send Bell Notification",
+        "locationX": 176,
+        "locationY": 1720,
+        "name": "send_bell",
+        "nameSegment": "customNotificationAction",
+        "outputConfigParams": [],
+        "outputParameters": [],
+        "processMetadataValues": [],
+        "storeOutputAutomatically": null,
+        "versionSegment": null
+      }
+    ],
+    "apexPluginCalls": [],
+    "apiVersion": 59.0,
+    "assignments": [
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "Bulk Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "Bulk signed at {!get_opportunity.Name}. Confirmed ISP {!get_opportunity.Confirmed_ISP__c}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "Bulk Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign Bulk Strings",
+        "locationX": 50,
+        "locationY": 960,
+        "name": "assign_bulk",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "EMA Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "EMA signed at {!get_opportunity.Name}. Confirmed ISP {!get_opportunity.Confirmed_ISP__c}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "EMA Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign EMA Strings",
+        "locationX": 50,
+        "locationY": 720,
+        "name": "assign_ema",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "2nd ISP MSA Addendum Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "2nd ISP MSA Addendum signed at {!get_opportunity.Name}. Confirmed ISPs {!get_opportunity.Confirmed_ISPs__c}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "2nd ISP MSA Addendum Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign 2nd ISP MSA Addendum Strings",
+        "locationX": 50,
+        "locationY": 1320,
+        "name": "assign_msa2_add",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "MSA Addendum Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "MSA Addendum signed at {!get_opportunity.Name}. Confirmed ISP {!get_opportunity.Confirmed_ISP__c}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "MSA Addendum Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign MSA Addendum Strings",
+        "locationX": 50,
+        "locationY": 1200,
+        "name": "assign_msa_add",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "NEMA Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "NEMA signed at {!get_opportunity.Name}. Confirmed ISP {!get_opportunity.Confirmed_ISP__c}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "NEMA Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign NEMA Strings",
+        "locationX": 50,
+        "locationY": 840,
+        "name": "assign_nema",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "2nd ISP NEMA Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "2nd ISP NEMA signed at {!get_opportunity.Name}. Confirmed ISPs {!get_opportunity.Confirmed_ISPs__c}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "2nd ISP NEMA Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign 2nd ISP NEMA Strings",
+        "locationX": 50,
+        "locationY": 1440,
+        "name": "assign_nema2",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "PAL Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "PAL signed at {!get_opportunity.Name}. Address {!get_opportunity.Property_Address__c}. {!get_opportunity.Units__c} units. Property Type {!get_opportunity.Property_Type__c}. RT {!get_opportunity.RecordType.Name}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "PAL Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign PAL Strings",
+        "locationX": 50,
+        "locationY": 600,
+        "name": "assign_pal",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "title",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "PAL Addendum Signed: {!get_opportunity.Name}"
+            }
+          },
+          {
+            "assignToReference": "body",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "PAL Addendum signed at {!get_opportunity.Name}. Signed {!$Record.Signed_Date__c}."
+            }
+          },
+          {
+            "assignToReference": "notif_type_value",
+            "operator": "Assign",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "PAL Addendum Signed"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "set_recipients"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Assign PAL Addendum Strings",
+        "locationX": 50,
+        "locationY": 1080,
+        "name": "assign_pal_add",
+        "processMetadataValues": []
+      },
+      {
+        "assignmentItems": [
+          {
+            "assignToReference": "recipient_ids",
+            "operator": "Add",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "005WR000008V4VoYAK"
+            }
+          }
+        ],
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "create_log"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "label": "Set Recipient IDs",
+        "locationX": 176,
+        "locationY": 1500,
+        "name": "set_recipients",
+        "processMetadataValues": []
+      }
+    ],
+    "choices": [],
+    "collectionProcessors": [],
+    "constants": [
+      {
+        "dataType": "String",
+        "description": null,
+        "name": "notif_type_id",
+        "processMetadataValues": [],
+        "value": {
+          "apexValue": null,
+          "booleanValue": null,
+          "dateTimeValue": null,
+          "dateValue": null,
+          "elementReference": null,
+          "formulaDataType": null,
+          "formulaExpression": null,
+          "numberValue": null,
+          "setupReference": null,
+          "setupReferenceType": null,
+          "sobjectValue": null,
+          "stringValue": "0MLWR000005PimA4AS"
+        }
+      }
+    ],
+    "customErrors": [],
+    "decisions": [
+      {
+        "attributes": null,
+        "defaultConnector": null,
+        "defaultConnectorLabel": "Skip (before cutoff)",
+        "description": null,
+        "elementSubtype": null,
+        "label": "Signed Date Past Cutoff?",
+        "locationX": 176,
+        "locationY": 360,
+        "name": "decide_cutoff",
+        "processMetadataValues": [],
+        "rules": [
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "past_cutoff_formula",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": true,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": null
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "decide_type"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "Past Cutoff",
+            "name": "past_cutoff",
+            "processMetadataValues": []
+          }
+        ]
+      },
+      {
+        "attributes": null,
+        "defaultConnector": null,
+        "defaultConnectorLabel": "Other",
+        "description": null,
+        "elementSubtype": null,
+        "label": "Which Agreement Type?",
+        "locationX": 176,
+        "locationY": 480,
+        "name": "decide_type",
+        "processMetadataValues": [],
+        "rules": [
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "PAL"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_pal"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "PAL",
+            "name": "route_pal",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "EMA"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_ema"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "EMA",
+            "name": "route_ema",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "NEMA"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_nema"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "NEMA",
+            "name": "route_nema",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "Bulk"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_bulk"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "Bulk",
+            "name": "route_bulk",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "PAL Addendum"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_pal_add"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "PAL Addendum",
+            "name": "route_pal_add",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "MSA Addendum"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_msa_add"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "MSA Addendum",
+            "name": "route_msa_add",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "2nd ISP MSA Addendum"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_msa2_add"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "2nd ISP MSA Addendum",
+            "name": "route_msa2_add",
+            "processMetadataValues": []
+          },
+          {
+            "attributes": null,
+            "conditionLogic": "and",
+            "conditions": [
+              {
+                "conditionType": null,
+                "leftValueReference": "$Record.Agreement_Type__c",
+                "operator": "EqualTo",
+                "processMetadataValues": [],
+                "rightValue": {
+                  "apexValue": null,
+                  "booleanValue": null,
+                  "dateTimeValue": null,
+                  "dateValue": null,
+                  "elementReference": null,
+                  "formulaDataType": null,
+                  "formulaExpression": null,
+                  "numberValue": null,
+                  "setupReference": null,
+                  "setupReferenceType": null,
+                  "sobjectValue": null,
+                  "stringValue": "2nd ISP NEMA"
+                }
+              }
+            ],
+            "connector": {
+              "isGoTo": null,
+              "processMetadataValues": [],
+              "targetReference": "assign_nema2"
+            },
+            "description": null,
+            "doesRequireRecordChangedToMeetCriteria": null,
+            "label": "2nd ISP NEMA",
+            "name": "route_nema2",
+            "processMetadataValues": []
+          }
+        ]
+      }
+    ],
+    "description": "Sends bell-icon Custom Notifications to Niraj and writes Agreement_Notification__c log rows when an Agreement reaches Status=Completed for one of seven tracked types. Gated on Signed_Date__c >= Custom Setting Notification_Settings__c.Active_After_Date__c so cleanup of historical records does not notify.",
+    "dynamicChoiceSets": [],
+    "environments": [
+      "Default"
+    ],
+    "exitRules": [],
+    "formulas": [
+      {
+        "dataType": "Date",
+        "description": null,
+        "expression": "{!$Setup.Notification_Settings__c.Active_After_Date__c}",
+        "name": "cutoff_date",
+        "processMetadataValues": [],
+        "scale": null
+      },
+      {
+        "dataType": "Boolean",
+        "description": null,
+        "expression": "AND( NOT(ISNULL({!cutoff_date})), {!$Record.Signed_Date__c} >= {!cutoff_date} )",
+        "name": "past_cutoff_formula",
+        "processMetadataValues": [],
+        "scale": null
+      }
+    ],
+    "interviewLabel": "Agreement Niraj Notifications {!$Flow.CurrentDateTime}",
+    "isAdditionalPermissionRequiredToRun": null,
+    "isOverridable": null,
+    "isTemplate": null,
+    "label": "Agreement Niraj Notifications",
+    "loops": [],
+    "migratedFromWorkflowRuleName": null,
+    "orchestratedStages": [],
+    "overriddenFlow": null,
+    "processMetadataValues": [
+      {
+        "name": "BuilderType",
+        "value": {
+          "apexValue": null,
+          "booleanValue": null,
+          "dateTimeValue": null,
+          "dateValue": null,
+          "elementReference": null,
+          "formulaDataType": null,
+          "formulaExpression": null,
+          "numberValue": null,
+          "setupReference": null,
+          "setupReferenceType": null,
+          "sobjectValue": null,
+          "stringValue": "LightningFlowBuilder"
+        }
+      }
+    ],
+    "processType": "AutoLaunchedFlow",
+    "recordCreates": [
+      {
+        "assignRecordIdToReference": null,
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "send_bell"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "faultConnector": null,
+        "inputAssignments": [
+          {
+            "field": "Agreement__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "$Record.Id",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "field": "Body__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "body",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "field": "Notification_Type__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "notif_type_value",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "field": "Opportunity__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "$Record.Opportunity__c",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "field": "Recipient__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "005WR000008V4VoYAK"
+            }
+          },
+          {
+            "field": "Sent_DateTime__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "$Flow.CurrentDateTime",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          },
+          {
+            "field": "Title__c",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "title",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          }
+        ],
+        "inputReference": null,
+        "label": "Create Notification Log Row",
+        "locationX": 176,
+        "locationY": 1600,
+        "name": "create_log",
+        "object": "Agreement_Notification__c",
+        "processMetadataValues": [],
+        "storeOutputAutomatically": null
+      }
+    ],
+    "recordDeletes": [],
+    "recordLookups": [
+      {
+        "assignNullValuesIfNoRecordsFound": false,
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "decide_cutoff"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "faultConnector": null,
+        "filterLogic": "and",
+        "filters": [
+          {
+            "field": "DeveloperName",
+            "operator": "EqualTo",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": null,
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": "Agreement_Activity"
+            }
+          }
+        ],
+        "getFirstRecordOnly": true,
+        "label": "Get Custom Notification Type",
+        "locationX": 176,
+        "locationY": 240,
+        "name": "get_notif_type",
+        "object": "CustomNotificationType",
+        "outputAssignments": [],
+        "outputReference": null,
+        "processMetadataValues": [],
+        "queriedFields": [
+          "Id",
+          "DeveloperName"
+        ],
+        "sortField": null,
+        "sortOrder": null,
+        "storeOutputAutomatically": true
+      },
+      {
+        "assignNullValuesIfNoRecordsFound": false,
+        "connector": {
+          "isGoTo": null,
+          "processMetadataValues": [],
+          "targetReference": "get_notif_type"
+        },
+        "description": null,
+        "elementSubtype": null,
+        "faultConnector": null,
+        "filterLogic": "and",
+        "filters": [
+          {
+            "field": "Id",
+            "operator": "EqualTo",
+            "processMetadataValues": [],
+            "value": {
+              "apexValue": null,
+              "booleanValue": null,
+              "dateTimeValue": null,
+              "dateValue": null,
+              "elementReference": "$Record.Opportunity__c",
+              "formulaDataType": null,
+              "formulaExpression": null,
+              "numberValue": null,
+              "setupReference": null,
+              "setupReferenceType": null,
+              "sobjectValue": null,
+              "stringValue": null
+            }
+          }
+        ],
+        "getFirstRecordOnly": true,
+        "label": "Get Opportunity",
+        "locationX": 176,
+        "locationY": 120,
+        "name": "get_opportunity",
+        "object": "Opportunity",
+        "outputAssignments": [],
+        "outputReference": null,
+        "processMetadataValues": [],
+        "queriedFields": [
+          "Id",
+          "Name",
+          "Units__c",
+          "Property_Type__c",
+          "Confirmed_ISP__c",
+          "Confirmed_ISPs__c",
+          "Property_Address__c",
+          "RecordTypeId"
+        ],
+        "sortField": null,
+        "sortOrder": null,
+        "storeOutputAutomatically": true
+      }
+    ],
+    "recordRollbacks": [],
+    "recordUpdates": [],
+    "runInMode": "SystemModeWithSharing",
+    "screens": [],
+    "sourceTemplate": null,
+    "start": {
+      "connector": {
+        "isGoTo": null,
+        "processMetadataValues": [],
+        "targetReference": "get_opportunity"
+      },
+      "description": null,
+      "doesRequireRecordChangedToMeetCriteria": true,
+      "elementSubtype": null,
+      "entryType": null,
+      "filterFormula": "AND( ISPICKVAL({!$Record.Status__c}, \"Completed\"), NOT(ISBLANK({!$Record.Opportunity__c})), NOT(ISBLANK({!$Record.Signed_Date__c})) )",
+      "filterLogic": null,
+      "filters": [],
+      "form": null,
+      "label": null,
+      "locationX": 176,
+      "locationY": 0,
+      "name": null,
+      "object": "Agreement__c",
+      "objectContainer": null,
+      "processMetadataValues": [],
+      "recordTriggerType": "CreateAndUpdate",
+      "schedule": null,
+      "scheduledPaths": [],
+      "segment": null,
+      "triggerType": "RecordAfterSave"
+    },
+    "startElementReference": null,
+    "status": "Active",
+    "steps": [],
+    "subflows": [],
+    "textTemplates": [],
+    "timeZoneSidKey": null,
+    "transforms": [],
+    "triggerOrder": null,
+    "urls": null,
+    "variables": [
+      {
+        "apexClass": null,
+        "dataType": "String",
+        "description": null,
+        "isCollection": false,
+        "isInput": false,
+        "isOutput": false,
+        "name": "body",
+        "objectType": null,
+        "processMetadataValues": [],
+        "scale": null,
+        "value": null
+      },
+      {
+        "apexClass": null,
+        "dataType": "String",
+        "description": null,
+        "isCollection": false,
+        "isInput": false,
+        "isOutput": false,
+        "name": "notif_type_value",
+        "objectType": null,
+        "processMetadataValues": [],
+        "scale": null,
+        "value": null
+      },
+      {
+        "apexClass": null,
+        "dataType": "String",
+        "description": null,
+        "isCollection": true,
+        "isInput": false,
+        "isOutput": false,
+        "name": "recipient_ids",
+        "objectType": null,
+        "processMetadataValues": [],
+        "scale": null,
+        "value": null
+      },
+      {
+        "apexClass": null,
+        "dataType": "String",
+        "description": null,
+        "isCollection": false,
+        "isInput": false,
+        "isOutput": false,
+        "name": "title",
+        "objectType": null,
+        "processMetadataValues": [],
+        "scale": null,
+        "value": null
+      }
+    ],
+    "waits": []
+  }
+}

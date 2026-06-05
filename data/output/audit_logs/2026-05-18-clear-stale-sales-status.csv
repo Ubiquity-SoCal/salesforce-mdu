@@ -1,0 +1,42 @@
+SF_Id,Name,Object,Field,Before,After,Source,Action,Result,Error,Timestamp
+006WR00000yvv0eYAA,Coral Cove HOA,Opportunity,Sales_Status__c,Contact Pending,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:12.347731
+006WR00000wk3OAYAY,El Camino 76 Mobile Estates,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:12.629357
+006WR00000yvLI6YAM,Riviera Mobile Homes,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:12.881516
+006WR00000ywSNxYAM,San Pacifico HOA,Opportunity,Sales_Status__c,Contact Pending,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:13.230955
+006WR000011kjJ8YAI,ROE - 10027 HARMON RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:13.582632
+006WR000011kjJCYAY,ROE - 1120 BLUE MOUND W RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:14.020581
+006WR000011kit3YAA,ROE - 1128 BLUE MOUND W RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:14.557542
+006WR000011kjJeYAI,ROE - 1130 BLUE MOUND W RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:14.830669
+006WR000011kjJ3YAI,ROE - 1150 BLUE MOUND W RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:15.089951
+006WR000011kitPYAQ,ROE - 1212 N HIGHWAY 377  ROANOKE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:15.405050
+006WR000011kit7YAA,ROE - 200 N KIMBALL AVE SOUTHLAKE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:15.735081
+006WR000011kitAYAQ,ROE - 2600 E SOUTHLAKE BLVD SOUTHLAKE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:16.062075
+006WR000011kjJWYAY,ROE - 2829 HERITAGE TRACE DR FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:16.484151
+006WR000011kitDYAQ,ROE - 500 W SOUTHLAKE BLVD SOUTHLAKE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:16.863912
+006WR000011kjJjYAI,ROE - 515 W SOUTHLAKE BLVD SOUTHLAKE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:17.230956
+006WR000011kjKOYAY,ROE - 5420 BASSWOOD BLVD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:17.574429
+006WR000011kjJuYAI,ROE - 630 E SOUTHLAKE BLVD SOUTHLAKE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:18.055752
+006WR000011kjK9YAI,ROE - 6500 DENTON HWY WATAUGA TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:18.411087
+006WR000011kjJbYAI,ROE - 7420 N BEACH ST FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:18.738029
+006WR000011kitHYAQ,ROE - 808 SCHOOLHOUSE RD HASLET TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:18.973695
+006WR000011kjJ4YAI,ROE - 850 BLUE MOUND W RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:19.294505
+006WR000011kjK5YAI,ROE - 875 KELLER PKWY KELLER TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:19.555149
+006WR000011kjKBYAY,ROE - 8801 DAVIS BLVD KELLER TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:19.840409
+006WR000011kitiYAA,ROE - 8849 N TARRANT PKWY N RICHLAND HILLS TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:20.133981
+006WR000011kjJ1YAI,ROE - 10011 HARMON RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:20.427243
+006WR000011kjJIYAY,ROE - 1919 GOLDEN HEIGHTS RD HASLET TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:20.788330
+006WR000011kit5YAA,ROE - 1925 GOLDEN HEIGHTS RD HASLET TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:21.000878
+006WR000011kjJoYAI,ROE - 1927 GOLDEN HEIGHTS RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:21.298629
+006WR000011kjJ9YAI,ROE - 1929 GOLDEN HEIGHTS RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:21.620652
+006WR000011kjK3YAI,ROE - 1937 GOLDEN HEIGHTS RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:21.922351
+006WR000011kjJhYAI,ROE - 1943 GOLDEN HEIGHTS RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:22.201955
+006WR000011kjJ2YAI,ROE - 1953 GOLDEN HEIGHTS RD HASLET TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:22.412082
+006WR000011kjJpYAI,ROE - 2163 GOLDEN HEIGHTS RD HASLET TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:22.695717
+006WR000011kjJqYAI,ROE - 2617 BLUE MOUND W LN HASLET TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:23.114512
+006WR000011kjJtYAI,ROE - 6245 RUFE SNOW DR WATAUGA TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:23.417006
+006WR000011kitdYAA,ROE - 6600 DENTON HWY WATAUGA TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:23.784830
+006WR000011kjKIYAY,ROE - 828 BOYD RD AZLE TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:24.047478
+006WR000011kjJRYAY,ROE - 880 BLUE MOUND W RD FORT WORTH TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:24.324477
+006WR000011kjKDYAY,ROE - 950 S FM 156  JUSTIN TX,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:24.549573
+006WR00000wkC7YYAU,Westmount at The District Apartments,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:25.009449
+006WR00000wkC7WYAU,Westmount at Urban Trails,Opportunity,Sales_Status__c,Reached Out - Pending Response,,sales-status-scope-enforcement-2026-05-18,Clear,OK,,2026-05-18T08:39:25.298404

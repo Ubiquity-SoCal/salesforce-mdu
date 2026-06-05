@@ -1,0 +1,57 @@
+ProjectID,SiteName,State,FullAddress,BuildType,BuildStatus,SiteCategory,PAL,TotalUnits,Status,EstCompDate
+P-006791,Killeen_MDU_Patriot Place,TX,"500 W Rancier Ave Killeen, TX  76541",FTTU,2. Project - Design Phase,On Net,2026-02-17 00:00:00,13,Waiting on Marking agreement,
+P-006759,Newark_MDU_Heritage of Newark (Newark Beach Estates),TX,"629 Central Ave Newark, TX  76071",FTTU,2. Project - Design Phase,On Net,2026-02-05 00:00:00,26,Waiting on Marking agreement,
+P-006749,Omaha_MDU_1001 Apartments,NE,"1001 North 90th Street Omaha, NE  68114",FTTU,2. Project - Design Phase,On Net,2026-01-28 00:00:00,111,Waiting on Design approval & Marketing Agreement,
+P-006738,Omaha_MDU_Bristol Square Apts,NE,"3121 Maplewood Blvd Omaha, NE  68134",FTTU,2. Project - Design Phase,On Net,2026-01-21 00:00:00,184,Waiting on Design approval & Marketing Agreement,
+P-006413,Omaha_MDU_Northampton Court Condos,NE,"2302 Benson Gardens Blvd Omaha, NE  68134",FTTU,2. Project - Design Phase,On Net,2026-03-10 00:00:00,22,Waiting on Design approval & Bulk Agreement,
+P-006748,Bridgeport_MDU_Creekside Apartments,TX,"401 TURKEY CREEK TRL Bridgeport, TX  76426",FTTU,2. Project - Design Phase,On Net,2026-01-28 00:00:00,25,Waiting on Design approval & Marketing Agreement,
+P-006154,Killeen_MDU_The Bungalows,TX,"710 E Avenue G Killeen, TX  76541",FTT-NID,2. Project - Design Phase,On Net,,15,Waiting on Design approval,
+P-006898,Mesa_MDU_Woodglen Square Condo II,AZ,"523 W GUADALUPE RD Mesa, AZ  85210",POE,3. Project - Construction Phase,On Net,2026-04-16 00:00:00,281,Need to schedule Eng Site walk-waiting on other sites in area to drop?,2026-08-20 00:00:00
+P-006826,Killeen_MDU_1807 Mulford & 1810 N 8th St,TX,"1807 Mulford St Killeen, TX  76541",FTTU,3. Project - Construction Phase,On Net,2026-03-13 00:00:00,37,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006884,Killeen_MDU_Bradley Arms,TX,"1117 N 8th St Killeen, TX  76541",FTTU,3. Project - Construction Phase,On Net,2026-04-14 00:00:00,18,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006820,Killeen_MDU_Jerome Apts,TX,"2104 JEROME DR KILLEEN, TX  76543",FTTU,3. Project - Construction Phase,On Net,2026-03-12 00:00:00,8,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006808,Killeen_MDU_Paloma Gardens 307 N 14th St,TX,"307 n 14TH ST KILLEEN, TX  76541",FTTU,3. Project - Construction Phase,On Net,2026-02-25 00:00:00,25,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006823,Killeen_MDU_Saffari Apts,TX,"1409 BUNDRANT DR KILLEEN, TX  76543",FTTU,3. Project - Construction Phase,On Net,2026-03-13 00:00:00,38,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006824,Killeen_MDU_Soaring Eagle Apartments,TX,"3200 GRIDER CIRCLE KILLEEN, TX  76543",FTTU,3. Project - Construction Phase,On Net,2026-03-13 00:00:00,54,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006818,Killeen_MDU_The Gables at 8th Street,TX,"1507 N 8th St Killeen, TX  76541",FTTU,3. Project - Construction Phase,On Net,2026-03-12 00:00:00,16,Eng Site walk Scheduled for 5/14,2026-05-29 00:00:00
+P-006754,Killeen_MDU_Villa Del North,TX,"1006 N 4th St Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-04 00:00:00,16,In Construction,2026-05-29 00:00:00
+P-006777,Killeen_MDU_209 E Dean Ave,TX,"209 E Dean Ave Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,10,In Construction,2026-05-29 00:00:00
+P-006812,Killeen_MDU_East Gate Apartments,TX,"925 W Rancier Ave Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-03-11 00:00:00,20,In Construction,2026-05-29 00:00:00
+P-006833,Killeen_MDU_The Links Apts,TX,"610 N 10th St Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-03-16 00:00:00,22,In Construction,2026-05-29 00:00:00
+P-006755,Taylor_MDU_Vance Apartments,TX,"900 Vance St Taylor, TX  76574",FTT-NID,3. Project - Construction Phase,On Net,2026-02-04 00:00:00,14,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006760,Killeen_MDU_1015-1017 Parmer Ave,TX,"1015 Parmer Ave Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-05 00:00:00,14,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006762,Killeen_MDU_Stringer St Apts,TX,"613 STRINGER ST KILLEEN, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-05 00:00:00,10,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006775,Killeen_MDU_601 Harbour Ave,TX,"601 Harbour Ave Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,18,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006776,Killeen_MDU_425 N Gilmer St,TX,"425 N Gilmer St Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,12,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006778,Killeen_MDU_703 Gilmer Street Apartments,TX,"703 N Gilmer St Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,14,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006796,Killeen_MDU_511 N Gilmer & 512 Wyoming St,TX,"511 N Gilmer St Killeen, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-02-20 00:00:00,12,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006809,Killeen_MDU_Paul Mark Apts,TX,"2904 Lake Rd Killeen, TX  76543",FTT-NID,3. Project - Construction Phase,On Net,2026-03-01 00:00:00,25,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006829,Killeen_MDU_Magnolia Heights,TX,"310 S 10TH ST KILLEEN, TX  76541",FTT-NID,3. Project - Construction Phase,On Net,2026-03-16 00:00:00,16,PO Cut - Getting it ready to construct,2026-05-29 00:00:00
+P-006739,Omaha_MDU_4015 HAMILTON ST,NE,"4015 HAMILTON ST. Omaha, NE  68131",FTT-NID,3. Project - Construction Phase,On Net,2025-12-01 00:00:00,10,In Construction,2026-05-08 00:00:00
+P-006741,Omaha_MDU_4023 HAMILTON ST,NE,"4023 HAMILTON ST. Omaha, NE  68131",FTT-NID,3. Project - Construction Phase,On Net,2025-12-01 00:00:00,9,In Construction,2026-05-08 00:00:00
+P-006806,Omaha_MDU_Caroline,NE,"1616 MILITARY AVE Omaha, NE  68111",FTT-NID,3. Project - Construction Phase,On Net,2026-02-24 00:00:00,10,In Construction,2026-05-13 00:00:00
+P-006131,Omaha_MDU_5004 Davenport St,NE,"5004 Davenport St Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2025-12-31 00:00:00,15,In Construction,2026-05-22 00:00:00
+P-006799,Omaha_MDU_California Place,NE,"5006 CALIFORNIA ST OMAHA, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2026-02-23 00:00:00,16,In Construction,2026-05-29 00:00:00
+P-006899,Omaha_MDU_360 Skyview-2,NE,"3025 Meredith Avenue Omaha, NE  68111",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,13,In Construction,2026-05-18 00:00:00
+P-006668,Omaha_MDU_The Fredrick,NE,"4813 UNDERWOOD AVE Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2025-12-10 00:00:00,24,In Construction,2026-05-25 00:00:00
+P-006745,Omaha_MDU_2313 N 72nd St apts,NE,"2313 N 72ND ST Omaha, NE  68134",FTT-NID,3. Project - Construction Phase,On Net,2026-01-27 00:00:00,9,In Construction,2026-05-13 00:00:00
+P-006774,Omaha_MDU_360 Skyview,NE,"3025 Meredith Avenue Omaha, NE  68111",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,26,In Construction,2026-05-15 00:00:00
+P-006494,Omaha_MDU_4760 LAFAYETTE AVE,NE,"4760 LAFAYETTE AVE Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2025-10-23 00:00:00,23,In Construction,2027-05-22 00:00:00
+P-006712,Omaha_MDU_Ellington Apartments,NE,"4960 NW RADIAL HWY Omaha, NE  68104",FTT-NID,3. Project - Construction Phase,On Net,2025-12-23 00:00:00,17,In Construction,2026-05-20 00:00:00
+P-006750,Omaha_MDU_The Rose Apartments,NE,"4729 CALIFORNIA ST. Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2026-01-30 00:00:00,17,In Construction,2026-05-29 00:00:00
+P-006752,Omaha_MDU_4822-4824 Cass St,NE,"4824 Cass St. Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2026-02-02 00:00:00,14,In Construction,2026-05-22 00:00:00
+P-006766,Omaha_MDU_4810-4812 Capital Ave,NE,"4810 Capital Ave Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2026-02-09 00:00:00,14,In Construction,2026-05-13 00:00:00
+P-006767,Omaha_MDU_The Wakeley Pointe,NE,"4717 Wakeley St Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2026-02-09 00:00:00,13,In Construction,2026-05-28 00:00:00
+P-006773,Omaha_MDU_78th Street Apartments,NE,"343 S 78th St Omaha, NE  68114",FTT-NID,3. Project - Construction Phase,On Net,2026-02-12 00:00:00,14,In Construction,2026-05-29 00:00:00
+P-006803,Omaha_MDU_4527 Decatur St,NE,"4527 DECATUR ST. Omaha, NE  68104",FTT-NID,3. Project - Construction Phase,On Net,2026-02-24 00:00:00,18,In Construction,2026-05-22 00:00:00
+P-006815,Omaha_MDU_4455 Franklin St,NE,"4455 FRANKLIN ST. Omaha, NE  68111",FTT-NID,3. Project - Construction Phase,On Net,2026-03-11 00:00:00,10,In Construction,2026-06-15 00:00:00
+P-006834,Omaha_MDU_Orchard Park Apartments,NE,"7805 Harney St Omaha, NE  68114",FTT-NID,3. Project - Construction Phase,On Net,2026-03-19 00:00:00,19,In Construction,2026-06-15 00:00:00
+P-006837,Omaha_MDU_Indian Hills Village Apartments,NE,"107 S 87th St Omaha, NE  68114",FTT-NID,3. Project - Construction Phase,On Net,2026-03-23 00:00:00,21,In Construction,2026-06-15 00:00:00
+P-006838,Omaha_MDU_Indian Hills Village Court,NE,"8509 INDIAN HILLS DR Omaha, NE  68114",FTT-NID,3. Project - Construction Phase,On Net,2026-03-23 00:00:00,12,In Construction,2026-06-15 00:00:00
+P-006872,Omaha_MDU_Indian Hills Village Apartments-2,NE,"107 S 87th St Omaha, NE  68114",FTT-NID,3. Project - Construction Phase,On Net,2026-03-23 00:00:00,15,In Construction,2026-06-15 00:00:00
+P-006874,Omaha_MDU_Orchard Park Apartments-2,NE,"7805 Harney St Omaha, NE  68114",FTT-NID,3. Project - Construction Phase,On Net,2026-03-19 00:00:00,25,In Construction,2026-06-15 00:00:00
+P-006876,Omaha_MDU_4750 LAFAYETTE AVE,NE,"4760 LAFAYETTE AVE Omaha, NE  68132",FTT-NID,3. Project - Construction Phase,On Net,2025-10-23 00:00:00,23,In Construction,2026-05-15 00:00:00
+P-006862,Killeen_MDU_117 & 121 W Avenue A,TX,"117 W Avenue A Killeen, TX  76541",FTTU,3. Project - Construction Phase,On Net,2026-03-27 00:00:00,10,PO Cut - Getting it ready to construct,2026-06-26 00:00:00
+P-006861,Killeen_MDU_Town East Apartments,TX,"4308 ZEPHYR RD KILLEEN, TX  76543",FTTU,3. Project - Construction Phase,On Net,2026-03-27 00:00:00,24,PO Cut - Getting it ready to construct,2026-06-26 00:00:00
+P-006859,Killeen_MDU_Whispering Hills Apartments,TX,"306 N Gilmer St Killeen, TX  76541",FTTU,3. Project - Construction Phase,On Net,2026-03-27 00:00:00,34,PO Cut - Getting it ready to construct,2026-06-26 00:00:00
+P-006882,Gilbert_MDU_The Sterling Apartments,AZ,"1303 W JUNIPER AVE Gilbert, AZ  85233",FTTU,3. Project - Construction Phase,On Net,2024-12-17 00:00:00,109,In Construction,2026-05-08 00:00:00

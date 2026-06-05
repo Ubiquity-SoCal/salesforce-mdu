@@ -1,0 +1,12 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action,Provenance
+006WR00000wkBGYYA2,Olive Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=159ft via 509 S OLIVE MESA AZ 85204 FDH10
+006WR00000ywTVJYA2,1471 Rubenstein,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=63ft via 1475 RUBENSTEIN AVE ENCINITAS CA 92007 FDH38
+006WR00000yugutYAA,Ocean View Private Road,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=58ft via 357 OCEAN VIEW AVE ENCINITAS CA 92024 FDH51
+006WR00000ywTThYAM,Quail Gardens,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=85ft via 501 QUAIL GARDENS DR ENCINITAS CA 92024 FDH29
+006WR00000wkA8lYAE,La Mer Condos,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=39ft via 870 COFAIR CT SOLANA BEACH CA 92075 FDH09
+006WR00000xwFcbYAE,Omaha_MDU_4606 Redman Ave,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=89ft via 5718 NW RADIAL HWY OMAHA NE 68104 FDH19
+006WR000011a3xbYAA,1404 Chico Hwy MHP,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=180ft via 1304 CHICO HWY BRIDGEPORT TX 76426 FDH08
+006WR00000wjnlMYAQ,Riverside Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=148ft via 3601 VIENNE PL UNIT 113 FORT WORTH TX 76244 FB06
+006WR00000wkClxYAE,NorthStar Georgetown,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=288ft via 2101 WESTINGHOUSE RD GEORGETOWN TX 78626 FDH05
+006WR00000wjKGPYA2,Reynolds Crossing,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=273ft via 6100 E RANCIER AVE UNIT 75 KILLEEN TX 76543 FDH12
+006WR00000y4ekIYAQ,Mineral Wells_MDU_Shady Oak Circle Housing,Property_Category__c,,Cat 1,fix/2026-05-13-recovered-cat1-backfill.py,2026-05-13T09:11:25,updated,dist=53ft via 415 SHADY OAK CIR MINERAL WELLS TX 76067 FDH08

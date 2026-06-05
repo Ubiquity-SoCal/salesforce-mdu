@@ -1,0 +1,196 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action,Reason
+006WR00000wjnOFYAY,Karmella Mobile Home Park,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnOHYAY,Encore On MacDonald,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnOSYAY,The Grid,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnOpYAI,The Groves Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnP0YAI,Villa Del Prado Apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnkxYAA,Fiesta Park Village Condos,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnl0YAA,Country Cousins Mobile Home & RV Park,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnlGYAQ,Tamarron Village,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnlKYAQ,Tremont Sr Apartment Homes,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnlLYAQ,Ridge Point,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnlXYAQ,MAA Boulder Ridge,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wjnldYAA,Town and Country Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wjnlrYAA,Oak Haven RV,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wjnlvYAA,Triple Crown Estates,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wjnm6YAA,Mission View Manor West,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wk3O7YAI,Stone Vista,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk3O8YAI,Elm Grove Estates,Property_Category__c,Hold,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,hold-fix-to-cat1
+006WR00000wk3OOYAY,The Mark at 87,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk3ORYAY,Tides at Mesa,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk3OSYAY,Serrano Gardens,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk3OtYAI,Windhaven III,Property_Category__c,"Cat 2, Cat 3",,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,corrupt-blank
+006WR00000wk3PJYAY,Pecan Branch,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9RwYAI,424 Avenida Granada,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wk9RxYAI,Hazel Park,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wk9SlYAI,Mariposa Apartment Homes at River Bend,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wk9SxYAI,Cottonwood Apartments West,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9TqYAI,Legante Paseo,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9TuYAI,302 North,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wk9U3YAI,Mesa Ridge Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9U5YAI,Madera Point Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9U8YAI,Mesa Coronado II,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9UYYAY,Jarrell RV Park,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wk9UxYAI,La Mirage Apartments (Tempe),Property_Category__c,"Cat 2, Cat 3",,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,corrupt-blank
+006WR00000wk9YmYAI,Westbrook Gardens,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkA6tYAE,Mahoney Village,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkA7BYAU,Town & Country Mobile Homes,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkA7VYAU,Seacrest Village,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkA84YAE,Palmas Del Sol,Property_Category__c,"Cat 2, Cat 3",,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,corrupt-blank
+006WR00000wkA8XYAU,Corals Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkA8gYAE,Hillside Park Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkA9KYAU,River Oaks Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkACEYA2,Birchwood Apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkACfYAM,Bexley Wolf Ranch,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkAjuYAE,Country Villas,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkAkZYAU,Villas Mesa 3,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkBGlYAM,X-b Trailer Ranch-107 Spaces (MHP),Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkBTmYAM,Azle Oaks Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkBokYAE,Shady Creek Ranch Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkC7SYAU,S Karmella Trailer Park,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkCjIYAU,Val Vista Gardens,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkCjUYAU,Desert Skies,Property_Category__c,"Cat 2, Cat 3",,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,corrupt-blank
+006WR00000wkCjYYAU,Carefree Manor,Property_Category__c,"Cat 2, Cat 3",,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,corrupt-blank
+006WR00000wkCl5YAE,Landings,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkClZYAU,Paloma Village,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkCldYAE,Keystone Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkClpYAE,Copper Mountain,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkDLrYAM,Parallax @ Georgetown,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkDseYAE,Venture Out at Mesa (MHP),Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkDtlYAE,350 E 5th Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkDuBYAU,Riverview Townhomes,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000wkEb6YAE,Pecan Acres RV Park,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkEcAYAU,Creekside Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000wkEcQYAU,Laguna Vista Mobile Estates,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000xtaP4YAI,Omaha_MDU_4822-4826 Sahler St Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuCFqYAM,Omaha_MDU_The Redman Townhomes & Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuTn1YAE,KILLEEN_MDU_4308 Zephyr Rdt_APTS,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuXoyYAE,Omaha_MDU_4616 Redman Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xumrOYAQ,New Added Site,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuog7YAA,Omaha_MDU_1121 N 48TH ST,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuqjXYAQ,Bridgeport_MDU_Edgewood Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuvORYAY,HARKER HEIGHTS_MDU_700 S Amy Ln apt,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuxpsYAA,Omaha_MDU_4618 Redman Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xuzq7YAA,Omaha_MDU_4803 Boyd St Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xv174YAA,Omaha_MDU_The Wakeley Pointe,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xv3nEYAQ,Mesa_MDU_447-451 S Olive,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xv5LzYAI,Killeen_MDU_Stringer St Apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xv6y2YAA,Killeen_MDU_209 E Dean Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvAAMYA2,Omaha_MDU_4527 Decatur St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvBUcYAM,Omaha_MDU_4023 HAMILTON ST,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvE98YAE,Omaha_MDU_6302 Boyd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvEU6YAM,Omaha_MDU_6406 Boyd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvFDHYA2,Omaha_MDU_The Richards Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvFEsYAM,Killeen_MDU_813 N Park St Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvKb9YAE,Killeen_MDU_Villa Del North,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvPe3YAE,Killeen_MDU_602 N 2nd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvSKBYA2,Omaha_MDU_2313 N 72nd St apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvW9GYAU,Taylor_MDU_Vance Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvWR0YAM,Omaha_MDU_4810-4812 Capital Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvYe6YAE,Omaha_MDU_4484 Redman Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvYz4YAE,Omaha_MDU_Caroline,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvZ3uYAE,Omaha_MDU_The Rose Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvbCAYAY,Omaha_MDU_4907 Ames Ave Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xveMwYAI,Mineral Wells_MDU_305-309 NW 4th St Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvhSvYAI,Killeen_MDU_1015-1017 Parmer Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvjmRYAQ,Omaha_MDU_The Frederick,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvkCFYAY,Omaha_MDU_Brewer Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvlrSYAQ,NE_MDU_Larimore Senior Living,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvmSZYAY,Killeen_MDU_The Links Apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvsXyYAI,Omaha_MDU_4318-4324 N 48th St Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvxiwYAA,Omaha_MDU_4502 N 49th St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xvyiEYAQ,Omaha_MDU_5240 Ames Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xw5JvYAI,Killeen_MDU_191 N 1th St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xw7NKYAY,Killeen_MDU_511 N Gilmer & 512 Wyoming St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xw7SBYAY,Omaha_MDU_4005 Hartman Circle,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xw9XDYAY,Killeen_MDU_127-129 N 1th St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwCd8YAE,Omaha_MDU_5006 Davenport St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwEqDYAU,Mesa_MDU_El Rancho Del Sol Apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwEztYAE,Omaha_MDU_Benson Gardens,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwF7xYAE,Omaha_MDU_360 Skyview,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwF9ZYAU,Omaha_MDU_Arbor Creek Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFCnYAM,Omaha_MDU_4015 HAMILTON ST,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFMTYA2,Omaha_MDU_Birchwood Apts,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFPhYAM,Omaha_MDU_4313 N 65th St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFRJYA2,Omaha_MDU_Benson Crest Apartments 1,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFSvYAM,Omaha_MDU_4455 Franklin St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFazYAE,Omaha_MDU_4524 Lafayette Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFsjYAE,Omaha_MDU_4752 NICHOLAS ST,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFvyYAE,Killeen_MDU_Twin Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwFzBYAU,Omaha_MDU_Taylor Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwG7FYAU,Omaha_MDU_Ellington Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGATYA2,Omaha_MDU_California Place,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGIXYA2,Omaha_MDU_6303 Taylor Cir,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGK9YAM,Omaha_MDU_6414 Boyd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGSDYA2,Omaha_MDU_St Frances Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGnBYAU,Killeen_MDU_201 W Green Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGqPYAU,Killeen_MDU_204 E Harrison Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGs1YAE,Taylor_MDU_Tejas Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGvFYAU,Killeen_MDU_Tee Top Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwGwrYAE,Killeen_MDU_Magnolia Heights,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwH89YAE,Killeen_MDU_425 N Gilmer St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwH9lYAE,Killeen_MDU_5 W Rancier Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwHCzYAM,Killeen_MDU_601 Harbour Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwHHpYAM,Killeen_MDU_Downtown Manor,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwHJRYA2,Killeen_MDU_703 Gilmer Street Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwHPtYAM,Georgetown_MDU_Mid-Century Park,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000xwHRVYA2,Killeen_MDU_East Gate Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000y2FzkYAE,Omaha_MDU_4760 LAFAYETTE AVE,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000y3J0LYAU,Omaha_MDU_5004 Davenport St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ytiKQYAY,Pelican Ridge,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR00000yvR5nYAE,Del Mar Corporate Center,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000yw4jqYAA,Encinitas Town and Country Plaza,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000yw95EYAQ,803 Cedros Pvt Road,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywAsVYAU,Island View - Private Road,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywCPfYAM,Encinitas Corporate Center,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywMAUYA2,"247-263 HWY 101 Solana Beach, CA",Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywSW1YAM,Paseo La Jolla Pvt Road,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywSvpYAE,Encinitas Town and Country Business Park,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywTDZYA2,512-514 Via De La Valle,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywTGnYAM,674 Via De La Valle,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywTIPYA2,Haidenger Center,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR00000ywTOrYAM,915-919 Neptune Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011aP8ZYAU,Deerfield Clubhouse Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011aevbYAA,Church Hill Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011aevbYAA,Church Hill Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011anIzYAI,Alhambra Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011arrAYAQ,740 E 3rd Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011awSdYAI,Lookout Ridge Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011bOryYAE,Stone Plaza Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011bOryYAE,Stone Plaza Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011bPfxYAE,Dundee Creek Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011bPfxYAE,Dundee Creek Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011bcuxYAA,Ville de Sante Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011bcuxYAA,Ville de Sante Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011bsupYAA,Benson Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011bsupYAA,Benson Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011bxo2YAA,Sunset Arms,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011c5C6YAI,5120-5128 NW Radial Hwy,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011c5C6YAI,5120-5128 NW Radial Hwy,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011cBNzYAM,Seaside Commons,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011cGDyYAM,University Place Townhomes,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011cMfyYAE,Discovery Village at Alliance Town Center (Riverside),Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011cNVaYAM,Autumn Heights,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011cWnNYAU,6302 Boyd Street,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011cWtpYAE,Heritage Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011cWtpYAE,Heritage Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011cWvRYAU,Sandra Ann Apartments,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000011cWvRYAU,Sandra Ann Apartments,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000011caB3YAI,Contestoga Crossing,Property_State__c,Nebraska,NE,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,state-norm
+006WR000012OCzLYAW,Omaha_MDU_5004 N 33rd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012OLJOYA4,Omaha_MDU_6506 Boyd,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012OtcpYAC,Omaha_MDU_5511 N 30th St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012OwFmYAK,Omaha_MDU_6301 Military Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012P0nzYAC,Omaha_MDU_4038 Hamilton St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012PEffYAG,Omaha_MDU_4415 N 62nd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012PbluYAC,Omaha_MDU_8021 Maple Street,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012Po1aYAC,Omaha_MDU_4407 N 62nd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012PzQ2YAK,Omaha_MDU_4411 N 62nd St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012Q2XaYAK,Omaha_MDU_4402 N 60th Ave,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012Q3a5YAC,Omaha_MDU_5511 N 30th St (additional units),Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012Q3mzYAC,Omaha_MDU_4440 N 61st St,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012QQZtYAO,Omaha_MDU_7610 Ohio Plaza,Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000012QQgLYAW,Omaha_MDU_5511 N 30th St (3rd),Property_Category__c,,Cat 1,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,fill-blank-to-cat1
+006WR000013NaDUYA0,Walker's Park,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank
+006WR000013OnjhYAC,Dry Creek,Property_Category__c,Cat 1,,fix/2026-05-13-property-category-cat1-and-cleanup-backfill.py,2026-05-13T08:11:13,updated,overtag-blank

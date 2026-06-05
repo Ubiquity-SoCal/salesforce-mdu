@@ -1,0 +1,70 @@
+{
+  "agreements": [
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000008vIEv2AM"
+      },
+      "Id": "a0BWR000008vIEv2AM",
+      "Name": "AGR-1571",
+      "Status__c": null,
+      "Signed_Date__c": null,
+      "IronClad_ID__c": "IC-2952",
+      "IronClad_Record__c": null,
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR000011kjIJYAY"
+        },
+        "Name": "ROE - 1134 S STAPLEY DR MESA AZ"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000008vIJl2AM"
+      },
+      "Id": "a0BWR000008vIJl2AM",
+      "Name": "AGR-1572",
+      "Status__c": null,
+      "Signed_Date__c": null,
+      "IronClad_ID__c": "IC-2952",
+      "IronClad_Record__c": null,
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR000011kjIRYAY"
+        },
+        "Name": "ROE - 1116 S STAPLEY DR MESA AZ"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Agreement__c",
+        "url": "/services/data/v59.0/sobjects/Agreement__c/a0BWR000008vLsj2AE"
+      },
+      "Id": "a0BWR000008vLsj2AE",
+      "Name": "AGR-1573",
+      "Status__c": null,
+      "Signed_Date__c": null,
+      "IronClad_ID__c": "IC-2952",
+      "IronClad_Record__c": null,
+      "Opportunity__r": {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/006WR000015bWdRYAU"
+        },
+        "Name": "1142 E Southern Ave"
+      }
+    }
+  ],
+  "opp_1142": {
+    "attributes": {
+      "type": "Opportunity",
+      "url": "/services/data/v59.0/sobjects/Opportunity/006WR000015bWdRYAU"
+    },
+    "Id": "006WR000015bWdRYAU",
+    "Name": "1142 E Southern Ave",
+    "CampaignId": null
+  }
+}

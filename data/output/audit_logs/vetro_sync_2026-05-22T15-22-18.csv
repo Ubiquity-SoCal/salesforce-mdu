@@ -1,0 +1,425 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action,Note
+a01WR00001OuhDfYAJ,NE_OMAHA_SA12_FDH26_PA01,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001OuhDgYAJ,NE_OMAHA_SA12_FDH26_PA05,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001OuhDhYAJ,4242 N 49TH AVE OMAHA NE,(created),,PL created (bus),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=bus; from Vetro sync
+a01WR00001OuhDiYAJ,TX_KILLEEN_SA10_FDH14_PA1,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001OuhDjYAJ,Killeen_MDU_117 & 121 W Avenue A,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001OuhDkYAJ,Killeen_MDU_192-1924 N 2nd St,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001OuhDlYAJ,TX_KILLEEN_SA10_FDH13_PA4,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001OuhDmYAJ,AZ_MESA_SA02_FDH13_MedinaCourt,(created),,PL created (agreement),sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,kind=agreement; from Vetro sync
+a01WR00001LnrnmYAB,NOT BUILT,FDH_Name__c,CA_ENCINITAS_SA05_FDH62,CA_ENCINITAS_SA06_FDH47,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=agreement; from Vetro sync
+a01WR00001LnrnmYAB,NOT BUILT,Serving_Area__c,SA05,SA06,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=agreement; from Vetro sync
+a01WR00000UGMV3YAP,9515 BLONDO ST OMAHA NE,FDH_Name__c,NE_OMAHA_SA09_FDH10,NE_OMAHA_AVR_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGMV3YAP,9515 BLONDO ST OMAHA NE,FDH_Activated_Date__c,2024-04-29,2025-10-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXITYA5,450 OCEAN VIEW AVE ENCINITAS CA,FDH_Name__c,CA_ENCINITAS_SA05_FDH56,CA_ENCINITAS_SA05_FDH51,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXITYA5,450 OCEAN VIEW AVE ENCINITAS CA,FDH_Activated_Date__c,2023-04-30,2023-04-21,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXLgYAP,489 SAXONY PL ENCINITAS CA,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXLgYAP,489 SAXONY PL ENCINITAS CA,FDH_Name__c,CA_ENCINITAS_SA02_FDH24,CA_ENCINITAS_SA04_FDH50,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXLgYAP,489 SAXONY PL ENCINITAS CA,Serving_Area__c,SA02,SA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXLgYAP,489 SAXONY PL ENCINITAS CA,FDH_Activated_Date__c,2022-04-30,2022-11-19,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001C893YYAR,1010 S COAST HIGHWAY 101 ENCINITAS CA,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001C893YYAR,1010 S COAST HIGHWAY 101 ENCINITAS CA,FDH_Name__c,CA_ENCINITAS_SA06_FDH15,CA_ENCINITAS_SA09_FDH82_AER,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001C893YYAR,1010 S COAST HIGHWAY 101 ENCINITAS CA,Serving_Area__c,SA06,SA09,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001C893YYAR,1010 S COAST HIGHWAY 101 ENCINITAS CA,FDH_Activated_Date__c,2025-12-22,2025-12-30,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWjkYAH,2840 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH61,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWjkYAH,2840 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWr7YAH,3071 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH61,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWr7YAH,3071 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWw9YAH,3220 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH61,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWw9YAH,3220 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWcRYAX,2419 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH61,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWcRYAX,2419 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWEuYAP,165 STONEBRIDGE LN SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH61,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWEuYAP,165 STONEBRIDGE LN SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXFAYA5,421 N MAIN ST KELLER TX,FDH_Name__c,TX_DFW_SA01_FDH14,TX_DFW_NN_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXFAYA5,421 N MAIN ST KELLER TX,FDH_Activated_Date__c,2022-12-31,2025-12-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXpxYAH,721 KELLER PKWY KELLER TX,FDH_Name__c,TX_DFW_SA01_FDH14,TX_DFW_NN_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXpxYAH,721 KELLER PKWY KELLER TX,FDH_Activated_Date__c,2022-12-31,2025-12-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXpxYAH,721 KELLER PKWY KELLER TX,Business_Building_Id__c,543012d5-15e1-4d33-aa3d-24e32282b7e2,<Null>,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXXLYA5,5771 PARK VISTA CIR FORT WORTH TX,FDH_Name__c,TX_DFW_SA01_FDH16,TX_DFW_NN_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXXLYA5,5771 PARK VISTA CIR FORT WORTH TX,FDH_Activated_Date__c,2022-12-31,2025-12-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVyZYAX,12461 TIMBERLAND BLVD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH13,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVyZYAX,12461 TIMBERLAND BLVD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVyIYAX,12400 TIMBERLAND BLVD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH13,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVyIYAX,12400 TIMBERLAND BLVD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVyhYAH,12485 TIMBERLAND BLVD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH13,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVyhYAH,12485 TIMBERLAND BLVD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR0000106zKCYAY,3300 CHAMPIONSHIP PKWY FORT WORTH TX,FDH_Name__c,TX_DFW_SA03_NISD SEGMENT 2 HASLET TO ADMIN,TX_DFW_NN_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR0000106zKCYAY,3300 CHAMPIONSHIP PKWY FORT WORTH TX,FDH_Activated_Date__c,2023-09-13,2025-12-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR0000106yjLYAQ,1075 EAGLE BLVD FORT WORTH TX,Business_Building_Id__c,b7122e0b-3dc5-4389-98a1-940b96274911,<Null>,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGY1AYAX,8508 PRECINCT LINE RD COLLEYVILLE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH10,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGY1AYAX,8508 PRECINCT LINE RD COLLEYVILLE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVuHYAX,12081 KATY RD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH68,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVuHYAX,12081 KATY RD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWKnYAP,1901 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH10,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWKnYAP,1901 W SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGY3aYAH,8861 DAVIS BLVD KELLER TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH10,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGY3aYAH,8861 DAVIS BLVD KELLER TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWM6YAP,1957 W SOUTHLAKE CIR SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH10,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWM6YAP,1957 W SOUTHLAKE CIR SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWIoYAP,1807 KELLER PKWY KELLER TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWIoYAP,1807 KELLER PKWY KELLER TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXXCYA5,5760 HEN HOUSE RD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH68,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXXCYA5,5760 HEN HOUSE RD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXY3YAP,5821 EGG FARM RD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH68,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXY3YAP,5821 EGG FARM RD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGY12YAH,8500 PRECINCT LINE RD COLLEYVILLE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH10,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGY12YAH,8500 PRECINCT LINE RD COLLEYVILLE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWK7YAP,1850 KELLER PKWY KELLER TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWK7YAP,1850 KELLER PKWY KELLER TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWJoYAP,1834 KELLER PKWY KELLER TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWJoYAP,1834 KELLER PKWY KELLER TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX1dYAH,3600 GOLDEN TRIANGLE BLVD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH26,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX1dYAH,3600 GOLDEN TRIANGLE BLVD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX1oYAH,3604 GOLDEN TRIANGLE BLVD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH26,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX1oYAH,3604 GOLDEN TRIANGLE BLVD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWhnYAH,2717 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWhnYAH,2717 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWAVYA5,151 N NOLEN DR SOUTHLAKE TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA01_FDH05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWAVYA5,151 N NOLEN DR SOUTHLAKE TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWU5YAP,210 S NOLEN DR SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH03,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWU5YAP,210 S NOLEN DR SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVsiYAH,1200 S WHITE CHAPEL BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH07,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVsiYAH,1200 S WHITE CHAPEL BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWCQYA5,1575 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH02,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWCQYA5,1575 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWCtYAP,1600 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH03,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWCtYAP,1600 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWGrYAP,1710 RUFE SNOW DR KELLER TX,FDH_Name__c,TX_DFW_SA01_FDH52,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWGrYAP,1710 RUFE SNOW DR KELLER TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHCYA5,1721 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH03,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHCYA5,1721 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHOYA5,1730 RUFE SNOW DR KELLER TX,FDH_Name__c,TX_DFW_SA01_FDH52,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHOYA5,1730 RUFE SNOW DR KELLER TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHUYA5,1740 RUFE SNOW DR KELLER TX,FDH_Name__c,TX_DFW_SA01_FDH52,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHUYA5,1740 RUFE SNOW DR KELLER TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWfDYAX,260 MIRON DR SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH02,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWfDYAX,260 MIRON DR SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXPDYA5,510 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH02,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXPDYA5,510 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWQYA5,5710 WATAUGA RD WATAUGA TX,FDH_Name__c,TX_DFW_SA01_FDH57,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWQYA5,5710 WATAUGA RD WATAUGA TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWcYAP,5720 WATAUGA RD WATAUGA TX,FDH_Name__c,TX_DFW_SA01_FDH57,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWcYAP,5720 WATAUGA RD WATAUGA TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXdaYAH,6120 WATAUGA RD WATAUGA TX,FDH_Name__c,TX_DFW_SA01_FDH57,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXdaYAH,6120 WATAUGA RD WATAUGA TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXkwYAH,6850 DENTON HWY WATAUGA TX,FDH_Name__c,TX_DFW_SA01_FDH57,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXkwYAH,6850 DENTON HWY WATAUGA TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXocYAH,711 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH02,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXocYAH,711 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWYKYA5,221 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Name__c,TX_DFW_SA01_FDH81,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWYKYA5,221 E SOUTHLAKE BLVD SOUTHLAKE TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGMVnYAP,9603 BOAT CLUB RD FORT WORTH TX,FDH_Name__c,TX_DFW_SA02_FDH02,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGMVnYAP,9603 BOAT CLUB RD FORT WORTH TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWnYAP,5740 BOAT CLUB RD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA04_FDH06,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWnYAP,5740 BOAT CLUB RD FORT WORTH TX,Serving_Area__c,SA01,SA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWnYAP,5740 BOAT CLUB RD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWyYAP,5752 BOAT CLUB RD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA04_FDH06,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWyYAP,5752 BOAT CLUB RD FORT WORTH TX,Serving_Area__c,SA01,SA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWyYAP,5752 BOAT CLUB RD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWpYAP,5744 BOAT CLUB RD FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_SA04_FDH06,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWpYAP,5744 BOAT CLUB RD FORT WORTH TX,Serving_Area__c,SA01,SA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXWpYAP,5744 BOAT CLUB RD FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2022-12-31,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWpmYAH,3045 STILLHOUSE LAKE RD HARKER HEIGHTS TX,Agreement_Name__c,TX_HARKER HEIGHTS_SA02_FDH12_PA04,TX_HARKER HEIGHTS_SA02_FDH12_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWpnYAH,3045B STILLHOUSE LAKE RD HARKER HEIGHTS TX,Agreement_Name__c,TX_HARKER HEIGHTS_SA02_FDH12_PA04,TX_HARKER HEIGHTS_SA02_FDH12_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVZrYAP,1010 KNIGHTS WAY HARKER HEIGHTS TX,Business_Building_Id__c,51233d6a-98ac-4834-afe7-af53fdf98228,bf344cca-0835-4e74-9a40-90f3981c3cf6,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVWfYAP,980 KNIGHTS WAY HARKER HEIGHTS TX,Agreement_Name__c,TX_HARKER HEIGHTS_SA02_FDH12_PA05,TX_HARKER HEIGHTS_SA02_FDH12_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UG83EYAT,1000 E FM 2410 RD HARKER HEIGHTS TX,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UG83EYAT,1000 E FM 2410 RD HARKER HEIGHTS TX,Business_Building_Id__c,4dba6f39-f1b2-408d-9926-6bd5c2008994,4b4fcff7-ab35-4ebb-b5f0-16a061e24dd5,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX5DYAX,3903 W STAN SCHLUETER LOOP KILLEEN TX,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX5DYAX,3903 W STAN SCHLUETER LOOP KILLEEN TX,FDH_Name__c,TX_KILLEEN_AVR_2025Q4,TX_KILLEEN_SA17_FDH06,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX5DYAX,3903 W STAN SCHLUETER LOOP KILLEEN TX,FDH_Activated_Date__c,2025-10-01,2024-09-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX5DYAX,3903 W STAN SCHLUETER LOOP KILLEEN TX,Business_Building_Id__c,193dc617-bf72-4a15-9ca1-ba29f4c0c7a0,70ee59c2-6de3-4a15-b11a-cc4ec8cc92ce,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXC5YAP,4103 ZEPHYR RD KILLEEN TX,Business_Building_Id__c,765fe002-6f47-4b9f-b0ee-6ccb148075cc,96f6b6c6-d9c4-4d94-a38a-30c430c2ba0d,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrmuYAB,1510 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,17983730-4aaf-40c8-b1f9-1adb7ad1beb1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrmxYAB,1604 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,c23e54ff-3d66-4e9d-a1c9-fdb7766cc276,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrmvYAB,1610 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,c23e54ff-3d66-4e9d-a1c9-fdb7766cc276,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrmwYAB,1602 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,c23e54ff-3d66-4e9d-a1c9-fdb7766cc276,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001Lnrn9YAB,4809 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,7c69bcad-bb09-44d2-aade-f0e3b6f19b48,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnBYAR,4803 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,7c69bcad-bb09-44d2-aade-f0e3b6f19b48,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnCYAR,4721 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,033e74ac-03ea-4a33-b062-4256d12ef6a8,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001Lnrn7YAB,4735 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ea3d7d50-901f-406b-b2d7-fa408fc9bfa1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnAYAR,4811 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,f60b7804-f0dc-4563-a1af-95baff8b710d,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001Lnrn8YAB,4707 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,5765d976-4db5-4343-9423-211821ac389b,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnDYAR,4801 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,7c69bcad-bb09-44d2-aade-f0e3b6f19b48,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000XZaTuYAL,4201 E RANCIER AVE KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA03_FDH14_PA01,TX_KILLEEN_SA03_FDH14_MDU_439 PLAZA,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnJYAR,1004 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnKYAR,1136 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnUYAR,1130 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnOYAR,1138 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnWYAR,1110 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnMYAR,1126 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnPYAR,1008 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnSYAR,1002 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnLYAR,1122 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnXYAR,1102 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,dfd78f07-5992-413a-bb65-6584e5586b44,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnQYAR,1010 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnTYAR,1018 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnVYAR,1020 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,deff0744-d461-4287-b802-88248fe53b61,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnNYAR,1140 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,696e2da4-4e98-4da9-af35-265fff57a3fe,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnIYAR,1006 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnRYAR,1016 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,ffc55814-7daf-4165-967f-f471c318e3fd,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000jebs9YAA,5018 UNDERWOOD AVE OMAHA NE,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrncYAB,4970 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,66487cef-6e2f-46bc-aca0-824aa6fb887e,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrneYAB,5028 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,42ff5cc2-4782-4953-b1bc-8d56647e9d9c,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrndYAB,4902 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,d6a5d704-8cfd-4839-9962-a0bcd0d04df1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrnfYAB,4910 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,aaa4d939-f400-4954-9afa-df0029a43554,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00001LnrngYAB,5024 NW RADIAL HWY OMAHA NE,Business_Building_Id__c,,e691a450-dc80-447e-a8df-d5943bea5f77,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000tUttWYAS,900 N AUSTIN AVE GEORGETOWN TX,Business_Building_Id__c,0ba459e5-4e94-4379-ab9b-0cbc1f05222a,4319438a-3f91-4c46-868b-a85f4ebebb41,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXwdYAH,806 13TH ST BRIDGEPORT TX,FDH_Name__c,TX_BRIDGEPORT_SA01_FDH06,TX_BRIDGEPORT_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXwdYAH,806 13TH ST BRIDGEPORT TX,FDH_Activated_Date__c,2024-11-27,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXwdYAH,806 13TH ST BRIDGEPORT TX,Business_Building_Id__c,40e26746-5e64-40bd-908c-e14abec4140b,415bc606-23f7-49bd-8977-fb1b537c6459,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW9uYAH,1502 10TH ST BRIDGEPORT TX,FDH_Name__c,TX_BRIDGEPORT_SA01_FDH02,TX_BRIDGEPORT_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW9uYAH,1502 10TH ST BRIDGEPORT TX,FDH_Activated_Date__c,2024-07-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000lLsmOYAS,40120 INDUSTRIAL PARK CIR GEORGETOWN TX,FDH_Name__c,TX_GEORGETOWN_SA09_FDH11,TX_GEORGETOWN_AVR_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000lLsmOYAS,40120 INDUSTRIAL PARK CIR GEORGETOWN TX,FDH_Activated_Date__c,2025-09-25,2025-10-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWR5YAP,204 N FORT HOOD ST KILLEEN TX,Business_Building_Id__c,7d56e1f4-45f7-4959-a0c0-f73dd9362645,307e4e51-aa41-47a7-aee3-91802b099981,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXx4YAH,808 S ANN BLVD HARKER HEIGHTS TX,Agreement_Name__c,TX_HARKER HEIGHTS_SA01_FDH04_PA01,TX_Harker Heights_SA01_FDH04_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXxuYAH,812 S ANN BLVD HARKER HEIGHTS TX,Agreement_Name__c,TX_HARKER HEIGHTS_SA01_FDH04_PA01,TX_Harker Heights_SA01_FDH04_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXxZYAX,810 S ANN BLVD HARKER HEIGHTS TX,Agreement_Name__c,TX_HARKER HEIGHTS_SA01_FDH04_PA01,TX_Harker Heights_SA01_FDH04_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXe9YAH,615 N 8TH ST KILLEEN TX,FDH_Name__c,TX_KILLEEN_SA10_FDH04,TX_KILLEEN_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXe9YAH,615 N 8TH ST KILLEEN TX,FDH_Activated_Date__c,2024-12-30,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVqVYAX,117 EAST ST HUTTO TX,FDH_Name__c,TX_HUTTO_SA01_FDH26,TX_HUTTO_AVR_2025Q2,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVqVYAX,117 EAST ST HUTTO TX,FDH_Activated_Date__c,2024-01-25,2025-04-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVZlYAP,101 W CENTRAL TEXAS EXPY HARKER HEIGHTS TX,Business_Building_Id__c,baf4698c-5b77-4aed-b42e-9617398a955c,a75095bf-5923-4524-9d91-688855b1e493,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVhYYAX,110 HIGHWAY 79 HUTTO TX,Business_Building_Id__c,f4cb119a-a0a3-4045-98b7-92c4ecd7588b,1360181a-d7c6-48e1-97aa-4e8b35e66f9d,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWPFYA5,201 TAYLOR ST HUTTO TX,FDH_Name__c,TX_HUTTO_SA01_FDH26,TX_HUTTO_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWPFYA5,201 TAYLOR ST HUTTO TX,FDH_Activated_Date__c,2024-01-25,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXxbYAH,810 W RANCIER AVE KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA10_FDH12_PA03,TX_KILLEEN_SA10_FDH12_PA3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXoUYAX,710 W RANCIER AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA10_FDH12_PA4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXwMYAX,804 W RANCIER AVE KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA10_FDH12_PA03,TX_KILLEEN_SA10_FDH12_PA3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVkBYAX,1108 N PARK ST KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA10_FDH03_PA03,TX_KILLEEN_SA10_FDH3_PA3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVkBYAX,1108 N PARK ST KILLEEN TX,Business_Building_Id__c,,3a964703-49c5-44ce-baad-7bc59ffb7203,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXFNYA5,422 N GILMER ST KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA10_FDH16_PA01,TX_KILLEEN_SA10_FDH16_PA1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXFfYAP,424 N GILMER ST KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA10_FDH16_PA01,TX_KILLEEN_SA10_FDH16_PA1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGYAFYA5,929 W RANCIER AVE KILLEEN TX,Agreement_Name__c,TX_KILLEEN_SA10_FDH11_PA03,TX_KILLEEN_SA10_FDH11_PA3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXZiYAP,600 INDIAN TRAIL DR HARKER HEIGHTS TX,Business_Building_Id__c,9a2a3bb3-32e5-4cbc-9638-29a30051ce94,988e4503-e733-4d6b-add9-02612b300077,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVnhYAH,113 METROTEX DR HASLET TX,FDH_Name__c,TX_DFW_SA05_FDH15,TX_DFW_NN_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVnhYAH,113 METROTEX DR HASLET TX,FDH_Activated_Date__c,2022-12-31,2025-12-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000fDqSaYAK,3320 TRACEWOOD WAY FORT WORTH TX,FDH_Name__c,TX_DFW_AVR_2025Q3,TX_DFW_NN_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000fDqSaYAK,3320 TRACEWOOD WAY FORT WORTH TX,FDH_Activated_Date__c,2025-07-01,2025-12-12,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000fDqSaYAK,3320 TRACEWOOD WAY FORT WORTH TX,Business_Building_Id__c,c0e5f6cc-07aa-40e3-97fb-c623ae3df0cb,<Null>,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXh9YAH,636 COUNTY ROAD 4841 HASLET TX,FDH_Name__c,TX_DFW_SA05_FDH15,TX_DFW_AVR_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXh9YAH,636 COUNTY ROAD 4841 HASLET TX,FDH_Activated_Date__c,2022-12-31,2025-10-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX15YAH,3527 E HIGHWAY 114 RHOME TX,FDH_Name__c,TX_DFW_SA08_FDH01,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX15YAH,3527 E HIGHWAY 114 RHOME TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXDSYA5,4140 HERITAGE TRACE PKWY FORT WORTH TX,FDH_Name__c,TX_DFW_SA09_FDH06,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXDSYA5,4140 HERITAGE TRACE PKWY FORT WORTH TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXEiYAP,4200 HERITAGE TRACE PKWY FORT WORTH TX,FDH_Name__c,TX_DFW_SA09_FDH06,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXEiYAP,4200 HERITAGE TRACE PKWY FORT WORTH TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXFRYA5,4224 HERITAGE TRACE PKWY FORT WORTH TX,FDH_Name__c,TX_DFW_SA09_FDH06,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXFRYA5,4224 HERITAGE TRACE PKWY FORT WORTH TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGMUwYAP,9509 N BEACH ST FORT WORTH TX,FDH_Name__c,TX_DFW_SA09_FDH05,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGMUwYAP,9509 N BEACH ST FORT WORTH TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWfGYAX,2600 BOBCAT BLVD TROPHY CLUB TX,FDH_Name__c,TX_DFW_SA12_FDH11,TX_DFW_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWfGYAX,2600 BOBCAT BLVD TROPHY CLUB TX,FDH_Activated_Date__c,2022-12-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWMjYAP,200 COUNTY ROAD 306 JARRELL TX,Agreement_Name__c,TX_JARRELL_SA01_FDH01_PA02,TX_JARRELL_SA01_FDH01_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWMjYAP,200 COUNTY ROAD 306 JARRELL TX,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR0000106zkkYAA,901 W HUBBARD ST MINERAL WELLS TX,Business_Building_Id__c,6bd9b545-c328-456f-b35a-a725d0821011,5660f808-0904-4818-b49d-333ce79e8fb3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHaYAP,175 ELIZABETH PARK BLVD LIBERTY HILL TX,FDH_Name__c,TX_SANTA RITA_SA01_FDH25_SRR 1-1A,TX_SANTA RITA_AVR_2025Q4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWHaYAP,175 ELIZABETH PARK BLVD LIBERTY HILL TX,FDH_Activated_Date__c,2025-01-13,2025-10-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW19YAH,1300 W FM 487 JARRELL TX,Agreement_Name__c,,TX_JARRELL_SA01_FDH04_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWMcYAP,200 AUGUSTINE WAY LIBERTY HILL TX,FDH_Name__c,TX_SANTA RITA_SA01_FDH23_SRR 1-7,TX_SANTA RITA_AVR_2026Q1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWMcYAP,200 AUGUSTINE WAY LIBERTY HILL TX,FDH_Activated_Date__c,2023-12-21,2026-01-02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVcZYAX,103 S OAK AVE MINERAL WELLS TX,Business_Building_Id__c,0f4f98a7-2669-457b-804e-fc4212ce9ff2,7512dc3a-d8b4-4486-baf4-0229e34eb5aa,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVkbYAH,111 N 3RD ST JARRELL TX,FDH_Name__c,TX_JARRELL_SA01_FDH02,TX_JARRELL_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVkbYAH,111 N 3RD ST JARRELL TX,FDH_Activated_Date__c,2023-03-31,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWI5YAP,180 TOWN CENTER BLVD JARRELL TX,Business_Building_Id__c,f7e65d6c-09e5-4330-aeef-af4d41fee48c,54a8d836-1f44-449b-8eda-2974720e029f,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXPoYAP,5113 CRESSLER LN JARRELL TX,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXPoYAP,5113 CRESSLER LN JARRELL TX,FDH_Name__c,TX_JARRELL_SA02_FDH20,TX_JARRELL_SA02_FDH21,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXPoYAP,5113 CRESSLER LN JARRELL TX,FDH_Activated_Date__c,2023-10-27,2023-11-08,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXrYYAX,745 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH12_PA02,AZ_MESA_SA02_FDH12_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWWXYA5,2152 S VINEYARD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH12_PA01,AZ_MESA_SA02_FDH12_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWWXYA5,2152 S VINEYARD MESA AZ,Business_Building_Id__c,01443f6b-b6d8-4589-be77-f243eccd307f,7f5b132d-df85-4960-8f13-5f9d5e8df322,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXSsYAP,535 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH12_PA03,AZ_MESA_SA02_FDH12_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWOPYA5,201 10TH ST NOLANVILLE TX,FDH_Name__c,TX_NOLANVILLE_SA01_FDH02,TX_NOLANVILLE_AVR_2025_Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWOPYA5,201 10TH ST NOLANVILLE TX,FDH_Activated_Date__c,2023-06-23,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXccYAH,609 HARBOUR AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH13_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXDzYAP,416 N 12TH ST KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH13_PA07,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWbNYAX,2345 S ALMA SCHOOL RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH13_PA02,AZ_MESA_SA02_FDH13_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWFCYA5,1660 S ALMA SCHOOL RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH16_PA02,AZ_MESA_SA02_FDH16_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWJiYAP,1830 S ALMA SCHOOL RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH16_PA01,AZ_MESA_SA02_FDH16_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWK0YAP,1845 S DOBSON RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH23_PA03,AZ_MESA_SA02_FDH23_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWJSYA5,1819 S DOBSON RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH23_PA02,AZ_MESA_SA02_FDH23_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWRPYA5,2045 S VINEYARD MESA AZ,Business_Building_Id__c,ce968dd3-b17a-4e80-98f5-7450f9962214,b3bb8ba6-8b1f-489e-ae29-7fc6cc10df6e,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW1oYAH,1305 S FM 51 DECATUR TX,FDH_Name__c,TX_DECATUR_SA01_FDH10,TX_DECATUR_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW1oYAH,1305 S FM 51 DECATUR TX,FDH_Activated_Date__c,2023-12-06,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWNRYA5,200 S HIGHWAY 287 DECATUR TX,FDH_Name__c,TX_DECATUR_SA01_FDH10,TX_DECATUR_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWNRYA5,200 S HIGHWAY 287 DECATUR TX,FDH_Activated_Date__c,2023-12-06,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWijYAH,2800 S FM 51 DECATUR TX,FDH_Name__c,TX_DECATUR_SA01_FDH12,TX_DECATUR_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWijYAH,2800 S FM 51 DECATUR TX,FDH_Activated_Date__c,2023-12-06,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWixYAH,2802 S FM 51 DECATUR TX,FDH_Name__c,TX_DECATUR_SA01_FDH12,TX_DECATUR_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWixYAH,2802 S FM 51 DECATUR TX,FDH_Activated_Date__c,2023-12-06,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX0wYAH,3519 S MURVIL ST DECATUR TX,FDH_Name__c,TX_DECATUR_SA01_FDH12,TX_DECATUR_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGX0wYAH,3519 S MURVIL ST DECATUR TX,FDH_Activated_Date__c,2023-12-06,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXbYYAX,604 W MAIN ST DECATUR TX,FDH_Name__c,TX_DECATUR_SA01_FDH09,TX_DECATUR_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXbYYAX,604 W MAIN ST DECATUR TX,FDH_Activated_Date__c,2023-12-16,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWQHYA5,2024 S DON CARLOS MESA AZ,FDH_Name__c,AZ_MESA_SA01_FDH14,AZ_MESA_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWQHYA5,2024 S DON CARLOS MESA AZ,FDH_Activated_Date__c,2024-06-28,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXxYYAX,810 N YOUNG DR KILLEEN TX,Business_Building_Id__c,,0,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW2OYAX,1312 E RANCIER AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH11_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW1dYAH,1304 E RANCIER AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH11_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW2fYAH,1316 E RANCIER AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH11_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW1tYAH,1306 E RANCIER AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH11_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW24YAH,1308 E RANCIER AVE KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH11_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWjKYAX,2815 S ALMA SCHOOL RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH03_PA02,AZ_MESA_SA02_FDH03_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXr3YAH,737 W GUADALUPE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH03_PA01,AZ_MESA_SA02_FDH03_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVixYAH,1101 W GUADALUPE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH03_PA03,AZ_MESA_SA02_FDH03_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWLxYAP,1950 S COUNTRY CLUB DR MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH19_PA04,AZ_MESA_SA02_FDH19_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXTTYA5,540 W IRON AVE MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH19_PA01,AZ_MESA_SA02_FDH19_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXoAYAX,708 W BASELINE RD MESA AZ,Business_Building_Id__c,967760ea-0c41-4997-ad47-a43a1c0798f7,2f26b24c-c42e-4979-a096-abbf8774e412,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXV9YAP,555 W IRON AVE MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH19_PA02,AZ_MESA_SA02_FDH19_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXUgYAP,550 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH19_PA03,AZ_MESA_SA02_FDH19_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXStYAP,535 W IRON AVE MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH19_PA05,AZ_MESA_SA02_FDH19_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWLmYAP,1940 S COUNTRY CLUB DR MESA AZ,Agreement_Name__c,AZ_MESA_SA02_FDH19_PA04,AZ_MESA_SA02_FDH19_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWIOYA5,1801 S EXTENSION RD MESA AZ,Business_Building_Id__c,2b1f07cf-6a07-4ccd-bf1f-9d7982b3a027,41fcef4a-2f2a-4dd0-89df-68aed6fd3735,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXcrYAH,610 N 10TH ST KILLEEN TX,Agreement_Name__c,,TX_KILLEEN_SA09_FDH10_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWesYAH,2540 W BASELINE RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH10_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGVySYAX,1245 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH06_PA02,AZ_MESA_SA01_FDH06_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWecYAH,2520 S ALMA SCHOOL RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH03_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWecYAH,2520 S ALMA SCHOOL RD MESA AZ,Business_Building_Id__c,fb6d100b-1e72-4b5f-9a14-6e5f78574e4a,7a878102-6674-45b9-96ee-9f61776990e5,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWfZYAX,2602 W BASELINE RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH14_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWebYAH,2520 S ALMA RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH03_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgDYAX,2628 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGW2UYAX,1313 W MEDINA AVE MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH03_PA02,AZ_MESA_SA01_FDH03_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgKYAX,2636 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgFYAX,2630 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgGYAX,2632 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgIYAX,2634 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgMYAX,2638 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWgSYAX,2640 W BASELINE RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH14_PA02,AZ_MESA_SA01_FDH14_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWSGYA5,2058 S DOBSON RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH09_PA04,AZ_MESA_SA01_FDH09_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWSAYA5,2051 S DOBSON RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH09_PA03,AZ_MESA_SA01_FDH09_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWWTYA5,2150 S DOBSON RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH09_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWY8YAP,2204 S DOBSON RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH12_PA03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWYzYAP,2222 S DOBSON RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH12_PA01,AZ_MESA_SA01_FDH12_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWcZYAX,2425 S DOBSON RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH12_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWWaYAP,2155 S DOBSON RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH12_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWZTYA5,2251 S DOBSON RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH12_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWZZYA5,2266 S DOBSON RD MESA AZ,Agreement_Name__c,AZ_MESA_SA01_FDH12_PA01,AZ_MESA_SA01_FDH12_PA04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGWdyYAH,2505 S DOBSON RD MESA AZ,Agreement_Name__c,,AZ_MESA_SA01_FDH12_PA02,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXS5YAP,529 KNIGHTS WAY HARKER HEIGHTS TX,FDH_Name__c,TX_HARKER HEIGHTS_SA03_FDH01,TX_HARKER HEIGHTS_AVR_2025Q3,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXS5YAP,529 KNIGHTS WAY HARKER HEIGHTS TX,FDH_Activated_Date__c,2024-01-30,2025-07-01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a01WR00000UGXREYA5,521 E VALLEY RD HARKER HEIGHTS TX,Address_Type__c,SFU,Business,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,kind=bus; from Vetro sync
+a02WR00000c5jZhYAI,NE0106-008000230A,(created),,Unit created,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,CREATE,"parent_key=('bus', '4242 N 49TH AVE OMAHA NE'); from Vetro sync"
+a02WR00000SBPx3YAH,TX0604-005009917A,AreaId__c,TX_DFW_SA04_FDH04,TX_DFW_SA04_FDH05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000SBQEbYAP,TX0604-005009918A,AreaId__c,TX_DFW_SA04_FDH04,TX_DFW_SA04_FDH05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amOIsYAM,NA,Name,2842 CHERRY LN C KILLEEN TX 76543,101 W 64TH ST INGLEWOOD CA 90302,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amOIsYAM,NA,AreaId__c,TX_KILLEEN_SA08_FB04,CA_LOS ANGELES_SA88_FB04,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amJWLYA2,CA0510-FB09210121A,Activated__c,Yes,No,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amJWLYA2,CA0510-FB09210121A,Address_Deactivated__c,No,Yes,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amJWLYA2,CA0510-FB09210121A,Coho__c,Activated,De-Activated,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amJWWYA2,CA0510-FB09320132A,Activated__c,Yes,No,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amJWWYA2,CA0510-FB09320132A,Address_Deactivated__c,No,Yes,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amJWWYA2,CA0510-FB09320132A,Coho__c,Activated,De-Activated,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000FcO43YAF,TX1310-003000036A,AreaId__c,TX_KILLEEN_SA10_FDH02,TX_KILLEEN_SA10_FDH03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000FcO5yYAF,TX1310-003000044A,AreaId__c,TX_KILLEEN_SA10_FDH02,TX_KILLEEN_SA10_FDH03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000FcO6OYAV,TX1310-003000091A,AreaId__c,TX_KILLEEN_SA10_FDH02,TX_KILLEEN_SA10_FDH03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000FcO6rYAF,TX1310-003000140A,AreaId__c,TX_KILLEEN_SA10_FDH02,TX_KILLEEN_SA10_FDH03,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000FcO0uYAF,TX1202-011000177A,AreaId__c,TX_JARRELL_SA02_FDH11,TX_JARRELL_SA02_FDH10,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOdYAM,TX1601-FB01000056A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOeYAM,TX1601-FB01000057A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOfYAM,TX1601-FB01000058A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOgYAM,TX1601-FB01000059A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOhYAM,TX1601-FB01000060A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOiYAM,TX1601-FB01000061A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOjYAM,TX1601-FB01000062A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOkYAM,TX1601-FB01000063A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOlYAM,TX1601-FB01000064A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOmYAM,TX1601-FB01000065A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOnYAM,TX1601-FB01000066A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOoYAM,TX1601-FB01000067A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOpYAM,TX1601-FB01000068A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOqYAM,TX1601-FB01000069A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOrYAM,TX1601-FB01000070A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOsYAM,TX1601-FB01000071A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOtYAM,TX1601-FB01000072A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOuYAM,TX1601-FB01000073A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOvYAM,TX1601-FB01000074A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOwYAM,TX1601-FB01000075A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOxYAM,TX1601-FB01000076A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOyYAM,TX1601-FB01000077A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIOzYAM,TX1601-FB01000078A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIP0YAM,TX1601-FB01000079A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIP1YAM,TX1601-FB01000080A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIP2YAM,TX1601-FB01000081A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIP3YAM,TX1601-FB01000082A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amIP4YAM,TX1601-FB01000083A,AreaId__c,TX_NOLANVILLE_SA01_FDH06,TX_NOLANVILLE_SA01_FB01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,UPDATE,from Vetro sync
+a02WR00000amKssYAE,NE0112-026020011A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsyYAE,NE0112-026040016A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKt0YAE,NE0112-026060018A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKslYAE,NE0112-026270066A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsnYAE,NE0112-026410094A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsuYAE,NE0112-026000104A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKswYAE,NE0112-026470105A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsmYAE,NE0112-026540131A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsoYAE,NE0112-026570135A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKspYAE,NE0112-026580136A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsqYAE,NE0112-026820182A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsvYAE,NE0112-026990212A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsxYAE,NE0112-026020215A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKszYAE,NE0112-026030216A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,agreement:NE_OMAHA_SA12_FDH26_PA05,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKsrYAE,NE0112-026110240A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amKstYAE,NE0112-026120241A,Property_Location__c,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,agreement:NE_OMAHA_SA12_FDH26_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amOIsYAM,NA,Property_Location__c,KILLEEN_MDU_PALOMA GARDENS,agreement:LOS ANGELES_MDU_LADERA TOWNHOUSE,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmhYAE,TX1310-014000166A,Property_Location__c,TX_KILLEEN_SA10_FDH14_PA01,agreement:TX_KILLEEN_SA10_FDH14_PA1,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmrYAE,TX1310-002440236A,Property_Location__c,TX_KILLEEN_SA10_FDH02_PA02,agreement:KILLEEN_MDU_117 & 121 W AVENUE A,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7PYAU,TX1310-006260155A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7MYAU,TX1310-006420171A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7OYAU,TX1310-006430172A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7LYAU,TX1310-006460175A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7JYAU,TX1310-006660195A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7NYAU,TX1310-006670196A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI9hYAE,TX1310-013000081A,Property_Location__c,TX_KILLEEN_SA10_FDH13_PA04,agreement:TX_KILLEEN_SA10_FDH13_PA4,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7IYAU,TX1310-006760205A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amI7KYAU,TX1310-006040233A,Property_Location__c,KILLEEN_MDU_1902-1924 N 2ND ST,agreement:KILLEEN_MDU_192-1924 N 2ND ST,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmsYAE,AZ0102-013000001A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmzYAE,AZ0102-013000006A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHn3YAE,AZ0102-013000092A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmyYAE,AZ0102-013000094A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmtYAE,AZ0102-013000101A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmwYAE,AZ0102-013000112A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHn0YAE,AZ0102-013000117A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmxYAE,AZ0102-013000122A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHn5YAE,AZ0102-013000148A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHn4YAE,AZ0102-013000184A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHn2YAE,AZ0102-013000196A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmvYAE,AZ0102-013000228A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHn1YAE,AZ0102-013000241A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amHmuYAE,AZ0102-013000246A,Property_Location__c,AZ_MESA_SA02_FDH13_PA01,agreement:AZ_MESA_SA02_FDH13_MEDINACOURT,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOdYAM,TX1601-FB01000056A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOeYAM,TX1601-FB01000057A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOfYAM,TX1601-FB01000058A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOgYAM,TX1601-FB01000059A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOhYAM,TX1601-FB01000060A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOiYAM,TX1601-FB01000061A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOjYAM,TX1601-FB01000062A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOkYAM,TX1601-FB01000063A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOlYAM,TX1601-FB01000064A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOmYAM,TX1601-FB01000065A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOnYAM,TX1601-FB01000066A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOoYAM,TX1601-FB01000067A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOpYAM,TX1601-FB01000068A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOqYAM,TX1601-FB01000069A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOrYAM,TX1601-FB01000070A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOsYAM,TX1601-FB01000071A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOtYAM,TX1601-FB01000072A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOuYAM,TX1601-FB01000073A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOvYAM,TX1601-FB01000074A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOwYAM,TX1601-FB01000075A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOxYAM,TX1601-FB01000076A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOyYAM,TX1601-FB01000077A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIOzYAM,TX1601-FB01000078A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIP0YAM,TX1601-FB01000079A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIP1YAM,TX1601-FB01000080A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIP2YAM,TX1601-FB01000081A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIP3YAM,TX1601-FB01000082A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a02WR00000amIP4YAM,TX1601-FB01000083A,Property_Location__c,TX_NOLANVILLE_SA01_FDH06_PA01,agreement:TX_NOLANVILLE_SA01_FB01_PA01,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,REPARENT,from Vetro sync (BBA/AgreeName cleanup)
+a01WR00001Lmr8kYAB,TX_KILLEEN_SA10_FDH14_PA01,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001Lmr8oYAB,TX_KILLEEN_SA10_FDH02_PA02,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001Lmr8pYAB,AZ_MESA_SA02_FDH13_PA01,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001Lmr9AYAR,Killeen_MDU_1902-1924 N 2nd St,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001Lmr9GYAR,TX_KILLEEN_SA10_FDH13_PA04,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001LnrmrYAB,NE_OMAHA_SA12_FDH26_MDU_4801 UNDERWOOD MFM LLC,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001LnrmsYAB,NE_OMAHA_SA12_FDH26_MDU_PARKER8 LLC,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."
+a01WR00001O8BRNYA3,TX_NOLANVILLE_SA01_FDH06_PA01,Import_Delete_Property__c,False,True,sync_vetro_to_salesforce.py,2026-05-22T15:22:18,FLAG_STALE,"Not in Vetro (serviceable, FDH-activated) as of 5/22/2026. Flagged for review."

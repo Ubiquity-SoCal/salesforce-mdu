@@ -1,0 +1,943 @@
+Id,Name,Prospective_ISP__c,Prospective_ISPs__c,Confirmed_ISP__c,Confirmed_ISPs__c
+006WR00000wiNnYYAU,Talavera,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnZYAU,Grandes Cortes Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnaYAE,Garden Grove,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnbYAE,Rancho Las Palmas,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNncYAE,University Valley Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNndYAE,The Lennox @ Tempe,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNneYAE,Tempe Park Place,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnfYAE,Chesapeake,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNngYAE,Apache Terrace Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnhYAE,Avana Tempe,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNniYAE,La Estancia,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnjYAE,Highland Park (Tempe),Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnkYAE,Omnia Baseline,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnlYAE,San Palmilla,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnmYAE,The Halston,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnnYAE,Villa Real,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNnzYAE,909 West Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo0YAE,CityScape at Lakeshore Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo1YAE,Finisterra,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo2YAE,Emerson Square,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo3YAE,Tamarak Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo4YAE,Tremezzo on the Lake,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo7YAE,Tempe Vista,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo8YAE,IMT Chandler,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNo9YAE,Eastridge Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNoHYAU,Tides at Parkview,Lumen,Lumen / Quantum Fiber,,
+006WR00000wiNoTYAU,Charleston Gardens,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoUYAU,Finn Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoVYAU,Haven at Lone Mountain Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoWYAU,Lumina on 19th Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoXYAU,Olive Queen Creek,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoYYAU,Casa Santa Fe,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNocYAE,Jones13,FiberFirst,FiberFirst,,
+006WR00000wiNodYAE,Paisley & Pointe at Centennial Hills,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoeYAE,Country Oaks Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNofYAE,Woodridge Villas,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNogYAE,Senator Richard Bryon Senior Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNohYAE,Noel Crest Condos HOA,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNoiYAE,Lattitude,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNojYAE,Elysian at Post,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNolYAE,Talisman Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNomYAE,Fiesta Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNorYAE,Jerome Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNosYAE,Sandstone Apartments,FiberFirst,FiberFirst,,
+006WR00000wiNotYAE,Lyn Terrace Apartments _Lumen Fl_Marvin,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNouYAE,Lakeside Heights,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wiNp3YAE,Cimarron Apartments LV,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wj8JxYAI,Tuscan Isle,Lumen,Lumen / Quantum Fiber,,
+006WR00000wj8K1YAI,Westchase Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wj8KXYAY,Residences at Sorensen Square,FiberFirst,FiberFirst,,
+006WR00000wj8KcYAI,Camelot Village,Lumen,Lumen / Quantum Fiber,,
+006WR00000wj8KwYAI,Willow Ridge Townhomes,FiberFirst,FiberFirst,,
+006WR00000wjKFoYAM,Versante Apartment Homes,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjKFyYAM,Aura 36Hundred,FiberFirst,FiberFirst,,
+006WR00000wjKGNYA2,Western Oaks Apartments,FiberFirst,FiberFirst,,
+006WR00000wjKGPYA2,Reynolds Crossing,FiberFirst,FiberFirst,,
+006WR00000wjdkLYAQ,Westridge Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjdkRYAQ,Rembrandt Park Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlHYAQ,Four Mile Village Condominium Association,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlIYAQ,Pearl Studios,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlOYAQ,Chaska Place Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlPYAQ,Seven Palms,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlQYAQ,Marina South at Cape Harbor,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlRYAQ,Lodges at Deer Valley,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlSYAQ,Dolce Vita,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlTYAQ,Heather Brook Apartments,FiberFirst,FiberFirst,,
+006WR00000wjnlUYAQ,The Upland,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlVYAQ,MAA Copper Ridge,FiberFirst,FiberFirst,,
+006WR00000wjnlWYAQ,MAA Watermark,FiberFirst,FiberFirst,,
+006WR00000wjnlXYAQ,MAA Boulder Ridge,FiberFirst,FiberFirst,,
+006WR00000wjnlYYAQ,Wintercove Park,FiberFirst,FiberFirst,,
+006WR00000wjnlcYAA,Dayton Commons,FiberFirst,FiberFirst,,
+006WR00000wjnleYAA,Salem Village at Miami Heights,FiberFirst,FiberFirst,,
+006WR00000wjnlfYAA,"Cardinal Farms Subdivision, Phase 1",FiberFirst,FiberFirst,,
+006WR00000wjnlgYAA,Catalina Ridge,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnliYAA,The Highlands at Brentwood,FiberFirst,FiberFirst,,
+006WR00000wjnlkYAA,Seventeen 805,Lumen,Lumen / Quantum Fiber,,
+006WR00000wjnlmYAA,Gold Run Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlnYAA,Country View Garden Homes,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnloYAA,Outrigger Village,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlpYAA,Bella Vista LOST,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlqYAA,Cedar Park Apartments [WA],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlrYAA,Oak Haven RV,FiberFirst,FiberFirst,,
+006WR00000wjnluYAA,Parkside Townhomes,FiberFirst,FiberFirst,,
+006WR00000wjnlwYAA,The Ridge Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlxYAA,Montana Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlyYAA,Vintage Hill Coop of Prairie Trail,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnlzYAA,Perrine Court Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm0YAA,O'Malley Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm1YAA,Graymayre Crossing [LOST],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm2YAA,Park Capitol Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm3YAA,Winchester Court,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm4YAA,Loggerhead Cay,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm5YAA,Lincoln Village,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm8YAA,Destinations Alexander,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnm9YAA,Rosewood Club,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmAYAQ,The Cornelius,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmBYAQ,Habitat Apartments [LOST],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmEYAQ,Horizon Senior Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmFYAQ,Crescent Ridge Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmGYAQ,Colonial Square,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmIYAQ,The Port Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmJYAQ,Moda Shoreline,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjnmKYAQ,University Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wjqCfYAI,Park View Terrace,FiberFirst,FiberFirst,,
+006WR00000wk1EEYAY,Henderson Terrace Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EFYAY,Affordable Storage,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EGYAY,Monaghan Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EHYAY,Boyd South Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EIYAY,Eagle Ridge Terrace Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EJYAY,Aspen Ridge,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EKYAY,Overlook 380,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1ELYAY,Arcos De Mesa,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EMYAY,Hunters Pointe (Mesa),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1ENYAY,Valencia Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EOYAY,Midwest Patio Home Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EPYAY,Big Sky Patio Home Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EQYAY,Hitt Road Patio Home Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1ERYAY,Indian Hills Terrace,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1ESYAY,Willow Creek,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1ETYAY,Centennial Patio Home Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EUYAY,Parkway Plaza,AT&T,AT&T,AT&T,AT&T
+006WR00000wk1EVYAY,The Reserve,AT&T,AT&T,AT&T,AT&T
+006WR00000wk1EWYAY,Ladera Townhouse,AT&T,AT&T,AT&T,AT&T
+006WR00000wk1EXYAY,Crestview Place Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EYYAY,Cielo Apartments,AT&T,AT&T,AT&T,AT&T
+006WR00000wk1EZYAY,The Overlook at Thornton,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EaYAI,Southgate Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EbYAI,Valley View Estates,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EcYAI,Terrace Heights Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EdYAI,Cougar Creek Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EeYAI,The Sterling Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EfYAI,Navajo Hills,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EgYAI,Sun Valley Ranch Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EhYAI,Tallgrass Village,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EiYAI,Yavapai Hills Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EjYAI,The Renaissance at Stoney Creek,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EkYAI,Cielo on 5th (f/k/a Equinox on 5th),Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1ElYAI,The Bluffs of Brookside,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EmYAI,Bay Colony Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EnYAI,Hallcraft Villas Mesa 1,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EoYAI,Villa Pacifica Apartments - Tucson,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1EpYAI,Linea Stillwater,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1EsYAI,Arco and Pilare,FiberFirst,FiberFirst,,
+006WR00000wk1EtYAI,Shores At McIntosh Lake,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk1F3YAI,Aventerra at Dobson Ranch Apts,FiberFirst,FiberFirst,,
+006WR00000wk1FAYAY,The Palms at Mesa,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk1FBYAY,Now Called (The Clifford) Tides on Country Club,FiberFirst,FiberFirst,,
+006WR00000wk1FCYAY,Residences on First,,,Lumen,Lumen / Quantum Fiber
+006WR00000wk3O9YAI,Icon Apartments,FiberFirst,FiberFirst,,
+006WR00000wk3OhYAI,Westwood Townhomes,FiberFirst,FiberFirst,,
+006WR00000wk3OiYAI,Skyline Park,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk3OnYAI,Indigo Lofts,"FiberFirst, Ting",FiberFirst;Ting,,
+006WR00000wk3OtYAI,Windhaven III,,,FiberFirst,FiberFirst
+006WR00000wk3P7YAI,Live Oak Apartment Homes,FiberFirst,FiberFirst,,
+006WR00000wk3P9YAI,The Hudson at Killeen,FiberFirst,FiberFirst,,
+006WR00000wk3PAYAY,The Stella,FiberFirst,FiberFirst,,
+006WR00000wk3PBYAY,Independence Place,FiberFirst,FiberFirst,,
+006WR00000wk3PCYAY,Silverway Apartments,FiberFirst,FiberFirst,,
+006WR00000wk3PGYAY,Village Creek Townhomes,FiberFirst,FiberFirst,,
+006WR00000wk3PHYAY,Rio Apartments,FiberFirst,FiberFirst,,
+006WR00000wk3PJYAY,Pecan Branch,FiberFirst,FiberFirst,,
+006WR00000wk3PLYAY,Clay Gardens Apartments,AT&T,AT&T,,
+006WR00000wk3PMYAY,Laguna Knolls Apartments,AT&T,AT&T,,
+006WR00000wk3PNYAY,Park West Townhouses,AT&T,AT&T,,
+006WR00000wk3POYAY,Lachen Tara Apartments,AT&T,AT&T,,
+006WR00000wk3PPYAY,Villas at Higuera,AT&T,AT&T,,
+006WR00000wk3PQYAY,Quail Ridge Apartments,AT&T,AT&T,,
+006WR00000wk3PRYAY,Birchwood,AT&T,AT&T,,
+006WR00000wk3PSYAY,Hidden Oaks,AT&T,AT&T,,
+006WR00000wk3PTYAY,Cloverdale Garden,AT&T,AT&T,,
+006WR00000wk3PUYAY,Corning Apts,AT&T,AT&T,,
+006WR00000wk3PVYAY,Maywood Apartments,AT&T,AT&T,,
+006WR00000wk3PWYAY,Bardsley Garden,AT&T,AT&T,,
+006WR00000wk3PXYAY,Willows Apartments,AT&T,AT&T,,
+006WR00000wk3PYYAY,Marisol Apartments,AT&T,AT&T,,
+006WR00000wk3PZYAY,Shoreline Apartments,AT&T,AT&T,,
+006WR00000wk3PaYAI,Three Crown Apartments,AT&T,AT&T,,
+006WR00000wk3PbYAI,Pinecrest Apartments,AT&T,AT&T,,
+006WR00000wk3PcYAI,D Street Apartments,AT&T,AT&T,,
+006WR00000wk3PdYAI,Redwood Highway Apartments,AT&T,AT&T,,
+006WR00000wk3PeYAI,La Brea Apartments,AT&T,AT&T,,
+006WR00000wk3PfYAI,College Park,AT&T,AT&T,,
+006WR00000wk3PgYAI,The Ridge,AT&T,AT&T,,
+006WR00000wk9RtYAI,117 and 121 E Avenue A Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9RuYAI,Town East,FiberFirst,FiberFirst,,
+006WR00000wk9RvYAI,120 Sunset Dr,"FiberFirst, Ting",FiberFirst;Ting,,
+006WR00000wk9RwYAI,424 Avenida Granada,"FiberFirst, Ting",FiberFirst;Ting,,
+006WR00000wk9RxYAI,Hazel Park,FiberFirst,FiberFirst,,
+006WR00000wk9RyYAI,Rivers Edge,FiberFirst,FiberFirst,,
+006WR00000wk9RzYAI,Chateau Apartments,Atlas,Atlas,,
+006WR00000wk9S0YAI,Kirshenbaum Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9S3YAI,Woodglen Square l,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9S4YAI,Skyview Townhomes,FiberFirst,FiberFirst,,
+006WR00000wk9S5YAI,Temple Square Apts,FiberFirst,FiberFirst,,
+006WR00000wk9S6YAI,Hidden Valley Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9S7YAI,Park Village West,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9S8YAI,Capitol Ave Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9S9YAI,Davenport Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9SAYAY,Artistry on 10th,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SBYAY,Enclave Villas Condominiums,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9SCYAY,Cabrillo Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SDYAY,Meadow Glen Mobile Home Park,FiberFirst,FiberFirst,,
+006WR00000wk9SEYAY,La Mesa Village Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SFYAY,Sun View,FiberFirst,FiberFirst,,
+006WR00000wk9SGYAY,Taschner Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SHYAY,Atria Villa Apartments,Atlas,Atlas,,
+006WR00000wk9SKYAY,Bayshore at Agua Hedionda,Ting,Ting,,
+006WR00000wk9SLYAY,Sierra G Ranch,FiberFirst,FiberFirst,,
+006WR00000wk9SMYAY,Wolf Lodge Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SNYAY,Equinox on Columbus,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SOYAY,Plumwood Terrace HOA,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SPYAY,Timberland at Crestbruck Park 1_Lumen IA_Bryce,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SQYAY,Timberland at Crestbruck Park 2_Lumen IA_Bryce,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SRYAY,Ashley Square _Lumen IA_Bryce,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SSYAY,Waters Haven Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9STYAY,Stone Ranch,FiberFirst,FiberFirst,,
+006WR00000wk9SUYAY,Kachina Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SVYAY,Cottonwood Crossings,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SWYAY,Sterling Point,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SXYAY,Prospector's Point,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SYYAY,Garden Place Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SZYAY,Falcon Glen Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SaYAI,Dundee Court,FiberFirst,FiberFirst,,
+006WR00000wk9SbYAI,Benson Gardens Blvd,FiberFirst,FiberFirst,,
+006WR00000wk9ScYAI,Cass Street Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SdYAI,The Laredo Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SeYAI,Ave at Johnston Commons,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SfYAI,Georgetown Square Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9SgYAI,Fisher's Mill,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9ShYAI,Centennial Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SiYAI,Millennium Park Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SjYAI,Chalet Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9SkYAI,Chalet Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SlYAI,Mariposa Apartment Homes at River Bend,FiberFirst,FiberFirst,,
+006WR00000wk9SmYAI,Golden Vista RV Resort,FiberFirst,FiberFirst,,
+006WR00000wk9SnYAI,Seascape Sur,FiberFirst,FiberFirst,,
+006WR00000wk9SoYAI,Stone Hill,FiberFirst,FiberFirst,,
+006WR00000wk9SpYAI,Carmel Creekside,FiberFirst,FiberFirst,,
+006WR00000wk9SrYAI,Cottonwood Apartments East,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9SsYAI,Sandpiper Pointe,Ting,Ting,,
+006WR00000wk9StYAI,Summer Park _ FF Freddy,FiberFirst,FiberFirst,,
+006WR00000wk9SuYAI,Riverside Villas,FiberFirst,FiberFirst,,
+006WR00000wk9SwYAI,Spindrift Del Mar HOA,FiberFirst,FiberFirst,,
+006WR00000wk9SxYAI,Cottonwood Apartments West,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wk9SyYAI,Redwood Linden Oaks One,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9SzYAI,Redwood Linden Oaks Two,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9T0YAI,Redwood Havenwood One,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9T1YAI,Redwood Havenwood Two,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9T2YAI,Cicada Springs RV Park,FiberFirst,FiberFirst,,
+006WR00000wk9T3YAI,Mcqueen Landing HOA,FiberFirst,FiberFirst,,
+006WR00000wk9T5YAI,Park Place Village Condominium,FiberFirst,FiberFirst,,
+006WR00000wk9T6YAI,Terrace Villa_Morris RE,FiberFirst,FiberFirst,,
+006WR00000wk9T7YAI,Village West Apartments_Morris RE,FiberFirst,FiberFirst,,
+006WR00000wk9T8YAI,Quail Hollow Apts_Morris RE,FiberFirst,FiberFirst,,
+006WR00000wk9T9YAI,Killeen_MDU_512 W Green Ave_Morris RE,FiberFirst,FiberFirst,,
+006WR00000wk9TAYAY,Arcadia Lofts,Lumen,Lumen / Quantum Fiber,CenturyLink,CenturyLink
+006WR00000wk9TBYAY,San Clemente,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9TCYAY,San Angelin,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9TDYAY,Waters Edge Apartment Homes,FiberFirst,FiberFirst,,
+006WR00000wk9TEYAY,The Summit Lofts,FiberFirst,FiberFirst,,
+006WR00000wk9TtYAI,Radius Wolf Ranch,FiberFirst,FiberFirst,,
+006WR00000wk9TvYAI,Dobson Glen,FiberFirst,FiberFirst,,
+006WR00000wk9TwYAI,Dobson Villas,FiberFirst,FiberFirst,,
+006WR00000wk9TxYAI,La Jolla Cove Condos,FiberFirst,FiberFirst,,
+006WR00000wk9TzYAI,"Skyview Mesa Unit Two Homeowners Association, Mesa AZ",FiberFirst,FiberFirst,,
+006WR00000wk9UBYAY,Continental Townhomes,FiberFirst,FiberFirst,,
+006WR00000wk9UCYAY,Sycamore Square,FiberFirst,FiberFirst,,
+006WR00000wk9UHYAY,Pebble Creek Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9UJYAY,Ovation at Tempe,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UKYAY,Hacienda de Valencia,FiberFirst,FiberFirst,,
+006WR00000wk9ULYAY,Cottages of Edina,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UMYAY,Boardwalk Caper,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UNYAY,Enclave at Arrowhead Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UOYAY,The Orchard on Gilbert,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9UPYAY,Marabrisa Condominiums,FiberFirst,FiberFirst,,
+006WR00000wk9USYAY,Ponderosa Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UTYAY,Stonebridge at Paradise Valley,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UUYAY,Park Village Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9UVYAY,Sky at P83,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UWYAY,The Enclave at Paradise Valley,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UXYAY,Scott Mountain By the Brook Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UYYAY,Jarrell RV Park,FiberFirst,FiberFirst,,
+006WR00000wk9UbYAI,The Meadows MHP,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UcYAI,Legacy Trails Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UdYAI,The Palms at South Mountain,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UgYAI,Firenze Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UhYAI,Villas of La Costa,Ting,Ting,,
+006WR00000wk9UjYAI,Casitas La Costa,Ting,Ting,,
+006WR00000wk9UlYAI,Tooele Gateway,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wk9UxYAI,La Mirage Apartments (Tempe),Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9UyYAI,Nines at Lakeside,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9UzYAI,Mira Santi,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V0YAI,Carino Villas Condominiums,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V1YAI,Villagio Apartment Homes,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V2YAI,505 West Apartment Homes,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V3YAI,Sentry Tempe,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V4YAI,Rise at the Retreat,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V5YAI,Lakeview at the Bay,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9V6YAI,Sono Tempe (Prev Tides at S Tempe),Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9YvYAI,The Oaks Gracious Retirement Living,FiberFirst,FiberFirst,,
+006WR00000wk9YwYAI,San Gabriel Senior Village Apartments,FiberFirst,FiberFirst,,
+006WR00000wk9YxYAI,Fort Hood Family Housing,FiberFirst,FiberFirst,,
+006WR00000wk9YyYAI,Oak Creek & Cedar Knob Mobile Home Park,FiberFirst,FiberFirst,,
+006WR00000wk9YzYAI,Northcliffe Duplexes,FiberFirst,FiberFirst,,
+006WR00000wk9Z5YAI,The Summit Brownstones,FiberFirst,FiberFirst,,
+006WR00000wk9Z6YAI,Stillhouse Flats,FiberFirst,FiberFirst,,
+006WR00000wk9ZAYAY,Allegro Apartment Homes,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZBYAY,Altamont Summit,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZCYAY,Alturas at Bell Tower,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZDYAY,Avalon Meydenbauer,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZEYAY,Avalon Towers,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZFYAY,Avondale Housing Development,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZGYAY,Azure Creek,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZHYAY,Ballard on the Park,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZIYAY,Beau Rivage,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZJYAY,Bellaire Ranch,Lumen,Lumen / Quantum Fiber,,
+006WR00000wk9ZnYAI,Orchard Mesa,FiberFirst,FiberFirst,,
+006WR00000wkA6KYAU,Bella Vista Senior Living Community,FiberFirst,FiberFirst,,
+006WR00000wkA6wYAE,San Gabriel Apartments,FiberFirst,FiberFirst,,
+006WR00000wkA6xYAE,Kensington Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,FiberFirst,FiberFirst,,
+006WR00000wkA7BYAU,Town & Country Mobile Homes,FiberFirst,FiberFirst,,
+006WR00000wkA7CYAU,Aurora Meadows Apartments (Lumen CO),Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7EYAU,Ivy Crossing Apartment Homes (Lumen CO),Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7IYAU,Sawgrass Links Townhomes_Lumen IA_Bryce,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7JYAU,Noahs Landing (Lumen FL_Starwood),Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7KYAU,Whistler's Cove Apartments (Lumen FL_Starwood),Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7NYAU,Buena Vista Point Apartments (Lumen FL_Starwood),Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7SYAU,Vineyards at Trophy Club,FiberFirst,FiberFirst,,
+006WR00000wkA7nYAE,German Oaks,AT&T,AT&T,,
+006WR00000wkA7rYAE,Chateau Gardens Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA7xYAE,Missouri Meadows Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA83YAE,Cactus Gardens,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA8AYAU,The Grove at Hickman,FiberFirst,FiberFirst,,
+006WR00000wkA8GYAU,Dahcotah View (copy) (copy),Lumen,Lumen / Quantum Fiber,,
+006WR00000wkA8SYAU,Horne Patio Homes,FiberFirst,FiberFirst,,
+006WR00000wkA8WYAU,Olive Tree Vistas,,,FiberFirst,FiberFirst
+006WR00000wkA8zYAE,6314 Boyd Street,FiberFirst,FiberFirst,,
+006WR00000wkA90YAE,Villa Del Rey _ FF Freddy,FiberFirst,FiberFirst,,
+006WR00000wkA92YAE,The Springs at 1100,FiberFirst,FiberFirst,,
+006WR00000wkA94YAE,Cortland Riverside Apartments,FiberFirst,FiberFirst,,
+006WR00000wkA9BYAU,Cedar Ridge Apartments,FiberFirst,FiberFirst,,
+006WR00000wkA9CYAU,Brookside,FiberFirst,FiberFirst,,
+006WR00000wkA9HYAU,Cypress View Villas,FiberFirst,FiberFirst,,
+006WR00000wkA9LYAU,Stepping Stone Apartments,FiberFirst,FiberFirst,,
+006WR00000wkA9MYAU,Grace Place Apartments,FiberFirst,FiberFirst,,
+006WR00000wkAB3YAM,Persimmon Terrace Apartments,AT&T,AT&T,,
+006WR00000wkAB4YAM,Vista Torre,AT&T,AT&T,,
+006WR00000wkAB5YAM,Oakwood,AT&T,AT&T,,
+006WR00000wkAB6YAM,Tuscana Townhomes,AT&T,AT&T,,
+006WR00000wkAB7YAM,Moonlight,AT&T,AT&T,,
+006WR00000wkAB8YAM,Porvenir Estates II,AT&T,AT&T,,
+006WR00000wkAB9YAM,Porvenir Estates I,AT&T,AT&T,,
+006WR00000wkABAYA2,Huron Plaza,AT&T,AT&T,,
+006WR00000wkABBYA2,Niland,AT&T,AT&T,,
+006WR00000wkABCYA2,Placer West,AT&T,AT&T,,
+006WR00000wkABDYA2,The Shadows Garden Apts,AT&T,AT&T,,
+006WR00000wkABEYA2,Harvard,AT&T,AT&T,,
+006WR00000wkABFYA2,12th & D Apartments,AT&T,AT&T,,
+006WR00000wkABGYA2,Creekside Colony Apartments,AT&T,AT&T,,
+006WR00000wkABHYA2,Park on Riley,AT&T,AT&T,,
+006WR00000wkABIYA2,Sierra Oaks Apartments,AT&T,AT&T,,
+006WR00000wkABJYA2,Walnut Hill Apartments,AT&T,AT&T,,
+006WR00000wkABKYA2,Katy Creek,AT&T,AT&T,,
+006WR00000wkABLYA2,Breckenridge Apartments,AT&T,AT&T,,
+006WR00000wkABMYA2,Crestmoor Park South,AT&T,AT&T,,
+006WR00000wkABNYA2,Crestmoor Park West,AT&T,AT&T,,
+006WR00000wkABOYA2,Comanche Retirement Village,AT&T,AT&T,,
+006WR00000wkABPYA2,Dekalb Apartments,AT&T,AT&T,,
+006WR00000wkABQYA2,Colony Park Apartments,AT&T,AT&T,,
+006WR00000wkABRYA2,Camelot Square Apartments,AT&T,AT&T,,
+006WR00000wkABSYA2,Somervell Apartments,AT&T,AT&T,,
+006WR00000wkABTYA2,Glen Rose Apartments,AT&T,AT&T,,
+006WR00000wkABUYA2,Emerald RV,AT&T,AT&T,,
+006WR00000wkABVYA2,Allen's Point Apartments,AT&T,AT&T,,
+006WR00000wkABWYA2,Hillside Apartments,AT&T,AT&T,,
+006WR00000wkABXYA2,Kaufman Retirement Village (fka Cedar Ridge),AT&T,AT&T,,
+006WR00000wkABYYA2,Commonwealth I,AT&T,AT&T,,
+006WR00000wkABZYA2,Regal Apartments,AT&T,AT&T,,
+006WR00000wkABaYAM,Waterwood Apartments,AT&T,AT&T,,
+006WR00000wkABcYAM,Whitney Place Apartments,AT&T,AT&T,,
+006WR00000wkABdYAM,Whitney Retirement Village,AT&T,AT&T,,
+006WR00000wkABeYAM,Azlewood,,,Frontier,Frontier
+006WR00000wkABfYAM,Ingersoll Square Phase I/II,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABgYAM,Ingersoll Square Phase III,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABhYAM,Northpointe Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABiYAM,Bexley Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABkYAM,Black Rock Ridge Townhomes,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABlYAM,Canyon Ranch Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABmYAM,Kings Court Apartments [M street],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkABnYAM,2121 Belmont,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAUqYAM,Clyburn At Stapleton,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAVuYAM,Riverwood Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkAVyYAM,Pembrooke Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkAW1YAM,Maple Pointe Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkAjtYAE,Camino Colony,FiberFirst,FiberFirst,,
+006WR00000wkAkAYAU,Estates at Park Central,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkAkHYAU,Adiamo Palm Valley,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAkQYAU,Villeta Apartments,FiberFirst,FiberFirst,,
+006WR00000wkAr0YAE,Village Green,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAr1YAE,Rockcliffe Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAr2YAE,Midland Heights,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAr5YAE,Pinewood Estates,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAr6YAE,Mountain Run Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAr7YAE,Windsong Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAr8YAE,Ascent Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArAYAU,Milo at Mountain Park,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArBYAU,Lamplighter Estates,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArCYAU,Maddox Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArDYAU,Harbor Steps [LOST],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArEYAU,River Walk Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArFYAU,River10 Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArHYAU,Rya Suites,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArIYAU,Westchester Square,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArJYAU,Riverview Highlands,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArKYAU,Lawrence Lofts,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArMYAU,Madison Crossing,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArNYAU,The Vue at Spring Creek,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArOYAU,Shannon South AVE5,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArPYAU,Phillipi Plaza,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArQYAU,Burnsville Parkway Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArRYAU,Hamline Pointe [LOST],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArSYAU,Peppermill Lofts,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArTYAU,Reserve at Metolius [LOST],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArUYAU,Maple Park,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArWYAU,Woodland West,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArXYAU,Cascade Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArYYAU,Colonial Village,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArZYAU,Brookside Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAraYAE,Jefferson West,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArbYAE,Greenhouse Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArcYAE,Audenn Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArdYAE,Shoreview Grand Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAreYAE,Saddlebrook Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArfYAE,Jasper Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArgYAE,Arioso Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAriYAE,High Pointe,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArkYAE,Pines at Marston Lake,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArlYAE,Ingersoll Towers,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArmYAE,Plaza Manor,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArnYAE,Mansions at Jordan Creek,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAroYAE,Crescent Chase,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArpYAE,Sugar Pine,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArqYAE,Alterra Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArrYAE,Astoria Senior Living,FiberFirst,FiberFirst,,
+006WR00000wkArsYAE,Castlebrook Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArtYAE,Bridlewood Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAruYAE,The Village at Westchester,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArvYAE,Sherwood Glen,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArxYAE,The Towers Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAryYAE,Verve,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkArzYAE,Wellington Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs0YAE,Deer Creek,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs1YAE,Selway Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs2YAE,Washington Manor,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs3YAE,Tropicana Villas,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs5YAE,Seattle Heights,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs7YAE,Canterbury at Riverwalk,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAs8YAE,CW Moore Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAsAYAU,Bellaire Ranch Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkAsCYAU,Alcove at the Islands,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkBTmYAM,Azle Oaks Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBToYAM,Orchard Park Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBTuYAM,Indian Hills Village Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBTzYAM,Luma Lane Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBUDYA2,Chisholm Trail Senior Village,FiberFirst,FiberFirst,,
+006WR00000wkBVGYA2,Clear Creek Meadows,FiberFirst,FiberFirst,,
+006WR00000wkBVHYA2,Belle Oaks Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBn5YAE,Autumn Chase Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBn6YAE,Centerpoint Landing,FiberFirst,FiberFirst,,
+006WR00000wkBonYAE,Aspenwood,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkBp2YAE,College Park Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBp3YAE,Chase Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBp4YAE,Avocado Court,FiberFirst,FiberFirst,,
+006WR00000wkBp5YAE,Cedar Nettleton Apartments,"FiberFirst, AT&T",AT&T;FiberFirst,,
+006WR00000wkBpAYAU,Oakview Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBpBYAU,Midtown Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBpKYAU,Oak Ridge,FiberFirst,FiberFirst,,
+006WR00000wkBpLYAU,Pecan Pointe Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBpMYAU,Wildflower VIllas,FiberFirst,FiberFirst,,
+006WR00000wkBpNYAU,Exchange Sunshine Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBpOYAU,West Avenue F Apartments,FiberFirst,FiberFirst,,
+006WR00000wkBpPYAU,The Kyle,FiberFirst,FiberFirst,,
+006WR00000wkBpQYAU,Hunnington Townhomes,FiberFirst,FiberFirst,,
+006WR00000wkBpTYAU,MAA Willow Creek,FiberFirst,FiberFirst,,
+006WR00000wkBpUYAU,MAA Shoal Creek,FiberFirst,FiberFirst,,
+006WR00000wkBpVYAU,MAA Windmill Hill,FiberFirst,FiberFirst,,
+006WR00000wkBpWYAU,Station 42,FiberFirst,FiberFirst,,
+006WR00000wkC6lYAE,Robin Hill,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkC6sYAE,Sandshell At Fossil Creek,FiberFirst,FiberFirst,,
+006WR00000wkC6tYAE,Madison Apartments,FiberFirst,FiberFirst,,
+006WR00000wkC6uYAE,Oak Knoll Villas,FiberFirst,FiberFirst,,
+006WR00000wkC6vYAE,Park View Terrace,FiberFirst,FiberFirst,,
+006WR00000wkC6wYAE,The Avenue at Carlsbad,FiberFirst,FiberFirst,,
+006WR00000wkC6xYAE,Terra Pointe Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkC6yYAE,Fellowship Square Historic Mesa,"FiberFirst, Ting",FiberFirst;Ting,,
+006WR00000wkC71YAE,Horizon House [LOST],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkC77YAE,Tomball Square Apartments,FiberFirst,FiberFirst,,
+006WR00000wkC78YAE,Mezzo Condominiums,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkC79YAE,Benchmark,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkC7AYAU,Aviva Mesa,,,"FiberFirst, Ting",FiberFirst;Ting
+006WR00000wkC7LYAU,Dana Park Apartments,,,"FiberFirst, Ting",FiberFirst;Ting
+006WR00000wkC7NYAU,1245 W Baseline Rd,FiberFirst,FiberFirst,,
+006WR00000wkC7OYAU,Pacific Villas,"FiberFirst, Ting",FiberFirst;Ting,,
+006WR00000wkC7PYAU,Waterworks Condos,FiberFirst,FiberFirst,,
+006WR00000wkC7QYAU,Marlborough Mesa Villas,FiberFirst,FiberFirst,,
+006WR00000wkC7VYAU,The PLace at El Prado,FiberFirst,FiberFirst,,
+006WR00000wkC7WYAU,Westmount at Urban Trails,FiberFirst,FiberFirst,,
+006WR00000wkC7XYAU,Villas Mesa 2,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkC7YYAU,Westmount at The District Apartments,FiberFirst,FiberFirst,,
+006WR00000wkC7ZYAU,The Carondelet,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkC7aYAE,Butler Ridge,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkC7pYAE,Mirada at the Islands,,,FiberFirst,FiberFirst
+006WR00000wkC7rYAE,Mesa Shadows Mobile Home Park,FiberFirst,FiberFirst,,
+006WR00000wkC7sYAE,Brentwood West,,,FiberFirst,FiberFirst
+006WR00000wkC7vYAE,Burnett Place Apartments,FiberFirst,FiberFirst,,
+006WR00000wkC7yYAE,Quail Run Apartments,FiberFirst,FiberFirst,,
+006WR00000wkC82YAE,San Fernando Apartments,"FiberFirst, Lumen",FiberFirst;Lumen / Quantum Fiber,,
+006WR00000wkCjCYAU,Villas of Omaha at Butler Ridge,FiberFirst,FiberFirst,,
+006WR00000wkCjEYAU,Sedona Springs,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjJYAU,View at Catalina Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjMYAU,Gardens of Taylor,,FiberFirst,,FiberFirst
+006WR00000wkCjOYAU,Northpoint Villas,FiberFirst,FiberFirst,,
+006WR00000wkCjSYAU,Apache East,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjUYAU,Desert Skies,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjYYAU,Carefree Manor,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjZYAU,Sabino Vista II,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjaYAE,Campbell Ranch on Roger,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjbYAE,Sabino Vista I,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjcYAE,Deerfield Village on Fort Lowell,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjdYAE,Arcadia Park Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjeYAE,Capistrano Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCjtYAE,The Canyons at Linda Vista Trail,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjuYAE,Bradley Arms,FiberFirst,FiberFirst,,
+006WR00000wkCjvYAE,Pima Canyon,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjwYAE,Villas at San Dorado,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCjzYAE,The Golf Villas at Oro Valley,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCk0YAE,Oro Vista Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkEYAU,Harbor Cove HOA,,,FiberFirst,FiberFirst
+006WR00000wkCkFYAU,Villas Las Toronjas II,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkGYAU,Huntington Park Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkHYAU,Villas las Naranjas,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkIYAU,Ocotillo Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkJYAU,El Conquistador Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkKYAU,Villas las Mandarinas,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkLYAU,Villas del Paraiso,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkMYAU,The Royal El Con Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkNYAU,Presidio Palms,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkOYAU,Council House Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkPYAU,San Marquis,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkQYAU,Villas las Toronjas I,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkRYAU,Palm Shadows Apartments - Tucson,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkSYAU,Sahara Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkTYAU,Villas de la Montaña,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkVYAU,Villas Las Cerezas,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCkWYAU,Liberty Landing Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkCkvYAE,Western Hills Condos,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkCl4YAE,Woodbine Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkClAYAU,Madison at Westinghouse,FiberFirst,FiberFirst,,
+006WR00000wkClMYAU,Southcastle Apartments,FiberFirst,FiberFirst,,
+006WR00000wkClSYAU,Brickstone Villas / Tucker Apts,FiberFirst,FiberFirst,,
+006WR00000wkClUYAU,Villa Lago,FiberFirst,FiberFirst,,
+006WR00000wkClVYAU,Bryce Avenue Apartments,FiberFirst,FiberFirst,,
+006WR00000wkClWYAU,Ashton Park Apartment Homes,FiberFirst,FiberFirst,,
+006WR00000wkClaYAE,Highview Apartments,FiberFirst,FiberFirst,,
+006WR00000wkClmYAE,The Grandon,FiberFirst,FiberFirst,,
+006WR00000wkClsYAE,The Kimberly,FiberFirst,FiberFirst,,
+006WR00000wkClxYAE,NorthStar Georgetown,FiberFirst,FiberFirst,,
+006WR00000wkClyYAE,The Wesleyan,FiberFirst,FiberFirst,,
+006WR00000wkCm7YAE,Century Oaks,FiberFirst,FiberFirst,,
+006WR00000wkCmBYAU,Flats on Foothills,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkCmHYAU,Trophy Ridge Apartments,FiberFirst,FiberFirst,,
+006WR00000wkCmKYAU,Brickstone Villas,FiberFirst,FiberFirst,,
+006WR00000wkDLrYAM,Parallax @ Georgetown,FiberFirst,FiberFirst,,
+006WR00000wkDLsYAM,Williamson At The Overlook,FiberFirst,FiberFirst,,
+006WR00000wkDLtYAM,Olympus Town Center,FiberFirst,FiberFirst,,
+006WR00000wkDLvYAM,Rise at Dobson Ranch,FiberFirst,FiberFirst,,
+006WR00000wkDLwYAM,Waterford Place Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkDLxYAM,Lemon & Pear Tree Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkDLyYAM,Verona Park Apts,FiberFirst,FiberFirst,,
+006WR00000wkDLzYAM,The Joshua Apts,FiberFirst,FiberFirst,,
+006WR00000wkDM0YAM,Vista Valley Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDM1YAM,The District at Fiesta Park Apts,FiberFirst,FiberFirst,,
+006WR00000wkDM2YAM,The Forum Apartments FKA Archstone Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDM3YAM,Luxe at Ocotillo,"FiberFirst, Lumen",FiberFirst;Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDM4YAM,Ocotillo Bay,"FiberFirst, Lumen",FiberFirst;Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDM7YAM,Garden Gate Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDM9YAM,Olympus Stone Glen,FiberFirst,FiberFirst,,
+006WR00000wkDMAYA2,The Peaks Townhomes,FiberFirst,FiberFirst,,
+006WR00000wkDMCYA2,Rise at the District,FiberFirst,FiberFirst,,
+006WR00000wkDMFYA2,Grand Oaks at Liberty Hill,FiberFirst,FiberFirst,,
+006WR00000wkDMGYA2,North Park Landing Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDMHYA2,Mesa_MDU_Del Corona Apts Del Coronado,FiberFirst,FiberFirst,,
+006WR00000wkDMIYA2,Lakeridge Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,FiberFirst,FiberFirst,,
+006WR00000wkDMLYA2,Harmon Senior Villas,FiberFirst,FiberFirst,,
+006WR00000wkDMMYA2,Vantage at Hutto,FiberFirst,FiberFirst,,
+006WR00000wkDMNYA2,Heights at 701,FiberFirst,FiberFirst,,
+006WR00000wkDMPYA2,Aspire Fossil Creek,FiberFirst,FiberFirst,,
+006WR00000wkDMRYA2,Royal Gardens,FiberFirst,FiberFirst,,
+006WR00000wkDMSYA2,Creekside at North Beach,FiberFirst,FiberFirst,,
+006WR00000wkDMUYA2,The Holston,FiberFirst,FiberFirst,,
+006WR00000wkDMXYA2,Pioneer Crossing Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDMbYAM,Villa Camino,FiberFirst,FiberFirst,,
+006WR00000wkDMgYAM,The Lofts at West 7th,AT&T,AT&T,,
+006WR00000wkDMhYAM,Highland Park Apartments,AT&T,AT&T,,
+006WR00000wkDMiYAM,The Berkeley Apartments,AT&T,AT&T,,
+006WR00000wkDMjYAM,Dixon at Stonegate,AT&T,AT&T,,
+006WR00000wkDMkYAM,Trinity Heights Apartments,AT&T,AT&T,,
+006WR00000wkDMlYAM,Sorrento,AT&T,AT&T,,
+006WR00000wkDMmYAM,Tides on Overton Ridge,AT&T,AT&T,,
+006WR00000wkDMnYAM,Forest Hill Mobile Home Park,AT&T,AT&T,,
+006WR00000wkDMoYAM,Lauren Apartments,AT&T,AT&T,,
+006WR00000wkDMpYAM,Urban House,AT&T,AT&T,,
+006WR00000wkDMqYAM,Meadow Ridge,AT&T,AT&T,,
+006WR00000wkDMrYAM,Pacific Crest Apartments [OOF for Lumen],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDMuYAM,Poway Villas,FiberFirst,FiberFirst,,
+006WR00000wkDMvYAM,Haley Ranch Estates,FiberFirst,FiberFirst,,
+006WR00000wkDMwYAM,Hillside Village Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDMzYAM,Apache Bend Apartments,Nextlink,Nextlink,,
+006WR00000wkDs8YAE,Whittier Affordable,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDs9YAE,Sunland Terrace Apartments_Lumen AZ,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDsBYAU,Eagle Point Apartments Phase 3,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsCYAU,Cedar Hills Apartments [OOF for Lumen],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsDYAU,V at Lake Las Vegas,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsEYAU,The Lark Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsFYAU,Conifer Place Apartments [OOF for Lumen],Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsGYAU,Allegro at Corner Canyon,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsHYAU,West Hills Village,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsIYAU,The Landing at Clearwater,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDsKYAU,Ashton Place Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsLYAU,Cascade View,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsMYAU,Sterling Heights Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsNYAU,Avalon Park,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsOYAU,Wy'East Pointe,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsPYAU,Tarnhill,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsQYAU,Viviani,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsRYAU,Pepper Ridge Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsSYAU,Coronado Springs,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsTYAU,Tuscany,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsUYAU,Venicia,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsVYAU,Adiamo,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsWYAU,Madera,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsXYAU,Aspire at Tesora,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsYYAU,Tivoli,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsZYAU,Altessa,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsaYAE,Arzano,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsbYAE,Positano Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDscYAE,Curtis Meadows,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsdYAE,Central Pointe,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDseYAE,Venture Out at Mesa (MHP),FiberFirst,FiberFirst,,
+006WR00000wkDsfYAE,Aspire Mesa,"Ting, FiberFirst",FiberFirst;Ting,,
+006WR00000wkDsgYAE,Trillium Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDsjYAE,Lakewood-Townhomes,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDskYAE,Westwood Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDslYAE,Eastwood on Grand,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsmYAE,Palm Valley Villas,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsnYAE,Homestead Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsoYAE,Willamette Estates,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDspYAE,McCormick Pier Condo,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDsqYAE,Casa Del Sol Envolve,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDssYAE,Fiesta Village MH & RV Resort,FiberFirst,FiberFirst,,
+006WR00000wkDstYAE,Southern Palms Mobile Home & RV Park,FiberFirst,FiberFirst,,
+006WR00000wkDsyYAE,Knoll Creek Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDszYAE,Arbor on Broadway (Now Called) Buenas on Broadway,"FiberFirst, Lumen",FiberFirst;Lumen / Quantum Fiber,,
+006WR00000wkDt1YAE,The Harrison at Heritage,FiberFirst,FiberFirst,,
+006WR00000wkDtPYAU,Yale Park,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtSYAU,Cimarron Hills,FiberFirst,FiberFirst,,
+006WR00000wkDtTYAU,The Oaks at Liberty Hill Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDteYAE,Lakeside Estates,FiberFirst,FiberFirst,,
+006WR00000wkDtmYAE,Mariposa Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDtnYAE,La Costa at Dobson Ranch,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtoYAE,Sorrento Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDtpYAE,Casa Mesa Estates,FiberFirst,FiberFirst,,
+006WR00000wkDtqYAE,Ellipse on Excelsior,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtrYAE,Indigo at Sunset Park,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtsYAE,The Cliffs at Canyon Ridge,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDttYAE,Legend of Fort Worth: Senior Living_OneSource project,FiberFirst,FiberFirst,,
+006WR00000wkDtvYAE,Eastbrook,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtwYAE,Woodglen Square ll,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkDtxYAE,Olive East,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtyYAE,Cambria Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkDtzYAE,Whispering Hills Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkDu0YAE,Cielo II Apartments,FiberFirst,FiberFirst,,
+006WR00000wkDu1YAE,The M at Lakeline,FiberFirst,FiberFirst,,
+006WR00000wkDu2YAE,Palmero by the Park (f/k/a Overlook by the Park),FiberFirst,FiberFirst,,
+006WR00000wkDu3YAE,La Costa Paloma,AT&T,AT&T,,
+006WR00000wkDu4YAE,High Country Villas 5&7,"FiberFirst, Ting",FiberFirst;Ting,,
+006WR00000wkDu5YAE,Southwest Patio Home Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDu6YAE,500 NE 70th,Atlas,Atlas,,
+006WR00000wkDu7YAE,San Montego Luxury Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDu8YAE,The Turn Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDuAYAU,Villas on Horne,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDuBYAU,Riverview Townhomes,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDuCYAU,Avenue 8 Apartments,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkDuEYAU,Brookwood Apartments,Atlas,Atlas,,
+006WR00000wkDuGYAU,Mission Palms Apartments,Atlas,Atlas,,
+006WR00000wkDuHYAU,River Oaks Apartments,Atlas,Atlas,,
+006WR00000wkDuIYAU,Zona Village,Atlas,Atlas,,
+006WR00000wkDuKYAU,Fowler's RV Park,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkDuMYAU,Colonial Plaza,"Nextlink, FiberFirst",FiberFirst;Nextlink,,
+006WR00000wkDuNYAU,6311-6321 Roosevelt,"Lumen, Atlas",Atlas;Lumen / Quantum Fiber,,
+006WR00000wkDuOYAU,Stonebridge Gardens,FiberFirst,FiberFirst,,
+006WR00000wkDuPYAU,7000 Roosevelt Way Apt,Atlas,Atlas,,
+006WR00000wkDuQYAU,Copper Commons,"Nextlink, FiberFirst",FiberFirst;Nextlink,,
+006WR00000wkDuRYAU,7101 Roosevelt Way Apt,Atlas,Atlas,,
+006WR00000wkDuSYAU,The Fifth Avenue,Atlas,Atlas,,
+006WR00000wkDuTYAU,The Sixth Avenue,Atlas,Atlas,,
+006WR00000wkDuUYAU,Pineforest Park,AT&T,AT&T,,
+006WR00000wkDuVYAU,Crenshaw Townhouse,AT&T,AT&T,,
+006WR00000wkDuWYAU,West Creek Townhomes,AT&T,AT&T,,
+006WR00000wkDuXYAU,Vanowen Manor,AT&T,AT&T,,
+006WR00000wkDuYYAU,Lord Tennyson,AT&T,AT&T,,
+006WR00000wkDuZYAU,Crenshaw Manor,AT&T,AT&T,,
+006WR00000wkDuaYAE,Columbia Apartments,AT&T,AT&T,,
+006WR00000wkDubYAE,Windfaire Apartments,AT&T,AT&T,,
+006WR00000wkDucYAE,Woodbury Place Apartments,AT&T,AT&T,,
+006WR00000wkDudYAE,Strathmore Arms Apartments,AT&T,AT&T,,
+006WR00000wkDueYAE,University Club Apartments (Nac),AT&T,AT&T,,
+006WR00000wkDufYAE,714 Veteran,AT&T,AT&T,,
+006WR00000wkDugYAE,University Square Apartments,AT&T,AT&T,,
+006WR00000wkDuhYAE,The Park West,Atlas,Atlas,,
+006WR00000wkDuiYAE,Summerset Village Apartments,AT&T,AT&T,,
+006WR00000wkDujYAE,Villa Boitano 2,Atlas,Atlas,,
+006WR00000wkDukYAE,Cimarron Estates,AT&T,AT&T,,
+006WR00000wkDulYAE,104 North Apt,Atlas,Atlas,,
+006WR00000wkDumYAE,Misty Ridge,AT&T,AT&T,,
+006WR00000wkDunYAE,Villa Boitano 3,Atlas,Atlas,,
+006WR00000wkDuoYAE,Park at Shiloh,AT&T,AT&T,,
+006WR00000wkDupYAE,8746 Phinney Apt,Atlas,Atlas,,
+006WR00000wkDuqYAE,Villages at Sugar Road,AT&T,AT&T,,
+006WR00000wkDurYAE,The Cliffetta,Atlas,Atlas,,
+006WR00000wkDusYAE,Espana,Atlas,Atlas,,
+006WR00000wkDutYAE,Windrush Apartments,AT&T,AT&T,,
+006WR00000wkDuwYAE,Fairways,AT&T,AT&T,,
+006WR00000wkDuyYAE,Sheppard's Edge,AT&T,AT&T,,
+006WR00000wkDv0YAE,Boulder Springs Apartments,AT&T,AT&T,,
+006WR00000wkDv2YAE,St. John's,AT&T,AT&T,,
+006WR00000wkDv4YAE,615 Manhattan,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkDv6YAE,Sunset Street,AT&T,AT&T,,
+006WR00000wkDv8YAE,Pineforest Place,AT&T,AT&T,,
+006WR00000wkDvAYAU,University Club Apartments (Lubbock),AT&T,AT&T,,
+006WR00000wkDvCYAU,Chaparral Apts,AT&T,AT&T,,
+006WR00000wkDvDYAU,Lemoli Apartments,AT&T,AT&T,,
+006WR00000wkDvEYAU,Willow Lake,AT&T,AT&T,,
+006WR00000wkDvFYAU,Chadron Apartments,AT&T,AT&T,,
+006WR00000wkDvGYAU,Forest Gate Apartments,AT&T,AT&T,,
+006WR00000wkDvHYAU,Vanowen Manor II,AT&T,AT&T,,
+006WR00000wkDvIYAU,Alameda Palms,AT&T,AT&T,,
+006WR00000wkEZdYAM,Strathmore Terrace,AT&T,AT&T,,
+006WR00000wkEZeYAM,Heritage Park,AT&T,AT&T,,
+006WR00000wkEZfYAM,Crenshaw Terrace Apartments,AT&T,AT&T,,
+006WR00000wkEZgYAM,University Courtyards Apartments,AT&T,AT&T,,
+006WR00000wkEZhYAM,Leimert Park,AT&T,AT&T,,
+006WR00000wkEZiYAM,Saratoga Apartments,AT&T,AT&T,,
+006WR00000wkEZjYAM,Ladera Apartments,AT&T,AT&T,,
+006WR00000wkEZkYAM,The Oaks Apartments,AT&T,AT&T,,
+006WR00000wkEZlYAM,Fallbrook View Apartments,AT&T,AT&T,,
+006WR00000wkEZmYAM,Turnagain Apartments,AT&T,AT&T,,
+006WR00000wkEZnYAM,Paris Retirement Village,AT&T,AT&T,,
+006WR00000wkEZoYAM,Tierra Pointe,Atlas,Atlas,,
+006WR00000wkEZpYAM,Cypress Ridge,AT&T,AT&T,,
+006WR00000wkEZqYAM,Comanche Wells,Atlas,Atlas,,
+006WR00000wkEZrYAM,Lakeview Park,AT&T,AT&T,,
+006WR00000wkEZsYAM,Park at Clear Creek,AT&T,AT&T,,
+006WR00000wkEZtYAM,5307 Ravenna,"AT&T, Atlas",AT&T;Atlas,,
+006WR00000wkEZuYAM,Pinnacle Pointe,AT&T,AT&T,,
+006WR00000wkEZvYAM,1744 Dexter Avenue Apartments,Atlas,Atlas,,
+006WR00000wkEZxYAM,Villa Park Apartments,AT&T,AT&T,,
+006WR00000wkEZyYAM,Green Lake South,Atlas,Atlas,,
+006WR00000wkEZzYAM,430 NE Ravenna,Atlas,Atlas,,
+006WR00000wkEa0YAE,Lakeland,Atlas,Atlas,,
+006WR00000wkEaHYAU,Oxnard Terrace Apartments,AT&T,AT&T,,
+006WR00000wkEaIYAU,Vassar Terrace Apartments,AT&T,AT&T,,
+006WR00000wkEaJYAU,9404 Apartments,AT&T,AT&T,,
+006WR00000wkEaKYAU,Villa Lago Apartments,AT&T,AT&T,,
+006WR00000wkEaLYAU,The Royce,Atlas,Atlas,,
+006WR00000wkEaMYAU,Aloha Wey Apartments,Atlas,Atlas,,
+006WR00000wkEaNYAU,Jem-Wey Apartments,Atlas,Atlas,,
+006WR00000wkEaOYAU,Regents Park Apartments,AT&T,AT&T,,
+006WR00000wkEaPYAU,Lake Meadows Apartments,AT&T,AT&T,,
+006WR00000wkEaQYAU,Woodland Trio The Oaks,AT&T,AT&T,,
+006WR00000wkEaRYAU,Baldwin Manor,AT&T,AT&T,,
+006WR00000wkEaSYAU,White Oak Terrace,AT&T,AT&T,,
+006WR00000wkEaTYAU,Bali Apartments,AT&T,AT&T,,
+006WR00000wkEaUYAU,Corbett Avenue Apartments,AT&T,AT&T,,
+006WR00000wkEaVYAU,Chatsworth Plaza,AT&T,AT&T,,
+006WR00000wkEaWYAU,John Manor,AT&T,AT&T,,
+006WR00000wkEaXYAU,Casa Linda,AT&T,AT&T,,
+006WR00000wkEaYYAU,Windsor Manor,AT&T,AT&T,,
+006WR00000wkEaZYAU,Coliseum Apartments,AT&T,AT&T,,
+006WR00000wkEaaYAE,Colonial Manor Apartments,AT&T,AT&T,,
+006WR00000wkEabYAE,San Vicente Apartments,AT&T,AT&T,,
+006WR00000wkEacYAE,St. Andrews Manor,AT&T,AT&T,,
+006WR00000wkEadYAE,Krystal Terrace,AT&T,AT&T,,
+006WR00000wkEaeYAE,Parkway Terrace,AT&T,AT&T,,
+006WR00000wkEafYAE,Kling Trio Apartments,AT&T,AT&T,,
+006WR00000wkEagYAE,Jaclyn Terrace,AT&T,AT&T,,
+006WR00000wkEahYAE,Brody Terrace (Riverside),AT&T,AT&T,,
+006WR00000wkEaiYAE,Parkview Terrace,AT&T,AT&T,,
+006WR00000wkEajYAE,Roxanne Apartments,AT&T,AT&T,,
+006WR00000wkEakYAE,Riverside Villa Apartments,AT&T,AT&T,,
+006WR00000wkEalYAE,The Banyans,AT&T,AT&T,,
+006WR00000wkEamYAE,Topanga Apartments,AT&T,AT&T,,
+006WR00000wkEanYAE,Topanga Terrace,AT&T,AT&T,,
+006WR00000wkEaoYAE,Vista Apartments,AT&T,AT&T,,
+006WR00000wkEapYAE,The Palms,AT&T,AT&T,,
+006WR00000wkEaqYAE,Katerina Chalet,Atlas,Atlas,,
+006WR00000wkEarYAE,8409 5th Ave Apt,Atlas,Atlas,,
+006WR00000wkEasYAE,Villa Boitano 1,Atlas,Atlas,,
+006WR00000wkEatYAE,4459 Fremont Ave Apt,"AT&T, Atlas",AT&T;Atlas,,
+006WR00000wkEauYAE,Hollypark Knolls Apartments,AT&T,AT&T,,
+006WR00000wkEavYAE,Saticoy Gardens,AT&T,AT&T,,
+006WR00000wkEawYAE,Link Canvas (fka The George & The Leonard),AT&T,AT&T,,
+006WR00000wkEaxYAE,Link West End,AT&T,AT&T,,
+006WR00000wkEazYAE,Spring Mountain Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEb0YAE,Aspen Hills,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEb1YAE,Horizon Heights,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb2YAE,Columbine Towers,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEb3YAE,Sunridge Patio Homes,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb4YAE,Main Street Commons,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb5YAE,Greenfield Village RV Resort,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb6YAE,Pecan Acres RV Park,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb7YAE,The Bungalows on 204,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb8YAE,The Bungalows on the Lake at Prairie Queen,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEb9YAE,The Bungalows on the Lake at Prairie Queen_The View,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbAYAU,1010 on the Lake,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbBYAU,The Beckham,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbCYAU,Azle Village,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbDYAU,Heritage Oaks,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbEYAU,Big Oaks Estates,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbFYAU,Southern Hills Manufactured Home Community,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbGYAU,Sahara & Playa Palms Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbHYAU,Arcadia Walk,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbIYAU,First Casa De Marina,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkEbJYAU,Lombardi Apartments,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkEbKYAU,The Meadows at Westlake Village,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkEbLYAU,Brookside Terrace Apartments,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkEbMYAU,Gloria Homes,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkEbNYAU,Parthenia Terrace,"AT&T, FiberFirst",AT&T;FiberFirst,,
+006WR00000wkEbOYAU,Patriot Place,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbPYAU,1507 N 8th Apartments (aka The Gables at 8th),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbQYAU,307 N 14th Apartments (aka Paloma Gardens),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbRYAU,Jerome Apartments_Colt RE,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbSYAU,Saffari Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbTYAU,Soaring Eagle Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbUYAU,1807 Mulford Apartments_Colt RE,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbVYAU,CitiFront Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbWYAU,Waterstone Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbXYAU,Holiday Village Manufactured Home Village,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbYYAU,Trailpoint by Trion Living / Trailpoint on Highline,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbZYAU,Ballantrae Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbaYAE,Westcliff Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbbYAE,Sunshine Portland,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbcYAE,Larpenteur Manor Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbdYAE,Sun Place Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbeYAE,Parkview Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbfYAE,Cottage Terrace Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbgYAE,Edgerton Highlands Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbhYAE,Johnson Parkway Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbiYAE,LaBlanche Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbjYAE,Park Vista Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbkYAE,Pine Tree Park Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEblYAE,Goldenstar Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbmYAE,Evergreen East Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbnYAE,Sherman Forbes Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEboYAE,The Bungalows,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbpYAE,Shadow Green Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbqYAE,Purgatory Creek Townhomes,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbrYAE,Equinox on Indian School,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbsYAE,Pomeroy Court,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbtYAE,Chalk Hill Ranch Phase 1,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEbuYAE,Coyote Creek,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbvYAE,The Traditions Apartments,Lumen,FiberFirst;Lumen / Quantum Fiber,Lumen,
+006WR00000wkEbwYAE,Garden Court Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbxYAE,Woodcrest Townhomes,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbyYAE,Aspen Oaks,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEbzYAE,Highland Shores Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEc0YAE,Barbary Knoll Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEc1YAE,Mountain Terrace,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEc2YAE,Meeker Commons,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEc3YAE,Capri on Camelback,"Lumen, FiberFirst",FiberFirst;Lumen / Quantum Fiber,FiberFirst,FiberFirst
+006WR00000wkEc4YAE,Mansions at Hemingway,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEc5YAE,Benson Crest,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEc6YAE,Wright Senior,"AT&T, FiberFirst",AT&T;FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEc7YAE,Maple Grove Villas,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEc8YAE,Bristol Square Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEc9YAE,Heatherwilde Park AKA Cove at Heatherwilde,"AT&T, FiberFirst",AT&T;FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcAYAU,Creekside Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcBYAU,Heritage of Newark (FKA Newark Beach Estates),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcCYAU,Eastgate Village Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcDYAU,The 1001 Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcEYAU,Northampton Court Condominiums,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcFYAU,Equinox on Country Club,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEcGYAU,The Retreat at City Center,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEcHYAU,Avalon Wolf Ranch (f/k/a Retreat at Wolf Ranch),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcIYAU,Lost Spurs,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcJYAU,Grand Estates at Keller,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcKYAU,Lexington Place (Monterey),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcLYAU,Olympus Waterford,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcMYAU,Park Vista Townhomes,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcNYAU,Eaves by Avalon (f/k/a Wimberly Apartments),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcOYAU,Avalon at Castle Hills (f/k/a Lakeway Castle Hills),FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcPYAU,Liggins Tower,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEcQYAU,Laguna Vista Mobile Estates,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcRYAU,Villa Del Mar,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcSYAU,Dobson Greens Condo HOA,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcTYAU,Dobson Bay Club HOA,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcUYAU,Dobson Ranch Condos,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcVYAU,Woodcreek Townhomes,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcWYAU,Twin Palms Condominiums,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcXYAU,Lakewood Manufactured Home Community,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcYYAU,Waterfront Landing,Atlas,Atlas,Atlas,Atlas
+006WR00000wkEcZYAU,Eagle Lake Garden Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcaYAE,Wheatbaker Patio Home Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEcbYAE,Alexandra Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEccYAE,Arthouse Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcdYAE,The Retreat on 6th,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEceYAE,Pheasant Run Apartments,Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkEcfYAE,Enclave at Westport,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcgYAE,Northampton Arms Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEchYAE,Watervue Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEciYAE,Discovery Village at Alliance Town Center,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcjYAE,Lakeside Apartment Homes,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEckYAE,Crosspointe Vista,"Atlas, Lumen",Atlas;Lumen / Quantum Fiber,"Atlas, Lumen",Atlas;Lumen / Quantum Fiber
+006WR00000wkEclYAE,Lucille on Roosevelt,,,Atlas,Atlas
+006WR00000wkEcmYAE,Arbors of Killeen,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcnYAE,Paloma Gardens Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcoYAE,Mallard Run Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEcpYAE,Sonterra Apartment Homes,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkEzzYAE,Eastgate Ridge Apartments,FiberFirst,FiberFirst,,
+006WR00000wkF0JYAU,Fort Worth_MDU_Avilla Boat Club,FiberFirst,FiberFirst,,
+006WR00000wkF0oYAE,The Vue at Sugar House Crossing,Lumen,Lumen / Quantum Fiber,,
+006WR00000wkF0vYAE,Crest Centerpoint,FiberFirst,FiberFirst,,
+006WR00000wkF0zYAE,Madera at Leftbank,FiberFirst,FiberFirst,,
+006WR00000wkFboYAE,Mustang Ridge,FiberFirst,FiberFirst,,
+006WR00000wkFc5YAE,Citrus Gardens Mobile Park,FiberFirst,FiberFirst,,
+006WR00000wkFc6YAE,Ascension at Manistee Ranch (Townhomes),Lumen,Lumen / Quantum Fiber,Lumen,Lumen / Quantum Fiber
+006WR00000wkFc7YAE,Hidden Bluffs Apartments,FiberFirst,FiberFirst,FiberFirst,FiberFirst
+006WR00000wkFdmYAE,Legacy trails of Decatur,FiberFirst,FiberFirst,,
+006WR00000wkFdxYAE,Bear Creek Apartments,FiberFirst,FiberFirst,,

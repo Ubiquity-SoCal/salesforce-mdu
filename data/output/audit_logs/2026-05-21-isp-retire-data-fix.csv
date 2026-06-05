@@ -1,0 +1,2 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wkEbvYAE,The Traditions Apartments,Confirmed_ISPs__c,,Lumen / Quantum Fiber,ISP text-field retire (Confirmed_ISP__c=Lumen),2026-05-21T09:08:01.137386,update

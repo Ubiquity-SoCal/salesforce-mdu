@@ -1,0 +1,8 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR000011a3xbYAA,1404 Chico Hwy MHP,Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated
+006WR000011awSdYAI,Lookout Ridge Apartments,Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated
+006WR000011bxo2YAA,Sunset Arms,Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated
+006WR000011cGDyYAM,University Place Townhomes,Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated
+006WR000011cMfyYAE,Discovery Village at Alliance Town Center (Riverside),Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated
+006WR000011cNVaYAM,Autumn Heights,Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated
+006WR000011cV9lYAE,Converge Justin,Property_State__c,Texas,TX,fix/2026-05-13-texas-state-normalization.py,2026-05-13T09:13:18,updated

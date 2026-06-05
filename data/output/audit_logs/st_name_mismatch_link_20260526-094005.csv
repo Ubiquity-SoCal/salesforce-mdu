@@ -1,0 +1,6 @@
+timestamp,st_name,opp_name,st_id,opp_id,st_record_id,previous_opp_link,previous_st_link,city,state,site_status,opp_stage,action,result
+2026-05-26T09:40:05,P-004316,Waterford Place Apartments,a0FWR00000ZjtH72AJ,006WR00000wkDLwYAM,a2XVT0000003zjh2AA,,,Mesa,AZ,Future,Prospects,would_link,dry_run
+2026-05-26T09:40:05,P-005533,Omaha_MDU_Fontenelle Cottages,a0FWR00000ZjtPB2AZ,006WR00000xwFBBYA2,a2XVT000000EMWv2AO,,,OMAHA,NE,Cancelled,Closed Lost,would_link,dry_run
+2026-05-26T09:40:05,P-005536,Grand Estates at Keller,a0FWR00000ZjtQn2AJ,006WR00000wkEcJYAU,a2XVT000000EX7N2AW,,,Keller,TX,In Service,Marketing/Bulk Complete,would_link,dry_run
+2026-05-26T09:40:05,P-005539,Omaha_MDU_Farnam Flats,a0FWR00000ZjtSP2AZ,006WR00000y46nRYAQ,a2XVT000000Erdx2AC,,,Omaha,NE,Cancelled,PAL/ROE Complete,would_link,dry_run
+2026-05-26T09:40:05,P-006201,Southern Hills Manufactured Home Community,a0FWR00000ZjtXF2AZ,006WR00000wkEbFYAU,a2XVT0000010gTJ2AY,,,Killeen,TX,Cancelled,PAL/ROE Complete,would_link,dry_run

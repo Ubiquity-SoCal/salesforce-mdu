@@ -1,0 +1,171 @@
+SF_Id,Name,Stage,Field,Before,After,Source,Timestamp,Action
+006WR00000wiNoSYAU,Haciendas de la Playa,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wk9SsYAI,Sandpiper Pointe,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wk9YTYAY,Solana Beach and Tennis Club,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA6MYAU,Trico Mobile Estates,Closed Lost,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA6dYAE,Howard Street,Engaged,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA6fYAE,Bedford Square [fmr Maplewood Court],Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA6iYAE,Green Valley Mobile Estates Encinitas,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA7oYAE,Terrace Garden Apartments,Engaged,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA8kYAE,Santa Helena Park Condominiums,Contract Negotiations,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkA8yYAE,78th Place Apartments,PAL/ROE Complete,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkABpYAM,Liberty Manor,Engaged,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkAC1YAM,Paul Mark Apts,PAL/ROE Complete,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkBG5YAM,1st Avenue Apartments (Old Name - Southwest Villa),Closed Lost,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkCjMYAU,Gardens of Taylor,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkClNYAU,Del Mar Beach Club,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkClkYAE,Las Brisas,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkCllYAE,Del Mar Shores Terrace,PAL/ROE Complete,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkCmJYAU,Park Encinitas,On Hold,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDMfYAM,Lakeshore Gardens,Closed Lost,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDMzYAM,Apache Bend Apartments,Closed Lost,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDtPYAU,Yale Park,Closed Lost,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDtiYAE,Villa Rouge,Closed Lost,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDtjYAE,Ville De Sante townhomes,Closed Lost,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDu0YAE,Cielo II Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDu1YAE,The M at Lakeline,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDu2YAE,Palmero by the Park (f/k/a Overlook by the Park),PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDu5YAE,Southwest Patio Home Apartments,Marketing/Bulk Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDu7YAE,San Montego Luxury Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDu8YAE,The Turn Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuBYAU,Riverview Townhomes,Marketing/Bulk Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuCYAU,Avenue 8 Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuEYAU,Brookwood Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuGYAU,Mission Palms Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuHYAU,River Oaks Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuIYAU,Zona Village,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuKYAU,Fowler's RV Park,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuMYAU,Colonial Plaza,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuNYAU,6311-6321 Roosevelt,Marketing/Bulk Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuOYAU,Stonebridge Gardens,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkDuQYAU,Copper Commons,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEZoYAM,Tierra Pointe,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEZqYAM,Comanche Wells,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb1YAE,Horizon Heights,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb3YAE,Sunridge Patio Homes,Marketing/Bulk Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb3YAE,Sunridge Patio Homes,Marketing/Bulk Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb4YAE,Main Street Commons,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb5YAE,Greenfield Village RV Resort,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb5YAE,Greenfield Village RV Resort,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb6YAE,Pecan Acres RV Park,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb7YAE,The Bungalows on 204,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb8YAE,The Bungalows on the Lake at Prairie Queen,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEb9YAE,The Bungalows on the Lake at Prairie Queen_The View,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbAYAU,1010 on the Lake,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbBYAU,The Beckham,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbCYAU,Azle Village,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbCYAU,Azle Village,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbDYAU,Heritage Oaks,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbDYAU,Heritage Oaks,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbEYAU,Big Oaks Estates,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbEYAU,Big Oaks Estates,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbFYAU,Southern Hills Manufactured Home Community,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbFYAU,Southern Hills Manufactured Home Community,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbGYAU,Sahara & Playa Palms Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbHYAU,Arcadia Walk,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbWYAU,Waterstone Apartments,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbXYAU,Holiday Village Manufactured Home Village,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbXYAU,Holiday Village Manufactured Home Village,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbtYAE,Chalk Hill Ranch Phase 1,Marketing/Bulk Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEbvYAE,The Traditions Apartments,PAL/ROE Complete,Hold_Reason__c,Build Not Approved,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEc5YAE,Benson Crest,PAL/ROE Complete,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEc6YAE,Wright Senior,PAL/ROE Complete,Hold_Reason__c,Build Not Approved,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEc9YAE,Heatherwilde Park AKA Cove at Heatherwilde,PAL/ROE Complete,Hold_Reason__c,Build Not Approved,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000wkEcCYAU,Eastgate Village Apartments,Prospecting,Hold_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000xuFKAYA2,Bridgeport_MDU_Federal Housing Administration,Engaged,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yuOtDYAU,Pacifica Leucadia HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yvINSYA2,Forrest Bluff Terraces HOA,Closed Lost,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yvQkpYAE,Sky Loft HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yvdF2YAI,Shamrock Mobile Estates,Closed Lost,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yvoqPYAQ,Monte Mira HOA,On Hold,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yvoqPYAQ,Monte Mira HOA,On Hold,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yw09zYAA,Beacons Beach Village,PAL/ROE Complete,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yw0RiYAI,Encinitas Ranch HOA,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yw95EYAQ,803 Cedros Pvt Road,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yw9QBYAY,Mendocino HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000yw9YHYAY,Seaside Highlannds HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywB2AYAU,Villas De La Costa HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywEb8YAE,Portico At Rancho Carrillo HOA,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywLuMYAU,Flair Encinitas HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywSNxYAM,San Pacifico HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywScTYAU,Alga Hills HOA,Prospects,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywT2HYAU,Village Park HOA,PAL/ROE Complete,Sales_Status__c,Contact Pending,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR00000ywTFBYA2,Las Vistas HOA,PAL/ROE Complete,Loss_Reason__c,Other,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR0000117xlTYAQ,1121 SOUTHEAST PKWY AZLE TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR0000118WRTYA2,5103 LEAVENWORTH ST OMAHA NE,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kit2YAA,ROE - 10900 FOUNDERS WAY FORT WORTH TX,Closed Lost,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kit3YAA,ROE - 1128 BLUE MOUND W RD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kit5YAA,ROE - 1925 GOLDEN HEIGHTS RD HASLET TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kit7YAA,ROE - 200 N KIMBALL AVE SOUTHLAKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kit8YAA,ROE - 2202 US HIGHWAY 380  BRIDGEPORT TX,Proposal Sent,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kit9YAA,ROE - 2301 S FM 51  DECATUR TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitAYAQ,ROE - 2600 E SOUTHLAKE BLVD SOUTHLAKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitDYAQ,ROE - 500 W SOUTHLAKE BLVD SOUTHLAKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitEYAQ,ROE - 5250 N TARRANT PKWY FORT WORTH TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitHYAQ,ROE - 808 SCHOOLHOUSE RD HASLET TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitIYAQ,ROE - 8436 DENTON HWY WATAUGA TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitPYAQ,ROE - 1212 N HIGHWAY 377  ROANOKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitQYAQ,ROE - 125 COUNTRY VIEW DR ROANOKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitaYAA,ROE - 5040 N TARRANT PKWY FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitdYAA,ROE - 6600 DENTON HWY WATAUGA TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kiteYAA,ROE - 6700 DENTON FWY WATAUGA TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kitiYAA,ROE - 8849 N TARRANT PKWY N RICHLAND HILLS TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHEYAY,ROE - 1855 W BASELINE RD MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHMYAY,ROE - 1811 S ALMA SCHOOL RD MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHTYAY,ROE - 745 W BASELINE RD MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHaYAI,ROE - 535 E SOUTHERN AVE MESA AZ,Proposal Sent,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHcYAI,ROE - 127 W JUANITA AVE MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHeYAI,ROE - 2120 W GUADALUPE RD MESA AZ,Proposal Sent,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHhYAI,ROE - 320 E 10TH DR MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHkYAI,ROE - 2050 W GUADALUPE RD MESA AZ,Proposal Sent,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHoYAI,ROE - 1731 W BASELINE RD MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjHuYAI,ROE - 303 E SOUTHERN AVE MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjI1YAI,ROE - 645 S COUNTRY CLUB DR MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjI4YAI,ROE - 1924 S MACDONALD  MESA AZ,Engaged,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjI7YAI,ROE - 1940 S COUNTRY CLUB DR MESA AZ,Proposal Sent,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjI8YAI,ROE - 1950 S COUNTRY CLUB DR MESA AZ,Proposal Sent,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjICYAY,ROE - 1136 E HARMONY AVE MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjINYAY,ROE - 4406 E MAIN ST MESA AZ,Proposal Sent,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjISYAY,ROE - 347 E SOUTHERN AVE MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjIUYAY,ROE - 415 N VAL VISTA DR MESA AZ,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjIaYAI,ROE - 6910 PACIFIC ST OMAHA NE,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjIpYAI,ROE - 5139 LEAVENWORTH ST OMAHA NE,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjIrYAI,ROE - 6237 N 89TH CIR OMAHA NE,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjIuYAI,ROE - 6304 N 73RD PLZ OMAHA NE,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ0YAI,ROE - 201 E CENTRAL TEXAS EXPY HARKER HEIGHTS TX,Engaged,Sales_Status__c,Research Completed,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ1YAI,ROE - 10011 HARMON RD FORT WORTH TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ2YAI,ROE - 1953 GOLDEN HEIGHTS RD HASLET TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ3YAI,ROE - 1150 BLUE MOUND W RD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ4YAI,ROE - 850 BLUE MOUND W RD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ8YAI,ROE - 10027 HARMON RD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJ9YAI,ROE - 1929 GOLDEN HEIGHTS RD FORT WORTH TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJAYAY,ROE - 410 W 7TH ST TAYLOR TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJCYAY,ROE - 1120 BLUE MOUND W RD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJIYAY,ROE - 1919 GOLDEN HEIGHTS RD HASLET TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJMYAY,ROE - 1911 N AUSTIN AVE GEORGETOWN TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJRYAY,ROE - 880 BLUE MOUND W RD FORT WORTH TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJWYAY,ROE - 2829 HERITAGE TRACE DR FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJbYAI,ROE - 7420 N BEACH ST FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJeYAI,ROE - 1130 BLUE MOUND W RD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJfYAI,ROE - 1208 S FM 51  DECATUR TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJhYAI,ROE - 1943 GOLDEN HEIGHTS RD FORT WORTH TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJjYAI,ROE - 515 W SOUTHLAKE BLVD SOUTHLAKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJoYAI,ROE - 1927 GOLDEN HEIGHTS RD FORT WORTH TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJpYAI,ROE - 2163 GOLDEN HEIGHTS RD HASLET TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJqYAI,ROE - 2617 BLUE MOUND W LN HASLET TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJtYAI,ROE - 6245 RUFE SNOW DR WATAUGA TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJuYAI,ROE - 630 E SOUTHLAKE BLVD SOUTHLAKE TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJxYAI,ROE - 750 S MAIN ST KELLER TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjJyYAI,ROE - 8245 PRECINCT LINE RD NORTH RICHLAND HILLS TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjK3YAI,ROE - 1937 GOLDEN HEIGHTS RD FORT WORTH TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjK5YAI,ROE - 875 KELLER PKWY KELLER TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjK9YAI,ROE - 6500 DENTON HWY WATAUGA TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjKBYAY,ROE - 8801 DAVIS BLVD KELLER TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjKDYAY,ROE - 950 S FM 156  JUSTIN TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjKIYAY,ROE - 828 BOYD RD AZLE TX,Contract Negotiations,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjKJYAY,ROE - 8420 DENTON HWY WATAUGA TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjKLYAY,ROE - 900 S MAIN ST KELLER TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjKOYAY,ROE - 5420 BASSWOOD BLVD FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000011kjVhYAI,ROE - 6900 DENTON HWY WATAUGA TX,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000012SH7VYAW,ROE - 6201 N 89TH CIR OMAHA NE,Engaged,Sales_Status__c,FF Sales - Tenant Interest Required,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared
+006WR000012SHAjYAO,ROE - 2801 HERITAGE TRACE DR FORT WORTH TX,Proposal Sent,Sales_Status__c,Reached Out - Pending Response,,fix/2026-05-12-clear-stale-substatus-fields.py,2026-05-12T11:09:20,cleared

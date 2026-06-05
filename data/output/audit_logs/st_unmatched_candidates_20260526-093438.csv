@@ -1,0 +1,21 @@
+st_name,st_site_name,st_monday_name,st_city,st_state,st_status,st_build_status,cand_rank,cand_score,cand_opp_id,cand_opp_name,cand_agreement_name,cand_city,cand_state,cand_stage,cand_rt
+P-005182,Encinitas_MDU_Encinitas_Village,Encinitas_MDU_Encinitas_Village,Encinitas,CA,Future,2. Project - Design Phase,1,2,006WR00000wk9UoYAI,Village Park Apartments,Encinitas_MDU_Village Park Apartments,Encinitas,CA,Prospects,MDU
+P-005182,Encinitas_MDU_Encinitas_Village,Encinitas_MDU_Encinitas_Village,Encinitas,CA,Future,2. Project - Design Phase,2,2,006WR00000wkCkoYAE,Saxony Village Apartments,Encinitas_MDU_Saxony Village Apartments,Encinitas,CA,Prospects,MDU
+P-005182,Encinitas_MDU_Encinitas_Village,Encinitas_MDU_Encinitas_Village,Encinitas,CA,Future,2. Project - Design Phase,3,2,006WR00000wkDt3YAE,Sea Crest Village Retirement Communities,Encinitas_MDU_Sea Crest,Encinitas,CA,Prospects,MDU
+P-000978,TX_DFW_THE_MCCALIP_GROUP,TX_DFW_THE_MCCALIP_GROUP,Rhome,TX,In Service,1. Project - PAL/ROE Signed,,,,(no candidate),,,,,
+P-002501,CA_CARLSBAD_SA07_FB03_SunnyCreekApts,CA_CARLSBAD_SA07_FB03_SunnyCreekApts,Carlsbad,CA,Future,1. Project - PAL/ROE Signed,,,,(no candidate),,,,,
+P-003329,CALIFORNIA_TEST_SITE,CALIFORNIA_TEST_SITE,,,,1. Project - PAL/ROE Signed,,,,(no candidate),,,,,
+P-003643,CALIFORNIA_TEST_SITE,CALIFORNIA_TEST_SITE,,,,1. Project - PAL/ROE Signed,,,,(no candidate),,,,,
+P-004316,Mesa_MDU_Waterford Place Apts,Waterford Place Apts,Mesa,AZ,Future,1. Project - PAL/ROE Signed,1,3,006WR00000wkDLwYAM,Waterford Place Apartments,Mesa_MDU_Waterford Place Apts,Mesa,AZ,Prospects,MDU
+P-004316,Mesa_MDU_Waterford Place Apts,Waterford Place Apts,Mesa,AZ,Future,1. Project - PAL/ROE Signed,2,2,006WR00000wk9SYYAY,Garden Place Apartments,Mesa_MDU_Garden Place Apartments,Mesa,AZ,Contract Negotiations,MDU
+P-004316,Mesa_MDU_Waterford Place Apts,Waterford Place Apts,Mesa,AZ,Future,1. Project - PAL/ROE Signed,3,2,006WR00000wk9U0YAI,Emelita Place,Mesa_MDU_Emelita Place,Mesa,AZ,Prospects,MDU
+P-004892,Omaha_MDU_9140 W Dodge Rd,9140 W Dodge,Omaha,NE,Cancelled,1. Project - PAL/ROE Signed,1,3,006WR000011kjIhYAI,ROE - 9202 W DODGE RD OMAHA NE,,OMAHA,NE,Closed Lost,Business_ROE
+P-004892,Omaha_MDU_9140 W Dodge Rd,9140 W Dodge,Omaha,NE,Cancelled,1. Project - PAL/ROE Signed,2,3,006WR000011kjInYAI,ROE - 8420 W DODGE RD OMAHA NE,,OMAHA,NE,Closed Lost,Business_ROE
+P-004892,Omaha_MDU_9140 W Dodge Rd,9140 W Dodge,Omaha,NE,Cancelled,1. Project - PAL/ROE Signed,3,3,006WR000011kjIsYAI,ROE - 7928 W DODGE RD OMAHA NE,,OMAHA,NE,Closed Lost,Business_ROE
+P-005533,Omaha_MDU_Fontenelle Cottages,Fontenelle Cottages,OMAHA,NE,Cancelled,1. Project - PAL/ROE Signed,1,3,006WR00000xwFBBYA2,Omaha_MDU_Fontenelle Cottages,Omaha_MDU_Fontenelle Cottages,Omaha,NE,Closed Lost,MDU
+P-005536,Keller_MDU_Grand Estates @ Keller,Grand Estates @ Keller,Keller,TX,In Service,4. Project - Completed,1,3,006WR00000wkEcJYAU,Grand Estates at Keller,Keller_MDU_Grand Estates @ Keller,Keller,TX,Marketing/Bulk Complete,MDU
+P-005539,Omaha_MDU_Farnam Flats,Farnam Flats,Omaha,NE,Cancelled,1. Project - PAL/ROE Signed,1,3,006WR00000y46nRYAQ,Omaha_MDU_Farnam Flats,Omaha_MDU_Farnam Flats,Omaha,NE,PAL/ROE Complete,MDU
+P-005539,Omaha_MDU_Farnam Flats,Farnam Flats,Omaha,NE,Cancelled,1. Project - PAL/ROE Signed,2,2,006WR00000wkA6WYAU,Dundee Flats,OMAHA_MDU_Dundee Flats,Omaha,NE,Prospects,MDU
+P-006201,Killeen_SFU_Southern Hills MHP,Southern Hills MHP,Killeen,TX,Cancelled,1. Project - PAL/ROE Signed,1,4,006WR00000wkEbFYAU,Southern Hills Manufactured Home Community,Killeen_SFU_Southern Hills MHP,Killeen,TX,PAL/ROE Complete,MDU
+P-006201,Killeen_SFU_Southern Hills MHP,Southern Hills MHP,Killeen,TX,Cancelled,1. Project - PAL/ROE Signed,2,2,006WR00000wkDt8YAE,Dimple St MHP,KILLEEN_MDU_DIMPLE ST MHP,Killeen,TX,Prospects,MDU
+P-006201,Killeen_SFU_Southern Hills MHP,Southern Hills MHP,Killeen,TX,Cancelled,1. Project - PAL/ROE Signed,3,2,006WR00000wkDtMYAU,Fort_Hood MHP,KILLEEN_MDU_3103_S_Fort_Hood  MHP,Killeen,TX,Prospects,MDU

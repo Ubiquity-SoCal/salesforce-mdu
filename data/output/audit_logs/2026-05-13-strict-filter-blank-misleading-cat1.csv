@@ -1,0 +1,67 @@
+SF_Id,Name,Field,Before,After,Source,Timestamp,Action,Provenance
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=641ft
+006WR00000wiNosYAE,Sandstone Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1226ft
+006WR00000wjnPJYAY,St. James Manor Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=522ft
+006WR00000wjnPLYAY,The Normandy,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=605ft
+006WR00000wjnlKYAQ,Tremont Sr Apartment Homes,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=679ft
+006WR00000wjnlLYAQ,Ridge Point,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=679ft
+006WR00000wjnlVYAQ,MAA Copper Ridge,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1730ft
+006WR00000wjnliYAA,The Highlands at Brentwood,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=793ft
+006WR00000wjnmCYAQ,Summit Townomes,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=509ft
+006WR00000wk3OBYAY,Village Park Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1094ft
+006WR00000wk3OnYAI,Indigo Lofts,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=506ft
+006WR00000wk3PJYAY,Pecan Branch,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=827ft
+006WR00000wk9SqYAI,Hunter's Glen Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=582ft
+006WR00000wk9T3YAI,Mcqueen Landing HOA,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1807ft
+006WR00000wk9T4YAI,La Costa Hills HOA,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1151ft
+006WR00000wk9TfYAI,Santa Fe Ranch,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1083ft
+006WR00000wk9TgYAI,Hunters Pointe,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=2655ft
+006WR00000wk9U0YAI,Emelita Place,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1385ft
+006WR00000wk9U8YAI,Mesa Coronado II,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=792ft
+006WR00000wk9UDYAY,Mesa Coronado Condos,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=789ft
+006WR00000wk9UEYAY,Fiesta Villas Condos,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1432ft
+006WR00000wk9UeYAI,Ritz colony,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=555ft
+006WR00000wk9UfYAI,Sea Point Tennis Club at La Costa,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1165ft
+006WR00000wkA6KYAU,Bella Vista Senior Living Community,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=976ft
+006WR00000wkA7BYAU,Town & Country Mobile Homes,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=574ft
+006WR00000wkA7oYAE,Terrace Garden Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=544ft
+006WR00000wkA9EYAU,Allora Georgetown,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=653ft
+006WR00000wkABtYAM,Elan Alicante Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=3202ft
+006WR00000wkAkQYAU,Villeta Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1087ft
+006WR00000wkAkRYAU,2 Vista Vallley Apartments/LONGMORE ESTATES CONDOS NORTH & SOUTH,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1685ft
+006WR00000wkBTsYAM,The Cape,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=510ft
+006WR00000wkC7RYAU,Graysill Casitas,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1322ft
+006WR00000wkC7VYAU,The PLace at El Prado,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=693ft
+006WR00000wkC7XYAU,Villas Mesa 2,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=798ft
+006WR00000wkC7YYAU,Westmount at The District Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1387ft
+006WR00000wkCjlYAE,Cantebria Senior Homes,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=719ft
+006WR00000wkCjmYAE,Spyglass Point,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=2595ft
+006WR00000wkCkbYAE,Colina De La Costa HOA,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=3241ft
+006WR00000wkCkcYAE,Caringa Way Condos,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=3119ft
+006WR00000wkCkdYAE,La Costa Casa Grande,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=3357ft
+006WR00000wkCkgYAE,La Costa Village Townhomes,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=3241ft
+006WR00000wkCkjYAE,Arroyo Villas,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=2800ft
+006WR00000wkClBYAU,Belterra,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=770ft
+006WR00000wkCmMYAU,Allora North Georgetown,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=653ft
+006WR00000wkDLyYAM,Verona Park Apts,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=556ft
+006WR00000wkDM0YAM,Vista Valley Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1458ft
+006WR00000wkDM1YAM,The District at Fiesta Park Apts,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=759ft
+006WR00000wkDM7YAM,Garden Gate Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1011ft
+006WR00000wkDMCYA2,Rise at the District,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=692ft
+006WR00000wkDMGYA2,North Park Landing Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=600ft
+006WR00000wkDMHYA2,Mesa_MDU_Del Corona Apts Del Coronado,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=2199ft
+006WR00000wkDssYAE,Fiesta Village MH & RV Resort,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=696ft
+006WR00000wkDsvYAE,Park_Place (Care Center),Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=671ft
+006WR00000wkDtWYAU,GEORGETOWN_MDU_101_FM971 AKA Vered at San Gabriel,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=531ft
+006WR00000wkDu4YAE,High Country Villas 5&7,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=939ft
+006WR00000wkDu8YAE,The Turn Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=103168ft
+006WR00000wkDuAYAU,Villas on Horne,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=575ft
+006WR00000wkDuBYAU,Riverview Townhomes,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=8836ft
+006WR00000wkEbvYAE,The Traditions Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=8013ft
+006WR00000wkEcAYAU,Creekside Apartments,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=639ft
+006WR00000yv9vJYAQ,Promenade HOA,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=4298ft
+006WR00000ywSW1YAM,Paseo La Jolla Pvt Road,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=740ft
+006WR00000ywTFBYA2,Las Vistas HOA,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=646ft
+006WR00000ywTThYAM,Quail Gardens,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 2 dist_to_serviceable=1504ft
+006WR000013NaDUYA0,Walker's Park,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=34536ft
+006WR000013OnjhYAC,Dry Creek,Property_Category__c,Cat 1,,fix/2026-05-13-strict-filter-blank-misleading-cat1.py,2026-05-13T12:35:19,blanked,strict_cat=Cat 3 dist_to_serviceable=15600ft

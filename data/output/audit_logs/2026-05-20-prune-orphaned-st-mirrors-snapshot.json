@@ -1,0 +1,331 @@
+[
+  {
+    "Id": "a0FWR00000V7HyM2AV",
+    "Name": "P-005896",
+    "Site_Name__c": "Omaha_MDU_4618 Redman Ave",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-04-03T10:09:10.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000YA3N2AW",
+    "Monday_Name__c": "4618 Redman Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-05-23",
+    "Activation_Actual__c": "2025-05-23",
+    "Opportunity__c": "006WR00000xuxpsYAA",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000xuxpsYAA"
+      },
+      "Name": "Omaha_MDU_4618 Redman Ave",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7UnV2AV",
+    "Name": "P-003506",
+    "Site_Name__c": "Sweetwater_MDU_Apache Bend",
+    "Site_Status__c": "Future",
+    "Build_Status__c": "1. Project - PAL/ROE Signed",
+    "Last_Synced__c": "2026-03-26T10:39:23.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT00000008f72AA",
+    "Monday_Name__c": "Apache Bend Apartments",
+    "City__c": "Sweetwater",
+    "State__c": "TX",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": "2023-12-07",
+    "Activation_Forecast__c": null,
+    "Activation_Actual__c": null,
+    "Opportunity__c": "006WR00000wkDMzYAM",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkDMzYAM"
+      },
+      "Name": "Apache Bend Apartments",
+      "StageName": "Closed Lost"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7WVx2AN",
+    "Name": "P-005184",
+    "Site_Name__c": "Encinitas_MDU_Pacific Villas",
+    "Site_Status__c": "Future",
+    "Build_Status__c": "1. Project - PAL/ROE Signed",
+    "Last_Synced__c": "2026-03-18T15:47:45.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT00000097Th2AI",
+    "Monday_Name__c": "Pacific Villas",
+    "City__c": "Encinitas",
+    "State__c": "CA",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-01-14",
+    "Activation_Actual__c": null,
+    "Opportunity__c": "006WR00000wkC7OYAU",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkC7OYAU"
+      },
+      "Name": "Pacific Villas",
+      "StageName": "On Hold"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7Wu92AF",
+    "Name": "P-005517",
+    "Site_Name__c": "Omaha_MDU_4402 N 60th Ave",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-03-16T17:10:12.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000DIqL2AW",
+    "Monday_Name__c": "4402 N 60th Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": "1900-01-01",
+    "Activation_Forecast__c": "2025-11-18",
+    "Activation_Actual__c": "2025-11-18",
+    "Opportunity__c": "006WR000012Q2XaYAK",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR000012Q2XaYAK"
+      },
+      "Name": "Omaha_MDU_4402 N 60th Ave",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7XQP2A3",
+    "Name": "P-005790",
+    "Site_Name__c": "Omaha_MDU_6314 Boyd St",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-03-31T11:13:09.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000PnyP2AS",
+    "Monday_Name__c": "6314 Boyd St",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-03-28",
+    "Activation_Actual__c": "2025-03-18",
+    "Opportunity__c": "006WR00000wkA8zYAE",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkA8zYAE"
+      },
+      "Name": "6314 Boyd Street",
+      "StageName": "Prospecting"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7XWr2AN",
+    "Name": "P-005797",
+    "Site_Name__c": "Omaha_MDU_4484 Redman Ave",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-04-03T10:09:10.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000RAkr2AG",
+    "Monday_Name__c": "4484 Redman Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-05-23",
+    "Activation_Actual__c": "2025-05-23",
+    "Opportunity__c": "006WR00000xvYe6YAE",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000xvYe6YAE"
+      },
+      "Name": "Omaha_MDU_4484 Redman Ave",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7XYT2A3",
+    "Name": "P-005798",
+    "Site_Name__c": "Omaha_MDU_4606 Redman Ave",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-04-03T10:09:10.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000RBXF2A4",
+    "Monday_Name__c": "4606 Redman Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-05-23",
+    "Activation_Actual__c": "2025-05-23",
+    "Opportunity__c": "006WR00000xwFcbYAE",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000xwFcbYAE"
+      },
+      "Name": "Omaha_MDU_4606 Redman Ave",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7Xa52AF",
+    "Name": "P-005799",
+    "Site_Name__c": "Omaha_MDU_4612 Redman Ave",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-04-03T10:09:10.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000RC572AG",
+    "Monday_Name__c": "4612 Redman Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-05-23",
+    "Activation_Actual__c": "2025-05-23",
+    "Opportunity__c": "006WR00000y3jyvYAA",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000y3jyvYAA"
+      },
+      "Name": "Omaha_MDU_4612 Redman Ave",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7Xbh2AF",
+    "Name": "P-005806",
+    "Site_Name__c": "Omaha_MDU_4218 N 48th St Apartments",
+    "Site_Status__c": "Future",
+    "Build_Status__c": "1. Project - PAL/ROE Signed",
+    "Last_Synced__c": "2026-03-18T15:47:45.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000UKXZ2A4",
+    "Monday_Name__c": "4218 N 48th St Apartments",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": "1900-01-01",
+    "Activation_Forecast__c": null,
+    "Activation_Actual__c": null,
+    "Opportunity__c": null,
+    "Opportunity__r": null
+  },
+  {
+    "Id": "a0FWR00000V7XgX2AV",
+    "Name": "P-005895",
+    "Site_Name__c": "Omaha_MDU_4616 Redman Ave",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-04-03T10:09:10.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000Y3Q52AK",
+    "Monday_Name__c": "4616 Redman Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": "2025-05-23",
+    "Activation_Actual__c": "2025-05-23",
+    "Opportunity__c": "006WR00000xuXoyYAE",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000xuXoyYAE"
+      },
+      "Name": "Omaha_MDU_4616 Redman Ave",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7Xrq2AF",
+    "Name": "P-006130",
+    "Site_Name__c": "Omaha_MDU_4920 Capital Ave",
+    "Site_Status__c": "Future",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-03-16T17:10:12.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000000pYm12AE",
+    "Monday_Name__c": "4920 Capital Ave",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": "1900-01-01",
+    "Activation_Forecast__c": "2026-04-30",
+    "Activation_Actual__c": "2025-12-31",
+    "Opportunity__c": null,
+    "Opportunity__r": null
+  },
+  {
+    "Id": "a0FWR00000V7Xzu2AF",
+    "Name": "P-006489",
+    "Site_Name__c": "Denver_MDU_Columbine Towers",
+    "Site_Status__c": "Future",
+    "Build_Status__c": "1. Project - PAL/ROE Signed",
+    "Last_Synced__c": "2026-03-18T16:18:38.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000001z4pJ2AQ",
+    "Monday_Name__c": "Columbine Towers",
+    "City__c": "Denver",
+    "State__c": "CO",
+    "MDU_Category__c": "National",
+    "PAL_Signed_Date__c": "2025-12-08",
+    "Activation_Forecast__c": null,
+    "Activation_Actual__c": null,
+    "Opportunity__c": "006WR00000wkEb2YAE",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEb2YAE"
+      },
+      "Name": "Columbine Towers",
+      "StageName": "Marketing/Bulk Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000V7ZvF2AV",
+    "Name": "P-006444",
+    "Site_Name__c": "Omaha_MDU_Benson Crest",
+    "Site_Status__c": "Future",
+    "Build_Status__c": "1. Project - PAL/ROE Signed",
+    "Last_Synced__c": "2026-04-03T10:09:10.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT000001nahh2AA",
+    "Monday_Name__c": "Benson Crest",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": "2025-09-15",
+    "Activation_Forecast__c": "2026-04-30",
+    "Activation_Actual__c": null,
+    "Opportunity__c": "006WR00000wkEc5YAE",
+    "Opportunity__r": {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v59.0/sobjects/Opportunity/006WR00000wkEc5YAE"
+      },
+      "Name": "Benson Crest",
+      "StageName": "PAL/ROE Complete"
+    }
+  },
+  {
+    "Id": "a0FWR00000VMoif2AD",
+    "Name": "P-006598",
+    "Site_Name__c": "Omaha_MDU_Steelcrest Apts",
+    "Site_Status__c": "In Service",
+    "Build_Status__c": "4. Project - Completed",
+    "Last_Synced__c": "2026-03-16T17:10:12.000+0000",
+    "SiteTracker_Record_Id__c": "a2XVT0000029IRB2A2",
+    "Monday_Name__c": "Stealcrest Apts",
+    "City__c": "Omaha",
+    "State__c": "NE",
+    "MDU_Category__c": "In-Franchise",
+    "PAL_Signed_Date__c": null,
+    "Activation_Forecast__c": null,
+    "Activation_Actual__c": "2024-06-21",
+    "Opportunity__c": null,
+    "Opportunity__r": null
+  }
+]
