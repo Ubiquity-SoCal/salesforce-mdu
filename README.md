@@ -1,5 +1,7 @@
 # SalesForce/
 
+**Status:** Active (MDU + Inside Sales + Address Management apps)
+
 Salesforce metadata, scripts, and data for the MDU Sales / Inside Sales / Address
 Management apps. Connects to:
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Bucket__c</fullName>
+    <description>Unified sub-bucket view across all stages. Auto-pulls from Sales Status, Pursuit Status, Hold Reason, or Loss Reason depending on Stage. Use this in reports and dashboards as a single column for cross-stage analysis.</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(StageName),
+  &quot;On Hold&quot;,                  TEXT(Hold_Reason__c),
+  &quot;Closed Lost&quot;,              TEXT(Loss_Reason__c),
+  &quot;PAL/ROE Complete&quot;,         TEXT(Substatus__c),
+  &quot;Marketing/Bulk Complete&quot;,  TEXT(Substatus__c),
+  &quot;Prospects&quot;,                TEXT(Sales_Status__c),
+  &quot;Prospecting&quot;,              TEXT(Sales_Status__c),
+  &quot;Engaged&quot;,                  TEXT(Sales_Status__c),
+  &quot;Proposal Sent&quot;,            TEXT(Sales_Status__c),
+  &quot;Contract Negotiations&quot;,    TEXT(Sales_Status__c),
+  &quot;&quot;
+)</formula>
+    <inlineHelpText>The sub-bucket within the current Stage. Read-only; auto-populates from the relevant reason field (Sales Status / Pursuit Status / Hold Reason / Loss Reason) based on Stage.</inlineHelpText>
+    <label>Stage Status</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Standard User - Custom</members>
+        <members>Admin</members>
+        <members>B2B Vendor</members>
+        <members>Sales Insights Integration User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Opportunity.Substatus__c</members>
+        <members>Opportunity.Sub_Bucket__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>59.0</version>
+</Package>
