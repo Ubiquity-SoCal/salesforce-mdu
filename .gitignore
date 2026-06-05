@@ -5,3 +5,18 @@ __pycache__/
 *.pyc
 PowerBI_Report/
 api/
+
+# ── Ignore churn, keep records (mirrors parent policy: docs/2026-06-02-repo-hygiene-design.md) ──
+# Throwaway diagnostics — promote to scripts/fix or scripts/analysis if durable
+**/_probes/
+# Regenerable SF report/query output (rebuild from scripts); keep audit_logs/ as records
+data/output/*
+!data/output/audit_logs/
+# Stray output dumps written from the wrong working directory (regenerable snapshots)
+tracker-lwc/SalesForce/
+tracker-lwc/force-app/main/default/SalesForce/
+# Run logs
+*.log
+# Suffixed backups (e.g. .json.bak.scrapped-cleanup)
+*.bak
+*.bak.*
