@@ -21,11 +21,13 @@ PAL  = ("Agreement__c.Agreement_Type__c", "equals", "PAL")
 ROE  = ("Agreement__c.Agreement_Type__c", "equals", "ROE")
 NOPAL= ("Opportunity.Signed_PAL_Date_Count__c", "equals", "0")
 DONE = ("Opportunity.ST_Build_Status__c", "equals", "4. Project - Completed")
+# 2026-05-22 (Taylor): "signed/completed" = Status Completed (or Cancelled-if-signed) AND has agreement date.
+STAT = ("Agreement__c.Status__c", "equals", "Completed,Cancelled")
 
-COMBINED = ([RC, SD, PAL, ROE, NOPAL], "1 AND 2 AND (3 OR (4 AND 5))")
-PAL_ONLY = ([RC, SD, PAL], "1 AND 2 AND 3")
-ROE_ONLY = ([RC, SD, ROE, NOPAL], "1 AND 2 AND 3 AND 4")
-ACTIVATED= ([RC, SD, PAL, ROE, NOPAL, DONE], "1 AND 2 AND (3 OR (4 AND 5)) AND 6")
+COMBINED = ([RC, SD, PAL, ROE, NOPAL, STAT], "1 AND 2 AND (3 OR (4 AND 5)) AND 6")
+PAL_ONLY = ([RC, SD, PAL, STAT], "1 AND 2 AND 3 AND 4")
+ROE_ONLY = ([RC, SD, ROE, NOPAL, STAT], "1 AND 2 AND 3 AND 4 AND 5")
+ACTIVATED= ([RC, SD, PAL, ROE, NOPAL, DONE, STAT], "1 AND 2 AND (3 OR (4 AND 5)) AND 6 AND 7")
 
 # plain = name only (count reports + KPI metrics); doors = name + Units summed (Sum-of-Units chart)
 COLS_PLAIN = "<columns><field>OPPORTUNITY_NAME</field></columns>"

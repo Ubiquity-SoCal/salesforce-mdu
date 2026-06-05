@@ -17,7 +17,7 @@ SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
 sf = Salesforce(username=USERNAME, password=PASSWORD, security_token=SECURITY_TOKEN)
 
 # --- Load export ---
-EXPORT_PATH = "C:/Users/cass/Work_Projects/IronClad/Export/ironclad_export_2026-04-24_162341_all_export.xlsx"
+EXPORT_PATH = "C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-05-26_154052_all.xlsx"
 
 print("Loading export file...")
 wb = openpyxl.load_workbook(EXPORT_PATH, read_only=True)

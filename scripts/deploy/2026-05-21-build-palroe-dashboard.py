@@ -78,6 +78,21 @@ def comp_stacked(header, report):
                 <useReportChart>false</useReportChart>"""
 
 
+def comp_table(header, report):
+    # Lightning table: shows the report's columns as rows; drill opens the full report.
+    return f"""<autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>Table</componentType>
+                {DFC}
+                <drillEnabled>true</drillEnabled>
+                <drillToDetailEnabled>true</drillToDetailEnabled>
+                <header>{header}</header>
+                <indicatorHighColor>#54C254</indicatorHighColor>
+                <indicatorLowColor>#C25454</indicatorLowColor>
+                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+                <report>{RF}/{report}</report>
+                <useReportChart>false</useReportChart>"""
+
+
 def grid(inner, col, row, cspan, rspan):
     return f"""        <dashboardGridComponents>
             <colSpan>{cspan}</colSpan>
@@ -115,6 +130,10 @@ comps.append(grid(comp_chart("Donut", "IronClad-synced vs Manual", "PALROE_by_Sy
 
 # Row 3 (rowIndex 10): velocity full width
 comps.append(grid(comp_stacked("Signed by Month (PAL vs ROE)", "PALROE_by_Month"), 0, 10, 12, 3))
+
+# Row 4 (rowIndex 13+): Data Cleanup -- signed/complete PAL/ROE not linked to SiteTracker
+comps.append(grid(comp_metric("Not Linked to SiteTracker", "PAL/ROE", "PALROE_Not_Linked_SiteTracker"), 0, 13, 4, 2))
+comps.append(grid(comp_table("Not Linked to SiteTracker (worklist)", "PALROE_Not_Linked_SiteTracker"), 0, 15, 12, 6))
 
 filters = """    <dashboardFilters>
         <name>Category</name>

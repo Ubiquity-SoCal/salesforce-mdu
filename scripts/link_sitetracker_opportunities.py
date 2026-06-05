@@ -13,8 +13,8 @@ sys.stdout.reconfigure(line_buffering=True)
 print("[INFO] Connecting to Salesforce...")
 sf = Salesforce(
     username='cass1@ubiquitygp.com',
-    password='Karate88!',
-    security_token='Ktc1n9mLmD9vwEcVcl45q0iAD'
+    password='Hawaiian1984',
+    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC'
 )
 
 # Step 1: Get all SiteTracker projects that aren't linked to an Opportunity

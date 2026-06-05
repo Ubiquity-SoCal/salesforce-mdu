@@ -16,7 +16,7 @@ from simple_salesforce import Salesforce
 USERNAME = "cass1@ubiquitygp.com"
 PASSWORD = "Hawaiian1984"
 SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
-LOG_DIR = Path(r"C:\Users\cass\Work_Projects\SalesForce\audit_logs")
+LOG_DIR = Path(r"C:\Users\cass\Work_Projects\SalesForce\data\output\audit_logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 APPLY = "--apply" in sys.argv
 

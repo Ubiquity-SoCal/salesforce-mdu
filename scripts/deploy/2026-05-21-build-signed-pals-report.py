@@ -89,7 +89,7 @@ report_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
     </timeFrameFilter>
     {cols_xml}
     <filter>
-        <booleanFilter>1 AND 2 AND (3 OR (4 AND 5))</booleanFilter>
+        <booleanFilter>1 AND 2 AND (3 OR (4 AND 5)) AND 6</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
@@ -114,6 +114,11 @@ report_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
             <column>Opportunity.Signed_PAL_Date_Count__c</column>
             <operator>equals</operator>
             <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Agreement__c.Status__c</column>
+            <operator>equals</operator>
+            <value>Completed,Cancelled</value>
         </criteriaItems>
     </filter>
 </Report>"""

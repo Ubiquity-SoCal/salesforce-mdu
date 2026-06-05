@@ -28,8 +28,8 @@ USERNAME = "cass1@ubiquitygp.com"
 PASSWORD = "Hawaiian1984"
 SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
 
-EXPORT = Path("C:/Users/cass/Downloads/ironclad_export_2026-05-05_165706_all.xlsx")
-LOG_DIR = Path("C:/Users/cass/Work_Projects/SalesForce/audit_logs")
+EXPORT = Path("C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-05-26_154052_all.xlsx")
+LOG_DIR = Path("C:/Users/cass/Work_Projects/SalesForce/data/output/audit_logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 APPLY = "--apply" in sys.argv
@@ -156,16 +156,14 @@ def main():
             no_change += 1
             continue
 
-        # IronClad is authoritative for Signed_Date — overwrite SF's manual entry whenever
-        # IC has a date, regardless of current Status. Priority: Executed > Effective >
-        # Workflow Completed > Agreement Date. Agreement Date catches evergreen/repository
-        # docs (PDFs uploaded post-signing, which never have Executed/Effective populated).
-        target_signed = (
-            fmt_date(e.get("executed_date"))
-            or fmt_date(e.get("effective_date"))
-            or fmt_date(e.get("workflow_completed_date"))
-            or fmt_date(e.get("agreement_date"))
-        )
+        # Signed Date source (2026-05-22, per Taylor): use Agreement Date (always populated;
+        # for PALs it equals Effective Date, for ROEs Effective is often left blank). Executed
+        # Date is NOT reliable -- it can show a date on agreements that were never actually
+        # executed -- so it's no longer used. Only stamp a signed date for terminal-signed
+        # statuses (Completed, or Cancelled-if-signed); in-flight stages get no signed date.
+        target_signed = fmt_date(e.get("agreement_date")) or fmt_date(e.get("effective_date"))
+        if target_status not in ("Completed", "Cancelled"):
+            target_signed = None
 
         cur_status = a.get("Status__c")
         cur_signed = a.get("Signed_Date__c")
@@ -227,13 +225,13 @@ def main():
         action = "UPDATE" if APPLY else "PREVIEW"
         for d in diffs:
             w.writerow([d["agr_id"], d["agr_name"], "Status__c", d["from_status"], d["to_status"],
-                        f"ironclad_export_2026-04-29 ({d['ic_name']})", action, datetime.now().isoformat()])
+                        f"ironclad_export_2026-05-20 ({d['ic_name']})", action, datetime.now().isoformat()])
             if d["to_signed"] and d["to_signed"] != d["from_signed"]:
                 w.writerow([d["agr_id"], d["agr_name"], "Signed_Date__c", d["from_signed"], d["to_signed"],
-                            f"ironclad_export_2026-04-29 ({d['ic_name']})", action, datetime.now().isoformat()])
+                            f"ironclad_export_2026-05-20 ({d['ic_name']})", action, datetime.now().isoformat()])
         for ic_id, d in ic_type_diffs.items():
             w.writerow([ic_id, d["ic_name"], "Record_Type_IC__c", d["from"], d["to"],
-                        f"ironclad_export_2026-04-29 ({d['ic_name']})", action, datetime.now().isoformat()])
+                        f"ironclad_export_2026-05-20 ({d['ic_name']})", action, datetime.now().isoformat()])
     print(f"\nAudit: {audit}")
 
     if not APPLY:
