@@ -345,9 +345,9 @@
         h += '<div class="tab active" data-tab="team" onclick="switchTab(\'team\',this)">Team</div>';
         h += '<div class="tab" data-tab="agreements" onclick="switchTab(\'agreements\',this)">Agreements</div>';
         h += '<div class="tab" data-tab="mine" onclick="switchTab(\'mine\',this)">My Pipeline</div>';
-        h += '<div class="tab" data-tab="byowner" onclick="switchTab(\'byowner\',this)">By Owner</div>';
         h += '<div class="tab" data-tab="stale" onclick="switchTab(\'stale\',this)">Stale Deals</div>';
         h += '<div class="tab" data-tab="executive" onclick="switchTab(\'executive\',this)">Executive</div>';
+        h += '<div class="tab" data-tab="byowner" onclick="switchTab(\'byowner\',this)">By Owner</div>';
         h += '<div class="tab" data-tab="marketpen" onclick="switchTab(\'marketpen\',this)">Market Penetration</div>';
         h += '<div class="tab" data-tab="sitetracker" onclick="switchTab(\'sitetracker\',this)">Site Tracker</div>';
         h += '</div>';
