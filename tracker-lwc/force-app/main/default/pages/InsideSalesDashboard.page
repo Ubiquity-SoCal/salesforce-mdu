@@ -130,6 +130,9 @@
         .bo-acc-1 { color: #2e7d32; border-bottom-color: #2e7d32; }
         .bo-acc-2 { color: #b3261e; border-bottom-color: #b3261e; }
         .bo-acc-3 { color: #0176d3; border-bottom-color: #0176d3; }
+        .bo-legend { font-size: 0.8rem; color: #181818; margin-top: 0.6rem; }
+        .bo-legend p { margin: 0.35rem 0; }
+        .bo-legend ul { margin: 0.3rem 0 0; padding-left: 1.2rem; line-height: 1.7; }
     </style>
 </head>
 <body>
@@ -469,12 +472,23 @@
             return h;
         }
 
-        var scope = (currentPipeline === 'MDU') ? 'Cat 1 in-network MDU/SFU'
-                  : (currentPipeline === 'all' || !currentPipeline) ? 'all record types'
-                  : currentPipeline;
-        var html = '<div class="mp-header"><h3>Pipeline Progress by RE Owner</h3>'
-                 + '<div class="mp-source">Active owners only · ' + escHtml(scope)
-                 + ' view · live from Salesforce.</div></div>';
+        var rtText = (currentPipeline === 'MDU') ? 'MDU/SFU record types · Category = Cat 1 (in-network only)'
+                   : (currentPipeline === 'Business_ROE') ? 'Business ROE record type'
+                   : (currentPipeline === 'Business') ? 'Business record type'
+                   : 'all record types';
+        var html = '<div class="mp-header">'
+            + '<h3>Pipeline Progress by Owner</h3>'
+            + '<div class="mp-source">Active owners only · ' + escHtml(rtText) + ' · live from Salesforce.</div>'
+            + '<div class="bo-legend">'
+            + '<p><strong>How to read this:</strong> each active owner\'s opportunities, sorted into three sections by their pipeline <em>Stage</em>:</p>'
+            + '<ul>'
+            + '<li><strong class="bo-acc-1">① Active / In Progress</strong> — still being worked. Stage is one of: ' + escHtml(inProgress.join(', ')) + '.</li>'
+            + '<li><strong class="bo-acc-2">② Closed Lost / On Hold</strong> — dead or parked. Stage is: ' + escHtml(dead.join(', ')) + '.</li>'
+            + '<li><strong class="bo-acc-3">③ Activated / Completed</strong> — agreement secured / built. Stage is one of: ' + escHtml(done.join(', ')) + '.</li>'
+            + '</ul>'
+            + '<p style="color:#706e6b;">Filters applied: owner is an <strong>active</strong> Salesforce user · ' + escHtml(rtText) + ' · created in 2026 (dashboard standard window). Inactive-owned deals are excluded — those live in the CAT1 reassignment report.</p>'
+            + '</div>'
+            + '</div>';
         html += bucketTable('① Active / In Progress', inProgress, 'bo-acc-1');
         html += bucketTable('② Closed Lost / On Hold', dead, 'bo-acc-2');
         html += bucketTable('③ Activated / Completed', done, 'bo-acc-3');
