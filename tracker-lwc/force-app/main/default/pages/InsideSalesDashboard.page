@@ -113,6 +113,19 @@
         .data-table th, .data-table td { padding: 6px 10px; border-bottom: 1px solid #e5e5e5; font-size: 0.825rem; }
         .data-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; color: #706e6b; }
         .data-table th.num, .data-table td.num { text-align: right; }
+        /* By Owner tab — readability overrides (scoped, no effect on other tabs) */
+        .bo-table { width: auto; min-width: 460px; max-width: 100%; }
+        .bo-table th, .bo-table td { padding: 5px 14px; white-space: nowrap; }
+        .bo-table td:first-child, .bo-table th:first-child { text-align: left; font-weight: 600; color: #181818; }
+        .bo-table td.num, .bo-table th.num { font-variant-numeric: tabular-nums; }
+        .bo-table tbody tr:nth-child(even) { background: #f8fafb; }
+        .bo-table tbody tr:hover { background: #eaf4fd; }
+        .bo-table td.zero { color: #cfcfcf; }
+        .bo-table .bo-tot { border-left: 2px solid #dcdcdc; font-weight: 600; color: #1F4E78; }
+        .bo-table tr.bo-grand td { border-top: 2px solid #b8b8b8; background: #eef2f5; font-weight: 700; color: #1F4E78; }
+        .bo-acc-1 { color: #2e7d32; border-bottom-color: #2e7d32; }
+        .bo-acc-2 { color: #b3261e; border-bottom-color: #b3261e; }
+        .bo-acc-3 { color: #0176d3; border-bottom-color: #0176d3; }
     </style>
 </head>
 <body>
@@ -398,6 +411,14 @@
             ? ['Under Contract','Closed Won']
             : ['PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'];
 
+        // Short, non-wrapping column headers.
+        var HDR = {
+            'Proposal Sent': 'Proposal', 'Contract Negotiations': 'Contract',
+            'PAL/ROE Complete': 'PAL/ROE ✓', 'Marketing/Bulk In Progress': 'Bulk — In Prog',
+            'Marketing/Bulk Complete': 'Bulk ✓'
+        };
+        function hdr(s) { return HDR[s] || s; }
+
         // Pivot flat rows -> byOwner[owner][stage] = {cnt, units}
         var byOwner = {};
         rows.forEach(function(r) {
@@ -409,13 +430,13 @@
 
         function cell(o, s) { return (byOwner[o] && byOwner[o][s]) || { cnt: 0, units: 0 }; }
 
-        function bucketTable(title, stages) {
+        function bucketTable(title, stages, accent) {
             var owners = Object.keys(byOwner).filter(function(o) {
                 return stages.some(function(s) { return cell(o, s).cnt > 0; });
             });
+            var h = '<h2 class="section-h ' + accent + '">' + escHtml(title) + '</h2>';
             if (owners.length === 0) {
-                return '<h2 class="section-h">' + escHtml(title) + '</h2>'
-                     + '<div class="empty-state">No active-owner deals in this bucket.</div>';
+                return h + '<div style="font-size:0.8rem;color:#999;margin:0 0 1rem;">No active-owner deals in this bucket.</div>';
             }
             function tot(o) { return stages.reduce(function(a, s) { return a + cell(o, s).cnt; }, 0); }
             owners.sort(function(a, b) { return tot(b) - tot(a); });
@@ -423,24 +444,23 @@
             var grand = {}; stages.forEach(function(s) { grand[s] = { cnt: 0, units: 0 }; });
             var gTot = 0, gUnits = 0;
 
-            var h = '<h2 class="section-h">' + escHtml(title) + '</h2>';
-            h += '<table class="data-table"><thead><tr><th>Owner</th>';
-            stages.forEach(function(s) { h += '<th class="num">' + escHtml(s) + '</th>'; });
-            h += '<th class="num">Total</th><th class="num">Units</th></tr></thead><tbody>';
+            h += '<table class="data-table bo-table"><thead><tr><th>Owner</th>';
+            stages.forEach(function(s) { h += '<th class="num">' + escHtml(hdr(s)) + '</th>'; });
+            h += '<th class="num bo-tot">Total</th><th class="num bo-tot">Units</th></tr></thead><tbody>';
             owners.forEach(function(o) {
                 var rt = 0, ru = 0;
                 h += '<tr><td>' + escHtml(o) + '</td>';
                 stages.forEach(function(s) {
                     var c = cell(o, s);
                     rt += c.cnt; ru += c.units; grand[s].cnt += c.cnt; grand[s].units += c.units;
-                    h += '<td class="num">' + (c.cnt || '') + '</td>';
+                    h += '<td class="num' + (c.cnt ? '' : ' zero') + '">' + (c.cnt || '·') + '</td>';
                 });
                 gTot += rt; gUnits += ru;
-                h += '<td class="num">' + rt + '</td><td class="num">' + ru.toLocaleString() + '</td></tr>';
+                h += '<td class="num bo-tot">' + rt + '</td><td class="num bo-tot">' + ru.toLocaleString() + '</td></tr>';
             });
-            h += '<tr style="font-weight:700;background:#f3f3f3;"><td>GRAND TOTAL</td>';
-            stages.forEach(function(s) { h += '<td class="num">' + (grand[s].cnt || '') + '</td>'; });
-            h += '<td class="num">' + gTot + '</td><td class="num">' + gUnits.toLocaleString() + '</td></tr>';
+            h += '<tr class="bo-grand"><td>GRAND TOTAL</td>';
+            stages.forEach(function(s) { h += '<td class="num">' + (grand[s].cnt || '·') + '</td>'; });
+            h += '<td class="num bo-tot">' + gTot + '</td><td class="num bo-tot">' + gUnits.toLocaleString() + '</td></tr>';
             h += '</tbody></table>';
             return h;
         }
@@ -451,9 +471,9 @@
         var html = '<div class="mp-header"><h3>Pipeline Progress by RE Owner</h3>'
                  + '<div class="mp-source">Active owners only · ' + escHtml(scope)
                  + ' view · live from Salesforce.</div></div>';
-        html += bucketTable('① Active / In Progress', inProgress);
-        html += bucketTable('② Closed Lost / On Hold', dead);
-        html += bucketTable('③ Activated / Completed', done);
+        html += bucketTable('① Active / In Progress', inProgress, 'bo-acc-1');
+        html += bucketTable('② Closed Lost / On Hold', dead, 'bo-acc-2');
+        html += bucketTable('③ Activated / Completed', done, 'bo-acc-3');
         el.innerHTML = html;
     }
 
