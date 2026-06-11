@@ -130,9 +130,6 @@
         .bo-acc-1 { color: #2e7d32; border-bottom-color: #2e7d32; }
         .bo-acc-2 { color: #b3261e; border-bottom-color: #b3261e; }
         .bo-acc-3 { color: #0176d3; border-bottom-color: #0176d3; }
-        .bo-legend { font-size: 0.8rem; color: #181818; margin-top: 0.6rem; }
-        .bo-legend p { margin: 0.35rem 0; }
-        .bo-legend ul { margin: 0.3rem 0 0; padding-left: 1.2rem; line-height: 1.7; }
         .bo-click { cursor: pointer; }
         .bo-click:hover { text-decoration: underline; color: #0176d3; }
         .bo-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 1000; }
@@ -495,15 +492,6 @@
         var html = '<div class="mp-header">'
             + '<h3>Pipeline Progress by Owner</h3>'
             + '<div class="mp-source">Active owners only · ' + escHtml(rtText) + ' · live from Salesforce.</div>'
-            + '<div class="bo-legend">'
-            + '<p><strong>How to read this:</strong> each active owner\'s opportunities, sorted into three sections by their pipeline <em>Stage</em>:</p>'
-            + '<ul>'
-            + '<li><strong class="bo-acc-1">① Active / In Progress</strong> (still being worked). Stage is one of: ' + escHtml(inProgress.join(', ')) + '.</li>'
-            + '<li><strong class="bo-acc-2">② Closed Lost / On Hold</strong> (dead or parked). Stage is: ' + escHtml(dead.join(', ')) + '.</li>'
-            + '<li><strong class="bo-acc-3">③ Activated / Completed</strong> (agreement secured / built). Stage is one of: ' + escHtml(done.join(', ')) + '.</li>'
-            + '</ul>'
-            + '<p style="color:#706e6b;">Filters applied: owner is an <strong>active</strong> Salesforce user · ' + escHtml(rtText) + ' · created in 2026 (dashboard standard window). Inactive-owned deals are excluded (they appear in the CAT1 reassignment report).</p>'
-            + '</div>'
             + '</div>';
         html += bucketTable('① Active / In Progress', inProgress, 'bo-acc-1');
         html += bucketTable('② Closed Lost / On Hold', dead, 'bo-acc-2');
