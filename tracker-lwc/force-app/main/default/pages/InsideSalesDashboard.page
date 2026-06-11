@@ -133,6 +133,15 @@
         .bo-legend { font-size: 0.8rem; color: #181818; margin-top: 0.6rem; }
         .bo-legend p { margin: 0.35rem 0; }
         .bo-legend ul { margin: 0.3rem 0 0; padding-left: 1.2rem; line-height: 1.7; }
+        .bo-click { cursor: pointer; }
+        .bo-click:hover { text-decoration: underline; color: #0176d3; }
+        .bo-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 1000; }
+        .bo-modal-panel { background: #fff; border-radius: 6px; margin-top: 6vh; width: min(860px, 92vw); max-height: 84vh; display: flex; flex-direction: column; box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+        .bo-modal-head { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.1rem; border-bottom: 1px solid #e5e5e5; font-weight: 700; color: #032d60; font-size: 0.95rem; }
+        .bo-modal-x { cursor: pointer; font-size: 1.4rem; line-height: 1; color: #706e6b; padding: 0 0.3rem; }
+        .bo-modal-x:hover { color: #b3261e; }
+        .bo-modal-body { overflow: auto; padding: 0.4rem 1.1rem 1rem; }
+        .bo-modal-table tfoot td { font-weight: 700; border-top: 2px solid #ccc; background: #f3f3f3; }
     </style>
 </head>
 <body>
@@ -421,7 +430,7 @@
         // Short, non-wrapping column headers.
         var HDR = {
             'Proposal Sent': 'Proposal', 'Contract Negotiations': 'Contract',
-            'PAL/ROE Complete': 'PAL/ROE ✓', 'Marketing/Bulk In Progress': 'Bulk — In Prog',
+            'PAL/ROE Complete': 'PAL/ROE ✓', 'Marketing/Bulk In Progress': 'Bulk In Prog',
             'Marketing/Bulk Complete': 'Bulk ✓'
         };
         function hdr(s) { return HDR[s] || s; }
@@ -454,16 +463,23 @@
             h += '<table class="data-table bo-table"><thead><tr><th>Owner</th>';
             stages.forEach(function(s) { h += '<th class="num">' + escHtml(hdr(s)) + '</th>'; });
             h += '<th class="num bo-tot">Total</th><th class="num bo-tot">Units</th></tr></thead><tbody>';
+            var allStages = stages.join('||');
+            var plainTitle = title.replace(/^[①②③]\s*/, '');
             owners.forEach(function(o) {
                 var rt = 0, ru = 0;
                 h += '<tr><td>' + escHtml(o) + '</td>';
                 stages.forEach(function(s) {
                     var c = cell(o, s);
                     rt += c.cnt; ru += c.units; grand[s].cnt += c.cnt; grand[s].units += c.units;
-                    h += '<td class="num' + (c.cnt ? '' : ' zero') + '">' + (c.cnt || '·') + '</td>';
+                    if (c.cnt) {
+                        h += '<td class="num bo-click" data-owner="' + escHtml(o) + '" data-stages="' + escHtml(s) + '" data-label="' + escHtml(hdr(s)) + '" onclick="showOppDetail(this)">' + c.cnt + '</td>';
+                    } else {
+                        h += '<td class="num zero">·</td>';
+                    }
                 });
                 gTot += rt; gUnits += ru;
-                h += '<td class="num bo-tot">' + rt + '</td><td class="num bo-tot">' + ru.toLocaleString() + '</td></tr>';
+                h += '<td class="num bo-tot bo-click" data-owner="' + escHtml(o) + '" data-stages="' + escHtml(allStages) + '" data-label="' + escHtml(plainTitle + ' (all)') + '" onclick="showOppDetail(this)">' + rt + '</td>';
+                h += '<td class="num bo-tot">' + ru.toLocaleString() + '</td></tr>';
             });
             h += '<tr class="bo-grand"><td>GRAND TOTAL</td>';
             stages.forEach(function(s) { h += '<td class="num">' + (grand[s].cnt || '·') + '</td>'; });
@@ -482,17 +498,76 @@
             + '<div class="bo-legend">'
             + '<p><strong>How to read this:</strong> each active owner\'s opportunities, sorted into three sections by their pipeline <em>Stage</em>:</p>'
             + '<ul>'
-            + '<li><strong class="bo-acc-1">① Active / In Progress</strong> — still being worked. Stage is one of: ' + escHtml(inProgress.join(', ')) + '.</li>'
-            + '<li><strong class="bo-acc-2">② Closed Lost / On Hold</strong> — dead or parked. Stage is: ' + escHtml(dead.join(', ')) + '.</li>'
-            + '<li><strong class="bo-acc-3">③ Activated / Completed</strong> — agreement secured / built. Stage is one of: ' + escHtml(done.join(', ')) + '.</li>'
+            + '<li><strong class="bo-acc-1">① Active / In Progress</strong> (still being worked). Stage is one of: ' + escHtml(inProgress.join(', ')) + '.</li>'
+            + '<li><strong class="bo-acc-2">② Closed Lost / On Hold</strong> (dead or parked). Stage is: ' + escHtml(dead.join(', ')) + '.</li>'
+            + '<li><strong class="bo-acc-3">③ Activated / Completed</strong> (agreement secured / built). Stage is one of: ' + escHtml(done.join(', ')) + '.</li>'
             + '</ul>'
-            + '<p style="color:#706e6b;">Filters applied: owner is an <strong>active</strong> Salesforce user · ' + escHtml(rtText) + ' · created in 2026 (dashboard standard window). Inactive-owned deals are excluded — those live in the CAT1 reassignment report.</p>'
+            + '<p style="color:#706e6b;">Filters applied: owner is an <strong>active</strong> Salesforce user · ' + escHtml(rtText) + ' · created in 2026 (dashboard standard window). Inactive-owned deals are excluded (they appear in the CAT1 reassignment report).</p>'
             + '</div>'
             + '</div>';
         html += bucketTable('① Active / In Progress', inProgress, 'bo-acc-1');
         html += bucketTable('② Closed Lost / On Hold', dead, 'bo-acc-2');
         html += bucketTable('③ Activated / Completed', done, 'bo-acc-3');
         el.innerHTML = html;
+    }
+
+    /* ─── 3a3. By Owner drill-down modal — click a count to list the opps ── */
+    function boCloseModal() { var m = document.getElementById('bo-modal'); if (m) m.style.display = 'none'; }
+    function boModal() {
+        var m = document.getElementById('bo-modal');
+        if (!m) {
+            m = document.createElement('div');
+            m.id = 'bo-modal';
+            m.className = 'bo-modal-overlay';
+            m.onclick = function(e) { if (e.target === m) boCloseModal(); };
+            document.body.appendChild(m);
+        }
+        return m;
+    }
+    function showOppDetail(cell) {
+        var owner = cell.getAttribute('data-owner') || '';
+        var stages = (cell.getAttribute('data-stages') || '').split('||');
+        var label = cell.getAttribute('data-label') || '';
+        var m = boModal();
+        m.innerHTML = '<div class="bo-modal-panel"><div class="bo-modal-head"><span>'
+            + escHtml(owner) + ' &middot; ' + escHtml(label) + '</span>'
+            + '<span class="bo-modal-x" onclick="boCloseModal()">&times;</span></div>'
+            + '<div class="bo-modal-body">Loading&hellip;</div></div>';
+        m.style.display = 'flex';
+
+        // Mirror loadDashboard's RT + category filters for the current slicer.
+        var rt = '', cat = '';
+        if (currentPipeline === 'MDU') { rt = " AND (RecordType.DeveloperName='MDU' OR RecordType.DeveloperName='SFU')"; cat = " AND Property_Category__c='Cat 1'"; }
+        else if (currentPipeline === 'Business_ROE') { rt = " AND RecordType.DeveloperName='Business_ROE'"; }
+        else if (currentPipeline === 'Business') { rt = " AND RecordType.DeveloperName='Business'"; }
+
+        var ownerEsc = owner.replace(/'/g, "\\'");
+        var stageList = stages.map(function(s) { return "'" + s.replace(/'/g, "\\'") + "'"; }).join(',');
+        var soql = "SELECT Id, Name, Units__c, StageName, Property_Address__c FROM Opportunity "
+            + "WHERE Owner.IsActive = true AND " + yrFilter + rt + cat
+            + " AND Owner.Name = '" + ownerEsc + "' AND StageName IN (" + stageList + ") "
+            + "ORDER BY Units__c DESC NULLS LAST, Name";
+        query(soql).then(function(res) {
+            var rows = res.records || [];
+            var body = m.querySelector('.bo-modal-body');
+            if (!rows.length) { body.innerHTML = '<div style="padding:1rem;">No matching opportunities.</div>'; return; }
+            var b = '<table class="bo-modal-table"><thead><tr><th>Opportunity</th><th class="num">Units</th><th>Stage</th><th>Address</th></tr></thead><tbody>';
+            var tu = 0;
+            rows.forEach(function(o) {
+                tu += (o.Units__c || 0);
+                var url = lightningUrl + '/lightning/r/Opportunity/' + o.Id + '/view';
+                b += '<tr><td><a href="' + url + '" target="_blank">' + escHtml(o.Name) + '</a></td>'
+                   + '<td class="num">' + (o.Units__c != null ? Number(o.Units__c).toLocaleString() : '') + '</td>'
+                   + '<td>' + escHtml(o.StageName) + '</td>'
+                   + '<td>' + escHtml(o.Property_Address__c || '') + '</td></tr>';
+            });
+            b += '</tbody><tfoot><tr><td>' + rows.length + (rows.length === 1 ? ' opportunity' : ' opportunities')
+               + '</td><td class="num">' + tu.toLocaleString() + '</td><td colspan="2"></td></tr></tfoot></table>';
+            body.innerHTML = b;
+        }).catch(function(err) {
+            var body = m.querySelector('.bo-modal-body');
+            if (body) body.innerHTML = '<div style="padding:1rem;color:#b3261e;">Error: ' + escHtml(err.message || String(err)) + '</div>';
+        });
     }
 
     /* ─── 3b. renderMarketPen() — renders the Market Penetration tab body */
