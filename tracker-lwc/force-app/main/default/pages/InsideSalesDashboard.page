@@ -345,6 +345,7 @@
         h += '<div class="tab active" data-tab="team" onclick="switchTab(\'team\',this)">Team</div>';
         h += '<div class="tab" data-tab="agreements" onclick="switchTab(\'agreements\',this)">Agreements</div>';
         h += '<div class="tab" data-tab="mine" onclick="switchTab(\'mine\',this)">My Pipeline</div>';
+        h += '<div class="tab" data-tab="byowner" onclick="switchTab(\'byowner\',this)">By Owner</div>';
         h += '<div class="tab" data-tab="stale" onclick="switchTab(\'stale\',this)">Stale Deals</div>';
         h += '<div class="tab" data-tab="executive" onclick="switchTab(\'executive\',this)">Executive</div>';
         h += '<div class="tab" data-tab="marketpen" onclick="switchTab(\'marketpen\',this)">Market Penetration</div>';
@@ -381,6 +382,79 @@
         document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
         document.getElementById('tab-' + tabName).classList.add('active');
         el.classList.add('active');
+    }
+
+    /* ─── 3a2. renderByOwner() — three lifecycle tables, active owners ── */
+    function renderByOwner(rows) {
+        var el = document.getElementById('byowner-content');
+        if (!el) return;
+
+        var biz = (currentPipeline === 'Business');
+        var inProgress = biz
+            ? ['Prospects','Prospecting','Engaged','Contract Negotiations']
+            : ['Prospects','Prospecting','Engaged','Proposal Sent','Contract Negotiations'];
+        var dead = ['Closed Lost','On Hold'];
+        var done = biz
+            ? ['Under Contract','Closed Won']
+            : ['PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'];
+
+        // Pivot flat rows -> byOwner[owner][stage] = {cnt, units}
+        var byOwner = {};
+        rows.forEach(function(r) {
+            var o = r.ownerName || '(unknown)';
+            var s = r.StageName || '(none)';
+            if (!byOwner[o]) byOwner[o] = {};
+            byOwner[o][s] = { cnt: (r.cnt || 0), units: (r.units || 0) };
+        });
+
+        function cell(o, s) { return (byOwner[o] && byOwner[o][s]) || { cnt: 0, units: 0 }; }
+
+        function bucketTable(title, stages) {
+            var owners = Object.keys(byOwner).filter(function(o) {
+                return stages.some(function(s) { return cell(o, s).cnt > 0; });
+            });
+            if (owners.length === 0) {
+                return '<h2 class="section-h">' + escHtml(title) + '</h2>'
+                     + '<div class="empty-state">No active-owner deals in this bucket.</div>';
+            }
+            function tot(o) { return stages.reduce(function(a, s) { return a + cell(o, s).cnt; }, 0); }
+            owners.sort(function(a, b) { return tot(b) - tot(a); });
+
+            var grand = {}; stages.forEach(function(s) { grand[s] = { cnt: 0, units: 0 }; });
+            var gTot = 0, gUnits = 0;
+
+            var h = '<h2 class="section-h">' + escHtml(title) + '</h2>';
+            h += '<table class="data-table"><thead><tr><th>Owner</th>';
+            stages.forEach(function(s) { h += '<th class="num">' + escHtml(s) + '</th>'; });
+            h += '<th class="num">Total</th><th class="num">Units</th></tr></thead><tbody>';
+            owners.forEach(function(o) {
+                var rt = 0, ru = 0;
+                h += '<tr><td>' + escHtml(o) + '</td>';
+                stages.forEach(function(s) {
+                    var c = cell(o, s);
+                    rt += c.cnt; ru += c.units; grand[s].cnt += c.cnt; grand[s].units += c.units;
+                    h += '<td class="num">' + (c.cnt || '') + '</td>';
+                });
+                gTot += rt; gUnits += ru;
+                h += '<td class="num">' + rt + '</td><td class="num">' + ru.toLocaleString() + '</td></tr>';
+            });
+            h += '<tr style="font-weight:700;background:#f3f3f3;"><td>GRAND TOTAL</td>';
+            stages.forEach(function(s) { h += '<td class="num">' + (grand[s].cnt || '') + '</td>'; });
+            h += '<td class="num">' + gTot + '</td><td class="num">' + gUnits.toLocaleString() + '</td></tr>';
+            h += '</tbody></table>';
+            return h;
+        }
+
+        var scope = (currentPipeline === 'MDU') ? 'Cat 1 in-network MDU/SFU'
+                  : (currentPipeline === 'all' || !currentPipeline) ? 'all record types'
+                  : currentPipeline;
+        var html = '<div class="mp-header"><h3>Pipeline Progress by RE Owner</h3>'
+                 + '<div class="mp-source">Active owners only · ' + escHtml(scope)
+                 + ' view · live from Salesforce.</div></div>';
+        html += bucketTable('① Active / In Progress', inProgress);
+        html += bucketTable('② Closed Lost / On Hold', dead);
+        html += bucketTable('③ Activated / Completed', done);
+        el.innerHTML = html;
     }
 
     /* ─── 3b. renderMarketPen() — renders the Market Penetration tab body */
@@ -771,7 +845,10 @@
             // Q-D: Coho__c (unit status) aggregate for units inside lit MULTI-unit Business buildings.
             // Powers the unit-status pie. CA Hold buildings have a known PowerBI-import gap where parent
             // rollup counts > Coho child counts; the pie undercounts those by design.
-            query("SELECT Coho__c, COUNT(Id) c FROM Property_Unit__c WHERE Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = true AND Property_Location__r.Property_Unit_Count__c > 1 GROUP BY Coho__c")
+            query("SELECT Coho__c, COUNT(Id) c FROM Property_Unit__c WHERE Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = true AND Property_Location__r.Property_Unit_Count__c > 1 GROUP BY Coho__c"),
+
+            // ─── BY OWNER TAB (39): active owners × stage, count + units ───
+            query("SELECT Owner.Name ownerName, StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE Owner.IsActive = true AND " + yrFilter + rtFilter + catFilter + " GROUP BY Owner.Name, StageName ORDER BY Owner.Name")
         ]).then(function(results) {
             // ═══════════════════════════════════════════════════════════
             // 4c. RESULT DESTRUCTURING + COMPUTED VALUES
@@ -1760,6 +1837,13 @@
             html += '</div>'; // end executive tab
 
             // ═══════════════════════════════════════════════════════════
+            // 4i-BO. RENDER: BY OWNER TAB — container (filled by renderByOwner)
+            // ═══════════════════════════════════════════════════════════
+            html += '<div id="tab-byowner" class="tab-content' + (currentTab === 'byowner' ? ' active' : '') + '">';
+            html += '  <div id="byowner-content">Loading...</div>';
+            html += '</div>'; // end byowner tab
+
+            // ═══════════════════════════════════════════════════════════
             // 4i-MP. RENDER: MARKET PENETRATION TAB — stub
             // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-marketpen" class="tab-content' + (currentTab === 'marketpen' ? ' active' : '') + '">';
@@ -1867,6 +1951,7 @@
             // Render the Market Penetration tab body now that its container exists in the DOM.
             // recs() extracts the .records array from the SOQL response wrapper.
             renderMarketPen(recs(results[36]), recs(results[37]), recs(results[38]));
+            renderByOwner(recs(results[39]));
         }).catch(function(err) {
             document.getElementById('dashboard').innerHTML = '<div style="color:red;">Error loading dashboard: ' + err.message + '</div>';
         });
