@@ -18,7 +18,11 @@
         .two-col > .section { flex: 1; margin-bottom: 0; }
         table { width: 100%; border-collapse: collapse; }
         th { text-align: left; font-size: 0.7rem; text-transform: uppercase; color: #706e6b; padding: 6px 10px; border-bottom: 2px solid #e5e5e5; }
-        td { padding: 6px 10px; border-bottom: 1px solid #f0f0f0; font-size: 0.825rem; color: #181818; }
+        td { padding: 6px 10px; border-bottom: 1px solid #f0f0f0; font-size: 0.825rem; color: #181818; font-variant-numeric: tabular-nums; }
+        /* Universal table readability — applies to every tab's tables. Zebra + hover
+           are row-level; cell-level colored matrices (Post-PAL etc.) override and keep their colors. */
+        table tr:nth-child(even) { background: #f8fafb; }
+        table tr:hover { background: #eef4fb; }
         tr:hover td { background: #f4f6f9; }
         .amount { color: #2e844a; font-weight: 600; }
         .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
