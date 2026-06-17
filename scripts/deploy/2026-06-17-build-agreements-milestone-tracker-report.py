@@ -17,9 +17,9 @@ COLUMNS = [
     "Opportunity.Units__c",                 # Total Units
     "Opportunity.Property_Address__c",      # Address
     "Opportunity.Property_State__c",        # State
-    "Opportunity.SiteTracker_Project_ID__c",# SiteTracker project #
-    "STAGE_NAME",                           # Stage (usability extra)
-    "Opportunity.ST_Build_Status__c",       # ST Build Status (usability extra)
+    "Opportunity.ST_Project_Number__c",     # SiteTracker project # (P-XXXXXX)
+    "STAGE_NAME",                           # Stage
+    "Opportunity.Sub_Bucket__c",            # Stage Status (Sub_Bucket__c formula)
     "Opportunity.PAL_Signed_Date__c",
     "Opportunity.ROE_Signed_Date__c",
     "Opportunity.EMA_Signed_Date__c",
@@ -37,8 +37,9 @@ REPORT = f"""<?xml version="1.0" encoding="UTF-8"?>
     <name>MDU Agreements Milestone Tracker</name>
     <description>{DESC}</description>
     <reportType>Opportunity</reportType>
-    <format>Tabular</format>
+    <format>Summary</format>
     <scope>organization</scope>
+    <groupingsDown><dateGranularity>None</dateGranularity><field>Opportunity.ST_Build_Status__c</field><sortOrder>Asc</sortOrder></groupingsDown>
     {cols_xml}
     <timeFrameFilter><dateColumn>CLOSE_DATE</dateColumn><interval>INTERVAL_CUSTOM</interval></timeFrameFilter>
     <filter>
