@@ -28,7 +28,8 @@ USERNAME = "cass1@ubiquitygp.com"
 PASSWORD = "Hawaiian1984"
 SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
 
-EXPORT = Path("C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-05-26_154052_all.xlsx")
+EXPORT = Path("C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-07-01_151529_all.xlsx")
+SOURCE_LABEL = EXPORT.stem  # audit-log provenance; derives from the export filename so it never goes stale
 LOG_DIR = Path("C:/Users/cass/Work_Projects/SalesForce/data/output/audit_logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -70,6 +71,7 @@ def load_export():
             "effective_date": g(row, "Effective Date"),
             "workflow_completed_date": g(row, "Workflow Completed Date"),
             "agreement_date": g(row, "Agreement Date"),  # set even on evergreen/repository docs
+            "expiration_date": g(row, "Expiration Date"),
             "agreename": g(row, "AgreeName"),
             "agreement_type": g(row, "Agreement Type"),
             "record_type": g(row, "Record Type"),
@@ -102,7 +104,7 @@ def main():
     # Match the export by IronClad_Record__r.IronClad_Id__c (the real IronClad workflow ID),
     # NOT by Name (which is a SF auto-number).
     soql = """
-        SELECT Id, Name, Agreement_Type__c, Status__c, Signed_Date__c,
+        SELECT Id, Name, Agreement_Type__c, Status__c, Signed_Date__c, Expiration_Date__c,
                IronClad_ID__c, IronClad_Record__c, IronClad_Record__r.IronClad_Id__c,
                IronClad_Record__r.Record_Type_IC__c,
                Opportunity__c, Opportunity__r.Name, Opportunity__r.StageName,
@@ -156,24 +158,41 @@ def main():
             no_change += 1
             continue
 
+        cur_status = a.get("Status__c")
+        cur_signed = a.get("Signed_Date__c")
+        cur_expiration = a.get("Expiration_Date__c")
+
         # Signed Date source (2026-05-22, per Taylor): use Agreement Date (always populated;
         # for PALs it equals Effective Date, for ROEs Effective is often left blank). Executed
         # Date is NOT reliable -- it can show a date on agreements that were never actually
-        # executed -- so it's no longer used. Only stamp a signed date for terminal-signed
-        # statuses (Completed, or Cancelled-if-signed); in-flight stages get no signed date.
+        # executed -- so it's no longer used.
+        # A signed date belongs ONLY on an executed (Completed) agreement (Koa, 2026-06-12):
+        # in the export, Completed carry a Workflow Completed Date while Cancelled do not, so a
+        # date on a non-Completed row is just the doc/Agreement Date, never proof of execution.
+        # Enforcement extended 2026-06-22 (Koa, "IronClad is the dataset"): on a non-Completed
+        # agreement we now CLEAR a stale signed date, not just skip it. Guarded on the absence of
+        # a Workflow Completed Date so an executed-then-archived agreement (which keeps its
+        # completed date) is never wrongly cleared.
         target_signed = fmt_date(e.get("agreement_date")) or fmt_date(e.get("effective_date"))
-        if target_status not in ("Completed", "Cancelled"):
+        clear_signed = False
+        if target_status != "Completed":
             target_signed = None
+            if cur_signed and not e.get("workflow_completed_date"):
+                clear_signed = True
 
-        cur_status = a.get("Status__c")
-        cur_signed = a.get("Signed_Date__c")
+        # Expiration Date (Koa, 2026-06-15): IronClad authoritative, surfaced onto the
+        # Agreement so the Opp's Agreements related list shows each agreement's expiration.
+        # Same rule as signed date -- update when IC has a date and SF differs; a blank IC
+        # value leaves SF alone (never clears).
+        target_expiration = fmt_date(e.get("expiration_date"))
 
         same_status = (cur_status == target_status)
-        # signed_date: IC authoritative. Update if IC has a date and SF differs.
-        # If IC has no date, leave SF's value alone.
-        same_signed = (target_signed is None) or (cur_signed == target_signed)
+        # signed_date: IC authoritative. Update if IC has a date and SF differs; clear if the
+        # agreement is non-Completed and unexecuted; else leave SF's value alone.
+        same_signed = False if clear_signed else ((target_signed is None) or (cur_signed == target_signed))
+        same_expiration = (target_expiration is None) or (cur_expiration == target_expiration)
 
-        if same_status and same_signed:
+        if same_status and same_signed and same_expiration:
             no_change += 1
             continue
 
@@ -188,6 +207,9 @@ def main():
             "to_status": target_status,
             "from_signed": cur_signed,
             "to_signed": target_signed,
+            "clear_signed": clear_signed,
+            "from_expiration": cur_expiration,
+            "to_expiration": target_expiration,
         })
 
     print(f"\nNo IC match in export:        {no_match}")
@@ -225,13 +247,19 @@ def main():
         action = "UPDATE" if APPLY else "PREVIEW"
         for d in diffs:
             w.writerow([d["agr_id"], d["agr_name"], "Status__c", d["from_status"], d["to_status"],
-                        f"ironclad_export_2026-05-20 ({d['ic_name']})", action, datetime.now().isoformat()])
-            if d["to_signed"] and d["to_signed"] != d["from_signed"]:
+                        f"{SOURCE_LABEL} ({d['ic_name']})", action, datetime.now().isoformat()])
+            if d.get("clear_signed"):
+                w.writerow([d["agr_id"], d["agr_name"], "Signed_Date__c", d["from_signed"], "",
+                            f"{SOURCE_LABEL} ({d['ic_name']})", action, datetime.now().isoformat()])
+            elif d["to_signed"] and d["to_signed"] != d["from_signed"]:
                 w.writerow([d["agr_id"], d["agr_name"], "Signed_Date__c", d["from_signed"], d["to_signed"],
-                            f"ironclad_export_2026-05-20 ({d['ic_name']})", action, datetime.now().isoformat()])
+                            f"{SOURCE_LABEL} ({d['ic_name']})", action, datetime.now().isoformat()])
+            if d["to_expiration"] and d["to_expiration"] != d["from_expiration"]:
+                w.writerow([d["agr_id"], d["agr_name"], "Expiration_Date__c", d["from_expiration"], d["to_expiration"],
+                            f"{SOURCE_LABEL} ({d['ic_name']})", action, datetime.now().isoformat()])
         for ic_id, d in ic_type_diffs.items():
             w.writerow([ic_id, d["ic_name"], "Record_Type_IC__c", d["from"], d["to"],
-                        f"ironclad_export_2026-05-20 ({d['ic_name']})", action, datetime.now().isoformat()])
+                        f"{SOURCE_LABEL} ({d['ic_name']})", action, datetime.now().isoformat()])
     print(f"\nAudit: {audit}")
 
     if not APPLY:
@@ -242,8 +270,12 @@ def main():
     ok = fail = 0
     for d in diffs:
         body = {"Status__c": d["to_status"]}
-        if d["to_signed"] and d["to_signed"] != d["from_signed"]:
+        if d.get("clear_signed"):
+            body["Signed_Date__c"] = None
+        elif d["to_signed"] and d["to_signed"] != d["from_signed"]:
             body["Signed_Date__c"] = d["to_signed"]
+        if d["to_expiration"] and d["to_expiration"] != d["from_expiration"]:
+            body["Expiration_Date__c"] = d["to_expiration"]
         try:
             sf.Agreement__c.update(d["agr_id"], body)
             ok += 1
