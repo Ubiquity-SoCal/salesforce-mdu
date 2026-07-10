@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Contact__c</fullName>
+    <label>Primary Contact</label>
+    <type>Lookup</type>
+    <referenceTo>Contact</referenceTo>
+    <relationshipName>Primary_Contact_Opportunities</relationshipName>
+    <relationshipLabel>Opportunities (Primary Contact)</relationshipLabel>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <inlineHelpText>Highest-priority linked contact: Property Owner, then Property Manager, Leasing, HOA, Broker, Developer; oldest link wins ties. Maintained from Opportunity_Contact__c. See Contact Count for the total.</inlineHelpText>
+    <description>Denormalised "who do I call" contact so Opportunity reports can show one row per property. Salesforce cannot concatenate child text into a parent formula, hence this lookup.</description>
+</CustomField>
