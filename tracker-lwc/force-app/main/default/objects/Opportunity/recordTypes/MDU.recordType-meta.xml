@@ -6,21 +6,6 @@
     <description>Residential property pursuits (apartments, condos, townhomes, single family, etc) at the Property Location level. Use Business ROE for commercial buildings.</description>
     <label>MDU/SFU</label>
     <picklistValues>
-        <picklist>MDU_Categorization__c</picklist>
-        <values>
-            <fullName>OnNet</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>OffNet</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>NearNet</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
             <fullName>Best Case</fullName>
@@ -95,6 +80,37 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unoccupied%2FAbandoned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Type</picklist>
         <values>
             <fullName>Existing Business</fullName>
@@ -102,25 +118,6 @@
         </values>
         <values>
             <fullName>New Business</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Substatus__c</picklist>
-        <values>
-            <fullName>Owner Unresponsive</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Budget Not Approved %2F Business Case</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Chose Another Provider</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Bulk%2FMarketing Rejected</fullName>
             <default>false</default>
         </values>
     </picklistValues>

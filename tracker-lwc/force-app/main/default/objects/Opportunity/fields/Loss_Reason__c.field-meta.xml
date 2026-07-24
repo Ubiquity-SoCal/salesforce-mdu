@@ -60,6 +60,11 @@
                 <default>false</default>
                 <label>Rejected by Owner</label>
             </value>
+            <value>
+                <fullName>Unoccupied/Abandoned</fullName>
+                <default>false</default>
+                <label>Unoccupied/Abandoned</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
