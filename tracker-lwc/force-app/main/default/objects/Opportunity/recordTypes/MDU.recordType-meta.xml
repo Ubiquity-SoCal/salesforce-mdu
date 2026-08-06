@@ -82,6 +82,26 @@
     <picklistValues>
         <picklist>Loss_Reason__c</picklist>
         <values>
+            <fullName>Existing BULK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Fiber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Lost to Competitor</fullName>
             <default>false</default>
         </values>

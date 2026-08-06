@@ -65,6 +65,8 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
     // Owner filter
     selectedOwner = '';
+    // Hide Closed Sites toggle (server-side filter)
+    hideClosed = false;
     ownerOptions = [];
 
     // Object metadata for picklists
@@ -87,6 +89,9 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     // RE Assigned filter
     selectedREAssigned = '';
     reAssignedOptions = [];
+
+    // Unit Group (property size band) filter
+    selectedUnitGroup = '';
 
     // Campaign filter
     selectedCampaign = '';
@@ -509,6 +514,7 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         this.selectedDateRange = '';
         this.selectedCampaign = '';
         this.selectedREAssigned = '';
+        this.selectedUnitGroup = '';
         this.loadViewData();
     }
 
@@ -563,7 +569,8 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                 userSortDir: this.sortDirection || null,
                 filterField: this.filterField || null,
                 filterValue: this.filterValue || null,
-                campaignId: this.selectedCampaign || null
+                campaignId: this.selectedCampaign || null,
+                hideClosed: this.hideClosed
             });
 
             this.records = result.records.map(rec => this.flattenRecord(rec));
@@ -595,7 +602,8 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                 userSortDir: this.sortDirection || null,
                 filterField: this.filterField || null,
                 filterValue: this.filterValue || null,
-                campaignId: this.selectedCampaign || null
+                campaignId: this.selectedCampaign || null,
+                hideClosed: this.hideClosed
             });
 
             const newRecords = result.records.map(rec => this.flattenRecord(rec));
@@ -714,8 +722,39 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         await this.reloadWithFilters();
     }
 
+    // Size bands from the Unit_Group__c formula. Listed by size deliberately:
+    // sorted alphabetically these read 25-49, 50-100, < 25, > 100.
+    get unitGroupOptions() {
+        return [
+            { label: 'All Sizes', value: '' },
+            { label: '< 25 units', value: '< 25' },
+            { label: '25-49 units', value: '25-49' },
+            { label: '50-100 units', value: '50-100' },
+            { label: '> 100 units', value: '> 100' }
+        ];
+    }
+    async handleUnitGroupChange(event) {
+        this.selectedUnitGroup = event.detail.value;
+        // Drives the shared text filter so the match runs server-side across the
+        // whole dataset rather than only the loaded page. The four band labels are
+        // substring-unique, so the Apex LIKE '%band%' cannot cross-match them.
+        if (this.selectedUnitGroup) {
+            this.filterField = 'Unit_Group__c';
+            this.filterValue = this.selectedUnitGroup;
+        } else if (this.filterField === 'Unit_Group__c') {
+            this.filterField = '';
+            this.filterValue = '';
+        }
+        await this.reloadFromServer();
+    }
+
     async handleOwnerChange(event) {
         this.selectedOwner = event.detail.value;
+        await this.reloadWithFilters();
+    }
+
+    async handleHideClosedChange(event) {
+        this.hideClosed = event.target.checked;
         await this.reloadWithFilters();
     }
 
@@ -730,8 +769,8 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
             const campaignParam = this.selectedCampaign || null;
 
             const [result, summary] = await Promise.all([
-                getTrackerDataFullWithCampaign({ viewId: this.selectedViewId, recordOffset: 0, ownerName: ownerParam, dateRange: dateParam, reAssignedName: reParam, userSortField: this.sortField || null, userSortDir: this.sortDirection || null, filterField: this.filterField || null, filterValue: this.filterValue || null, campaignId: campaignParam }),
-                getTrackerSummaryFilteredWithCampaign({ viewId: this.selectedViewId, ownerName: ownerParam, dateRange: dateParam, reAssignedName: reParam, campaignId: campaignParam })
+                getTrackerDataFullWithCampaign({ viewId: this.selectedViewId, recordOffset: 0, ownerName: ownerParam, dateRange: dateParam, reAssignedName: reParam, userSortField: this.sortField || null, userSortDir: this.sortDirection || null, filterField: this.filterField || null, filterValue: this.filterValue || null, campaignId: campaignParam, hideClosed: this.hideClosed }),
+                getTrackerSummaryFilteredWithCampaign({ viewId: this.selectedViewId, ownerName: ownerParam, dateRange: dateParam, reAssignedName: reParam, campaignId: campaignParam, hideClosed: this.hideClosed })
             ]);
 
             const config = JSON.parse(result.viewConfig.Config__c);
@@ -757,13 +796,17 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
         // Owner filter is now server-side (handleOwnerChange reloads data)
 
-        // Client-side filter
+        // Client-side filter. Comma/semicolon separated values are OR-matched (e.g. "TX,NE").
         if (this.filterField && this.filterValue) {
-            const fv = this.filterValue.toLowerCase();
-            rows = rows.filter(r => {
-                const val = r[this.filterField];
-                return val != null && String(val).toLowerCase().includes(fv);
-            });
+            const terms = this.filterValue.toLowerCase().split(/[,;]/).map(t => t.trim()).filter(Boolean);
+            if (terms.length) {
+                rows = rows.filter(r => {
+                    const val = r[this.filterField];
+                    if (val == null) return false;
+                    const s = String(val).toLowerCase();
+                    return terms.some(t => s.includes(t));
+                });
+            }
         }
 
         // Client-side sort
@@ -1290,6 +1333,11 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
     handleFilterFieldChange(event) {
         this.filterField = event.detail.value;
+        // Keep the Unit Group combobox honest if the user redirects the shared
+        // text filter at a different column.
+        if (this.filterField !== 'Unit_Group__c') {
+            this.selectedUnitGroup = '';
+        }
         if (this.filterValue) {
             this.reloadFromServer();
         }
@@ -1297,6 +1345,9 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
 
     handleFilterValueChange(event) {
         this.filterValue = event.target.value;
+        if (this.selectedUnitGroup && this.filterValue !== this.selectedUnitGroup) {
+            this.selectedUnitGroup = '';
+        }
         // Debounce: reload after user stops typing
         clearTimeout(this._filterDebounce);
         this._filterDebounce = setTimeout(() => {

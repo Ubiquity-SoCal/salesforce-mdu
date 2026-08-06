@@ -61,6 +61,10 @@
     min-width: 160px;
 }
 
+.unit-group-selector {
+    min-width: 140px;
+}
+
 .filter-field {
     min-width: 140px;
 }

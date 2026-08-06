@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Group__c</fullName>
+    <label>Unit Group</label>
+    <description>Automatic size band for the property, derived from Units (Display). Requested by Niraj 2026-07-29 for the PAL/ROE acquisition refocus so the on-net MDU pipeline can be grouped by property size. Bands are &lt; 25 / 25-49 / 50-100 / &gt; 100 and are mutually exclusive: a 50-unit property is "50-100", a 100-unit property is "50-100", 101 and above is "&gt; 100". This matches the rule already applied in the "TX-NE ON Net MDUs - with Salesforce" workbook, so the counts Niraj circulated stay intact.</description>
+    <inlineHelpText>Automatic. Size band from the unit count: &lt; 25, 25-49, 50-100, or &gt; 100. Blank when the unit count is unknown.</inlineHelpText>
+    <type>Text</type>
+    <formula>IF(
+  ISBLANK(Units_Display__c), "",
+  IF(Units_Display__c &lt; 25, "&lt; 25",
+  IF(Units_Display__c &lt;= 49, "25-49",
+  IF(Units_Display__c &lt;= 100, "50-100",
+  "&gt; 100"))))</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <externalId>false</externalId>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <unique>false</unique>
+</CustomField>

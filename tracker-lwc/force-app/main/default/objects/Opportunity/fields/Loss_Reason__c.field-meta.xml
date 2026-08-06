@@ -56,6 +56,11 @@
                 <label>Existing Contract</label>
             </value>
             <value>
+                <fullName>Existing BULK</fullName>
+                <default>false</default>
+                <label>Existing BULK</label>
+            </value>
+            <value>
                 <fullName>Rejected by Owner</fullName>
                 <default>false</default>
                 <label>Rejected by Owner</label>

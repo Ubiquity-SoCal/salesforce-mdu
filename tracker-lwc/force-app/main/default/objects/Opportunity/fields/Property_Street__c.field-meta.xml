@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Street__c</fullName>
+    <label>Property Street</label>
+    <description>Street name component of the property address, split out from Property_Address__c (street number lives in Property_Street_Number__c). Requested by Niraj 2026-07-29 for the PAL/ROE acquisition refocus.</description>
+    <inlineHelpText>Street name without the number (e.g. W Dodge Rd).</inlineHelpText>
+    <type>Text</type>
+    <length>255</length>
+    <externalId>false</externalId>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <unique>false</unique>
+</CustomField>
