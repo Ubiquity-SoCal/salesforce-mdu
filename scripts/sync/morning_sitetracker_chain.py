@@ -15,16 +15,24 @@ make `sync_health_monitor.py` report OK forever and hide the fact that CI is sti
 That is the exact failure mode that cost 22 days in July: silence read as success. So this
 script also answers "is CI alive?" every morning and surfaces the verdict.
 
-**Freshness is NOT the CI signal.** That was the first cut of this script and it was wrong:
-after a local run the data stays inside the 36h window for a day and a half, so a
-freshness check would report CI healthy when CI had done nothing. The real signal is whether
-the mirror's newest `Last_Synced__c` has advanced PAST the value our own last local run left
-behind. Only something other than us - i.e. the cron - can move it.
+**Freshness alone is NOT the CI signal, and neither is movement alone.** Both halves are
+needed, and each one was learned the hard way:
 
-  * stamp advanced past our last local run -> CI_HEALTHY. Skip the chain, no redundant
-                                              prod writes.
-  * stamp still sitting where we left it    -> CI_DEAD. Run the chain, and keep saying
-                                              CI_DEAD so the broken cron stays visible.
+  * Freshness alone is wrong because after a local run the data sits inside the 36h window for
+    a day and a half, so it reports CI healthy when CI has done nothing.
+  * Movement alone is wrong because the baseline only advances when WE run locally. Once CI
+    recovers and we stop running, the baseline freezes and "moved past our stamp" keeps
+    answering ALIVE forever, including after CI dies again. Found on 2026-08-11, the day CI
+    came back, before it could mask anything.
+
+So: CI is alive only if the newest `Last_Synced__c` has advanced PAST what our own last local
+run left behind (proving the write was not ours) AND is still inside the freshness window
+(proving it is still happening). See assess_ci().
+
+  * advanced and fresh   -> CI_HEALTHY. Skip the chain, no redundant prod writes.
+  * never moved past ours -> CI_DEAD. Run the chain, and keep saying CI_DEAD so the broken
+                             cron stays visible.
+  * moved but now stale   -> CI_DEAD. It was working and has since stopped.
 
 The verdict is what the hook injects into Claude's context at session start.
 
@@ -192,6 +200,34 @@ def age_hours(ts):
     return (now() - dt).total_seconds() / 3600
 
 
+def assess_ci(current, baseline, age):
+    """Is the GitHub Actions cron alive? Returns (ci_alive, needs_run, reason).
+
+    TWO conditions, both required, and the second one is not redundant.
+
+    `advanced` (the stamp moved past what our own last local run left) proves the write came
+    from something other than this PC. That alone was the original test, and it is wrong the
+    moment CI recovers: the baseline only moves when WE run the chain locally, so once CI is
+    healthy and we stop running, the baseline freezes at some old value. Every future
+    comparison against that frozen stamp keeps answering ALIVE, forever, including after CI
+    dies again. The verdict would have gone permanently green on 2026-08-11 and never gone
+    back - the exact silence-reads-as-success failure that cost 29 days in July.
+
+    `fresh` closes it. Once CI is alive it writes daily, so a stamp older than STALE_HOURS
+    means it stopped, regardless of how far past our baseline it sits.
+    """
+    advanced = current is not None and current > baseline
+    fresh = age is not None and age <= STALE_HOURS
+    ci_alive = advanced and fresh
+    if ci_alive:
+        why = f"ALIVE (moved past ours, {age:.1f}h fresh)"
+    elif not advanced:
+        why = "DEAD - stamp never moved past ours"
+    else:
+        why = f"DEAD - stamp moved past ours but is {age:.1f}h stale, so CI has since stopped"
+    return ci_alive, not ci_alive, why
+
+
 def report():
     """Print hook JSON describing the last run. No network, no writes."""
     s = read_status()
@@ -291,10 +327,8 @@ def run_chain(today, prev):
             f"{'none' if age is None else f'{age:.1f}h'} -> "
             f"{'running chain' if needs_run else 'data already current, skipping'}")
     else:
-        ci_alive = current is not None and current > baseline
-        needs_run = not ci_alive
-        log(f"baseline from our last local run: {baseline} | now: {current} -> "
-            f"CI {'ALIVE' if ci_alive else 'DEAD'}")
+        ci_alive, needs_run, why = assess_ci(current, baseline, age)
+        log(f"baseline from our last local run: {baseline} | now: {current} -> CI {why}")
 
     if ci_alive:
         log("GitHub Actions cron is working; skipping the local chain")
