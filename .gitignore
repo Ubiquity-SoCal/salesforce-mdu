@@ -12,11 +12,16 @@ api/
 # Regenerable SF report/query output (rebuild from scripts); keep audit_logs/ as records
 data/output/*
 !data/output/audit_logs/
+# Definitions of scheduled tasks we deliberately removed - records, not output
+!data/output/*-scheduled-task-backup.xml
 # Stray output dumps written from the wrong working directory (regenerable snapshots)
 tracker-lwc/SalesForce/
 tracker-lwc/force-app/main/default/SalesForce/
 # Run logs
 *.log
+# Morning SiteTracker chain: per-run state and the single-writer lock, both rewritten daily
+scripts/sync/morning-chain-status.json
+scripts/sync/morning-chain.lock
 # Suffixed backups (e.g. .json.bak.scrapped-cleanup)
 *.bak
 *.bak.*
