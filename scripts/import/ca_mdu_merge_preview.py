@@ -26,15 +26,31 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from simple_salesforce import Salesforce
+import os as _os
 
 # ── Config ──────────────────────────────────────────────────────────────────
 CA_MDU_XLSX = r"C:\Users\cass\OneDrive - Ubiquity Management\Desktop\CA MDU Agreement Status 04172026.xlsx"
 RE_XLSX     = r"C:\Users\cass\OneDrive - Ubiquity Management\Desktop\Opportunities_Prospects_RE (6).xlsx"
 OUTPUT_XLSX = r"C:\Users\cass\Work_Projects\SalesForce\CA_MDU_Merge\preview.xlsx"
 
-SF_USERNAME = "cass1@ubiquitygp.com"
-SF_PASSWORD = "Hawaiian1984"
-SF_TOKEN    = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+# Salesforce config -- read from the gitignored SalesForce/api/ creds file.
+# Never hardcode the password here: this file is tracked in git.
+def _sf_creds():
+    _p = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+                       "..", "..", "api", "Salesforce_Credentials.txt")
+    _c = {}
+    with open(_p) as _f:
+        for _line in _f:
+            if ":" in _line:
+                _k, _v = _line.split(":", 1)
+                _c[_k.strip()] = _v.strip()
+    return _c
+
+
+_SF = _sf_creds()
+SF_USERNAME = _SF["Username"]
+SF_PASSWORD = _SF["Password"]
+SF_TOKEN = _SF["Security Token"]
 
 JUSTIN_BARRY_ID    = "005WR0000030RCzYAM"
 MDU_RECORD_TYPE_ID = "012WR00000Ra0mkYAB"

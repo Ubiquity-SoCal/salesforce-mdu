@@ -2,6 +2,12 @@ import sys
 import argparse
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--dry-run', action='store_true', help='Preview matches without updating Salesforce')
 args = parser.parse_args()
@@ -12,9 +18,9 @@ sys.stdout.reconfigure(line_buffering=True)
 # Connect to main Salesforce org
 print("[INFO] Connecting to Salesforce...")
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC'
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"]
 )
 
 # Step 1: Get all SiteTracker projects that aren't linked to an Opportunity

@@ -10,7 +10,13 @@ import os
 from collections import Counter
 from simple_salesforce import Salesforce
 
-USER="cass1@ubiquitygp.com"; PW="Hawaiian1984"; TOK="IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USER=_SF["username"]; PW=_SF["password"]; TOK=_SF["token"]
 sf = Salesforce(username=os.environ.get("SF_MAIN_USERNAME", USER),
                 password=os.environ.get("SF_MAIN_PASSWORD", PW),
                 security_token=os.environ.get("SF_MAIN_TOKEN", TOK))

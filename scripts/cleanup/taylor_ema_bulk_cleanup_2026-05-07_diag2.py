@@ -3,9 +3,9 @@ from simple_salesforce import Salesforce
 from collections import Counter
 
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 # Sample 3 Opps and look at their Agreement records' CreatedDate
@@ -25,6 +25,12 @@ for nm in ['Baldwin Manor', 'Purgatory Creek Townhomes', 'Stonebridge Gardens',
 # Pull all 97 Opps, see who LastModifiedById on 5/5 was
 print('\n== Who modified the 97 Opps on 5/5? ==')
 import json, os
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 with open(r'C:\Users\cass\Work_Projects\SalesForce\audit_logs\2026-05-07_taylor_ema_bulk_cleanup\phase1_resolved_targets.json') as f:
     j = json.load(f)
 opp_ids = list({a['Opportunity__c'] for a in j['agreements_to_delete']})

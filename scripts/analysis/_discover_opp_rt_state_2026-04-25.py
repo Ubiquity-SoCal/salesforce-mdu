@@ -11,7 +11,7 @@ from pathlib import Path
 from datetime import datetime
 from simple_salesforce import Salesforce
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 snap = {'generated_at': datetime.now().isoformat(timespec='seconds')}
 
@@ -46,6 +46,12 @@ for f in desc['fields']:
 print("\n[3b] OpportunityStage values per Record Type (UI-API)")
 snap['stage_per_rt'] = {}
 import requests
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 hdr = {'Authorization': f'Bearer {sf.session_id}', 'Content-Type': 'application/json'}
 for rt in snap['record_types']:
     rt_id = rt['Id']

@@ -10,7 +10,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 from simple_salesforce import Salesforce
 from collections import Counter
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 # ── 1. SFU RT usage ──
 print("=" * 70)
@@ -101,6 +101,12 @@ print("=" * 70)
 # OR PermissionSet.recordTypeVisibilities. Easiest read = retrieve via Metadata API.
 import requests, base64, zipfile, io as bio, time
 from xml.etree import ElementTree as ET
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 
 INSTANCE = sf.sf_instance
 SESSION = sf.session_id

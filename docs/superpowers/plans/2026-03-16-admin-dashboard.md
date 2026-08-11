@@ -71,15 +71,15 @@ sys.stdout.reconfigure(line_buffering=True)
 print("[INFO] Connecting to main Salesforce org...")
 sf_main = Salesforce(
     username='cass1@ubiquitygp.com',
-    password='Karate88!',
-    security_token='Ktc1n9mLmD9vwEcVcl45q0iAD'
+    password='<password: see _shared/sf_auth.py>',
+    security_token='<token: see _shared/sf_auth.py>'
 )
 
 print("[INFO] Connecting to SiteTracker org...")
 sf_st = Salesforce(
     username='cass@ubiquitygp.com',
-    password='Hawaiian84',
-    security_token='fe2pen6ceQeqGhWXhBeOIjqP'
+    password='<password: see _shared/sf_auth.py org=st>',
+    security_token='<token: see _shared/sf_auth.py org=st>'
 )
 
 # Step 1: Pull all MDU Fiber records from SiteTracker (not cancelled)
@@ -317,8 +317,8 @@ def sync_status(sync_name):
         from simple_salesforce import Salesforce
         sf = Salesforce(
             username='cass1@ubiquitygp.com',
-            password='Karate88!',
-            security_token='Ktc1n9mLmD9vwEcVcl45q0iAD'
+            password='<password: see _shared/sf_auth.py>',
+            security_token='<token: see _shared/sf_auth.py>'
         )
 
         if sync_name == "sitetracker":

@@ -6,9 +6,9 @@ from collections import defaultdict, Counter
 from datetime import datetime, timezone
 
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 rt = sf.query("SELECT Id FROM RecordType WHERE SobjectType='Opportunity' AND DeveloperName='MDU'")['records'][0]['Id']
@@ -177,6 +177,12 @@ for o, reason, last_act in inactive_owner[:50]:
 
 # Save full audit CSV
 import csv
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 with open('audit_logs/stage_audit_on_hold_2026-05-04.csv', 'w', newline='', encoding='utf-8') as f:
     w = csv.DictWriter(f, fieldnames=['Id','Name','Owner','Reason','Last_Activity','Bucket','Next_Action','Projected'])
     w.writeheader()

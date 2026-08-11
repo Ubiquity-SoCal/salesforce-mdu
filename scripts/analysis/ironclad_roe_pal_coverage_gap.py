@@ -24,9 +24,15 @@ from pathlib import Path
 from openpyxl import load_workbook
 from simple_salesforce import Salesforce
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Hawaiian1984"
-SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+SECURITY_TOKEN = _SF["token"]
 
 EXPORT = Path("C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-07-01_151529_all.xlsx")
 OUT = Path("C:/Users/cass/Work_Projects/SalesForce/data/output")

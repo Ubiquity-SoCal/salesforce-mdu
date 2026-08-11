@@ -1,7 +1,13 @@
 from simple_salesforce import Salesforce
 import requests, json, base64, io, zipfile, time
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Karate88!', security_token='Ktc1n9mLmD9vwEcVcl45q0iAD')
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 # Fix 1: Update Role picklist - use ContractContactRole value set name
 # The standard value set for OpportunityContactRole.Role is "OpptyContactRole"
@@ -210,7 +216,7 @@ if resp2.status_code == 201:
 
 # Verify picklist
 print("\nVerifying role picklist...")
-sf2 = Salesforce(username='cass1@ubiquitygp.com', password='Karate88!', security_token='Ktc1n9mLmD9vwEcVcl45q0iAD')
+sf2 = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 desc = sf2.OpportunityContactRole.describe()
 for f in desc['fields']:
     if f['name'] == 'Role':

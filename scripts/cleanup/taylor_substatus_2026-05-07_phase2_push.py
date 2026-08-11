@@ -13,6 +13,12 @@ from datetime import datetime
 
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 AUDIT_DIR = r'C:\Users\cass\Work_Projects\SalesForce\audit_logs\2026-05-07_taylor_substatus_push'
 TARGETS = os.path.join(AUDIT_DIR, 'phase1_resolved_targets.json')
 SOURCE_TAG = 'TM_review_2026-05-04'
@@ -42,9 +48,9 @@ print(f'  Sales_Status pushes: {len(sales_status)}')
 # Re-read current SF state for idempotency before pushing
 print('\nConnecting to Salesforce...')
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 all_ids = list({p['Id'] for p in substatus + sales_status})

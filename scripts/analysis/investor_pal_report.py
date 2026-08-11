@@ -21,7 +21,13 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from datetime import datetime
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 BUCKETS_ADVANCED_FIRST = ['ON Air Serviceable','On Net - AAC','Near Net - AAC','Needs Classification','Proposal Sent','Prospects']
 BUCKETS_DISPLAY = ['Prospects','Proposal Sent','On Net - AAC','Near Net - AAC','ON Air Serviceable','Needs Classification']

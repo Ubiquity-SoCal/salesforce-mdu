@@ -1,9 +1,21 @@
 from simple_salesforce import Salesforce
 import requests, json, base64, io, zipfile, time
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_ST = _sf_creds("st")
+
+_SF = _sf_creds()
+
+
 # Connect to both orgs
-sf_main = Salesforce(username='cass1@ubiquitygp.com', password='Karate88!', security_token='Ktc1n9mLmD9vwEcVcl45q0iAD')
-sf_st = Salesforce(username='cass@ubiquitygp.com', password='Hawaiian84', security_token='fe2pen6ceQeqGhWXhBeOIjqP')
+sf_main = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
+sf_st = Salesforce(username=_ST["username"], password=_ST["password"], security_token=_ST["token"])
 
 # Step 1: Create SiteTracker_Project__c object in main org
 print("Step 1: Creating SiteTracker_Project__c object...")

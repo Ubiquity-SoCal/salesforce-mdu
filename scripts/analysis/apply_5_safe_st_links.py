@@ -9,6 +9,12 @@ from datetime import datetime
 from pathlib import Path
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 sys.stdout.reconfigure(line_buffering=True)
 
 # (ST project number, expected Opp Name)
@@ -26,9 +32,9 @@ TS = datetime.now().strftime('%Y%m%d_%H%M%S')
 OUT = OUT_DIR / f'st_links_5safe_{TS}.csv'
 
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC'
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"]
 )
 
 rows = []

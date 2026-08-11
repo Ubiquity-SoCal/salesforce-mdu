@@ -68,11 +68,14 @@
         .cat1-banner { background: #eaf4fd; border-left: 4px solid #0176d3; color: #032d60; padding: 8px 14px; margin-bottom: 14px; font-size: 0.825rem; border-radius: 2px; }
         .cat1-banner strong { color: #0176d3; }
         /* Agreements Signed by Type — subtle column dividers */
-        .agr-signed { table-layout: fixed; width: 100%; }
+        .agr-signed { table-layout: auto; width: 100%; }
         .agr-signed th, .agr-signed td {
             border-right: 1px solid #eef0f3;
             border-bottom: 1px solid #eef0f3;
+            white-space: nowrap;
+            padding: 5px 12px;
         }
+        .agr-signed .agr-units { color: #706e6b; font-weight: 400; font-size: 0.82em; margin-left: 3px; }
         .agr-signed th:last-child, .agr-signed td:last-child { border-right: none; }
         .agr-signed tr:last-child td { border-bottom: none; }
         /* Lane forecast tables - tighter so Action + Action Date fit on one row */
@@ -558,6 +561,162 @@
         });
     }
 
+    /* ─── 3a3b. Site Tracker drill-down — click a units cell to list the projects ──
+       Each clickable cell carries its own SOQL predicate in data-where; we append the
+       current state slicer (same as the summary queries) so the modal reconciles to the
+       cell number. No RecordType/Cat 1 filter — the mirror is build-side, matching the
+       summary queries on this tab. */
+    function showSTDetail(cell) {
+        var where = cell.getAttribute('data-where') || '';
+        var label = cell.getAttribute('data-label') || '';
+        var m = boModal();
+        m.innerHTML = '<div class="bo-modal-panel"><div class="bo-modal-head"><span>Site Tracker &middot; '
+            + escHtml(label) + '</span>'
+            + '<span class="bo-modal-x" onclick="boCloseModal()">&times;</span></div>'
+            + '<div class="bo-modal-body">Loading&hellip;</div></div>';
+        m.style.display = 'flex';
+
+        var st = '';
+        if (currentExecState !== 'all' && execStateMap[currentExecState]) {
+            var vals = execStateMap[currentExecState].map(function(v) { return "'" + v + "'"; }).join(',');
+            st = " AND Opportunity__r.Property_State__c IN (" + vals + ")";
+        }
+        var soql = "SELECT Id, Name, Site_Name__c, Build_Status__c, MDU_Construction_Complete_F__c, "
+            + "Activation_Forecast__c, Opportunity__c, Opportunity__r.Name, Opportunity__r.Property_State__c, "
+            + "Opportunity__r.Units__c, Opportunity__r.Owner.Name FROM SiteTracker_Project__c "
+            + "WHERE " + where + st + " ORDER BY Opportunity__r.Units__c DESC NULLS LAST, Name";
+        query(soql).then(function(res) {
+            var rows = res.records || [];
+            var body = m.querySelector('.bo-modal-body');
+            if (!rows.length) { body.innerHTML = '<div style="padding:1rem;">No matching projects.</div>'; return; }
+            var b = '<table class="bo-modal-table"><thead><tr><th>Opportunity</th><th>SiteTracker Project</th><th>Build Status</th><th>Constr. Complete (F)</th><th>Activation (F)</th><th>State</th><th class="num">Units</th><th>Owner</th></tr></thead><tbody>';
+            var tu = 0;
+            rows.forEach(function(r) {
+                var opp = r.Opportunity__r || {};
+                var u = (opp.Units__c != null) ? Number(opp.Units__c) : 0; tu += u;
+                var ourl = r.Opportunity__c ? (lightningUrl + '/lightning/r/Opportunity/' + r.Opportunity__c + '/view') : '';
+                var surl = lightningUrl + '/lightning/r/SiteTracker_Project__c/' + r.Id + '/view';
+                var oppCell = opp.Name ? (ourl ? '<a href="' + ourl + '" target="_blank">' + escHtml(opp.Name) + '</a>' : escHtml(opp.Name)) : '';
+                var siteLabel = r.Site_Name__c || r.Name || '';
+                b += '<tr><td>' + oppCell + '</td>'
+                   + '<td><a href="' + surl + '" target="_blank">' + escHtml(siteLabel) + '</a></td>'
+                   + '<td>' + escHtml(r.Build_Status__c || '') + '</td>'
+                   + '<td>' + (r.MDU_Construction_Complete_F__c || '').slice(0, 10) + '</td>'
+                   + '<td>' + (r.Activation_Forecast__c || '').slice(0, 10) + '</td>'
+                   + '<td>' + escHtml(opp.Property_State__c || '') + '</td>'
+                   + '<td class="num">' + (opp.Units__c != null ? u.toLocaleString() : '') + '</td>'
+                   + '<td>' + escHtml((opp.Owner && opp.Owner.Name) || '') + '</td></tr>';
+            });
+            b += '</tbody><tfoot><tr><td colspan="6">' + rows.length + (rows.length === 1 ? ' project' : ' projects')
+               + '</td><td class="num">' + tu.toLocaleString() + '</td><td></td></tr></tfoot></table>';
+            body.innerHTML = b;
+        }).catch(function(err) {
+            var body = m.querySelector('.bo-modal-body');
+            if (body) body.innerHTML = '<div style="padding:1rem;color:#b3261e;">Error: ' + escHtml(err.message || String(err)) + '</div>';
+        });
+    }
+
+    /* ─── 3a4. Executive "Agreements Signed by Type" drill-down — same bo-modal ──
+       Click a count in the pivot to list the agreements behind it. Mirrors the
+       pivot's own filters (RecordType pipeline + State + Cat 1) so the modal rows
+       always reconcile to the cell number. Status is shown (and non-Completed rows
+       flagged red) so stray signed dates surface at a glance. */
+    function pad2(n) { return (n < 10 ? '0' : '') + n; }
+    function monthDateRange(year, mi) {
+        var last = new Date(year, mi, 0).getDate(); // mi is 1-based -> last day of that month
+        return { start: year + '-' + pad2(mi) + '-01', end: year + '-' + pad2(mi) + '-' + pad2(last) };
+    }
+    function yearDateRange(yr) { return { start: yr + '-01-01', end: yr + '-12-31' }; }
+
+    // Clickable agreement-count <td>. types: array of Agreement_Type__c values
+    // ('Other' = null type). start/end: 'YYYY-MM-DD'. opts: {zeroDash, style}.
+    function agrTd(count, types, start, end, label, opts) {
+        opts = opts || {};
+        var style = 'text-align:center;' + (opts.style || '');
+        var unitStr = (opts.units > 0) ? '<span class="agr-units">&middot; ' + Number(opts.units).toLocaleString() + '</span>' : '';
+        if (!(count > 0)) {
+            return '<td style="' + style + '">' + (opts.zeroDash ? '<span style="color:#d8dde6;">-</span>' : (count || 0)) + '</td>';
+        }
+        return '<td class="bo-click" style="' + style + '" data-types="' + escHtml(types.join('||'))
+            + '" data-start="' + start + '" data-end="' + end + '" data-label="' + escHtml(label)
+            + '" onclick="showAgreementDetail(this)">' + count + unitStr + '</td>';
+    }
+
+    function showAgreementDetail(cell) {
+        var types = (cell.getAttribute('data-types') || '').split('||').filter(function(s) { return s.length; });
+        var start = cell.getAttribute('data-start') || '';
+        var end = cell.getAttribute('data-end') || '';
+        var label = cell.getAttribute('data-label') || '';
+        var m = boModal();
+        m.innerHTML = '<div class="bo-modal-panel"><div class="bo-modal-head"><span>Agreements Signed &middot; '
+            + escHtml(label) + '</span>'
+            + '<span class="bo-modal-x" onclick="boCloseModal()">&times;</span></div>'
+            + '<div class="bo-modal-body">Loading&hellip;</div></div>';
+        m.style.display = 'flex';
+
+        // Rebuild the SAME RecordType + State + Cat 1 filters the pivot query uses.
+        var rt = '', cat = '', st = '';
+        if (currentPipeline === 'MDU') {
+            rt = " AND (Opportunity__r.RecordType.DeveloperName='MDU' OR Opportunity__r.RecordType.DeveloperName='SFU')";
+            cat = " AND Opportunity__r.Property_Category__c='Cat 1'";
+        } else if (currentPipeline === 'Business_ROE') {
+            rt = " AND Opportunity__r.RecordType.DeveloperName='Business_ROE'";
+        } else if (currentPipeline === 'Business') {
+            rt = " AND Opportunity__r.RecordType.DeveloperName='Business'";
+        }
+        if (currentExecState !== 'all' && execStateMap[currentExecState]) {
+            var vals = execStateMap[currentExecState].map(function(v) { return "'" + v + "'"; }).join(',');
+            st = " AND Opportunity__r.Property_State__c IN (" + vals + ")";
+        }
+
+        // Type predicate — 'Other' (the pivot's bucket for a blank type) maps to null.
+        var realTypes = [], hasOther = false;
+        types.forEach(function(t) { if (t === 'Other') hasOther = true; else realTypes.push(t); });
+        var clauses = [];
+        if (realTypes.length) {
+            clauses.push("Agreement_Type__c IN (" + realTypes.map(function(t) { return "'" + t.replace(/'/g, "\\'") + "'"; }).join(',') + ")");
+        }
+        if (hasOther) clauses.push("Agreement_Type__c = null");
+        var typePred = clauses.length ? " AND (" + clauses.join(" OR ") + ")" : "";
+
+        // Status = Completed to reconcile with the pivot cell (which now counts Completed only).
+        var soql = "SELECT Id, Name, Agreement_Type__c, Status__c, Signed_Date__c, Opportunity__c, "
+            + "Opportunity__r.Name, Opportunity__r.Units__c FROM Agreement__c "
+            + "WHERE Signed_Date__c >= " + start + " AND Signed_Date__c <= " + end
+            + " AND Status__c = 'Completed'"
+            + typePred + rt + cat + st
+            + " ORDER BY Signed_Date__c, Name";
+        query(soql).then(function(res) {
+            var rows = res.records || [];
+            var body = m.querySelector('.bo-modal-body');
+            if (!rows.length) { body.innerHTML = '<div style="padding:1rem;">No matching agreements.</div>'; return; }
+            var b = '<table class="bo-modal-table"><thead><tr><th>Agreement</th><th>Opportunity</th><th>Status</th><th>Signed</th><th class="num">Units</th></tr></thead><tbody>';
+            var tu = 0;
+            rows.forEach(function(a) {
+                var opp = a.Opportunity__r || {};
+                tu += (opp.Units__c || 0);
+                var aurl = lightningUrl + '/lightning/r/Agreement__c/' + a.Id + '/view';
+                var ourl = a.Opportunity__c ? (lightningUrl + '/lightning/r/Opportunity/' + a.Opportunity__c + '/view') : '';
+                var oppCell = opp.Name ? (ourl ? '<a href="' + ourl + '" target="_blank">' + escHtml(opp.Name) + '</a>' : escHtml(opp.Name)) : '';
+                var signed = (a.Signed_Date__c || '').slice(0, 10);
+                var stat = a.Status__c || '';
+                // Flag rows whose status isn't Completed — a signed date on those is suspect.
+                var statStyle = (stat !== 'Completed') ? ' style="color:#b3261e;font-weight:600;"' : '';
+                b += '<tr><td><a href="' + aurl + '" target="_blank">' + escHtml(a.Name) + '</a></td>'
+                   + '<td>' + oppCell + '</td>'
+                   + '<td' + statStyle + '>' + escHtml(stat) + '</td>'
+                   + '<td>' + escHtml(signed) + '</td>'
+                   + '<td class="num">' + (opp.Units__c != null ? Number(opp.Units__c).toLocaleString() : '') + '</td></tr>';
+            });
+            b += '</tbody><tfoot><tr><td colspan="4">' + rows.length + (rows.length === 1 ? ' agreement' : ' agreements')
+               + '</td><td class="num">' + tu.toLocaleString() + '</td></tr></tfoot></table>';
+            body.innerHTML = b;
+        }).catch(function(err) {
+            var body = m.querySelector('.bo-modal-body');
+            if (body) body.innerHTML = '<div style="padding:1rem;color:#b3261e;">Error: ' + escHtml(err.message || String(err)) + '</div>';
+        });
+    }
+
     /* ─── 3b. renderMarketPen() — renders the Market Penetration tab body */
 
     // Horizontal bar chart helper. data = [{label, value, pct}]. Returns HTML.
@@ -916,10 +1075,12 @@
             query("SELECT StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE Projected_Close_Date__c != null AND StageName IN (" + openPipelineStages + ") AND Id NOT IN (SELECT Opportunity__c FROM SiteTracker_Project__c WHERE Activation_Actual__c != null)" + rtFilter + execStateFilter + catFilter + " GROUP BY StageName"),
             // Distinct states for slicer (never filtered by state itself)
             query("SELECT Property_State__c, COUNT(Id) cnt FROM Opportunity WHERE Property_State__c != null AND StageName NOT IN ('Closed Lost')" + rtFilter + " GROUP BY Property_State__c ORDER BY Property_State__c"),
-            // Agreements signed this year by month and type
-            query("SELECT CALENDAR_MONTH(Signed_Date__c) mo, Agreement_Type__c, COUNT(Id) cnt FROM Agreement__c WHERE Signed_Date__c >= " + new Date().getFullYear() + "-01-01 AND Signed_Date__c <= " + new Date().getFullYear() + "-12-31" + agrFilter + execAgrStateFilter + agrCatFilter + " GROUP BY CALENDAR_MONTH(Signed_Date__c), Agreement_Type__c ORDER BY CALENDAR_MONTH(Signed_Date__c)"),
-            // Agreements signed in prior years by year and type
-            query("SELECT CALENDAR_YEAR(Signed_Date__c) yr, Agreement_Type__c, COUNT(Id) cnt FROM Agreement__c WHERE Signed_Date__c < " + new Date().getFullYear() + "-01-01 AND Signed_Date__c != null" + agrFilter + execAgrStateFilter + agrCatFilter + " GROUP BY CALENDAR_YEAR(Signed_Date__c), Agreement_Type__c ORDER BY CALENDAR_YEAR(Signed_Date__c)"),
+            // Agreements signed this year by month and type. Status = Completed only:
+            // IronClad 'Sign' = sent for signature, not yet signed (Cancelled/Review/Paused
+            // likewise aren't signed), so any of them would inflate the pivot. (Melissa, 2026-06-15)
+            query("SELECT CALENDAR_MONTH(Signed_Date__c) mo, Agreement_Type__c, COUNT(Id) cnt, SUM(Opportunity__r.Units__c) units FROM Agreement__c WHERE Signed_Date__c >= " + new Date().getFullYear() + "-01-01 AND Signed_Date__c <= " + new Date().getFullYear() + "-12-31 AND Status__c = 'Completed'" + agrFilter + execAgrStateFilter + agrCatFilter + " GROUP BY CALENDAR_MONTH(Signed_Date__c), Agreement_Type__c ORDER BY CALENDAR_MONTH(Signed_Date__c)"),
+            // Agreements signed in prior years by year and type (Completed only — same reason)
+            query("SELECT CALENDAR_YEAR(Signed_Date__c) yr, Agreement_Type__c, COUNT(Id) cnt, SUM(Opportunity__r.Units__c) units FROM Agreement__c WHERE Signed_Date__c < " + new Date().getFullYear() + "-01-01 AND Signed_Date__c != null AND Status__c = 'Completed'" + agrFilter + execAgrStateFilter + agrCatFilter + " GROUP BY CALENDAR_YEAR(Signed_Date__c), Agreement_Type__c ORDER BY CALENDAR_YEAR(Signed_Date__c)"),
             // Pipeline with projected close date (pre-PAL through Marketing/Bulk Complete)
             // Marketing/Bulk Complete Opps stay on Melissa's list until CX/SiteTracker activates the build.
             // Excludes Opps where SiteTracker has activated the build — those drop off her list.
@@ -949,7 +1110,18 @@
             query("SELECT Coho__c, COUNT(Id) c FROM Property_Unit__c WHERE Property_Location__r.Address_Type__c='Business' AND Property_Location__r.Import_Delete_Property__c=false AND Property_Location__r.Lit__c = true AND Property_Location__r.Property_Unit_Count__c > 1 GROUP BY Coho__c"),
 
             // ─── BY OWNER TAB (39): active owners × stage, count + units ───
-            query("SELECT Owner.Name ownerName, StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE Owner.IsActive = true AND " + yrFilter + rtFilter + catFilter + " GROUP BY Owner.Name, StageName ORDER BY Owner.Name")
+            query("SELECT Owner.Name ownerName, StageName, COUNT(Id) cnt, SUM(Units__c) units FROM Opportunity WHERE Owner.IsActive = true AND " + yrFilter + rtFilter + catFilter + " GROUP BY Owner.Name, StageName ORDER BY Owner.Name"),
+
+            // ─── SITE TRACKER: Build Status snapshot (40) — projects + units by build status ───
+            // Answers "how many units are under construction at this time". Units basis =
+            // Opportunity.Units__c (same as the rest of this page). State slicer applies; Cat 1
+            // filter intentionally does NOT (matches the forecast list exemption).
+            query("SELECT Build_Status__c, COUNT(Id) cnt, SUM(Opportunity__r.Units__c) units FROM SiteTracker_Project__c WHERE Build_Status__c != null" + execAgrStateFilter + " GROUP BY Build_Status__c ORDER BY Build_Status__c"),
+            // ─── SITE TRACKER: Construction-Complete forecast list (41) — not yet complete ───
+            // Drives the "construction complete by month" forecast (Fiber First handoff).
+            query("SELECT Id, Name, Site_Name__c, Build_Status__c, MDU_Construction_Complete_F__c, Activation_Forecast__c, Opportunity__c, Opportunity__r.Name, Opportunity__r.Property_State__c, Opportunity__r.Units__c, Opportunity__r.Owner.Name FROM SiteTracker_Project__c WHERE MDU_Construction_Complete_F__c != null AND MDU_Construction_Complete_A__c = null" + execAgrStateFilter + " ORDER BY MDU_Construction_Complete_F__c ASC"),
+            // ─── SITE TRACKER: Build status × State (42) — drives the by-state breakdown table ───
+            query("SELECT Opportunity__r.Property_State__c stt, Build_Status__c bs, COUNT(Id) cnt, SUM(Opportunity__r.Units__c) units FROM SiteTracker_Project__c WHERE Build_Status__c != null" + execAgrStateFilter + " GROUP BY Opportunity__r.Property_State__c, Build_Status__c")
         ]).then(function(results) {
             // ═══════════════════════════════════════════════════════════
             // 4c. RESULT DESTRUCTURING + COMPUTED VALUES
@@ -1006,6 +1178,10 @@
             var execCompletedDetail = recs(results[32]);
             var execInProgressST = recs(results[33]);
             var execInProgressAgreements = recs(results[34]);
+            // SITE TRACKER additions: build-status snapshot (40) + construction-complete forecast (41)
+            var stBuildStatus = recs(results[40]);
+            var execConstrComplete = recs(results[41]);
+            var stByState = recs(results[42]);
 
             // Post-PAL Substatus x Build state (35) — covers PAL/ROE Complete + Marketing/Bulk stages
             var postPalRows = recs(results[35]);
@@ -1606,8 +1782,9 @@
                 }
             });
 
-            // Build signed-by-month-and-type data
+            // Build signed-by-month-and-type data (+ agreement-weighted units in parallel)
             var signedByMonthType = {}; // {month: {type: cnt}}
+            var signedUnitsByMonthType = {}; // {month: {type: units}}
             var signedTypes = [];
             var totalSignedYTD = 0;
             execSignedByMonth.forEach(function(r) {
@@ -1615,22 +1792,34 @@
                 var t = r.Agreement_Type__c || 'Other';
                 if (!signedByMonthType[mo]) signedByMonthType[mo] = {};
                 signedByMonthType[mo][t] = (signedByMonthType[mo][t] || 0) + r.cnt;
+                if (!signedUnitsByMonthType[mo]) signedUnitsByMonthType[mo] = {};
+                signedUnitsByMonthType[mo][t] = (signedUnitsByMonthType[mo][t] || 0) + (r.units || 0);
                 if (signedTypes.indexOf(t) === -1) signedTypes.push(t);
                 totalSignedYTD += r.cnt;
             });
 
-            // Build signed-by-year-and-type for prior years
+            // Build signed-by-year-and-type for prior years (+ units)
             var signedByYearType = {}; // {year: {type: cnt}}
+            var signedUnitsByYearType = {}; // {year: {type: units}}
             var priorYears = [];
             execSignedByYear.forEach(function(r) {
                 var yr = r.yr;
                 var t = r.Agreement_Type__c || 'Other';
                 if (!signedByYearType[yr]) signedByYearType[yr] = {};
                 signedByYearType[yr][t] = (signedByYearType[yr][t] || 0) + r.cnt;
+                if (!signedUnitsByYearType[yr]) signedUnitsByYearType[yr] = {};
+                signedUnitsByYearType[yr][t] = (signedUnitsByYearType[yr][t] || 0) + (r.units || 0);
                 if (priorYears.indexOf(yr) === -1) priorYears.push(yr);
                 if (signedTypes.indexOf(t) === -1) signedTypes.push(t);
             });
             priorYears.sort();
+            // Column order: PAL/ROE first (what most people read), rarer types after.
+            var agrTypeOrder = ['PAL', 'ROE', 'EMA', 'Bulk', 'NEMA', 'PAL Addendum', 'MSA Addendum', '2nd ISP NEMA', 'Other'];
+            signedTypes.sort(function(a, b) {
+                var ia = agrTypeOrder.indexOf(a); if (ia === -1) ia = 900;
+                var ib = agrTypeOrder.indexOf(b); if (ib === -1) ib = 900;
+                return ia - ib || a.localeCompare(b);
+            });
 
             // Past-due count for the KPI tile. Per-row past-due styling happens inside
             // renderStageRowHTML below; we just need the count here.
@@ -1657,7 +1846,7 @@
             html += '<div class="two-col">';
 
             // Funnel — real SVG trapezoid funnel that narrows top-to-bottom
-            html += '<div class="section"><div class="section-title">Sales Pipeline Funnel</div>';
+            html += '<div class="section" style="flex:0 1 42%;"><div class="section-title">Sales Pipeline Funnel</div>';
             var funnelColors = ['#1F3A68', '#2C5BA0', '#3a7bd5', '#4D9DE0', '#2E7D32', '#43A047', '#66BB6A'];
             var FW = 600, FH = 350;
             var FTOP = 1.0, FBOT = 0.30; // 100% wide at top, 30% at bottom
@@ -1693,21 +1882,16 @@
             html += '</div>';
 
             // Monthly agreements signed by type (table)
-            html += '<div class="section"><div class="section-title">Agreements Signed by Type</div>';
+            html += '<div class="section" style="flex:1 1 58%;min-width:0;"><div class="section-title">Agreements Signed by Type</div>';
             var currentMonth = new Date().getMonth() + 1;
+            var currentYear = new Date().getFullYear();
             if (signedTypes.length === 0 && priorYears.length === 0) {
                 html += '<div class="empty-state">No agreements signed</div>';
             } else {
-                // Fixed-layout table so every type column is the same width
-                var labelColPct = 12;
-                var totalColPct = 12;
-                var typeColPct = (100 - labelColPct - totalColPct) / Math.max(signedTypes.length, 1);
+                // Auto-layout + nowrap cells so each "count · units" pair stays on one line.
+                // Wrapped in a horizontal scroller: PAL/ROE lead, rarer types scroll into view.
+                html += '<div style="overflow-x:auto;">';
                 html += '<table class="agr-signed">';
-                html += '<colgroup>';
-                html += '<col style="width:' + labelColPct + '%;">';
-                signedTypes.forEach(function() { html += '<col style="width:' + typeColPct.toFixed(2) + '%;">'; });
-                html += '<col style="width:' + totalColPct + '%;">';
-                html += '</colgroup>';
                 html += '<tr><th></th>';
                 signedTypes.forEach(function(t) { html += '<th style="text-align:center;">' + t + '</th>'; });
                 html += '<th style="text-align:center;font-weight:700;">Total</th></tr>';
@@ -1715,14 +1899,17 @@
                 // Prior year rows
                 priorYears.forEach(function(yr) {
                     var rowData = signedByYearType[yr] || {};
-                    var rowTotal = 0;
+                    var rowUnits = signedUnitsByYearType[yr] || {};
+                    var rng = yearDateRange(yr);
+                    var rowTotal = 0, rowTotalUnits = 0;
                     html += '<tr style="background:#f9f9f9;"><td style="font-weight:600;text-align:left;">' + yr + '</td>';
                     signedTypes.forEach(function(t) {
-                        var c = rowData[t] || 0;
-                        rowTotal += c;
-                        html += '<td style="text-align:center;">' + (c > 0 ? c : '<span style="color:#d8dde6;">-</span>') + '</td>';
+                        var c = rowData[t] || 0, u = rowUnits[t] || 0;
+                        rowTotal += c; rowTotalUnits += u;
+                        html += agrTd(c, [t], rng.start, rng.end, yr + ' · ' + t, { zeroDash: true, units: u });
                     });
-                    html += '<td style="text-align:center;font-weight:600;">' + rowTotal + '</td></tr>';
+                    html += agrTd(rowTotal, signedTypes, rng.start, rng.end, yr + ' · All types', { style: 'font-weight:600;', units: rowTotalUnits });
+                    html += '</tr>';
                 });
 
                 // Separator between years and months
@@ -1731,48 +1918,59 @@
                 }
 
                 // Current year monthly rows
-                var typeTotals = {};
-                signedTypes.forEach(function(t) { typeTotals[t] = 0; });
-                var grandTotal = 0;
+                var typeTotals = {}, typeUnitTotals = {};
+                signedTypes.forEach(function(t) { typeTotals[t] = 0; typeUnitTotals[t] = 0; });
+                var grandTotal = 0, grandTotalUnits = 0;
                 for (var mi = 1; mi <= currentMonth; mi++) {
                     var rowData = signedByMonthType[mi] || {};
-                    var rowTotal = 0;
+                    var rowUnits = signedUnitsByMonthType[mi] || {};
+                    var rng = monthDateRange(currentYear, mi);
+                    var rowTotal = 0, rowTotalUnits = 0;
                     html += '<tr><td style="text-align:left;">' + months[mi - 1] + '</td>';
                     signedTypes.forEach(function(t) {
-                        var c = rowData[t] || 0;
-                        rowTotal += c;
-                        typeTotals[t] += c;
-                        html += '<td style="text-align:center;">' + (c > 0 ? c : '<span style="color:#d8dde6;">-</span>') + '</td>';
+                        var c = rowData[t] || 0, u = rowUnits[t] || 0;
+                        rowTotal += c; rowTotalUnits += u;
+                        typeTotals[t] += c; typeUnitTotals[t] += u;
+                        html += agrTd(c, [t], rng.start, rng.end, months[mi - 1] + ' ' + currentYear + ' · ' + t, { zeroDash: true, units: u });
                     });
-                    grandTotal += rowTotal;
-                    html += '<td style="text-align:center;font-weight:600;">' + rowTotal + '</td></tr>';
+                    grandTotal += rowTotal; grandTotalUnits += rowTotalUnits;
+                    html += agrTd(rowTotal, signedTypes, rng.start, rng.end, months[mi - 1] + ' ' + currentYear + ' · All types', { style: 'font-weight:600;', units: rowTotalUnits });
+                    html += '</tr>';
                 }
-                html += '<tr style="font-weight:700;border-top:2px solid #e5e5e5;background:#f4f6f9;"><td style="text-align:left;">' + new Date().getFullYear() + ' Total</td>';
-                signedTypes.forEach(function(t) { html += '<td style="text-align:center;">' + typeTotals[t] + '</td>'; });
-                html += '<td style="text-align:center;">' + grandTotal + '</td></tr>';
+                var yrRng = yearDateRange(currentYear);
+                html += '<tr style="font-weight:700;border-top:2px solid #e5e5e5;background:#f4f6f9;"><td style="text-align:left;">' + currentYear + ' Total</td>';
+                signedTypes.forEach(function(t) { html += agrTd(typeTotals[t], [t], yrRng.start, yrRng.end, currentYear + ' · ' + t, { units: typeUnitTotals[t] }); });
+                html += agrTd(grandTotal, signedTypes, yrRng.start, yrRng.end, currentYear + ' · All types', { units: grandTotalUnits });
+                html += '</tr>';
 
                 // Grand total including prior years
                 if (priorYears.length > 0) {
-                    var allTimeTotals = {};
-                    var allTimeGrand = 0;
-                    signedTypes.forEach(function(t) { allTimeTotals[t] = typeTotals[t] || 0; });
-                    allTimeGrand += grandTotal;
+                    var allTimeTotals = {}, allTimeUnitTotals = {};
+                    var allTimeGrand = 0, allTimeGrandUnits = 0;
+                    signedTypes.forEach(function(t) { allTimeTotals[t] = typeTotals[t] || 0; allTimeUnitTotals[t] = typeUnitTotals[t] || 0; });
+                    allTimeGrand += grandTotal; allTimeGrandUnits += grandTotalUnits;
                     priorYears.forEach(function(yr) {
                         var rowData = signedByYearType[yr] || {};
+                        var rowUnits = signedUnitsByYearType[yr] || {};
                         signedTypes.forEach(function(t) {
                             allTimeTotals[t] += (rowData[t] || 0);
+                            allTimeUnitTotals[t] += (rowUnits[t] || 0);
                         });
                         Object.keys(rowData).forEach(function(t) { allTimeGrand += rowData[t]; });
+                        Object.keys(rowUnits).forEach(function(t) { allTimeGrandUnits += rowUnits[t]; });
                     });
+                    var allStart = priorYears[0] + '-01-01';
+                    var allEnd = currentYear + '-12-31';
                     html += '<tr style="font-weight:700;border-top:3px double #032d60;background:#e8eef7;"><td style="text-align:left;">Grand Total</td>';
-                    signedTypes.forEach(function(t) { html += '<td style="text-align:center;">' + allTimeTotals[t] + '</td>'; });
-                    html += '<td style="text-align:center;">' + allTimeGrand + '</td></tr>';
+                    signedTypes.forEach(function(t) { html += agrTd(allTimeTotals[t], [t], allStart, allEnd, 'All time · ' + t, { units: allTimeUnitTotals[t] }); });
+                    html += agrTd(allTimeGrand, signedTypes, allStart, allEnd, 'All time · All types', { units: allTimeGrandUnits });
+                    html += '</tr>';
                 }
-                html += '</table>';
+                html += '</table></div>';
             }
             // Footnote: clarify grain — counts agreements (PAL/ROE/EMA/BULK/etc.), not properties
             html += '<div style="margin-top:10px;padding:8px 12px;background:#f8f9fa;border-left:3px solid #706e6b;font-size:0.7rem;color:#3e3e3c;line-height:1.5;">';
-            html += '<strong>* Grain note:</strong> Counts <strong>agreements signed</strong>, not properties. One property can stack multiple agreements over its lifecycle (PAL &rarr; ROE &rarr; EMA &rarr; BULK), so this total will run higher than the funnel\'s site count. Use the funnel for "how many properties" and this table for "how many contracts executed".';
+            html += '<strong>* Grain note:</strong> Counts <strong>agreements signed</strong>, with each agreement\'s property <strong>units</strong> (&middot;&nbsp;grey) beside it. Not a property count: one property can stack multiple agreements over its lifecycle (PAL &rarr; ROE &rarr; EMA &rarr; BULK), so both the counts and the unit sums are agreement-weighted and run higher than the funnel\'s site/door count. Use the funnel for "how many properties" and this table for "how many contracts executed".';
             html += '</div>';
             html += '</div>';
 
@@ -1952,95 +2150,146 @@
             html += '</div>'; // end marketpen tab
 
             // ═══════════════════════════════════════════════════════════
-            // 4i. RENDER: SITE TRACKER TAB — Forecasted Activations
+            // 4i. RENDER: SITE TRACKER TAB — Build status snapshot, forecast-by-month
+            //     (construction complete + activation), and by-state units. All units
+            //     cells are click-to-drill (showSTDetail).
             // ═══════════════════════════════════════════════════════════
             html += '<div id="tab-sitetracker" class="tab-content' + (currentTab === 'sitetracker' ? ' active' : '') + '">';
 
-            // In-Progress Build Projects (SiteTracker). Bucketed by Activation Forecast.
-            var stPastDue = [], stNext30 = [], stNext60 = [], stNext90 = [], stOver90 = [];
-            var stNow30 = new Date(); stNow30.setDate(stNow30.getDate() + 30);
-            var stNow60 = new Date(); stNow60.setDate(stNow60.getDate() + 60);
-            var stNow90 = new Date(); stNow90.setDate(stNow90.getDate() + 90);
-            execInProgressST.forEach(function(r) {
-                var d = new Date(r.Activation_Forecast__c + 'T00:00:00');
-                if (d < today) stPastDue.push(r);
-                else if (d <= stNow30) stNext30.push(r);
-                else if (d <= stNow60) stNext60.push(r);
-                else if (d <= stNow90) stNext90.push(r);
-                else stOver90.push(r);
-            });
-
-            function renderSTAgreementBadges(oppId) {
-                var agrs = stAgreementMap[oppId] || [];
-                if (agrs.length === 0) return '<span style="color:#d8dde6;">—</span>';
-                var out = '';
-                agrs.forEach(function(a) {
-                    var s = a.Status__c || '';
-                    var bc = (s === 'Completed' || s === 'Archive') ? 'badge-won' : (s === 'Cancelled' || s === 'Paused') ? 'badge-lost' : (s === 'Sign' || s === 'Review') ? 'badge-warn' : 'badge-open';
-                    out += '<span class="badge ' + bc + '" style="margin:1px 2px;">' + (a.Agreement_Type__c || '') + ' - ' + s + '</span> ';
-                });
-                return out;
+            // ── Shared helpers for the Site Tracker summaries ──
+            // Units basis is Opportunity.Units__c (consistent with the rest of the page).
+            function stUnits(list) {
+                var s = 0;
+                list.forEach(function(r) { var o = r.Opportunity__r; s += (o && o.Units__c) ? Number(o.Units__c) : 0; });
+                return s;
             }
-
-            function renderSTBucketRows(list) {
+            var MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var todayKey = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2);
+            function monthLabel(key) { var p = key.split('-'); return MONTH_NAMES[parseInt(p[1], 10) - 1] + ' ' + p[0]; }
+            // Bucket a list of ST projects by calendar month of dateField; overdue (before this
+            // month) is rolled into a single "Past due" row. Each Units cell is clickable —
+            // it carries a SOQL predicate (date range + actualField=null) for showSTDetail.
+            function ymd(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+            function uCell(units, where, label) {
+                if (!(units > 0)) { return '<td class="num">' + Number(units || 0).toLocaleString() + '</td>'; }
+                return '<td class="num bo-click" data-where="' + escHtml(where) + '" data-label="' + escHtml(label) + '" onclick="showSTDetail(this)">' + units.toLocaleString() + '</td>';
+            }
+            function renderMonthTable(title, list, dateField, actualField) {
+                var firstOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+                var firstStr = ymd(firstOfMonth);
+                var map = {}, order = [], past = {c: 0, u: 0};
                 list.forEach(function(r) {
-                    var stUrl  = lightningUrl + '/lightning/r/SiteTracker_Project__c/' + r.Id + '/view';
-                    var hasOpp = !!r.Opportunity__c;
-                    var oppUrl = hasOpp ? (lightningUrl + '/lightning/r/Opportunity/' + r.Opportunity__c + '/view') : '';
-                    var oppName = hasOpp && r.Opportunity__r ? r.Opportunity__r.Name : '';
-                    var state   = r.Opportunity__r ? (r.Opportunity__r.Property_State__c || '') : '';
-                    var units   = (r.Opportunity__r && r.Opportunity__r.Units__c) ? r.Opportunity__r.Units__c : 0;
-                    var owner   = (r.Opportunity__r && r.Opportunity__r.Owner) ? r.Opportunity__r.Owner.Name : '';
-                    var siteLabel = (r.Site_Name__c || r.Name || '');
-                    var projNum = r.Name || '';
-                    html += '<tr>';
-                    if (hasOpp) {
-                        html += '<td><a class="opp-link" href="' + oppUrl + '" target="_blank">' + oppName + '</a></td>';
-                    } else {
-                        html += '<td></td>';
-                    }
-                    html += '<td><a class="opp-link" href="' + stUrl + '" target="_blank">' + siteLabel + '</a>';
-                    if (projNum && projNum !== siteLabel) {
-                        html += ' <span style="color:#706e6b;font-size:0.75rem;">(' + projNum + ')</span>';
-                    }
-                    html += '</td>';
-                    html += '<td>' + (r.Build_Status__c || '') + '</td>';
-                    html += '<td>' + (r.Activation_Forecast__c || '') + '</td>';
-                    html += '<td>' + state + '</td>';
-                    html += '<td style="text-align:right">' + units + '</td>';
-                    html += '<td>' + owner + '</td>';
-                    html += '<td>' + renderSTAgreementBadges(r.Opportunity__c) + '</td>';
-                    html += '</tr>';
+                    var dv = r[dateField]; if (!dv) return;
+                    var o = r.Opportunity__r, u = (o && o.Units__c) ? Number(o.Units__c) : 0;
+                    if (new Date(dv + 'T00:00:00') < firstOfMonth) { past.c++; past.u += u; return; }
+                    var key = dv.slice(0, 7);
+                    if (!map[key]) { map[key] = {c: 0, u: 0}; order.push(key); }
+                    map[key].c++; map[key].u += u;
                 });
+                order.sort();
+                var notYet = ' AND ' + actualField + ' = null';
+                var h = '<div class="section" style="flex:1;"><div class="section-title">' + title + '</div>';
+                h += '<table class="data-table"><thead><tr><th>Month</th><th class="num">Projects</th><th class="num">Units</th></tr></thead><tbody>';
+                var totC = 0, totU = 0;
+                if (past.c > 0) {
+                    totC += past.c; totU += past.u;
+                    var wPast = dateField + ' < ' + firstStr + notYet;
+                    h += '<tr style="background:#fef0ef;"><td style="color:#c23934;font-weight:600;">Past due</td><td class="num">' + past.c + '</td>' + uCell(past.u, wPast, title + ' · Past due') + '</tr>';
+                }
+                order.forEach(function(k) {
+                    var v = map[k]; totC += v.c; totU += v.u;
+                    var parts = k.split('-'), y = parseInt(parts[0], 10), mo = parseInt(parts[1], 10);
+                    var endY = (mo === 12) ? y + 1 : y, endMo = (mo === 12) ? 1 : mo + 1;
+                    var wMo = dateField + ' >= ' + k + '-01 AND ' + dateField + ' < ' + endY + '-' + ('0' + endMo).slice(-2) + '-01' + notYet;
+                    var hl = (k === todayKey) ? ' style="background:#e5f6fd;"' : '';
+                    h += '<tr' + hl + '><td>' + monthLabel(k) + '</td><td class="num">' + v.c + '</td>' + uCell(v.u, wMo, title + ' · ' + monthLabel(k)) + '</tr>';
+                });
+                if (totC === 0) { h += '<tr><td colspan="3" class="empty-state">None</td></tr>'; }
+                else { h += '<tr style="font-weight:700;border-top:2px solid #032d60;"><td>Total</td><td class="num">' + totC + '</td><td class="num">' + totU.toLocaleString() + '</td></tr>'; }
+                return h + '</tbody></table></div>';
             }
 
-            html += '<div class="section"><div class="section-title">Forecasted Activations (' + execInProgressST.length + ')</div>';
-            if (execInProgressST.length === 0) {
-                html += '<div class="empty-state">No projects with a forecasted activation date</div>';
+            // ── Build Status snapshot — answers "how many units are under construction?" ──
+            var unitsUnderConstruction = 0, projUnderConstruction = 0;
+            stBuildStatus.forEach(function(r) {
+                if (r.Build_Status__c && r.Build_Status__c.indexOf('Construction') !== -1) {
+                    unitsUnderConstruction += Number(r.units || 0); projUnderConstruction += Number(r.cnt || 0);
+                }
+            });
+            html += '<div class="section"><div class="section-title">Build Status — Projects &amp; Units</div>';
+            html += '<div class="metric-card" style="display:inline-block;min-width:220px;margin-bottom:10px;background:#fff3e0;border:1px solid #e68619;">'
+                  + '<div class="metric-label">Units Under Construction</div>'
+                  + '<div class="metric-value" style="color:#e68619;">' + unitsUnderConstruction.toLocaleString() + '</div>'
+                  + '<div class="metric-sub">' + projUnderConstruction + ' projects in Construction Phase</div></div>';
+            if (stBuildStatus.length === 0) {
+                html += '<div class="empty-state">No SiteTracker projects with a build status</div>';
             } else {
-                html += '<table><thead><tr><th>Opportunity</th><th>SiteTracker Project</th><th>Build Status</th><th>Activation Forecast</th><th>State</th><th style="text-align:right">Units</th><th>Owner</th><th>Agreements</th></tr></thead><tbody>';
-
-                // Past Due
-                html += '<tr><td colspan="8" style="background:#fef0ef;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#c23934;border-bottom:2px solid #c23934;">Past Due (' + stPastDue.length + ')</td></tr>';
-                if (stPastDue.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stPastDue); }
-
-                // Next 30
-                html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#0176d3;border-bottom:2px solid #0176d3;">Next 30 Days (' + stNext30.length + ')</td></tr>';
-                if (stNext30.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stNext30); }
-
-                // 30-60
-                html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#06a59a;border-bottom:2px solid #06a59a;">30-60 Days (' + stNext60.length + ')</td></tr>';
-                if (stNext60.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stNext60); }
-
-                // 60-90
-                html += '<tr><td colspan="8" style="background:#e5f6fd;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#e68619;border-bottom:2px solid #e68619;">60-90 Days (' + stNext90.length + ')</td></tr>';
-                if (stNext90.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stNext90); }
-
-                // 90+
-                html += '<tr><td colspan="8" style="background:#f4f6f9;padding:8px 10px;font-weight:700;font-size:0.8rem;color:#706e6b;border-bottom:2px solid #706e6b;">90+ Days (' + stOver90.length + ')</td></tr>';
-                if (stOver90.length === 0) { html += '<tr><td colspan="8" class="empty-state">None</td></tr>'; } else { renderSTBucketRows(stOver90); }
-
+                html += '<table class="data-table"><thead><tr><th>Build Status</th><th class="num">Projects</th><th class="num">Units</th></tr></thead><tbody>';
+                var bsTotC = 0, bsTotU = 0;
+                stBuildStatus.forEach(function(r) {
+                    var c = Number(r.cnt || 0), u = Number(r.units || 0); bsTotC += c; bsTotU += u;
+                    var hl = (r.Build_Status__c && r.Build_Status__c.indexOf('Construction') !== -1) ? ' style="background:#fff3e0;font-weight:600;"' : '';
+                    var bsVal = (r.Build_Status__c || '').replace(/'/g, "\\'");
+                    var wBs = "Build_Status__c = '" + bsVal + "'";
+                    var uc = (u > 0) ? '<td class="num bo-click" data-where="' + escHtml(wBs) + '" data-label="' + escHtml(r.Build_Status__c || '') + '" onclick="showSTDetail(this)">' + u.toLocaleString() + '</td>' : '<td class="num">' + u.toLocaleString() + '</td>';
+                    html += '<tr' + hl + '><td>' + (r.Build_Status__c || '') + '</td><td class="num">' + c + '</td>' + uc + '</tr>';
+                });
+                html += '<tr style="font-weight:700;border-top:2px solid #032d60;"><td>Total</td><td class="num">' + bsTotC + '</td><td class="num">' + bsTotU.toLocaleString() + '</td></tr>';
                 html += '</tbody></table>';
+                html += '<div class="metric-sub" style="margin-top:6px;">Units = Opportunity Living Units. Reflects the active pipeline/state slicer; Cat 1 filter not applied.</div>';
+            }
+            html += '</div>';
+
+            // ── Forecast by month — Construction Complete + Activation (handoff to Fiber First) ──
+            html += '<div class="two-col">';
+            html += renderMonthTable('Construction Complete — Forecast by Month', execConstrComplete, 'MDU_Construction_Complete_F__c', 'MDU_Construction_Complete_A__c');
+            html += renderMonthTable('Activation — Forecast by Month', execInProgressST, 'Activation_Forecast__c', 'Activation_Actual__c');
+            html += '</div>';
+
+            // ── Units by State × Build Status (clickable) ──
+            var STATUS_COLS = [
+                { key: '1. Project - PAL/ROE Signed', label: 'Signed' },
+                { key: '2. Project - Design Phase', label: 'Design' },
+                { key: '3. Project - Construction Phase', label: 'Construction' },
+                { key: '4. Project - Completed', label: 'Completed' }
+            ];
+            var stateMap = {};
+            stByState.forEach(function(r) {
+                var s = r.stt || '(no state)';
+                if (!stateMap[s]) stateMap[s] = {};
+                stateMap[s][r.bs] = { c: Number(r.cnt || 0), u: Number(r.units || 0) };
+            });
+            var stateKeys = Object.keys(stateMap).sort();
+            html += '<div class="section"><div class="section-title">Units by State &amp; Build Status</div>';
+            if (stateKeys.length === 0) {
+                html += '<div class="empty-state">No SiteTracker projects with a build status</div>';
+            } else {
+                html += '<table class="data-table"><thead><tr><th>State</th>';
+                STATUS_COLS.forEach(function(col) { html += '<th class="num">' + col.label + '</th>'; });
+                html += '<th class="num">Total</th></tr></thead><tbody>';
+                var colTot = {}, grand = 0;
+                stateKeys.forEach(function(s) {
+                    var stateWhere = (s === '(no state)') ? "Opportunity__r.Property_State__c = null" : "Opportunity__r.Property_State__c = '" + s.replace(/'/g, "\\'") + "'";
+                    html += '<tr><td>' + s + '</td>';
+                    var rowTot = 0;
+                    STATUS_COLS.forEach(function(col) {
+                        var cell = stateMap[s][col.key], u = cell ? cell.u : 0;
+                        rowTot += u; colTot[col.key] = (colTot[col.key] || 0) + u;
+                        if (u > 0) {
+                            var w = "Build_Status__c = '" + col.key.replace(/'/g, "\\'") + "' AND " + stateWhere;
+                            html += '<td class="num bo-click" data-where="' + escHtml(w) + '" data-label="' + escHtml(s + ' · ' + col.label) + '" onclick="showSTDetail(this)">' + u.toLocaleString() + '</td>';
+                        } else {
+                            html += '<td class="num"><span style="color:#d8dde6;">-</span></td>';
+                        }
+                    });
+                    grand += rowTot;
+                    html += '<td class="num" style="font-weight:600;">' + rowTot.toLocaleString() + '</td></tr>';
+                });
+                html += '<tr style="font-weight:700;border-top:2px solid #032d60;"><td>Total</td>';
+                STATUS_COLS.forEach(function(col) { html += '<td class="num">' + (colTot[col.key] || 0).toLocaleString() + '</td>'; });
+                html += '<td class="num">' + grand.toLocaleString() + '</td></tr>';
+                html += '</tbody></table>';
+                html += '<div class="metric-sub" style="margin-top:6px;">Cells = Opportunity Living Units. Click a number to list the projects.</div>';
             }
             html += '</div>';
 

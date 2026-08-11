@@ -18,16 +18,22 @@ import zipfile
 import io
 import time
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 
 def login():
-    login_data = '''<?xml version="1.0" encoding="utf-8"?>
+    login_data = f'''<?xml version="1.0" encoding="utf-8"?>
 <env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
   <env:Body>
     <n1:login xmlns:n1="urn:partner.soap.sforce.com">
-      <n1:username>cass1@ubiquitygp.com</n1:username>
-      <n1:password>Karate88!Ktc1n9mLmD9vwEcVcl45q0iAD</n1:password>
+      <n1:username>{_SF["username"]}</n1:username>
+      <n1:password>{_SF["password"]}{_SF["token"]}</n1:password>
     </n1:login>
   </env:Body>
 </env:Envelope>'''

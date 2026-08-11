@@ -7,7 +7,7 @@
         <field>FULL_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.RE_Assigned__c</field>
+        <field>Opportunity.Next_Action__c</field>
     </columns>
     <columns>
         <field>Opportunity.Property_City__c</field>
@@ -27,6 +27,13 @@
             <value>Opportunity.MDU</value>
         </criteriaItems>
         <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Engaged,Proposal Sent,Contract Negotiations,PAL/ROE Complete</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>Opportunity.Projected_Close_Date__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -34,11 +41,18 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>STAGE_NAME</column>
+            <column>Opportunity.Next_Action__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Substatus__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Engaged,Proposal Sent,Contract Negotiations,PAL/ROE Complete</value>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -47,7 +61,7 @@
         <field>STAGE_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Cleanup: No Projected Close Date</name>
+    <name>Cleanup: Worked Opps - No Close Date</name>
     <params>
         <name>open</name>
         <value>all</value>

@@ -5,6 +5,12 @@ from datetime import datetime
 from pathlib import Path
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--apply', action='store_true')
 parser.add_argument('--dry-run', action='store_true')
@@ -12,7 +18,7 @@ args = parser.parse_args()
 if not args.apply and not args.dry_run:
     print('Specify --dry-run or --apply'); sys.exit(1)
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 host = sf.sf_instance
 hdrs = {'Authorization': f'Bearer {sf.session_id}', 'Content-Type': 'application/json'}
 

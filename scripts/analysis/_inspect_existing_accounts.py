@@ -4,7 +4,13 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 from collections import Counter
 from simple_salesforce import Salesforce
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 # All Account fields including standard ones we may have missed
 print("=== ALL Account fields (standard + custom) ===")

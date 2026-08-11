@@ -2,12 +2,18 @@
 import sys
 from simple_salesforce import Salesforce, exceptions
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_ST = _sf_creds("st")
+
+
 sys.stdout.reconfigure(line_buffering=True)
 
 # These are the values currently hard-coded in sync_sitetracker.py for sf_st
-USERNAME = 'cass@ubiquitygp.com'
-PASSWORD = 'Hawaiian84'
-TOKEN = 'fe2pen6ceQeqGhWXhBeOIjqP'
+USERNAME = _ST["username"]
+PASSWORD = _ST["password"]
+TOKEN = _ST["token"]
 
 print(f"Testing ST org auth as {USERNAME}...")
 try:

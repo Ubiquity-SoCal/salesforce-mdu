@@ -19,20 +19,32 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_ST = _sf_creds("st")
+
+_SF = _sf_creds()
+
+
 sys.stdout.reconfigure(line_buffering=True)
 
 OUT = Path(r"C:\Users\cass\Work_Projects\SalesForce\data\output") / \
     f"orphaned_sitetracker_mirrors_{datetime.now():%Y-%m-%d}.csv"
 
 sf_main = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 sf_st = Salesforce(
-    username='cass@ubiquitygp.com',
-    password='Hawaiian84',
-    security_token='fe2pen6ceQeqGhWXhBeOIjqP',
+    username=_ST["username"],
+    password=_ST["password"],
+    security_token=_ST["token"],
 )
 
 

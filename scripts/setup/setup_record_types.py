@@ -15,15 +15,32 @@ from xml.etree import ElementTree as ET
 from simple_salesforce import Salesforce
 
 # ── Config ──────────────────────────────────────────────────────────────
+# Credentials come from the gitignored SalesForce/api/ creds file.
+# Never hardcode the password here: this file is tracked in git.
+import os as _os
+
+
+def _sf_creds():
+    _p = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+                       "..", "..", "api", "Salesforce_Credentials.txt")
+    _c = {}
+    with open(_p) as _f:
+        for _line in _f:
+            if ":" in _line:
+                _k, _v = _line.split(":", 1)
+                _c[_k.strip()] = _v.strip()
+    return _c
+
+
+_SF = _sf_creds()
 LOGIN_URL = "https://login.salesforce.com/services/Soap/u/59.0"
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD_TOKEN = "Karate88!Ktc1n9mLmD9vwEcVcl45q0iAD"
-INSTANCE_URL = "https://fun-power-747.my.salesforce.com"
+USERNAME = _SF["Username"]
+SF_PASSWORD = _SF["Password"]
+SF_TOKEN = _SF["Security Token"]
+PASSWORD_TOKEN = SF_PASSWORD + SF_TOKEN       # SOAP login wants them concatenated
+INSTANCE_URL = _SF["Instance URL"]
 API_VERSION = "v59.0"
 API_VERSION_NUM = "59.0"
-
-SF_PASSWORD = "Karate88!"
-SF_TOKEN = "Ktc1n9mLmD9vwEcVcl45q0iAD"
 
 
 # ── SOAP Login ──────────────────────────────────────────────────────────

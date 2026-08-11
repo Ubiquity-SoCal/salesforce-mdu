@@ -107,7 +107,7 @@ for (state, hn, sn, zip5), v in vetro_idx.items():
 print(f"Vetro address universe: {len(vetro_idx):,} addresses (with zip)")
 
 # ── 2. Pull candidate SF Opps ──────────────────────────────────────────────
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 opps = sf.query_all("""
   SELECT Id, Name, Property_Address__c, Property_City__c, Property_State__c, Property_Zip__c,
          Property_Category__c, Franchise_Type__c
@@ -180,6 +180,12 @@ for u in cat2_updates[:15]:
 # breakdown by franchise
 print(f"\n--- Proposed changes by Franchise_Type ---")
 from collections import Counter
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 cat1_f = Counter(u.get('franchise') for u in cat1_updates)
 cat2_f = Counter(u.get('franchise') for u in cat2_updates)
 print(f"  Cat 1 by franchise: {dict(cat1_f)}")

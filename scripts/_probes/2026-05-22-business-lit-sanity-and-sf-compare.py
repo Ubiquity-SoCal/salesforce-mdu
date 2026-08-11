@@ -20,6 +20,12 @@ from collections import defaultdict, Counter
 from databricks import sql
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 STATES = ('TX', 'NE', 'AZ', 'CA')
 state_clause = "','".join(STATES)
 DBX_SERVER = 'adb-1444374860642533.13.azuredatabricks.net'
@@ -149,8 +155,8 @@ def run_sf():
     print('\n' + '=' * 68)
     print('B. SF COMPARE (what Salesforce holds for business)')
     print('=' * 68)
-    sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984',
-                    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+    sf = Salesforce(username=_SF["username"], password=_SF["password"],
+                    security_token=_SF["token"])
 
     def agg(soql):
         return sf.query_all(soql)['records']

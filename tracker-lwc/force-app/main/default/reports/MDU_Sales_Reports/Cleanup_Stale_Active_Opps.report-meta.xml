@@ -31,14 +31,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Engaged,Proposal Sent,Contract Negotiations,PAL/ROE Complete,EMA/Bulk In Progress</value>
+            <value>Engaged,Proposal Sent,Contract Negotiations,PAL/ROE Complete,Marketing/Bulk In Progress</value>
         </criteriaItems>
         <criteriaItems>
-            <column>LAST_UPDATE</column>
+            <column>Opportunity.Next_Action__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
-            <operator>lessOrEqual</operator>
-            <value>LAST_N_DAYS:60</value>
+            <operator>equals</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -47,7 +47,7 @@
         <field>STAGE_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Cleanup: Stale Active Opps (60+ days)</name>
+    <name>Cleanup: Active Opps - No Next Action</name>
     <params>
         <name>open</name>
         <value>all</value>

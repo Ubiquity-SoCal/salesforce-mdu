@@ -9,7 +9,7 @@ import sys, io, re, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 from simple_salesforce import Salesforce
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 # 12 approved matches: (IronClad Counterparty, Opp Id, promote_to_ROE_Secured)
 # Opp Ids resolved live to avoid stale data
@@ -31,6 +31,12 @@ matches = [
 ]
 
 import datetime as dt
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 today_iso = dt.datetime.now().strftime("%Y-%m-%dT00:00:00Z")
 new_ic = sf.query_all(f"""
   SELECT Id, Counterparty_Name__c, Record_Name__c, Record_Type_IC__c,

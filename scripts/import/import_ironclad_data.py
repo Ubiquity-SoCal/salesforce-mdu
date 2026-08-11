@@ -9,15 +9,21 @@ import re
 from datetime import datetime
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 # --- Credentials ---
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Hawaiian1984"
-SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+SECURITY_TOKEN = _SF["token"]
 
 sf = Salesforce(username=USERNAME, password=PASSWORD, security_token=SECURITY_TOKEN)
 
 # --- Load export ---
-EXPORT_PATH = "C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-07-01_151529_all.xlsx"
+EXPORT_PATH = "C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-08-04_155318_all.xlsx"
 
 print("Loading export file...")
 wb = openpyxl.load_workbook(EXPORT_PATH, read_only=True)

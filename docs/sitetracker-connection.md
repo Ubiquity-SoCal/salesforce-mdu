@@ -2,15 +2,15 @@
 
 ## Production
 - **Username:** cass@ubiquitygp.com
-- **Password:** Hawaiian84
-- **Security Token:** fe2pen6ceQeqGhWXhBeOIjqP
+- **Password:** <password: see _shared/sf_auth.py org=st>
+- **Security Token:** <token: see _shared/sf_auth.py org=st>
 - **Instance:** sitetracker-ubiquity.my.salesforce.com
 - **Login URL:** https://login.salesforce.com
 
 ## Sandbox (uqpartial)
 - **Username:** cass@ubiquitygp.com.uqpartial
-- **Password:** Hawaiian84
-- **Security Token:** kQnlsCgShQzdZTf0gb9DMv6Z
+- **Password:** <password: see _shared/sf_auth.py org=st>
+- **Security Token:** <token: see _shared/sf_auth.py org=st>
 - **Instance:** sitetracker-ubiquity--uqpartial.sandbox.my.salesforce.com
 - **Login URL:** https://test.salesforce.com
 - **Setup URL:** https://sitetracker-ubiquity--uqpartial.sandbox.my.salesforce-setup.com/lightning/setup/SetupOneHome/home
@@ -22,8 +22,8 @@
 from simple_salesforce import Salesforce
 sf_st = Salesforce(
     username='cass@ubiquitygp.com',
-    password='Hawaiian84',
-    security_token='fe2pen6ceQeqGhWXhBeOIjqP'
+    password='<password: see _shared/sf_auth.py org=st>',
+    security_token='<token: see _shared/sf_auth.py org=st>'
 )
 ```
 
@@ -32,8 +32,8 @@ sf_st = Salesforce(
 from simple_salesforce import Salesforce
 sf_st_sandbox = Salesforce(
     username='cass@ubiquitygp.com.uqpartial',
-    password='Hawaiian84',
-    security_token='kQnlsCgShQzdZTf0gb9DMv6Z',
+    password='<password: see _shared/sf_auth.py org=st>',
+    security_token='<token: see _shared/sf_auth.py org=st>',
     domain='test'
 )
 ```

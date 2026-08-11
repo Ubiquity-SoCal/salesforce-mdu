@@ -18,12 +18,18 @@ from collections import Counter, defaultdict
 from databricks import sql
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 HOST = "adb-1444374860642533.13.azuredatabricks.net"
 PATH = "/sql/1.0/warehouses/9116e9c573d36d1c"
 STATES = ('TX','NE','AZ','CA')
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984',
-                security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"],
+                security_token=_SF["token"])
 
 def clean(v):
     if v is None: return ''

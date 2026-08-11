@@ -20,12 +20,18 @@ from pathlib import Path
 from collections import Counter
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--apply', action='store_true', help='Execute the matched linkages in SF')
 parser.add_argument('--fuzzy', action='store_true', help='Also apply MEDIUM-confidence fuzzy matches')
 args = parser.parse_args()
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 AUDIT_DIR = Path(r'C:\Users\cass\Work_Projects\SalesForce\audit_logs')
 TS = datetime.now().isoformat(timespec='seconds')

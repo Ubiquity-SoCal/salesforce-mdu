@@ -41,7 +41,7 @@ APPLY = args.apply
 XLSX = Path(r'C:\Users\cass\Work_Projects\SMB_ROE_Project.xlsx')
 SHEET = 'ROE_Tracking'
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 AUDIT_DIR = Path(r'C:\Users\cass\Work_Projects\SalesForce\audit_logs')
 AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 TS = datetime.now().isoformat(timespec='seconds')
@@ -378,6 +378,12 @@ for o, c in Counter(p[0].get('OwnerId') for p in proposed).most_common():
 
 print(f"\n  First 3 proposed records (full payload):")
 import json
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 for p, _src in proposed[:3]:
     print(f"\n  --- {p['Name']} ---")
     for k, v in p.items():

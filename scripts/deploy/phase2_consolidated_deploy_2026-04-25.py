@@ -29,14 +29,20 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 ap = argparse.ArgumentParser()
 ap.add_argument('--apply', action='store_true', help='Execute the deploy (default: preview only)')
 args = ap.parse_args()
 APPLY = args.apply
 
-USERNAME = 'cass1@ubiquitygp.com'
-PASSWORD = 'Hawaiian1984'
-TOKEN = 'IBSKT6CFUpSUJWxq1CMm0HkFC'
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+TOKEN = _SF["token"]
 INSTANCE_URL = 'https://fun-power-747.my.salesforce.com'
 API_VER = '59.0'
 

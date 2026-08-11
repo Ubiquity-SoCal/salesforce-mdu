@@ -26,6 +26,12 @@ from datetime import datetime, date
 import openpyxl
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 # ---- config ---------------------------------------------------------------
 
 XLSX_PATH = r'C:\Users\cass\Downloads\Take 2 MDU Sales Review (Living) - TM updates 5.4.xlsx'
@@ -99,9 +105,9 @@ print(f'  {len(delete_opp)} Opps flagged for full Opp deletion')
 
 print('\nConnecting to Salesforce...')
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 # ---- match xlsx rows to SF Opp Ids ----------------------------------------

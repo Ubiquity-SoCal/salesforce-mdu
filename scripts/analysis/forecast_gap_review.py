@@ -31,6 +31,7 @@ Read-only. Terminal output only (no files written). Logic is exposed as function
 Usage:  python forecast_gap_review.py [Owner Name] [Owner Name] ...
         (no args = Brett Spivey, Bill Holick, Melissa Baker)
 """
+import re
 import sys, io
 from datetime import date
 from collections import defaultdict
@@ -43,6 +44,24 @@ ACTIVE_STAGES = {'Prospecting', 'Engaged', 'Proposal Sent', 'Contract Negotiatio
                  'PAL/ROE Complete', 'Marketing/Bulk In Progress'}
 PRE_SECURED = {'Prospecting', 'Engaged', 'Proposal Sent', 'Contract Negotiations'}
 STALE_NEXT_ACTION_DAYS = 45  # a committed next step older than this reads as abandoned
+
+# Next_Action__c is this org's only trustworthy "a human is tracking this" signal, which makes
+# it fragile: anything SCRIPTED into the field impersonates that signal. On 2026-07-24 a
+# backfill stamped 167 revived Opps with a movement note (see
+# SalesForce/scripts/fix/2026-07-24-backfill-next-action-on-revived-opps.py). Those are history,
+# not intent - nobody has picked the property up, and per Koa no forecast date is owed until
+# someone actually puts it on the radar. Left alone they would have turned A1 from 6 into ~173.
+# Matched here rather than in a single flag so every present and future consumer of the signal
+# inherits the exclusion. Extend this tuple if another script ever writes to the field.
+SYSTEM_STAMP_RES = (
+    re.compile(r'^Moved from .+ to (?:Prospects|Closed Lost) per \d{1,2}/\d{1,2}/\d{4} call$'),
+)
+
+
+def is_system_stamp(na):
+    """True if Next_Action__c was written by a script, so it is NOT evidence of human work."""
+    na = (na or '').strip()
+    return any(rx.match(na) for rx in SYSTEM_STAMP_RES)
 
 LABELS = [
     ('A1', 'Live work, NO forecast (add a date)'),
@@ -108,7 +127,9 @@ def classify(recs, today):
         stage = r['StageName']
         pcd = r.get('Projected_Close_Date__c')
         pcd_past = days_past(pcd)
-        na = (r.get('Next_Action__c') or '').strip()
+        # a scripted stamp reads as NO next action for signal purposes. It still shows in the
+        # detail rows (see add(), which uses the raw field) so the reader can see what happened.
+        na = '' if is_system_stamp(r.get('Next_Action__c')) else (r.get('Next_Action__c') or '').strip()
         nad = r.get('Next_Action_Date__c')
         nad_past = days_past(nad)
         agr = r.get('Agreement_Count__c') or 0
@@ -143,10 +164,13 @@ def classify(recs, today):
 
 
 # ---------------------------------------------------------------- report
-def print_report(flags, owners, today, n_scanned, n_classified):
+def print_report(flags, owners, today, n_scanned, n_classified, n_stamped=0):
     print(f"\n=== Wednesday forecast-gap review  {today}  ===")
     print(f"owners: {', '.join(owners)}   |   open Opps scanned: {n_scanned}")
     print(f"excluded {n_classified} already-classified (Pursuit Status set, team knows)")
+    if n_stamped:
+        print(f"ignored {n_stamped} scripted Next Action stamps (revived Opps, nobody on them "
+              f"yet, no forecast owed until someone picks one up)")
     print("signal = Next_Action__c (LastActivity/LastModified are unreliable here)\n")
 
     hdr = f"{'FLAG':56s}" + "".join(f"{o.split()[0]:>9}" for o in owners) + f"{'TOTAL':>8}"
@@ -183,7 +207,9 @@ def main():
     recs = fetch(sf, owners)
     flags = classify(recs, today)
     n_classified = sum(1 for r in recs if r.get('Substatus__c'))
-    print_report(flags, owners, today, len(recs), n_classified)
+    n_stamped = sum(1 for r in recs
+                    if not r.get('Substatus__c') and is_system_stamp(r.get('Next_Action__c')))
+    print_report(flags, owners, today, len(recs), n_classified, n_stamped)
 
 
 if __name__ == '__main__':

@@ -23,9 +23,24 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 POWERBI_DIR = os.path.join(BASE_DIR, "PowerBI_Report")
 ARCHIVE_DIR = os.path.join(POWERBI_DIR, "Previously_Imported")
 
-SF_USERNAME = "cass1@ubiquitygp.com"
-SF_PASSWORD = "Karate88!"
-SF_SECURITY_TOKEN = "Ktc1n9mLmD9vwEcVcl45q0iAD"
+# Salesforce config -- read from the gitignored SalesForce/api/ creds file.
+# Never hardcode the password here: this file is tracked in git.
+def _sf_creds():
+    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                       "..", "..", "api", "Salesforce_Credentials.txt")
+    _c = {}
+    with open(_p) as _f:
+        for _line in _f:
+            if ":" in _line:
+                _k, _v = _line.split(":", 1)
+                _c[_k.strip()] = _v.strip()
+    return _c
+
+
+_SF = _sf_creds()
+SF_USERNAME = _SF["Username"]
+SF_PASSWORD = _SF["Password"]
+SF_SECURITY_TOKEN = _SF["Security Token"]
 
 BULK_BATCH_SIZE = 10_000
 HEADER_ROW = 3

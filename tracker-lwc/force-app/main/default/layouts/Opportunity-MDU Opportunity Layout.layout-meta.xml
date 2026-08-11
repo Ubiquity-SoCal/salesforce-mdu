@@ -24,10 +24,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Contact__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Loss_Reason__c</field>
             </layoutItems>
             <layoutItems>
@@ -241,6 +237,7 @@
         <fields>Agreement_Type__c</fields>
         <fields>Status__c</fields>
         <fields>Signed_Date__c</fields>
+        <fields>Expiration_Date__c</fields>
         <fields>IronClad_ID__c</fields>
         <relatedList>Agreement__c.Opportunity__c</relatedList>
     </relatedLists>

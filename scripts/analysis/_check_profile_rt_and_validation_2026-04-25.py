@@ -7,7 +7,7 @@ import sys, io, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 from simple_salesforce import Salesforce
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 # ── 1. RT visibility per profile via Metadata retrieve ──
 print("[1] Querying ProfileRecordTypeVisibility-equivalent via Tooling")
@@ -33,6 +33,12 @@ print(f"\n  Opportunity RTs: {list(rt_id_to_name.values())}")
 print("\n[1b] Retrieving profiles via Metadata API to read recordTypeVisibilities")
 import requests, base64, zipfile, io as bio, time
 from xml.etree import ElementTree as ET
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 
 INSTANCE = sf.sf_instance
 SESSION = sf.session_id

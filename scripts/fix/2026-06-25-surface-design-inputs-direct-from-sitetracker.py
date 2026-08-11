@@ -22,10 +22,22 @@ Default = DRY RUN. Pass --apply to write.
 import argparse
 from simple_salesforce import Salesforce
 
-sf_main = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984',
-                     security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
-sf_st = Salesforce(username='cass@ubiquitygp.com', password='Hawaiian84',
-                   security_token='fe2pen6ceQeqGhWXhBeOIjqP')
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_ST = _sf_creds("st")
+
+_SF = _sf_creds()
+
+
+sf_main = Salesforce(username=_SF["username"], password=_SF["password"],
+                     security_token=_SF["token"])
+sf_st = Salesforce(username=_ST["username"], password=_ST["password"],
+                   security_token=_ST["token"])
 
 # Same ranking surface_to_opportunity.py uses to pick the primary project per Opp.
 RANK = {

@@ -9,7 +9,16 @@ import sys, io
 from datetime import date
 import win32com.client
 
-from forecast_gap_review import connect, fetch, classify, DEFAULT_OWNERS, LABELS
+from forecast_gap_review import (connect, fetch, classify, DEFAULT_OWNERS, LABELS,
+                                 is_system_stamp)
+
+# Shared Outlook helper — auto-inserts Cass's signature below the body.
+from pathlib import Path
+_SHARED = next((p / "_shared" for p in Path(__file__).resolve().parents
+                if (p / "_shared" / "outlook_draft.py").exists()), None)
+if _SHARED and str(_SHARED) not in sys.path:
+    sys.path.insert(0, str(_SHARED))
+from outlook_draft import open_draft
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
@@ -31,6 +40,8 @@ sf = connect()
 recs = fetch(sf, OWNERS)
 flags = classify(recs, TODAY)
 n_classified = sum(1 for r in recs if r.get('Substatus__c'))
+n_stamped = sum(1 for r in recs
+                if not r.get('Substatus__c') and is_system_stamp(r.get('Next_Action__c')))
 
 
 def total(key):
@@ -128,7 +139,9 @@ This is the inverse of the 30-90 day forecast view: open Opps people are working
 that are missing or breaking a forecast. Signal is the manually typed Next Action field
 (activity dates are not logged in SF, so they are ignored). <b>{n_classified}</b> open Opps
 already carry a Pursuit Status (team has classified them as stuck) and are excluded from
-everything below.</p>
+everything below. A further <b>{n_stamped}</b> carry a scripted note recording that they were
+revived out of Closed Lost; nobody has picked those up yet, so no forecast date is owed on them
+and they are excluded too.</p>
 
 <h3>Summary</h3>
 {summary_table()}
@@ -179,11 +192,9 @@ for item in list(drafts.Items):  # snapshot; clear prior run of this same review
     except Exception:
         pass
 
-mail = outlook.CreateItem(0)  # MailItem
-mail.To = TO
-mail.Subject = SUBJECT
-mail.HTMLBody = html
-mail.Save()  # DRAFT only
+# open_draft auto-inserts Cass's signature; Save (no Display) lands the draft
+# silently in Drafts to review later — matches prior behavior.
+mail = open_draft(subject=SUBJECT, body_html=html, to=TO, save=True, display=False)
 
 print("Outlook draft saved.")
 print(f"  To: {mail.To}")

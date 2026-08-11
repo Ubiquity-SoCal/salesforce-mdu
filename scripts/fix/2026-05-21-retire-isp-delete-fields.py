@@ -6,14 +6,20 @@ Fields go to SF's deleted-fields bin (recoverable ~15 days).
 import sys, io, json, base64, zipfile, time, requests
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 mode = sys.argv[1] if len(sys.argv) > 1 else "check"
 assert mode in ("check", "delete"), "arg must be 'check' or 'delete'"
 check_only = (mode == "check")
 
 sf = Salesforce(
-    username="cass1@ubiquitygp.com",
-    password="Hawaiian1984",
-    security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 print(f"Connected: {sf.sf_instance}  mode={mode}")
 

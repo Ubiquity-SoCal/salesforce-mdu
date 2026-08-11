@@ -4,10 +4,16 @@ Flag if missing, all Cancelled, or no 3-signal."""
 from simple_salesforce import Salesforce
 from collections import defaultdict, Counter
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 EMA_BULK_TYPES = {'EMA','Bulk','NEMA','2nd ISP MSA Addendum','MSA','EMA Addendum','Bulk Addendum'}

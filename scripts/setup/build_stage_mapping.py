@@ -9,14 +9,30 @@ Does NOT update Salesforce — mapping file is consumed by a separate update scr
 import json
 import requests
 from simple_salesforce import Salesforce
+import os as _os
 
 # --- Config ---
 MONDAY_API_TOKEN = open(r"C:\Users\cass\Work_Projects\Monday.com\Monday.com_Key.txt").read().strip()
 MONDAY_BOARD_ID = 3036443295
 
-SF_USERNAME = "cass1@ubiquitygp.com"
-SF_PASSWORD = "Karate88!"
-SF_SECURITY_TOKEN = "Ktc1n9mLmD9vwEcVcl45q0iAD"
+# Salesforce config -- read from the gitignored SalesForce/api/ creds file.
+# Never hardcode the password here: this file is tracked in git.
+def _sf_creds():
+    _p = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+                       "..", "..", "api", "Salesforce_Credentials.txt")
+    _c = {}
+    with open(_p) as _f:
+        for _line in _f:
+            if ":" in _line:
+                _k, _v = _line.split(":", 1)
+                _c[_k.strip()] = _v.strip()
+    return _c
+
+
+_SF = _sf_creds()
+SF_USERNAME = _SF["Username"]
+SF_PASSWORD = _SF["Password"]
+SF_SECURITY_TOKEN = _SF["Security Token"]
 
 OUTPUT_PATH = r"C:\Users\cass\Work_Projects\SalesForce\stage_mapping.json"
 

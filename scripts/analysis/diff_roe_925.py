@@ -17,6 +17,12 @@ from datetime import datetime, timedelta, date
 from collections import Counter, defaultdict
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 EXCEL_PATH = r"C:\Users\cass\OneDrive - Ubiquity Management\PMO_Projects - MDU 9-25 Units ROE Project\MDU 9 - 25 Units.xlsx"
 SHEETS = ["Site Data", "TX Site Data"]
 OUTPUT = r"C:\Users\cass\Work_Projects\SalesForce\scripts\analysis\roe_925_diff.json"
@@ -189,9 +195,9 @@ def main():
     # 2. Salesforce
     print("\n2. Connecting to Salesforce...")
     sf = Salesforce(
-        username="cass1@ubiquitygp.com",
-        password="Hawaiian1984",
-        security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
 
     soql = (

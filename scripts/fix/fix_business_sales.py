@@ -11,9 +11,15 @@ import zipfile
 import time
 from xml.etree import ElementTree as ET
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 LOGIN_URL = "https://login.salesforce.com/services/Soap/u/59.0"
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD_TOKEN = "Karate88!Ktc1n9mLmD9vwEcVcl45q0iAD"
+USERNAME = _SF["username"]
+PASSWORD_TOKEN = (_SF["password"] + _SF["token"])
 INSTANCE_URL = "https://fun-power-747.my.salesforce.com"
 V = "59.0"
 

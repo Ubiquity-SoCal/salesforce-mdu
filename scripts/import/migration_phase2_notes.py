@@ -19,9 +19,15 @@ import csv
 from datetime import datetime
 from simple_salesforce import Salesforce
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Karate88!"
-SECURITY_TOKEN = "Ktc1n9mLmD9vwEcVcl45q0iAD"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+SECURITY_TOKEN = _SF["token"]
 
 API_KEY = open(r"C:\Users\cass\Work_Projects\Monday.com\Monday.com_Key.txt").read().strip()
 MONDAY_URL = "https://api.monday.com/v2"

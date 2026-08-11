@@ -1,7 +1,7 @@
 from simple_salesforce import Salesforce
 import requests, json, base64, io, zipfile, time, re, os
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Karate88!', security_token='Ktc1n9mLmD9vwEcVcl45q0iAD')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 soap_url = "https://fun-power-747.my.salesforce.com/services/Soap/m/59.0"
@@ -84,6 +84,12 @@ if not flexipage_content:
 # Print structure summary
 print("\n  Page structure:")
 import xml.etree.ElementTree as ET
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 root = ET.fromstring(flexipage_content)
 ns = {'md': 'http://soap.sforce.com/2006/04/metadata'}
 

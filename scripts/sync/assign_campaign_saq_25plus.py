@@ -19,6 +19,12 @@ import zipfile
 import xml.etree.ElementTree as ET
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 EXCEL_PATH = r"C:\Users\cass\OneDrive - Ubiquity Management\PMO_Projects - MDU SAQ\Master List MDU Assignments.xlsm"
 SHEET = "Opportunities"
 HEADER_ROW = 2
@@ -122,9 +128,9 @@ def main():
     print(f"Unique AgreeName keys: {len(agree_keys)}")
 
     sf = Salesforce(
-        username="cass1@ubiquitygp.com",
-        password="Hawaiian1984",
-        security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
 
     print(f"\nLooking up Campaign '{CAMPAIGN_CONFIG['Name']}'...")

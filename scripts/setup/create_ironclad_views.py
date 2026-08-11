@@ -10,9 +10,15 @@ import io
 import zipfile
 from simple_salesforce import Salesforce
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Karate88!"
-SECURITY_TOKEN = "Ktc1n9mLmD9vwEcVcl45q0iAD"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+SECURITY_TOKEN = _SF["token"]
 INSTANCE_URL = "https://fun-power-747.my.salesforce.com"
 API_VERSION = "59.0"
 

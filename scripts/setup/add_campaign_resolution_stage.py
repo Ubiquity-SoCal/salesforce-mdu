@@ -15,8 +15,14 @@ import time
 import zipfile
 from xml.etree import ElementTree as ET
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD_TOKEN = "Hawaiian1984IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD_TOKEN = (_SF["password"] + _SF["token"])
 INSTANCE_URL = "https://fun-power-747.my.salesforce.com"
 API_VERSION = "59.0"
 NS = {"met": "http://soap.sforce.com/2006/04/metadata"}
@@ -154,9 +160,9 @@ def main():
     # Stamp the 9-25 Campaign value
     from simple_salesforce import Salesforce
     sf = Salesforce(
-        username="cass1@ubiquitygp.com",
-        password="Hawaiian1984",
-        security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
     sf.Campaign.update("701WR00001IwJYsYAN", {"Resolution_Stage__c": "ROE Secured"})
     print("\nStamped 9-25 MDU ROE Project with Resolution_Stage__c = 'ROE Secured'")

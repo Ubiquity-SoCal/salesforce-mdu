@@ -3,9 +3,15 @@ import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from simple_salesforce import Salesforce
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Hawaiian1984"
-TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+TOKEN = _SF["token"]
 
 sf = Salesforce(username=USERNAME, password=PASSWORD, security_token=TOKEN)
 

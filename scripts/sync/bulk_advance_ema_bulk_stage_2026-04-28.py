@@ -17,9 +17,15 @@ from pathlib import Path
 from collections import defaultdict
 from simple_salesforce import Salesforce
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Hawaiian1984"
-SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+SECURITY_TOKEN = _SF["token"]
 
 LOG_DIR = Path("C:/Users/cass/Work_Projects/SalesForce/audit_logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)

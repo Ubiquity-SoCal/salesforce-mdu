@@ -24,6 +24,12 @@ from datetime import datetime
 from pathlib import Path
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 ap = argparse.ArgumentParser()
 ap.add_argument('--apply', action='store_true')
 args = ap.parse_args()
@@ -32,7 +38,7 @@ SCRIPT_NAME = 'fix_business_roe_agreement_status_2026-04-27.py'
 TS = datetime.now().isoformat(timespec='seconds')
 AUDIT_DIR = Path(r'C:\Users\cass\Work_Projects\SalesForce\audit_logs')
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 
 def derive_status(ic_contract, ic_stage, current):

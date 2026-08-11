@@ -8,6 +8,12 @@ import json
 import requests
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 DRY = "--dry-run" in sys.argv
 
 FLEX_ID = "0M0WR0000004IKv0AM"  # Business_Opportunity_Record_Page
@@ -16,9 +22,9 @@ TARGETS = {"Property_Address__c", "Property_City__c", "Property_State__c", "Prop
 
 def main():
     sf = Salesforce(
-        username="cass1@ubiquitygp.com",
-        password="Hawaiian1984",
-        security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
     base = sf.base_url.rstrip('/').replace('/data/v59.0', '/data/v59.0/tooling')
     h = {"Authorization": f"Bearer {sf.session_id}", "Content-Type": "application/json"}

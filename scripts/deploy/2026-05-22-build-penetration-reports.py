@@ -18,7 +18,7 @@ Reports:
 import requests, json, time, base64, io, zipfile
 from simple_salesforce import Salesforce
 
-USER="cass1@ubiquitygp.com"; PW="Hawaiian1984"; TOK="IBSKT6CFUpSUJWxq1CMm0HkFC"
+USER=_SF["username"]; PW=_SF["password"]; TOK=_SF["token"]
 INSTANCE="https://fun-power-747.my.salesforce.com"; V="59.0"
 FOLDER="PropertyReports"; RT="CustomEntity$Property_Location__c"
 sf = Salesforce(username=USER, password=PW, security_token=TOK)
@@ -120,6 +120,12 @@ url = f"{INSTANCE}/services/data/v{V}/metadata/deployRequest"
 _raw = base64.b64encode(buf.getvalue()).decode()
 b64 = "\r\n".join(_raw[i:i+76] for i in range(0, len(_raw), 76))
 import os
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 CHECKONLY = os.environ.get("APPLY") != "1"   # default validate-only; set APPLY=1 to commit
 body = {"deployOptions": {"checkOnly": CHECKONLY, "ignoreWarnings": True, "rollbackOnError": True, "singlePackage": True}}
 print(f"[{'VALIDATE (checkOnly)' if CHECKONLY else 'APPLY'}]")

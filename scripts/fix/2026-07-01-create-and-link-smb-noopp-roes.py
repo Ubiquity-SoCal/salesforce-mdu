@@ -17,7 +17,7 @@ from datetime import datetime
 from pathlib import Path
 from simple_salesforce import Salesforce
 
-USERNAME = "cass1@ubiquitygp.com"; PASSWORD = "Hawaiian1984"; SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+USERNAME = _SF["username"]; PASSWORD = _SF["password"]; SECURITY_TOKEN = _SF["token"]
 LOG_DIR = Path(r"C:\Users\cass\Work_Projects\SalesForce\data\output\audit_logs"); LOG_DIR.mkdir(parents=True, exist_ok=True)
 APPLY = "--apply" in sys.argv
 
@@ -28,6 +28,12 @@ sf = Salesforce(username=USERNAME, password=PASSWORD, security_token=SECURITY_TO
 
 # Rebuild the SMB completed gap set from the latest gap CSV, minus already-linked
 import glob
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 f = sorted(glob.glob("SalesForce/data/output/ironclad_roe_pal_coverage_gap_*.csv"))[-1]
 gap_ids = {r["IronClad_Id"] for r in csv.DictReader(open(f, encoding="utf-8"))
            if r["Is_ROE_PAL"] == "True" and r["Stage"] == "completed" and r["MDU_or_BUS"] == "BUS"} - ALREADY_LINKED

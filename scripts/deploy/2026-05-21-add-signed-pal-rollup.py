@@ -9,7 +9,13 @@ Aligned to the report's "signed = has a Signed Date" definition. Additive, no da
 import requests, json, time, base64, io, zipfile
 from simple_salesforce import Salesforce
 
-USER="cass1@ubiquitygp.com"; PW="Hawaiian1984"; TOK="IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USER=_SF["username"]; PW=_SF["password"]; TOK=_SF["token"]
 INSTANCE="https://fun-power-747.my.salesforce.com"; V="59.0"
 sf = Salesforce(username=USER, password=PW, security_token=TOK)
 

@@ -10,9 +10,9 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 # ---- review items, hand-curated from stage_cleanup_team_review.md ----
@@ -181,6 +181,12 @@ for name, sfid, state in EMABULK_COMPLETE_REVIEW:
 
 # On Hold review — only flag the 3 records that show signs of active work (Koa: On Hold is lowest priority)
 import csv as _csv
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 on_hold_rows = []
 try:
     with open('C:/Users/cass/Work_Projects/SalesForce/audit_logs/stage_audit_on_hold_2026-05-04.csv', encoding='utf-8') as fh:

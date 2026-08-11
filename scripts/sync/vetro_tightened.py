@@ -14,8 +14,20 @@ from simple_salesforce import Salesforce
 sys.path.insert(0, r'C:\Users\cass\Work_Projects\Vetro\scripts\lib')
 from load_vetro import load_vetro, service_locations, serviceable
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
-st = Salesforce(username='cass@ubiquitygp.com', password='Hawaiian84', security_token='fe2pen6ceQeqGhWXhBeOIjqP', domain='login')
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_ST = _sf_creds("st")
+
+_SF = _sf_creds()
+
+
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
+st = Salesforce(username=_ST["username"], password=_ST["password"], security_token=_ST["token"], domain='login')
 
 # 1) Activated FDH lookup from Lit_Fiber — exact (state, city, SA, FDH##)
 r = st.query_all("SELECT Project__r.sitetracker__Site__r.Name, FDH_Activation_A__c FROM Lit_Fiber__c")

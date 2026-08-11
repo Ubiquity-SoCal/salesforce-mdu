@@ -17,6 +17,12 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 EXCEL_PATH = r"C:\Users\cass\OneDrive - Ubiquity Management\PMO_Projects - MDU 9-25 Units ROE Project\MDU 9 - 25 Units.xlsx"
 SHEETS = ["Site Data", "TX Site Data"]
 CAMPAIGN_ID = "701WR00001IwJYsYAN"
@@ -120,9 +126,9 @@ def main():
     print(f"  With 'Assign to Market to Field' populated: {mk_excel}")
 
     sf = Salesforce(
-        username="cass1@ubiquitygp.com",
-        password="Hawaiian1984",
-        security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
 
     q = (f"SELECT Id, Agreement_Name__c, Submitted_to_Market__c, Submitted_to_FiberFirst__c "

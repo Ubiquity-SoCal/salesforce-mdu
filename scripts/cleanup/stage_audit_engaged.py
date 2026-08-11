@@ -8,10 +8,16 @@ from collections import defaultdict
 from datetime import datetime
 import json
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 BULK_DATES = {'2026-03-24', '2026-03-31', '2026-04-07', '2026-04-21', '2026-04-25', '2026-04-29'}

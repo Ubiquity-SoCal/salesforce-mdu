@@ -2,9 +2,9 @@
 from simple_salesforce import Salesforce
 
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 for obj in ('Opportunity_Contact__c', 'Agreement__c'):
@@ -23,6 +23,12 @@ for obj in ('Opportunity_Contact__c', 'Agreement__c'):
 # Check FLS on System Admin profile
 print('\n=== Tooling API: FieldPermissions on System Admin profile ===')
 from simple_salesforce.api import Salesforce as SfApi
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 res = sf.toolingexecute("query/?q=" +
     "SELECT+SobjectType,Field,PermissionsRead,PermissionsEdit,Parent.Profile.Name"
     "+FROM+FieldPermissions"

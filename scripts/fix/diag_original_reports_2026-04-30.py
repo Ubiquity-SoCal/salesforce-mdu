@@ -1,7 +1,13 @@
 """Verify the 8 original reports (post-deploy) run cleanly + have cross-filters."""
 import json, requests
 from simple_salesforce import Salesforce
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 host = sf.sf_instance
 hdrs = {'Authorization': f'Bearer {sf.session_id}', 'Content-Type': 'application/json'}
 

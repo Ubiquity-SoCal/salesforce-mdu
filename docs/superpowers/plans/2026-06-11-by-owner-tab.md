@@ -32,8 +32,8 @@ git checkout -b dashboard-by-owner-tab
 # SalesForce/scripts/_probes/2026-06-11-byowner-expected.py
 from collections import defaultdict
 from simple_salesforce import Salesforce
-sf = Salesforce(username="cass1@ubiquitygp.com", password="Hawaiian1984",
-                security_token="IBSKT6CFUpSUJWxq1CMm0HkFC")
+sf = Salesforce(username="cass1@ubiquitygp.com", password="<password: see _shared/sf_auth.py>",
+                security_token="<token: see _shared/sf_auth.py>")
 IN_PROG = {'Prospects','Prospecting','Engaged','Proposal Sent','Contract Negotiations'}
 DEAD = {'Closed Lost','On Hold'}
 DONE = {'PAL/ROE Complete','Marketing/Bulk In Progress','Marketing/Bulk Complete'}

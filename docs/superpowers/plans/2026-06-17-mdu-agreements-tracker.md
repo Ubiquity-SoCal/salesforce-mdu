@@ -50,8 +50,8 @@ from collections import OrderedDict
 from simple_salesforce import Salesforce
 
 V = "59.0"
-_FALLBACK = dict(username="cass1@ubiquitygp.com", password="Hawaiian1984",
-                 security_token="IBSKT6CFUpSUJWxq1CMm0HkFC")
+_FALLBACK = dict(username="cass1@ubiquitygp.com", password="<password: see _shared/sf_auth.py>",
+                 security_token="<token: see _shared/sf_auth.py>")
 
 
 def connect():
@@ -852,8 +852,8 @@ from collections import defaultdict
 from simple_salesforce import Salesforce
 
 APPLY = "--apply" in sys.argv
-sf = Salesforce(username="cass1@ubiquitygp.com", password="Hawaiian1984",
-                security_token="IBSKT6CFUpSUJWxq1CMm0HkFC")
+sf = Salesforce(username="cass1@ubiquitygp.com", password="<password: see _shared/sf_auth.py>",
+                security_token="<token: see _shared/sf_auth.py>")
 
 def query_all(soql):
     out, r = [], sf.query(soql)
@@ -958,7 +958,7 @@ Expected: `Applied ~72 opp update(s). Audit: ...contact-role-backfill.csv`.
 cd /c/Users/cass/Work_Projects/SalesForce/scripts/fix
 python -c "
 from simple_salesforce import Salesforce
-sf=Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf=Salesforce(username='cass1@ubiquitygp.com', password='<password: see _shared/sf_auth.py>', security_token='<token: see _shared/sf_auth.py>')
 def c(q): return sf.query(q)['records'][0]['c']
 print('opps with PM name:', c('SELECT COUNT(Id) c FROM Opportunity WHERE Property_Manager_Contact__c != null'))
 print('opps with Owner name:', c('SELECT COUNT(Id) c FROM Opportunity WHERE Property_Owner_Contact__c != null'))

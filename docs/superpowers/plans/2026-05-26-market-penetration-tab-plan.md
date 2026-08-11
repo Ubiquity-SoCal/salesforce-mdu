@@ -68,8 +68,8 @@ from simple_salesforce import Salesforce
 
 sf = Salesforce(
     username="cass1@ubiquitygp.com",
-    password="Hawaiian1984",
-    security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+    password="<password: see _shared/sf_auth.py>",
+    security_token="<token: see _shared/sf_auth.py>",
 )
 
 UNIV = "Address_Type__c='Business' AND Import_Delete_Property__c=false"
@@ -225,8 +225,8 @@ from simple_salesforce import Salesforce
 
 sf = Salesforce(
     username="cass1@ubiquitygp.com",
-    password="Hawaiian1984",
-    security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+    password="<password: see _shared/sf_auth.py>",
+    security_token="<token: see _shared/sf_auth.py>",
 )
 UNIV = "Address_Type__c='Business' AND Import_Delete_Property__c=false"
 
@@ -837,8 +837,8 @@ from simple_salesforce import Salesforce
 
 sf = Salesforce(
     username="cass1@ubiquitygp.com",
-    password="Hawaiian1984",
-    security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+    password="<password: see _shared/sf_auth.py>",
+    security_token="<token: see _shared/sf_auth.py>",
 )
 
 # Q-A
@@ -961,8 +961,8 @@ DASHBOARD_ID = "01ZWR000004X6if2AC"
 
 sf = Salesforce(
     username="cass1@ubiquitygp.com",
-    password="Hawaiian1984",
-    security_token="IBSKT6CFUpSUJWxq1CMm0HkFC",
+    password="<password: see _shared/sf_auth.py>",
+    security_token="<token: see _shared/sf_auth.py>",
 )
 
 # 1. Snapshot metadata
@@ -1008,7 +1008,7 @@ Expected: `[SUCCESS] Dashboard deleted.`
 ```bash
 python -c "
 from simple_salesforce import Salesforce
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username='cass1@ubiquitygp.com', password='<password: see _shared/sf_auth.py>', security_token='<token: see _shared/sf_auth.py>')
 try:
     r = sf.toolingexecute('sobjects/Dashboard/01ZWR000004X6if2AC', method='GET')
     print('STILL EXISTS:', r)

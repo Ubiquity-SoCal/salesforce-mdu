@@ -17,6 +17,12 @@ from datetime import datetime
 from pathlib import Path
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--apply', action='store_true', help='Actually run the update (default is dry run)')
 parser.add_argument('--dry-run', action='store_true', help='Preview only')
@@ -41,9 +47,9 @@ print(f"Records to revert: {len(revert_targets)}")
 print(f"Mode: {'APPLY' if args.apply else 'DRY RUN'}")
 
 sf = Salesforce(
-    username='cass1@ubiquitygp.com',
-    password='Hawaiian1984',
-    security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+    username=_SF["username"],
+    password=_SF["password"],
+    security_token=_SF["token"],
 )
 
 # Verify current state matches what audit captured (no drift)

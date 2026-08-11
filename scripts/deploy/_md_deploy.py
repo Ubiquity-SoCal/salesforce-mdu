@@ -5,9 +5,15 @@ import os, io, json, time, base64, zipfile, requests
 from collections import OrderedDict
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 V = "59.0"
-_FALLBACK = dict(username="cass1@ubiquitygp.com", password="Hawaiian1984",
-                 security_token="IBSKT6CFUpSUJWxq1CMm0HkFC")
+_FALLBACK = dict(username=_SF["username"], password=_SF["password"],
+                 security_token=_SF["token"])
 
 
 def connect():

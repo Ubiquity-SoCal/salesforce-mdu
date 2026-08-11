@@ -12,6 +12,12 @@ from io import BytesIO
 from datetime import date, datetime, timedelta
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 # ── Config ──────────────────────────────────────────────────────────────────
 EXCEL_PATH = r"C:\Users\cass\OneDrive - Ubiquity Management\PMO_Projects - MDU 9-25 Units ROE Project\MDU 9 - 25 Units.xlsx"
 SHEETS = ["Site Data", "TX Site Data"]
@@ -292,9 +298,9 @@ def main():
     # Step 2: Connect to Salesforce and get existing Agreement_Name__c values
     print("\n2. Connecting to Salesforce...")
     sf = Salesforce(
-        username="cass1@ubiquitygp.com",
-        password="Karate88!",
-        security_token="Ktc1n9mLmD9vwEcVcl45q0iAD",
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
 
     result = sf.query_all(

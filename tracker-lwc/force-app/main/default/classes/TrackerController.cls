@@ -45,11 +45,11 @@ public with sharing class TrackerController {
 
     @AuraEnabled
     public static TrackerResult getTrackerDataFull(String viewId, Integer recordOffset, String ownerName, String dateRange, String reAssignedName, String userSortField, String userSortDir, String filterField, String filterValue) {
-        return getTrackerDataFullWithCampaign(viewId, recordOffset, ownerName, dateRange, reAssignedName, userSortField, userSortDir, filterField, filterValue, null);
+        return getTrackerDataFullWithCampaign(viewId, recordOffset, ownerName, dateRange, reAssignedName, userSortField, userSortDir, filterField, filterValue, null, false);
     }
 
     @AuraEnabled
-    public static TrackerResult getTrackerDataFullWithCampaign(String viewId, Integer recordOffset, String ownerName, String dateRange, String reAssignedName, String userSortField, String userSortDir, String filterField, String filterValue, String campaignId) {
+    public static TrackerResult getTrackerDataFullWithCampaign(String viewId, Integer recordOffset, String ownerName, String dateRange, String reAssignedName, String userSortField, String userSortDir, String filterField, String filterValue, String campaignId, Boolean hideClosed) {
         Tracker_View__c view = [
             SELECT Id, Name, Config__c, Object__c
             FROM Tracker_View__c
@@ -149,7 +149,17 @@ public with sharing class TrackerController {
                 allowedFields.add((String) colMap.get('field'));
             }
             if (allowedFields.contains(filterField) && !filterField.contains('.')) {
-                whereClauses.add(filterField + ' LIKE \'%' + String.escapeSingleQuotes(filterValue) + '%\'');
+                // Comma/semicolon separated values are OR-matched (e.g. "TX,NE" -> TX or NE).
+                List<String> likeTerms = new List<String>();
+                for (String term : filterValue.split('[,;]')) {
+                    String t = term.trim();
+                    if (String.isNotBlank(t)) {
+                        likeTerms.add(filterField + ' LIKE \'%' + String.escapeSingleQuotes(t) + '%\'');
+                    }
+                }
+                if (!likeTerms.isEmpty()) {
+                    whereClauses.add('(' + String.join(likeTerms, ' OR ') + ')');
+                }
             }
         }
 
@@ -175,6 +185,12 @@ public with sharing class TrackerController {
         // Campaign filter (server-side). Only applies when querying Opportunity.
         if (String.isNotBlank(campaignId) && objectName == 'Opportunity') {
             whereClauses.add('CampaignId = \'' + String.escapeSingleQuotes(campaignId) + '\'');
+        }
+
+        // Hide Closed Sites toggle (MDU tracker checkbox). Server-side so closed rows do
+        // not consume the paged record limit.
+        if (hideClosed == true && objectName == 'Opportunity') {
+            whereClauses.add('StageName NOT IN (\'Closed Lost\', \'Closed Won\')');
         }
 
         if (!whereClauses.isEmpty()) {
@@ -766,11 +782,11 @@ public with sharing class TrackerController {
 
     @AuraEnabled
     public static SummaryResult getTrackerSummaryFiltered(String viewId, String ownerName, String dateRange, String reAssignedName) {
-        return getTrackerSummaryFilteredWithCampaign(viewId, ownerName, dateRange, reAssignedName, null);
+        return getTrackerSummaryFilteredWithCampaign(viewId, ownerName, dateRange, reAssignedName, null, false);
     }
 
     @AuraEnabled
-    public static SummaryResult getTrackerSummaryFilteredWithCampaign(String viewId, String ownerName, String dateRange, String reAssignedName, String campaignId) {
+    public static SummaryResult getTrackerSummaryFilteredWithCampaign(String viewId, String ownerName, String dateRange, String reAssignedName, String campaignId, Boolean hideClosed) {
         Tracker_View__c view = [
             SELECT Config__c, Object__c FROM Tracker_View__c WHERE Id = :viewId LIMIT 1
         ];
@@ -812,6 +828,9 @@ public with sharing class TrackerController {
         }
         if (String.isNotBlank(campaignId)) {
             whereClauses.add('CampaignId = \'' + String.escapeSingleQuotes(campaignId) + '\'');
+        }
+        if (hideClosed == true) {
+            whereClauses.add('StageName NOT IN (\'Closed Lost\', \'Closed Won\')');
         }
         String whereStr = whereClauses.isEmpty() ? '' : ' WHERE ' + String.join(whereClauses, ' AND ');
 
@@ -934,7 +953,9 @@ public with sharing class TrackerController {
             WHERE RecordType.DeveloperName = 'MDU' AND StageName IN :completedStages
         ];
 
-        // 3. Agreements signed this year by month
+        // 3. Agreements signed this year by month. Status must be Completed:
+        //    IronClad 'Sign' = sent for signature but NOT yet signed (and Cancelled is
+        //    not a signed agreement), so both would inflate the count. (Melissa, 2026-06-15)
         Integer currentYear = Date.today().year();
         Date yearStart = Date.newInstance(currentYear, 1, 1);
         Date yearEnd   = Date.newInstance(currentYear, 12, 31);
@@ -946,6 +967,7 @@ public with sharing class TrackerController {
             FROM Agreement__c
             WHERE Signed_Date__c >= :yearStart
               AND Signed_Date__c <= :yearEnd
+              AND Status__c = 'Completed'
               AND Opportunity__r.RecordType.DeveloperName = 'MDU'
             GROUP BY CALENDAR_MONTH(Signed_Date__c)
             ORDER BY CALENDAR_MONTH(Signed_Date__c)

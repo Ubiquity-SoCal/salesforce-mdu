@@ -35,7 +35,7 @@ SCRIPT_NAME = 'backfill_unit_opportunity_link_2026-04-27.py'
 TS = datetime.now().isoformat(timespec='seconds')
 AUDIT_DIR = Path(r'C:\Users\cass\Work_Projects\SalesForce\audit_logs')
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Hawaiian1984', security_token='IBSKT6CFUpSUJWxq1CMm0HkFC')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 CLOSED_STAGES = {'Closed Lost', 'Closed Won'}
 
@@ -95,6 +95,12 @@ for p in planned[:12]:
 
 # Distribution
 from collections import Counter
+
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
 multi_dist = Counter(p['opp_count_on_unit'] for p in planned)
 print(f"\nOpps-per-Unit count distribution among planned:")
 for n, c in sorted(multi_dist.items()):

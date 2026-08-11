@@ -13,7 +13,7 @@
             <displayUnits>Auto</displayUnits>
             <footer>Sign or Completed agreements without IronClad ID. Source of truth gap.</footer>
             <groupingSortProperties/>
-            <header>Need IronClad ID — Signed</header>
+            <header>Need IronClad ID - Signed</header>
             <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
             <indicatorHighColor>#B71C1C</indicatorHighColor>
@@ -27,44 +27,9 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <footer>PAL must be signed before SiteTracker handoff.</footer>
-            <groupingSortProperties/>
-            <header>Under Contract: No PAL</header>
-            <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
-            <indicatorHighColor>#B71C1C</indicatorHighColor>
-            <indicatorLowColor>#2E7D32</indicatorLowColor>
-            <indicatorMiddleColor>#E65100</indicatorMiddleColor>
-            <metricLabel>Opps</metricLabel>
-            <report>MDU_Sales_Reports/Cleanup_Under_Contract_No_PAL</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <footer>Active stages: ROE Secured, Contract Negotiations, Under Contract.</footer>
-            <groupingSortProperties/>
-            <header>No RE Assigned (active stages)</header>
-            <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
-            <indicatorHighColor>#B71C1C</indicatorHighColor>
-            <indicatorLowColor>#2E7D32</indicatorLowColor>
-            <indicatorMiddleColor>#E65100</indicatorMiddleColor>
-            <metricLabel>Opps</metricLabel>
-            <report>MDU_Sales_Reports/Cleanup_Opps_No_RE_Assigned</report>
-            <showRange>false</showRange>
-        </components>
-    </leftSection>
-    <middleSection>
-        <columnSize>Medium</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
             <footer>Sign-status agreements out for signature without IronClad ID.</footer>
             <groupingSortProperties/>
-            <header>Need IC ID — Out for Sign</header>
+            <header>Need IronClad ID - Out for Sign</header>
             <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
             <indicatorHighColor>#B71C1C</indicatorHighColor>
@@ -78,25 +43,28 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <footer>Active MDU Opps with no Property Location linked.</footer>
+            <footer>Opps at PAL/ROE Complete or beyond with no agreement record. Create/attach the PAL/ROE.</footer>
             <groupingSortProperties/>
-            <header>No Property Location</header>
+            <header>PAL/ROE Complete: No Agreement</header>
             <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
             <indicatorHighColor>#B71C1C</indicatorHighColor>
             <indicatorLowColor>#2E7D32</indicatorLowColor>
             <indicatorMiddleColor>#E65100</indicatorMiddleColor>
             <metricLabel>Opps</metricLabel>
-            <report>MDU_Sales_Reports/Cleanup_Opps_No_Property_Location</report>
+            <report>MDU_Sales_Reports/PALROE_Complete_No_Agreement</report>
             <showRange>false</showRange>
         </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <footer>Active pursuits without a forecasted close date.</footer>
+            <footer>Actively worked Opps (has a Next Action, not a parked pursuit) with no forecasted close date. Set a date.</footer>
             <groupingSortProperties/>
-            <header>No Projected Close Date</header>
+            <header>No Close Date (worked)</header>
             <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
             <indicatorHighColor>#B71C1C</indicatorHighColor>
@@ -106,17 +74,13 @@
             <report>MDU_Sales_Reports/Cleanup_Opps_No_Projected_Close</report>
             <showRange>false</showRange>
         </components>
-    </middleSection>
-    <owner>cass1@ubiquitygp.com</owner>
-    <rightSection>
-        <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <footer>Active opps not modified in 60+ days.</footer>
+            <footer>Active MDU Opps with no Next Action recorded. Set a next action or advance/close the stage.</footer>
             <groupingSortProperties/>
-            <header>Stale Active Opps</header>
+            <header>No Next Action (active)</header>
             <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
             <indicatorHighColor>#B71C1C</indicatorHighColor>
@@ -126,6 +90,10 @@
             <report>MDU_Sales_Reports/Cleanup_Stale_Active_Opps</report>
             <showRange>false</showRange>
         </components>
+    </middleSection>
+    <owner>cass1@ubiquitygp.com</owner>
+    <rightSection>
+        <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
@@ -156,22 +124,6 @@
             <indicatorMiddleColor>#E65100</indicatorMiddleColor>
             <metricLabel>Opps</metricLabel>
             <report>MDU_Sales_Reports/PALROE_Not_Linked_SiteTracker</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <footer>Opps at PAL/ROE Complete or beyond with no agreement record. Create/attach the PAL/ROE.</footer>
-            <groupingSortProperties/>
-            <header>PAL/ROE Complete: No Agreement</header>
-            <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
-            <indicatorHighColor>#B71C1C</indicatorHighColor>
-            <indicatorLowColor>#2E7D32</indicatorLowColor>
-            <indicatorMiddleColor>#E65100</indicatorMiddleColor>
-            <metricLabel>Opps</metricLabel>
-            <report>MDU_Sales_Reports/PALROE_Complete_No_Agreement</report>
             <showRange>false</showRange>
         </components>
         <components>

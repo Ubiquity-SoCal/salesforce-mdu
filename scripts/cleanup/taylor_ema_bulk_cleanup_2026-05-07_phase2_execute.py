@@ -23,6 +23,12 @@ from datetime import datetime
 
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 # ---- config ---------------------------------------------------------------
 
 AUDIT_DIR = r'C:\Users\cass\Work_Projects\SalesForce\audit_logs\2026-05-07_taylor_ema_bulk_cleanup'
@@ -427,9 +433,9 @@ def main():
     print(f'Loaded targets generated at {targets.get("generated_at")}')
     print(f'Connecting to Salesforce...')
     sf = Salesforce(
-        username='cass1@ubiquitygp.com',
-        password='Hawaiian1984',
-        security_token='IBSKT6CFUpSUJWxq1CMm0HkFC',
+        username=_SF["username"],
+        password=_SF["password"],
+        security_token=_SF["token"],
     )
 
     {

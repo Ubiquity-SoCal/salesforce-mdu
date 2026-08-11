@@ -2,11 +2,17 @@
 import requests, json, base64, time
 from simple_salesforce import Salesforce
 
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
 API_KEY = open(r'C:\Users\cass\Work_Projects\Monday.com\Monday.com_Key.txt').read().strip()
 MONDAY_URL = "https://api.monday.com/v2"
 monday_headers = {"Authorization": API_KEY, "Content-Type": "application/json"}
 
-sf = Salesforce(username='cass1@ubiquitygp.com', password='Karate88!', security_token='Ktc1n9mLmD9vwEcVcl45q0iAD')
+sf = Salesforce(username=_SF["username"], password=_SF["password"], security_token=_SF["token"])
 
 # Sample items to import notes for
 sample_items = {

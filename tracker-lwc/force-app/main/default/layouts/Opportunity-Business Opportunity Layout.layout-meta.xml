@@ -16,10 +16,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Contact__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Property_Unit__c</field>
             </layoutItems>
             <layoutItems>
@@ -126,18 +122,8 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>ISP Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Prospective_ISP__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Confirmed_ISP__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -179,6 +165,7 @@
         <fields>Agreement_Type__c</fields>
         <fields>Status__c</fields>
         <fields>Signed_Date__c</fields>
+        <fields>Expiration_Date__c</fields>
         <fields>IronClad_ID__c</fields>
         <relatedList>Agreement__c.Opportunity__c</relatedList>
     </relatedLists>

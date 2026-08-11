@@ -18,9 +18,15 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-USERNAME = "cass1@ubiquitygp.com"
-PASSWORD = "Hawaiian1984"
-SECURITY_TOKEN = "IBSKT6CFUpSUJWxq1CMm0HkFC"
+import sys as _sys
+_sys.path.insert(0, r"C:\Users\cass\Work_Projects")
+from _shared.sf_auth import creds as _sf_creds  # single source of truth for SF creds
+_SF = _sf_creds()
+
+
+USERNAME = _SF["username"]
+PASSWORD = _SF["password"]
+SECURITY_TOKEN = _SF["token"]
 LIGHTNING = "https://fun-power-747.lightning.force.com/lightning/r"
 OUT = Path(__file__).parent / f"MDU_Cleanup_Report_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
 
