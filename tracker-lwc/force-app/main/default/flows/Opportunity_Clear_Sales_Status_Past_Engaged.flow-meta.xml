@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>clear_sales_status</name>
+        <label>Clear Sales Status</label>
+        <locationX>176</locationX>
+        <locationY>120</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Sales_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Before-save autofix: when an Opportunity is saved at a stage past Engaged (i.e. not Prospects/Prospecting/Engaged) while Sales_Status__c is still set, this blanks Sales_Status__c. Runs before validation rules, so the Sales_Status_Stage_Scope rule never blocks a normal stage advance (from the Tracker, a record page, or API writes). Sales Status is an early-stage-only field; this just automates the clear the rule would otherwise force users to do by hand.</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity Clear Sales Status Past Engaged {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Clear Sales Status Past Engaged</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <runInMode>SystemModeWithSharing</runInMode>
+    <start>
+        <locationX>176</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>clear_sales_status</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>false</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+   NOT(ISBLANK(TEXT({!$Record.Sales_Status__c}))),
+   TEXT({!$Record.StageName}) &lt;&gt; "Prospects",
+   TEXT({!$Record.StageName}) &lt;&gt; "Prospecting",
+   TEXT({!$Record.StageName}) &lt;&gt; "Engaged"
+)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,9 @@
+SF_Id,Name,Agreement_Name,Address,Zip,Units,Category,Stage,Owner,Source,Timestamp,Action
+006WR00001DPGJLYA5,4750 Lafayette Ave,Omaha_MDU_4750 LAFAYETTE AVE,4750 Lafayette Ave,68132,23,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:07.770384,create
+006WR00001DP0rIYAT,Chalet Apartments,Omaha_MDU_Chalet Apartments,4728 Seward St,68104,22,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:08.236220,create
+006WR00001DOV9CYAX,5016 California St,Omaha_MDU_5016 California St,5016 California St,68132,12,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:08.795123,create
+006WR00001DONRiYAP,4314 N 65th St,Omaha_MDU_4314 N 65th St,4314 N 65th St,68104,11,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:09.181292,create
+006WR00001DP39FYAT,814 N 50th Ave,Omaha_MDU_814 N 50th Ave,814 N 50th Ave,68132,8,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:09.614924,create
+006WR00001DQVhhYAH,914 Mercer Blvd,Omaha_MDU_914 Mercer Blvd,914 Mercer Blvd,68131,8,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:10.118073,create
+006WR00001DOXkTYAX,Maple Villa Condominium,Omaha_MDU_Maple Villa Condominium,2723 N 93rd St,68134,8,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:10.740111,create
+006WR00001DPEz6YAH,5711 N 24th St 6Plex,Omaha_MDU_5711 N 24th St 6Plex,5711 N 24th St,68110,9,Cat 1,Prospects,Melissa Baker,2026-07-09-load-missing-omaha-onnet-mdus.py,2026-07-09T08:38:11.228911,create

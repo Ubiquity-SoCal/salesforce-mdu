@@ -1,0 +1,37 @@
+Id,Name,Agreement_Name__c,StageName,Loss_Reason__c,OwnerId,Owner_Name,Probability
+006WR00000wkClXYAU,Stafford Place,Azle_MDU_Stafford Place,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDtCYAU,DECATUR_MDU_Private_Rd_3176_Mobile_Park,DECATUR_MDU_Private_Rd_3176_Mobile_Park,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDtWYAU,GEORGETOWN_MDU_101_FM971 AKA Vered at San Gabriel,GEORGETOWN_MDU_101_FM971,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wk9TuYAI,302 North,Georgetown_MDU_302 North,Engaged,,005WR00000DEU6oYAH,Bill Holick,30.0
+006WR00000wkCmNYAU,Alta Austin Avenue (AKA Austin Avenue),Georgetown_MDU_Alta Austin Avenue,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkACfYAM,Bexley Wolf Ranch,Georgetown_MDU_Bexley Wolf Ranch,Engaged,,005WR00000DEU6oYAH,Bill Holick,30.0
+006WR00000wk9SfYAI,Georgetown Square Apartments,Georgetown_MDU_Georgetown Square Apts,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkCm9YAE,Indian Trail Estates MHP,HARKER HEIGHTS_MDU_Indian Trail Estates MH,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wk9Z6YAI,Stillhouse Flats,Harker Heights_MDU_Stillhouse Flats,Engaged,,005WR00000DEU6oYAH,Bill Holick,30.0
+006WR00000wkDtUYAU,Mobile Manor Estates,HARKER_HEIGHTS_MDU_Mobile Manor Estates,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkClhYAE,Hutto Station Apartments,HUTTO_MDU_Hutto Station Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkClnYAE,Resia Hutto Square,Hutto_MDU_Resia Hutto Square,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkClrYAE,Enclave at Killeen,Killeen_MDU_Enclave at Killeen,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDtBYAU,KILLEEN_MDU_Henderson_Garden,KILLEEN_MDU_Henderson_Garden,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkClGYAU,The Grove at Killeen,Killeen_MDU_The Grove,On Hold,,005WR00000CXIX7YAP,Chuck McNeely,0.0
+006WR00000wkC81YAE,The Village at Fox Creek,Killeen_MDU_The Village at Fox Creek,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkEbtYAE,Chalk Hill Ranch Phase 1,Liberty Hill_MDU_Chalk Hill Ranch Phase 1,Marketing/Bulk Complete,,005WR00000CXIX7YAP,Chuck McNeely,100.0
+006WR00000wkDtRYAU,Mac's Mobile Home Park,NOLANVILLE_MDU_Mac Mobile Home Park,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDtcYAE,OMAHA_MDU_Meredith Manor Apartments,OMAHA_MDU_Meredith Manor Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDMYYA2,ZAG Apartments,OMAHA_MDU_5110 Mayberry St - ZAG Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDt6YAE,612-616 N 46 St,Omaha_MDU_612-616 N 46th St,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkA82YAE,Benson Gardens Apartments,Omaha_MDU_Benson Gardens Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDt4YAE,Charleston Court,Omaha_MDU_Charleston Court,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wk9SrYAI,Cottonwood Apartments East,Omaha_MDU_Cottonwood Apartments West,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkCmAYAU,Elmwood Tower - EXISTING BULK,OMAHA_MDU_Elmwood_Tower,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkClRYAU,Grandridge,Omaha_MDU_Grandridge Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDt7YAE,Grant Ridge Apartments,Omaha_MDU_Grant Ridge Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkCkxYAE,Hamilton Village,Omaha_MDU_Hamilton Village,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkCjjYAE,Irvington Heights,Omaha_MDU_Irvington Heights,Closed Lost,No Contact Info,005WR00000DEU6oYAH,Bill Holick,0.0
+006WR00000wkDtkYAE,Maple Place Apartments,Omaha_MDU_Maple Place Apts,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDtZYAU,OMAHA_MDU_Ogden Plaza,OMAHA_MDU_Ogden Plaza,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDtaYAE,Peony Park West Apartments,Omaha_MDU_Peony Park West Apartments,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkDt5YAE,Underwood Senior Housing,Omaha_MDU_Underwood Senior Housing,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkClzYAE,Woodland Pines,Omaha_MDU_Woodland Pines,Prospects,,005WR00000CXIX7YAP,Chuck McNeely,5.0
+006WR00000wkEb4YAE,Main Street Commons,Taylor_MDU_Main Street Commons,PAL/ROE Complete,,005WR00000CXIX7YAP,Chuck McNeely,100.0
+006WR00000wkDt9YAE,Indian Creek Duplexes,Trophy Club_MDU_Indian Creek Duplexes,Closed Lost,No Decision / Non-Responsive,005WR00000DEU6oYAH,Bill Holick,0.0

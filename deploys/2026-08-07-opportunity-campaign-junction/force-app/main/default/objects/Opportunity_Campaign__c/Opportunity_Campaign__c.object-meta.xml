@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Junction letting one Opportunity belong to many Campaigns. Opportunity.CampaignId (Primary Campaign Source) holds a single value, so tagging a property into a second initiative used to mean overwriting the first: 196 of the 285 properties in the 2026 PAL/ROE refocus cohort already carried SAQ - 25+ MDU Project or ROE - 9-25 MDU Project. CampaignId is left alone as the ORIGINAL source and this object carries every membership, including a mirror of that original.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Opportunity Campaign</label>
+    <nameField>
+        <displayFormat>OC-{00000000}</displayFormat>
+        <label>Opportunity Campaign Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Opportunity Campaigns</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active_EMA_Bulk__c</fullName>
+    <description>True when Agreement Type is EMA or Bulk and Status is neither Cancelled nor Paused. Paused was added 2026-07-09 (Koa) so pausing an agreement drops its Opp off the Stale EMA/Bulk cleanup tile. Feeds Opportunity.Active_EMA_Bulk_Count__c.</description>
+    <formula>(ISPICKVAL(Agreement_Type__c, &quot;EMA&quot;) || ISPICKVAL(Agreement_Type__c, &quot;Bulk&quot;)) &amp;&amp; NOT(ISPICKVAL(Status__c, &quot;Cancelled&quot;) || ISPICKVAL(Status__c, &quot;Paused&quot;))</formula>
+    <label>Is Active EMA/Bulk</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

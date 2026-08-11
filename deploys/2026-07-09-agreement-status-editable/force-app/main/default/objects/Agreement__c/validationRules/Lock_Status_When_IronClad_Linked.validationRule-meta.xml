@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Status_When_IronClad_Linked</fullName>
+    <active>true</active>
+    <description>Status is owned by the IronClad sync whenever IronClad_Record__c is set (the sync matches on IronClad_Record__r.IronClad_Id__c). Blocks non-admins from edits the sync would silently revert. System Administrator bypasses.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(Status__c),
+  NOT(ISBLANK(IronClad_Record__c)),
+  $Profile.Name &lt;&gt; "System Administrator"
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>This Agreement is linked to IronClad, so its Status is set by the IronClad sync. Fix the status in IronClad, or contact a System Administrator.</errorMessage>
+</ValidationRule>

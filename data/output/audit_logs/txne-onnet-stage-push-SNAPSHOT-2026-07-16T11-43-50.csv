@@ -1,0 +1,90 @@
+Id,Name,StageName,Loss_Reason__c,Probability,OwnerId,Owner_Name,RecordType
+006WR00000wkArrYAE,Astoria Senior Living,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkABeYAM,Azlewood,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClBYAU,Belterra,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkClVYAU,Bryce Avenue Apartments,On Hold,,0,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkAC0YAM,Bull Run Apts,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkC7vYAE,Burnett Place Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wj8KcYAI,Camelot Village,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8pYAE,Caravelle Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCjPYAU,Century Plaza,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkC7xYAE,Chateau West Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA98YAE,Churchill at Golden Triangle,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8tYAE,Corby Castle Apts,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMEYA2,Corby Street Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8vYAE,Coronado Condominiums,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClgYAE,Country Place,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkClPYAU,Crestwood Apartment Homes,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkA8wYAE,Cypress Pointe II Apartment Complex,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA6VYAU,Dundee View,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCljYAE,Eagle's Point Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCloYAE,Elan at Keller Ranch,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDM7YAM,Garden Gate Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8UYAU,Gateway Village Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMOYA2,Georgetown Place Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMLYA2,Harmon Senior Villas,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCm8YAE,Harris Apartments,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkDMNYA2,Heights at 701,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkABsYAM,Heritage Manor,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClaYAE,Highview Apartments,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkA8gYAE,Hillside Park Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCjqYAE,Hillside Rows Apts,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDtIYAU,John Wesley Arms,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wj8KLYAY,Juniper Gardens,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDtEYAU,Killeen_MDU_408-420 E Hallmark Ave,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wk9T9YAI,Killeen_MDU_512 W Green Ave_Morris RE,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClOYAU,Lakeview Apartments,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkDtJYAU,Las Palmas,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8rYAE,Laurel Hill Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkC73YAE,Loveland by Broadmoor,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkBTzYAM,Luma Lane Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8FYAU,Maplewood Court Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDtAYAU,Marlboro_Heights_Mobile Home_Park,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClLYAU,Morgan Manor,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkAByYAM,New Life RV Park,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCkZYAU,New Towne West Apts,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDtDYAU,Nolan Creek Mobile Park,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMGYA2,North Park Landing Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClxYAE,NorthStar Georgetown,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkDtOYAU,OMAHA_MDU_58TH_Plaza_CIR,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDtNYAU,Omaha_MDU_Cherry Tree Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8eYAE,Park Crest,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wj8KeYAI,Peony Village,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wj8KsYAI,Pine Tree Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wj8KIYAY,Prairie Spring Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wk9T8YAI,Quail Hollow Apts_Morris RE,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkC7yYAE,Quail Run Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wj8KXYAY,Residences at Sorensen Square,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA9KYAU,River Oaks Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDuHYAU,River Oaks Apartments,PAL/ROE Complete,Other,100,005WR00000DE44HYAT,Marty Samuels,MDU/SFU
+006WR00000wk9SuYAI,Riverside Villas,Closed Lost,No Contact Info,0,005WR000003CD6DYAW,Melissa Baker,MDU/SFU
+006WR00000wkDM6YAM,Sandstone Foothills Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wiNoNYAU,Sorensen Heights,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClMYAU,Southcastle Apartments,On Hold,,0,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkCjQYAU,Southridge Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCjfYAE,Stone Hill Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCkeYAE,Swanson Towers Condominiums,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCjhYAE,TAYLOR_MDU_DEBUS_APTS AKA Boxwoods at Taylor Condo Community,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wk9T6YAI,Terrace Villa_Morris RE,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wjnlaYAA,The Colonial Apartments Broadmoor,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMUYA2,The Holston,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClqYAE,The Lyric at Keller Center Stage,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClTYAU,The Palo Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClcYAE,The Palo Townhomes,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkDMAYA2,The Peaks Townhomes,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkClHYAU,The Remington,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wj8KaYAI,The Village at Grant Square,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCkrYAE,Town And Country RV Park,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCleYAE,Tucker Apts AKA Brickstone Villas,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkCltYAE,Twin creek,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkCjsYAE,Vaughan Manor Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA90YAE,Villa Del Rey _ FF Freddy,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wk9T7YAI,Village West Apartments_Morris RE,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCjDYAU,Villa Vinee Apartments,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkCliYAE,Watermere at the Preserve,Prospects,,5,005WR00000CXIX7YAP,Chuck McNeely,MDU/SFU
+006WR00000wkA6bYAE,Woodgate Townhomes,Prospects,,5,005WR00000DE3zRYAT,Jeff Chao,MDU/SFU
+006WR00000wkCjoYAE,Woodgate Townhomes,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wkA7zYAE,Wyndham Hill,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Closed Lost,No Contact Info,0,005WR00000DEU6oYAH,Bill Holick,MDU/SFU

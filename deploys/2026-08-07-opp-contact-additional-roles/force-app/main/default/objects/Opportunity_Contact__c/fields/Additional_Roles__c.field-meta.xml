@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Roles__c</fullName>
+    <label>Additional Roles</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+    <unique>false</unique>
+    <externalId>false</externalId>
+    <trackHistory>false</trackHistory>
+    <inlineHelpText>Other roles this person holds on this property, kept when duplicate links were merged. Role is the primary one.</inlineHelpText>
+    <description>Added 2026-08-07 to merge duplicate Opportunity_Contact__c rows without losing information. 65 (opportunity, contact) pairs were linked more than once and 53 of those were the same person recorded as both Property Manager and Property Owner, which is genuinely true of a landlord who manages their own building. Role__c is a single-value picklist, so collapsing to one row would have destroyed the second fact. The surviving row keeps its own Role__c and the others are listed here.</description>
+</CustomField>

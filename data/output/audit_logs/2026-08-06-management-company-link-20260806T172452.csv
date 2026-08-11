@@ -1,0 +1,63 @@
+Id,Name,field,action,old_value,new_value
+001WR00001e7A4kYAE,Paladino Development,Account,created,,Paladino Development
+001WR00001e5P36YAE,Philmoor Company,Account,created,,Philmoor Company
+001WR00001e5VRsYAM,Pro Properties,Account,created,,Pro Properties
+001WR00001e63TZYAY,Broadmoor Development Co,Account,created,,Broadmoor Development Co
+001WR00001e5ob2YAA,Point Guard,Account,created,,Point Guard
+001WR00001e5pjwYAA,Robert Hancock & Co.,Account,created,,Robert Hancock & Co.
+001WR00001e4wVnYAI,Schwalb Realty,Account,created,,Schwalb Realty
+001WR00001e5OYRYA2,Burlington Capital,Account,created,,Burlington Capital
+001WR00001e5lRpYAI,Chronicles Properties,Account,created,,Chronicles Properties
+001WR00001e7DVdYAM,David Goldberg,Account,created,,David Goldberg
+001WR00001e6tIQYAY,"Kirshenbaum Realty, LLC",Account,created,,"Kirshenbaum Realty, LLC"
+001WR00001e6C0ZYAU,League of Human Dignity,Account,created,,League of Human Dignity
+001WR00001e7DaTYAU,PURE Operating LLC,Account,created,,PURE Operating LLC
+006WR00000xwEzuYAE,Omaha_MDU_5314-5322 Corby St,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR00000xvtfKYAQ,Omaha_MDU_1115-1117 N 48TH ST,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR00000xuog7YAA,Omaha_MDU_1121 N 48TH ST,Management_Company__c,updated,001WR00001Wn6e1YAB,001WR00001e7A4kYAE
+006WR00000xwFsjYAE,Omaha_MDU_4752 NICHOLAS ST,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR000011c5C6YAI,5120-5128 NW Radial Hwy,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR000011bsupYAA,Benson Apartments,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR000011aevbYAA,Church Hill Apartments,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR00000wk9SrYAI,Cottonwood Apartments East,Management_Company__c,updated,,001WR00001e7A4kYAE
+006WR00000xwGQbYAM,Omaha_MDU_821 N 47th St,Management_Company__c,updated,,001WR00001e5P36YAE
+006WR00000xvv7fYAA,Omaha_MDU_9026-9032 Ohio St,Management_Company__c,updated,,001WR00001e5P36YAE
+006WR000011cWtpYAE,Heritage Apartments,Management_Company__c,updated,,001WR00001e5P36YAE
+006WR00000wkA8pYAE,Caravelle Apartments,Management_Company__c,updated,,001WR00001e5P36YAE
+006WR00000xvDg7YAE,Omaha_MDU_817 N 47th St,Management_Company__c,updated,,001WR00001e5P36YAE
+006WR00001FlRjaYAF,Omaha_MDU_Omaha Housing Authority Benson Tower,Management_Company__c,updated,,001WR00001d9HFZYA2
+006WR00000wj8KsYAI,Pine Tree Apartments,Management_Company__c,updated,,001WR00001d9HFZYA2
+006WR00000wkDswYAE,Crown Tower,Management_Company__c,updated,,001WR00001d9HFZYA2
+006WR00000wkDtNYAU,Omaha_MDU_Cherry Tree Apartments,Management_Company__c,updated,,001WR00001d9HFZYA2
+006WR00000wkDt5YAE,Underwood Senior Housing,Management_Company__c,updated,,001WR00001d9HFZYA2
+006WR00000wkDtaYAE,Peony Park West Apartments,Management_Company__c,updated,,001WR00001e5VRsYAM
+006WR00000xvwoUYAQ,Omaha_MDU_4704 Cass St,Management_Company__c,updated,,001WR00001e5VRsYAM
+006WR00000xwF6LYAU,Omaha_MDU_302 N 48th St,Management_Company__c,updated,,001WR00001e5VRsYAM
+006WR00000wkA8VYAU,Copperstone Apartments,Management_Company__c,updated,,001WR00001cYTaiYAG
+006WR00000wkDsJYAU,Courtyard 72,Management_Company__c,updated,,001WR00001cYTaiYAG
+006WR00000wkFbuYAE,Keystone Ridge,Management_Company__c,updated,,001WR00001cYTaiYAG
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Management_Company__c,updated,,001WR00001e63TZYAY
+006WR00000wkFc0YAE,OMAHA_MDU_London Square Apartments,Management_Company__c,updated,,001WR00001e63TZYAY
+006WR00000wjnlZYAQ,Bentley By Broadmoor,Management_Company__c,updated,,001WR00001e63TZYAY
+006WR00000xwFXlYAM,Omaha_MDU_4509 Lafayette Ave,Management_Company__c,updated,,001WR00001e5ob2YAA
+006WR00000xwFazYAE,Omaha_MDU_4524 Lafayette Ave,Management_Company__c,updated,001WR00001WldZIYAZ,001WR00001e5ob2YAA
+006WR00000xwF37YAE,Omaha_MDU_Sierra Place,Management_Company__c,updated,,001WR00001e5ob2YAA
+006WR00000wj8KeYAI,Peony Village,Management_Company__c,updated,,001WR00001e5pjwYAA
+006WR00000wkCjDYAU,Villa Vinee Apartments,Management_Company__c,updated,,001WR00001e5pjwYAA
+006WR00000xwG5dYAE,Omaha_MDU_4955-4957 Cuming St,Management_Company__c,updated,,001WR00001e4wVnYAI
+006WR00000wkDMDYA2,Charter Oaks,Management_Company__c,updated,,001WR00001e4wVnYAI
+006WR00000wj8KaYAI,The Village at Grant Square,Management_Company__c,updated,,001WR00001e5OYRYA2
+006WR00000wkFbzYAE,The Arthur Apartments,Management_Company__c,updated,,001WR00001e5OYRYA2
+006WR00000xwEwfYAE,OMAHA_MDU_1410 N 45th St_APTS,Management_Company__c,updated,,001WR00001e5lRpYAI
+006WR00000xw8eMYAQ,Omaha_MDU_Cherry Hill Apts,Management_Company__c,updated,,001WR00001e5lRpYAI
+006WR00001DP0rIYAT,Chalet Apartments,Management_Company__c,updated,,001WR00001e7DVdYAM
+006WR00000wk9SjYAI,Chalet Apartments,Management_Company__c,updated,,001WR00001e7DVdYAM
+006WR00000xvdKRYAY,Omaha_MDU_4804-4806 Capital Ave,Management_Company__c,updated,,001WR00001e6tIQYAY
+006WR00000wk9S0YAI,Kirshenbaum Apartments,Management_Company__c,updated,,001WR00001e6tIQYAY
+006WR000011bcuxYAA,Ville de Sante Apartments,Management_Company__c,updated,,001WR00001e6C0ZYAU
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),Management_Company__c,updated,,001WR00001e6C0ZYAU
+006WR00000xwGTpYAM,Omaha_MDU_915 N 48TH ST,Management_Company__c,updated,,001WR00001e7DaTYAU
+006WR00000xviARYAY,Omaha_MDU_9214-9224 Ohio St,Management_Company__c,updated,,001WR00001e7DaTYAU
+006WR00000xvk0wYAA,Omaha_MDU_4902_4904 N Chicago St,Management_Company__c,updated,,001WR00001d9EMZYA2
+006WR00000xv1n4YAA,Omaha_MDU_409 N 49th St,Management_Company__c,updated,,001WR00001d9EMZYA2

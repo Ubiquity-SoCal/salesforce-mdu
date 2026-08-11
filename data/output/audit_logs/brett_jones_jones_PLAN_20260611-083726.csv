@@ -1,0 +1,91 @@
+opp_name,opp_id,opp_stage,change_kind,target,field,before,after
+Woodland Trio The Oaks,006WR00000wkEaQYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Baldwin Manor,006WR00000wkEaRYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+White Oak Terrace,006WR00000wkEaSYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Bali Apartments,006WR00000wkEaTYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Corbett Avenue Apartments,006WR00000wkEaUYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Chatsworth Plaza,006WR00000wkEaVYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+John Manor,006WR00000wkEaWYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Casa Linda,006WR00000wkEaXYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Windsor Manor,006WR00000wkEaYYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Coliseum Apartments,006WR00000wkEaZYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Colonial Manor Apartments,006WR00000wkEaaYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+San Vicente Apartments,006WR00000wkEabYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+St. Andrews Manor,006WR00000wkEacYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Krystal Terrace,006WR00000wkEadYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Parkway Terrace,006WR00000wkEaeYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Kling Trio Apartments,006WR00000wkEafYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Jaclyn Terrace,006WR00000wkEagYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Brody Terrace (Riverside),006WR00000wkEahYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Parkview Terrace,006WR00000wkEaiYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Roxanne Apartments,006WR00000wkEajYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Riverside Villa Apartments,006WR00000wkEakYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+The Banyans,006WR00000wkEalYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Topanga Apartments,006WR00000wkEamYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Topanga Terrace,006WR00000wkEanYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Vista Apartments,006WR00000wkEaoYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+The Palms,006WR00000wkEapYAE,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+First Casa De Marina,006WR00000wkEbIYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Lombardi Apartments,006WR00000wkEbJYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+The Meadows at Westlake Village,006WR00000wkEbKYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Brookside Terrace Apartments,006WR00000wkEbLYAU,PAL/ROE Complete,OPP_ACCOUNT,Opportunity,AccountId(Name),,Jones & Jones Communities
+Woodland Trio The Oaks,006WR00000wkEaQYAU,PAL/ROE Complete,PAL_FIELD,AGR-0789,IronClad_ID__c,,IC-1152
+Woodland Trio The Oaks,006WR00000wkEaQYAU,PAL/ROE Complete,PAL_FIELD,AGR-0789,Expiration_Date__c,,2043-11-01
+Baldwin Manor,006WR00000wkEaRYAU,PAL/ROE Complete,PAL_FIELD,AGR-0792,IronClad_ID__c,,IC-1152
+Baldwin Manor,006WR00000wkEaRYAU,PAL/ROE Complete,PAL_FIELD,AGR-0792,Expiration_Date__c,,2043-11-01
+White Oak Terrace,006WR00000wkEaSYAU,PAL/ROE Complete,PAL_FIELD,AGR-0795,IronClad_ID__c,,IC-1152
+White Oak Terrace,006WR00000wkEaSYAU,PAL/ROE Complete,PAL_FIELD,AGR-0795,Expiration_Date__c,,2043-11-01
+Bali Apartments,006WR00000wkEaTYAU,PAL/ROE Complete,PAL_FIELD,AGR-0798,IronClad_ID__c,,IC-1152
+Bali Apartments,006WR00000wkEaTYAU,PAL/ROE Complete,PAL_FIELD,AGR-0798,Expiration_Date__c,,2043-11-01
+Corbett Avenue Apartments,006WR00000wkEaUYAU,PAL/ROE Complete,PAL_FIELD,AGR-0801,IronClad_ID__c,,IC-1152
+Corbett Avenue Apartments,006WR00000wkEaUYAU,PAL/ROE Complete,PAL_FIELD,AGR-0801,Expiration_Date__c,,2043-11-01
+Chatsworth Plaza,006WR00000wkEaVYAU,PAL/ROE Complete,PAL_FIELD,AGR-0804,IronClad_ID__c,,IC-1152
+Chatsworth Plaza,006WR00000wkEaVYAU,PAL/ROE Complete,PAL_FIELD,AGR-0804,Expiration_Date__c,,2043-11-01
+John Manor,006WR00000wkEaWYAU,PAL/ROE Complete,PAL_FIELD,AGR-0807,IronClad_ID__c,,IC-1152
+John Manor,006WR00000wkEaWYAU,PAL/ROE Complete,PAL_FIELD,AGR-0807,Expiration_Date__c,,2043-11-01
+Casa Linda,006WR00000wkEaXYAU,PAL/ROE Complete,PAL_FIELD,AGR-0810,IronClad_ID__c,,IC-1152
+Casa Linda,006WR00000wkEaXYAU,PAL/ROE Complete,PAL_FIELD,AGR-0810,Expiration_Date__c,,2043-11-01
+Windsor Manor,006WR00000wkEaYYAU,PAL/ROE Complete,PAL_FIELD,AGR-0813,IronClad_ID__c,,IC-1152
+Windsor Manor,006WR00000wkEaYYAU,PAL/ROE Complete,PAL_FIELD,AGR-0813,Expiration_Date__c,,2043-11-01
+Coliseum Apartments,006WR00000wkEaZYAU,PAL/ROE Complete,PAL_FIELD,AGR-0816,IronClad_ID__c,,IC-1152
+Coliseum Apartments,006WR00000wkEaZYAU,PAL/ROE Complete,PAL_FIELD,AGR-0816,Expiration_Date__c,,2043-11-01
+Colonial Manor Apartments,006WR00000wkEaaYAE,PAL/ROE Complete,PAL_FIELD,AGR-0819,IronClad_ID__c,,IC-1152
+Colonial Manor Apartments,006WR00000wkEaaYAE,PAL/ROE Complete,PAL_FIELD,AGR-0819,Expiration_Date__c,,2043-11-01
+San Vicente Apartments,006WR00000wkEabYAE,PAL/ROE Complete,PAL_FIELD,AGR-0822,IronClad_ID__c,,IC-1152
+San Vicente Apartments,006WR00000wkEabYAE,PAL/ROE Complete,PAL_FIELD,AGR-0822,Expiration_Date__c,,2043-11-01
+St. Andrews Manor,006WR00000wkEacYAE,PAL/ROE Complete,PAL_FIELD,AGR-0825,IronClad_ID__c,,IC-1152
+St. Andrews Manor,006WR00000wkEacYAE,PAL/ROE Complete,PAL_FIELD,AGR-0825,Expiration_Date__c,,2043-11-01
+Krystal Terrace,006WR00000wkEadYAE,PAL/ROE Complete,PAL_FIELD,AGR-0828,IronClad_ID__c,,IC-1152
+Krystal Terrace,006WR00000wkEadYAE,PAL/ROE Complete,PAL_FIELD,AGR-0828,Expiration_Date__c,,2043-11-01
+Parkway Terrace,006WR00000wkEaeYAE,PAL/ROE Complete,PAL_FIELD,AGR-0831,IronClad_ID__c,,IC-1152
+Parkway Terrace,006WR00000wkEaeYAE,PAL/ROE Complete,PAL_FIELD,AGR-0831,Expiration_Date__c,,2043-11-01
+Kling Trio Apartments,006WR00000wkEafYAE,PAL/ROE Complete,PAL_FIELD,AGR-0834,IronClad_ID__c,,IC-1152
+Kling Trio Apartments,006WR00000wkEafYAE,PAL/ROE Complete,PAL_FIELD,AGR-0834,Expiration_Date__c,,2043-11-01
+Jaclyn Terrace,006WR00000wkEagYAE,PAL/ROE Complete,PAL_FIELD,AGR-0837,IronClad_ID__c,,IC-1152
+Jaclyn Terrace,006WR00000wkEagYAE,PAL/ROE Complete,PAL_FIELD,AGR-0837,Expiration_Date__c,,2043-11-01
+Brody Terrace (Riverside),006WR00000wkEahYAE,PAL/ROE Complete,PAL_FIELD,AGR-0840,IronClad_ID__c,,IC-1152
+Brody Terrace (Riverside),006WR00000wkEahYAE,PAL/ROE Complete,PAL_FIELD,AGR-0840,Expiration_Date__c,,2043-11-01
+Parkview Terrace,006WR00000wkEaiYAE,PAL/ROE Complete,PAL_FIELD,AGR-0843,IronClad_ID__c,,IC-1152
+Parkview Terrace,006WR00000wkEaiYAE,PAL/ROE Complete,PAL_FIELD,AGR-0843,Expiration_Date__c,,2043-11-01
+Roxanne Apartments,006WR00000wkEajYAE,PAL/ROE Complete,PAL_FIELD,AGR-0846,IronClad_ID__c,,IC-1152
+Roxanne Apartments,006WR00000wkEajYAE,PAL/ROE Complete,PAL_FIELD,AGR-0846,Expiration_Date__c,,2043-11-01
+Riverside Villa Apartments,006WR00000wkEakYAE,PAL/ROE Complete,PAL_FIELD,AGR-0849,IronClad_ID__c,,IC-1152
+Riverside Villa Apartments,006WR00000wkEakYAE,PAL/ROE Complete,PAL_FIELD,AGR-0849,Expiration_Date__c,,2043-11-01
+The Banyans,006WR00000wkEalYAE,PAL/ROE Complete,PAL_FIELD,AGR-0852,IronClad_ID__c,,IC-1152
+The Banyans,006WR00000wkEalYAE,PAL/ROE Complete,PAL_FIELD,AGR-0852,Expiration_Date__c,,2043-11-01
+Topanga Apartments,006WR00000wkEamYAE,PAL/ROE Complete,PAL_FIELD,AGR-0855,IronClad_ID__c,,IC-1152
+Topanga Apartments,006WR00000wkEamYAE,PAL/ROE Complete,PAL_FIELD,AGR-0855,Expiration_Date__c,,2043-11-01
+Topanga Terrace,006WR00000wkEanYAE,PAL/ROE Complete,PAL_FIELD,AGR-0858,IronClad_ID__c,,IC-1152
+Topanga Terrace,006WR00000wkEanYAE,PAL/ROE Complete,PAL_FIELD,AGR-0858,Expiration_Date__c,,2043-11-01
+Vista Apartments,006WR00000wkEaoYAE,PAL/ROE Complete,PAL_FIELD,AGR-0861,IronClad_ID__c,,IC-1152
+Vista Apartments,006WR00000wkEaoYAE,PAL/ROE Complete,PAL_FIELD,AGR-0861,Expiration_Date__c,,2043-11-01
+The Palms,006WR00000wkEapYAE,PAL/ROE Complete,PAL_FIELD,AGR-0864,IronClad_ID__c,,IC-1152
+The Palms,006WR00000wkEapYAE,PAL/ROE Complete,PAL_FIELD,AGR-0864,Expiration_Date__c,,2043-11-01
+First Casa De Marina,006WR00000wkEbIYAU,PAL/ROE Complete,PAL_FIELD,AGR-0925,IronClad_ID__c,,IC-1152
+First Casa De Marina,006WR00000wkEbIYAU,PAL/ROE Complete,PAL_FIELD,AGR-0925,Expiration_Date__c,,2043-11-01
+Lombardi Apartments,006WR00000wkEbJYAU,PAL/ROE Complete,PAL_FIELD,AGR-0928,IronClad_ID__c,,IC-1152
+Lombardi Apartments,006WR00000wkEbJYAU,PAL/ROE Complete,PAL_FIELD,AGR-0928,Expiration_Date__c,,2043-11-01
+The Meadows at Westlake Village,006WR00000wkEbKYAU,PAL/ROE Complete,PAL_FIELD,AGR-0931,IronClad_ID__c,,IC-1152
+The Meadows at Westlake Village,006WR00000wkEbKYAU,PAL/ROE Complete,PAL_FIELD,AGR-0931,Expiration_Date__c,,2043-11-01
+Brookside Terrace Apartments,006WR00000wkEbLYAU,PAL/ROE Complete,PAL_FIELD,AGR-0934,IronClad_ID__c,,IC-1152
+Brookside Terrace Apartments,006WR00000wkEbLYAU,PAL/ROE Complete,PAL_FIELD,AGR-0934,Expiration_Date__c,,2043-11-01

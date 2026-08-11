@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key__c</fullName>
+    <label>Key</label>
+    <type>Text</type>
+    <length>80</length>
+    <required>false</required>
+    <unique>true</unique>
+    <caseSensitive>false</caseSensitive>
+    <externalId>true</externalId>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <inlineHelpText>Set automatically by the load script as &lt;Opportunity Id&gt;-&lt;Campaign Id&gt;. Do not edit.</inlineHelpText>
+    <description>Salesforce has no composite unique constraint, so this external id stands in for one. The load script upserts on Key__c, which makes tagging idempotent: re-running it updates rather than creating a second identical tag. Unique also stops a duplicate being created by hand.</description>
+</CustomField>

@@ -22,6 +22,8 @@ tracker-lwc/force-app/main/default/SalesForce/
 # Morning SiteTracker chain: per-run state and the single-writer lock, both rewritten daily
 scripts/sync/morning-chain-status.json
 scripts/sync/morning-chain.lock
+# Health monitor's latest-status scratch file (rewritten every run; the .log is history)
+scripts/sync/sync-health-status.txt
 # Suffixed backups (e.g. .json.bak.scrapped-cleanup)
 *.bak
 *.bak.*

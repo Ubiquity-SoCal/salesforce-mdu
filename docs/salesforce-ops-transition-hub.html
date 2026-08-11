@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salesforce Reference Hub</title>
+<style>
+  :root{
+    --nav-bg:#010409; --nav-bg2:#0d1117; --nav-text:#c9d1d9; --nav-head:#e6edf3;
+    --nav-hover:#161b22; --accent:#58a6ff;
+    --bg:#0d1117; --card:#161b22; --border:#30363d; --ink:#c9d1d9; --head:#e6edf3; --muted:#8b949e;
+    --green-bg:rgba(63,185,80,.15); --green-tx:#3fb950;
+    --amber-bg:rgba(210,153,34,.15); --amber-tx:#d29922;
+    --slate-bg:rgba(139,148,158,.15); --slate-tx:#8b949e;
+    --gray-bg:rgba(110,118,129,.14); --gray-tx:#8b949e;
+    --prog-bg:rgba(163,113,247,.15); --prog-tx:#a371f7;
+    --plan-bg:rgba(88,166,255,.15); --plan-tx:#58a6ff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);display:flex;min-height:100vh;line-height:1.5}
+
+  /* Sidebar */
+  .sidebar{width:290px;flex-shrink:0;background:linear-gradient(180deg,var(--nav-bg),var(--nav-bg2));
+           color:var(--nav-text);position:sticky;top:0;height:100vh;overflow-y:auto;
+           display:flex;flex-direction:column}
+  .brand{padding:20px 20px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .brand h1{font-size:16px;margin:0;color:var(--nav-head);letter-spacing:.2px}
+  .brand p{margin:4px 0 0;font-size:11.5px;color:#8aa0ba}
+  .tabs{display:flex;gap:6px;padding:12px 16px 2px}
+  .tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;
+           padding:9px 4px;border:1px solid var(--border);background:#0d1117;color:var(--nav-text);
+           border-radius:8px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+  .tab-btn .tic{font-size:16px}
+  .tab-btn:hover{background:var(--nav-hover);color:#fff}
+  .tab-btn.active{background:#1f6feb;border-color:#1f6feb;color:#fff}
+  .filter{padding:10px 16px;position:sticky;top:0;background:var(--nav-bg2);z-index:2}
+  .filter input{width:100%;padding:8px 10px;border-radius:7px;border:1px solid var(--border);
+                background:#0d1117;color:var(--nav-head);font-size:13px}
+  .filter input::placeholder{color:var(--muted)}
+  nav{padding:4px 10px 24px}
+  .nav-section{display:flex;align-items:center;gap:8px;padding:9px 10px;margin-top:8px;
+               color:var(--nav-head);font-weight:600;font-size:13px;text-decoration:none;
+               border-radius:7px}
+  .nav-section:hover{background:var(--nav-hover)}
+  .nav-section .ct{margin-left:auto;font-size:10.5px;color:#7f97b3;font-weight:600;
+                   background:rgba(255,255,255,.06);padding:1px 7px;border-radius:10px}
+  .nav-items{display:flex;flex-direction:column;margin:2px 0 2px 6px;
+             border-left:1px solid rgba(255,255,255,.09);padding-left:6px}
+  .nav-item{padding:5px 9px;color:var(--nav-text);text-decoration:none;font-size:12.3px;
+            border-radius:6px}
+  .nav-item:hover{background:var(--nav-hover);color:#fff}
+  .hidden{display:none !important}
+
+  /* Main */
+  .main{flex:1;min-width:0}
+  .topbar{background:var(--card);border-bottom:1px solid var(--border);padding:18px 40px;
+          position:sticky;top:0;z-index:3}
+  .topbar h2{margin:0;font-size:20px;color:var(--head)}
+  .topbar p{margin:4px 0 0;color:var(--muted);font-size:13px;max-width:820px}
+  .wrap{padding:28px 40px 80px;max-width:1000px}
+
+  section{margin-bottom:34px;scroll-margin-top:92px}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding-bottom:8px;
+            border-bottom:1px solid var(--border)}
+  .sec-head .ic{font-size:22px}
+  .sec-head h3{margin:0;font-size:18px;color:var(--head)}
+  .sec-blurb{color:var(--muted);font-size:13.5px;margin:0 0 16px;max-width:760px}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:11px;
+        padding:16px 18px;margin-bottom:12px;scroll-margin-top:92px}
+  .card-head{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+  .card-head h4{margin:0;font-size:15px;flex:1;min-width:200px;color:var(--head)}
+  .chip{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
+        padding:3px 9px;border-radius:20px;white-space:nowrap}
+  .chip-auto{background:var(--green-bg);color:var(--green-tx)}
+  .chip-manual{background:var(--amber-bg);color:var(--amber-tx)}
+  .chip-read{background:var(--slate-bg);color:var(--slate-tx)}
+  .chip-hist{background:var(--gray-bg);color:var(--gray-tx)}
+  .chip-prog{background:var(--prog-bg);color:var(--prog-tx)}
+  .chip-plan{background:var(--plan-bg);color:var(--plan-tx)}
+  .systems{font-size:12px;color:var(--muted);margin:8px 0 0;display:flex;gap:6px;align-items:center}
+  .systems b{color:#adbac7;font-weight:600}
+  .summary{margin:9px 0 0;font-size:13.6px;color:var(--ink)}
+  details{margin-top:11px;border-top:1px dashed var(--border);padding-top:9px}
+  summary{cursor:pointer;font-size:12px;font-weight:600;color:var(--accent);
+          list-style:none;user-select:none;display:inline-flex;align-items:center;gap:6px}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"\25B8";transition:transform .15s}
+  details[open] summary::before{transform:rotate(90deg)}
+  .detail{margin-top:9px;font-size:12.8px;color:var(--ink);line-height:1.6}
+  .detail code{background:#1c2128;border:1px solid var(--border);border-radius:4px;
+               padding:1px 5px;font-size:11.8px;color:#79c0ff;
+               font-family:"Cascadia Code",Consolas,monospace}
+  .detail b{color:var(--head)}
+  .detail ol{margin:7px 0 0;padding-left:20px}
+  .detail li{margin:4px 0}
+
+  .foot{color:var(--muted);font-size:12px;border-top:1px solid var(--border);
+        padding-top:16px;margin-top:20px}
+  .noresults{display:none;color:var(--muted);font-style:italic;padding:20px 0}
+
+  @media(max-width:820px){
+    body{flex-direction:column}
+    .sidebar{width:100%;height:auto;position:static}
+    .filter{position:static}
+    .topbar,.wrap{padding-left:20px;padding-right:20px}
+  }
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand">
+    <h1>Salesforce Reference Hub</h1>
+    <p>Operations and getting-started reference</p>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="filter"><input id="q" type="search" placeholder="Filter topics…" autocomplete="off"></div>
+  <nav id="nav"></nav>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <h2 id="mainTitle"></h2>
+    <p id="mainSub"></p>
+  </div>
+  <div class="wrap">
+    <div id="content"></div>
+    <div class="noresults" id="noresults">No topics match that filter.</div>
+    <div class="foot" id="foot"></div>
+  </div>
+</main>
+
+<script>
+/* ============================================================================
+   HOW TO ADD OR EDIT CONTENT
+   ----------------------------------------------------------------------------
+   Everything on this page is generated from the TABS array below. There are two
+   tabs: "Operations" (how the org runs and is built) and "Salesforce Basics"
+   (how to create reports, dashboards, list views, and manage access).
+
+   To add a topic:
+     1. Pick the tab, then the section object inside it (or add a new section
+        with a unique id).
+     2. Add an item to that section's `items` list:
+          { name:"...", tag:"Manual", systems:"A -> B",
+            summary:"one neutral sentence",
+            detail:"optional HTML: <code>path</code>, <ol><li>steps</li></ol>" }
+     3. Save this file and refresh the browser. The left index, the anchors, and
+        the card all appear automatically. No build step.
+
+   Tag colors are automatic by first word:
+     Automated -> green, Manual -> amber, Read-only/Note -> slate,
+     Historical -> gray, In progress -> violet, Planned -> indigo.
+   ========================================================================== */
+
+const META = {
+  title: "Salesforce Reference Hub",
+  updated: "July 2, 2026"
+};
+
+const OPERATIONS = [
+  {
+    id:"orientation", title:"Orientation", icon:"🧭",
+    blurb:"The 60-second model of how this Salesforce environment is put together.",
+    items:[
+      { name:"Two Salesforce orgs, not one",
+        summary:"The main org holds the sales side (Opportunities, Agreements, Properties). A separate SiteTracker org tracks construction and build progress. A nightly sync copies build data from SiteTracker into the main org.",
+        detail:"Main org: <code>fun-power-747.lightning.force.com</code>. SiteTracker is a completely separate Salesforce instance with its own login. Credentials for both are stored in <code>SalesForce/docs/salesforce-connection.md</code> and <code>SiteTracker/docs/sitetracker-connection.md</code>. Changes in the main org do not affect SiteTracker; the sync only flows SiteTracker &rarr; main." },
+      { name:"Three apps in one org",
+        summary:"MDU Sales (apartment and property pursuits), Business Sales (SMB and business serviceability), and Address Management (address verification cases). One org, three front doors.",
+        detail:"API names: <code>MDU_Sales</code> (label 'MDU Sales'), <code>Inside_Sales</code> (label 'Business Sales'; the API name is Inside_Sales, <b>not</b> Business_Sales), and Address Management." },
+      { name:"The golden key: Agreement_Name__c",
+        summary:"One field on the Opportunity links the same property across every connected system: Monday.com, SiteTracker, IronClad, the SAQ tracker, and the ROE tracker. It is the join key whenever records must be matched between systems.",
+        detail:"<code>Agreement_Name__c</code> is a unique external-ID text field on Opportunity. SiteTracker's 'Site Name' equals it, and IronClad and the Excel trackers key off it too. When a match looks wrong, check this field before matching on street address (addresses drift between the ROE building and the Opportunity building)." }
+    ]
+  },
+  {
+    id:"syncs", title:"What Keeps Salesforce Updated", icon:"🔄",
+    blurb:"Three jobs run automatically; the rest are run by hand. The most time-sensitive manual job is the IronClad sync.",
+    items:[
+      { name:"SiteTracker Sync", tag:"Automated", systems:"SiteTracker org → main Salesforce",
+        summary:"Pulls MDU build records from the SiteTracker org and loads them into the main org as SiteTracker Project records (the mirror), which is the raw build feed. Cancelled builds are included.",
+        detail:"Runs daily at <b>2:00 AM CT</b> via GitHub Actions. Workflow <code>.github/workflows/sitetracker-sync.yml</code> &rarr; script <code>sitetracker/sync_sitetracker.py</code> in the <code>Ubiquity-SoCal/Automation</code> repo. Cancelled builds are intentionally included (filter removed 2026-05-26) so cancelled projects can still be matched; active-only views must filter on <code>Site_Status__c</code>." },
+      { name:"Link SiteTracker to Opportunities + Surface fields", tag:"Automated", systems:"Within Salesforce (reads SiteTracker org)",
+        summary:"Runs after the sync. Fuzzy-matches mirror projects to the correct Opportunity and links them, then copies build status, activation date, and milestone dates onto the Opportunity, plus Design Inputs Received and Ready for Engineering for the MDU milestone report.",
+        detail:"Daily at <b>2:30 AM CT</b>. Workflow <code>link-sitetracker-opps.yml</code> runs three steps: <code>link_sitetracker_opportunities.py</code> (state and street-number gated fuzzy match; high confidence auto-applied, medium logged as REVIEW), <code>surface_to_opportunity.py</code> (build status, activation, and milestone dates onto the Opportunity), and <code>surface_design_inputs_direct.py</code> (reads Design Inputs and Ready-for-Eng straight from the SiteTracker org as a mirror-bypass; <b>hard-fails if it finds nothing</b> so those columns cannot silently go stale)." },
+      { name:"SiteTracker Health Check", tag:"Read-only", systems:"Reads main Salesforce",
+        summary:"A daily canary. It changes no data; it fails and alerts if the SiteTracker data is more than 36 hours old, which surfaces a broken 2 AM sync.",
+        detail:"Daily at <b>3:00 AM CT</b>. Workflow <code>sitetracker-health.yml</code> &rarr; <code>health_check.py --max-age-hours 36</code>. A red run in the Actions tab (or the failure email) is the signal to investigate. Most common cause: a rotated Salesforce password or token leaving a stale GitHub Secret." },
+      { name:"IronClad Agreement Sync", tag:"Manual", systems:"IronClad export → main Salesforce",
+        summary:"Keeps Agreement statuses and signed dates aligned with the live contract workflow in IronClad (Review, Sign, Completed, and so on). Without it, the dashboard shows agreements as 'Review' when they are already Completed. Run about twice a week.",
+        detail:"The most time-sensitive manual job; it goes stale within days. A 4-step pipeline off a fresh IronClad export placed in the Downloads folder:<ol><li><code>scripts/import/import_ironclad_data.py</code>: refresh the <code>IronClad__c</code> mirror table.</li><li><code>scripts/sync/link_orphan_ironclad_agreements.py</code>: link agreements whose IronClad ID text is set but lookup is null.</li><li><code>scripts/sync/refresh_agreements_from_ironclad_export_2026-04-29.py --apply</code>: update Agreement Status and Signed_Date.</li><li>Flag Opportunities for stage advance (<b>never auto-advanced</b>; MDU stage moves are governed by the MDU admin).</li></ol><b>Match-key gotcha:</b> match on <code>IronClad__c.IronClad_Id__c</code> (for example IC-2900), NOT <code>Name</code> (a Salesforce auto-number)." },
+      { name:"Property Sync (Databricks / Vetro)", tag:"Manual · Primary", systems:"Databricks (Vetro + SiteTracker bronze) → main Salesforce",
+        summary:"The primary source of property data. Pulls fiber inventory, circuits, and activation dates from Databricks and loads Property Location and Property Unit records.",
+        detail:"Manual trigger only (the preview diff is reviewed first; not scheduled because there is no Databricks service principal). Lives in <code>Automation/vetro-sync/</code> (also <code>SalesForce/scripts/sync/sync_vetro_to_salesforce.py</code>). Source tables: <code>vetro_external_table</code> + <code>salesforce_sitetracker_bronze.*</code>. The job named 'Vetro sync' is the Databricks-sourced one; Vetro's data lives in Databricks." },
+      { name:"PowerBI Property Sync", tag:"Manual · Cross-check", systems:"PowerBI export → main Salesforce",
+        summary:"The secondary cross-check on property data. Reconciled against the primary Databricks/Vetro sync to catch discrepancies; it is not the main source of truth.",
+        detail:"<code>SalesForce/scripts/sync/sync_powerbi_to_salesforce.py</code>. Reads the latest PowerBI Excel export, dedupes, and upserts Property Location/Unit via the Bulk API. Always previewed before running, never auto-executed." },
+      { name:"Latest Note Surfacing", tag:"Manual", systems:"Within Salesforce",
+        summary:"Copies the most recent note's date and a text snippet onto each Opportunity so the newest note shows on the record without opening the Notes list.",
+        detail:"<code>SalesForce/scripts/sync/sync_latest_note.py</code>. Populates <code>Latest_Note_Date__c</code> and <code>Latest_Note_Snippet__c</code> from the newest ContentNote per Opportunity." },
+      { name:"SAQ Stage Push", tag:"Manual · Occasional", systems:"SAQ spreadsheet → main Salesforce",
+        summary:"Pushes the SAQ master list into Opportunity stages. Mostly complete; re-run only when the SAQ sheet changes materially.",
+        detail:"<code>scripts/sync/bill_saq_status_apply.py</code> (dry-run by default, <code>--apply</code> to commit). Clears <code>Sales_Status__c</code> when advancing past Engaged. Quarantined and double-mapped rows are excluded and await manual review." },
+      { name:"ROE 9-25 Import", tag:"Historical", systems:"ROE spreadsheet → main Salesforce",
+        summary:"A one-time import of the 9-25 ROE project Opportunities and their campaign tags. Complete; re-run only if that source spreadsheet is revised.",
+        detail:"<code>scripts/sync/update_roe_925.py</code> plus campaign-assign scripts. The 9-25 MDU ROE campaign is <code>701WR00001IwJYsYAN</code>." }
+    ]
+  },
+  {
+    id:"apps", title:"The Three Salesforce Apps", icon:"📱",
+    blurb:"One org, three apps. Each is a separate pipeline with its own home and navigation.",
+    items:[
+      { name:"MDU Sales",
+        summary:"The multi-dwelling-unit pipeline. An Opportunity here is a property pursuit; the goal is securing agreements (PAL/ROE/EMA/Bulk) to bring fiber to an apartment, HOA, or community, rather than a traditional product sale.",
+        detail:"API name <code>MDU_Sales</code>, MDU record type. Build progress is not tracked on the Opportunity; it lives in SiteTracker and is surfaced in via the nightly sync. Restructured stages: Closed Lost &rarr; On Hold &rarr; Prospects &rarr; Prospecting &rarr; Engaged &rarr; Proposal Sent &rarr; Contract Negotiations &rarr; PAL/ROE Complete &rarr; Marketing/Bulk In Progress &rarr; Marketing/Bulk Complete." },
+      { name:"Business Sales (Inside_Sales)",
+        summary:"The SMB and business-serviceability pipeline. Works from serviceable business Property Locations (business parks, strip malls, mobile-home parks, and similar), tracking penetration and pursuits.",
+        detail:"API name is <code>Inside_Sales</code> (label 'Business Sales'). Opportunity uses the Business record type, which keeps the older 'Under Contract' stage. Property_Unit is the sales anchor for SMB." },
+      { name:"Address Management",
+        summary:"Address verification and serviceability requests tracked as Cases (the AVR flow). Built early, stable, and low-touch compared to the two sales apps.",
+        detail:"Uses standard Cases for AVR (Address Verification Request) tracking, separate from the MDU and Business pipelines." }
+    ]
+  },
+  {
+    id:"dashboards", title:"Home Page & Dashboards", icon:"📊",
+    blurb:"Before editing 'the dashboard', confirm which component actually renders; several deployed pieces are orphaned.",
+    items:[
+      { name:"The home page that actually renders",
+        summary:"Both the MDU Sales and Business Sales apps render the same home page: a Visualforce page called InsideSalesDashboard, with a pipeline slicer (all / MDU / business) and tabs for Team, My Pipeline, Agreements, and Executive.",
+        detail:"Routing: <code>MDU_Sales</code> app &rarr; <code>InsideSales_Home</code> FlexiPage &rarr; VF page <code>InsideSalesDashboard</code>; <code>Inside_Sales</code> app &rarr; <code>BusinessSales_Home</code> FlexiPage &rarr; the same VF page. The Executive summary lives inside <code>InsideSalesDashboard.page</code> (about 1000 lines, roughly 35 queries in one Promise.all). To add a section: add a query to the Promise.all array, unpack the result, add an <code>html += '...'</code> block before the executive-tab close, then deploy the page." },
+      { name:"Orphaned components (editing them changes nothing)", tag:"Read-only",
+        summary:"An executiveDashboard LWC is deployed but not surfaced on any home page, so editing it changes nothing visible. Confirm the FlexiPage assignment before editing any dashboard component.",
+        detail:"<code>tracker-lwc/.../lwc/executiveDashboard/</code> has its own FlexiPage and tab, but neither is the Org Default anywhere. FlexiPage 'Org Default' assignment cannot be set via SFDX; it is a Lightning App Builder action (Setup &rarr; Object Manager &rarr; Lightning Record Pages &rarr; Activation)." },
+      { name:"campaignDashboard LWC (per-campaign)",
+        summary:"A reusable dashboard that renders on a Campaign record, showing that initiative's Opportunities and a 'Secured' agreements pivot. Used to track named initiatives such as the 9-25 ROE project.",
+        detail:"LWC <code>campaignDashboard</code> plus Apex <code>CampaignDashboardController</code>. Campaign record-page Org Default = 'Campaign Project Dashboard'. The 'Secured' list is built from <code>Agreement__c WHERE Opportunity.CampaignId = X AND Status = 'Completed'</code>, so only IronClad-completed agreements appear. Hand-stamping 'Completed' does not work; the next IronClad refresh reverts it." },
+      { name:"Tracker LWC (MDU tracker)",
+        summary:"An interactive MDU pipeline tracker with server-side filters (owner, RE, date range), pagination, a summary bar, and a stage dropdown. Deployed from the tracker-lwc project.",
+        detail:"Deploy via the <code>sf</code> CLI from <code>tracker-lwc/</code>. Column order: Property &rarr; Stage &rarr; ST Build Status &rarr; Owner &rarr; RE Assigned &rarr; Projected Close." },
+      { name:"Making changes to the home page or tracker (code, not clicks)", tag:"Note", systems:"tracker-lwc SFDX project → deploy via sf CLI",
+        summary:"The home page and the tracker are code-backed, so real changes are edited in the tracker-lwc project and deployed with the Salesforce CLI, not dragged in App Builder. The FlexiPage is only a container.",
+        detail:"Everything lives in <code>SalesForce/tracker-lwc/</code>. Prerequisites: the Salesforce CLI (<code>sf</code>), VS Code, and an authenticated org (<code>sf org login web</code>).<br><br><b>Home page content:</b> edit the Visualforce page <code>force-app/main/default/pages/InsideSalesDashboard.page</code> (add a query to the <code>Promise.all</code> array, unpack the result, add an <code>html += '...'</code> block), then deploy with <code>sf project deploy start --source-dir force-app/main/default/pages/InsideSalesDashboard.page</code>. Both the MDU and Business home pages share this one page, so a change affects both.<br><br><b>Tracker page:</b> edit the LWC <code>force-app/main/default/lwc/trackerGrid/</code> (columns, filters, layout) and its Apex <code>classes/TrackerController.cls</code> (the data it can query), then deploy each with <code>sf project deploy start --source-dir &lt;path&gt;</code>. Surfaced on the <code>MDU_Tracker</code> and <code>Business_Tracker</code> FlexiPages.<br><br><b>Clicks-only changes</b> (rearranging the container, or choosing which page is an app home) are done in Setup &rarr; Lightning App Builder &rarr; Activation, which the CLI cannot set. <b>Watch out:</b> the <code>executiveDashboard</code> LWC is deployed but not surfaced anywhere, so editing it changes nothing on the live home page." }
+    ]
+  },
+  {
+    id:"data-model", title:"Data Model", icon:"🗃️",
+    blurb:"A handful of objects explain the whole system.",
+    items:[
+      { name:"Opportunity",
+        summary:"A property pursuit. Record Type splits it into MDU and Business pipelines. Holds property details, ISP info, and the Agreement_Name__c key. The 'sale' is really about securing agreements.",
+        detail:"Canonical ISP fields are the multipicklists <code>Prospective_ISPs__c</code> / <code>Confirmed_ISPs__c</code> (plural; the legacy singular text fields were retired 2026-05-21). Build milestones are surfaced from SiteTracker, not entered here." },
+      { name:"Agreement__c",
+        summary:"A child of Opportunity, one row per PAL / ROE / EMA / Bulk agreement. Its Status follows the IronClad workflow (Create → Review → Sign → Completed → Archive/Paused/Cancelled). Agreement_Count__c on the Opportunity rolls these up.",
+        detail:"Master-detail to Opportunity. <code>IronClad_ID__c</code> (text) plus <code>IronClad_Record__c</code> (lookup to <code>IronClad__c</code>). Status and Signed_Date are refreshed by the manual IronClad sync. Signed date is stamped only for Completed." },
+      { name:"Opportunity_Contact__c",
+        summary:"A junction object linking Contacts to Opportunities with a role (Property Manager, Owner, Leasing, HOA, GC, Developer, Legal, Broker). Replaces standard Contact Roles.",
+        detail:"Master-detail to Opportunity, lookup to Contact. Name = auto-number OC-####." },
+      { name:"SiteTracker_Project__c",
+        summary:"The build mirror. One record per SiteTracker MDU build, copied nightly from the SiteTracker org. It is how the main org reflects construction status without living in SiteTracker.",
+        detail:"Populated by the 2 AM sync. Cancelled builds are included. <code>Last_Synced__c</code> is what the health check watches." },
+      { name:"Property_Location__c / Property_Unit__c",
+        summary:"The serviceable-property inventory: Locations are buildings and sites (about 17k), Units are the individual doors within them (about 28k). Loaded by the Databricks/Vetro property sync and anchoring the Business Sales app.",
+        detail:"Property_Location covers serviceable properties of all kinds, not only MDUs. Property_Unit is the sales anchor for SMB (passive for MDU). Loaded via the manual property sync (Databricks primary, PowerBI cross-check)." }
+    ]
+  },
+  {
+    id:"integrations", title:"Integrations", icon:"🔌",
+    blurb:"The outside systems Salesforce connects to, and how current each connection is.",
+    items:[
+      { name:"IronClad", tag:"Manual · Sync",
+        summary:"The source of truth for agreement signing. Contract status flows into Agreement__c, currently through the manual twice-weekly export sync rather than an automatic feed.",
+        detail:"Future webhooks or polling would make this automatic. Until then it is the IronClad export pipeline (see 'What Keeps Salesforce Updated'). Match on <code>IronClad_Id__c</code>." },
+      { name:"SiteTracker (separate org)", tag:"Automated",
+        summary:"A separate Salesforce org for construction tracking. This is the only fully automated integration (the nightly 2 AM sync, link, and surface).",
+        detail:"Its own credentials. The main org only reads from it and mirrors build data in." },
+      { name:"Databricks / Vetro", tag:"Manual · Primary",
+        summary:"The primary source of property and serviceability data (fiber inventory, circuits, activation). Feeds Property_Location/Unit via the manual property sync.",
+        detail:"Vetro data lands in Databricks bronze tables that the property sync reads. Use <code>vetro_external_table</code> (the fiber-jack table undercounts SFU by about 70%)." },
+      { name:"PowerBI", tag:"Manual · Cross-check",
+        summary:"A Microsoft BI export used as the secondary cross-check on property data, reconciled against the primary Databricks source.",
+        detail:"Feeds the same Property_Location/Unit objects via <code>sync_powerbi_to_salesforce.py</code>." },
+      { name:"Stripe", tag:"Read-only",
+        summary:"Becoming the billing backbone. The current connection is a read-only reporting key (regional revenue, customer reconciliation), not a write integration into Salesforce.",
+        detail:"Read-only API key at <code>Stripe/api/stripe_API.txt</code>. Long term, SiteTracker, Salesforce, and IronClad billing are expected to route through Stripe." },
+      { name:"Monday.com", tag:"Historical",
+        summary:"The original source system the MDU pipeline was migrated from. The migration is complete; Monday is legacy for MDU and not a live sync.",
+        detail:"Retained for reference. <code>Monday_Item_ID__c</code> on Opportunity is the migration key." }
+    ]
+  },
+  {
+    id:"ops", title:"Running It & Conventions", icon:"🧠",
+    blurb:"Where the code and secrets live, plus settled conventions that look like bugs without context.",
+    items:[
+      { name:"Where the code lives",
+        summary:"Two homes: scheduled automation is in the Ubiquity-SoCal/Automation GitHub repo; manually-run scripts are in SalesForce/scripts.",
+        detail:"Scheduled: <code>Ubiquity-SoCal/Automation</code> (local clone <code>Work_Projects/Automation/</code>), the 3 SiteTracker workflows in <code>.github/workflows/</code> plus code in <code>sitetracker/</code>. Manual: <code>Work_Projects/SalesForce/scripts/</code>, organized into <code>sync/ analysis/ fix/ import/ _probes/ deploy/</code>. The stale <code>Work_Projects/GitHub/automation/</code> clone should be ignored." },
+      { name:"Secrets & credentials",
+        summary:"Automated jobs read their logins from GitHub Secrets, not from code. Local scripts read from credential docs on disk.",
+        detail:"GitHub &rarr; repo Settings &rarr; Secrets: <code>SF_MAIN_USERNAME/PASSWORD/TOKEN</code> and <code>SF_ST_USERNAME/PASSWORD/TOKEN</code>. If a Salesforce password or token rotates, the 2 AM sync breaks and the health check catches it about an hour later. Local credentials: <code>SalesForce/docs/salesforce-connection.md</code>, <code>SiteTracker/docs/sitetracker-connection.md</code>." },
+      { name:"Settled conventions (do not revert)",
+        summary:"A few decisions that look like bugs without the history. Leave them in place unless the MDU admin directs otherwise.",
+        detail:"<ol><li>Stages were restructured 2026-04-29 and renamed 2026-05-05; the old names (Ready for Engineering / Under Construction / Activation / Closed Won) are gone from MDU.</li><li>ISP is the plural multipicklists, not the deleted singular text fields.</li><li>MDU Opportunity fields live on the Dynamic-Forms FlexiPage, not only the page layout.</li><li>The IronClad match key is <code>IronClad_Id__c</code>, not Name.</li><li>MDU stage and data decisions are governed by the MDU admin.</li></ol>" },
+      { name:"Recurring manual cadence",
+        summary:"Two rhythm items: run the IronClad sync about twice a week, and run the weekly forecast-gap review before the pipeline forecast meeting.",
+        detail:"Forecast-gap: <code>scripts/analysis/forecast_gap_review.py</code> plus <code>forecast_gap_email.py</code>. <code>Next_Action__c</code> is the only reliable 'being worked' signal; Opportunities with a Substatus are excluded (already classified)." }
+    ]
+  },
+  {
+    id:"roadmap", title:"In Progress & Roadmap", icon:"🚧",
+    blurb:"Work that is mid-flight or planned, and where it is headed.",
+    items:[
+      { name:"FiberFirst MDU Checklist auto-populate", tag:"In progress", systems:"Salesforce → FiberFirst MDU tracker (weekly Excel)",
+        summary:"Automating the shared FiberFirst MDU property checklist (108 properties across AZ / CA / NE / TX) from Salesforce, so the tracker populates itself instead of being maintained by hand. Delivery is a weekly per-market Excel roll-up. Still in build.",
+        detail:"Project at <code>FF_MDU_Checklist/</code> (read <code>docs/ff-mdu-checklist-findings.md</code> first). The Salesforce join is confirmed at about 100%, keyed on <code>Opportunity.Monday_Item_ID__c</code> (the checklist's own 'Opportunities ID' column is unreliable). Well covered from Salesforce: unit counts, status, agreement linkage. Capped: construction and activation dates (about 45-58%, since Prospects and lost deals have no SiteTracker build). Cannot be sourced from Salesforce: the marketing, D2D, FCC, and incumbent-rights columns. Re-runnable join: <code>scripts/analysis/ff_mdu_checklist_sf_join.py</code>. Open next steps: lock a per-row Salesforce key onto each row, decide delivery (Excel generator vs Smartsheet API), and define the status-to-stage vocabulary map." },
+      { name:"Make the IronClad sync automatic", tag:"Planned", systems:"IronClad → Salesforce",
+        summary:"Currently the IronClad agreement sync is the manual twice-weekly job. The plan is to make it automatic (webhooks or a polling job) so agreement statuses stay current without a manual run.",
+        detail:"Would remove the most time-sensitive manual task. Blocked on IronClad API or webhook access. Until then, the manual pipeline in 'What Keeps Salesforce Updated' applies." }
+    ]
+  }
+];
+
+const BASICS = [
+  {
+    id:"b-orient", title:"Getting Around", icon:"🧭",
+    blurb:"How Salesforce is organized, for someone coming from SiteTracker.",
+    items:[
+      { name:"Records, objects, and tabs",
+        summary:"Salesforce stores information as records grouped into objects. An Opportunity is an object; each property pursuit is one record. Objects appear as tabs across the top.",
+        detail:"Common objects: Opportunities (property pursuits), Accounts (companies), Contacts (people), Agreements (contracts). Each object has list views (saved, filtered tables), individual records, reports, and dashboards." },
+      { name:"Switch apps with the App Launcher",
+        summary:"The grid icon (nine dots) at the top-left opens the App Launcher. An app is a curated set of tabs. MDU Sales and Business Sales are chosen from there.",
+        detail:"<ol><li>Click the App Launcher (the nine-dot grid, top-left).</li><li>Type the app name, for example MDU Sales.</li><li>Click it. The tabs across the top change to that app's set.</li></ol>" },
+      { name:"Find anything with global search",
+        summary:"The search bar at the top searches across records. A property name, address, or agreement number jumps straight to a record.",
+        detail:"Global search covers most objects at once. Narrow the results by object using the left panel on the search results page." }
+    ]
+  },
+  {
+    id:"b-listviews", title:"List Views (Trackers)", icon:"📋",
+    blurb:"List views are saved, filtered tables. They are the closest thing to a lightweight tracker built directly in Salesforce.",
+    items:[
+      { name:"Create a filtered tracker (list view)",
+        summary:"A list view is a named, filtered, column-picked table on any object. It gives a reusable tracker without building a report.",
+        detail:"<ol><li>Open the object tab, for example Opportunities.</li><li>Click the gear icon (List View Controls) at the top-right of the list, then New.</li><li>Name the view, for example 'AZ MDU In Construction', choose who can see it, then Save.</li><li>Click the filter funnel icon, Add Filter, choose a field, operator, and value (for example Stage equals Marketing/Bulk In Progress), then Done and Save.</li></ol>" },
+      { name:"Choose and reorder the columns",
+        summary:"Control which fields show, in what order, and how the list is sorted.",
+        detail:"<ol><li>Gear icon, then Select Fields to Display.</li><li>Move fields between Available and Visible, and reorder with the arrows, then Save.</li><li>Drag a column border to resize; click a column header to sort.</li></ol>" },
+      { name:"Edit data directly from a list",
+        summary:"Editable cells can be changed inline without opening each record.",
+        detail:"<ol><li>Double-click a cell. A pencil means it is editable; a lock means it is not.</li><li>Change one or several cells, then click Save to commit them together.</li><li>Use the row checkboxes for bulk actions where available.</li></ol>" }
+    ]
+  },
+  {
+    id:"b-reports", title:"Reports", icon:"📈",
+    blurb:"Reports answer questions across many records: counts, groupings, and totals.",
+    items:[
+      { name:"Create a report",
+        summary:"A report is a saved, filtered query that can be grouped and totaled.",
+        detail:"<ol><li>Open the Reports tab (or App Launcher, then Reports), then New Report.</li><li>Choose a report type, for example Opportunities, then Start Report.</li><li>Add columns from the Fields pane; add filters on the Filters tab.</li><li>Click Run to see results.</li><li>Save, then name it and choose a folder.</li></ol>" },
+      { name:"Group and summarize",
+        summary:"Grouping turns a flat list into subtotals; grouping by both rows and columns builds a matrix.",
+        detail:"<ol><li>In the report builder Outline, drag a field into Group Rows, for example Stage.</li><li>Add a second grouping to Group Columns, for example Owner, to build a matrix.</li><li>Turn on row and column subtotals, or add a summary such as Sum of Units.</li></ol>" },
+      { name:"Filter by date, stage, or owner",
+        summary:"Filters narrow a report to what matters.",
+        detail:"<ol><li>Open the Filters tab in the builder.</li><li>Add filters such as Close Date equals Current FY, Stage equals a value, or Opportunity Owner equals a name.</li><li>Standard relative date ranges (This Quarter, Last 30 Days) are available.</li></ol>" },
+      { name:"Export or schedule a report",
+        summary:"Results can be shared as a file or as a scheduled email.",
+        detail:"<ol><li>From a saved report, open the dropdown at the top-right, then Export (Formatted or Details Only CSV).</li><li>Choose Subscribe to schedule the report to arrive by email on a cadence.</li></ol>" }
+    ]
+  },
+  {
+    id:"b-dashboards", title:"Dashboards", icon:"📊",
+    blurb:"A dashboard is a visual summary built from one or more reports.",
+    items:[
+      { name:"Create a dashboard",
+        summary:"Dashboards display report data as charts, tables, and metrics.",
+        detail:"<ol><li>Open the Dashboards tab, then New Dashboard. Name it and pick a folder, then Create.</li><li>Click + Component, select a source report, choose a chart or table type, then Add.</li><li>Repeat for more components and drag them to arrange.</li><li>Save, then Done.</li></ol>" },
+      { name:"Add a dashboard filter",
+        summary:"A filter lets one dashboard be re-sliced, for example by market or owner.",
+        detail:"<ol><li>Edit the dashboard, then click + Filter.</li><li>Pick a field and add the filter values.</li><li>Save. The filter applies to every component that uses that field.</li></ol>" },
+      { name:"Refresh, and why the home page is different", tag:"Note",
+        summary:"Dashboards show data as of the last refresh. The app home page 'Executive summary' is a custom Visualforce page, not a standard dashboard, so it is not edited here.",
+        detail:"Click Refresh on a dashboard, or Subscribe to schedule an automatic refresh and email. Changing the executive home page is a code change, covered under 'Home Page & Dashboards' on the Operations tab, not a drag-and-drop dashboard edit." }
+    ]
+  },
+  {
+    id:"b-permissions", title:"Permissions & Editing Data", icon:"🔐",
+    blurb:"How access is granted, and why a field is sometimes not editable.",
+    items:[
+      { name:"Profiles vs permission sets",
+        summary:"A profile is the baseline of what a user can do (which objects, fields, and apps). Permission sets are add-on grants layered on top. A user has one profile plus any number of permission sets.",
+        detail:"Managed under Setup, then Users, then Profiles or Permission Sets. Permission sets are the preferred way to grant extra access without changing everyone on a profile." },
+      { name:"Why a field will not allow editing",
+        summary:"A locked field usually has one of a few specific causes.",
+        detail:"<ol><li>Field-level security: the profile has read-only access to that field.</li><li>Record access: the record is owned by someone else and sharing is read-only.</li><li>The field is a formula or roll-up, which is never directly editable.</li><li>A validation rule is blocking the save until other fields are set.</li></ol>" },
+      { name:"Getting edit access",
+        summary:"Access is granted centrally by an admin, not from the record itself.",
+        detail:"Edit access is added in Setup (Users, then Profiles or Permission Sets). Route MDU access requests to the MDU admin. Note: some integration-owned fields (IronClad-synced fields) are intentionally locked so a sync does not fight manual edits." }
+    ]
+  }
+];
+
+const TABS = [
+  { id:"ops", label:"Operations", icon:"⚙️",
+    subtitle:"How Salesforce is kept current and how the org is structured. A self-serve reference for operating and maintaining the Salesforce environment.",
+    sections:OPERATIONS },
+  { id:"basics", label:"Salesforce Basics", icon:"🎓",
+    subtitle:"A getting-started guide to creating reports, dashboards, list views, and access in Salesforce Lightning, for someone new to Salesforce.",
+    sections:BASICS }
+];
+
+/* ---- render ---- */
+function chipClass(tag){
+  const t=(tag||"").toLowerCase();
+  if(t.startsWith("automated"))  return "chip-auto";
+  if(t.startsWith("manual"))     return "chip-manual";
+  if(t.startsWith("read"))       return "chip-read";
+  if(t.startsWith("note"))       return "chip-read";
+  if(t.startsWith("historical")) return "chip-hist";
+  if(t.startsWith("in progress"))return "chip-prog";
+  if(t.startsWith("planned"))    return "chip-plan";
+  return "chip-read";
+}
+
+const nav=document.getElementById("nav");
+const content=document.getElementById("content");
+const mainSub=document.getElementById("mainSub");
+const q=document.getElementById("q");
+const noresults=document.getElementById("noresults");
+const index=[]; // rebuilt on each tab render: {navEl, sectionNavEl, sectionNavItems, cardEl, sectionEl, text}
+
+document.getElementById("mainTitle").textContent=META.title;
+document.getElementById("foot").textContent="Last updated "+META.updated+" · Living reference. Edit the TABS data in this file to extend it.";
+
+function renderTab(tab){
+  nav.innerHTML="";
+  content.innerHTML="";
+  index.length=0;
+  mainSub.textContent=tab.subtitle;
+
+  tab.sections.forEach(sec=>{
+    const secLink=document.createElement("a");
+    secLink.className="nav-section";
+    secLink.href="#"+sec.id;
+    secLink.innerHTML='<span class="ic">'+sec.icon+'</span><span>'+sec.title+
+      '</span><span class="ct">'+sec.items.length+'</span>';
+    nav.appendChild(secLink);
+    const navItems=document.createElement("div");
+    navItems.className="nav-items";
+    nav.appendChild(navItems);
+
+    const secEl=document.createElement("section");
+    secEl.id=sec.id;
+    const head=document.createElement("div");
+    head.className="sec-head";
+    head.innerHTML='<span class="ic">'+sec.icon+'</span><h3>'+sec.title+'</h3>';
+    secEl.appendChild(head);
+    const blurb=document.createElement("p");
+    blurb.className="sec-blurb";
+    blurb.textContent=sec.blurb;
+    secEl.appendChild(blurb);
+
+    sec.items.forEach((item,i)=>{
+      const anchor=sec.id+"-"+i;
+      const a=document.createElement("a");
+      a.className="nav-item";
+      a.href="#"+anchor;
+      a.textContent=item.name;
+      navItems.appendChild(a);
+
+      const card=document.createElement("div");
+      card.className="card";
+      card.id=anchor;
+      const ch=document.createElement("div");
+      ch.className="card-head";
+      const h4=document.createElement("h4");
+      h4.textContent=item.name;
+      ch.appendChild(h4);
+      if(item.tag){
+        const chip=document.createElement("span");
+        chip.className="chip "+chipClass(item.tag);
+        chip.textContent=item.tag;
+        ch.appendChild(chip);
+      }
+      card.appendChild(ch);
+      if(item.systems){
+        const sys=document.createElement("div");
+        sys.className="systems";
+        sys.innerHTML='🔗 <b>'+item.systems+'</b>';
+        card.appendChild(sys);
+      }
+      const sum=document.createElement("p");
+      sum.className="summary";
+      sum.textContent=item.summary;
+      card.appendChild(sum);
+      if(item.detail){
+        const det=document.createElement("details");
+        const dsum=document.createElement("summary");
+        dsum.textContent="Detail";
+        const dbody=document.createElement("div");
+        dbody.className="detail";
+        dbody.innerHTML=item.detail;
+        det.appendChild(dsum); det.appendChild(dbody);
+        card.appendChild(det);
+      }
+      secEl.appendChild(card);
+
+      index.push({
+        navEl:a, sectionNavEl:secLink, sectionNavItems:navItems,
+        cardEl:card, sectionEl:secEl,
+        text:(item.name+" "+(item.tag||"")+" "+(item.systems||"")+" "+item.summary+" "+(item.detail||"")).toLowerCase()
+      });
+    });
+
+    content.appendChild(secEl);
+  });
+
+  q.value="";
+  noresults.style.display="none";
+}
+
+/* ---- tab bar ---- */
+const tabbar=document.getElementById("tabs");
+const tabButtons=[];
+TABS.forEach((tab,i)=>{
+  const b=document.createElement("button");
+  b.className="tab-btn"+(i===0?" active":"");
+  b.innerHTML='<span class="tic">'+tab.icon+'</span><span>'+tab.label+'</span>';
+  b.addEventListener("click",()=>{
+    tabButtons.forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    renderTab(tab);
+    window.scrollTo(0,0);
+  });
+  tabButtons.push(b);
+  tabbar.appendChild(b);
+});
+
+/* ---- filter (operates within the active tab) ---- */
+q.addEventListener("input",()=>{
+  const term=q.value.trim().toLowerCase();
+  let anyVisible=false;
+  const visSecs=new Set();
+  index.forEach(row=>{
+    const match=!term||row.text.includes(term);
+    row.navEl.classList.toggle("hidden",!match);
+    row.cardEl.classList.toggle("hidden",!match);
+    if(match){ anyVisible=true; visSecs.add(row.sectionEl); }
+  });
+  const done=new Set();
+  index.forEach(row=>{
+    if(done.has(row.sectionEl)) return;
+    done.add(row.sectionEl);
+    const vis=visSecs.has(row.sectionEl);
+    row.sectionEl.classList.toggle("hidden",!vis);
+    row.sectionNavEl.classList.toggle("hidden",!vis);
+    row.sectionNavItems.classList.toggle("hidden",!vis);
+  });
+  noresults.style.display = anyVisible ? "none" : "block";
+});
+
+renderTab(TABS[0]);
+</script>
+</body>
+</html>

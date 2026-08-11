@@ -1,0 +1,106 @@
+action,junction_id,opportunity,contact,role,created,kept_id,additional_roles_written
+kept,a0EWR000008MKRj2AO,Omaha_MDU_4723-4725-4727 Cass St,HARVEST DEVELOPMENT LLC,Property Manager,2026-03-31T23:59:33.000+0000,,Property Owner
+deleted,a0EWR000008MAli2AG,Omaha_MDU_4723-4725-4727 Cass St,HARVEST DEVELOPMENT LLC,Property Owner,2026-03-31T23:59:34.000+0000,a0EWR000008MKRj2AO,
+kept,a0EWR000008MDQE2A4,Omaha_MDU_1121 N 48TH ST,Victor Ramirez,Property Owner,2026-03-31T23:59:02.000+0000,,Property Manager
+deleted,a0EWR000008MMjd2AG,Omaha_MDU_1121 N 48TH ST,Victor Ramirez,Property Manager,2026-03-31T23:59:02.000+0000,a0EWR000008MDQE2A4,
+kept,a0EWR000008MIku2AG,Omaha_MDU_4023 HAMILTON ST,Victor Ramirez,Property Manager,2026-03-31T23:59:18.000+0000,,Property Owner
+deleted,a0EWR000008MNcT2AW,Omaha_MDU_4023 HAMILTON ST,Victor Ramirez,Property Owner,2026-03-31T23:59:18.000+0000,a0EWR000008MIku2AG,
+kept,a0EWR000008MJNe2AO,New Added Site,MarCon Enterprises,Property Owner,2026-03-31T23:59:58.000+0000,,
+deleted,a0EWR000008MQIb2AO,New Added Site,MarCon Enterprises,Property Owner,2026-03-31T23:59:58.000+0000,a0EWR000008MJNe2AO,
+deleted,a0EWR000008MQKD2A4,New Added Site,MarCon Enterprises,Property Owner,2026-03-31T23:59:58.000+0000,a0EWR000008MJNe2AO,
+kept,a0EWR000008MKec2AG,Omaha_MDU_4618 Redman Ave,Victor Ramirez,Property Owner,2026-03-31T23:59:30.000+0000,,Property Manager
+deleted,a0EWR000008MOYX2A4,Omaha_MDU_4618 Redman Ave,Victor Ramirez,Property Manager,2026-03-31T23:59:30.000+0000,a0EWR000008MKec2AG,
+kept,a0EWR000008MLUI2A4,Omaha_MDU_4907 Ames Ave Apartments,Gurung Brothers Real Estate,Property Owner,2026-03-31T23:59:41.000+0000,,Property Manager
+deleted,a0EWR000008MPCr2AO,Omaha_MDU_4907 Ames Ave Apartments,Gurung Brothers Real Estate,Property Manager,2026-03-31T23:59:41.000+0000,a0EWR000008MLUI2A4,
+kept,a0EWR000008MM8X2AW,Omaha_MDU_Benson Crest Apartments 1,Tesfaye A Kinde,Property Manager,2026-03-31T23:58:02.000+0000,,
+deleted,a0EWR000008MT3Z2AW,Omaha_MDU_Benson Crest Apartments 1,Tesfaye A Kinde,Property Manager,2026-04-01T00:00:54.000+0000,a0EWR000008MM8X2AW,
+kept,a0EWR000008MMRt2AO,Mesa_MDU_Blue Ridge Apartments,PJ Hussey,Property Manager,2026-03-31T23:58:56.000+0000,,
+deleted,a0EWR000008MMTV2A4,Mesa_MDU_Blue Ridge Apartments,PJ Hussey,Property Manager,2026-03-31T23:58:57.000+0000,a0EWR000008MMRt2AO,
+kept,a0EWR000008MMdC2AW,Omaha_MDU_6303 Taylor Cir,Gurung Brothers Real Estate,Property Owner,2026-03-31T23:59:51.000+0000,,Property Manager
+deleted,a0EWR000008MPnx2AG,Omaha_MDU_6303 Taylor Cir,Gurung Brothers Real Estate,Property Manager,2026-03-31T23:59:51.000+0000,a0EWR000008MMdC2AW,
+kept,a0EWR000008MNUP2A4,Omaha_MDU_4005 Hartman Circle,Contracting LLC,Property Manager,2026-03-31T23:59:16.000+0000,,Property Owner
+deleted,a0EWR000008MNW12AO,Omaha_MDU_4005 Hartman Circle,Contracting LLC,Property Owner,2026-03-31T23:59:17.000+0000,a0EWR000008MNUP2A4,
+kept,a0EWR000008MNXd2AO,Omaha_MDU_4015 HAMILTON ST,Victor Ramirez,Property Manager,2026-03-31T23:59:17.000+0000,,Property Owner
+deleted,a0EWR000008MNZF2A4,Omaha_MDU_4015 HAMILTON ST,Victor Ramirez,Property Owner,2026-03-31T23:59:17.000+0000,a0EWR000008MNXd2AO,
+kept,a0EWR000008MNcU2AW,Harker Heights_MDU_Dove Lane Apts,Central Texas Property Management,Property Owner,2026-04-01T00:00:04.000+0000,,Property Manager
+deleted,a0EWR000008MQbx2AG,Harker Heights_MDU_Dove Lane Apts,Central Texas Property Management,Property Manager,2026-04-01T00:00:04.000+0000,a0EWR000008MNcU2AW,
+kept,a0EWR000008MNkX2AW,Omaha_MDU_417 N 49th St,Thrive Street - Buckingham Manor 4817-4821 Chicago St,Property Manager,2026-03-31T23:59:20.000+0000,,Property Owner
+deleted,a0EWR000008MNm92AG,Omaha_MDU_417 N 49th St,Thrive Street - Buckingham Manor 4817-4821 Chicago St,Property Owner,2026-03-31T23:59:20.000+0000,a0EWR000008MNkX2AW,
+kept,a0EWR000008MNqz2AG,Omaha_MDU_Birchwood Apts,Donna Poor - Property Mgr / Dave Dublap is the Facilities Mgr -Dave Dunlap <>,Property Manager,2026-03-31T23:59:22.000+0000,,Property Owner
+deleted,a0EWR000008MNsb2AG,Omaha_MDU_Birchwood Apts,Donna Poor - Property Mgr / Dave Dublap is the Facilities Mgr -Dave Dunlap <>,Property Owner,2026-03-31T23:59:22.000+0000,a0EWR000008MNqz2AG,
+kept,a0EWR000008MNuD2AW,Omaha_MDU_4313 N 65th St,James L Bone,Property Manager,2026-03-31T23:59:23.000+0000,,Property Owner
+deleted,a0EWR000008MNvp2AG,Omaha_MDU_4313 N 65th St,James L Bone,Property Owner,2026-03-31T23:59:23.000+0000,a0EWR000008MNuD2AW,
+kept,a0EWR000008MNxR2AW,Omaha_MDU_4318-4324 N 48th St Apartments,Victor Ramirez,Property Manager,2026-03-31T23:59:23.000+0000,,Property Owner
+deleted,a0EWR000008MNz32AG,Omaha_MDU_4318-4324 N 48th St Apartments,Victor Ramirez,Property Owner,2026-03-31T23:59:23.000+0000,a0EWR000008MNxR2AW,
+kept,a0EWR000008MO0f2AG,Omaha_MDU_4437 Franklin St,Jim Davis,Property Manager,2026-03-31T23:59:24.000+0000,,Property Owner
+deleted,a0EWR000008MO2H2AW,Omaha_MDU_4437 Franklin St,Jim Davis,Property Owner,2026-03-31T23:59:24.000+0000,a0EWR000008MO0f2AG,
+kept,a0EWR000008MO3u2AG,Omaha_MDU_6302 Boyd St,Gurung Brothers Real Estate,Property Owner,2026-03-31T23:59:50.000+0000,,Property Manager
+deleted,a0EWR000008MPmL2AW,Omaha_MDU_6302 Boyd St,Gurung Brothers Real Estate,Property Manager,2026-03-31T23:59:50.000+0000,a0EWR000008MO3u2AG,
+kept,a0EWR000008MO5V2AW,Omaha_MDU_The Redman Townhomes & Apartments,Victor Ramirez,Property Manager,2026-03-31T23:59:25.000+0000,,Property Owner
+deleted,a0EWR000008MO772AG,Omaha_MDU_The Redman Townhomes & Apartments,Victor Ramirez,Property Owner,2026-03-31T23:59:25.000+0000,a0EWR000008MO5V2AW,
+kept,a0EWR000008MO8j2AG,Omaha_MDU_4484 Redman Ave,Victor Ramirez,Property Manager,2026-03-31T23:59:25.000+0000,,Property Owner
+deleted,a0EWR000008MOAL2A4,Omaha_MDU_4484 Redman Ave,Victor Ramirez,Property Owner,2026-03-31T23:59:25.000+0000,a0EWR000008MO8j2AG,
+kept,a0EWR000008MODZ2A4,Omaha_MDU_4502 N 49th St,Victor Ramirez,Property Manager,2026-03-31T23:59:26.000+0000,,Property Owner
+deleted,a0EWR000008MOFB2A4,Omaha_MDU_4502 N 49th St,Victor Ramirez,Property Owner,2026-03-31T23:59:26.000+0000,a0EWR000008MODZ2A4,
+kept,a0EWR000008MOS52AO,Omaha_MDU_4606 Redman Ave,Victor Ramirez,Property Manager,2026-03-31T23:59:29.000+0000,,Property Owner
+deleted,a0EWR000008MOTh2AO,Omaha_MDU_4606 Redman Ave,Victor Ramirez,Property Owner,2026-03-31T23:59:29.000+0000,a0EWR000008MOS52AO,
+kept,a0EWR000008MOVJ2A4,Omaha_MDU_4616 Redman Ave,Victor Ramirez,Property Manager,2026-03-31T23:59:30.000+0000,,Property Owner
+deleted,a0EWR000008MOWv2AO,Omaha_MDU_4616 Redman Ave,Victor Ramirez,Property Owner,2026-03-31T23:59:30.000+0000,a0EWR000008MOVJ2A4,
+kept,a0EWR000008MOjp2AG,Omaha_MDU_The Rose Apartments,Carol Farrens,Property Manager,2026-03-31T23:59:35.000+0000,,Property Owner
+deleted,a0EWR000008MOlR2AW,Omaha_MDU_The Rose Apartments,Carol Farrens,Property Owner,2026-03-31T23:59:35.000+0000,a0EWR000008MOjp2AG,
+kept,a0EWR000008MOv72AG,Omaha_MDU_The Frederick,Victor Ramirez,Property Manager,2026-03-31T23:59:37.000+0000,,Property Owner
+deleted,a0EWR000008MOwj2AG,Omaha_MDU_The Frederick,Victor Ramirez,Property Owner,2026-03-31T23:59:37.000+0000,a0EWR000008MOv72AG,
+kept,a0EWR000008MP6P2AW,Omaha_MDU_Taylor Apartments,Gurung Brothers Real Estate,Property Manager,2026-03-31T23:59:40.000+0000,,Property Owner
+deleted,a0EWR000008MP812AG,Omaha_MDU_Taylor Apartments,Gurung Brothers Real Estate,Property Owner,2026-03-31T23:59:40.000+0000,a0EWR000008MP6P2AW,
+kept,a0EWR000008MPKv2AO,Omaha_MDU_Venice Apartments,Pomerleau Co-Founder,Property Manager,2026-03-31T23:59:44.000+0000,,Property Owner
+deleted,a0EWR000008MPMX2A4,Omaha_MDU_Venice Apartments,Pomerleau Co-Founder,Property Owner,2026-03-31T23:59:44.000+0000,a0EWR000008MPKv2AO,
+kept,a0EWR000008MPSz2AO,Omaha_MDU_5006 Davenport St,Belgrade Direct,Property Manager,2026-03-31T23:59:46.000+0000,,Property Owner
+deleted,a0EWR000008MPUb2AO,Omaha_MDU_5006 Davenport St,Belgrade Direct,Property Owner,2026-03-31T23:59:46.000+0000,a0EWR000008MPSz2AO,
+kept,a0EWR000008MPXp2AO,Omaha_MDU_California Place,MarCon Enterprises,Property Manager,2026-03-31T23:59:47.000+0000,,Property Owner
+deleted,a0EWR000008MPZR2A4,Omaha_MDU_California Place,MarCon Enterprises,Property Owner,2026-03-31T23:59:47.000+0000,a0EWR000008MPXp2AO,
+kept,a0EWR000008MPeH2AW,Omaha_MDU_5240 Ames Ave,James L Bone,Property Manager,2026-03-31T23:59:48.000+0000,,Property Owner
+deleted,a0EWR000008MPft2AG,Omaha_MDU_5240 Ames Ave,James L Bone,Property Owner,2026-03-31T23:59:49.000+0000,a0EWR000008MPeH2AW,
+kept,a0EWR000008MPhV2AW,Omaha_MDU_618-636 N 46th St,TEN SQUARE TOWNHOMES / EM bounces back / not working EM,Property Manager,2026-03-31T23:59:49.000+0000,,Property Owner
+deleted,a0EWR000008MPj72AG,Omaha_MDU_618-636 N 46th St,TEN SQUARE TOWNHOMES / EM bounces back / not working EM,Property Owner,2026-03-31T23:59:50.000+0000,a0EWR000008MPhV2AW,
+kept,a0EWR000008MPpZ2AW,Omaha_MDU_6406 Boyd St,Elwood Grant will answer his phone,Property Manager,2026-03-31T23:59:51.000+0000,,Property Owner
+deleted,a0EWR000008MPrB2AW,Omaha_MDU_6406 Boyd St,Elwood Grant will answer his phone,Property Owner,2026-03-31T23:59:51.000+0000,a0EWR000008MPpZ2AW,
+kept,a0EWR000008MPsn2AG,Omaha_MDU_6414 Boyd St,Elwood Grant will answer his phone,Property Manager,2026-03-31T23:59:52.000+0000,,Property Owner
+deleted,a0EWR000008MPuP2AW,Omaha_MDU_6414 Boyd St,Elwood Grant will answer his phone,Property Owner,2026-03-31T23:59:52.000+0000,a0EWR000008MPsn2AG,
+kept,a0EWR000008MRJV2A4,Killeen_MDU_Twin Apartments,Iryn Agabon,Property Owner,2026-04-01T00:00:20.000+0000,,
+deleted,a0EWR000008MRL72AO,Killeen_MDU_Twin Apartments,Iryn Agabon,Property Owner,2026-04-01T00:00:20.000+0000,a0EWR000008MRJV2A4,
+kept,a0EWR000008MSib2AG,Killeen_MDU_703 Gilmer Street Apartments,Amy Millsap,Property Manager,2026-04-01T00:00:48.000+0000,,
+deleted,a0EWR000008MSkD2AW,Killeen_MDU_703 Gilmer Street Apartments,Amy Millsap,Property Manager,2026-04-01T00:00:48.000+0000,a0EWR000008MSib2AG,
+kept,a0EWR000008MSqf2AG,Killeen_MDU_75 W. Ave E Apartments,Rohan Joseph,Property Owner,2026-04-01T00:00:51.000+0000,,
+deleted,a0EWR000008MSsH2AW,Killeen_MDU_75 W. Ave E Apartments,Rohan Joseph,Property Owner,2026-04-01T00:00:52.000+0000,a0EWR000008MSqf2AG,
+kept,a0EWR000008kqM32AI,ROE - 2815 S ALMA SCHOOL RD MESA AZ,Sally Stephen,Property Manager,2026-04-27T15:13:41.000+0000,,Property Owner
+deleted,a0EWR000008kqM52AI,ROE - 2815 S ALMA SCHOOL RD MESA AZ,Sally Stephen,Property Owner,2026-04-27T15:13:41.000+0000,a0EWR000008kqM32AI,
+kept,a0EWR000008kqO12AI,ROE - 935 E MAIN ST MESA AZ,American Life,Property Manager,2026-04-27T15:13:41.000+0000,,Property Owner
+deleted,a0EWR000008ksX32AI,ROE - 935 E MAIN ST MESA AZ,American Life,Property Owner,2026-04-27T15:52:30.000+0000,a0EWR000008kqO12AI,
+kept,a0EWR000008kqOU2AY,ROE - 7602 PACIFIC ST OMAHA NE,Sales Representative,Broker,2026-04-27T15:13:41.000+0000,,Property Owner
+deleted,a0EWR000008kqOY2AY,ROE - 7602 PACIFIC ST OMAHA NE,Sales Representative,Property Owner,2026-04-27T15:13:41.000+0000,a0EWR000008kqOU2AY,
+kept,a0EWR000008kqP02AI,ROE - 3313 N 88TH PLZ OMAHA NE,Seth Campbell,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqP22AI,ROE - 3313 N 88TH PLZ OMAHA NE,Seth Campbell,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqP02AI,
+kept,a0EWR000008kqPL2AY,ROE - 7928 W DODGE RD OMAHA NE,Lucas Seltvedt,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqPM2AY,ROE - 7928 W DODGE RD OMAHA NE,Lucas Seltvedt,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqPL2AY,
+kept,a0EWR000008kqPh2AI,ROE - 1150 BLUE MOUND W RD FORT WORTH TX,Kali Parks,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqPj2AI,ROE - 1150 BLUE MOUND W RD FORT WORTH TX,Kali Parks,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqPh2AI,
+kept,a0EWR000008kqPl2AI,ROE - 850 BLUE MOUND W RD FORT WORTH TX,Jim Eaton,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqPn2AI,ROE - 850 BLUE MOUND W RD FORT WORTH TX,Jim Eaton,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqPl2AI,
+kept,a0EWR000008kqPy2AI,ROE - 1120 BLUE MOUND W RD FORT WORTH TX,Kali Parks,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqQ02AI,ROE - 1120 BLUE MOUND W RD FORT WORTH TX,Kali Parks,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqPy2AI,
+kept,a0EWR000008kqQ72AI,ROE - 100 W SOUTHLAKE BLVD SOUTHLAKE TX,Ashley Selers,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008ksX42AI,ROE - 100 W SOUTHLAKE BLVD SOUTHLAKE TX,Ashley Selers,Property Owner,2026-04-27T15:52:30.000+0000,a0EWR000008kqQ72AI,
+kept,a0EWR000008kqQF2AY,ROE - 1919 GOLDEN HEIGHTS RD HASLET TX,Jim Eaton,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqQH2AY,ROE - 1919 GOLDEN HEIGHTS RD HASLET TX,Jim Eaton,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqQF2AY,
+kept,a0EWR000008kqQU2AY,ROE - 880 BLUE MOUND W RD FORT WORTH TX,Jim Eaton,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqQW2AY,ROE - 880 BLUE MOUND W RD FORT WORTH TX,Jim Eaton,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqQU2AY,
+kept,a0EWR000008kqQe2AI,ROE - 5751 KROGER DR FORT WORTH TX,Hether Konpka,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqQf2AI,ROE - 5751 KROGER DR FORT WORTH TX,Hether Konpka,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqQe2AI,
+kept,a0EWR000008kqRD2AY,ROE - 1103 KELLER PKWY KELLER TX,Ray Ritchey,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqRE2AY,ROE - 1103 KELLER PKWY KELLER TX,Ray Ritchey,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqRD2AY,
+kept,a0EWR000008kqRF2AY,ROE - 1161 E SOUTHLAKE BLVD SOUTHLAKE TX,Chad Braun,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqRG2AY,ROE - 1161 E SOUTHLAKE BLVD SOUTHLAKE TX,Chad Braun,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqRF2AY,
+kept,a0EWR000008kqRU2AY,ROE - 500 N HIGHWAY 377  ROANOKE TX,Fine Andrew,Property Manager,2026-04-27T15:13:48.000+0000,,Property Owner
+deleted,a0EWR000008kqRW2AY,ROE - 500 N HIGHWAY 377  ROANOKE TX,Fine Andrew,Property Owner,2026-04-27T15:13:48.000+0000,a0EWR000008kqRU2AY,
+kept,a0EWR000008kqRY2AY,ROE - 6245 RUFE SNOW DR WATAUGA TX,April Smith,Property Manager,2026-04-27T15:13:48.000+0000,,
+deleted,a0EWR000008kqRZ2AY,ROE - 6245 RUFE SNOW DR WATAUGA TX,April Smith,Property Manager,2026-04-27T15:13:48.000+0000,a0EWR000008kqRY2AY,

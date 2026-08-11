@@ -1,0 +1,1005 @@
+﻿SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,CloseDate,2024-07-30,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TuYAI,302 North,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8zYAE,6314 Boyd Street,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8zYAE,6314 Boyd Street,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7aYAE,Amberwood Manor,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7aYAE,Amberwood Manor,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDszYAE,Arbor on Broadway (Now Called) Buenas on Broadway,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDszYAE,Arbor on Broadway (Now Called) Buenas on Broadway,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDszYAE,Arbor on Broadway (Now Called) Buenas on Broadway,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7lYAE,Ashland Manor Apartments,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7lYAE,Ashland Manor Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMPYA2,Aspire Fossil Creek,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMPYA2,Aspire Fossil Creek,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArrYAE,Astoria Senior Living,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArrYAE,Astoria Senior Living,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArrYAE,Astoria Senior Living,CloseDate,2024-06-05,2026-03-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArrYAE,Astoria Senior Living,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABeYAM,Azlewood,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABeYAM,Azlewood,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABeYAM,Azlewood,CloseDate,2026-12-12,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABeYAM,Azlewood,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkACfYAM,Bexley Wolf Ranch,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCk8YAE,Bridgewood Townhomes,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCk8YAE,Bridgewood Townhomes,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBUxYAM,Bristol Park at Eagle Mountain,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBUxYAM,Bristol Park at Eagle Mountain,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBUxYAM,Bristol Park at Eagle Mountain,CloseDate,2023-09-12,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBUxYAM,Bristol Park at Eagle Mountain,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TyYAI,Brookside AMD Condos,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TyYAI,Brookside AMD Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KAYAY,Buenas on Broadway,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAC0YAM,Bull Run Apts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAC0YAM,Bull Run Apts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAC0YAM,Bull Run Apts,CloseDate,2025-08-14,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAC0YAM,Bull Run Apts,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7vYAE,Burnett Place Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7vYAE,Burnett Place Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7vYAE,Burnett Place Apartments,CloseDate,2024-01-19,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7vYAE,Burnett Place Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkmYAE,Cabanas at Coral Cove,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkmYAE,Cabanas at Coral Cove,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkmYAE,Cabanas at Coral Cove,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkmYAE,Cabanas at Coral Cove,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZyYAI,Camelot VI,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KcYAI,Camelot Village,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KcYAI,Camelot Village,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KcYAI,Camelot Village,CloseDate,2023-11-27,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KcYAI,Camelot Village,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjlYAE,Cantebria Senior Homes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjlYAE,Cantebria Senior Homes,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjlYAE,Cantebria Senior Homes,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjlYAE,Cantebria Senior Homes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8pYAE,Caravelle Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8pYAE,Caravelle Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8pYAE,Caravelle Apartments,CloseDate,2024-02-06,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8pYAE,Caravelle Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkcYAE,Caringa Way Condos,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkcYAE,Caringa Way Condos,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkcYAE,Caringa Way Condos,CloseDate,2025-08-14,2026-02-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkcYAE,Caringa Way Condos,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SpYAI,Carmel Creekside,StageName,Prospecting,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SpYAI,Carmel Creekside,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9U6YAI,Central on Broadway Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjPYAU,Century Plaza,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjPYAU,Century Plaza,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjPYAU,Century Plaza,CloseDate,2024-09-18,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjPYAU,Century Plaza,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMDYA2,Charter Oaks,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMDYA2,Charter Oaks,Loss_Reason__c,,Rejected by Owner,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMDYA2,Charter Oaks,CloseDate,2024-02-13,2025-12-09,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMDYA2,Charter Oaks,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7xYAE,Chateau West Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7xYAE,Chateau West Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7xYAE,Chateau West Apartments,CloseDate,2024-02-15,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7xYAE,Chateau West Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA98YAE,Churchill at Golden Triangle,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA98YAE,Churchill at Golden Triangle,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA98YAE,Churchill at Golden Triangle,CloseDate,2023-09-12,2026-04-22,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA98YAE,Churchill at Golden Triangle,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTiYAM,Clove Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTiYAM,Clove Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTiYAM,Clove Apartments,CloseDate,2024-02-27,2025-10-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTiYAM,Clove Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkbYAE,Colina De La Costa HOA,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkbYAE,Colina De La Costa HOA,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkbYAE,Colina De La Costa HOA,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkbYAE,Colina De La Costa HOA,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClYYAU,Collection Champions Circle,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClYYAU,Collection Champions Circle,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClYYAU,Collection Champions Circle,CloseDate,2024-09-11,2025-12-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClYYAU,Collection Champions Circle,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9DYAU,College Park Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9DYAU,College Park Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9DYAU,College Park Apartments,CloseDate,2024-02-13,2025-10-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9DYAU,College Park Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UBYAY,Continental Townhomes,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UBYAY,Continental Townhomes,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UBYAY,Continental Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClpYAE,Copper Mountain,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8VYAU,Copperstone Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8VYAU,Copperstone Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8VYAU,Copperstone Apartments,CloseDate,2024-02-27,2026-04-01,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8VYAU,Copperstone Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkkYAE,Coral Way,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkkYAE,Coral Way,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkkYAE,Coral Way,CloseDate,2025-08-14,2026-01-13,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkkYAE,Coral Way,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8XYAU,Corals Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8XYAU,Corals Apartments,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8XYAU,Corals Apartments,CloseDate,2024-07-30,2025-12-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8XYAU,Corals Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8tYAE,Corby Castle Apts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8tYAE,Corby Castle Apts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8tYAE,Corby Castle Apts,CloseDate,2024-07-30,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8tYAE,Corby Castle Apts,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMEYA2,Corby Street Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMEYA2,Corby Street Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMEYA2,Corby Street Apartments,CloseDate,2024-07-30,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMEYA2,Corby Street Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8vYAE,Coronado Condominiums,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8vYAE,Coronado Condominiums,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8vYAE,Coronado Condominiums,CloseDate,2024-07-30,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8vYAE,Coronado Condominiums,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YVYAY,Lomas Santa Fe Country Club Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YVYAY,Lomas Santa Fe Country Club Villas,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YVYAY,Lomas Santa Fe Country Club Villas,CloseDate,2024-09-18,2025-10-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YVYAY,Lomas Santa Fe Country Club Villas,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAjuYAE,Country Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAjuYAE,Country Villas,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAjuYAE,Country Villas,CloseDate,2023-02-08,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAjuYAE,Country Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsJYAU,Courtyard 72,StageName,On Hold,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMSYA2,Creekside at North Beach,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMSYA2,Creekside at North Beach,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMSYA2,Creekside at North Beach,CloseDate,2023-09-12,2025-10-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMSYA2,Creekside at North Beach,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZPYAY,Crossroads Village Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZPYAY,Crossroads Village Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZPYAY,Crossroads Village Apartments,CloseDate,2024-03-06,2026-04-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZPYAY,Crossroads Village Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8wYAE,Cypress Pointe II Apartment Complex,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8wYAE,Cypress Pointe II Apartment Complex,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8wYAE,Cypress Pointe II Apartment Complex,CloseDate,2024-07-30,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8wYAE,Cypress Pointe II Apartment Complex,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8ZYAU,Del Mar Downs Condos,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8ZYAU,Del Mar Downs Condos,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8ZYAU,Del Mar Downs Condos,CloseDate,2024-07-30,2026-02-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8ZYAU,Del Mar Downs Condos,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt8YAE,Dimple St MHP,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt8YAE,Dimple St MHP,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt8YAE,Dimple St MHP,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt8YAE,Dimple St MHP,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TvYAI,Dobson Glen,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TvYAI,Dobson Glen,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TvYAI,Dobson Glen,CloseDate,2023-03-24,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TvYAI,Dobson Glen,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6WYAU,Dundee Flats,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6VYAU,Dundee View,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6VYAU,Dundee View,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6VYAU,Dundee View,CloseDate,2024-03-13,2026-04-01,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6VYAU,Dundee View,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCljYAE,Eagle's Point Apartments,StageName,On Hold,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCljYAE,Eagle's Point Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCljYAE,Eagle's Point Apartments,CloseDate,2023-09-12,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArGYAU,Eden West,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArGYAU,Eden West,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArGYAU,Eden West,CloseDate,2024-02-14,2025-10-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkArGYAU,Eden West,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDthYAE,El Rancho Del Sol Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABtYAM,Elan Alicante Apartments,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABtYAM,Elan Alicante Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCloYAE,Elan at Keller Ranch,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCloYAE,Elan at Keller Ranch,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCloYAE,Elan at Keller Ranch,CloseDate,2023-09-12,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCloYAE,Elan at Keller Ranch,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UqYAI,Elan Cardiff By the Sea Apartments,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UqYAI,Elan Cardiff By the Sea Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UpYAI,Elan Pacifico,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UpYAI,Elan Pacifico,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZXYAY,Elan Playa Mar Apartment Homes,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZXYAY,Elan Playa Mar Apartment Homes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8LYAU,Elan Sandpiper,StageName,Prospecting,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8LYAU,Elan Sandpiper,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABvYAM,Elan Seacrest Encinitas Apartments,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABvYAM,Elan Seacrest Encinitas Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8OYAU,Elan Solana Pointe,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8OYAU,Elan Solana Pointe,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk3O8YAI,Elm Grove Estates,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KTYAY,Embassy Park Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KTYAY,Embassy Park Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KTYAY,Embassy Park Apartments,CloseDate,2024-02-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KTYAY,Embassy Park Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9U0YAI,Emelita Place,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9U0YAI,Emelita Place,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9U0YAI,Emelita Place,CloseDate,2023-03-28,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9U0YAI,Emelita Place,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UnYAI,Encinitas Terrace Senior Apts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UnYAI,Encinitas Terrace Senior Apts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UnYAI,Encinitas Terrace Senior Apts,CloseDate,2024-01-25,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UnYAI,Encinitas Terrace Senior Apts,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7jYAE,Encore on First,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7jYAE,Encore on First,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KEYAY,Encore on First West,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KEYAY,Encore on First West,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UmYAI,Essex Heights Apartments,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UmYAI,Essex Heights Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjgYAE,Estates of Bridgeport,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjgYAE,Estates of Bridgeport,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjgYAE,Estates of Bridgeport,CloseDate,2025-08-14,2026-01-07,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjgYAE,Estates of Bridgeport,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKFsYAM,Evergreen At Keller,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKFsYAM,Evergreen At Keller,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKFsYAM,Evergreen At Keller,CloseDate,2026-10-01,2025-11-12,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7sYAE,Fairview Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7sYAE,Fairview Apartments,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7sYAE,Fairview Apartments,CloseDate,2023-11-28,2025-11-18,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7sYAE,Fairview Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDssYAE,Fiesta Village MH & RV Resort,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDssYAE,Fiesta Village MH & RV Resort,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDssYAE,Fiesta Village MH & RV Resort,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UEYAY,Fiesta Villas Condos,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UEYAY,Fiesta Villas Condos,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UEYAY,Fiesta Villas Condos,CloseDate,2023-03-31,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UEYAY,Fiesta Villas Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtMYAU,Fort_Hood MHP,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtMYAU,Fort_Hood MHP,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtMYAU,Fort_Hood MHP,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtMYAU,Fort_Hood MHP,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UuYAI,Fox Point Farms,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UuYAI,Fox Point Farms,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UuYAI,Fox Point Farms,CloseDate,2024-08-12,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UuYAI,Fox Point Farms,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM7YAM,Garden Gate Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM7YAM,Garden Gate Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM7YAM,Garden Gate Apartments,CloseDate,2023-09-12,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM7YAM,Garden Gate Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8UYAU,Gateway Village Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8UYAU,Gateway Village Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8UYAU,Gateway Village Apartments,CloseDate,2026-12-12,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8UYAU,Gateway Village Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMOYA2,Georgetown Place Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMOYA2,Georgetown Place Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMOYA2,Georgetown Place Apartments,CloseDate,2024-08-12,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMOYA2,Georgetown Place Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7RYAU,Graysill Casitas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7RYAU,Graysill Casitas,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7RYAU,Graysill Casitas,CloseDate,2023-03-28,2026-03-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7RYAU,Graysill Casitas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtGYAU,HARKER_HEIGHTS_MDU_207-217 W Beeline MHP,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtGYAU,HARKER_HEIGHTS_MDU_207-217 W Beeline MHP,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtGYAU,HARKER_HEIGHTS_MDU_207-217 W Beeline MHP,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtGYAU,HARKER_HEIGHTS_MDU_207-217 W Beeline MHP,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMLYA2,Harmon Senior Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMLYA2,Harmon Senior Villas,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMLYA2,Harmon Senior Villas,CloseDate,2023-09-12,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMLYA2,Harmon Senior Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlTYAQ,Heather Brook Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlTYAQ,Heather Brook Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlTYAQ,Heather Brook Apartments,CloseDate,2023-12-12,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlTYAQ,Heather Brook Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,CloseDate,2024-02-21,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABsYAM,Heritage Manor,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABsYAM,Heritage Manor,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABsYAM,Heritage Manor,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABsYAM,Heritage Manor,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsxYAE,Highlander Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsxYAE,Highlander Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsxYAE,Highlander Apartments,CloseDate,2024-06-20,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsxYAE,Highlander Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z7YAI,Hillcrest Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z7YAI,Hillcrest Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z7YAI,Hillcrest Apartments,CloseDate,2024-01-24,2025-10-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z7YAI,Hillcrest Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8gYAE,Hillside Park Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8gYAE,Hillside Park Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8gYAE,Hillside Park Apartments,CloseDate,2024-07-30,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8gYAE,Hillside Park Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjqYAE,Hillside Rows Apts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjqYAE,Hillside Rows Apts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjqYAE,Hillside Rows Apts,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjqYAE,Hillside Rows Apts,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6dYAE,Howard Street,StageName,Engaged,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SqYAI,Hunter's Glen Apartments,StageName,Prospecting,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TgYAI,Hunters Pointe,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TgYAI,Hunters Pointe,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TgYAI,Hunters Pointe,CloseDate,2023-02-17,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TgYAI,Hunters Pointe,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt9YAE,Indian Creek Duplexes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt9YAE,Indian Creek Duplexes,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt9YAE,Indian Creek Duplexes,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt9YAE,Indian Creek Duplexes,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTuYAM,Indian Hills Village Apartments,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTuYAM,Indian Hills Village Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTuYAM,Indian Hills Village Apartments,CloseDate,2024-09-02,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTuYAM,Indian Hills Village Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjjYAE,Irvington Heights,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjjYAE,Irvington Heights,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjjYAE,Irvington Heights,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjjYAE,Irvington Heights,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6jYAE,JC Wade Senior Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6jYAE,JC Wade Senior Villas,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6jYAE,JC Wade Senior Villas,CloseDate,2023-11-27,2026-04-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6jYAE,JC Wade Senior Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtIYAU,John Wesley Arms,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtIYAU,John Wesley Arms,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtIYAU,John Wesley Arms,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtIYAU,John Wesley Arms,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KLYAY,Juniper Gardens,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KLYAY,Juniper Gardens,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KLYAY,Juniper Gardens,CloseDate,2024-02-06,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KLYAY,Juniper Gardens,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCldYAE,Keystone Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8IYAU,Keystone Park Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtLYAU,Killeen Housing Authority,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtLYAU,Killeen Housing Authority,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtLYAU,Killeen Housing Authority,CloseDate,2025-08-14,2025-10-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtLYAU,Killeen Housing Authority,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtEYAU,Killeen_MDU_408-420 E Hallmark Ave,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtEYAU,Killeen_MDU_408-420 E Hallmark Ave,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtEYAU,Killeen_MDU_408-420 E Hallmark Ave,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtEYAU,Killeen_MDU_408-420 E Hallmark Ave,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T9YAI,Killeen_MDU_512 W Green Ave_Morris RE,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T9YAI,Killeen_MDU_512 W Green Ave_Morris RE,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T9YAI,Killeen_MDU_512 W Green Ave_Morris RE,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T9YAI,Killeen_MDU_512 W Green Ave_Morris RE,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABzYAM,KILLEEN_MDU_Lowrance HOA,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABzYAM,KILLEEN_MDU_Lowrance HOA,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABzYAM,KILLEEN_MDU_Lowrance HOA,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABzYAM,KILLEEN_MDU_Lowrance HOA,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtFYAU,Kings Arms Apartment II,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtFYAU,Kings Arms Apartment II,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtFYAU,Kings Arms Apartment II,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtFYAU,Kings Arms Apartment II,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KHYAY,Kings Gate Senior Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KHYAY,Kings Gate Senior Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KHYAY,Kings Gate Senior Apartments,CloseDate,2024-02-06,2025-11-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KHYAY,Kings Gate Senior Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsyYAE,Knoll Creek Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsyYAE,Knoll Creek Apartments,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsyYAE,Knoll Creek Apartments,CloseDate,2024-07-09,2025-11-12,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsyYAE,Knoll Creek Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkdYAE,La Costa Casa Grande,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkdYAE,La Costa Casa Grande,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkdYAE,La Costa Casa Grande,CloseDate,2025-08-14,2026-02-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkdYAE,La Costa Casa Grande,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T4YAI,La Costa Hills HOA,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T4YAI,La Costa Hills HOA,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T4YAI,La Costa Hills HOA,CloseDate,2025-08-14,2026-02-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T4YAI,La Costa Hills HOA,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkgYAE,La Costa Village Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkgYAE,La Costa Village Townhomes,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkgYAE,La Costa Village Townhomes,CloseDate,2025-08-14,2026-02-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkgYAE,La Costa Village Townhomes,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TxYAI,La Jolla Cove Condos,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TxYAI,La Jolla Cove Condos,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TxYAI,La Jolla Cove Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkpYAE,La Mer Condos,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkpYAE,La Mer Condos,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkpYAE,La Mer Condos,CloseDate,2025-08-14,2026-01-13,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkpYAE,La Mer Condos,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjFYAU,La Mesa Grande Condominiums,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjFYAU,La Mesa Grande Condominiums,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjFYAU,La Mesa Grande Condominiums,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAsSYAU,La Vida Del Mar [Assisted Living],StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkqYAE,Lamplighter Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkqYAE,Lamplighter Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkqYAE,Lamplighter Apartments,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkqYAE,Lamplighter Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtHYAU,Landmark Oak_Mobile_Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtHYAU,Landmark Oak_Mobile_Park,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtHYAU,Landmark Oak_Mobile_Park,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtHYAU,Landmark Oak_Mobile_Park,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6RYAU,Langston Loge,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtJYAU,Las Palmas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtJYAU,Las Palmas,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtJYAU,Las Palmas,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtJYAU,Las Palmas,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8rYAE,Laurel Hill Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8rYAE,Laurel Hill Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8rYAE,Laurel Hill Apartments,CloseDate,2024-07-30,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8rYAE,Laurel Hill Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,CloseDate,2024-07-16,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8uYAE,Lepuy Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8uYAE,Lepuy Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8uYAE,Lepuy Apartments,CloseDate,2024-07-30,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8uYAE,Lepuy Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABxYAM,Liberty Landing AKA Century Park Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABxYAM,Liberty Landing AKA Century Park Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABxYAM,Liberty Landing AKA Century Park Apartments,CloseDate,2025-08-14,2025-10-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABxYAM,Liberty Landing AKA Century Park Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkWYAU,Liberty Landing Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkWYAU,Liberty Landing Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkWYAU,Liberty Landing Apartments,CloseDate,2024-02-27,2025-10-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkWYAU,Liberty Landing Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABpYAM,Liberty Manor I,StageName,Engaged,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,CloseDate,2025-03-06,2026-04-30,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7AYAU,Lincoln Apartments _ FF Freddy,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,CloseDate,2024-02-21,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMNYA2,Heights at 701,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC73YAE,Loveland by Broadmoor,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC73YAE,Loveland by Broadmoor,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC73YAE,Loveland by Broadmoor,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC73YAE,Loveland by Broadmoor,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTzYAM,Luma Lane Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTzYAM,Luma Lane Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTzYAM,Luma Lane Apartments,CloseDate,2024-09-09,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTzYAM,Luma Lane Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlXYAQ,MAA Boulder Ridge,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlVYAQ,MAA Copper Ridge,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlWYAQ,MAA Watermark,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlWYAQ,MAA Watermark,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlWYAQ,MAA Watermark,CloseDate,2024-04-02,2026-04-08,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlWYAQ,MAA Watermark,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,CloseDate,2023-08-24,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8FYAU,Maplewood Court Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8FYAU,Maplewood Court Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8FYAU,Maplewood Court Apartments,CloseDate,2024-07-30,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8FYAU,Maplewood Court Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtAYAU,Marlboro_Heights_Mobile Home_Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtAYAU,Marlboro_Heights_Mobile Home_Park,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtAYAU,Marlboro_Heights_Mobile Home_Park,CloseDate,2025-08-14,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtAYAU,Marlboro_Heights_Mobile Home_Park,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7QYAU,Marlborough Mesa Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7QYAU,Marlborough Mesa Villas,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7QYAU,Marlborough Mesa Villas,CloseDate,2023-03-27,2026-02-24,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7QYAU,Marlborough Mesa Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMTYA2,Martinique Apartments,StageName,On Hold,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMTYA2,Martinique Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMTYA2,Martinique Apartments,CloseDate,2024-01-31,2026-01-20,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl6YAA,Melody Villa Condominiums,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl6YAA,Melody Villa Condominiums,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl6YAA,Melody Villa Condominiums,CloseDate,2023-04-03,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl6YAA,Melody Villa Condominiums,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,CloseDate,2023-10-20,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UDYAY,Mesa Coronado Condos,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UDYAY,Mesa Coronado Condos,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UDYAY,Mesa Coronado Condos,CloseDate,2023-03-31,2026-04-07,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UDYAY,Mesa Coronado Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UDYAY,Mesa Coronado Condos,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UDYAY,Mesa Coronado Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7jYAE,Encore on First,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7jYAE,Encore on First,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7jYAE,Encore on First,CloseDate,2023-10-30,2026-02-24,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7jYAE,Encore on First,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7dYAE,Mesa Regal Rv Resort,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7dYAE,Mesa Regal Rv Resort,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7dYAE,Mesa Regal Rv Resort,CloseDate,2023-12-11,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7dYAE,Mesa Regal Rv Resort,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMHYA2,Mesa_MDU_Del Corona Apts Del Coronado,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMHYA2,Mesa_MDU_Del Corona Apts Del Coronado,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMHYA2,Mesa_MDU_Del Corona Apts Del Coronado,CloseDate,2027-06-17,2026-04-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMHYA2,Mesa_MDU_Del Corona Apts Del Coronado,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkXYAU,Mesa_MDU_FiestaRVR,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkXYAU,Mesa_MDU_FiestaRVR,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkXYAU,Mesa_MDU_FiestaRVR,CloseDate,2025-02-14,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkXYAU,Mesa_MDU_FiestaRVR,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkYYAU,Mesa_MDU_Greenfields Assisted Living,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkYYAU,Mesa_MDU_Greenfields Assisted Living,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkYYAU,Mesa_MDU_Greenfields Assisted Living,CloseDate,2025-02-14,2026-01-20,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkYYAU,Mesa_MDU_Greenfields Assisted Living,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UkYAI,Monarch Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UkYAI,Monarch Villas,Loss_Reason__c,,Price,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UkYAI,Monarch Villas,CloseDate,2024-09-18,2026-01-06,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UkYAI,Monarch Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAByYAM,New Life RV Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAByYAM,New Life RV Park,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAByYAM,New Life RV Park,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAByYAM,New Life RV Park,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkZYAU,New Towne West Apts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkZYAU,New Towne West Apts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkZYAU,New Towne West Apts,CloseDate,2025-02-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkZYAU,New Towne West Apts,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtDYAU,Nolan Creek Mobile Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtDYAU,Nolan Creek Mobile Park,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtDYAU,Nolan Creek Mobile Park,CloseDate,2025-08-14,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtDYAU,Nolan Creek Mobile Park,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMGYA2,North Park Landing Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMGYA2,North Park Landing Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMGYA2,North Park Landing Apartments,CloseDate,2023-09-12,2026-04-22,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMGYA2,North Park Landing Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjOYAU,Northpoint Villas,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjOYAU,Northpoint Villas,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjOYAU,Northpoint Villas,CloseDate,2023-09-12,2025-10-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjOYAU,Northpoint Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6JYAU,Oak Leaf Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6JYAU,Oak Leaf Apartments,Loss_Reason__c,,Existing Fiber,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6JYAU,Oak Leaf Apartments,CloseDate,2023-09-22,2025-11-25,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA6JYAU,Oak Leaf Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KOYAY,Ocean Crest Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KOYAY,Ocean Crest Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KOYAY,Ocean Crest Apartments,CloseDate,2024-01-12,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KOYAY,Ocean Crest Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkGYAU,Old West Manor II Homeowners Association Inc,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkGYAU,Old West Manor II Homeowners Association Inc,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkGYAU,Old West Manor II Homeowners Association Inc,CloseDate,2023-03-24,2026-04-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkGYAU,Old West Manor II Homeowners Association Inc,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM9YAM,Olympus Stone Glen,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM9YAM,Olympus Stone Glen,Loss_Reason__c,,Existing Fiber,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM9YAM,Olympus Stone Glen,CloseDate,2023-09-12,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM9YAM,Olympus Stone Glen,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLtYAM,Olympus Town Center,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLtYAM,Olympus Town Center,Loss_Reason__c,,Existing Fiber,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLtYAM,Olympus Town Center,CloseDate,2022-08-24,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLtYAM,Olympus Town Center,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtOYAU,OMAHA_MDU_58TH_Plaza_CIR,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtOYAU,OMAHA_MDU_58TH_Plaza_CIR,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtOYAU,OMAHA_MDU_58TH_Plaza_CIR,CloseDate,2025-08-14,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtOYAU,OMAHA_MDU_58TH_Plaza_CIR,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtNYAU,Omaha_MDU_Cherry Tree Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtNYAU,Omaha_MDU_Cherry Tree Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtNYAU,Omaha_MDU_Cherry Tree Apartments,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtNYAU,Omaha_MDU_Cherry Tree Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZnYAI,Orchard Mesa,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZnYAI,Orchard Mesa,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZnYAI,Orchard Mesa,CloseDate,2023-10-02,2026-04-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZnYAI,Orchard Mesa,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZrYAI,Pacific Gardens Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UsYAI,Pacific Pines,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UsYAI,Pacific Pines,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UsYAI,Pacific Pines,CloseDate,2024-09-18,2025-12-09,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UsYAI,Pacific Pines,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7OYAU,Pacific Villas,StageName,On Hold,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7OYAU,Pacific Villas,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7OYAU,Pacific Villas,CloseDate,2025-08-14,2026-03-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClZYAU,Paloma Village,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClZYAU,Paloma Village,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClZYAU,Paloma Village,CloseDate,2024-09-11,2025-11-19,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClZYAU,Paloma Village,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLrYAM,Parallax @ Georgetown,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8eYAE,Park Crest,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8eYAE,Park Crest,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8eYAE,Park Crest,CloseDate,2024-06-07,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8eYAE,Park Crest,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABuYAM,Park Del Mar Condos,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABuYAM,Park Del Mar Condos,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABuYAM,Park Del Mar Condos,CloseDate,2025-08-14,2025-10-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABuYAM,Park Del Mar Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SvYAI,Park_Place,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SvYAI,Park_Place,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SvYAI,Park_Place,CloseDate,2026-07-31,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SvYAI,Park_Place,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsvYAE,Park_Place (Care Center),StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsvYAE,Park_Place (Care Center),Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsvYAE,Park_Place (Care Center),CloseDate,2024-09-11,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDsvYAE,Park_Place (Care Center),Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjLYAU,Parker Place (Just off Post) Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjLYAU,Parker Place (Just off Post) Apartments,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjLYAU,Parker Place (Just off Post) Apartments,CloseDate,2024-06-20,2025-12-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjLYAU,Parker Place (Just off Post) Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMZYA2,Parkside Crossing Condominiums,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMZYA2,Parkside Crossing Condominiums,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMZYA2,Parkside Crossing Condominiums,CloseDate,2025-08-14,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMZYA2,Parkside Crossing Condominiums,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnluYAA,Parkside Townhomes,StageName,On Hold,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KqYAI,Parkview (AKA Elevate Apartments),StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KqYAI,Parkview (AKA Elevate Apartments),Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA95YAE,Parkwood Apartments,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA95YAE,Parkwood Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAr4YAE,Parkwood Terrace,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAr4YAE,Parkwood Terrace,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAr4YAE,Parkwood Terrace,CloseDate,2024-02-06,2025-11-18,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAr4YAE,Parkwood Terrace,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UHYAY,Pebble Creek Apartments,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UHYAY,Pebble Creek Apartments,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UHYAY,Pebble Creek Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtXYAU,Pelican Cove HOA,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtXYAU,Pelican Cove HOA,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtXYAU,Pelican Cove HOA,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtXYAU,Pelican Cove HOA,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8BYAU,Pennytree Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8BYAU,Pennytree Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8BYAU,Pennytree Apartments,CloseDate,2023-10-20,2026-05-13,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8BYAU,Pennytree Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KeYAI,Peony Village,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KeYAI,Peony Village,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KeYAI,Peony Village,CloseDate,2024-02-06,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KeYAI,Peony Village,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KsYAI,Pine Tree Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KsYAI,Pine Tree Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KsYAI,Pine Tree Apartments,CloseDate,2024-03-26,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KsYAI,Pine Tree Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABwYAM,Pleasant View MHP,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABwYAM,Pleasant View MHP,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABwYAM,Pleasant View MHP,CloseDate,2025-08-14,12/102025,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABwYAM,Pleasant View MHP,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl7YAA,Ponderosa Pine Apartments (Pine Gardens),StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl7YAA,Ponderosa Pine Apartments (Pine Gardens),Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl7YAA,Ponderosa Pine Apartments (Pine Gardens),CloseDate,2023-04-03,2026-01-20,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnl7YAA,Ponderosa Pine Apartments (Pine Gardens),Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KIYAY,Prairie Spring Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KIYAY,Prairie Spring Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KIYAY,Prairie Spring Apartments,CloseDate,2024-02-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KIYAY,Prairie Spring Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T8YAI,Quail Hollow Apts_Morris RE,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T8YAI,Quail Hollow Apts_Morris RE,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T8YAI,Quail Hollow Apts_Morris RE,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T8YAI,Quail Hollow Apts_Morris RE,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7yYAE,Quail Run Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7yYAE,Quail Run Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7yYAE,Quail Run Apartments,CloseDate,2024-04-05,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7yYAE,Quail Run Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjHYAU,Rancho San Luis Rey 55+,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjHYAU,Rancho San Luis Rey 55+,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjHYAU,Rancho San Luis Rey 55+,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UtYAI,Regal View HOA,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UtYAI,Regal View HOA,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UtYAI,Regal View HOA,CloseDate,2024-06-18,2026-02-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UtYAI,Regal View HOA,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KXYAY,Residences at Sorensen Square,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KXYAY,Residences at Sorensen Square,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KXYAY,Residences at Sorensen Square,CloseDate,2023-11-29,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KXYAY,Residences at Sorensen Square,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z9YAI,Residences of Stillwater,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z9YAI,Residences of Stillwater,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z9YAI,Residences of Stillwater,CloseDate,2023-07-17,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z9YAI,Residences of Stillwater,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlLYAQ,Ridge Point,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLvYAM,Rise at Dobson Ranch,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLvYAM,Rise at Dobson Ranch,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMCYA2,Rise at the District,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMCYA2,Rise at the District,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UeYAI,Ritz colony,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UeYAI,Ritz colony,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UeYAI,Ritz colony,CloseDate,2024-01-10,2025-12-09,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UeYAI,Ritz colony,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9KYAU,River Oaks Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9KYAU,River Oaks Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9KYAU,River Oaks Apartments,CloseDate,2024-01-10,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9KYAU,River Oaks Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlMYAQ,Riverside Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SuYAI,Riverside Villas,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SuYAI,Riverside Villas,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SuYAI,Riverside Villas,CloseDate,2026-07-31,2026-04-22,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9SuYAI,Riverside Villas,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnPOYAY,Riviera Court,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC72YAE,Riviera Mobile Home & RV Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC72YAE,Riviera Mobile Home & RV Park,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC72YAE,Riviera Mobile Home & RV Park,CloseDate,2025-08-14,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC72YAE,Riviera Mobile Home & RV Park,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZZYAY,Rosebay Falls,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZZYAY,Rosebay Falls,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZZYAY,Rosebay Falls,CloseDate,2024-01-10,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9ZZYAY,Rosebay Falls,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnleYAA,Salem Village at Miami Heights,StageName,On Hold,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnleYAA,Salem Village at Miami Heights,Loss_Reason__c,,Existing Fiber,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnleYAA,Salem Village at Miami Heights,CloseDate,2024-01-31,2026-03-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC82YAE,San Fernando Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC82YAE,San Fernando Apartments,Loss_Reason__c,,Existing Contract,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC82YAE,San Fernando Apartments,CloseDate,2023-10-02,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC82YAE,San Fernando Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNosYAE,Sandstone Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNosYAE,Sandstone Apartments,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNosYAE,Sandstone Apartments,CloseDate,2024-08-02,2026-04-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNosYAE,Sandstone Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjiYAE,Sandstone Dr Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjiYAE,Sandstone Dr Townhomes,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjiYAE,Sandstone Dr Townhomes,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjiYAE,Sandstone Dr Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM6YAM,Sandstone Foothills Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM6YAM,Sandstone Foothills Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM6YAM,Sandstone Foothills Apartments,CloseDate,2024-06-20,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM6YAM,Sandstone Foothills Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TfYAI,Santa Fe Ranch,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TfYAI,Santa Fe Ranch,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TfYAI,Santa Fe Ranch,CloseDate,2023-02-16,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TfYAI,Santa Fe Ranch,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8TYAU,Saratoga West Condominiums,StageName,Prospects,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8TYAU,Saratoga West Condominiums,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkoYAE,Saxony Village Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkoYAE,Saxony Village Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkoYAE,Saxony Village Apartments,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkoYAE,Saxony Village Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC75YAE,Sea Aire Mobile Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC75YAE,Sea Aire Mobile Park,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC75YAE,Sea Aire Mobile Park,CloseDate,2025-08-14,2026-01-06,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC75YAE,Sea Aire Mobile Park,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UfYAI,Sea Point Tennis Club at La Costa,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkhYAE,Seascape,StageName,Prospects,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkhYAE,Seascape,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8cYAE,Eucalyptus Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8cYAE,Eucalyptus Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8cYAE,Eucalyptus Apartments,CloseDate,2024-07-30,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8cYAE,Eucalyptus Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkiYAE,Seaturf,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkiYAE,Seaturf,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkiYAE,Seaturf,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC74YAE,Shamrock Trailer Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC74YAE,Shamrock Trailer Park,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC74YAE,Shamrock Trailer Park,CloseDate,2025-08-14,2026-12-18,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC74YAE,Shamrock Trailer Park,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjnYAE,Sixth Green Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjnYAE,Sixth Green Townhomes,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjnYAE,Sixth Green Townhomes,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjnYAE,Sixth Green Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TzYAI,"Skyview Mesa Unit Two Homeowners Association, Mesa AZ",StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TzYAI,"Skyview Mesa Unit Two Homeowners Association, Mesa AZ",Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TzYAI,"Skyview Mesa Unit Two Homeowners Association, Mesa AZ",CloseDate,2023-03-28,2026-01-13,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9TzYAI,"Skyview Mesa Unit Two Homeowners Association, Mesa AZ",Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YNYAY,Solana Highlands,StageName,On Hold,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YNYAY,Solana Highlands,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9YNYAY,Solana Highlands,CloseDate,2024-01-12,2025-11-25,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClbYAE,Solea Keller,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClbYAE,Solea Keller,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClbYAE,Solea Keller,CloseDate,2024-09-11,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClbYAE,Solea Keller,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC6kYAE,Somerset Court,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNoNYAU,Sorensen Heights,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNoNYAU,Sorensen Heights,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNoNYAU,Sorensen Heights,CloseDate,2024-01-24,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNoNYAU,Sorensen Heights,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDstYAE,Southern Palms Mobile Home & RV Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDstYAE,Southern Palms Mobile Home & RV Park,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDstYAE,Southern Palms Mobile Home & RV Park,CloseDate,2023-03-31,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDstYAE,Southern Palms Mobile Home & RV Park,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjQYAU,Southridge Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjQYAU,Southridge Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjQYAU,Southridge Apartments,CloseDate,2024-06-20,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjQYAU,Southridge Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UIYAY,Spanish Arcos Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UIYAY,Spanish Arcos Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UIYAY,Spanish Arcos Apartments,CloseDate,2023-04-03,2026-04-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UIYAY,Spanish Arcos Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnmDYAQ,Spring Haven RV resort,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnmDYAQ,Spring Haven RV resort,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnmDYAQ,Spring Haven RV resort,CloseDate,2023-12-11,2026-02-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnmDYAQ,Spring Haven RV resort,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjmYAE,Spyglass Point,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjmYAE,Spyglass Point,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjmYAE,Spyglass Point,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjmYAE,Spyglass Point,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnPJYAY,St. James Manor Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABrYAM,Star Estates MHP,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABrYAM,Star Estates MHP,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABrYAM,Star Estates MHP,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABrYAM,Star Estates MHP,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA9LYAU,Stepping Stone Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjpYAE,Steven's Manor Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjpYAE,Steven's Manor Townhomes,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjpYAE,Steven's Manor Townhomes,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjpYAE,Steven's Manor Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z6YAI,Stillhouse Flats,StageName,On Hold,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMyYAM,Stone Arbor,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMyYAM,Stone Arbor,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMyYAM,Stone Arbor,CloseDate,2023-09-22,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMyYAM,Stone Arbor,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM8YAM,Stone Creek Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM8YAM,Stone Creek Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM8YAM,Stone Creek Apartments,CloseDate,2023-08-10,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM8YAM,Stone Creek Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjfYAE,Stone Hill Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjfYAE,Stone Hill Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjfYAE,Stone Hill Apartments,CloseDate,2025-08-18,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjfYAE,Stone Hill Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk3O7YAI,Stone Vista,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjrYAE,Su Casa Por Cortez Apartments Community Housing,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjrYAE,Su Casa Por Cortez Apartments Community Housing,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjrYAE,Su Casa Por Cortez Apartments Community Housing,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjrYAE,Su Casa Por Cortez Apartments Community Housing,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkfYAE,Summit & Bloomfield Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkfYAE,Summit & Bloomfield Townhomes,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkfYAE,Summit & Bloomfield Townhomes,CloseDate,2025-08-14,2026-01-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkfYAE,Summit & Bloomfield Townhomes,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnmCYAQ,Summit Townomes,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCksYAE,Sunset Mesa,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCksYAE,Sunset Mesa,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCksYAE,Sunset Mesa,CloseDate,2025-08-14,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCksYAE,Sunset Mesa,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9S1YAI,Sunterra Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkeYAE,Swanson Towers Condominiums,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkeYAE,Swanson Towers Condominiums,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkeYAE,Swanson Towers Condominiums,CloseDate,2025-08-14,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkeYAE,Swanson Towers Condominiums,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UCYAY,Sycamore Square,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UCYAY,Sycamore Square,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UCYAY,Sycamore Square,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlGYAQ,Tamarron Village,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlGYAQ,Tamarron Village,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlGYAQ,Tamarron Village,CloseDate,2023-04-10,2026-04-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlGYAQ,Tamarron Village,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9Z4YAI,Taylor Square Apartments,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjhYAE,TAYLOR_MDU_DEBUS_APTS AKA Boxwoods at Taylor Condo Community,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjhYAE,TAYLOR_MDU_DEBUS_APTS AKA Boxwoods at Taylor Condo Community,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjhYAE,TAYLOR_MDU_DEBUS_APTS AKA Boxwoods at Taylor Condo Community,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjhYAE,TAYLOR_MDU_DEBUS_APTS AKA Boxwoods at Taylor Condo Community,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7oYAE,Terrace Garden Apartments,StageName,Engaged,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T6YAI,Terrace Villa_Morris RE,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T6YAI,Terrace Villa_Morris RE,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T6YAI,Terrace Villa_Morris RE,CloseDate,2025-08-14,2026-03-04,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T6YAI,Terrace Villa_Morris RE,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk3PDYAY,The Arbors of Taylor,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,CloseDate,2023-10-20,2026-02-24,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KFYAY,Mesa Artspace Lofts,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTsYAM,The Cape,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTsYAM,The Cape,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTsYAM,The Cape,CloseDate,2024-01-12,2025-12-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTsYAM,The Cape,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlaYAA,The Colonial Apartments Broadmoor,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlaYAA,The Colonial Apartments Broadmoor,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlaYAA,The Colonial Apartments Broadmoor,CloseDate,2023-11-28,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlaYAA,The Colonial Apartments Broadmoor,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABqYAM,The Dalton Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABqYAM,The Dalton Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABqYAM,The Dalton Apartments,CloseDate,2025-08-14,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkABqYAM,The Dalton Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM1YAM,The District at Fiesta Park Apts,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMVYA2,The Dorel,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMVYA2,The Dorel,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMVYA2,The Dorel,CloseDate,2023-08-10,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMVYA2,The Dorel,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMcYAM,The Dylan,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMcYAM,The Dylan,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMcYAM,The Dylan,CloseDate,2023-02-08,2026-01-06,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMcYAM,The Dylan,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM2YAM,The Forum Apartments FKA Archstone Apartments,StageName,On Hold,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM2YAM,The Forum Apartments FKA Archstone Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM2YAM,The Forum Apartments FKA Archstone Apartments,CloseDate,2023-04-11,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnOSYAY,The Grid,StageName,Prospects,Proposal Sent,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnOSYAY,The Grid,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt1YAE,The Harrison at Heritage,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt1YAE,The Harrison at Heritage,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt1YAE,The Harrison at Heritage,CloseDate,2023-09-12,2025-10-15,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDt1YAE,The Harrison at Heritage,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMUYA2,The Holston,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMUYA2,The Holston,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMUYA2,The Holston,CloseDate,2023-09-12,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMUYA2,The Holston,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLzYAM,The Joshua Apts,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLzYAM,The Joshua Apts,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLzYAM,The Joshua Apts,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClqYAE,The Lyric at Keller Center Stage,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClqYAE,The Lyric at Keller Center Stage,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClqYAE,The Lyric at Keller Center Stage,CloseDate,2024-09-11,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClqYAE,The Lyric at Keller Center Stage,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnPMYAY,The Mill,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlEYAQ,The Monterey,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlEYAQ,The Monterey,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlEYAQ,The Monterey,CloseDate,2023-04-10,2026-04-06,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlEYAQ,The Monterey,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnPLYAY,The Normandy,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMQYA2,The Opal Fort Worth,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClTYAU,The Palo Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClTYAU,The Palo Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClTYAU,The Palo Apartments,CloseDate,2024-08-12,2026-04-22,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClTYAU,The Palo Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClcYAE,The Palo Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClcYAE,The Palo Townhomes,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClcYAE,The Palo Townhomes,CloseDate,2024-09-11,2026-04-22,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkClcYAE,The Palo Townhomes,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMAYA2,The Peaks Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMAYA2,The Peaks Townhomes,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMAYA2,The Peaks Townhomes,CloseDate,2024-07-28,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMAYA2,The Peaks Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7VYAU,The PLace at El Prado,StageName,Prospects,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7VYAU,The PLace at El Prado,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA92YAE,The Springs at 1100,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA92YAE,The Springs at 1100,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA92YAE,The Springs at 1100,CloseDate,2023-07-14,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA92YAE,The Springs at 1100,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9S2YAI,The Veranda at Twin Creek Apartments,StageName,Prospecting,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9S2YAI,The Veranda at Twin Creek Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9S2YAI,The Veranda at Twin Creek Apartments,CloseDate,2026-09-24,2026-01-29,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9S2YAI,The Veranda at Twin Creek Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KaYAI,The Village at Grant Square,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KaYAI,The Village at Grant Square,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KaYAI,The Village at Grant Square,CloseDate,2024-01-25,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wj8KaYAI,The Village at Grant Square,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7cYAE,Towerpoint RV Resort,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7cYAE,Towerpoint RV Resort,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7cYAE,Towerpoint RV Resort,CloseDate,2024-03-08,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7cYAE,Towerpoint RV Resort,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnldYAA,Town and Country Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnldYAA,Town and Country Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnldYAA,Town and Country Apartments,CloseDate,2023-09-12,2026-04-30,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnldYAA,Town and Country Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkrYAE,Town And Country RV Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkrYAE,Town And Country RV Park,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkrYAE,Town And Country RV Park,CloseDate,2025-08-14,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCkrYAE,Town And Country RV Park,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlKYAQ,Tremont Sr Apartment Homes,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnlvYAA,Triple Crown Estates,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBomYAE,Unnamed,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7bYAE,Val Vista Villages RV Park & Resort,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7bYAE,Val Vista Villages RV Park & Resort,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7bYAE,Val Vista Villages RV Park & Resort,CloseDate,2025-02-14,2026-03-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7bYAE,Val Vista Villages RV Park & Resort,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjkYAE,Valley of Dreams MHP,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjkYAE,Valley of Dreams MHP,Loss_Reason__c,,Not Interested,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjkYAE,Valley of Dreams MHP,CloseDate,2025-08-14,2025-12-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjkYAE,Valley of Dreams MHP,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtKYAU,Valley View RV Park,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtKYAU,Valley View RV Park,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtKYAU,Valley View RV Park,CloseDate,2025-08-14,2025-10-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtKYAU,Valley View RV Park,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDMMYA2,Vantage at Hutto,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjsYAE,Vaughan Manor Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjsYAE,Vaughan Manor Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjsYAE,Vaughan Manor Apartments,CloseDate,2025-08-14,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjsYAE,Vaughan Manor Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLyYAM,Verona Park Apts,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCklYAE,Villa De La Costa,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCklYAE,Villa De La Costa,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCklYAE,Villa De La Costa,CloseDate,2025-08-14,2026-02-27,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCklYAE,Villa De La Costa,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjnP0YAI,Villa Del Prado Apts,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA90YAE,Villa Del Rey _ FF Freddy,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA90YAE,Villa Del Rey _ FF Freddy,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA90YAE,Villa Del Rey _ FF Freddy,CloseDate,2024-06-20,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA90YAE,Villa Del Rey _ FF Freddy,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjDYAU,Villa Vinee Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjDYAU,Villa Vinee Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjDYAU,Villa Vinee Apartments,CloseDate,2024-08-12,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjDYAU,Villa Vinee Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UoYAI,Village Park Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UoYAI,Village Park Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UoYAI,Village Park Apartments,CloseDate,2024-09-18,2026-01-13,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UoYAI,Village Park Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T7YAI,Village West Apartments_Morris RE,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T7YAI,Village West Apartments_Morris RE,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T7YAI,Village West Apartments_Morris RE,CloseDate,2025-08-14,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9T7YAI,Village West Apartments_Morris RE,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7XYAU,Villas Mesa 2,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7XYAU,Villas Mesa 2,Loss_Reason__c,,Existing Contract,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7XYAU,Villas Mesa 2,CloseDate,2023-03-30,2026-03-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7XYAU,Villas Mesa 2,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),CloseDate,2024-07-30,2026-02-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkQYAU,Villeta Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkQYAU,Villeta Apartments,Loss_Reason__c,,Existing Fiber,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkQYAU,Villeta Apartments,CloseDate,2023-03-28,2026-01-13,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkAkQYAU,Villeta Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7SYAU,Vineyards at Trophy Club,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7SYAU,Vineyards at Trophy Club,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7SYAU,Vineyards at Trophy Club,CloseDate,2024-06-12,2026-01-28,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7SYAU,Vineyards at Trophy Club,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM0YAM,Vista Valley Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM0YAM,Vista Valley Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM0YAM,Vista Valley Apartments,CloseDate,2023-03-28,2026-02-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDM0YAM,Vista Valley Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLwYAM,Waterford Place Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLwYAM,Waterford Place Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLwYAM,Waterford Place Apartments,CloseDate,2023-03-27,2026-04-21,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLwYAM,Waterford Place Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7PYAU,Waterworks Condos,StageName,Prospects,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7PYAU,Waterworks Condos,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7PYAU,Waterworks Condos,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UrYAI,West Hampton Cove,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UrYAI,West Hampton Cove,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UrYAI,West Hampton Cove,CloseDate,2024-06-18,2026-02-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wk9UrYAI,West Hampton Cove,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKGNYA2,Western Oaks Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKGNYA2,Western Oaks Apartments,Loss_Reason__c,,No Decision / Non-Responsive,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKGNYA2,Western Oaks Apartments,CloseDate,2022-09-01,2026-03-11,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wjKGNYA2,Western Oaks Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7pYAE,Whispering Pines Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7pYAE,Whispering Pines Townhomes,Loss_Reason__c,,Existing Fiber,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7pYAE,Whispering Pines Townhomes,CloseDate,2024-08-19,2026-03-17,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7pYAE,Whispering Pines Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7zYAE,Williamsburg Townhomes and Apartments,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkC7zYAE,Williamsburg Townhomes and Apartments,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLsYAM,Williamson At The Overlook,StageName,Prospects,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDLsYAM,Williamson At The Overlook,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTqYAM,Woodbridge Senior Living [Connect55+],StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTqYAM,Woodbridge Senior Living [Connect55+],Loss_Reason__c,,No Budget / Lost Funding,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTqYAM,Woodbridge Senior Living [Connect55+],CloseDate,2024-06-07,2026-04-01,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkBTqYAM,Woodbridge Senior Living [Connect55+],Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjoYAE,Woodgate Townhomes,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjoYAE,Woodgate Townhomes,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjoYAE,Woodgate Townhomes,CloseDate,2025-08-14,2026-02-03,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkCjoYAE,Woodgate Townhomes,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtwYAE,Woodglen Square ll,StageName,Marketing/Bulk In Progress,On Hold,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkDtwYAE,Woodglen Square ll,Hold_Reason__c,,Other,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7zYAE,Wyndham Hill,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7zYAE,Wyndham Hill,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7zYAE,Wyndham Hill,CloseDate,2023-11-27,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wkA7zYAE,Wyndham Hill,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,CloseDate,2023-11-27,2026-04-14,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:14,DRY-RUN

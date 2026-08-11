@@ -1,0 +1,3 @@
+opp_id,opp_name,opp_site_name,opp_state,opp_city,opp_stage,opp_rt,st_name,st_site_name,st_monday_name,st_state,st_city,st_status,strategy,result
+006WR00000wkA9KYAU,River Oaks Apartments,Killeen_MDU_River Oaks Apartments,TX,Killeen,Prospects,MDU,P-005430,Tucson_MDU_River Oaks Apartments,River Oaks Apartments,AZ,Tucson,Cancelled,stripped_prefix_to_monday,already_linked_elsewhere
+006WR00000xwFMTYA2,Omaha_MDU_Birchwood Apts,Omaha_MDU_Birchwood Apts,NE,Omaha,PAL/ROE Complete,MDU,P-005410,Omaha_MDU_Birchwood Apts,Birchwood Apts,NE,Omaha,In Service,exact_st_site_name,already_linked_elsewhere

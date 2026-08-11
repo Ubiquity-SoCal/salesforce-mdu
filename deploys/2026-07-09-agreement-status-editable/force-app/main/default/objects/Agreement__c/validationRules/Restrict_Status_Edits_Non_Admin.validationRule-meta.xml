@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Status_Edits_Non_Admin</fullName>
+    <active>true</active>
+    <description>Non-admins may only move Status to Cancelled or Paused (cleanup values), and may never create an Agreement already marked Completed. Completed feeds the signed-agreement rollups and dashboards. System Administrator bypasses.</description>
+    <errorConditionFormula>AND(
+  $Profile.Name &lt;&gt; "System Administrator",
+  OR(
+    AND(
+      ISCHANGED(Status__c),
+      NOT(ISPICKVAL(Status__c, "Cancelled")),
+      NOT(ISPICKVAL(Status__c, "Paused"))
+    ),
+    AND(
+      ISNEW(),
+      ISPICKVAL(Status__c, "Completed")
+    )
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You can only change Agreement Status to Cancelled or Paused. For any other status change, contact a System Administrator.</errorMessage>
+</ValidationRule>

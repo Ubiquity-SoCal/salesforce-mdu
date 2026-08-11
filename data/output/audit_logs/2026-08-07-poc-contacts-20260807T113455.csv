@@ -1,0 +1,68 @@
+Id,Name,object,action,old_value,new_value
+003WR00001Uh4BSYAZ,Brian Nelson,Contact,created,,brian@myoppm.com
+003WR00001UhQwjYAF,Kristina Noe,Contact,created,,knoe@burlingtoncapital.com
+003WR00001UhQyLYAV,Lynette Dacus,Contact,created,,LDacus@clarityomaha.com
+003WR00001Uf5V4YAJ,Julie Fay-General,Contact,created,,JulieF@denizenmanagement.com
+003WR00001UhGffYAF,Jeanne Studey,Contact,created,,jeanne@marconomaha.com
+003WR00001UgsQRYAZ,Try NP Dodge,Contact,created,,contact@npdodge.com
+003WR00001UfiwCYAR,John D. Einung,Contact,created,,
+003WR00001UhNu2YAF,Lucius Hall,Contact,created,,lucius.hall@seldin.com
+003WR00001Uh6OYYAZ,Gary Kinstlinger,Contact,created,,
+003WR00001UhQruYAF,Daryl Mark Christiansen,Contact,created,,
+003WR00001Uh1rxYAB,Alyssa Phillips,Contact,created,,
+003WR00001UhR6PYAV,Shelli Keller,Contact,created,,
+003WR00001UfQBIYA3,The Halford Apts,Contact,created,,
+003WR00001UgifaYAB,James Rogers,Contact,created,,
+003WR00001UgP6kYAF,Suzanne Boritzki Facilities,Contact,created,,
+003WR00001UgGhiYAF,Douglas A Wellendorf,Contact,created,,
+003WR00001UhR81YAF,Emerson Bostrom,Contact,created,,
+003WR00001UezfpYAB,Deb Holcomb,Contact,created,,
+003WR00001Ug6VXYAZ,Brent Bauman,Contact,created,,
+003WR00001UgQtzYAF,Westly Hutcherson,Contact,created,,
+003WR00001Ue7CLYAZ,Isaac Essex,Contact,created,,
+003WR00001UgoJbYAJ,Jan Pokorny,Contact,created,,
+003WR00001UgiviYAB,John Watson,Contact,created,,
+003WR00001UhRCrYAN,Jerry Banks Group,Contact,created,,
+003WR00001UgP59YAF,Ken Schultz,Contact,created,,
+003WR00001UhRG5YAN,Ryan Ellis,Contact,created,,
+003WR00001Uf2KGYAZ,Patricia Berseheid,Contact,created,,
+003WR00001UgKlKYAV,Steve Weaver Suzanne,Contact,created,,
+003WR00001UfZ9kYAF,Pro Properties,Contact,created,,
+003WR00001UhJaIYAV,Thomas Rohan,Contact,created,,
+003WR00001UfhC7YAJ,Tara Hilgert Office,Contact,created,,
+003WR00001UfZbBYAV,Claire McCaslin,Contact,created,,
+003WR00001UgyikYAB,Robert Purcell,Contact,created,,
+006WR00000wkDtkYAE,Maple Place Apartments,Opportunity_Contact__c,linked,,brian@myoppm.com / Other
+006WR00000xvCKIYA2,Omaha_MDU_Ambassador Apartments,Opportunity_Contact__c,linked,,knoe@burlingtoncapital.com / Other
+006WR00000wkCjqYAE,Hillside Rows Apts,Opportunity_Contact__c,linked,,ldacus@clarityomaha.com / Property Manager
+006WR00000wkCkZYAU,New Towne West Apts,Opportunity_Contact__c,linked,,julief@denizenmanagement.com / Property Manager
+006WR00001Fl90KYAR,Omaha_MDU_Indian Hills Village Court,Opportunity_Contact__c,linked,,jeanne@marconomaha.com / Other
+006WR00000wkA8eYAE,Park Crest,Opportunity_Contact__c,linked,,contact@npdodge.com / Other
+006WR00000xwFW9YAM,Omaha_MDU_4505 Lafayette Ave Halford Apartments,Opportunity_Contact__c,linked,,bpick@pheblaw.com / Property Owner
+006WR00000xvwoUYAQ,Omaha_MDU_4704 Cass St,Opportunity_Contact__c,linked,,name:john d. einung / Property Owner
+006WR00000xveGUYAY,Omaha_MDU_6201-6261 Ville De Sante Townhomes,Opportunity_Contact__c,linked,,lucius.hall@seldin.com / Property Manager
+006WR00000xvk0wYAA,Omaha_MDU_4902_4904 N Chicago St,Opportunity_Contact__c,linked,,hcox@thrivestreetliving.com / Broker
+006WR00000xwG5dYAE,Omaha_MDU_4955-4957 Cuming St,Opportunity_Contact__c,linked,,name:gary kinstlinger / Property Owner
+006WR00000xwEyHYAU,Omaha_MDU_Margaret Mae,Opportunity_Contact__c,linked,,name:daryl mark christiansen / Other
+006WR00000xwFeDYAU,Omaha_MDU_4611-4613 North 56th St,Opportunity_Contact__c,linked,,name:alyssa phillips / Property Owner
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Opportunity_Contact__c,linked,,name:shelli keller / Property Manager
+006WR00000xvRuNYAU,Omaha_MDU_4501 Lafayette Ave,Opportunity_Contact__c,linked,,name:the halford apts / Other
+006WR00000xvNyrYAE,Omaha_MDU_4716 Cuming St,Opportunity_Contact__c,linked,,name:james rogers / Property Owner
+006WR00001FjkonYAB,Omaha_MDU_9140 W Dodge Rd,Opportunity_Contact__c,linked,,name:suzanne boritzki facilities / Property Manager
+006WR00000xwFj3YAE,Omaha_MDU_4705 Burdette St,Opportunity_Contact__c,linked,,name:douglas a wellendorf / Other
+006WR00000wkA8fYAE,Bernard Richard Apartments,Opportunity_Contact__c,linked,,name:emerson bostrom / Property Manager
+006WR00000wkA8wYAE,Cypress Pointe II Apartment Complex,Opportunity_Contact__c,linked,,name:deb holcomb / Property Manager
+006WR00000xwG8rYAE,Omaha_MDU_5005-5007 California St,Opportunity_Contact__c,linked,,name:brent bauman / Other
+006WR00001DONRiYAP,4314 N 65th St,Opportunity_Contact__c,linked,,name:westly hutcherson / Other
+006WR00000xwFkfYAE,Omaha_MDU_4719-4723 Erskine St,Opportunity_Contact__c,linked,,name:isaac essex / Other
+006WR00000wkDt4YAE,Charleston Court,Opportunity_Contact__c,linked,,name:jan pokorny / Property Owner
+006WR00000xw0aRYAQ,Omaha_MDU_Wakeley Manor,Opportunity_Contact__c,linked,,name:john watson / Other
+006WR00000xwFmHYAU,Omaha_MDU_Roosevelt Apartments,Opportunity_Contact__c,linked,,name:jerry banks group / Property Owner
+006WR000011cWtpYAE,Heritage Apartments,Opportunity_Contact__c,linked,,name:ken schultz / Property Manager
+006WR00000xvHqCYAU,Omaha_MDU_Northbrook Apartments,Opportunity_Contact__c,linked,,name:ryan ellis / Other
+006WR00001DG5gZYAT,4430 Redman Ave,Opportunity_Contact__c,linked,,name:patricia berseheid / Other
+006WR00000xwFJFYA2,Omaha_MDU_4157 Hamilton St,Opportunity_Contact__c,linked,,name:steve weaver suzanne / Other
+006WR00000xwF6LYAU,Omaha_MDU_302 N 48th St,Opportunity_Contact__c,linked,,name:pro properties / Broker
+006WR00000xvk2bYAA,Omaha_MDU_Buckingham Manor Apartments,Opportunity_Contact__c,linked,,name:tara hilgert office / Property Manager
+006WR00000wkCjsYAE,Vaughan Manor Apartments,Opportunity_Contact__c,linked,,name:claire mccaslin / Property Manager
+006WR00000xv762YAA,Omaha_MDU_4916 Capitol Ave,Opportunity_Contact__c,linked,,name:robert purcell / Property Manager

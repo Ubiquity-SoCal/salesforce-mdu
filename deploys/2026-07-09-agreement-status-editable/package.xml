@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Agreement__c.Status__c</members>
+        <members>Agreement__c.Is_Active_EMA_Bulk__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Agreement__c.Lock_Status_When_IronClad_Linked</members>
+        <members>Agreement__c.Restrict_Status_Edits_Non_Admin</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Agreement_Status_Edit</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>61.0</version>
+</Package>

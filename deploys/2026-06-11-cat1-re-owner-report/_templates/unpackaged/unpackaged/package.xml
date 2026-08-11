@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MDU_Sales_Reports/MDU_Opportunities_by_Owner_JJz</members>
+        <members>MDU_Sales_Reports/MDU_Stage_by_Owner_fl3</members>
+        <name>Report</name>
+    </types>
+    <version>66.0</version>
+</Package>

@@ -1,0 +1,12 @@
+﻿SF_Id,Name,Field,Before,After,Source,Timestamp,Action
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,StageName,Prospects,Closed Lost,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,Loss_Reason__c,,No Contact Info,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,CloseDate,2024-07-30,2026-02-10,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8NYAU,225 S Highway 101 Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wk9TuYAI,302 North,StageName,Prospects,Engaged,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8mYAE,4813-4823 Boyd St Apartments,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8zYAE,6314 Boyd Street,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA8zYAE,6314 Boyd Street,Sales_Status__c,Contact Pending,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA7aYAE,Amberwood Manor,StageName,Prospecting,Contract Negotiations,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED
+006WR00000wkA7aYAE,Amberwood Manor,Sales_Status__c,Reached Out - Pending Response,,Bill Master List MDU Assignments.xlsm,2026-06-24T11:51:36,UPDATED

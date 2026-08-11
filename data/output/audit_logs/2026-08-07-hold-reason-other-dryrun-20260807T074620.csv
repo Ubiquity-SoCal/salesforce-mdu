@@ -1,0 +1,16 @@
+Id,Name,Agreement_Name__c,field,old_value,new_value
+006WR00000wkABrYAM,Star Estates MHP,HARKER_HEIGHTS_MDU_Star_Estates_Mobile_Park,StageName,Prospects,On Hold
+006WR00000wkABrYAM,Star Estates MHP,HARKER_HEIGHTS_MDU_Star_Estates_Mobile_Park,Hold_Reason__c,,Other
+006WR00000wkABrYAM,Star Estates MHP,HARKER_HEIGHTS_MDU_Star_Estates_Mobile_Park,Next_Action__c,Moved from Closed Lost - No Decision / Non-Responsive to Prospects per 7/23/2026 call,"Verify hold reason with Niraj - set to Other pending his confirmation, per his 7/29/2026 PAL/ROE Acquisition Process email"
+006WR00000wkABwYAM,Pleasant View MHP,HARKER_HEIGHTS_MDU_Phesant View MHP,StageName,Prospects,On Hold
+006WR00000wkABwYAM,Pleasant View MHP,HARKER_HEIGHTS_MDU_Phesant View MHP,Hold_Reason__c,,Other
+006WR00000wkABwYAM,Pleasant View MHP,HARKER_HEIGHTS_MDU_Phesant View MHP,Next_Action__c,Moved from Closed Lost - No Decision / Non-Responsive to Prospects per 7/23/2026 call,"Verify hold reason with Niraj - set to Other pending his confirmation, per his 7/29/2026 PAL/ROE Acquisition Process email"
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,NOLANVILLE_MDU_Twin_Oaks_II_Park,StageName,Prospects,On Hold
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,NOLANVILLE_MDU_Twin_Oaks_II_Park,Hold_Reason__c,,Other
+006WR00000wkC70YAE,Mac's Mobile Home Park/ Twin Oaks II,NOLANVILLE_MDU_Twin_Oaks_II_Park,Next_Action__c,Moved from Closed Lost - No Decision / Non-Responsive to Prospects per 7/23/2026 call,"Verify hold reason with Niraj - set to Other pending his confirmation, per his 7/29/2026 PAL/ROE Acquisition Process email"
+006WR00000wkDt8YAE,Dimple St MHP,KILLEEN_MDU_DIMPLE ST MHP,StageName,Prospects,On Hold
+006WR00000wkDt8YAE,Dimple St MHP,KILLEEN_MDU_DIMPLE ST MHP,Hold_Reason__c,,Other
+006WR00000wkDt8YAE,Dimple St MHP,KILLEEN_MDU_DIMPLE ST MHP,Next_Action__c,Moved from Closed Lost - No Decision / Non-Responsive to Prospects per 7/23/2026 call,"Verify hold reason with Niraj - set to Other pending his confirmation, per his 7/29/2026 PAL/ROE Acquisition Process email"
+006WR00000wkDtKYAU,Valley View RV Park,JARRELL_MDU_Valley View RV Park,StageName,Prospects,On Hold
+006WR00000wkDtKYAU,Valley View RV Park,JARRELL_MDU_Valley View RV Park,Hold_Reason__c,,Other
+006WR00000wkDtKYAU,Valley View RV Park,JARRELL_MDU_Valley View RV Park,Next_Action__c,Moved from Closed Lost - No Decision / Non-Responsive to Prospects per 7/23/2026 call,"Verify hold reason with Niraj - set to Other pending his confirmation, per his 7/29/2026 PAL/ROE Acquisition Process email"

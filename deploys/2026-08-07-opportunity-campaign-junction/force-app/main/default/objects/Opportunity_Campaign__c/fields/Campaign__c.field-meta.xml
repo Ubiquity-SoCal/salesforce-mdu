@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign__c</fullName>
+    <label>Campaign</label>
+    <type>Lookup</type>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Tagged Opportunities</relationshipLabel>
+    <relationshipName>Opportunity_Campaigns</relationshipName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <description>Restrict on delete: a Campaign that still has tagged Opportunities should not be deletable out from under them.</description>
+</CustomField>

@@ -1,0 +1,25 @@
+Id,Name,workbook_row,field,old_value,new_value,source,confidence,sf_property_address
+006WR00000wkEzmYAE,Alleia at Presidio,27,Agreement_Name__c,,Fort Worth_MDU_Alleia at Presidio,SiteTracker (address match),HIGH,"2028 Presidio Vista Dr, Fort Worth, TX 76177"
+006WR00000wkEbEYAU,Big Oaks Estates,108,Agreement_Name__c,,Harker Heights_SFU_Big Oaks Estates,SiteTracker (address match),HIGH,"1110 Indian Trail, Harker Heights, TX, USA"
+006WR00000wkClpYAE,Copper Mountain,195,Agreement_Name__c,,Killeen_MDU_Copper Mountain,SiteTracker (address match),HIGH,"2501 Bacon Ranch Rd, Killeen, TX, USA"
+006WR00000wk9SqYAI,Hunter's Glen Apartments,216,Agreement_Name__c,,Killeen_MDU_Hunter's Glen Apartments,SiteTracker (address match),HIGH,"1201 Bacon Ranch Road, Killeen, TX, USA"
+006WR00000wkCldYAE,Keystone Apartments,218,Agreement_Name__c,,Killeen_MDU_Keystone Apartments,SiteTracker (address match),HIGH,"2502 Bacon Ranch Road, Killeen, TX, USA"
+006WR00000wjnlLYAQ,Ridge Point,238,Agreement_Name__c,,Killeen_MDU_Ridge Point,SiteTracker (address match),HIGH,"1900 Bacon Ranch Road, Killeen, TX, USA"
+006WR00000wkBpWYAU,Station 42,243,Agreement_Name__c,,Killeen_MDU_Station42,SiteTracker (address match),HIGH,"801 S W S Young Dr, Killeen, TX 76541, USA"
+006WR00000wk9StYAI,Summer Park _ FF Freddy,247,Agreement_Name__c,,Killeen_MDU_Summer Park,SiteTracker (address match),HIGH,"1701 North College Street, Killeen, TX, USA"
+006WR00000wkEboYAE,The Bungalows,251,Agreement_Name__c,,Killeen_MDU_The Bungalows,SiteTracker (name match),HIGH,"710 East Avenue G, Killeen, TX, USA"
+006WR00000wjnlKYAQ,Tremont Sr Apartment Homes,261,Agreement_Name__c,,Killeen_MDU_Tremont Sr Apartment Homes,SiteTracker (address match),HIGH,"1700 Bacon Ranch Road, Killeen, TX, USA"
+006WR00000wkC6kYAE,Somerset Court,307,Agreement_Name__c,,NE_OMAHA_SA03_FB12,SiteTracker (address match),HIGH,"2717 North 73rd Street, Omaha, NE, USA"
+006WR00000wkDsJYAU,Courtyard 72,316,Agreement_Name__c,,Omaha_MDU_Courtyard 72,SiteTracker (address match),HIGH,"1607 North 73rd Street, Omaha, NE, USA"
+006WR00000wk9SjYAI,Chalet Apartments,343,Agreement_Name__c,,Omaha_MDU_Chalet Izard,SiteTracker (address match),HIGH,"4858 Izard Street, Omaha, Nebraska 68132, USA"
+006WR00000wk9S0YAI,Kirshenbaum Apartments,384,Agreement_Name__c,,Omaha_MDU_5013-5015 California St,SiteTracker (address match),HIGH,"5013 California Street, Omaha, NE, USA"
+006WR000011aevbYAA,Church Hill Apartments,431,Agreement_Name__c,,Omaha_MDU_Church Hill Apartments,SiteTracker (address match),HIGH,"2003 N 45th St, Omaha, NE 68104, USA"
+006WR000011bOryYAE,Stone Plaza Apartments,471,Agreement_Name__c,,NE_OMAHA_SA03_FDH20,SiteTracker (address match),HIGH,"6003 Stone Plaza, Omaha, NE 68104, USA"
+006WR00000wk1FYYAY,30 Metro,491,Agreement_Name__c,,Omaha_MDU_30 Metro,SiteTracker (address match),HIGH,"5319 n 30th st, omaha, ne"
+006WR000011bPfxYAE,Dundee Creek Apartments,494,Agreement_Name__c,,Omaha_MDU_Dundee Creek Apartments,SiteTracker (address match),HIGH,"1305 N 49th Ave, Omaha, NE 68132, USA"
+006WR00000wk3PDYAY,The Arbors of Taylor,514,Agreement_Name__c,,Taylor_MDU_Arbors of Taylor Apartments,SiteTracker (address match),HIGH,"201 Highland Drive, Taylor, TX, USA"
+006WR00000wkA9MYAU,Grace Place Apartments,520,Agreement_Name__c,,Taylor_MDU_Grace Place Apartments,SiteTracker (address match),HIGH,"301 Grace Lane, Taylor, TX, USA"
+006WR00000xwGYfYAM,Killeen_MDU_119-111 N College St,144,Agreement_Name__c,Killeen_MDU_119-111 N College St,Killeen_MDU_1019-1101 N College St,SiteTracker (address match),HIGH,1019 N COLLEGE ST UNIT 1 KILLEEN TX 76541
+006WR00000xw0DnYAI,Killeen_MDU_122 N College St,146,Agreement_Name__c,Killeen_MDU_122 N College St,Killeen_MDU_1202 N College St,SiteTracker (address match),HIGH,1202 N COLLEGE ST UNIT 1 KILLEEN TX 76541
+006WR00000xw9XDYAY,Killeen_MDU_127-129 N 1th St,147,Agreement_Name__c,Killeen_MDU_127-129 N 1th St,Killeen_MDU_1207-1209 N 10th St,SiteTracker (address match),HIGH,1207 N 10TH ST UNIT 1 KILLEEN TX 76541
+006WR00000xw5JvYAI,Killeen_MDU_191 N 1th St,155,Agreement_Name__c,Killeen_MDU_191 N 1th St,Killeen_MDU_1901 N 10th St,SiteTracker (address match),HIGH,1901 N 10TH ST UNIT 1 KILLEEN TX 76541

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity__c</fullName>
+    <label>Opportunity</label>
+    <type>Lookup</type>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Campaign Tags</relationshipLabel>
+    <relationshipName>Opportunity_Campaigns</relationshipName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <description>Lookup rather than master-detail: a master-detail parent cannot be re-parented, and these tags are administrative rather than owned by the Opportunity. Cascade delete so removing an Opportunity does not strand its tags.</description>
+</CustomField>

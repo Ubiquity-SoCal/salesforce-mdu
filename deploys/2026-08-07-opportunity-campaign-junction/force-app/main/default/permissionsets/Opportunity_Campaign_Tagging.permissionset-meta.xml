@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Opportunity Campaign Tagging</label>
+    <description>Access to Opportunity_Campaign__c, the junction that lets one Opportunity belong to many Campaigns. A permission set rather than row-by-row ObjectPermissions writes, which ran at roughly 40 seconds per grant across 35 parents.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <objectPermissions>
+        <object>Opportunity_Campaign__c</object>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <!-- Opportunity__c and Campaign__c are required lookups. Salesforce treats
+         universally required fields as always accessible and rejects an explicit
+         field permission for them, so they are deliberately absent here. -->
+    <fieldPermissions>
+        <field>Opportunity_Campaign__c.Tag_Type__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Opportunity_Campaign__c.Date_Added__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Opportunity_Campaign__c.Key__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

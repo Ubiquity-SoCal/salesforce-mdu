@@ -1,0 +1,99 @@
+Id,Name,field,old_value,new_value,old_unit_group
+006WR00000wiNonYAE,Wyndham Villas - Broadmoor,Units__c,92,82,50-100
+006WR00000wj8KIYAY,Prairie Spring Apartments,Units__c,120,121,> 100
+006WR00000wj8KQYAY,Arboretum Village,Units__c,145,148,> 100
+006WR00000wj8KTYAY,Embassy Park Apartments,Units__c,460,441,> 100
+006WR00000wj8KaYAI,The Village at Grant Square,Units__c,204,201,> 100
+006WR00000wj8KeYAI,Peony Village,Units__c,160,150,> 100
+006WR00000wj8KqYAI,Parkview (AKA Elevate Apartments),Units__c,176,177,> 100
+006WR00000wk3PDYAY,The Arbors of Taylor,Units__c,88,89,50-100
+006WR00000wk9SSYAY,Waters Haven Apartments,Units__c,117,146,> 100
+006WR00000wk9STYAY,Stone Ranch,Units__c,152,153,> 100
+006WR00000wk9SfYAI,Georgetown Square Apartments,Units__c,55,63,50-100
+006WR00000wk9SoYAI,Stone Hill,Units__c,346,334,> 100
+006WR00000wk9SpYAI,Carmel Creekside,Units__c,424,422,> 100
+006WR00000wk9SrYAI,Cottonwood Apartments East,Units__c,32,36,25-49
+006WR00000wk9SuYAI,Riverside Villas,Units__c,192,193,> 100
+006WR00000wk9SvYAI,Park_Place,Units__c,175,69,> 100
+006WR00000wk9T2YAI,Cicada Springs RV Park,Units__c,175,181,> 100
+006WR00000wk9TuYAI,302 North,Units__c,176,177,> 100
+006WR00000wk9Z6YAI,Stillhouse Flats,Units__c,96,94,50-100
+006WR00000wk9Z7YAI,Hillcrest Apartments,Units__c,58,46,50-100
+006WR00000wk9Z9YAI,Residences of Stillwater,Units__c,192,203,> 100
+006WR00000wkA6VYAU,Dundee View,Units__c,60,70,50-100
+006WR00000wkA6dYAE,Howard Street,Units__c,90,93,50-100
+006WR00000wkA7oYAE,Terrace Garden Apartments,Units__c,126,128,> 100
+006WR00000wkA8IYAU,Keystone Park Apartments,Units__c,72,111,50-100
+006WR00000wkA8VYAU,Copperstone Apartments,Units__c,81,80,50-100
+006WR00000wkA8aYAE,Beau Manor Townhomes,Units__c,54,55,50-100
+006WR00000wkA8nYAE,Ville de Sante Terrace Apartments (1),Units__c,25,36,25-49
+006WR00000wkA8pYAE,Caravelle Apartments,Units__c,60,29,50-100
+006WR00000wkA8uYAE,Lepuy Apartments,Units__c,35,36,25-49
+006WR00000wkA8zYAE,6314 Boyd Street,Units__c,6,24,< 25
+006WR00000wkA91YAE,Bloomfield Forum,Units__c,95,96,50-100
+006WR00000wkA95YAE,Parkwood Apartments,Units__c,64,97,50-100
+006WR00000wkA9DYAU,College Park Apartments,Units__c,78,80,50-100
+006WR00000wkA9FYAU,Azle Creek Apartments,Units__c,43,44,25-49
+006WR00000wkABpYAM,Liberty Manor I,Units__c,18,36,< 25
+006WR00000wkABqYAM,The Dalton Apartments,Units__c,78,99,50-100
+006WR00000wkABsYAM,Heritage Manor,Units__c,36,74,25-49
+006WR00000wkABxYAM,Liberty Landing AKA Century Park Apartments,Units__c,52,29,50-100
+006WR00000wkAByYAM,New Life RV Park,Units__c,92,95,50-100
+006WR00000wkACfYAM,Bexley Wolf Ranch,Units__c,332,341,> 100
+006WR00000wkAr4YAE,Parkwood Terrace,Units__c,126,116,> 100
+006WR00000wkArGYAU,Eden West,Units__c,215,218,> 100
+006WR00000wkBTiYAM,Clove Apartments,Units__c,176,177,> 100
+006WR00000wkBTzYAM,Luma Lane Apartments,Units__c,28,30,25-49
+006WR00000wkBUxYAM,Bristol Park at Eagle Mountain,Units__c,125,50,> 100
+006WR00000wkC7vYAE,Burnett Place Apartments,Units__c,72,73,50-100
+006WR00000wkC7xYAE,Chateau West Apartments,Units__c,52,56,50-100
+006WR00000wkC7zYAE,Williamsburg Townhomes and Apartments,Units__c,64,72,50-100
+006WR00000wkC81YAE,The Village at Fox Creek,Units__c,128,129,> 100
+006WR00000wkCjDYAU,Villa Vinee Apartments,Units__c,215,217,> 100
+006WR00000wkCjQYAU,Southridge Apartments,Units__c,40,41,25-49
+006WR00000wkCjsYAE,Vaughan Manor Apartments,Units__c,37,30,25-49
+006WR00000wkCkWYAU,Liberty Landing Apartments,Units__c,52,29,50-100
+006WR00000wkCkZYAU,New Towne West Apts,Units__c,115,119,> 100
+006WR00000wkClRYAU,Grandridge,Units__c,470,476,> 100
+006WR00000wkClzYAE,Woodland Pines,Units__c,173,177,> 100
+006WR00000wkCmNYAU,Alta Austin Avenue (AKA Austin Avenue),Units__c,312,327,> 100
+006WR00000wkDM7YAM,Garden Gate Apartments,Units__c,240,241,> 100
+006WR00000wkDMAYA2,The Peaks Townhomes,Units__c,83,85,50-100
+006WR00000wkDMKYA2,Legacy Riverside Senior Living,Units__c,264,175,> 100
+006WR00000wkDMOYA2,Georgetown Place Apartments,Units__c,176,178,> 100
+006WR00000wkDMRYA2,Royal Gardens,Units__c,75,80,50-100
+006WR00000wkDMSYA2,Creekside at North Beach,Units__c,216,217,> 100
+006WR00000wkDMVYA2,The Dorel,Units__c,224,200,> 100
+006WR00000wkDMXYA2,Pioneer Crossing Apartments,Units__c,80,161,50-100
+006WR00000wkDt6YAE,612-616 N 46 St,Units__c,30,26,25-49
+006WR00000wkDtBYAU,KILLEEN_MDU_Henderson_Garden,Units__c,8,30,< 25
+006WR00000wkDtEYAU,Killeen_MDU_408-420 E Hallmark Ave,Units__c,30,28,25-49
+006WR00000wkDtRYAU,Mac's Mobile Home Park,Units__c,57,42,50-100
+006WR00000wkDtcYAE,OMAHA_MDU_Meredith Manor Apartments,Units__c,24,25,< 25
+006WR00000wkDtkYAE,Maple Place Apartments,Units__c,20,27,< 25
+006WR00000xuFKAYA2,Bridgeport_MDU_Federal Housing Administration,Units__c,10,17,< 25
+006WR00000xwFXmYAM,Omaha_MDU_818 N 46th St,Units__c,12,20,< 25
+006WR000011bPfxYAE,Dundee Creek Apartments,Units__c,35,41,25-49
+006WR000011bxo2YAA,Sunset Arms,Units__c,25,31,25-49
+006WR00001DP39FYAT,814 N 50th Ave,Units__c,8,9,< 25
+006WR00001FirKVYAZ,Killeen_MDU_219 Hold St 8 Plex,Units__c,,8,
+006WR00001FjkonYAB,Omaha_MDU_9140 W Dodge Rd,Units__c,,31,
+006WR00001FjvViYAJ,KILLEEN_MDU_Girard_CT,Units__c,,24,
+006WR00001FkS9qYAF,Omaha_MDU_6917 Military Ave Apartments,Units__c,,12,
+006WR00001FkWTcYAN,Bridgeport_MDU_Cobb Ave MHP,Units__c,,23,
+006WR00001FkXpTYAV,Fort Worth_MDU_Western Station,Units__c,,202,
+006WR00001Fkd8WYAR,KILLEEN_MDU_1706_N_2ND_ST,Units__c,,7,
+006WR00001FkdmpYAB,Killeen_MDU_810 W Avenue D,Units__c,,6,
+006WR00001Fkxf4YAB,Killeen_MDU_Hallmark Ave Apts,Units__c,,20,
+006WR00001Fl7pnYAB,Bridgeport_MDU_Bridgeport MHP,Units__c,,11,
+006WR00001Fl90KYAR,Omaha_MDU_Indian Hills Village Court,Units__c,,12,
+006WR00001FlCFuYAN,Killeen_MDU_1318 18th St,Units__c,,9,
+006WR00001FlPHzYAN,Killeen_MDU_4707 Westcliff,Units__c,,16,
+006WR00001FlRjaYAF,Omaha_MDU_Omaha Housing Authority Benson Tower,Units__c,,145,
+006WR00001FlY9yYAF,Omaha_MDU_4920 Capital Ave,Units__c,,7,
+006WR00001FloEkYAJ,KILLEEN_MDU_2103_MLK_JR_BLVD apts,Units__c,,16,
+006WR00001FlooFYAR,JARRELL_MDU_Jarrell_Mobile_Homes,Units__c,,8,
+006WR00001FlqTVYAZ,Killeen_MDU_1015-1017 14th St,Units__c,,10,
+006WR00001FluYgYAJ,Killeen_MDU_Windchase Apartments,Units__c,,93,
+006WR00001FlycHYAR,Killeen_MDU_1800-1802 N 4th St,Units__c,,8,
+006WR00001Fm1FBYAZ,Taylor_MDU_117 E 7th St,Units__c,,9,

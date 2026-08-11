@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>CAT1 Opportunities by RE Owner</name>
+    <reportType>Opportunity</reportType>
+    <format>Summary</format>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+
+    <columns><field>OPPORTUNITY_NAME</field></columns>
+    <columns><field>Opportunity.Property_State__c</field></columns>
+    <columns>
+        <field>Opportunity.Units__c</field>
+        <aggregateTypes>Sum</aggregateTypes>
+    </columns>
+    <columns><field>Opportunity.Loss_Reason__c</field></columns>
+    <columns><field>Opportunity.Hold_Reason__c</field></columns>
+    <columns><field>Opportunity.RE_Assigned__c</field></columns>
+
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Property_Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Cat 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.MDU</value>
+        </criteriaItems>
+    </filter>
+
+    <params><name>open</name><value>all</value></params>
+
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

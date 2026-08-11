@@ -1,0 +1,61 @@
+SF_Id,Name,Action,Field,Before,After,Source,Result,Timestamp
+006WR00000wkEaQYAU,Woodland Trio The Oaks,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:41.026690
+006WR00000wkEaQYAU,Woodland Trio The Oaks,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:41.451974
+006WR00000wkEaRYAU,Baldwin Manor,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:41.909037
+006WR00000wkEaRYAU,Baldwin Manor,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:42.304747
+006WR00000wkEaSYAU,White Oak Terrace,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:42.746177
+006WR00000wkEaSYAU,White Oak Terrace,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:43.149894
+006WR00000wkEaTYAU,Bali Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:43.652580
+006WR00000wkEaTYAU,Bali Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:44.025126
+006WR00000wkEaUYAU,Corbett Avenue Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:44.466462
+006WR00000wkEaUYAU,Corbett Avenue Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:44.896767
+006WR00000wkEaVYAU,Chatsworth Plaza,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:45.284876
+006WR00000wkEaVYAU,Chatsworth Plaza,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:45.701525
+006WR00000wkEaWYAU,John Manor,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:46.169438
+006WR00000wkEaWYAU,John Manor,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:46.540144
+006WR00000wkEaXYAU,Casa Linda,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:47.058290
+006WR00000wkEaXYAU,Casa Linda,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:47.415431
+006WR00000wkEaYYAU,Windsor Manor,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:47.832432
+006WR00000wkEaYYAU,Windsor Manor,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:48.230954
+006WR00000wkEaZYAU,Coliseum Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:48.876155
+006WR00000wkEaZYAU,Coliseum Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:49.273231
+006WR00000wkEaaYAE,Colonial Manor Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:49.624398
+006WR00000wkEaaYAE,Colonial Manor Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:49.989601
+006WR00000wkEabYAE,San Vicente Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:50.427866
+006WR00000wkEabYAE,San Vicente Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:50.834599
+006WR00000wkEacYAE,St. Andrews Manor,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:51.304439
+006WR00000wkEacYAE,St. Andrews Manor,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:51.696929
+006WR00000wkEadYAE,Krystal Terrace,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:52.151688
+006WR00000wkEadYAE,Krystal Terrace,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:52.473865
+006WR00000wkEaeYAE,Parkway Terrace,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:52.928335
+006WR00000wkEaeYAE,Parkway Terrace,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:53.277622
+006WR00000wkEafYAE,Kling Trio Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:53.706875
+006WR00000wkEafYAE,Kling Trio Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:53.972629
+006WR00000wkEagYAE,Jaclyn Terrace,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:54.467118
+006WR00000wkEagYAE,Jaclyn Terrace,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:54.794579
+006WR00000wkEahYAE,Brody Terrace (Riverside),REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:55.255744
+006WR00000wkEahYAE,Brody Terrace (Riverside),SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:55.641786
+006WR00000wkEaiYAE,Parkview Terrace,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:56.133345
+006WR00000wkEaiYAE,Parkview Terrace,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:56.480558
+006WR00000wkEajYAE,Roxanne Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:56.937322
+006WR00000wkEajYAE,Roxanne Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:57.323176
+006WR00000wkEakYAE,Riverside Villa Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:57.827433
+006WR00000wkEakYAE,Riverside Villa Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:58.143762
+006WR00000wkEalYAE,The Banyans,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:58.576303
+006WR00000wkEalYAE,The Banyans,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:58.928215
+006WR00000wkEamYAE,Topanga Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:59.337464
+006WR00000wkEamYAE,Topanga Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:47:59.751434
+006WR00000wkEanYAE,Topanga Terrace,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:00.225101
+006WR00000wkEanYAE,Topanga Terrace,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:00.582894
+006WR00000wkEaoYAE,Vista Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:00.982999
+006WR00000wkEaoYAE,Vista Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:01.389614
+006WR00000wkEapYAE,The Palms,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:01.969424
+006WR00000wkEapYAE,The Palms,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:02.334181
+006WR00000wkEbIYAU,First Casa De Marina,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:02.707251
+006WR00000wkEbIYAU,First Casa De Marina,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:03.033131
+006WR00000wkEbJYAU,Lombardi Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:03.502699
+006WR00000wkEbJYAU,Lombardi Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:03.794398
+006WR00000wkEbKYAU,The Meadows at Westlake Village,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:04.192431
+006WR00000wkEbKYAU,The Meadows at Westlake Village,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:04.555084
+006WR00000wkEbLYAU,Brookside Terrace Apartments,REASSIGN_OWNER,OwnerId,005WR00000CXEZyYAP,005WR00000Ewjj3YAB,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:04.944278
+006WR00000wkEbLYAU,Brookside Terrace Apartments,SET_ACCOUNT,AccountId,(blank),001WR00001SPM7zYAH,Cleanup need Ironclad IDs - Taylor's Notes 6.10.26.xlsx (reassign+account),ok,2026-06-11T08:48:05.306620

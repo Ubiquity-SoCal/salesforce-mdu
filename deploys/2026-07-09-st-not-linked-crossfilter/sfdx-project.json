@@ -1,0 +1,1 @@
+{ "packageDirectories": [{ "path": "force-app", "default": true }], "name": "st-not-linked-crossfilter", "namespace": "", "sfdcLoginUrl": "https://login.salesforce.com", "sourceApiVersion": "61.0" }

@@ -1,0 +1,66 @@
+SF_Id,Agreement_Name,Action,Before,After,Opp,Source,Result,Timestamp
+a0BWR000008WSxR2AW,AGR-1473,RETYPE_PAL_TO_ROE,PAL,ROE,Pacifica HOA,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039033
+a0BWR0000083yEL2AY,AGR-0236,RETYPE_PAL_TO_ROE,PAL,ROE,Birchwood Apts,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039053
+a0BWR000008HuFh2AK,AGR-1394,RETYPE_PAL_TO_ROE,PAL,ROE,Hacienda de la Playa HOA,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039063
+a0BWR000008HuXR2A0,AGR-1405,RETYPE_PAL_TO_ROE,PAL,ROE,Island View - Private Road,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039071
+a0BWR000008HrZa2AK,AGR-1408,RETYPE_PAL_TO_ROE,PAL,ROE,"247-263 HWY 101 Solana Beach, CA",Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039079
+a0BWR000008Hpch2AC,AGR-1412,RETYPE_PAL_TO_ROE,PAL,ROE,876 Bonita Drive,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039087
+a0BWR000008Huh72AC,AGR-1413,RETYPE_PAL_TO_ROE,PAL,ROE,915-919 Neptune Ave,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039094
+a0BWR000008Huij2AC,AGR-1414,RETYPE_PAL_TO_ROE,PAL,ROE,1471 Rubenstein,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039101
+a0BWR0000083yDN2AY,AGR-0176,DELETE_PAL,PAL/Completed,(deleted),Clay Gardens Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039113
+a0BWR0000083yDO2AY,AGR-0177,DELETE_PAL,PAL/Completed,(deleted),Laguna Knolls Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039122
+a0BWR0000083yDP2AY,AGR-0178,DELETE_PAL,PAL/Completed,(deleted),Park West Townhouses,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039131
+a0BWR0000083yDQ2AY,AGR-0179,DELETE_PAL,PAL/Completed,(deleted),Lachen Tara Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039139
+a0BWR0000083yDR2AY,AGR-0180,DELETE_PAL,PAL/Completed,(deleted),Villas at Higuera,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039147
+a0BWR0000083yDS2AY,AGR-0181,DELETE_PAL,PAL/Completed,(deleted),Quail Ridge Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039155
+a0BWR0000083yDU2AY,AGR-0183,DELETE_PAL,PAL/Completed,(deleted),Hidden Oaks,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039162
+a0BWR0000083yDV2AY,AGR-0184,DELETE_PAL,PAL/Completed,(deleted),Cloverdale Garden,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039170
+a0BWR0000083yDW2AY,AGR-0185,DELETE_PAL,PAL/Completed,(deleted),Corning Apts,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039178
+a0BWR0000083yDX2AY,AGR-0186,DELETE_PAL,PAL/Completed,(deleted),Maywood Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039185
+a0BWR0000083yDY2AY,AGR-0187,DELETE_PAL,PAL/Completed,(deleted),Bardsley Garden,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039193
+a0BWR0000083yDZ2AY,AGR-0188,DELETE_PAL,PAL/Completed,(deleted),Willows Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039201
+a0BWR0000083yDa2AI,AGR-0189,DELETE_PAL,PAL/Completed,(deleted),Marisol Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039208
+a0BWR0000083yDb2AI,AGR-0190,DELETE_PAL,PAL/Completed,(deleted),Shoreline Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039216
+a0BWR0000083yDc2AI,AGR-0191,DELETE_PAL,PAL/Completed,(deleted),Three Crown Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039223
+a0BWR0000083yDd2AI,AGR-0192,DELETE_PAL,PAL/Completed,(deleted),Pinecrest Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039231
+a0BWR0000083yDe2AI,AGR-0193,DELETE_PAL,PAL/Completed,(deleted),D Street Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039239
+a0BWR0000083yDf2AI,AGR-0194,DELETE_PAL,PAL/Completed,(deleted),Redwood Highway Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039246
+a0BWR0000083yDg2AI,AGR-0195,DELETE_PAL,PAL/Completed,(deleted),La Brea Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039254
+a0BWR0000083yDh2AI,AGR-0196,DELETE_PAL,PAL/Completed,(deleted),College Park,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039262
+a0BWR0000083yDi2AI,AGR-0197,DELETE_PAL,PAL/Completed,(deleted),The Ridge,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039269
+a0BWR0000083yDj2AI,AGR-0198,DELETE_PAL,PAL/Completed,(deleted),Persimmon Terrace Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039277
+a0BWR0000083yDk2AI,AGR-0199,DELETE_PAL,PAL/Completed,(deleted),Vista Torre,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039285
+a0BWR0000083yDm2AI,AGR-0201,DELETE_PAL,PAL/Completed,(deleted),Tuscana Townhomes,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039292
+a0BWR0000083yDn2AI,AGR-0202,DELETE_PAL,PAL/Completed,(deleted),Moonlight,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039300
+a0BWR0000083yDo2AI,AGR-0203,DELETE_PAL,PAL/Completed,(deleted),Porvenir Estates II,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039308
+a0BWR0000083yDp2AI,AGR-0204,DELETE_PAL,PAL/Completed,(deleted),Porvenir Estates I,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039315
+a0BWR0000083yDq2AI,AGR-0205,DELETE_PAL,PAL/Completed,(deleted),Huron Plaza,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039323
+a0BWR0000083yDr2AI,AGR-0206,DELETE_PAL,PAL/Completed,(deleted),Niland,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039330
+a0BWR0000083yDs2AI,AGR-0207,DELETE_PAL,PAL/Completed,(deleted),Placer West,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039337
+a0BWR0000083yDt2AI,AGR-0208,DELETE_PAL,PAL/Completed,(deleted),The Shadows Garden Apts,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039345
+a0BWR0000083yDu2AI,AGR-0209,DELETE_PAL,PAL/Completed,(deleted),Harvard,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039353
+a0BWR0000083yDv2AI,AGR-0210,DELETE_PAL,PAL/Completed,(deleted),12th & D Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039360
+a0BWR0000083yDw2AI,AGR-0211,DELETE_PAL,PAL/Completed,(deleted),Creekside Colony Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039368
+a0BWR0000083yDx2AI,AGR-0212,DELETE_PAL,PAL/Completed,(deleted),Park on Riley,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039376
+a0BWR0000083yDy2AI,AGR-0213,DELETE_PAL,PAL/Completed,(deleted),Sierra Oaks Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039383
+a0BWR0000083yE02AI,AGR-0215,DELETE_PAL,PAL/Completed,(deleted),Katy Creek,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039391
+a0BWR0000083yE12AI,AGR-0216,DELETE_PAL,PAL/Completed,(deleted),Breckenridge Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039398
+a0BWR0000083yE22AI,AGR-0217,DELETE_PAL,PAL/Completed,(deleted),Crestmoor Park South,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039406
+a0BWR0000083yE32AI,AGR-0218,DELETE_PAL,PAL/Completed,(deleted),Crestmoor Park West,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039414
+a0BWR0000083yE42AI,AGR-0219,DELETE_PAL,PAL/Completed,(deleted),Comanche Retirement Village,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039429
+a0BWR0000083yE52AI,AGR-0220,DELETE_PAL,PAL/Completed,(deleted),Dekalb Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039437
+a0BWR0000083yE62AI,AGR-0221,DELETE_PAL,PAL/Completed,(deleted),Colony Park Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039445
+a0BWR0000083yE72AI,AGR-0222,DELETE_PAL,PAL/Completed,(deleted),Camelot Square Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039453
+a0BWR0000083yE82AI,AGR-0223,DELETE_PAL,PAL/Completed,(deleted),Somervell Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039460
+a0BWR0000083yE92AI,AGR-0224,DELETE_PAL,PAL/Completed,(deleted),Glen Rose Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039468
+a0BWR0000083yEA2AY,AGR-0225,DELETE_PAL,PAL/Completed,(deleted),Emerald RV,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039475
+a0BWR0000083yEB2AY,AGR-0226,DELETE_PAL,PAL/Completed,(deleted),Allen's Point Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039483
+a0BWR0000083yED2AY,AGR-0228,DELETE_PAL,PAL/Completed,(deleted),Kaufman Retirement Village (fka Cedar Ridge),Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039491
+a0BWR0000083yEE2AY,AGR-0229,DELETE_PAL,PAL/Completed,(deleted),Commonwealth I,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039499
+a0BWR0000083yEF2AY,AGR-0230,DELETE_PAL,PAL/Completed,(deleted),Regal Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039507
+a0BWR0000083yEG2AY,AGR-0231,DELETE_PAL,PAL/Completed,(deleted),Waterwood Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039514
+a0BWR0000083yEH2AY,AGR-0232,DELETE_PAL,PAL/Completed,(deleted),Venus Retirement Village,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039522
+a0BWR0000083yEI2AY,AGR-0233,DELETE_PAL,PAL/Completed,(deleted),Whitney Place Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039530
+a0BWR0000083yEJ2AY,AGR-0234,DELETE_PAL,PAL/Completed,(deleted),Whitney Retirement Village,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039537
+a0BWR0000083yGR2AY,AGR-0366,DELETE_PAL,PAL/Completed,(deleted),Cedar Nettleton Apartments,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039546
+a0BWR0000083yJL2AY,AGR-0446,DELETE_PAL,PAL/Completed,(deleted),Haley Ranch Estates,Cleanup need Ironclad IDs - Taylor's Notes 6.5.26.xlsx,preview,2026-06-05T14:06:51.039554

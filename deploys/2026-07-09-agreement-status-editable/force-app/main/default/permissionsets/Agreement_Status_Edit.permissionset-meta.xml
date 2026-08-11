@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Agreement Status Edit</label>
+    <description>Edit on Agreement.Status so the MDU team can clear the Stale EMA/Bulk cleanup tile themselves. Guarded by Lock_Status_When_IronClad_Linked and Restrict_Status_Edits_Non_Admin. Created 2026-07-09. Reversible: unassign or delete this permission set.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Agreement__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
