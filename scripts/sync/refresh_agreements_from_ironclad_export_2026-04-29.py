@@ -34,7 +34,7 @@ USERNAME = _SF["username"]
 PASSWORD = _SF["password"]
 SECURITY_TOKEN = _SF["token"]
 
-EXPORT = Path("C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-08-04_155318_all.xlsx")
+EXPORT = Path("C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-08-18_153235_all.xlsx")
 SOURCE_LABEL = EXPORT.stem  # audit-log provenance; derives from the export filename so it never goes stale
 LOG_DIR = Path("C:/Users/cass/Work_Projects/SalesForce/data/output/audit_logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -76,6 +76,11 @@ def load_export():
             "executed_date": g(row, "Executed Date"),
             "effective_date": g(row, "Effective Date"),
             "workflow_completed_date": g(row, "Workflow Completed Date"),
+            # Execution evidence. Verified across the full 2026-08-12 export (1,869 rows):
+            # populated on 100% of completed (377/377) AND 100% of archive (6/6), and on
+            # 0% of sign (0/61), review (0/43), paused (0/6), cancelled (0/196). It is the
+            # only column that cleanly separates "signature done" from "not done".
+            "sign_step_completed_date": g(row, "Workflow Sign Step Completed Date"),
             "agreement_date": g(row, "Agreement Date"),  # set even on evergreen/repository docs
             "expiration_date": g(row, "Expiration Date"),
             "agreename": g(row, "AgreeName"),
@@ -172,18 +177,32 @@ def main():
         # for PALs it equals Effective Date, for ROEs Effective is often left blank). Executed
         # Date is NOT reliable -- it can show a date on agreements that were never actually
         # executed -- so it's no longer used.
-        # A signed date belongs ONLY on an executed (Completed) agreement (Koa, 2026-06-12):
-        # in the export, Completed carry a Workflow Completed Date while Cancelled do not, so a
-        # date on a non-Completed row is just the doc/Agreement Date, never proof of execution.
-        # Enforcement extended 2026-06-22 (Koa, "IronClad is the dataset"): on a non-Completed
-        # agreement we now CLEAR a stale signed date, not just skip it. Guarded on the absence of
-        # a Workflow Completed Date so an executed-then-archived agreement (which keeps its
-        # completed date) is never wrongly cleared.
+        # A signed date belongs ONLY on an executed agreement (Koa, 2026-06-12), and on
+        # 2026-06-22 ("IronClad is the dataset") that became a CLEAR on the unexecuted rather
+        # than a skip. Both rules stand. What changed 2026-08-12 is the TEST for "executed".
+        #
+        # It used to be `status == Completed`, guarded on Workflow Completed Date so that "an
+        # executed-then-archived agreement (which keeps its completed date) is never wrongly
+        # cleared". The 2026-08-12 export shows that rationale was wrong twice over:
+        #   1. archive rows carry NO Workflow Completed Date (0 of 6), so the guard could never
+        #      fire for the one case it was written to protect -- it would have cleared them.
+        #   2. Completed -> Archive has never happened. Across every agr_refresh audit log the
+        #      only transitions are Sign -> Archive (14), Review -> Archive (2) and
+        #      Archive -> Completed (2). archive is a PRE-completion waypoint (signed, awaiting
+        #      Legal's filing), not a post-completion resting state. IC-4199 The Wakeley Pointe
+        #      made the archive -> completed hop between the 8/4 and 8/12 exports.
+        #
+        # So archive IS executed: sign step done, Agreement Date == Executed Date == Sign Step
+        # Completed Date on all 6. Test execution with the sign-step date instead, which covers
+        # completed + archive and excludes everything else (see parse note above). This also
+        # still clears correctly on a reverted workflow -- Completed -> Sign (2) and
+        # Completed -> Cancelled (3) both drop the sign-step date.
+        executed = bool(e.get("sign_step_completed_date"))
         target_signed = fmt_date(e.get("agreement_date")) or fmt_date(e.get("effective_date"))
         clear_signed = False
-        if target_status != "Completed":
+        if not executed:
             target_signed = None
-            if cur_signed and not e.get("workflow_completed_date"):
+            if cur_signed:
                 clear_signed = True
 
         # Expiration Date (Koa, 2026-06-15): IronClad authoritative, surfaced onto the
