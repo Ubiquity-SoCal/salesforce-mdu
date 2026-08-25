@@ -32,6 +32,12 @@ public with sharing class OutreachClaim {
             ));
         }
 
+        // Readability only. This guard has NO externally observable effect and cannot be
+        // covered by a test: measured against the org 2026-08-25, Database.insert on an empty
+        // list consumes zero DML statements and creates zero rows, so deleting this line
+        // changes nothing a caller or a test could detect. Kept because it states the intent
+        // plainly. Do not write a test claiming to cover it; three separate attempts to do so
+        // produced assertions that could not fail.
         if (toInsert.isEmpty()) {
             return out;
         }

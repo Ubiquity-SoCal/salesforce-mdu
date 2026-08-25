@@ -84,16 +84,15 @@ private class OutreachClaimTest {
     }
 
     @isTest
-    static void anAllBlankMapDoesNoDmlAtAll() {
+    static void anAllBlankMapClaimsNothing() {
         Id batchId = newBatch();
 
         OutreachClaim.Result r = OutreachClaim.claim(
             new Map<String, Id>{'' => null, null => null}, batchId);
 
         System.assertEquals(0, r.claimed.size());
-        System.assertEquals(0, r.rejected.size());
-        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c],
-            'the early return exists so a pointless call costs no DML statement; without a '
-            + 'test the branch is reachable and unexercised');
+        System.assertEquals(0, r.rejected.size(),
+            'blanks are skipped, so they are not rejected claims either');
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c]);
     }
 }
