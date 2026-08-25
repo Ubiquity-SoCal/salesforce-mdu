@@ -1,8 +1,14 @@
 /**
  * Turns a selection into a confirmed batch: claim, group, render, freeze.
  *
- * Ordering matters. Claiming happens first, so a recipient another batch already holds is
- * refused before any work is spent rendering for them.
+ * Ordering matters, and the safety argument runs the OPPOSITE direction from an earlier
+ * version of this class. Render happens first and claim happens second, because a claim is
+ * permanent under the never-re-mail rule: a group that fails to render must never have been
+ * claimed, or that person becomes uncontactable forever over a data quality problem (for
+ * example a blank first name) that has nothing to do with whether they should be contacted.
+ * Rendering is pure string building with no DML, so the only cost of rendering everything
+ * first is wasted work on groups that turn out to already be claimed by someone else. That is
+ * a trivial price for making the permanent step the LAST thing that can go wrong.
  */
 public with sharing class OutreachConfirm {
 
@@ -17,18 +23,20 @@ public with sharing class OutreachConfirm {
         public List<String> refusals = new List<String>();
     }
 
-    // Outreach_Setting__mdt does not exist in this org. Attempted as specified: the object
-    // and its two fields validate cleanly on their own (proven with an isolated dry-run,
-    // numberComponentsDeployed 3, success true), but deploying the Default record alongside
-    // the brand new type in the same validate-only deploy fails every time with a platform
-    // UNKNOWN_EXCEPTION (error code -315522575, reproduced identically across two attempts,
-    // including one deliberate XML correction moving the xsi namespace declaration from each
-    // <value> tag up to the <CustomMetadata> root). That is a checkOnly-specific platform
-    // limitation on a first-time type-plus-record deploy, not a malformed file, but the net
-    // effect is the same one the brief warned about: it blocks the rest of this task. Per the
-    // brief's escape hatch, the custom metadata type and its record were deleted and these two
-    // values are literal until the project deploys for real instead of validation-only, at
-    // which point they belong on Outreach_Setting__mdt.getInstance('Default') again.
+    // Outreach_Setting__mdt does not exist in this org. Attempted as specified in an earlier
+    // round: the object and its two fields validate cleanly on their own (proven with an
+    // isolated dry-run, numberComponentsDeployed 3, success true), but deploying the Default
+    // record alongside the brand new type in the same validate-only deploy fails every time
+    // with a platform UNKNOWN_EXCEPTION (error code -315522575, reproduced identically across
+    // two attempts, including one deliberate XML correction moving the xsi namespace
+    // declaration from each <value> tag up to the <CustomMetadata> root). That is a
+    // checkOnly-specific platform limitation on a first-time type-plus-record deploy, not a
+    // malformed file, but the net effect is the same one the brief warned about: it blocks the
+    // rest of this task. Per the brief's escape hatch, the custom metadata type and its record
+    // were deleted and these two values are literal until the project deploys for real instead
+    // of validation-only, at which point they belong on
+    // Outreach_Setting__mdt.getInstance('Default') again. Confirmed with the reviewer this
+    // round: the escape hatch stays; do not restore the type.
     private static final Integer PER_REP_DAILY_CAP = 40;
     private static final Integer ORG_DAILY_CAP = 100;
 
@@ -62,20 +70,55 @@ public with sharing class OutreachConfirm {
             Meeting_Day_1__c = days[0],
             Meeting_Day_2__c = days[1],
             Confirmed_At__c = System.now());
-        insert batch;
-        out.batchId = batch.Id;
-
-        applyChosenContacts(groups, chosenContactByKey);
-
-        Map<String, Id> keyToContact = new Map<String, Id>();
-        for (OutreachGrouper.RecipientGroup g : groups) {
-            keyToContact.put(g.emailKey, g.contactId);
-        }
-        OutreachClaim.Result claim = OutreachClaim.claim(keyToContact, batch.Id);
-        out.rejectedKeys = claim.rejected;
+        applyChosenContacts(groups, chosenContactByKey, out);
 
         EmailTemplate tpl = [SELECT Subject, HtmlValue FROM EmailTemplate
                              WHERE DeveloperName = :templateDeveloperName LIMIT 1];
+
+        // RENDER BEFORE CLAIMING. This ordering is the safety argument of the whole method.
+        //
+        // A claim is permanent: the never-re-mail rule means an Outreach_Recipient__c row can
+        // never be released, so claiming first and rendering second means a group that fails to
+        // render has already burned a real person's only chance of ever being contacted. Nobody
+        // notices, because the outcome is a person who quietly never receives anything.
+        //
+        // That is not hypothetical. A Contact with a blank FirstName leaves [First Name]
+        // unfilled and the renderer refuses the message, and 24 Omaha contacts have no first
+        // name today. Losing one of them permanently over a missing first name, a data quality
+        // problem with nothing to do with whether they should be contacted, is the worst
+        // outcome this system can produce.
+        //
+        // Rendering is pure string building with no DML and no SOQL, so the only cost of doing
+        // it first is wasted work on groups that turn out to be already claimed. That is a
+        // trivial price for making the permanent step the LAST thing that can go wrong.
+        Map<String, OutreachRenderer.Rendered> renderedByKey =
+            new Map<String, OutreachRenderer.Rendered>();
+        for (OutreachGrouper.RecipientGroup g : groups) {
+            try {
+                renderedByKey.put(g.emailKey,
+                    OutreachRenderer.render(g, sender, days, tpl.Subject, tpl.HtmlValue));
+            } catch (OutreachRenderer.UnfilledTokenException e) {
+                out.refusals.add(g.toAddress + ': ' + e.getMessage());
+            }
+        }
+
+        if (renderedByKey.isEmpty()) {
+            // Nothing rendered, so there is nothing to claim and no batch worth creating.
+            return out;
+        }
+
+        insert batch;
+        out.batchId = batch.Id;
+
+        // Claim ONLY the groups that actually rendered.
+        Map<String, Id> keyToContact = new Map<String, Id>();
+        for (OutreachGrouper.RecipientGroup g : groups) {
+            if (renderedByKey.containsKey(g.emailKey)) {
+                keyToContact.put(g.emailKey, g.contactId);
+            }
+        }
+        OutreachClaim.Result claim = OutreachClaim.claim(keyToContact, batch.Id);
+        out.rejectedKeys = claim.rejected;
 
         List<Outreach_Message__c> messages = new List<Outreach_Message__c>();
         List<OutreachGrouper.RecipientGroup> rendered = new List<OutreachGrouper.RecipientGroup>();
@@ -84,21 +127,16 @@ public with sharing class OutreachConfirm {
             if (!claim.claimed.containsKey(g.emailKey)) {
                 continue;
             }
-            try {
-                OutreachRenderer.Rendered r =
-                    OutreachRenderer.render(g, sender, days, tpl.Subject, tpl.HtmlValue);
-                messages.add(new Outreach_Message__c(
-                    Batch__c = batch.Id,
-                    Recipient__c = claim.claimed.get(g.emailKey),
-                    Contact__c = g.contactId,
-                    To_Address__c = g.toAddress,
-                    Subject__c = r.subject,
-                    Body_Html__c = r.bodyHtml,
-                    Status__c = 'Queued'));
-                rendered.add(g);
-            } catch (OutreachRenderer.UnfilledTokenException e) {
-                out.refusals.add(g.toAddress + ': ' + e.getMessage());
-            }
+            OutreachRenderer.Rendered r = renderedByKey.get(g.emailKey);
+            messages.add(new Outreach_Message__c(
+                Batch__c = batch.Id,
+                Recipient__c = claim.claimed.get(g.emailKey),
+                Contact__c = g.contactId,
+                To_Address__c = g.toAddress,
+                Subject__c = r.subject,
+                Body_Html__c = r.bodyHtml,
+                Status__c = 'Queued'));
+            rendered.add(g);
         }
 
         insert messages;
@@ -129,7 +167,8 @@ public with sharing class OutreachConfirm {
      * grouper does not track.
      */
     private static void applyChosenContacts(List<OutreachGrouper.RecipientGroup> groups,
-                                            Map<String, Id> chosenContactByKey) {
+                                            Map<String, Id> chosenContactByKey,
+                                            Outcome out) {
         if (chosenContactByKey == null || chosenContactByKey.isEmpty()) {
             return;
         }
@@ -145,17 +184,33 @@ public with sharing class OutreachConfirm {
         }
 
         Map<Id, Contact> chosenContacts = new Map<Id, Contact>(
-            [SELECT Id, FirstName FROM Contact WHERE Id IN :chosenIds]);
+            [SELECT Id, FirstName, Email FROM Contact WHERE Id IN :chosenIds]);
 
         for (OutreachGrouper.RecipientGroup g : groups) {
             if (!chosenContactByKey.containsKey(g.emailKey)) {
                 continue;
             }
             Contact c = chosenContacts.get(chosenContactByKey.get(g.emailKey));
-            if (c != null) {
-                g.contactId = c.Id;
-                g.firstName = c.FirstName;
+
+            if (c == null) {
+                // Silently falling back would tell the rep their choice took when it did not.
+                out.refusals.add(g.toAddress + ': the chosen contact could not be found, so the '
+                    + 'default was used instead');
+                continue;
             }
+
+            // A picker chooses WHO is greeted, never WHERE the mail goes. Every candidate the
+            // UI offers shares this mailbox by construction, so a chosen contact that does not
+            // is either a stale id or a caller that is not the picker. Refuse it rather than
+            // quietly addressing one person's message to another person's inbox.
+            if (OutreachEmailKey.normalise(c.Email) != g.emailKey) {
+                out.refusals.add(g.toAddress + ': the chosen contact does not share this '
+                    + 'address, so the default was used instead');
+                continue;
+            }
+
+            g.contactId = c.Id;
+            g.firstName = c.FirstName;
         }
     }
 

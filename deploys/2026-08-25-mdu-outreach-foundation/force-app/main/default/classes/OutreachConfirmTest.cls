@@ -164,6 +164,103 @@ private class OutreachConfirmTest {
     }
 
     @isTest
+    static void aGroupThatCannotRenderIsNeverClaimed() {
+        // The Critical finding from review. A contact with no first name leaves [First Name]
+        // unfilled and the renderer refuses. If the claim had already happened, that person is
+        // permanently uncontactable under the never-re-mail rule, invisibly, over a data
+        // quality problem unrelated to whether they should be contacted. 24 Omaha contacts
+        // have no first name today.
+        Contact nameless = OutreachTestData.contact(null, 'Nameless', 'nameless@example.com');
+        Opportunity o = OutreachTestData.opportunity('Nameless Owner Property', 70, nameless);
+
+        OutreachConfirm.Outcome result;
+        Test.startTest();
+        System.runAs(sender()) {
+            result = OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL);
+        }
+        Test.stopTest();
+
+        System.assertEquals(0, result.messageCount);
+        System.assertEquals(1, result.refusals.size(), 'the refusal is reported, not swallowed');
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c],
+            'a person we could not render for must NEVER be claimed. The claim is permanent, so '
+            + 'claiming first would make them uncontactable forever over a missing first name');
+    }
+
+    @isTest
+    static void oneUnrenderableGroupDoesNotBlockTheRest() {
+        Contact good = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Contact nameless = OutreachTestData.contact(null, 'Nameless', 'nameless@example.com');
+        Opportunity ok = OutreachTestData.opportunity('Camelot Village', 485, good);
+        Opportunity bad = OutreachTestData.opportunity('Nameless Owner Property', 70, nameless);
+
+        OutreachConfirm.Outcome result;
+        Test.startTest();
+        System.runAs(sender()) {
+            result = OutreachConfirm.confirm(new Set<Id>{ok.Id, bad.Id}, TPL);
+        }
+        Test.stopTest();
+
+        System.assertEquals(1, result.messageCount, 'the renderable one still sends');
+        System.assertEquals(1, result.refusals.size());
+        System.assertEquals(1, [SELECT COUNT() FROM Outreach_Recipient__c],
+            'exactly one claim: the renderable recipient, never the refused one');
+    }
+
+    @isTest
+    static void theThrottleStopsARunBeforeAnythingIsClaimed() {
+        // The reviewer found enforceThrottle had no test at all, so the cap value was
+        // unverified AND a regression moving it after the claim would go unnoticed. That is
+        // the dangerous direction: claims burned on a batch then thrown out for exceeding cap.
+        List<Id> ids = new List<Id>();
+        for (Integer i = 0; i < 41; i++) {
+            Contact c = OutreachTestData.contact('Owner' + i, 'Surname' + i,
+                                                 'cap' + i + '@example.com');
+            ids.add(OutreachTestData.opportunity('Cap Property ' + i, 10, c).Id);
+        }
+
+        Boolean threw = false;
+        Test.startTest();
+        System.runAs(sender()) {
+            try {
+                OutreachConfirm.confirm(new Set<Id>(ids), TPL);
+            } catch (OutreachConfirm.ThrottleException e) {
+                threw = true;
+                System.assert(e.getMessage().contains('40'),
+                    'the rep must see the actual cap: ' + e.getMessage());
+            }
+        }
+        Test.stopTest();
+
+        System.assertEquals(true, threw, 'the per-rep cap is the control that replaces an approver');
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c],
+            'and it must fire before any claim, not after');
+    }
+
+    @isTest
+    static void aChosenContactFromAnotherMailboxIsRefusedNotApplied() {
+        Contact owner = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Contact stranger = OutreachTestData.contact('Someone', 'Else', 'someone@different.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, owner);
+
+        OutreachConfirm.Outcome result;
+        Test.startTest();
+        System.runAs(sender()) {
+            result = OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL,
+                new Map<String, Id>{'mhardy@elevateliving.com' => stranger.Id});
+        }
+        Test.stopTest();
+
+        System.assertEquals(1, result.messageCount);
+        Outreach_Message__c m = [SELECT Contact__c, Body_Html__c FROM Outreach_Message__c LIMIT 1];
+        System.assertEquals(owner.Id, m.Contact__c,
+            'a picker chooses who is greeted, never where the mail goes; an override that does '
+            + 'not share the mailbox must be refused rather than quietly applied');
+        System.assert(m.Body_Html__c.contains('Hello Michelle,'));
+        System.assertEquals(1, result.refusals.size(), 'and the rep is told their choice did not take');
+    }
+
+    @isTest
     static void propertiesWithNoContactAreReportedNotSilentlyDropped() {
         Opportunity orphan = OutreachTestData.opportunity('Orphan Property', 50);
 
