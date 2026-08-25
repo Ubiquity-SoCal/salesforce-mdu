@@ -41,8 +41,48 @@ private class OutreachEmailKeyTest {
     }
 
     @isTest
-    static void usesTheLastAtSign() {
-        System.assertEquals('a@b@example.com'.substringAfterLast('@'), 'example.com');
-        System.assertEquals('a@b@example.com', OutreachEmailKey.normalise('A@B@Example.com'));
+    static void usesTheLastAtSignInAWayThatWouldFailIfItUsedTheFirst() {
+        // Chosen so the two readings diverge observably. Splitting at the LAST @ gives
+        // local 'a.b@x' and domain 'gmail.com', so dot folding fires and the dot goes.
+        // Splitting at the FIRST @ gives domain 'x@gmail.com', which is not in
+        // DOTLESS_DOMAINS, so the dot survives. A plain equality on 'a@b@example.com'
+        // cannot tell these apart, which is why the earlier version of this test passed
+        // under a knowingly broken implementation.
+        System.assertEquals('ab@x@gmail.com', OutreachEmailKey.normalise('a.b@x@gmail.com'));
+    }
+
+    @isTest
+    static void whitespaceBesideTheAtSignDoesNotCreateASecondKey() {
+        String canonical = OutreachEmailKey.normalise('owner@example.com');
+        System.assertEquals(canonical, OutreachEmailKey.normalise('owner @example.com'));
+        System.assertEquals(canonical, OutreachEmailKey.normalise('owner@ example.com'));
+        System.assertEquals(canonical, OutreachEmailKey.normalise('own er@exam ple.com'),
+            'one person with a stray space must never become two recipients');
+    }
+
+    @isTest
+    static void whitespaceDoesNotSilentlyDisableDotFolding() {
+        System.assertEquals('johnsmith@gmail.com',
+            OutreachEmailKey.normalise('john.smith@ gmail.com'),
+            'a space before the domain must not stop it matching DOTLESS_DOMAINS');
+    }
+
+    @isTest
+    static void plusTagAndDotFoldingApplyTogetherOnGmail() {
+        System.assertEquals('johndoe@gmail.com',
+            OutreachEmailKey.normalise('john.doe+work@gmail.com'));
+    }
+
+    @isTest
+    static void anUppercaseGmailDomainStillFolds() {
+        System.assertEquals('johnsmith@gmail.com',
+            OutreachEmailKey.normalise('John.Smith@GMAIL.COM'));
+    }
+
+    @isTest
+    static void aDomainWithNoDotIsRejected() {
+        System.assertEquals(null, OutreachEmailKey.normalise('owner@localhost'));
+        System.assertEquals(null, OutreachEmailKey.normalise('owner@.com'));
+        System.assertEquals(null, OutreachEmailKey.normalise('owner@example.'));
     }
 }

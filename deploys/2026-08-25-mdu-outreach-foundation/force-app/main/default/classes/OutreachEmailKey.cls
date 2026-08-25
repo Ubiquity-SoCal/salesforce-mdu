@@ -13,7 +13,14 @@ public with sharing class OutreachEmailKey {
         if (String.isBlank(raw)) {
             return null;
         }
-        String e = raw.trim().toLowerCase();
+        // Strip ALL whitespace, not just the ends. trim() leaves a stray space beside the @,
+        // which produces a SECOND key for the same person: precisely the failure this key
+        // exists to prevent. It also breaks dot folding silently, because " gmail.com" is
+        // never a member of DOTLESS_DOMAINS.
+        String e = raw.toLowerCase().replaceAll('\s+', '');
+        if (String.isBlank(e)) {
+            return null;
+        }
 
         Integer at = e.lastIndexOf('@');
         if (at <= 0 || at == e.length() - 1) {
@@ -22,6 +29,13 @@ public with sharing class OutreachEmailKey {
 
         String localPart = e.substring(0, at);
         String domain = e.substring(at + 1);
+
+        // A domain with no interior dot is not deliverable. Reject rather than claim a key
+        // that could never be sent to, which would permanently block a real address that
+        // someone later corrects.
+        if (!domain.contains('.') || domain.startsWith('.') || domain.endsWith('.')) {
+            return null;
+        }
 
         Integer plus = localPart.indexOf('+');
         if (plus >= 0) {
