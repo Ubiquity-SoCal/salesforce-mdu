@@ -94,6 +94,37 @@ private class OutreachGrouperTest {
         System.assertEquals('Kumar', groups[0].firstName,
             'the company record sorts first and has no first name; the group must still carry '
             + 'a greetable name or the whole portfolio is refused at render time');
+        System.assertEquals(person.Id, groups[0].contactId,
+            'contactId must move with firstName. Task 8 links the activity by it, so a '
+            + 'regression that moved one and not the other would misattribute every send '
+            + 'and no other assertion in this file would notice');
+        System.assertEquals('info@drkumargurung.com', groups[0].toAddress,
+            'the To address follows the chosen contact. Lowercase because Salesforce lowercases '
+            + 'Contact.Email on save, measured 2026-08-25: an insert of INFO@DrKumarGurung.com '
+            + 'reads back as info@drkumargurung.com, so no Apex can preserve the original case');
+    }
+
+    @isTest
+    static void theDefaultGreetingDoesNotDependOnWhichPropertiesWereSelected() {
+        Contact one = OutreachTestData.contact('Ann', 'Marco', 'ajm@marconomaha.com');
+        Contact two = OutreachTestData.contact('Albert', 'Moellenbeck', 'AJM@MarcoNOmaha.com');
+        Opportunity alpha = OutreachTestData.opportunity('Alpha Court', 10, two);
+        Opportunity zebra = OutreachTestData.opportunity('Zebra Court', 10, one);
+
+        // Computed, not hardcoded: Contact Id assignment order is not guaranteed in a test.
+        Boolean oneWins = one.Id < two.Id;
+        String expected = oneWins ? 'Ann' : 'Albert';
+
+        List<OutreachGrouper.RecipientGroup> whole =
+            OutreachGrouper.group(new Set<Id>{alpha.Id, zebra.Id});
+        List<OutreachGrouper.RecipientGroup> partial =
+            OutreachGrouper.group(new Set<Id>{oneWins ? zebra.Id : alpha.Id});
+
+        System.assertEquals(expected, whole[0].firstName);
+        System.assertEquals(expected, partial[0].firstName,
+            'the same mailbox must be greeted identically across two partial sends. Ordering '
+            + 'by Opportunity name meant a rep sending half a portfolio today and half next '
+            + 'week addressed the same owner by two different names');
     }
 
     @isTest

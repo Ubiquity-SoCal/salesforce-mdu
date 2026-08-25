@@ -44,26 +44,45 @@ public with sharing class OutreachGrouper {
             }
 
             RecipientGroup g = byKey.get(key);
-            if (g != null && String.isBlank(g.firstName)
-                    && String.isNotBlank(o.Primary_Contact__r.FirstName)) {
-                // Two Contact records share this mailbox and only one of them is a person.
-                // Prefer the one we can greet: the alternative is an unfillable [First Name],
-                // a refused render, and a multi property owner never contacted at all.
-                g.firstName = o.Primary_Contact__r.FirstName;
-                g.contactId = o.Primary_Contact__c;
+            if (g != null) {
+                // Deterministic default, deliberately independent of which properties this
+                // call happened to select. Prefer a Contact we can greet, because the
+                // alternative is an unfillable [First Name], a refused render, and a multi
+                // property owner never contacted at all. Among equally greetable records the
+                // lowest Contact Id wins.
+                //
+                // The Id tie-break is the part that matters. An earlier version kept the first
+                // record seen in Opportunity Name order, which meant two partial sends over the
+                // same mailbox could greet that person by two different names, since group()
+                // has no memory across calls. Apex compares Id with < directly, verified
+                // against the org 2026-08-25.
+                Boolean incomingGreetable = String.isNotBlank(o.Primary_Contact__r.FirstName);
+                Boolean storedGreetable = String.isNotBlank(g.firstName);
+                Boolean better = (incomingGreetable && !storedGreetable)
+                    || (incomingGreetable == storedGreetable
+                        && o.Primary_Contact__c < g.contactId);
+                if (better) {
+                    g.firstName = o.Primary_Contact__r.FirstName;
+                    g.contactId = o.Primary_Contact__c;
+                    g.toAddress = o.Primary_Contact__r.Email.replaceAll('\\s+', '');
+                }
             }
             if (g == null) {
                 g = new RecipientGroup();
                 g.emailKey = key;
                 // Defensive only, and deliberately kept despite being unreachable from this
-                // source. Measured against the org 2026-08-25: the standard Email field type
-                // REJECTS internal whitespace with INVALID_EMAIL_ADDRESS and trims the ends
-                // on save, so Primary_Contact__r.Email can never arrive dirty. Kept because
-                // this mirrors OutreachEmailKey and costs nothing, and because a future
-                // caller may hand us an address that never passed through an Email field.
-                // Do not write a test for it: a Contact with interior whitespace cannot be
-                // created, so any such test asserts something the platform forbids.
-                // Case is preserved unlike the key. The key is an identity, this is an address.
+                // source. Measured against the org 2026-08-25: the standard Email field
+                // REJECTS internal whitespace with INVALID_EMAIL_ADDRESS, trims the ends, AND
+                // lowercases the value on save. Do not write a test for the whitespace strip:
+                // a Contact holding interior whitespace cannot be created, so any such test
+                // asserts something the platform forbids.
+                //
+                // An earlier version of this comment claimed case is preserved here, unlike in
+                // the key. That was wrong. The platform lowercases Contact.Email before Apex
+                // ever reads it, so for this data path toAddress and emailKey differ only by
+                // plus-tag stripping and gmail dot folding, never by case. The strip stays
+                // because a future caller may hand us a string that never passed through an
+                // Email field, not because Contact data can be dirty.
                 g.toAddress = o.Primary_Contact__r.Email.replaceAll('\\s+', '');
                 g.contactId = o.Primary_Contact__c;
                 g.firstName = o.Primary_Contact__r.FirstName;
