@@ -291,6 +291,27 @@ private class OutreachConfirmTest {
     }
 
     @isTest
+    static void aTransientClaimFailureReachesTheCallerRatherThanVanishing() {
+        // Cannot force a real row lock in a test, so this asserts the CHANNEL exists and is
+        // wired, which is the part that was missing. A deferred key with nowhere to go is
+        // invisible, and invisible is the failure mode this project treats as worst.
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        OutreachConfirm.Outcome result;
+        Test.startTest();
+        System.runAs(sender()) {
+            result = OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL);
+        }
+        Test.stopTest();
+
+        System.assertNotEquals(null, result.deferredKeys,
+            'the channel must exist even when empty, so a caller can render it unconditionally');
+        System.assertEquals(0, result.deferredKeys.size(), 'and a clean run defers nothing');
+        System.assertEquals(1, result.messageCount);
+    }
+
+    @isTest
     static void propertiesWithNoContactAreReportedNotSilentlyDropped() {
         Opportunity orphan = OutreachTestData.opportunity('Orphan Property', 50);
 

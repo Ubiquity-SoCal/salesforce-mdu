@@ -164,6 +164,22 @@ private class OutreachGrouperTest {
     }
 
     @isTest
+    static void aBouncedContactIsExcludedByTheGrouperNotJustTheScreen() {
+        // Sets EmailBouncedReason rather than IsEmailBounced. The latter is system managed and
+        // not writable in this org, which is exactly why the production check reads both.
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        c.EmailBouncedDate = System.now();
+        c.EmailBouncedReason = 'Mailbox unavailable';
+        update c;
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        List<OutreachGrouper.RecipientGroup> groups = OutreachGrouper.group(new Set<Id>{o.Id});
+
+        System.assertEquals(0, groups.size(),
+            'suppression must hold for any caller, not only for the screen that draws chips');
+    }
+
+    @isTest
     static void emptyInputProducesEmptyOutput() {
         System.assertEquals(0, OutreachGrouper.group(new Set<Id>()).size());
     }

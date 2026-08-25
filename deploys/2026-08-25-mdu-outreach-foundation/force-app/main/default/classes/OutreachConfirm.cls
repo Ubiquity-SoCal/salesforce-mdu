@@ -21,6 +21,13 @@ public with sharing class OutreachConfirm {
         public Integer messageCount = 0;
         public Set<String> rejectedKeys = new Set<String>();
 
+        /**
+         * Claimed by nobody, for a transient reason such as a row lock, most likely because
+         * another rep was confirming the same person at that moment. NOT contacted and NOT
+         * permanently blocked: these are safe and correct to retry, unlike rejectedKeys.
+         */
+        public Set<String> deferredKeys = new Set<String>();
+
         /** Nothing was sent to these. Unreachable property, or a group that would not render. */
         public List<String> refusals = new List<String>();
 
@@ -131,6 +138,7 @@ public with sharing class OutreachConfirm {
         }
         OutreachClaim.Result claim = OutreachClaim.claim(keyToContact, batch.Id);
         out.rejectedKeys = claim.rejected;
+        out.deferredKeys = claim.deferred;
 
         List<Outreach_Message__c> messages = new List<Outreach_Message__c>();
         List<OutreachGrouper.RecipientGroup> rendered = new List<OutreachGrouper.RecipientGroup>();

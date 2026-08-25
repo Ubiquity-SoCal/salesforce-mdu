@@ -28,7 +28,9 @@ public with sharing class OutreachGrouper {
         List<Opportunity> opps = [
             SELECT Id, Name, Units__c, Primary_Contact__c,
                    Primary_Contact__r.FirstName, Primary_Contact__r.LastName,
-                   Primary_Contact__r.Email
+                   Primary_Contact__r.Email,
+                   Primary_Contact__r.IsEmailBounced,
+                   Primary_Contact__r.EmailBouncedReason
             FROM Opportunity
             WHERE Id IN :opportunityIds
             ORDER BY Name ASC
@@ -43,6 +45,26 @@ public with sharing class OutreachGrouper {
             }
             String key = OutreachEmailKey.normalise(o.Primary_Contact__r.Email);
             if (key == null) {
+                continue;
+            }
+
+            // Enforcement, not presentation. The UI shows these as chips so a rep understands
+            // why a row is unavailable, but the exclusion has to hold for any caller.
+            //
+            // BOTH fields are checked, and the second clause is belt and braces rather than
+            // necessity. Measured against the org 2026-08-25: IsEmailBounced is system managed
+            // and not writable (createable false, updateable false), but setting the writable
+            // EmailBouncedDate and EmailBouncedReason DOES derive it, confirmed by a
+            // savepoint-rolled-back probe that saw the flag go false to true. So a single check
+            // on IsEmailBounced would in fact suffice. The reason clause is kept because it
+            // costs one OR on a query already running, and it holds even if the derivation ever
+            // lags behind the write.
+            //
+            // HasOptedOutOfEmail is not exposed in this org (see the spec's dependency list).
+            // When an admin exposes it, add it here AND to the SOQL. Until then opt-out is
+            // genuinely unenforced and the spec says so.
+            if (o.Primary_Contact__r.IsEmailBounced == true
+                    || String.isNotBlank(o.Primary_Contact__r.EmailBouncedReason)) {
                 continue;
             }
 
