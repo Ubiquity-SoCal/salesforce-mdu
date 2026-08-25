@@ -17,8 +17,16 @@ public with sharing class OutreachSelectionController {
     // a property owner about the wrong kind of deal entirely.
     private static final Id MDU_RECORD_TYPE_ID = '012WR00000Ra0mkYAB';
 
-    /** Rows returned to the screen at once. See the note on truncation in candidates(). */
-    private static final Integer PAGE_CAP = 2000;
+    /**
+     * Rows returned to the screen at once. See the note on truncation in candidates().
+     *
+     * Not final, and TestVisible, purely so the overflow branch can be exercised. Proving
+     * truncation with the real value would mean inserting 2,001 Opportunities in a test, which
+     * nobody will do, so the branch would stay unproven forever and the flag would be a
+     * decoration. A test lowers this to 2 and inserts 3.
+     */
+    @TestVisible
+    private static Integer PAGE_CAP = 2000;
 
     public class Candidate {
         @AuraEnabled public Id opportunityId;
@@ -119,7 +127,18 @@ public with sharing class OutreachSelectionController {
         return out;
     }
 
-    /** Precedence, most blocking first. Order here IS the specification. */
+    /**
+     * Precedence, most blocking first. Order here IS the specification.
+     *
+     * Duplicate recipient is checked BEFORE No first name, not after. A property whose own
+     * Primary_Contact__c has no first name (a company record, an info@ mailbox) is still
+     * mailable when a sibling property on the same normalised address has a contact who IS
+     * greetable: OutreachGrouper already resolves exactly this by picking the greetable
+     * candidate among everyone sharing the key. Blocking the company-linked row here would
+     * contradict what the grouper does with it a moment later. The single-property case is
+     * unaffected: with only one occurrence at that key, the duplicate check does not fire and
+     * this falls through to No first name as before.
+     */
     private static String chipFor(Opportunity o, String key, Map<String, Integer> keyCounts,
                                   Set<String> alreadyMailed) {
         if (key != null && alreadyMailed.contains(key)) {
@@ -134,11 +153,11 @@ public with sharing class OutreachSelectionController {
         if (key == null) {
             return 'No email';
         }
-        if (String.isBlank(o.Primary_Contact__r.FirstName)) {
-            return 'No first name';
-        }
         if (keyCounts.get(key) > 1) {
             return 'Duplicate recipient';
+        }
+        if (String.isBlank(o.Primary_Contact__r.FirstName)) {
+            return 'No first name';
         }
         return 'Ready';
     }

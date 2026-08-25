@@ -111,27 +111,21 @@ private class OutreachSelectionControllerTest {
 
     @isTest
     static void twoContactRecordsOneAddressStillCountsAsDuplicate() {
-        // Domain matches 'AJM@MarcoOmaha.com' below once both are lowercased. An earlier
-        // version of this fixture spelled the first domain 'marconomaha.com', an extra 'n'
-        // that made the two addresses genuinely different after normalisation, not merely
-        // different in case, defeating the entire point of this test.
-        Contact first = OutreachTestData.contact('Ann', 'Marco', 'ajm@marcoomaha.com');
-
-        // Once the domains genuinely match, the org's own duplicate rule blocks a second
-        // Contact insert on a case-insensitive email match, DUPLICATES_DETECTED. That block is
-        // exactly the real-world condition this test exists to prove the controller handles:
-        // two Contact records already sitting on one address (an import, manual entry before
-        // the rule existed) that Contact Id matching would miss. Bypassing the rule here, once,
-        // recreates that condition; OutreachTestData.contact() is left alone so every other
-        // test still goes through normal duplicate enforcement.
-        Contact second = new Contact(FirstName = 'Ann', LastName = 'Marco',
-            Email = 'AJM@MarcoOmaha.com');
-        Database.DMLOptions dmo = new Database.DMLOptions();
-        dmo.DuplicateRuleHeader.allowSave = true;
-        Database.insert(second, dmo);
-
-        Opportunity a = OutreachTestData.opportunity('78th Place Apartments', 40, first);
-        Opportunity b = OutreachTestData.opportunity('Orchard Park Apartments', 25, second);
+        // Modelled on the real Omaha data rather than invented, and deliberately NOT bypassing
+        // the org's Contact duplicate rule with DMLOptions. Two of the three genuinely shared
+        // addresses in production pair a COMPANY record with a PERSON record on one mailbox,
+        // which is what ajm@ and info@ addresses look like. Identical names would trip the rule;
+        // the real pattern does not, so no bypass is needed and the fixture resembles the data
+        // it claims to represent.
+        //
+        // Note the domain: MarcoNOmaha, not MarcoOmaha. An earlier version dropped the n, so the
+        // two addresses folded to DIFFERENT domains and the test never exercised cross-contact
+        // key matching at all. The same typo was fixed once in the grouper's copy of this
+        // fixture and survived here, which is why it is called out.
+        Contact company = OutreachTestData.contact(null, 'MarCon Enterprises', 'ajm@marconomaha.com');
+        Contact person = OutreachTestData.contact('Albert', 'Moellenbeck', 'AJM@MarcoNOmaha.com');
+        Opportunity a = OutreachTestData.opportunity('78th Place Apartments', 40, company);
+        OutreachTestData.opportunity('Orchard Park Apartments', 25, person);
 
         List<OutreachSelectionController.Candidate> rows = omaha();
         System.assertEquals('Duplicate recipient', find(rows, a.Id).chip,
@@ -139,21 +133,41 @@ private class OutreachSelectionControllerTest {
     }
 
     @isTest
-    static void aTruncatedListSaysSoOnEveryRow() {
-        // Verified against the org 2026-08-25 that an unfiltered query hits the 2000 cap
-        // exactly, against 3,646 MDU opportunities. A rep who clears the city filter must not
-        // be shown a silently shortened list. This asserts the flag is present and false on a
-        // small result, so a change that drops the flag entirely fails here rather than only
-        // in production at scale.
+    static void anOverflowingListSaysSoOnEveryRow() {
+        // The branch that matters. Verified against the org 2026-08-25 that an unfiltered query
+        // returns EXACTLY 2000 rows against 3,646 MDU opportunities, so a rep clearing the city
+        // filter works from a list quietly missing 1,646 properties, ordered by units descending
+        // so it looks entirely plausible.
+        //
+        // PAGE_CAP is lowered rather than inserting 2,001 records. An earlier version of this
+        // test asserted the flag was FALSE on a small result, which cannot distinguish a wired
+        // check from a hardcoded false, so it proved nothing.
+        OutreachSelectionController.PAGE_CAP = 2;
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        OutreachTestData.opportunity('Alpha Court', 300, c);
+        OutreachTestData.opportunity('Bravo Court', 200, c);
+        OutreachTestData.opportunity('Charlie Court', 100, c);
+
+        List<OutreachSelectionController.Candidate> rows = omaha();
+
+        System.assertEquals(2, rows.size(), 'the extra row fetched to detect overflow is dropped');
+        for (OutreachSelectionController.Candidate row : rows) {
+            System.assertEquals(true, row.listTruncated,
+                'EVERY row says so, so the screen can warn without a second call');
+        }
+    }
+
+    @isTest
+    static void aListUnderTheCapIsNotFlaggedTruncated() {
+        OutreachSelectionController.PAGE_CAP = 10;
         Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
         OutreachTestData.opportunity('Camelot Village', 485, c);
 
         List<OutreachSelectionController.Candidate> rows = omaha();
 
-        System.assertNotEquals(null, rows[0].listTruncated,
-            'every row carries the flag, so the screen never has to guess');
         System.assertEquals(false, rows[0].listTruncated,
-            'and a result well under the cap is not truncated');
+            'and a result under the cap is not falsely flagged, which the overflow test alone '
+            + 'would not catch');
     }
 
     @isTest
