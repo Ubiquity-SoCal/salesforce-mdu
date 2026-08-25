@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Key__c</fullName>
+    <label>Email Key</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>true</required>
+    <unique>true</unique>
+    <caseSensitive>false</caseSensitive>
+    <externalId>true</externalId>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <inlineHelpText>Set by OutreachEmailKey.normalise. Do not edit by hand.</inlineHelpText>
+    <description>Normalised recipient address. Unique so that two reps confirming overlapping batches in the same second cannot both claim the same person: the platform rejects the second insert with DUPLICATE_VALUE. A query is not a substitute for this constraint. Case insensitive because normalisation already lowercases, and belt and braces is cheap here.</description>
+</CustomField>

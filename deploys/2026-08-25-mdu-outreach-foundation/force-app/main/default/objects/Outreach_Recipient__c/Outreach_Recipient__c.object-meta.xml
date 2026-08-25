@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Outreach Recipient</label>
+    <pluralLabel>Outreach Recipients</pluralLabel>
+    <nameField>
+        <label>Recipient Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>OR-{00000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <description>One row per person ever mailed by MDU outreach. Exists to make duplicate sending impossible, not to hold data. A row here is a permanent block on mailing that address again.</description>
+</CustomObject>

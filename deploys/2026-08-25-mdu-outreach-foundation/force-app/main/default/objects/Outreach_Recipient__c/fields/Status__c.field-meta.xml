@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <type>Picklist</type>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <description>Claimed means reserved by a batch but not yet delivered. Mailed is terminal. Bounced means nothing was delivered, so a corrected address becomes a new key and is claimable again.</description>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Claimed</fullName><default>true</default><label>Claimed</label></value>
+            <value><fullName>Mailed</fullName><default>false</default><label>Mailed</label></value>
+            <value><fullName>Bounced</fullName><default>false</default><label>Bounced</label></value>
+            <value><fullName>Opted Out</fullName><default>false</default><label>Opted Out</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
