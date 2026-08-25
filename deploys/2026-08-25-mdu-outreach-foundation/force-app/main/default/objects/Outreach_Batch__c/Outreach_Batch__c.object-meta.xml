@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Outreach Batch</label>
+    <pluralLabel>Outreach Batches</pluralLabel>
+    <nameField>
+        <label>Batch Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>OB-{00000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <description>One record per rep selecting properties and confirming. The owner of this record is the rep whose mailbox sends it.</description>
+</CustomObject>

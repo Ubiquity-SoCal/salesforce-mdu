@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Batch__c</fullName>
+    <label>Last Batch</label>
+    <type>Lookup</type>
+    <referenceTo>Outreach_Batch__c</referenceTo>
+    <relationshipLabel>Recipients Claimed</relationshipLabel>
+    <relationshipName>Claimed_Recipients</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <description>Which batch claimed this recipient. Added in the object model's second deploy because a lookup cannot deploy before its target object exists.</description>
+</CustomField>

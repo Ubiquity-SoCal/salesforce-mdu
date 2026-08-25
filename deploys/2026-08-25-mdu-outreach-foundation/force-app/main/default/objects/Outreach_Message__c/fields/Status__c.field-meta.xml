@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <type>Picklist</type>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <description>Sending is committed before the transmitter is called, because a send is not transactional with Salesforce DML. A record left in Sending is never retried automatically; it goes to a human. Under sending is recoverable, double sending is not.</description>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Queued</fullName><default>true</default><label>Queued</label></value>
+            <value><fullName>Drafted</fullName><default>false</default><label>Drafted</label></value>
+            <value><fullName>Sending</fullName><default>false</default><label>Sending</label></value>
+            <value><fullName>Sent</fullName><default>false</default><label>Sent</label></value>
+            <value><fullName>Failed</fullName><default>false</default><label>Failed</label></value>
+            <value><fullName>Suppressed</fullName><default>false</default><label>Suppressed</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Outreach Message Property</label>
+    <pluralLabel>Outreach Message Properties</pluralLabel>
+    <nameField>
+        <label>Line Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>OMP-{00000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ControlledByParent</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <description>Links one message to every Opportunity it covers, so the activity logs against all of them rather than only the property that got named.</description>
+</CustomObject>

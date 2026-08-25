@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity__c</fullName>
+    <label>Opportunity</label>
+    <type>Lookup</type>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Outreach</relationshipLabel>
+    <relationshipName>Outreach_Lines</relationshipName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <description>Lookup with cascade rather than master-detail, matching the house pattern used by Opportunity_Campaign__c: a master-detail parent cannot be re-parented and these lines are administrative rather than owned by the Opportunity.</description>
+</CustomField>
