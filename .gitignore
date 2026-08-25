@@ -27,3 +27,5 @@ scripts/sync/sync-health-status.txt
 # Suffixed backups (e.g. .json.bak.scrapped-cleanup)
 *.bak
 *.bak.*
+# sf CLI local source-tracking cache (per-machine, tied to org id, not a record)
+.sf/
