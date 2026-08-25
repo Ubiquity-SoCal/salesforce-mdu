@@ -329,4 +329,144 @@ private class OutreachSelectionControllerTest {
         System.assert(items[0].bodyHtml.contains(expected[0] + ' or ' + expected[1]),
             'a preview offering different days from the send would be a lie');
     }
+
+    @isTest
+    static void confirmSelectionReturnsWhatWasAndWasNotDone() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        OutreachSelectionController.ConfirmResult r;
+        Test.startTest();
+        System.runAs(previewSender()) {
+            r = OutreachSelectionController.confirmSelection(
+                new List<Id>{o.Id}, new Map<String, Id>());
+        }
+        Test.stopTest();
+
+        System.assertNotEquals(null, r.batchId);
+        System.assertEquals(1, r.messageCount);
+        System.assertEquals(0, r.rejectedAddresses.size());
+        System.assertEquals(0, r.refusals.size());
+        // deferredKeys and overrideWarnings are two of the four outcome channels this method
+        // must not collapse. No override was requested here, so overrideWarnings is genuinely
+        // empty rather than vacuously so; see confirmSelectionSurfacesAnOverrideWarningSeparately
+        // FromARefusal below for the case that proves the wiring instead of just its shape.
+        // deferredKeys cannot be forced non-empty in a unit test without a real row lock
+        // (OutreachConfirmTest.aTransientClaimFailureReachesTheCallerRatherThanVanishing hit the
+        // same limit), so the honest claim here is narrower: the channel exists, survived the
+        // Set-to-List conversion without throwing, and is empty on a clean run.
+        System.assertNotEquals(null, r.deferredKeys,
+            'the channel must exist even when empty, so a caller can render it unconditionally');
+        System.assertEquals(0, r.deferredKeys.size());
+        System.assertEquals(0, r.overrideWarnings.size());
+    }
+
+    @isTest
+    static void confirmSelectionReportsAnAlreadyClaimedAddress() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity first = OutreachTestData.opportunity('Camelot Village', 485, c);
+        Opportunity second = OutreachTestData.opportunity('Camelot Village Two', 100, c);
+
+        OutreachSelectionController.ConfirmResult again;
+        Test.startTest();
+        System.runAs(previewSender()) {
+            OutreachSelectionController.confirmSelection(
+                new List<Id>{first.Id}, new Map<String, Id>());
+            again = OutreachSelectionController.confirmSelection(
+                new List<Id>{second.Id}, new Map<String, Id>());
+        }
+        Test.stopTest();
+
+        System.assertEquals(0, again.messageCount);
+        System.assertEquals(1, again.rejectedAddresses.size());
+        System.assertEquals('mhardy@elevateliving.com', again.rejectedAddresses[0]);
+    }
+
+    @isTest
+    static void confirmSelectionSurfacesAnOverrideWarningSeparatelyFromARefusal() {
+        // None of the tests above touch overrideWarnings, so a controller that dropped
+        // `r.overrideWarnings = outcome.overrideWarnings` on the floor, or that merged it into
+        // refusals, would still pass every one of them. Modeled directly on
+        // OutreachConfirmTest.aChosenContactFromAnotherMailboxIsRefusedNotApplied, but calling
+        // through this controller: a chosen contact that does not share the group's mailbox is
+        // refused as an override, yet the message still sends under the default contact, so
+        // overrideWarnings and refusals must move independently through this layer too, not
+        // just through OutreachConfirm.
+        Contact owner = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Contact stranger = OutreachTestData.contact('Someone', 'Else', 'someone@different.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, owner);
+
+        OutreachSelectionController.ConfirmResult r;
+        Test.startTest();
+        System.runAs(previewSender()) {
+            r = OutreachSelectionController.confirmSelection(
+                new List<Id>{o.Id},
+                new Map<String, Id>{'mhardy@elevateliving.com' => stranger.Id});
+        }
+        Test.stopTest();
+
+        System.assertEquals(1, r.messageCount, 'the message still sends under the default contact');
+        System.assertEquals(1, r.overrideWarnings.size(),
+            'the rep must be told their pick did not take');
+        System.assertEquals(0, r.refusals.size(),
+            'a warning is not a refusal; collapsing them would tell the rep nobody was contacted');
+    }
+
+    @isTest
+    static void aThrottleBreachReachesTheRepAsAReadableMessage() {
+        // The default cap is 40 recipients per rep per day. Claim 41 distinct people.
+        List<Id> ids = new List<Id>();
+        for (Integer i = 0; i < 41; i++) {
+            Contact c = OutreachTestData.contact('Owner' + i, 'Surname' + i, 'owner' + i + '@example.com');
+            ids.add(OutreachTestData.opportunity('Throttle Property ' + i, 10, c).Id);
+        }
+
+        // Catch Exception, not AuraHandledException. Verified 2026-08-25 that Apex refuses to
+        // throw AuraHandledException outside a VisualForce or Aura context ("Can only throw
+        // this exception type from VisualForce or Aura context"), so a test that names that
+        // type risks failing on the throw itself rather than on the behaviour under test.
+        // Catching the base type asserts what actually matters: the batch stopped, and the
+        // rep can see the cap.
+        Boolean threw = false;
+        String message = '';
+        Test.startTest();
+        System.runAs(previewSender()) {
+            try {
+                OutreachSelectionController.confirmSelection(ids, new Map<String, Id>());
+            } catch (Exception e) {
+                threw = true;
+                message = e.getMessage();
+            }
+        }
+        Test.stopTest();
+
+        System.assertEquals(true, threw, 'the cap must stop the batch, not silently truncate it');
+        System.assert(message.contains('40'), 'the rep must see what the cap actually is: ' + message);
+    }
+
+    @isTest
+    static void theThrottleItselfIsTestedWhereItLives() {
+        // The controller only wraps. The rule lives in OutreachConfirm and throws a plain Apex
+        // exception, which is testable without any Aura context ambiguity, so the cap is
+        // proven here even if the wrapping layer's exception type ever changes.
+        List<Id> ids = new List<Id>();
+        for (Integer i = 0; i < 41; i++) {
+            Contact c = OutreachTestData.contact('Owner' + i, 'Surname' + i, 'cap' + i + '@example.com');
+            ids.add(OutreachTestData.opportunity('Cap Property ' + i, 10, c).Id);
+        }
+
+        Boolean threw = false;
+        Test.startTest();
+        System.runAs(previewSender()) {
+            try {
+                OutreachConfirm.confirm(new Set<Id>(ids), 'MDU_Outreach_Fiber');
+            } catch (OutreachConfirm.ThrottleException e) {
+                threw = true;
+                System.assert(e.getMessage().contains('40'), e.getMessage());
+            }
+        }
+        Test.stopTest();
+
+        System.assertEquals(true, threw, 'the per-rep cap is the control that replaces an approver');
+    }
 }

@@ -238,4 +238,64 @@ public with sharing class OutreachSelectionController {
         }
         return out;
     }
+
+    /**
+     * What the screen gets back after a rep confirms a selection. Four channels, kept apart on
+     * purpose because collapsing any two of them tells a rep something false:
+     *   - messageCount: what actually got sent.
+     *   - rejectedAddresses: people already claimed, permanently. Never retry these.
+     *   - deferredKeys: transient failures (for example a row lock). Not contacted, safe to
+     *     retry, and NOT the same thing as rejected.
+     *   - refusals: nothing was sent at all for these.
+     *   - overrideWarnings: a message WAS sent, but the rep's contact pick did not apply.
+     */
+    public class ConfirmResult {
+        @AuraEnabled public Id batchId;
+        @AuraEnabled public Integer messageCount;
+        @AuraEnabled public List<String> rejectedAddresses;
+        @AuraEnabled public List<String> refusals;
+        @AuraEnabled public List<String> overrideWarnings;
+        /** Transient failures, safe to retry. A List rather than a Set because
+         *  @AuraEnabled does not support Set<String>, confirmed on this org. */
+        @AuraEnabled public List<String> deferredKeys;
+    }
+
+    /**
+     * Turns a rep's selection into a confirmed batch.
+     *
+     * This is a thin wrapper. OutreachConfirm does the real work: group, validate sender,
+     * render, claim only what rendered, freeze. Nothing clever belongs here; this method's only
+     * job is exposing that entry point to Lightning and translating its outcome into shapes a
+     * screen can render.
+     *
+     * `chosenContactByKey` maps a group's emailKey to the Contact record the rep picked. An
+     * absent key keeps the defaulted pick, so a rep who changes nothing sends nothing different.
+     * The choice is recorded on the message only; Primary_Contact__c is never written back.
+     *
+     * A throttle breach surfaces as AuraHandledException carrying the original message, so the
+     * rep sees the cap and their current count rather than "an internal server error".
+     */
+    @AuraEnabled
+    public static ConfirmResult confirmSelection(List<Id> opportunityIds,
+                                                 Map<String, Id> chosenContactByKey) {
+        try {
+            OutreachConfirm.Outcome outcome =
+                OutreachConfirm.confirm(new Set<Id>(opportunityIds), TEMPLATE_NAME, chosenContactByKey);
+
+            ConfirmResult r = new ConfirmResult();
+            r.batchId = outcome.batchId;
+            r.messageCount = outcome.messageCount;
+            r.rejectedAddresses = new List<String>(outcome.rejectedKeys);
+            r.refusals = outcome.refusals;
+            r.overrideWarnings = outcome.overrideWarnings;
+            r.deferredKeys = new List<String>(outcome.deferredKeys);
+            return r;
+        } catch (OutreachConfirm.ThrottleException e) {
+            // Surface the cap and the running total. "An internal server error has occurred"
+            // teaches the rep nothing and generates a support request.
+            AuraHandledException wrapped = new AuraHandledException(e.getMessage());
+            wrapped.setMessage(e.getMessage());
+            throw wrapped;
+        }
+    }
 }
