@@ -9,6 +9,8 @@ public with sharing class OutreachRenderer {
 
     public class UnfilledTokenException extends Exception {}
 
+    public class UnknownTemplateTokenException extends Exception {}
+
     public class SenderContext {
         public String fullName;
         public String title;
@@ -40,6 +42,12 @@ public with sharing class OutreachRenderer {
             '[day 1]'          => esc(meetingDays.size() > 0 ? meetingDays[0] : null),
             '[day 2]'          => esc(meetingDays.size() > 1 ? meetingDays[1] : null)
         };
+
+        // Validate the TEMPLATE before substituting anything. This is the half of the old
+        // broad guard that was correct to keep, applied where bracketed text is always a
+        // token and never data.
+        guardTemplate(subjectTemplate, tokens.keySet());
+        guardTemplate(bodyTemplate, tokens.keySet());
 
         Rendered out = new Rendered();
         out.subject = stripTags(apply(subjectTemplate, tokens));
@@ -119,6 +127,37 @@ public with sharing class OutreachRenderer {
      * Using contains() rather than a Pattern also removes the last regex literal from this
      * class, and with it the double-backslash trap that has cost this project three rounds.
      */
+    /**
+     * Refuses a TEMPLATE containing any bracketed run this renderer does not know.
+     *
+     * The output guard checks exact known tokens, so that a property genuinely named
+     * "Bedford Square [fmr Maplewood Court]" is not refused. That is right for output, where
+     * brackets are usually data. It is wrong for the template, where brackets are always
+     * meant to be tokens, and it left a real hole: the approved copy in
+     * build_mdu_outreach_email_docx.py uses [X] and [day], neither of which this renderer
+     * substitutes, because [day] appears twice in one sentence and had to become [day 1] and
+     * [day 2]. An admin transcribing the approved wording into the Lightning EmailTemplate,
+     * which lives outside version control and needs no deploy, would produce messages reading
+     * "20 minutes [day] or [day]" and nothing would stop them.
+     *
+     * So: broad scan here, exact scan on the output. Property names never appear in the
+     * template, only in substituted values, so nothing legitimate is caught.
+     *
+     * Fails once for the whole run with the offending token named, rather than per row,
+     * because a wrong template is a configuration mistake and not per-recipient data.
+     */
+    private static void guardTemplate(String template, Set<String> knownTokens) {
+        Matcher m = Pattern.compile('\\[[^\\]]+\\]').matcher(template);
+        while (m.find()) {
+            if (!knownTokens.contains(m.group(0))) {
+                throw new UnknownTemplateTokenException(
+                    'The email template contains ' + m.group(0) + ', which this renderer does '
+                    + 'not fill. Known tokens are: ' + String.join(new List<String>(knownTokens), ', ')
+                    + '. Nothing has been claimed or sent.');
+            }
+        }
+    }
+
     private static void guard(String rendered, Set<String> tokenNames) {
         for (String token : tokenNames) {
             if (rendered.contains(token)) {

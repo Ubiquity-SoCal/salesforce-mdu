@@ -131,14 +131,49 @@ private class OutreachRendererTest {
     }
 
     @isTest
+    static void refusesATemplateUsingTheApprovedCopysOwnUnknownTokens() {
+        // Not hypothetical. build_mdu_outreach_email_docx.py, the single source of the approved
+        // wording, uses [X] for units and "[day] or [day]" for the meeting days. This renderer
+        // fills neither, because [day] occurs twice in one sentence and had to be split into
+        // [day 1] and [day 2]. Transcribing the approved copy verbatim into the Lightning
+        // template must fail loudly here, not send with visible brackets.
+        String approvedish = '<p>Hello [First Name], about [Property Name] ([X] units).</p>'
+            + '<p>Would you have 20 minutes [day] or [day]?</p>';
+
+        Boolean threw = false;
+        try {
+            OutreachRenderer.render(
+                groupOf('Michelle', new List<String>{'Camelot Village'}, new List<Integer>{485}),
+                sender(), days(), SUBJECT_TPL, approvedish);
+        } catch (OutreachRenderer.UnknownTemplateTokenException e) {
+            threw = true;
+            System.assert(e.getMessage().contains('[X]') || e.getMessage().contains('[day]'),
+                'the message must name the offending token: ' + e.getMessage());
+        }
+        System.assertEquals(true, threw,
+            'an unknown token in the TEMPLATE is a configuration mistake and must stop the run');
+    }
+
+    @isTest
+    static void aPropertyNamesBracketsDoNotTripTheTemplateGuard() {
+        // The template guard is broad, the output guard is exact. This proves the split: a
+        // bracketed PROPERTY NAME still renders, because it never appears in the template.
+        OutreachRenderer.Rendered r = OutreachRenderer.render(
+            groupOf('Michelle', new List<String>{'Bedford Square [fmr Maplewood Court]'},
+                    new List<Integer>{52}),
+            sender(), days(), SUBJECT_TPL, BODY_TPL);
+
+        System.assert(r.bodyHtml.contains('Bedford Square [fmr Maplewood Court]'));
+    }
+
+    @isTest
     static void refusesWhenATokenSurvives() {
-        // Deviation from the brief's literal fixture, flagged in the round report: the guard
-        // now checks only the known token set (see OutreachRenderer.guard), so an arbitrary
-        // unregistered bracket like the brief's original '[Unknown Token]' can no longer trip
-        // it by design, that is this round's accepted trade. This exercises the guarantee the
-        // guard still makes: a real, known token used by the approved copy ([day 2], present in
-        // BODY_TPL) that has no value survives rendering and is refused. Only one meeting day is
-        // supplied so [day 2] is never substituted.
+        // Uses a REAL token rather than a synthetic one. Since the guard checks only the known
+        // token set, an invented '[Unknown Token]' can no longer trip it by design, which is
+        // the trade accepted when the guard stopped refusing real bracketed property names.
+        // This exercises the guarantee the guard still makes: a token the approved copy
+        // actually uses, left without a value, is caught. Only one meeting day is supplied, so
+        // [day 2] is never substituted.
         Boolean threw = false;
         try {
             OutreachRenderer.render(
