@@ -17,7 +17,7 @@ public with sharing class OutreachEmailKey {
         // which produces a SECOND key for the same person: precisely the failure this key
         // exists to prevent. It also breaks dot folding silently, because " gmail.com" is
         // never a member of DOTLESS_DOMAINS.
-        String e = raw.toLowerCase().replaceAll('\s+', '');
+        String e = raw.toLowerCase().replaceAll('\\s+', '');
         if (String.isBlank(e)) {
             return null;
         }
