@@ -4,7 +4,7 @@
     <label>Contact</label>
     <type>Lookup</type>
     <referenceTo>Contact</referenceTo>
-    <relationshipLabel>Outreach_Messages</relationshipLabel>
+    <relationshipLabel>Outreach Messages</relationshipLabel>
     <relationshipName>Outreach_Messages</relationshipName>
     <deleteConstraint>SetNull</deleteConstraint>
     <required>false</required>

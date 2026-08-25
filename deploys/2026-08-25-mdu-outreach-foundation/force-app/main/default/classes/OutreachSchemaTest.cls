@@ -42,10 +42,19 @@ private class OutreachSchemaTest {
             Batch__c = b.Id, Recipient__c = r.Id, Status__c = 'Queued');
         insert m;
 
+        Opportunity o = OutreachTestData.opportunity('Cascade Test Property', 50);
+        Outreach_Message_Property__c mp = new Outreach_Message_Property__c(
+            Message__c = m.Id, Opportunity__c = o.Id, Is_Named__c = true);
+        insert mp;
+
         delete b;
 
         System.assertEquals(0, [SELECT COUNT() FROM Outreach_Message__c WHERE Id = :m.Id],
-            'master-detail must cascade the delete');
+            'master-detail must cascade the delete to the message');
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Message_Property__c WHERE Id = :mp.Id],
+            'master-detail must cascade the delete to the property line');
+        System.assertEquals(1, [SELECT COUNT() FROM Opportunity WHERE Id = :o.Id],
+            'the batch delete must never touch the Opportunity itself, only our outreach line');
     }
 
     @isTest
@@ -61,5 +70,7 @@ private class OutreachSchemaTest {
 
         System.assertEquals(false, dr.isSuccess(),
             'deleting a recipient would silently unblock re-mailing that person');
+        System.assertEquals(StatusCode.DELETE_FAILED, dr.getErrors()[0].getStatusCode(),
+            'a Restrict deleteConstraint should raise DELETE_FAILED specifically, not some other blocker');
     }
 }
