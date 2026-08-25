@@ -65,12 +65,35 @@ private class OutreachClaimTest {
     }
 
     @isTest
-    static void ignoresBlankKeys() {
+    static void blankKeysAreSkippedBeforeDmlNotAttemptedAndRejected() {
         Id batchId = newBatch();
         OutreachClaim.Result r = OutreachClaim.claim(new Map<String, Id>{
             '' => null, null => null, 'good@example.com' => null}, batchId);
 
         System.assertEquals(1, r.claimed.size());
         System.assertEquals(true, r.claimed.containsKey('good@example.com'));
+        // This is the assertion that discriminates. Email_Key__c is a required field, so an
+        // implementation that skipped the pre-filter and handed all three rows to the platform
+        // would ALSO end up with one claimed row: the two blanks would come back as
+        // REQUIRED_FIELD_MISSING failures. Only the empty rejected set proves the blanks were
+        // never sent to the database at all.
+        System.assertEquals(0, r.rejected.size(),
+            'a blank key is not a rejected claim; it never reaches the database');
+        System.assertEquals(1, [SELECT COUNT() FROM Outreach_Recipient__c],
+            'and no junk rows are created for them');
+    }
+
+    @isTest
+    static void anAllBlankMapDoesNoDmlAtAll() {
+        Id batchId = newBatch();
+
+        OutreachClaim.Result r = OutreachClaim.claim(
+            new Map<String, Id>{'' => null, null => null}, batchId);
+
+        System.assertEquals(0, r.claimed.size());
+        System.assertEquals(0, r.rejected.size());
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c],
+            'the early return exists so a pointless call costs no DML statement; without a '
+            + 'test the branch is reachable and unexercised');
     }
 }
