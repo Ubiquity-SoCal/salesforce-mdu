@@ -7,6 +7,10 @@
 @isTest
 public class OutreachTestData {
 
+    // MDU/SFU. The selection controller filters on this, so test Opportunities must carry it
+    // or they are invisible to every query in OutreachSelectionControllerTest.
+    public static final Id MDU_RECORD_TYPE_ID = '012WR00000Ra0mkYAB';
+
     private static Integer counter = 0;
 
     public static Opportunity opportunity(String name, Integer units) {
@@ -23,7 +27,8 @@ public class OutreachTestData {
             Property_City__c = 'Omaha',
             Property_State__c = 'NE',
             Property_Zip__c = '68102',
-            Property_Street__c = counter + ' Test Street'
+            Property_Street__c = counter + ' Test Street',
+            RecordTypeId = MDU_RECORD_TYPE_ID
         );
         if (primary != null) {
             o.Primary_Contact__c = primary.Id;
