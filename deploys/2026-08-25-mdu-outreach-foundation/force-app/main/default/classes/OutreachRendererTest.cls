@@ -114,16 +114,39 @@ private class OutreachRendererTest {
     }
 
     @isTest
+    static void aPropertyWhoseRealNameContainsBracketsStillSends() {
+        // Not hypothetical. Three Omaha properties carry square brackets in their real names
+        // and two of them are mailable today, including this one at 52 units already in
+        // Contract Negotiations. A guard that matches any bracketed text refuses them and
+        // reports the property's own former name as an unfilled token.
+        OutreachRenderer.Rendered r = OutreachRenderer.render(
+            groupOf('Michelle', new List<String>{'Bedford Square [fmr Maplewood Court]'},
+                    new List<Integer>{52}),
+            sender(), days(), SUBJECT_TPL, BODY_TPL);
+
+        System.assert(r.bodyHtml.contains('Bedford Square [fmr Maplewood Court]'),
+            'a bracketed alternate name is data, not an unfilled token');
+        System.assert(r.subject.contains('Bedford Square [fmr Maplewood Court]'),
+            'and the subject must survive it too');
+    }
+
+    @isTest
     static void refusesWhenATokenSurvives() {
-        String brokenTemplate = BODY_TPL + '<p>Ask about [Unknown Token].</p>';
+        // Deviation from the brief's literal fixture, flagged in the round report: the guard
+        // now checks only the known token set (see OutreachRenderer.guard), so an arbitrary
+        // unregistered bracket like the brief's original '[Unknown Token]' can no longer trip
+        // it by design, that is this round's accepted trade. This exercises the guarantee the
+        // guard still makes: a real, known token used by the approved copy ([day 2], present in
+        // BODY_TPL) that has no value survives rendering and is refused. Only one meeting day is
+        // supplied so [day 2] is never substituted.
         Boolean threw = false;
         try {
             OutreachRenderer.render(
                 groupOf('Michelle', new List<String>{'Camelot Village'}, new List<Integer>{485}),
-                sender(), days(), SUBJECT_TPL, brokenTemplate);
+                sender(), new List<String>{'Thursday'}, SUBJECT_TPL, BODY_TPL);
         } catch (OutreachRenderer.UnfilledTokenException e) {
             threw = true;
-            System.assert(e.getMessage().contains('[Unknown Token]'),
+            System.assert(e.getMessage().contains('[day 2]'),
                 'the error must name the token that survived');
         }
         System.assertEquals(true, threw,

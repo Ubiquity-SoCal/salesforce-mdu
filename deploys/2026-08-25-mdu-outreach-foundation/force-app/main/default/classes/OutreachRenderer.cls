@@ -45,8 +45,8 @@ public with sharing class OutreachRenderer {
         out.subject = stripTags(apply(subjectTemplate, tokens));
         out.bodyHtml = apply(bodyTemplate, tokens);
 
-        guard(out.subject);
-        guard(out.bodyHtml);
+        guard(out.subject, tokens.keySet());
+        guard(out.bodyHtml, tokens.keySet());
         return out;
     }
 
@@ -100,11 +100,31 @@ public with sharing class OutreachRenderer {
             + total + ' units in total, including ' + named;
     }
 
-    private static void guard(String rendered) {
-        Matcher m = Pattern.compile('\\[[^\\]]+\\]').matcher(rendered);
-        if (m.find()) {
-            throw new UnfilledTokenException(
-                'Refusing to send: unfilled token ' + m.group(0) + ' survived rendering.');
+    /**
+     * Refuses a message that still contains one of the KNOWN tokens.
+     *
+     * Deliberately checks exact token strings rather than an "any bracketed text" regex.
+     * Measured against the org 2026-08-25: three Omaha properties and nineteen MDU properties
+     * org wide carry square brackets in their real names, such as
+     * "Bedford Square [fmr Maplewood Court]", and two of the three Omaha ones are mailable
+     * today. A broad regex refused all of them and reported the property's own alternate name
+     * as an unfilled token, which reads as nonsense and looks in production like "some
+     * properties just never send".
+     *
+     * The token set is the same map used for substitution, so a token cannot be added to the
+     * copy without this guard watching for it. A token MISSPELLED in the template is not caught
+     * here; the rep sees it in the mandatory preview instead, which is a human gate the copy
+     * passes through anyway.
+     *
+     * Using contains() rather than a Pattern also removes the last regex literal from this
+     * class, and with it the double-backslash trap that has cost this project three rounds.
+     */
+    private static void guard(String rendered, Set<String> tokenNames) {
+        for (String token : tokenNames) {
+            if (rendered.contains(token)) {
+                throw new UnfilledTokenException(
+                    'Refusing to send: unfilled token ' + token + ' survived rendering.');
+            }
         }
     }
 
