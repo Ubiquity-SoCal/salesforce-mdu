@@ -16,6 +16,7 @@ public with sharing class OutreachGrouper {
         public Opportunity named;
         public Decimal totalUnits = 0;
         public String variant;
+        public List<Contact> candidates = new List<Contact>();
     }
 
     public static List<RecipientGroup> group(Set<Id> opportunityIds) {
@@ -33,6 +34,7 @@ public with sharing class OutreachGrouper {
         ];
 
         Map<String, RecipientGroup> byKey = new Map<String, RecipientGroup>();
+        Map<String, Map<Id, Contact>> contactsByKey = new Map<String, Map<Id, Contact>>();
 
         for (Opportunity o : opps) {
             if (o.Primary_Contact__c == null || o.Primary_Contact__r == null) {
@@ -89,6 +91,13 @@ public with sharing class OutreachGrouper {
                 byKey.put(key, g);
             }
 
+            if (!contactsByKey.containsKey(key)) {
+                contactsByKey.put(key, new Map<Id, Contact>());
+            }
+            // Keyed by Id so a contact appearing on seventeen properties is one candidate,
+            // not seventeen identical rows in a picker.
+            contactsByKey.get(key).put(o.Primary_Contact__c, o.Primary_Contact__r);
+
             g.properties.add(o);
             g.totalUnits += (o.Units__c == null ? 0 : o.Units__c);
 
@@ -102,6 +111,16 @@ public with sharing class OutreachGrouper {
         for (RecipientGroup g : byKey.values()) {
             Integer n = g.properties.size();
             g.variant = n == 1 ? 'A' : (n <= 3 ? 'B' : 'C');
+
+            Map<Id, Contact> found = contactsByKey.get(g.emailKey);
+            if (found.containsKey(g.contactId)) {
+                g.candidates.add(found.get(g.contactId));
+            }
+            for (Contact c : found.values()) {
+                if (c.Id != g.contactId) {
+                    g.candidates.add(c);
+                }
+            }
             out.add(g);
         }
         return out;

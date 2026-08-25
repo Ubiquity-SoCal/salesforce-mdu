@@ -117,14 +117,17 @@ private class OutreachGrouperTest {
 
         List<OutreachGrouper.RecipientGroup> whole =
             OutreachGrouper.group(new Set<Id>{alpha.Id, zebra.Id});
-        List<OutreachGrouper.RecipientGroup> partial =
-            OutreachGrouper.group(new Set<Id>{oneWins ? zebra.Id : alpha.Id});
 
         System.assertEquals(expected, whole[0].firstName);
-        System.assertEquals(expected, partial[0].firstName,
-            'the same mailbox must be greeted identically across two partial sends. Ordering '
-            + 'by Opportunity name meant a rep sending half a portfolio today and half next '
-            + 'week addressed the same owner by two different names');
+
+        // A subset containing only the loser's property must greet the LOSER, because it is the
+        // only candidate present. Asserting the winner here would be asserting a guarantee the
+        // design does not make: consistency holds for a given SET of contacts, not across
+        // subsets that contain different people.
+        List<OutreachGrouper.RecipientGroup> loserOnly =
+            OutreachGrouper.group(new Set<Id>{oneWins ? alpha.Id : zebra.Id});
+        System.assertEquals(oneWins ? 'Albert' : 'Ann', loserOnly[0].firstName,
+            'with only one candidate present, that candidate is greeted');
     }
 
     @isTest
@@ -161,5 +164,48 @@ private class OutreachGrouperTest {
     @isTest
     static void emptyInputProducesEmptyOutput() {
         System.assertEquals(0, OutreachGrouper.group(new Set<Id>()).size());
+    }
+
+    @isTest
+    static void aGroupExposesEveryContactSharingItsMailbox() {
+        Contact company = OutreachTestData.contact(null, 'Gurung Brothers Real Estate',
+                                                   'info@drkumargurung.com');
+        Contact person = OutreachTestData.contact('Kumar', 'Gurung', 'INFO@DrKumarGurung.com');
+        Opportunity first = OutreachTestData.opportunity('6314 Boyd Street', 30, company);
+        Opportunity second = OutreachTestData.opportunity('Taylor Apartments', 12, person);
+
+        List<OutreachGrouper.RecipientGroup> groups =
+            OutreachGrouper.group(new Set<Id>{first.Id, second.Id});
+
+        System.assertEquals(2, groups[0].candidates.size(),
+            'the rep cannot choose between records the group never surfaced');
+        System.assertEquals(person.Id, groups[0].candidates[0].Id,
+            'the defaulted pick leads, so accepting the default requires no interaction');
+    }
+
+    @isTest
+    static void aSingleContactGroupOffersNoChoice() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        List<OutreachGrouper.RecipientGroup> groups = OutreachGrouper.group(new Set<Id>{o.Id});
+
+        System.assertEquals(1, groups[0].candidates.size(),
+            'a picker must not appear for the 100 of 103 recipients who have exactly one record');
+    }
+
+    @isTest
+    static void oneContactOnManyPropertiesIsStillOneCandidate() {
+        Contact c = OutreachTestData.contact('Paladino', 'Director', 'pdg@example.com');
+        Set<Id> ids = new Set<Id>();
+        for (Integer i = 0; i < 4; i++) {
+            ids.add(OutreachTestData.opportunity('Paladino Property ' + i, 18, c).Id);
+        }
+
+        List<OutreachGrouper.RecipientGroup> groups = OutreachGrouper.group(ids);
+
+        System.assertEquals(1, groups[0].candidates.size(),
+            'candidates are distinct Contact RECORDS, not one per property; the seventeen '
+            + 'property owner must not present seventeen identical choices');
     }
 }
