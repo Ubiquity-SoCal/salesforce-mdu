@@ -120,10 +120,12 @@ private class OutreachGrouperTest {
 
         System.assertEquals(expected, whole[0].firstName);
 
-        // A subset containing only the loser's property must greet the LOSER, because it is the
-        // only candidate present. Asserting the winner here would be asserting a guarantee the
-        // design does not make: consistency holds for a given SET of contacts, not across
-        // subsets that contain different people.
+        // A subset containing only the loser's property greets the loser, because it is the only
+        // candidate present. That is true but it does NOT discriminate: with one candidate there
+        // is no tie to break, so every implementation agrees. Kept only as a statement of the
+        // contract. The assertion that does the work is
+        // aStrictSubsetStillBreaksTiesByContactId, which needs three contacts on one mailbox so
+        // that a strict subset still contains a genuine tie.
         List<OutreachGrouper.RecipientGroup> loserOnly =
             OutreachGrouper.group(new Set<Id>{oneWins ? alpha.Id : zebra.Id});
         System.assertEquals(oneWins ? 'Albert' : 'Ann', loserOnly[0].firstName,
@@ -164,6 +166,59 @@ private class OutreachGrouperTest {
     @isTest
     static void emptyInputProducesEmptyOutput() {
         System.assertEquals(0, OutreachGrouper.group(new Set<Id>()).size());
+    }
+
+    @isTest
+    static void aStrictSubsetStillBreaksTiesByContactId() {
+        // Closes the gap that two earlier attempts missed. A subset containing ONE candidate
+        // cannot discriminate, because there is no tie to break. This fixture puts THREE
+        // contacts on one mailbox so a strict subset still contains a real tie, and the
+        // property names are anti-correlated with contact creation order so an implementation
+        // ordering by Opportunity name picks differently from one ordering by Contact Id.
+        // Distinct surnames on purpose: identical names trip this org's Contact duplicate rule,
+        // which blocks rather than alerts.
+        Contact a = OutreachTestData.contact('Ann', 'Marco', 'ajm@marconomaha.com');
+        Contact b = OutreachTestData.contact('Bert', 'Nolan', 'AJM@MarcoNOmaha.com');
+        Contact c = OutreachTestData.contact('Cyd', 'Okonkwo', 'ajm@MARCONOMAHA.com');
+        OutreachTestData.opportunity('Zulu Court', 10, a);
+        Opportunity pb = OutreachTestData.opportunity('Alpha Court', 10, b);
+        Opportunity pc = OutreachTestData.opportunity('Mike Court', 10, c);
+
+        // Computed, never hardcoded: Contact Id assignment order is not guaranteed in a test.
+        Boolean bWins = b.Id < c.Id;
+        String expectedName = bWins ? 'Bert' : 'Cyd';
+        Id expectedId = bWins ? b.Id : c.Id;
+
+        List<OutreachGrouper.RecipientGroup> subset =
+            OutreachGrouper.group(new Set<Id>{pb.Id, pc.Id});
+
+        System.assertEquals(1, subset.size(), 'all three share one mailbox');
+        System.assertEquals(expectedName, subset[0].firstName,
+            'a strict subset containing a genuine tie must still break it by Contact Id, not by '
+            + 'which property name happened to sort first within this call');
+        System.assertEquals(expectedId, subset[0].contactId,
+            'and contactId moves with the greeting');
+    }
+
+    @isTest
+    static void aCandidateCarriesEnoughToLabelACompanyRecord() {
+        // The picker has to render a choice. A company record has no FirstName at all, so a
+        // candidate list carrying only Id, FirstName and Email would show a blank row, or throw
+        // SObjectException the moment the UI reads LastName off an unqueried field.
+        Contact company = OutreachTestData.contact(null, 'Gurung Brothers Real Estate',
+                                                   'info@drkumargurung.com');
+        Contact person = OutreachTestData.contact('Kumar', 'Gurung', 'INFO@DrKumarGurung.com');
+        Opportunity first = OutreachTestData.opportunity('6314 Boyd Street', 30, company);
+        Opportunity second = OutreachTestData.opportunity('Taylor Apartments', 12, person);
+
+        List<OutreachGrouper.RecipientGroup> groups =
+            OutreachGrouper.group(new Set<Id>{first.Id, second.Id});
+
+        for (Contact c : groups[0].candidates) {
+            System.assertNotEquals(null, c.LastName,
+                'every candidate must be labellable without a second query, including a company '
+                + 'record that has no first name');
+        }
     }
 
     @isTest

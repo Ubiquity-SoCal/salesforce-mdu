@@ -27,7 +27,8 @@ public with sharing class OutreachGrouper {
 
         List<Opportunity> opps = [
             SELECT Id, Name, Units__c, Primary_Contact__c,
-                   Primary_Contact__r.FirstName, Primary_Contact__r.Email
+                   Primary_Contact__r.FirstName, Primary_Contact__r.LastName,
+                   Primary_Contact__r.Email
             FROM Opportunity
             WHERE Id IN :opportunityIds
             ORDER BY Name ASC
