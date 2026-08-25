@@ -20,7 +20,19 @@ public with sharing class OutreachConfirm {
         public Id batchId;
         public Integer messageCount = 0;
         public Set<String> rejectedKeys = new Set<String>();
+
+        /** Nothing was sent to these. Unreachable property, or a group that would not render. */
         public List<String> refusals = new List<String>();
+
+        /**
+         * A message WAS sent, but the rep's contact override did not apply.
+         *
+         * Kept separate from refusals because those are opposite outcomes and a caller reading
+         * one flat list cannot tell them apart. "3 refusals" must not mean "3 people got a
+         * message with the wrong greeting". Split before any UI consumed it, on the reasoning
+         * that the fix gets more expensive once something is parsing message substrings.
+         */
+        public List<String> overrideWarnings = new List<String>();
     }
 
     // Outreach_Setting__mdt does not exist in this org. Attempted as specified in an earlier
@@ -194,8 +206,8 @@ public with sharing class OutreachConfirm {
 
             if (c == null) {
                 // Silently falling back would tell the rep their choice took when it did not.
-                out.refusals.add(g.toAddress + ': the chosen contact could not be found, so the '
-                    + 'default was used instead');
+                out.overrideWarnings.add(g.toAddress + ': the chosen contact could not be '
+                    + 'found, so the default was used instead');
                 continue;
             }
 
@@ -204,8 +216,8 @@ public with sharing class OutreachConfirm {
             // is either a stale id or a caller that is not the picker. Refuse it rather than
             // quietly addressing one person's message to another person's inbox.
             if (OutreachEmailKey.normalise(c.Email) != g.emailKey) {
-                out.refusals.add(g.toAddress + ': the chosen contact does not share this '
-                    + 'address, so the default was used instead');
+                out.overrideWarnings.add(g.toAddress + ': the chosen contact does not share '
+                    + 'this address, so the default was used instead');
                 continue;
             }
 

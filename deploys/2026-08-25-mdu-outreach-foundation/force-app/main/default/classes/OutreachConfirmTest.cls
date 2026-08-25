@@ -257,7 +257,37 @@ private class OutreachConfirmTest {
             'a picker chooses who is greeted, never where the mail goes; an override that does '
             + 'not share the mailbox must be refused rather than quietly applied');
         System.assert(m.Body_Html__c.contains('Hello Michelle,'));
-        System.assertEquals(1, result.refusals.size(), 'and the rep is told their choice did not take');
+        System.assertEquals(1, result.overrideWarnings.size(),
+            'the rep is told their choice did not take');
+        System.assertEquals(0, result.refusals.size(),
+            'and it is NOT a refusal: the message was sent, just under the default contact. '
+            + 'Collapsing these two into one list would tell a rep nobody was contacted');
+    }
+
+    @isTest
+    static void anOverrideNamingAContactThatDoesNotExistIsReportedNotSwallowed() {
+        // The re-review found this branch implemented but untested. A stale or deleted Contact
+        // id in the picker's payload must not silently fall back to the default, because the
+        // rep would believe their choice applied.
+        Contact owner = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, owner);
+        Contact doomed = OutreachTestData.contact('Gone', 'Away', 'gone@example.com');
+        Id deletedId = doomed.Id;
+        delete doomed;
+
+        OutreachConfirm.Outcome result;
+        Test.startTest();
+        System.runAs(sender()) {
+            result = OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL,
+                new Map<String, Id>{'mhardy@elevateliving.com' => deletedId});
+        }
+        Test.stopTest();
+
+        System.assertEquals(1, result.messageCount, 'the message still sends under the default');
+        System.assertEquals(1, result.overrideWarnings.size(),
+            'but the rep is told the override did not apply');
+        Outreach_Message__c m = [SELECT Contact__c FROM Outreach_Message__c LIMIT 1];
+        System.assertEquals(owner.Id, m.Contact__c, 'and the default contact was used');
     }
 
     @isTest
