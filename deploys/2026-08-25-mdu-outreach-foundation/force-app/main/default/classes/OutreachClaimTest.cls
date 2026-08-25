@@ -95,4 +95,17 @@ private class OutreachClaimTest {
             'blanks are skipped, so they are not rejected claims either');
         System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c]);
     }
+
+    @isTest
+    static void aDuplicateIsRejectedRatherThanDeferred() {
+        Id first = newBatch();
+        OutreachClaim.claim(new Map<String, Id>{'taken@example.com' => null}, first);
+
+        OutreachClaim.Result r = OutreachClaim.claim(
+            new Map<String, Id>{'taken@example.com' => null}, newBatch());
+
+        System.assertEquals(1, r.rejected.size(), 'a real duplicate belongs in rejected');
+        System.assertEquals(0, r.deferred.size(),
+            'and must NOT be reported as a transient failure a rep could retry');
+    }
 }

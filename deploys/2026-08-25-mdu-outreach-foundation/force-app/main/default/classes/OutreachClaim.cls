@@ -11,6 +11,10 @@ public with sharing class OutreachClaim {
     public class Result {
         public Map<String, Id> claimed = new Map<String, Id>();
         public Set<String> rejected = new Set<String>();
+        /** Keys that failed for a TRANSIENT reason, for example a row lock. Not claimed, not
+         *  contacted, and safe to retry. Kept apart from `rejected` because telling a rep
+         *  someone was already contacted when they were not is how a real owner gets dropped. */
+        public Set<String> deferred = new Set<String>();
     }
 
     public static Result claim(Map<String, Id> keyToContactId, Id batchId) {
@@ -49,7 +53,11 @@ public with sharing class OutreachClaim {
             if (sr.isSuccess()) {
                 out.claimed.put(keys[i], sr.getId());
             } else {
-                out.rejected.add(keys[i]);
+                if (sr.getErrors()[0].getStatusCode() == StatusCode.DUPLICATE_VALUE) {
+                    out.rejected.add(keys[i]);
+                } else {
+                    out.deferred.add(keys[i]);
+                }
             }
         }
         return out;
