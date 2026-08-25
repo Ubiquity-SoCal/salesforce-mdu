@@ -161,4 +161,81 @@ public with sharing class OutreachSelectionController {
         }
         return 'Ready';
     }
+
+    public class PreviewItem {
+        @AuraEnabled public String toAddress;
+        @AuraEnabled public String subject;
+        @AuraEnabled public String bodyHtml;
+        @AuraEnabled public Integer propertyCount;
+        @AuraEnabled public Decimal totalUnits;
+        @AuraEnabled public String variant;
+    }
+
+    private static final Integer PREVIEW_LIMIT = 3;
+    private static final String TEMPLATE_NAME = 'MDU_Outreach_Fiber';
+
+    /**
+     * Renders through the same path confirm uses, with no DML at all. What the rep approves is
+     * exactly what confirm freezes.
+     *
+     * There is no human approver for this batch by design, so this preview IS the approval
+     * gate. It calls OutreachConfirm.senderFromRunningUser() rather than building its own
+     * sender, on purpose: that method both builds the signature AND validates it, throwing
+     * OutreachConfirm.SenderProfileException when the running user's profile cannot produce
+     * one (every real User in this org has a null Phone, verified 2026-08-25). An earlier
+     * version of this method carried its own copy of that logic without the validation, and
+     * the concrete consequence was every preview item failing the renderer's bracket guard on
+     * an unfilled [phone] token, being silently skipped by the catch below, and the rep seeing
+     * an empty preview with a Confirm button that could never enable and nothing explaining
+     * why. An empty preview must be an explained failure, never a blank screen, so this throws
+     * loudly instead of swallowing that case.
+     */
+    @AuraEnabled
+    public static List<PreviewItem> preview(List<Id> opportunityIds) {
+        List<OutreachGrouper.RecipientGroup> groups =
+            OutreachGrouper.group(new Set<Id>(opportunityIds));
+
+        // Most unusual first: a batch containing a seventeen property group must not preview as
+        // three ordinary single property emails. The rep is approving the whole batch, so the
+        // message most worth checking has to be the one they see.
+        for (Integer i = 0; i < groups.size(); i++) {
+            for (Integer j = i + 1; j < groups.size(); j++) {
+                if (groups[j].properties.size() > groups[i].properties.size()) {
+                    OutreachGrouper.RecipientGroup swap = groups[i];
+                    groups[i] = groups[j];
+                    groups[j] = swap;
+                }
+            }
+        }
+
+        EmailTemplate tpl = [SELECT Subject, HtmlValue FROM EmailTemplate
+                             WHERE DeveloperName = :TEMPLATE_NAME LIMIT 1];
+        List<String> days = OutreachMeetingDays.nextTwo(Date.today());
+        // The canonical builder, validation included. A rep whose profile cannot produce a
+        // signature gets a named exception saying which field to fix, rather than an empty
+        // preview and a Confirm button that never enables. Do not reintroduce a local copy.
+        OutreachRenderer.SenderContext sender = OutreachConfirm.senderFromRunningUser();
+
+        List<PreviewItem> out = new List<PreviewItem>();
+        for (OutreachGrouper.RecipientGroup g : groups) {
+            if (out.size() == PREVIEW_LIMIT) {
+                break;
+            }
+            try {
+                OutreachRenderer.Rendered r =
+                    OutreachRenderer.render(g, sender, days, tpl.Subject, tpl.HtmlValue);
+                PreviewItem item = new PreviewItem();
+                item.toAddress = g.toAddress;
+                item.subject = r.subject;
+                item.bodyHtml = r.bodyHtml;
+                item.propertyCount = g.properties.size();
+                item.totalUnits = g.totalUnits;
+                item.variant = g.variant;
+                out.add(item);
+            } catch (OutreachRenderer.UnfilledTokenException e) {
+                continue;
+            }
+        }
+        return out;
+    }
 }

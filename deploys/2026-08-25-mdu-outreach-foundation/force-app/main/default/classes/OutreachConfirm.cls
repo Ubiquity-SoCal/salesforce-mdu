@@ -281,8 +281,13 @@ public with sharing class OutreachConfirm {
      * A missing sender phone is a configuration mistake, not per-row data, so it stops the
      * run ONCE with a message naming what to fix. Same principle the Python original used
      * for an unset --sender-phone.
+     *
+     * Public, not private: OutreachSelectionController.preview() calls this same builder so
+     * the preview renders through the identical validation path confirm uses. There is
+     * deliberately no second copy of this check; see the note on OutreachSelectionController
+     * dated 2026-08-25 for the concrete failure a duplicate copy already caused once.
      */
-    private static OutreachRenderer.SenderContext senderFromRunningUser() {
+    public static OutreachRenderer.SenderContext senderFromRunningUser() {
         User u = [SELECT Name, Title, CompanyName, Phone, Email FROM User
                   WHERE Id = :UserInfo.getUserId()];
 

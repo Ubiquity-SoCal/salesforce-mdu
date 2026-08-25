@@ -182,4 +182,151 @@ private class OutreachSelectionControllerTest {
         System.assertEquals(1, rows.size());
         System.assertEquals(big.Id, rows[0].opportunityId);
     }
+
+    // preview() renders through OutreachConfirm.senderFromRunningUser(), the same validated
+    // builder confirm uses. Measured against the org 2026-08-25 (see OutreachConfirmTest):
+    // every real User in this org, including whoever runs these tests, has a null Phone, so a
+    // call to preview() NOT wrapped in System.runAs would throw SenderProfileException even on
+    // a row that should render cleanly. That is deliberately what
+    // previewRefusesLoudlyWhenTheSenderCannotSign below exercises. The other three tests need
+    // to reach the actual rendering, so they run as a manufactured sender who DOES have a
+    // Phone, the same fixture OutreachConfirmTest already uses for the identical reason,
+    // rather than inventing a second way around the same validation.
+    private static String previewSenderUsername() {
+        return 'outreach.preview.sender@' + UserInfo.getOrganizationId() + '.mdusdd';
+    }
+
+    private static User previewSender() {
+        String u = previewSenderUsername();
+        return [SELECT Id FROM User WHERE Username = :u LIMIT 1];
+    }
+
+    @testSetup
+    static void makePreviewFixtures() {
+        Profile admin = [SELECT Id FROM Profile WHERE Name = 'System Administrator' LIMIT 1];
+        insert new User(
+            FirstName = 'Outreach', LastName = 'Preview Sender',
+            Alias = 'oprev',
+            Email = 'outreach.preview.sender@example.com',
+            Username = previewSenderUsername(),
+            Phone = '816-555-0100',
+            ProfileId = admin.Id,
+            TimeZoneSidKey = 'America/Chicago',
+            LocaleSidKey = 'en_US',
+            EmailEncodingKey = 'UTF-8',
+            LanguageLocaleKey = 'en_US');
+
+        // EmailTemplate needs a folder; the running user's personal folder is always present.
+        EmailTemplate t = new EmailTemplate(
+            DeveloperName = 'MDU_Outreach_Fiber',
+            Name = 'MDU Outreach Fiber',
+            FolderId = UserInfo.getUserId(),
+            TemplateType = 'custom',
+            Subject = 'Fiber at [Property Name], no cost to ownership',
+            HtmlValue = '<p>Hello [First Name],</p><p>About [Property Block].</p>' +
+                        '<p>20 minutes [day 1] or [day 2]?</p>' +
+                        '<p>[Sender Name]<br>[Company]<br>[phone]  |  [email]</p>',
+            IsActive = true);
+        insert t;
+    }
+
+    @isTest
+    static void previewRendersRealMessagesAndWritesNothing() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        List<OutreachSelectionController.PreviewItem> items;
+        Test.startTest();
+        System.runAs(previewSender()) {
+            // Measured as a DELTA across the preview() call, not an absolute zero: entering
+            // System.runAs with a User for the first time in a transaction costs Salesforce its
+            // own implicit DML statement for sharing recalculation, independent of anything
+            // preview() does. An absolute-zero assertion here would fail on that overhead and
+            // hide the real question, which is whether preview() itself adds any DML on top of
+            // it. Checking just the two tables below would prove they stayed empty, but would
+            // pass even if preview wrote a row somewhere neither query looks, which is not the
+            // same as proving no DML ran at all.
+            Integer dmlBefore = Limits.getDmlStatements();
+            items = OutreachSelectionController.preview(new List<Id>{o.Id});
+            System.assertEquals(dmlBefore, Limits.getDmlStatements(),
+                'preview must perform zero DML statements, not merely leave these two tables '
+                + 'empty');
+        }
+        Test.stopTest();
+
+        System.assertEquals(1, items.size());
+        System.assertEquals('Fiber at Camelot Village, no cost to ownership', items[0].subject);
+        System.assert(items[0].bodyHtml.contains('Hello Michelle,'));
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Recipient__c],
+            'preview must not claim anybody');
+        System.assertEquals(0, [SELECT COUNT() FROM Outreach_Batch__c],
+            'preview must not create a batch');
+    }
+
+    @isTest
+    static void previewRefusesLoudlyWhenTheSenderCannotSign() {
+        // Deliberately NOT wrapped in System.runAs, so it runs as the real test user, who has no
+        // Phone, as does every real User in this org. Before this, preview rendered nothing and
+        // silently skipped every item, leaving a rep with an empty screen and a Confirm button
+        // that could never enable. An empty preview must be an explained failure, never a blank.
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        Boolean threw = false;
+        Test.startTest();
+        try {
+            OutreachSelectionController.preview(new List<Id>{o.Id});
+        } catch (OutreachConfirm.SenderProfileException e) {
+            threw = true;
+            System.assert(e.getMessage().contains('Phone'),
+                'and it names the field to fix: ' + e.getMessage());
+        }
+        Test.stopTest();
+
+        System.assertEquals(true, threw,
+            'preview must fail the same way confirm does, for the same reason, rather than '
+            + 'returning an empty list that looks like there is nothing to show');
+    }
+
+    @isTest
+    static void previewShowsAtMostThreeMostUnusualFirst() {
+        Contact solo = OutreachTestData.contact('Sue', 'Heiman', 'sheiman@burlingtoncapital.com');
+        Contact portfolio = OutreachTestData.contact('Paladino', 'Director', 'pdg@example.com');
+        List<Id> ids = new List<Id>();
+        ids.add(OutreachTestData.opportunity('Solo Property', 200, solo).Id);
+        for (Integer i = 0; i < 5; i++) {
+            ids.add(OutreachTestData.opportunity('Portfolio Property ' + i, 10, portfolio).Id);
+        }
+        Contact second = OutreachTestData.contact('Ann', 'Marco', 'ajm@example.com');
+        ids.add(OutreachTestData.opportunity('Marco One', 40, second).Id);
+        ids.add(OutreachTestData.opportunity('Marco Two', 20, second).Id);
+
+        List<OutreachSelectionController.PreviewItem> items;
+        Test.startTest();
+        System.runAs(previewSender()) {
+            items = OutreachSelectionController.preview(ids);
+        }
+        Test.stopTest();
+
+        System.assertEquals(3, items.size());
+        System.assertEquals(5, items[0].propertyCount,
+            'the five property group is the message most worth checking, so it leads');
+        System.assertEquals(2, items[1].propertyCount);
+        System.assertEquals(1, items[2].propertyCount);
+    }
+
+    @isTest
+    static void previewUsesTheSameMeetingDaysConfirmWould() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        List<String> expected = OutreachMeetingDays.nextTwo(Date.today());
+        List<OutreachSelectionController.PreviewItem> items;
+        System.runAs(previewSender()) {
+            items = OutreachSelectionController.preview(new List<Id>{o.Id});
+        }
+
+        System.assert(items[0].bodyHtml.contains(expected[0] + ' or ' + expected[1]),
+            'a preview offering different days from the send would be a lie');
+    }
 }
