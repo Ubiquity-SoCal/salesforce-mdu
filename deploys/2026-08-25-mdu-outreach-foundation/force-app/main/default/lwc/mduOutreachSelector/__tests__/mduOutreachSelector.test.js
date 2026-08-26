@@ -1,6 +1,7 @@
 import { createElement } from 'lwc';
 import MduOutreachSelector from 'c/mduOutreachSelector';
 import candidates from '@salesforce/apex/OutreachSelectionController.candidates';
+import preview from '@salesforce/apex/OutreachSelectionController.preview';
 
 // The brief for this test mocked `candidates` as a plain `jest.fn()` and drove it with
 // `mockResolvedValue`. That pattern is correct for an IMPERATIVE Apex call, but this component
@@ -24,6 +25,23 @@ jest.mock(
     { virtual: true }
 );
 
+// preview and confirmSelection are IMPERATIVE Apex calls, not @wire adapters, so unlike
+// candidates above, the plain jest.fn() + mockResolvedValue pattern is the correct one here.
+jest.mock(
+    '@salesforce/apex/OutreachSelectionController.preview',
+    () => ({ default: jest.fn() }),
+    { virtual: true }
+);
+
+// No assertion below drives this one directly, but mduOutreachSelector.js imports it at module
+// scope for handleConfirm. Leaving it unmocked would fail module resolution the moment the
+// component is required, breaking every test in this file, not just the preview-gate ones.
+jest.mock(
+    '@salesforce/apex/OutreachSelectionController.confirmSelection',
+    () => ({ default: jest.fn() }),
+    { virtual: true }
+);
+
 const ROWS = [
     { opportunityId: '006A', propertyName: 'Camelot Village', units: 485,
       emailKey: 'mhardy@elevateliving.com', chip: 'Ready', selectable: true },
@@ -33,6 +51,15 @@ const ROWS = [
       emailKey: 'philbuttner@cox.net', chip: 'Duplicate recipient', selectable: true },
     { opportunityId: '006D', propertyName: 'Orphan Property', units: 50,
       emailKey: null, chip: 'No contact', selectable: false }
+];
+
+const PREVIEWS = [
+    { toAddress: 'pdg@example.com', subject: 'Fiber at The Frederick, no cost to ownership',
+      bodyHtml: '<p>Hello Paladino,</p>', propertyCount: 17, totalUnits: 315, variant: 'C' },
+    { toAddress: 'philbuttner@cox.net', subject: 'Fiber at The Richards Apartments, no cost to ownership',
+      bodyHtml: '<p>Hello Phil,</p>', propertyCount: 3, totalUnits: 53, variant: 'B' },
+    { toAddress: 'mhardy@elevateliving.com', subject: 'Fiber at Camelot Village, no cost to ownership',
+      bodyHtml: '<p>Hello Michelle,</p>', propertyCount: 1, totalUnits: 485, variant: 'A' }
 ];
 
 function build() {
@@ -131,5 +158,82 @@ describe('c-mdu-outreach-selector', () => {
 
         const counter = element.shadowRoot.querySelector('[data-counter]');
         expect(counter.textContent).toBe('0 properties selected, 0 recipients after dedupe');
+    });
+});
+
+describe('the preview gate', () => {
+    afterEach(() => {
+        while (document.body.firstChild) {
+            document.body.removeChild(document.body.firstChild);
+        }
+        jest.clearAllMocks();
+    });
+
+    // candidates.emit(ROWS) has to come AFTER build(), not before it, even though the brief's
+    // version of this test called candidates.mockResolvedValue(ROWS) before build(). The wire
+    // adapter's static emit() only pushes to instances already registered in
+    // TestWireAdapterTemplate._wireInstances, and connect() only happens once the component is
+    // created and inserted; emitting first would land on zero instances, this.rows would stay
+    // empty, and selectAllSelectable() would select nothing. The assertions below would still
+    // pass in that case only because preview.mockResolvedValue resolves the same PREVIEWS
+    // regardless of what opportunityIds it was called with, which is exactly the kind of
+    // pass-for-the-wrong-reason the standing question is meant to catch, so this suite keeps the
+    // ordering that actually exercises the wired data reaching the rows.
+    it('keeps confirm disabled before any preview is opened', async () => {
+        preview.mockResolvedValue(PREVIEWS);
+        const element = build();
+        candidates.emit(ROWS);
+        await Promise.resolve();
+        element.selectAllSelectable();
+        await element.loadPreviews();
+
+        expect(element.confirmDisabled).toBe(true);
+    });
+
+    it('keeps confirm disabled after only some previews are seen', async () => {
+        preview.mockResolvedValue(PREVIEWS);
+        const element = build();
+        candidates.emit(ROWS);
+        await Promise.resolve();
+        element.selectAllSelectable();
+        await element.loadPreviews();
+
+        element.markPreviewSeen(0);
+        element.markPreviewSeen(1);
+
+        expect(element.confirmDisabled).toBe(true);
+    });
+
+    it('enables confirm only once every preview has been seen', async () => {
+        preview.mockResolvedValue(PREVIEWS);
+        const element = build();
+        candidates.emit(ROWS);
+        await Promise.resolve();
+        element.selectAllSelectable();
+        await element.loadPreviews();
+
+        element.markPreviewSeen(0);
+        element.markPreviewSeen(1);
+        element.markPreviewSeen(2);
+
+        expect(element.confirmDisabled).toBe(false);
+    });
+
+    // The one that matters. A rep who previews three emails and then adds forty more properties
+    // has approved nothing about those forty; Confirm has to lock again the instant the
+    // selection changes, not stay unlocked because it was unlocked a moment ago.
+    it('re-locks confirm when the selection changes after previewing', async () => {
+        preview.mockResolvedValue(PREVIEWS);
+        const element = build();
+        candidates.emit(ROWS);
+        await Promise.resolve();
+        element.selectAllSelectable();
+        await element.loadPreviews();
+        [0, 1, 2].forEach((i) => element.markPreviewSeen(i));
+        expect(element.confirmDisabled).toBe(false);
+
+        element.selected = new Set(['006A']);
+
+        expect(element.confirmDisabled).toBe(true);
     });
 });

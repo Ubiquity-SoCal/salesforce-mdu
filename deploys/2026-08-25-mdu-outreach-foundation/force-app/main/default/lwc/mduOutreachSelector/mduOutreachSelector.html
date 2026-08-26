@@ -31,6 +31,32 @@
                     </template>
                 </tbody>
             </table>
+
+            <template if:true={previews.length}>
+                <h2 class="slds-text-heading_small slds-m-vertical_small">
+                    Read all three before confirming
+                </h2>
+                <template for:each={previews} for:item="item" for:index="i">
+                    <div key={item.toAddress} class="slds-box slds-m-bottom_small">
+                        <p class="slds-text-body_small">
+                            To {item.toAddress}, {item.propertyCount} properties, {item.totalUnits} units
+                        </p>
+                        <p class="slds-text-heading_x-small">{item.subject}</p>
+                        <lightning-formatted-rich-text value={item.bodyHtml}></lightning-formatted-rich-text>
+                        <lightning-button
+                            data-index={i}
+                            label="I have read this one"
+                            onclick={handlePreviewSeen}></lightning-button>
+                    </div>
+                </template>
+            </template>
+
+            <lightning-button
+                data-confirm
+                variant="brand"
+                label="Confirm batch"
+                disabled={confirmDisabled}
+                onclick={handleConfirm}></lightning-button>
         </div>
     </lightning-card>
 </template>
