@@ -1,0 +1,5 @@
+# Jest toolchain copied in from tracker-lwc (Task 4). node_modules and coverage are
+# regenerable from package.json; committing them would bloat this deploy folder for no reason.
+node_modules/
+coverage/
+*.log

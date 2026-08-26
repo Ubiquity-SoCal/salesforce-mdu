@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="MDU Outreach" icon-name="standard:email">
+        <div class="slds-p-horizontal_medium">
+            <p data-counter class="slds-text-heading_small slds-m-bottom_small">{counterText}</p>
+
+            <table class="slds-table slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th scope="col"><div class="slds-truncate">Select</div></th>
+                        <th scope="col"><div class="slds-truncate">Property</div></th>
+                        <th scope="col"><div class="slds-truncate">Units</div></th>
+                        <th scope="col"><div class="slds-truncate">Status</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={rows} for:item="row">
+                        <tr data-row key={row.opportunityId} class="slds-hint-parent">
+                            <td>
+                                <lightning-input
+                                    type="checkbox"
+                                    data-id={row.opportunityId}
+                                    disabled={row.notSelectable}
+                                    onchange={handleToggle}
+                                    variant="label-hidden"
+                                    label="Select property"></lightning-input>
+                            </td>
+                            <td><div class="slds-truncate">{row.propertyName}</div></td>
+                            <td><div class="slds-truncate">{row.units}</div></td>
+                            <td><div class="slds-truncate">{row.chip}</div></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>
