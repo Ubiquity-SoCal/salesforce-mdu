@@ -61,8 +61,17 @@ public with sharing class OutreachSelectionController {
             'Primary_Contact__r.FirstName, Primary_Contact__r.Email ' +
             'FROM Opportunity WHERE RecordTypeId = :recordTypeId';
 
-        if (stateValue != null || !String.isBlank(city)) {
-            soql += ' AND (Property_City__c LIKE :cityLike OR Property_State__c = :stateValue)';
+        // Two independent clauses, not one OR. The OR made BOTH single-value cases degenerate to
+        // match-all: with no city, cityLike was '%' and the LIKE matched every row that had any
+        // city, so the state filter did nothing; with no state, Property_State__c = null matched
+        // every blank-state row. Unreachable while the LWC hardcoded Omaha and NE, and a real bug
+        // the moment the filter inputs existed, which is the very next task. Demonstrated before
+        // fixing: a state filter of NE returned an Arizona property.
+        if (!String.isBlank(city)) {
+            soql += ' AND Property_City__c LIKE :cityLike';
+        }
+        if (stateValue != null) {
+            soql += ' AND Property_State__c = :stateValue';
         }
         if (minUnits != null) {
             soql += ' AND Units__c >= :minUnits';

@@ -13,6 +13,77 @@ private class OutreachSelectionControllerTest {
         return null;
     }
 
+    /**
+     * OutreachTestData.opportunity always builds Omaha, NE, so an out-of-scope property has to be
+     * built inline. Property_Street__c must be distinct: OpportunityAddressDupHelper blocks
+     * duplicate addresses on insert and would fail the setup rather than the assertion.
+     */
+    private static Opportunity outOfScope(String name, String city, String state, String street) {
+        Contact c = OutreachTestData.contact('Pat', 'Vance' + street.left(4), 'pv' + street.left(4) + '@example.com');
+        Opportunity o = new Opportunity(
+            Name = name, StageName = 'Prospects', CloseDate = Date.today().addDays(90),
+            RecordTypeId = OutreachTestData.MDU_RECORD_TYPE_ID,
+            Property_City__c = city, Property_State__c = state,
+            Property_Zip__c = '99999', Property_Street__c = street,
+            Units__c = 50, Primary_Contact__c = c.Id);
+        insert o;
+        return o;
+    }
+
+    /**
+     * Both of these carry a POSITIVE CONTROL on purpose. Asserting only that the out-of-scope
+     * row is absent would pass vacuously if the query returned nothing at all, which is the
+     * same hollow shape as asserting an empty collection stayed empty.
+     */
+    @isTest
+    static void aStateOnlyFilterDoesNotMatchEveryRow() {
+        Contact inScope = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity omaha = OutreachTestData.opportunity('Camelot Village', 485, inScope);
+        Opportunity phoenix = outOfScope('Out Of State Tower', 'Phoenix', 'AZ', '9001 Desert Road');
+
+        Test.startTest();
+        List<OutreachSelectionController.Candidate> found =
+            OutreachSelectionController.candidates(null, 'NE', null, null, false);
+        Test.stopTest();
+
+        System.assertNotEquals(null, find(found, omaha.Id),
+            'positive control: the NE property must still be returned');
+        System.assertEquals(null, find(found, phoenix.Id),
+            'a state filter of NE must not return an AZ property. With the OR, cityLike was '
+            + '"%" and matched every row that had any city at all.');
+    }
+
+    /**
+     * LABELLED HONESTLY: this test does NOT discriminate the OR bug, and it is kept anyway.
+     *
+     * The review's finding had two halves. The state-only half is real and the test above proves
+     * it. The city-only half, that `Property_State__c = null` would match every blank-state row,
+     * turns out to be unreachable in this org: an active validation rule refuses to save an MDU
+     * opportunity without City, State and Zip ("City, State, and Zip are required for MDU and
+     * Business ROE opportunities"), discovered by trying to insert one here. With no MDU row able
+     * to hold a null state, that comparison is always false and the OR collapsed to the correct
+     * behaviour on its own.
+     *
+     * What this covers instead is that the city clause actually filters, which nothing else
+     * asserts and which Task 5 is about to put a user-facing input in front of.
+     */
+    @isTest
+    static void aCityFilterExcludesOtherCitiesInTheSameState() {
+        Contact inScope = OutreachTestData.contact('Sue', 'Heiman', 'sheiman@burlingtoncapital.com');
+        Opportunity omaha = OutreachTestData.opportunity('The Village at Grant Square', 201, inScope);
+        Opportunity lincoln = outOfScope('Capitol Court', 'Lincoln', 'NE', '9002 Capitol Avenue');
+
+        Test.startTest();
+        List<OutreachSelectionController.Candidate> found =
+            OutreachSelectionController.candidates('Omaha', null, null, null, false);
+        Test.stopTest();
+
+        System.assertNotEquals(null, find(found, omaha.Id),
+            'positive control: the Omaha property must still be returned');
+        System.assertEquals(null, find(found, lincoln.Id),
+            'a city filter of Omaha must not return a Lincoln property');
+    }
+
     @isTest
     static void aMailablePropertyIsReadyAndSelectable() {
         Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
