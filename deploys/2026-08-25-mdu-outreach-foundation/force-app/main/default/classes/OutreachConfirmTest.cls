@@ -73,6 +73,33 @@ private class OutreachConfirmTest {
         System.assertEquals('Queued', m.Status__c);
     }
 
+    /**
+     * The three tests in OutreachRendererTest cover loadTemplate itself. NONE of them would
+     * notice if this call site went back to a raw single sObject query, because in a test
+     * context the fixture template always exists, so both forms behave identically. This test
+     * is the one that discriminates: with the raw query a missing template throws
+     * QueryException, not MissingTemplateException.
+     */
+    @isTest
+    static void confirmNamesAMissingTemplateRatherThanThrowingQueryException() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        Test.startTest();
+        Boolean named = false;
+        System.runAs(sender()) {
+            try {
+                OutreachConfirm.confirm(new Set<Id>{o.Id}, 'No_Such_Template_For_This_Test');
+            } catch (OutreachRenderer.MissingTemplateException e) {
+                named = true;
+            }
+        }
+        Test.stopTest();
+
+        System.assertEquals(true, named,
+            'confirm() must route through OutreachRenderer.loadTemplate');
+    }
+
     @isTest
     static void confirmFreezesTheMeetingDaysOnTheBatch() {
         Contact c = OutreachTestData.contact('Sue', 'Heiman', 'sheiman@burlingtoncapital.com');

@@ -210,4 +210,39 @@ private class OutreachRendererTest {
         System.assert(r.bodyHtml.contains('Bracket &lt;Trap&gt; Apartments'),
             'a property name must never inject markup into the body');
     }
+
+    @isTest
+    static void aMissingTemplateIsNamedRatherThanThrowingQueryException() {
+        try {
+            OutreachRenderer.loadTemplate('No_Such_Template_For_This_Test');
+            System.assert(false, 'Expected MissingTemplateException');
+        } catch (OutreachRenderer.MissingTemplateException e) {
+            System.assert(e.getMessage().contains('No_Such_Template_For_This_Test'),
+                'The message must name the template an admin has to create, actual: '
+                + e.getMessage());
+        }
+    }
+
+    @isTest
+    static void aTextOnlyTemplateIsRefusedWithItsOwnMessage() {
+        EmailTemplate textOnly = new EmailTemplate(
+            DeveloperName = 'Text_Only', Name = 'Text Only', HtmlValue = null);
+        try {
+            OutreachRenderer.validateTemplate(textOnly, 'Text_Only');
+            System.assert(false, 'Expected MissingTemplateException');
+        } catch (OutreachRenderer.MissingTemplateException e) {
+            System.assert(e.getMessage().contains('no HTML body'),
+                'A text template needs its own message, not the missing-template one, actual: '
+                + e.getMessage());
+        }
+    }
+
+    @isTest
+    static void aUsableTemplateComesBackUnchanged() {
+        EmailTemplate ok = new EmailTemplate(
+            DeveloperName = 'Ok', Name = 'Ok', Subject = 's', HtmlValue = '<p>body</p>');
+        System.assertEquals('<p>body</p>',
+            OutreachRenderer.validateTemplate(ok, 'Ok').HtmlValue,
+            'A valid template must pass straight through');
+    }
 }

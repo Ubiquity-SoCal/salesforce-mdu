@@ -91,8 +91,7 @@ public with sharing class OutreachConfirm {
             Confirmed_At__c = System.now());
         applyChosenContacts(groups, chosenContactByKey, out);
 
-        EmailTemplate tpl = [SELECT Subject, HtmlValue FROM EmailTemplate
-                             WHERE DeveloperName = :templateDeveloperName LIMIT 1];
+        EmailTemplate tpl = OutreachRenderer.loadTemplate(templateDeveloperName);
 
         // RENDER BEFORE CLAIMING. This ordering is the safety argument of the whole method.
         //

@@ -208,8 +208,7 @@ public with sharing class OutreachSelectionController {
             }
         }
 
-        EmailTemplate tpl = [SELECT Subject, HtmlValue FROM EmailTemplate
-                             WHERE DeveloperName = :TEMPLATE_NAME LIMIT 1];
+        EmailTemplate tpl = OutreachRenderer.loadTemplate(TEMPLATE_NAME);
         List<String> days = OutreachMeetingDays.nextTwo(Date.today());
         // The canonical builder, validation included. A rep whose profile cannot produce a
         // signature gets a named exception saying which field to fix, rather than an empty

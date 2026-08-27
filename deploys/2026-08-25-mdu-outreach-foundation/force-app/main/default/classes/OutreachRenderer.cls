@@ -11,6 +11,49 @@ public with sharing class OutreachRenderer {
 
     public class UnknownTemplateTokenException extends Exception {}
 
+    public class MissingTemplateException extends Exception {}
+
+    /**
+     * The template lives in Setup, outside version control, so its absence is a configuration
+     * state this code will genuinely meet rather than an impossible one. Verified 2026-08-27:
+     * MDU_Outreach_Fiber does not exist in this org, while the test fixtures insert their own,
+     * which is why every test passed against an org where the first click threw.
+     *
+     * A single sObject query assignment answers that state with "List has no rows for assignment
+     * to SObject", which tells a rep nothing and an admin nothing either. Worse, in preview()
+     * that query sits one line above the sender validation, so it masked the one error message
+     * in this project that was written to be genuinely useful.
+     */
+    public static EmailTemplate loadTemplate(String developerName) {
+        List<EmailTemplate> found = [SELECT Subject, HtmlValue FROM EmailTemplate
+                                     WHERE DeveloperName = :developerName LIMIT 1];
+        return validateTemplate(found.isEmpty() ? null : found[0], developerName);
+    }
+
+    /**
+     * Split from loadTemplate so both failure modes are testable without inserting an
+     * EmailTemplate, which needs a folder and cannot express a null HtmlValue through the
+     * fixture pattern the other tests use.
+     */
+    @TestVisible
+    private static EmailTemplate validateTemplate(EmailTemplate tpl, String developerName) {
+        if (tpl == null) {
+            throw new MissingTemplateException(
+                'The email template ' + developerName + ' does not exist in this org. An '
+                + 'administrator has to create it before anything can be previewed or sent. '
+                + 'Nothing has been claimed or sent.');
+        }
+        // A template built as plain text has a null HtmlValue, and guardTemplate's
+        // Pattern.matcher(null) would answer that with a bare NullPointerException.
+        if (String.isBlank(tpl.HtmlValue)) {
+            throw new MissingTemplateException(
+                'The email template ' + developerName + ' has no HTML body, which usually means '
+                + 'it was created as a plain text template. Recreate it as HTML or Custom. '
+                + 'Nothing has been claimed or sent.');
+        }
+        return tpl;
+    }
+
     public class SenderContext {
         public String fullName;
         public String title;
