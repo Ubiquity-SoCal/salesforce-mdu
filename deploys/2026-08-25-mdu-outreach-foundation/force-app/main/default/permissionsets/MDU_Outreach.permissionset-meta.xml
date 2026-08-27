@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>MDU Outreach</label>
+    <description>Grants use of the MDU Outreach selection tab. Does not grant the ability to send; sending is a separate step outside Salesforce.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <classAccesses>
+        <apexClass>OutreachSelectionController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <objectPermissions>
+        <object>Outreach_Batch__c</object>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <object>Outreach_Message__c</object>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <object>Outreach_Message_Property__c</object>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <object>Outreach_Recipient__c</object>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <!-- Field permissions exist so a record page is readable, not because Apex needs them.
+         None of these classes run in user mode or call stripInaccessible, so the tab itself
+         works without a single entry here. Without them a rep who opens a batch sees a record
+         with no fields on it, which reads as a broken page rather than a permissions problem.
+
+         Universally required fields and master-detail fields are DELIBERATELY ABSENT: Salesforce
+         treats them as always accessible and rejects an explicit field permission for them.
+         Excluded on that basis: Outreach_Batch__c.Status__c, Outreach_Message__c.Batch__c,
+         Outreach_Message__c.Recipient__c, Outreach_Message__c.Status__c,
+         Outreach_Message_Property__c.Message__c, Outreach_Message_Property__c.Opportunity__c,
+         Outreach_Recipient__c.Email_Key__c, Outreach_Recipient__c.Status__c.
+         Same rule already documented in Opportunity_Campaign_Tagging.permissionset-meta.xml. -->
+    <fieldPermissions>
+        <field>Outreach_Batch__c.Confirmed_At__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Batch__c.Meeting_Day_1__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Batch__c.Meeting_Day_2__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Batch__c.Template_Name__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Message__c.Body_Html__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Message__c.Contact__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Message__c.Subject__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Message__c.To_Address__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Message_Property__c.Is_Named__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <!-- Outreach_Recipient__c fields are readable but never editable, matching allowEdit false
+         on the object. Editing an Email_Key__c or a First_Mailed_At__c by hand would silently
+         unblock re-mailing someone, which is the one guarantee this whole tool exists to hold. -->
+    <fieldPermissions>
+        <field>Outreach_Recipient__c.Contact__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Recipient__c.First_Mailed_At__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Outreach_Recipient__c.Last_Batch__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <tabSettings>
+        <tab>MDU_Outreach</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>
