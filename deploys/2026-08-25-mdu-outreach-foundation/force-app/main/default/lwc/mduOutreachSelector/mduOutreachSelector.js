@@ -23,6 +23,13 @@ export default class MduOutreachSelector extends LightningElement {
     @track previews = [];
     @track previewsSeen = new Set();
 
+    // Both were previously assigned without ever being declared or rendered. `error` was set on
+    // the wire failure path and shown nowhere, so an Apex error produced an empty table and no
+    // message. `result` was assigned in handleConfirm and dropped on the floor, discarding all
+    // five outcome channels the Apex layer deliberately keeps apart.
+    @track error;
+    @track result;
+
     // @track, not plain fields: the wire below reacts to these by $ reference, and a plain field
     // reassigned from a handler does not re-provision the wire.
     //
@@ -224,10 +231,30 @@ export default class MduOutreachSelector extends LightningElement {
         this.markPreviewSeen(Number(event.currentTarget.dataset.index));
     }
 
+    /**
+     * An Apex error arrives as { body: { message } } from both an imperative call and a wire, but
+     * as a plain Error from anywhere else. Reading only one shape is how a message becomes the
+     * word "undefined" on screen.
+     */
+    get errorMessage() {
+        if (!this.error) {
+            return '';
+        }
+        return this.error.body ? this.error.body.message : this.error.message;
+    }
+
     async handleConfirm() {
-        this.result = await confirmSelection({ opportunityIds: this.selectedIds });
-        this.selected = new Set();
-        this.previews = [];
-        this.previewsSeen = new Set();
+        this.error = undefined;
+        try {
+            this.result = await confirmSelection({ opportunityIds: this.selectedIds });
+            // Assigning `selected` already clears previews and previewsSeen through the setter,
+            // so the two explicit assignments this method used to make were redundant.
+            this.selected = new Set();
+        } catch (e) {
+            // On failure the selection is deliberately KEPT, so a rep who is told to set their
+            // Phone can fix it and retry without reselecting everything. Without this catch the
+            // rejection was unhandled: it lost the message AND, under node, killed the process.
+            this.error = e;
+        }
     }
 }

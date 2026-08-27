@@ -97,6 +97,32 @@
                 label="Confirm batch"
                 disabled={confirmDisabled}
                 onclick={handleConfirm}></lightning-button>
+
+            <template if:true={errorMessage}>
+                <div data-error class="slds-text-color_error slds-m-top_small">
+                    {errorMessage}
+                </div>
+            </template>
+
+            <!-- One paragraph per channel, never merged. "3 refusals" must not be readable as
+                 "3 people got a message with the wrong greeting". -->
+            <template if:true={result}>
+                <div data-result class="slds-box slds-m-top_small">
+                    <p>{result.messageCount} messages written.</p>
+                    <template if:true={result.rejectedAddresses.length}>
+                        <p>Already contacted, never retry: {result.rejectedAddresses}</p>
+                    </template>
+                    <template if:true={result.deferredKeys.length}>
+                        <p>Not contacted, safe to retry: {result.deferredKeys}</p>
+                    </template>
+                    <template if:true={result.refusals.length}>
+                        <p>Nothing was sent for these: {result.refusals}</p>
+                    </template>
+                    <template if:true={result.overrideWarnings.length}>
+                        <p>Sent, but your contact choice did not apply: {result.overrideWarnings}</p>
+                    </template>
+                </div>
+            </template>
         </div>
     </lightning-card>
 </template>

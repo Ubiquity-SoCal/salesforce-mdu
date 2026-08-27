@@ -2,6 +2,7 @@ import { createElement } from 'lwc';
 import MduOutreachSelector from 'c/mduOutreachSelector';
 import candidates from '@salesforce/apex/OutreachSelectionController.candidates';
 import preview from '@salesforce/apex/OutreachSelectionController.preview';
+import confirmSelection from '@salesforce/apex/OutreachSelectionController.confirmSelection';
 
 // The brief for this test mocked `candidates` as a plain `jest.fn()` and drove it with
 // `mockResolvedValue`. That pattern is correct for an IMPERATIVE Apex call, but this component
@@ -345,6 +346,88 @@ describe('the preview gate', () => {
 
             expect(element.selectedIds).toHaveLength(0);
             expect(element.confirmDisabled).toBe(true);
+        });
+    });
+
+    describe('what the rep is told afterwards', () => {
+        // Built entirely through the DOM, so the helper itself depends on the preview trigger and
+        // the read buttons being wired. If either regresses, these tests fail too.
+        async function aBatchReadyToConfirm() {
+            preview.mockResolvedValue(PREVIEWS);
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+            element.selectAllSelectable();
+            await flush();
+            element.shadowRoot.querySelector('[data-preview]').click();
+            await flush();
+            element.shadowRoot
+                .querySelectorAll('[data-preview-item] lightning-button')
+                .forEach((b) => b.click());
+            await flush();
+            return element;
+        }
+
+        it('renders the message count and keeps each outcome channel separate', async () => {
+            confirmSelection.mockResolvedValue({
+                batchId: 'a01000000000001', messageCount: 2,
+                rejectedAddresses: ['dup@x.com'], refusals: ['no first name'],
+                overrideWarnings: ['override ignored'], deferredKeys: ['locked@x.com']
+            });
+            const element = await aBatchReadyToConfirm();
+
+            element.shadowRoot.querySelector('[data-confirm]').click();
+            await flush();
+
+            const text = element.shadowRoot.querySelector('[data-result]').textContent;
+            expect(text).toContain('2');
+            expect(text).toContain('dup@x.com');
+            expect(text).toContain('no first name');
+            expect(text).toContain('override ignored');
+            expect(text).toContain('locked@x.com');
+
+            // The Apex layer kept these five apart across three rounds precisely so a rep could
+            // tell "nobody was contacted" from "a message went with the wrong greeting".
+            // Rendering them into one blob would satisfy every assertion above, so assert that
+            // no single paragraph carries two different channels.
+            const paragraphs = Array.from(
+                element.shadowRoot.querySelectorAll('[data-result] p')
+            ).map((p) => p.textContent);
+            const rejectedPara = paragraphs.find((p) => p.includes('dup@x.com'));
+            expect(rejectedPara).toBeDefined();
+            expect(rejectedPara).not.toContain('no first name');
+        });
+
+        it('shows the Apex message when confirm fails instead of failing silently', async () => {
+            confirmSelection.mockRejectedValue({ body: { message: 'Set your Phone in Setup' } });
+            const element = await aBatchReadyToConfirm();
+
+            element.shadowRoot.querySelector('[data-confirm]').click();
+            await flush();
+
+            expect(element.shadowRoot.querySelector('[data-error]').textContent)
+                .toContain('Set your Phone in Setup');
+        });
+
+        it('keeps the selection when confirm fails, so the rep can fix it and retry', async () => {
+            confirmSelection.mockRejectedValue({ body: { message: 'Set your Phone in Setup' } });
+            const element = await aBatchReadyToConfirm();
+            const before = element.selectedIds.length;
+
+            element.shadowRoot.querySelector('[data-confirm]').click();
+            await flush();
+
+            expect(before).toBeGreaterThan(0);
+            expect(element.selectedIds).toHaveLength(before);
+        });
+
+        it('shows the Apex message when the candidate wire fails', async () => {
+            const element = build();
+            candidates.error({ message: 'Outreach is not available to you' });
+            await flush();
+
+            expect(element.shadowRoot.querySelector('[data-error]').textContent)
+                .toContain('Outreach is not available to you');
         });
     });
 });
