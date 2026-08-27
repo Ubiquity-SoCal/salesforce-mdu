@@ -32,12 +32,19 @@
                 </tbody>
             </table>
 
+            <lightning-button
+                data-preview
+                class="slds-m-vertical_small"
+                label="Preview this batch"
+                disabled={previewDisabled}
+                onclick={handleLoadPreviews}></lightning-button>
+
             <template if:true={previews.length}>
                 <h2 class="slds-text-heading_small slds-m-vertical_small">
                     Read all three before confirming
                 </h2>
                 <template for:each={previews} for:item="item" for:index="i">
-                    <div key={item.toAddress} class="slds-box slds-m-bottom_small">
+                    <div data-preview-item key={item.toAddress} class="slds-box slds-m-bottom_small">
                         <p class="slds-text-body_small">
                             To {item.toAddress}, {item.propertyCount} properties, {item.totalUnits} units
                         </p>

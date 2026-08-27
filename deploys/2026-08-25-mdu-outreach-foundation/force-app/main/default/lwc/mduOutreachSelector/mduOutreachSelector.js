@@ -40,6 +40,13 @@ export default class MduOutreachSelector extends LightningElement {
     // collide at build time, they are not two independent things layered on top of each other.
     _selected = new Set();
 
+    // Every load of the previews carries a generation number. A load whose number is no longer
+    // current lost a race and must not assign. Without this, a rep who toggles a checkbox while
+    // preview() is in flight gets the stale list reinstalled AFTER the setter cleared it, marks
+    // those three read, and confirms a batch that is not the one they approved. That is the
+    // exact failure the re-lock exists to prevent, arriving through the back door.
+    _previewToken = 0;
+
     @api
     get selected() {
         return this._selected;
@@ -47,6 +54,7 @@ export default class MduOutreachSelector extends LightningElement {
 
     set selected(value) {
         this._selected = value;
+        this._previewToken++;
         this.previews = [];
         this.previewsSeen = new Set();
     }
@@ -136,9 +144,24 @@ export default class MduOutreachSelector extends LightningElement {
     // like a broken loadPreviews implementation.
     @api
     async loadPreviews() {
-        this.previews = await preview({ opportunityIds: this.selectedIds });
+        const token = ++this._previewToken;
+        const loaded = await preview({ opportunityIds: this.selectedIds });
+        if (token !== this._previewToken) {
+            // Superseded, either by a selection change or by a later load. Assigning here would
+            // undo the setter's clear.
+            return this.previews;
+        }
+        this.previews = loaded;
         this.previewsSeen = new Set();
         return this.previews;
+    }
+
+    get previewDisabled() {
+        return this.selected.size === 0;
+    }
+
+    handleLoadPreviews() {
+        return this.loadPreviews();
     }
 
     @api

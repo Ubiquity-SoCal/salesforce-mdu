@@ -68,6 +68,16 @@ function build() {
     return element;
 }
 
+// Several microtask ticks, not one. A single `await Promise.resolve()` is enough when a test
+// pokes a property directly, but a DOM-driven test has to let the click handler's promise chain
+// settle AND the resulting re-render flush, which is more than one turn of the queue.
+async function flush() {
+    for (let i = 0; i < 4; i++) {
+        // eslint-disable-next-line no-await-in-loop
+        await Promise.resolve();
+    }
+}
+
 describe('c-mdu-outreach-selector', () => {
     afterEach(() => {
         while (document.body.firstChild) {
@@ -235,5 +245,51 @@ describe('the preview gate', () => {
         element.selected = new Set(['006A']);
 
         expect(element.confirmDisabled).toBe(true);
+    });
+
+    // Every test above this line reaches loadPreviews through @api. That is exactly how a dead
+    // Confirm button shipped: ten tests proved the method worked and not one proved anything
+    // called it, because the @api decorator added to make it testable is what made the gap
+    // invisible. These two go through the DOM, and the first fails on a missing element rather
+    // than a wrong value if the wiring is ever removed again.
+    describe('the preview trigger', () => {
+        it('loads previews when the rep clicks Preview, not only when a test calls the method', async () => {
+            preview.mockResolvedValue(PREVIEWS);
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+            element.selectAllSelectable();
+            await flush();
+
+            const button = element.shadowRoot.querySelector('[data-preview]');
+            expect(button).not.toBeNull();
+            button.click();
+            await flush();
+
+            expect(preview).toHaveBeenCalled();
+            expect(element.shadowRoot.querySelectorAll('[data-preview-item]')).toHaveLength(3);
+        });
+
+        it('does not reinstall a stale preview list when the selection changes mid flight', async () => {
+            let release;
+            preview.mockReturnValue(new Promise((resolve) => { release = resolve; }));
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+            element.selectAllSelectable();
+            await flush();
+
+            element.shadowRoot.querySelector('[data-preview]').click();
+            // The rep changes their mind while the call is still in flight. The setter clears
+            // previews; the resolving promise must not put them back, or they mark three stale
+            // emails read and confirm a batch they never previewed.
+            element.selected = new Set();
+            await flush();
+            release(PREVIEWS);
+            await flush();
+
+            expect(element.shadowRoot.querySelectorAll('[data-preview-item]')).toHaveLength(0);
+            expect(element.confirmDisabled).toBe(true);
+        });
     });
 });
