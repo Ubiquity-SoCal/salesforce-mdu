@@ -272,11 +272,17 @@ private class OutreachSelectionControllerTest {
         Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
         Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
 
+        // Catches Exception rather than SenderProfileException by name because preview now wraps
+        // it: an unwrapped exception reaches Lightning as "An internal server error has
+        // occurred", so the wrap is required and this test must not assert the old contract.
+        // The wrapping itself is asserted by previewWrapsTheSenderErrorSoItsMessageSurvives.
+        // What THIS test still owns, and no other test does, is that preview refuses at all
+        // rather than returning an empty list that looks like there is nothing to show.
         Boolean threw = false;
         Test.startTest();
         try {
             OutreachSelectionController.preview(new List<Id>{o.Id});
-        } catch (OutreachConfirm.SenderProfileException e) {
+        } catch (Exception e) {
             threw = true;
             System.assert(e.getMessage().contains('Phone'),
                 'and it names the field to fix: ' + e.getMessage());
@@ -442,6 +448,69 @@ private class OutreachSelectionControllerTest {
 
         System.assertEquals(true, threw, 'the cap must stop the batch, not silently truncate it');
         System.assert(message.contains('40'), 'the rep must see what the cap actually is: ' + message);
+    }
+
+    /**
+     * These two assert the TYPE, not the message, and that is the whole point.
+     *
+     * SenderProfileException's own message already contains the word "Phone", so a test that
+     * only asserted on the message would pass identically whether the controller wrapped the
+     * exception or let it escape. It would be hollow. What actually has to be true is that the
+     * exception reaching Lightning is an AuraHandledException, because that is the only type
+     * whose message survives instead of being replaced with "An internal server error has
+     * occurred".
+     *
+     * Catch Exception rather than naming AuraHandledException in the catch, per the note above:
+     * naming it risks failing on the throw rather than on the behaviour under test.
+     *
+     * Deliberately NOT wrapped in System.runAs. The user running these tests has no Phone, which
+     * is precisely the state all three real Users in this org are in, verified 2026-08-27.
+     */
+    @isTest
+    static void previewWrapsTheSenderErrorSoItsMessageSurvives() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        String typeName = '';
+        String message = '';
+        Test.startTest();
+        try {
+            OutreachSelectionController.preview(new List<Id>{o.Id});
+        } catch (Exception e) {
+            typeName = e.getTypeName();
+            message = e.getMessage();
+        }
+        Test.stopTest();
+
+        System.assert(typeName.contains('AuraHandledException'),
+            'preview must wrap, or Lightning replaces the message with an internal server '
+            + 'error. Actual type: ' + typeName);
+        System.assert(message.contains('Phone'),
+            'and the wrapped message must still name the field to fix: ' + message);
+    }
+
+    @isTest
+    static void confirmWrapsTheSenderErrorSoItsMessageSurvives() {
+        Contact c = OutreachTestData.contact('Sue', 'Heiman', 'sheiman@burlingtoncapital.com');
+        Opportunity o = OutreachTestData.opportunity('The Village at Grant Square', 201, c);
+
+        String typeName = '';
+        String message = '';
+        Test.startTest();
+        try {
+            OutreachSelectionController.confirmSelection(
+                new List<Id>{o.Id}, new Map<String, Id>());
+        } catch (Exception e) {
+            typeName = e.getTypeName();
+            message = e.getMessage();
+        }
+        Test.stopTest();
+
+        System.assert(typeName.contains('AuraHandledException'),
+            'confirmSelection must wrap SenderProfileException too, not only ThrottleException. '
+            + 'Actual type: ' + typeName);
+        System.assert(message.contains('Phone'),
+            'and the wrapped message must still name the field to fix: ' + message);
     }
 
     @isTest

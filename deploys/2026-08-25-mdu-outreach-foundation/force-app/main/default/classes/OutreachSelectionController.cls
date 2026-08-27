@@ -190,8 +190,41 @@ public with sharing class OutreachSelectionController {
      * why. An empty preview must be an explained failure, never a blank screen, so this throws
      * loudly instead of swallowing that case.
      */
+    /**
+     * The four exceptions this project raises on purpose all carry a message written for a rep.
+     * Rethrowing them as AuraHandledException is the only thing that stops Lightning replacing
+     * that message with "An internal server error has occurred".
+     *
+     * setMessage() is not redundant with the constructor: the constructor's argument does not
+     * survive to getMessage() on the client, which is why the throttle path already did both.
+     *
+     * Genuinely unexpected exceptions are deliberately NOT caught here. A NullPointerException
+     * is an internal error and should read as one rather than being dressed up as advice.
+     */
+    private static AuraHandledException asRepFacing(Exception e) {
+        AuraHandledException wrapped = new AuraHandledException(e.getMessage());
+        wrapped.setMessage(e.getMessage());
+        return wrapped;
+    }
+
+    /**
+     * Wraps previewInternal rather than wrapping the body in place, so the ~45 line method below
+     * keeps its indentation and its diff stays readable.
+     */
     @AuraEnabled
     public static List<PreviewItem> preview(List<Id> opportunityIds) {
+        try {
+            return previewInternal(opportunityIds);
+        } catch (OutreachConfirm.SenderProfileException e) {
+            throw asRepFacing(e);
+        } catch (OutreachRenderer.MissingTemplateException e) {
+            throw asRepFacing(e);
+        } catch (OutreachRenderer.UnknownTemplateTokenException e) {
+            throw asRepFacing(e);
+        }
+    }
+
+    private static List<PreviewItem> previewInternal(List<Id> opportunityIds) {
         List<OutreachGrouper.RecipientGroup> groups =
             OutreachGrouper.group(new Set<Id>(opportunityIds));
 
@@ -292,9 +325,16 @@ public with sharing class OutreachSelectionController {
         } catch (OutreachConfirm.ThrottleException e) {
             // Surface the cap and the running total. "An internal server error has occurred"
             // teaches the rep nothing and generates a support request.
-            AuraHandledException wrapped = new AuraHandledException(e.getMessage());
-            wrapped.setMessage(e.getMessage());
-            throw wrapped;
+            throw asRepFacing(e);
+        } catch (OutreachConfirm.SenderProfileException e) {
+            // The one that fires FIRST in practice: all three real Users in this org have a null
+            // Phone, verified 2026-08-27. Catching only ThrottleException meant the single most
+            // likely failure was the one nobody was told about.
+            throw asRepFacing(e);
+        } catch (OutreachRenderer.MissingTemplateException e) {
+            throw asRepFacing(e);
+        } catch (OutreachRenderer.UnknownTemplateTokenException e) {
+            throw asRepFacing(e);
         }
     }
 }
