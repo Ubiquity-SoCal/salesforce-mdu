@@ -543,6 +543,10 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
             this.currentOffset = this.records.length;
             this.serverSummary = summary;
 
+            // View load owns these lists; every other loader may only add to them.
+            // Clearing here is what stops one view's owners leaking into the next.
+            this.ownerOptions = [];
+            this.reAssignedOptions = [];
             this.buildOwnerOptions();
             this.buildREAssignedOptions();
             this.applyDisplayRows();
@@ -675,8 +679,17 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     buildOwnerOptions() {
-        // Build from loaded records — shows only owners who actually have MDU deals
+        // Build from loaded records — shows only owners who actually have MDU deals.
+        // Additive on purpose: this.records is often a filtered or partially-paged
+        // slice, and the dropdown describes what the VIEW can be filtered by, not
+        // what happens to be on screen. Rebuilding from scratch here dropped any
+        // owner outside the hardcoded team list the moment a filter was applied,
+        // including the one currently selected. loadViewData() clears the list on
+        // view load, so options only grow within a view.
         const owners = new Map();
+        for (const opt of this.ownerOptions || []) {
+            if (opt.value) owners.set(opt.value, opt.value);
+        }
         for (const rec of this.records) {
             const ownerName = rec['Owner.Name'];
             if (ownerName && !owners.has(ownerName)) {
@@ -701,7 +714,11 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
     }
 
     buildREAssignedOptions() {
+        // Additive for the same reason as buildOwnerOptions().
         const reNames = new Set();
+        for (const opt of this.reAssignedOptions || []) {
+            if (opt.value) reNames.add(opt.value);
+        }
         for (const rec of this.records) {
             const name = rec['RE_Assigned__r.Name'];
             if (name) reNames.add(name);
