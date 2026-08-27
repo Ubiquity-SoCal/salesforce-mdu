@@ -23,11 +23,17 @@ export default class MduOutreachSelector extends LightningElement {
     @track previews = [];
     @track previewsSeen = new Set();
 
-    city = 'Omaha';
-    state = 'NE';
-    stageFilter = null;
-    minUnits = null;
-    mineOnly = false;
+    // @track, not plain fields: the wire below reacts to these by $ reference, and a plain field
+    // reassigned from a handler does not re-provision the wire.
+    //
+    // stageFilter is deliberately NOT exposed as an input. The spec defaults it to eligible
+    // stages, no rep has asked to override it, and an input would need the stage vocabulary,
+    // which belongs with the eligibility work rather than here. Omission, not oversight.
+    @track city = 'Omaha';
+    @track state = 'NE';
+    @track stageFilter = null;
+    @track minUnits = null;
+    @track mineOnly = false;
 
     // `selected` is an accessor pair, not a plain `@track` field, so that reassigning it from
     // ANYWHERE (a checkbox toggle, selectAllSelectable, or a test poking the property directly)
@@ -158,6 +164,33 @@ export default class MduOutreachSelector extends LightningElement {
 
     get previewDisabled() {
         return this.selected.size === 0;
+    }
+
+    // Every filter handler clears the selection by assigning through the `selected` setter, which
+    // is also what drops the previews and re-locks Confirm. A rep who previewed three emails and
+    // then changed the filter has approved nothing about the new list. Reusing the setter rather
+    // than repeating its body is the same argument as handleToggle and selectAllSelectable.
+    handleCityChange(event) {
+        this.city = event.detail.value;
+        this.selected = new Set();
+    }
+
+    handleStateChange(event) {
+        this.state = event.detail.value;
+        this.selected = new Set();
+    }
+
+    handleMinUnitsChange(event) {
+        // Apex binds this to a Decimal, and an empty box must mean "no minimum" rather than
+        // zero, which would still be a filter.
+        const raw = event.detail.value;
+        this.minUnits = raw === '' || raw === null || raw === undefined ? null : Number(raw);
+        this.selected = new Set();
+    }
+
+    handleMineOnlyChange(event) {
+        this.mineOnly = event.detail.checked;
+        this.selected = new Set();
     }
 
     handleLoadPreviews() {

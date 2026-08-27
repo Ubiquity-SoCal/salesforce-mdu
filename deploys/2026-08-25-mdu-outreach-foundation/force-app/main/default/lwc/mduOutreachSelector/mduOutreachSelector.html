@@ -1,6 +1,39 @@
 <template>
     <lightning-card title="MDU Outreach" icon-name="standard:email">
         <div class="slds-p-horizontal_medium">
+            <div class="slds-grid slds-gutters slds-wrap slds-m-bottom_small">
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input
+                        data-filter-city
+                        label="City"
+                        value={city}
+                        onchange={handleCityChange}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input
+                        data-filter-state
+                        label="State"
+                        value={state}
+                        onchange={handleStateChange}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input
+                        data-filter-min-units
+                        type="number"
+                        label="Minimum units"
+                        value={minUnits}
+                        onchange={handleMinUnitsChange}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input
+                        data-filter-mine-only
+                        type="checkbox"
+                        label="Only my opportunities"
+                        checked={mineOnly}
+                        onchange={handleMineOnlyChange}></lightning-input>
+                </div>
+            </div>
+
             <p data-counter class="slds-text-heading_small slds-m-bottom_small">{counterText}</p>
 
             <table class="slds-table slds-table_bordered">

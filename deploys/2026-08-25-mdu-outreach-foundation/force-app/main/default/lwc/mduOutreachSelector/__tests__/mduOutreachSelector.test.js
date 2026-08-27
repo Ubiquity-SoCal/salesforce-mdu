@@ -292,4 +292,59 @@ describe('the preview gate', () => {
             expect(element.confirmDisabled).toBe(true);
         });
     });
+
+    describe('the filters', () => {
+        it('passes a typed city through to the wire', async () => {
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+
+            const input = element.shadowRoot.querySelector('[data-filter-city]');
+            expect(input).not.toBeNull();
+            input.dispatchEvent(new CustomEvent('change', { detail: { value: 'Lincoln' } }));
+            await flush();
+
+            expect(candidates.getLastConfig().city).toBe('Lincoln');
+        });
+
+        it('passes a minimum unit count through as a number, not a string', async () => {
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+
+            element.shadowRoot.querySelector('[data-filter-min-units]')
+                .dispatchEvent(new CustomEvent('change', { detail: { value: '250' } }));
+            await flush();
+
+            // Apex takes this as a Decimal. A string would not bind.
+            expect(candidates.getLastConfig().minUnits).toBe(250);
+        });
+
+        it('clears the selection when a filter changes, so a stale preview cannot be confirmed', async () => {
+            preview.mockResolvedValue(PREVIEWS);
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+            element.selectAllSelectable();
+            await flush();
+            element.shadowRoot.querySelector('[data-preview]').click();
+            await flush();
+
+            // Mark every preview read through the DOM, not markPreviewSeen, so this also proves
+            // the read buttons are wired. Confirm must be live BEFORE the filter changes, or the
+            // assertion after it proves nothing.
+            element.shadowRoot
+                .querySelectorAll('[data-preview-item] lightning-button')
+                .forEach((b) => b.click());
+            await flush();
+            expect(element.confirmDisabled).toBe(false);
+
+            element.shadowRoot.querySelector('[data-filter-city]')
+                .dispatchEvent(new CustomEvent('change', { detail: { value: 'Lincoln' } }));
+            await flush();
+
+            expect(element.selectedIds).toHaveLength(0);
+            expect(element.confirmDisabled).toBe(true);
+        });
+    });
 });
