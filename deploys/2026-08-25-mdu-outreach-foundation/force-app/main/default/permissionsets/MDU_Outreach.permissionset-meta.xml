@@ -56,6 +56,11 @@
          Outreach_Recipient__c.Email_Key__c, Outreach_Recipient__c.Status__c.
          Same rule already documented in Opportunity_Campaign_Tagging.permissionset-meta.xml. -->
     <fieldPermissions>
+        <field>Outreach_Batch__c.Attachment_Name__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>Outreach_Batch__c.Confirmed_At__c</field>
         <editable>true</editable>
         <readable>true</readable>

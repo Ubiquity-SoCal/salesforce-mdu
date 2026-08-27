@@ -294,7 +294,11 @@ private class OutreachSelectionControllerTest {
             FolderId = UserInfo.getUserId(),
             TemplateType = 'custom',
             Subject = 'Fiber at [Property Name], no cost to ownership',
+            // Includes the attachment promise because the REAL template does. A fixture
+            // that omits it cannot exercise the guard that stops a batch shipping
+            // 'I have attached a one page overview' with nothing attached.
             HtmlValue = '<p>Hello [First Name],</p><p>About [Property Block].</p>' +
+                        '<p>I have attached a one page overview of how it works.</p>' +
                         '<p>20 minutes [day 1] or [day 2]?</p>' +
                         '<p>[Sender Name]<br>[Company]<br>[phone]  |  [email]</p>',
             IsActive = true);

@@ -16,6 +16,50 @@ public with sharing class OutreachConfirm {
 
     public class SenderProfileException extends Exception {}
 
+    public class MissingAttachmentException extends Exception {}
+
+    /**
+     * The one page overview the body promises. Sending happens through Outlook drafts, not from
+     * Salesforce, so the FILE lives on disk beside the drafting step and this is only its name.
+     * Recording the name means the drafting step attaches the file this batch actually promised
+     * rather than one it hardcoded independently.
+     *
+     * @TestVisible and non-final so a test can blank it. Without that the guard below could
+     * never fire and would be decoration.
+     */
+    @TestVisible
+    private static String REQUIRED_ATTACHMENT =
+        '2026-03-11 Taylor Mauney - UbiquityFiberFirst Process Overview (SAQ) (5).pdf';
+
+    // Deliberately apostrophe free. The copy says "I've attached a one page overview", but the
+    // template is editable in Setup outside version control, and anything pasted through Word or
+    // Outlook turns a straight apostrophe into a typographic one, which would make a phrase
+    // containing one silently stop matching. A guard that quietly never fires is worse than none.
+    private static final String ATTACHMENT_PROMISE = 'attached a one page overview';
+
+    /**
+     * Checks the template's promise against the configured attachment, once per run.
+     *
+     * The .xlsm this project replaced had no attachment call anywhere in its VBA, so it always
+     * shipped "I've attached a one page overview" with nothing attached. That single fact is why
+     * it was thrown away. The promise now lives in an EmailTemplate an admin can edit, and the
+     * file lives next to the drafting step, so the two can drift apart with nobody noticing.
+     */
+    @TestVisible
+    private static String attachmentFor(String bodyHtml) {
+        if (bodyHtml == null || !bodyHtml.contains(ATTACHMENT_PROMISE)) {
+            return null;
+        }
+        if (String.isBlank(REQUIRED_ATTACHMENT)) {
+            throw new MissingAttachmentException(
+                'The email template promises a one page overview, but no attachment is '
+                + 'configured, so every draft would go out with that promise broken. This is the '
+                + 'exact defect that retired the previous spreadsheet tool. Nothing has been '
+                + 'claimed or sent.');
+        }
+        return REQUIRED_ATTACHMENT;
+    }
+
     public class Outcome {
         public Id batchId;
         public Integer messageCount = 0;
@@ -92,6 +136,10 @@ public with sharing class OutreachConfirm {
         applyChosenContacts(groups, chosenContactByKey, out);
 
         EmailTemplate tpl = OutreachRenderer.loadTemplate(templateDeveloperName);
+
+        // Before any DML, like the sender check and for the same reason: a batch that promises a
+        // file nobody can attach must cost nothing, because a claim is permanent.
+        batch.Attachment_Name__c = attachmentFor(tpl.HtmlValue);
 
         // RENDER BEFORE CLAIMING. This ordering is the safety argument of the whole method.
         //

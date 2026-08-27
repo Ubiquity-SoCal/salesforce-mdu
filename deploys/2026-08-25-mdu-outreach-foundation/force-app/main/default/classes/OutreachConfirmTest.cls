@@ -44,7 +44,11 @@ private class OutreachConfirmTest {
             FolderId = UserInfo.getUserId(),
             TemplateType = 'custom',
             Subject = 'Fiber at [Property Name], no cost to ownership',
+            // Includes the attachment promise because the REAL template does. A fixture
+            // that omits it cannot exercise the guard that stops a batch shipping
+            // 'I have attached a one page overview' with nothing attached.
             HtmlValue = '<p>Hello [First Name],</p><p>About [Property Block].</p>' +
+                        '<p>I have attached a one page overview of how it works.</p>' +
                         '<p>20 minutes [day 1] or [day 2]?</p>' +
                         '<p>[Sender Name]<br>[Company]<br>[phone]  |  [email]</p>',
             IsActive = true);
@@ -98,6 +102,66 @@ private class OutreachConfirmTest {
 
         System.assertEquals(true, named,
             'confirm() must route through OutreachRenderer.loadTemplate');
+    }
+
+    @isTest
+    static void aBodyPromisingAnOverviewNamesTheFileToAttach() {
+        System.assert(
+            OutreachConfirm.attachmentFor('<p>I\'ve attached a one page overview of how it works.</p>')
+                .endsWith('.pdf'),
+            'a body that promises the overview must name the file the drafting step attaches');
+    }
+
+    @isTest
+    static void aBodyPromisingNothingNamesNoAttachment() {
+        System.assertEquals(null,
+            OutreachConfirm.attachmentFor('<p>Hello Michelle,</p><p>No promise here.</p>'),
+            'a template that promises nothing must not claim an attachment');
+    }
+
+    /**
+     * The guard that would be decoration without @TestVisible on REQUIRED_ATTACHMENT: in
+     * production the constant is never blank, so nothing else could ever reach this branch.
+     */
+    @isTest
+    static void aPromisedOverviewWithNothingConfiguredRefusesTheRun() {
+        String saved = OutreachConfirm.REQUIRED_ATTACHMENT;
+        OutreachConfirm.REQUIRED_ATTACHMENT = '';
+        Boolean refused = false;
+        try {
+            OutreachConfirm.attachmentFor('<p>I\'ve attached a one page overview.</p>');
+        } catch (OutreachConfirm.MissingAttachmentException e) {
+            refused = true;
+        }
+        OutreachConfirm.REQUIRED_ATTACHMENT = saved;
+
+        System.assertEquals(true, refused,
+            'promising a file with none configured is the exact defect that retired the .xlsm, '
+            + 'so it must stop the run rather than ship the promise broken');
+    }
+
+    /**
+     * The three above test attachmentFor. NONE of them prove confirm() calls it or that the
+     * answer reaches the batch, which is the same gap that let a dead Confirm button ship.
+     */
+    @isTest
+    static void confirmRecordsTheAttachmentOnTheBatch() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        Test.startTest();
+        OutreachConfirm.Outcome result;
+        System.runAs(sender()) {
+            result = OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL);
+        }
+        Test.stopTest();
+
+        Outreach_Batch__c batch =
+            [SELECT Attachment_Name__c FROM Outreach_Batch__c WHERE Id = :result.batchId];
+        System.assert(batch.Attachment_Name__c != null
+                && batch.Attachment_Name__c.endsWith('.pdf'),
+            'the batch must record the file its body promised, so the drafting step attaches '
+            + 'that one rather than a hardcoded guess. Actual: ' + batch.Attachment_Name__c);
     }
 
     @isTest

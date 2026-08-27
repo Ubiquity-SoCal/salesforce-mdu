@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Name__c</fullName>
+    <label>Attachment Name</label>
+    <description>The exact file the body of this batch promised, recorded so the drafting step attaches that file rather than one it guessed. Blank means the template promised nothing.</description>
+    <inlineHelpText>Set automatically from the template at confirm time. Do not edit.</inlineHelpText>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+</CustomField>

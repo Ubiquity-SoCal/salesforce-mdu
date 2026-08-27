@@ -228,6 +228,8 @@ public with sharing class OutreachSelectionController {
             throw asRepFacing(e);
         } catch (OutreachRenderer.MissingTemplateException e) {
             throw asRepFacing(e);
+        } catch (OutreachConfirm.MissingAttachmentException e) {
+            throw asRepFacing(e);
         } catch (OutreachRenderer.UnknownTemplateTokenException e) {
             throw asRepFacing(e);
         }
@@ -341,6 +343,8 @@ public with sharing class OutreachSelectionController {
             // likely failure was the one nobody was told about.
             throw asRepFacing(e);
         } catch (OutreachRenderer.MissingTemplateException e) {
+            throw asRepFacing(e);
+        } catch (OutreachConfirm.MissingAttachmentException e) {
             throw asRepFacing(e);
         } catch (OutreachRenderer.UnknownTemplateTokenException e) {
             throw asRepFacing(e);
