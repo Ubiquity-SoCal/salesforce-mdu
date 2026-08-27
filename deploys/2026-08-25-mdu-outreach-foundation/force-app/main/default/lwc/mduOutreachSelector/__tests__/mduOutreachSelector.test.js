@@ -3,6 +3,12 @@ import MduOutreachSelector from 'c/mduOutreachSelector';
 import candidates from '@salesforce/apex/OutreachSelectionController.candidates';
 import preview from '@salesforce/apex/OutreachSelectionController.preview';
 import confirmSelection from '@salesforce/apex/OutreachSelectionController.confirmSelection';
+import { refreshApex } from '@salesforce/apex';
+
+// refreshApex is not stubbed by sfdx-lwc-jest, so it has to be mocked explicitly or the module
+// fails to resolve and every test in this file dies rather than just the refresh ones.
+jest.mock('@salesforce/apex', () => ({ refreshApex: jest.fn(() => Promise.resolve()) }),
+    { virtual: true });
 
 // The brief for this test mocked `candidates` as a plain `jest.fn()` and drove it with
 // `mockResolvedValue`. That pattern is correct for an IMPERATIVE Apex call, but this component
@@ -446,6 +452,33 @@ describe('the preview gate', () => {
             const rejectedPara = paragraphs.find((p) => p.includes('dup@x.com'));
             expect(rejectedPara).toBeDefined();
             expect(rejectedPara).not.toContain('no first name');
+        });
+
+        // Observed for real before this existed: a batch was confirmed and then released, and
+        // the tab still showed the released property as "Already mailed", because candidates()
+        // is cacheable and the wire never refetched. Unfixed, a rep can also reselect people
+        // they just claimed and get an empty batch with no explanation.
+        it('refreshes the candidate list after a successful confirm', async () => {
+            confirmSelection.mockResolvedValue({
+                batchId: 'a01', messageCount: 1, rejectedAddresses: [], refusals: [],
+                overrideWarnings: [], deferredKeys: []
+            });
+            const element = await aBatchReadyToConfirm();
+
+            element.shadowRoot.querySelector('[data-confirm]').click();
+            await flush();
+
+            expect(refreshApex).toHaveBeenCalled();
+        });
+
+        it('does not refresh when confirm failed, because nothing changed server side', async () => {
+            confirmSelection.mockRejectedValue({ body: { message: 'Set your Phone in Setup' } });
+            const element = await aBatchReadyToConfirm();
+
+            element.shadowRoot.querySelector('[data-confirm]').click();
+            await flush();
+
+            expect(refreshApex).not.toHaveBeenCalled();
         });
 
         it('shows the Apex message when confirm fails instead of failing silently', async () => {

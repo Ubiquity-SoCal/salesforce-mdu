@@ -16,6 +16,23 @@ private class OutreachConfirmTest {
         return [SELECT Id FROM User WHERE Username = :u LIMIT 1];
     }
 
+    /**
+     * A user with NO Phone, created by this fixture rather than assumed to exist.
+     *
+     * This test used to run unwrapped, relying on every real User in the org having a null
+     * Phone. That was true on 2026-08-25 and stopped being true the moment one was set, and
+     * the test went red for a reason unrelated to the code. A test must not depend on
+     * production data it does not control.
+     */
+    private static String noPhoneUsername() {
+        return 'outreach.confirm.nophone@' + UserInfo.getOrganizationId() + '.mdusdd';
+    }
+
+    private static User noPhoneSender() {
+        String u = noPhoneUsername();
+        return [SELECT Id FROM User WHERE Username = :u LIMIT 1];
+    }
+
     @testSetup
     static void makeTemplate() {
         // A sender whose user record CAN produce a signature. Verified against the org
@@ -31,6 +48,17 @@ private class OutreachConfirmTest {
             Email = 'outreach.sender@example.com',
             Username = senderUsername(),
             Phone = '816-555-0100',
+            ProfileId = admin.Id,
+            TimeZoneSidKey = 'America/Chicago',
+            LocaleSidKey = 'en_US',
+            EmailEncodingKey = 'UTF-8',
+            LanguageLocaleKey = 'en_US');
+
+        insert new User(
+            FirstName = 'Outreach', LastName = 'Confirm No Phone',
+            Alias = 'ocnop',
+            Email = 'outreach.confirm.nophone@example.com',
+            Username = noPhoneUsername(),
             ProfileId = admin.Id,
             TimeZoneSidKey = 'America/Chicago',
             LocaleSidKey = 'en_US',
@@ -238,12 +266,14 @@ private class OutreachConfirmTest {
 
         Boolean threw = false;
         Test.startTest();
-        try {
-            OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL);
-        } catch (OutreachConfirm.SenderProfileException e) {
-            threw = true;
-            System.assert(e.getMessage().contains('Phone'),
-                'the message must name the field to fix: ' + e.getMessage());
+        System.runAs(noPhoneSender()) {
+            try {
+                OutreachConfirm.confirm(new Set<Id>{o.Id}, TPL);
+            } catch (OutreachConfirm.SenderProfileException e) {
+                threw = true;
+                System.assert(e.getMessage().contains('Phone'),
+                    'the message must name the field to fix: ' + e.getMessage());
+            }
         }
         Test.stopTest();
 

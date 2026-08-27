@@ -1,4 +1,5 @@
 import { LightningElement, api, track, wire } from 'lwc';
+import { refreshApex } from '@salesforce/apex';
 import candidates from '@salesforce/apex/OutreachSelectionController.candidates';
 import preview from '@salesforce/apex/OutreachSelectionController.preview';
 import confirmSelection from '@salesforce/apex/OutreachSelectionController.confirmSelection';
@@ -76,7 +77,11 @@ export default class MduOutreachSelector extends LightningElement {
         city: '$city', state: '$state', stageFilter: '$stageFilter',
         minUnits: '$minUnits', mineOnly: '$mineOnly'
     })
-    wiredCandidates({ data, error }) {
+    wiredCandidates(result) {
+        // Keep the whole wire result, not just its data. refreshApex needs the result object
+        // itself as its handle; passing the unwrapped rows does nothing and fails silently.
+        this._wired = result;
+        const { data, error } = result;
         if (data) {
             // notSelectable, not !selectable: LWC template expressions cannot negate, so the
             // template needs the row to already carry the sense it will read.
@@ -264,11 +269,29 @@ export default class MduOutreachSelector extends LightningElement {
             // Assigning `selected` already clears previews and previewsSeen through the setter,
             // so the two explicit assignments this method used to make were redundant.
             this.selected = new Set();
+            await this.refreshCandidates();
         } catch (e) {
             // On failure the selection is deliberately KEPT, so a rep who is told to set their
             // Phone can fix it and retry without reselecting everything. Without this catch the
             // rejection was unhandled: it lost the message AND, under node, killed the process.
             this.error = e;
+        }
+    }
+
+    /**
+     * candidates() is cacheable, so without this the chips stay whatever they were when the page
+     * loaded. Observed for real: a batch was confirmed and then released, and the tab still
+     * showed the released property as "Already mailed" because the wire never refetched.
+     * Unfixed, a rep can also reselect people they just claimed. The database refuses the
+     * duplicate, so they get an empty batch and a false picture of who is still eligible.
+     *
+     * @api so the refresh can also be driven from outside, and so a test can prove the wire
+     * handle is kept without going through a confirm.
+     */
+    @api
+    async refreshCandidates() {
+        if (this._wired) {
+            await refreshApex(this._wired);
         }
     }
 }

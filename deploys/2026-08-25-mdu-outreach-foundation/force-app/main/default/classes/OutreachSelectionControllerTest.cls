@@ -306,6 +306,23 @@ private class OutreachSelectionControllerTest {
         return [SELECT Id FROM User WHERE Username = :u LIMIT 1];
     }
 
+    /**
+     * A user with NO Phone, created by this fixture rather than assumed to exist.
+     *
+     * These tests used to run unwrapped, relying on the org's real users all having a null
+     * Phone. That was true on 2026-08-25 and stopped being true the moment a phone was set on
+     * one of them, and three tests went red for a reason that had nothing to do with the code.
+     * A test must not depend on production data it does not control.
+     */
+    private static String noPhoneUsername() {
+        return 'outreach.nophone@' + UserInfo.getOrganizationId() + '.mdusdd';
+    }
+
+    private static User noPhoneSender() {
+        String u = noPhoneUsername();
+        return [SELECT Id FROM User WHERE Username = :u LIMIT 1];
+    }
+
     @testSetup
     static void makePreviewFixtures() {
         Profile admin = [SELECT Id FROM Profile WHERE Name = 'System Administrator' LIMIT 1];
@@ -315,6 +332,17 @@ private class OutreachSelectionControllerTest {
             Email = 'outreach.preview.sender@example.com',
             Username = previewSenderUsername(),
             Phone = '816-555-0100',
+            ProfileId = admin.Id,
+            TimeZoneSidKey = 'America/Chicago',
+            LocaleSidKey = 'en_US',
+            EmailEncodingKey = 'UTF-8',
+            LanguageLocaleKey = 'en_US');
+
+        insert new User(
+            FirstName = 'Outreach', LastName = 'No Phone',
+            Alias = 'onoph',
+            Email = 'outreach.nophone@example.com',
+            Username = noPhoneUsername(),
             ProfileId = admin.Id,
             TimeZoneSidKey = 'America/Chicago',
             LocaleSidKey = 'en_US',
@@ -389,12 +417,14 @@ private class OutreachSelectionControllerTest {
         // rather than returning an empty list that looks like there is nothing to show.
         Boolean threw = false;
         Test.startTest();
-        try {
-            OutreachSelectionController.preview(new List<Id>{o.Id});
-        } catch (Exception e) {
-            threw = true;
-            System.assert(e.getMessage().contains('Phone'),
-                'and it names the field to fix: ' + e.getMessage());
+        System.runAs(noPhoneSender()) {
+            try {
+                OutreachSelectionController.preview(new List<Id>{o.Id});
+            } catch (Exception e) {
+                threw = true;
+                System.assert(e.getMessage().contains('Phone'),
+                    'and it names the field to fix: ' + e.getMessage());
+            }
         }
         Test.stopTest();
 
@@ -583,11 +613,13 @@ private class OutreachSelectionControllerTest {
         String typeName = '';
         String message = '';
         Test.startTest();
-        try {
-            OutreachSelectionController.preview(new List<Id>{o.Id});
-        } catch (Exception e) {
-            typeName = e.getTypeName();
-            message = e.getMessage();
+        System.runAs(noPhoneSender()) {
+            try {
+                OutreachSelectionController.preview(new List<Id>{o.Id});
+            } catch (Exception e) {
+                typeName = e.getTypeName();
+                message = e.getMessage();
+            }
         }
         Test.stopTest();
 
@@ -606,12 +638,14 @@ private class OutreachSelectionControllerTest {
         String typeName = '';
         String message = '';
         Test.startTest();
-        try {
-            OutreachSelectionController.confirmSelection(
-                new List<Id>{o.Id}, new Map<String, Id>());
-        } catch (Exception e) {
-            typeName = e.getTypeName();
-            message = e.getMessage();
+        System.runAs(noPhoneSender()) {
+            try {
+                OutreachSelectionController.confirmSelection(
+                    new List<Id>{o.Id}, new Map<String, Id>());
+            } catch (Exception e) {
+                typeName = e.getTypeName();
+                message = e.getMessage();
+            }
         }
         Test.stopTest();
 
