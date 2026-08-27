@@ -1436,7 +1436,11 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         }
         this.dirtyRecords = new Map();
         this.editingCell = null;
-        this.loadViewData();
+        // Re-query through the filter-aware loader. loadViewData() is the
+        // view-switch loader: it queries unfiltered and resets sort to the view
+        // default, which silently emptied the user's filters while the
+        // comboboxes still showed them selected.
+        this.reloadWithFilters();
     }
 
     // --- Export ---
