@@ -35,6 +35,8 @@ public with sharing class OutreachSelectionController {
         @AuraEnabled public String stage;
         @AuraEnabled public Id contactId;
         @AuraEnabled public String contactFirstName;
+        /** First and last together, for the screen. Null when there is no contact at all. */
+        @AuraEnabled public String contactName;
         @AuraEnabled public String contactEmail;
         @AuraEnabled public String emailKey;
         @AuraEnabled public String chip;
@@ -58,7 +60,8 @@ public with sharing class OutreachSelectionController {
         // every value arrives through a bind, so there is no injection surface.
         String soql =
             'SELECT Id, Name, Units__c, StageName, OwnerId, Primary_Contact__c, ' +
-            'Primary_Contact__r.FirstName, Primary_Contact__r.Email ' +
+            'Primary_Contact__r.FirstName, Primary_Contact__r.LastName, ' +
+            'Primary_Contact__r.Email ' +
             'FROM Opportunity WHERE RecordTypeId = :recordTypeId';
 
         // Two independent clauses, not one OR. The OR made BOTH single-value cases degenerate to
@@ -127,6 +130,12 @@ public with sharing class OutreachSelectionController {
             if (o.Primary_Contact__r != null) {
                 c.contactFirstName = o.Primary_Contact__r.FirstName;
                 c.contactEmail = o.Primary_Contact__r.Email;
+                // Built here rather than concatenated in the template, because 24 Omaha contacts
+                // have a blank FirstName and 'first + " " + last' would render the literal text
+                // "null Nameless" on screen. LastName is always populated; Salesforce requires it.
+                c.contactName = String.isBlank(o.Primary_Contact__r.FirstName)
+                    ? o.Primary_Contact__r.LastName
+                    : o.Primary_Contact__r.FirstName + ' ' + o.Primary_Contact__r.LastName;
             }
             c.chip = chipFor(o, c.emailKey, keyCounts, alreadyMailed);
             c.selectable = (c.chip == 'Ready' || c.chip == 'Duplicate recipient');

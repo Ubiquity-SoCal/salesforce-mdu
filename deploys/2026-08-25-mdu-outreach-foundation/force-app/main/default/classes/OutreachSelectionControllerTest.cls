@@ -97,6 +97,40 @@ private class OutreachSelectionControllerTest {
         System.assertEquals(485, row.units);
     }
 
+    /**
+     * A rep approving a Ready row is trusting the tool about WHO is being emailed. The chip alone
+     * does not say that, so the row has to carry the name, the address and the stage it is at.
+     */
+    @isTest
+    static void aReadyRowCarriesTheContactNameAndEmailTheRepIsTrusting() {
+        Contact c = OutreachTestData.contact('Michelle', 'Hardy', 'mhardy@elevateliving.com');
+        Opportunity o = OutreachTestData.opportunity('Camelot Village', 485, c);
+
+        OutreachSelectionController.Candidate row = find(omaha(), o.Id);
+
+        System.assertEquals('Michelle Hardy', row.contactName,
+            'the rep must see who this is, not just that some contact exists');
+        System.assertEquals('mhardy@elevateliving.com', row.contactEmail);
+        System.assertEquals('Prospects', row.stage);
+    }
+
+    @isTest
+    static void aContactWithNoFirstNameStillShowsAName() {
+        Contact c = OutreachTestData.contact(null, 'Nameless', 'nameless@example.com');
+        Opportunity o = OutreachTestData.opportunity('Nameless Owner Property', 70, c);
+
+        System.assertEquals('Nameless', find(omaha(), o.Id).contactName,
+            'a blank first name must not render as the literal text "null Nameless"');
+    }
+
+    @isTest
+    static void aRowWithNoContactHasNoContactName() {
+        Opportunity o = OutreachTestData.opportunity('Orphan Property', 50);
+
+        System.assertEquals(null, find(omaha(), o.Id).contactName,
+            'no contact means no name, not an empty-looking string that reads as a real one');
+    }
+
     @isTest
     static void noContactIsReportedNotHidden() {
         Opportunity o = OutreachTestData.opportunity('Orphan Property', 50);

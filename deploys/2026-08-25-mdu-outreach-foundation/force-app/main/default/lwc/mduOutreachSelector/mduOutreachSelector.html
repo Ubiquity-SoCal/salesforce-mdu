@@ -42,6 +42,9 @@
                         <th scope="col"><div class="slds-truncate">Select</div></th>
                         <th scope="col"><div class="slds-truncate">Property</div></th>
                         <th scope="col"><div class="slds-truncate">Units</div></th>
+                        <th scope="col"><div class="slds-truncate">Stage</div></th>
+                        <th scope="col"><div class="slds-truncate">Contact</div></th>
+                        <th scope="col"><div class="slds-truncate">Email</div></th>
                         <th scope="col"><div class="slds-truncate">Status</div></th>
                     </tr>
                 </thead>
@@ -59,6 +62,9 @@
                             </td>
                             <td><div class="slds-truncate">{row.propertyName}</div></td>
                             <td><div class="slds-truncate">{row.units}</div></td>
+                            <td data-cell-stage><div class="slds-truncate">{row.stage}</div></td>
+                            <td data-cell-contact><div class="slds-truncate">{row.contactName}</div></td>
+                            <td data-cell-email><div class="slds-truncate">{row.contactEmail}</div></td>
                             <td><div class="slds-truncate">{row.chip}</div></td>
                         </tr>
                     </template>

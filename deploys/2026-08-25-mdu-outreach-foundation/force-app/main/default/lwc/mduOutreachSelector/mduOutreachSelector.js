@@ -200,8 +200,22 @@ export default class MduOutreachSelector extends LightningElement {
         this.selected = new Set();
     }
 
-    handleLoadPreviews() {
-        return this.loadPreviews();
+    /**
+     * The catch is not optional. Without it a refused preview rejects into nothing, the screen
+     * does not move, and the rep cannot tell a refusal from a dead button. That happened on the
+     * first real click: the sender had no Phone, Apex refused correctly with a message written
+     * for exactly this case, and none of it reached the screen.
+     *
+     * loadPreviews stays bare so its @api callers still see the rejection; the handler is where
+     * a rep-facing failure becomes rep-facing text.
+     */
+    async handleLoadPreviews() {
+        this.error = undefined;
+        try {
+            await this.loadPreviews();
+        } catch (e) {
+            this.error = e;
+        }
     }
 
     @api

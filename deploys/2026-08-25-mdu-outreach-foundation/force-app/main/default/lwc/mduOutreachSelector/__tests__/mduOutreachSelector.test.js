@@ -44,13 +44,17 @@ jest.mock(
 );
 
 const ROWS = [
-    { opportunityId: '006A', propertyName: 'Camelot Village', units: 485,
+    { opportunityId: '006A', propertyName: 'Camelot Village', units: 485, stage: 'Prospects',
+      contactName: 'Michelle Hardy', contactEmail: 'mhardy@elevateliving.com',
       emailKey: 'mhardy@elevateliving.com', chip: 'Ready', selectable: true },
-    { opportunityId: '006B', propertyName: 'The Richards Apartments', units: 30,
+    { opportunityId: '006B', propertyName: 'The Richards Apartments', units: 30, stage: 'Prospects',
+      contactName: 'Phil Buttner', contactEmail: 'philbuttner@cox.net',
       emailKey: 'philbuttner@cox.net', chip: 'Duplicate recipient', selectable: true },
-    { opportunityId: '006C', propertyName: 'St Frances Apartments', units: 15,
+    { opportunityId: '006C', propertyName: 'St Frances Apartments', units: 15, stage: 'Qualified',
+      contactName: 'Phil Buttner', contactEmail: 'philbuttner@cox.net',
       emailKey: 'philbuttner@cox.net', chip: 'Duplicate recipient', selectable: true },
-    { opportunityId: '006D', propertyName: 'Orphan Property', units: 50,
+    { opportunityId: '006D', propertyName: 'Orphan Property', units: 50, stage: 'Prospects',
+      contactName: null, contactEmail: null,
       emailKey: null, chip: 'No contact', selectable: false }
 ];
 
@@ -94,6 +98,30 @@ describe('c-mdu-outreach-selector', () => {
 
         const rendered = element.shadowRoot.querySelectorAll('[data-row]');
         expect(rendered).toHaveLength(4);
+    });
+
+    // A rep approving a Ready row is trusting the tool about who is being emailed. The chip alone
+    // does not say that, so the row has to show the stage, the person and the address.
+    it('shows the stage, contact and email behind every row', async () => {
+        const element = build();
+        candidates.emit(ROWS);
+        await flush();
+
+        const first = element.shadowRoot.querySelector('[data-row]');
+        expect(first.querySelector('[data-cell-stage]').textContent).toContain('Prospects');
+        expect(first.querySelector('[data-cell-contact]').textContent).toContain('Michelle Hardy');
+        expect(first.querySelector('[data-cell-email]').textContent)
+            .toContain('mhardy@elevateliving.com');
+    });
+
+    it('leaves the contact and email blank on a row that has no contact', async () => {
+        const element = build();
+        candidates.emit(ROWS);
+        await flush();
+
+        const orphan = element.shadowRoot.querySelectorAll('[data-row]')[3];
+        expect(orphan.querySelector('[data-cell-contact]').textContent.trim()).toBe('');
+        expect(orphan.querySelector('[data-cell-email]').textContent.trim()).toBe('');
     });
 
     it('counts recipients after dedupe, not properties', async () => {
@@ -269,6 +297,28 @@ describe('the preview gate', () => {
 
             expect(preview).toHaveBeenCalled();
             expect(element.shadowRoot.querySelectorAll('[data-preview-item]')).toHaveLength(3);
+        });
+
+        // Found the hard way: Koa clicked Preview on a real property and NOTHING happened. His
+        // user has no Phone, so Apex refused, the promise rejected, and handleLoadPreviews had no
+        // catch, so the screen sat there silently. handleConfirm got this treatment in Task 6 and
+        // this path was missed. A refusal the rep cannot see is indistinguishable from a dead
+        // button, which is the exact class of failure this whole plan existed to remove.
+        it('shows the Apex message when preview fails instead of doing nothing', async () => {
+            preview.mockRejectedValue({
+                body: { message: 'Your Salesforce user record is missing Phone' }
+            });
+            const element = build();
+            candidates.emit(ROWS);
+            await flush();
+            element.selectAllSelectable();
+            await flush();
+
+            element.shadowRoot.querySelector('[data-preview]').click();
+            await flush();
+
+            expect(element.shadowRoot.querySelector('[data-error]').textContent)
+                .toContain('missing Phone');
         });
 
         it('does not reinstall a stale preview list when the selection changes mid flight', async () => {
