@@ -79,7 +79,10 @@ def main():
 
     # --- informational: manual syncs ---
     pl_age = age_h(newest("Property_Location__c", "LastModifiedDate"))
-    ag_age = age_h(newest("Agreement__c", "LastModifiedDate"))
+    # Last_Synced__c on the mirror = "did the sync RUN". Agreement__c.LastModifiedDate was
+    # the old source and is a FALSE staleness signal: it only moves when an agreement's DATA
+    # changes, so with no IronClad stage churn it climbs forever no matter how often you sync.
+    ag_age = age_h(newest("IronClad__c", "Last_Synced__c"))
     info = (f"Vetro->PropertyLocation {pl_age/24:.0f}d | "
             f"IronClad->Agreement {ag_age/24:.1f}d  (both manual, not alerted)")
 
