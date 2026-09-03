@@ -23,7 +23,7 @@ SECURITY_TOKEN = _SF["token"]
 sf = Salesforce(username=USERNAME, password=PASSWORD, security_token=SECURITY_TOKEN)
 
 # --- Load export ---
-EXPORT_PATH = "C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-08-18_153235_all.xlsx"
+EXPORT_PATH = "C:/Users/cass/Work_Projects/IronClad/data/input/exports/ironclad_export_2026-08-26_151119_all.xlsx"
 
 print("Loading export file...")
 wb = openpyxl.load_workbook(EXPORT_PATH, read_only=True)
@@ -317,11 +317,11 @@ if errors:
         print(f"  {e}")
 
     # Save full error log
-    with open("C:/Users/cass/Work_Projects/IronClad/import_errors.txt", "w") as f:
+    with open("C:/Users/cass/Work_Projects/IronClad/data/output/import_errors.txt", "w") as f:
         f.write(f"IronClad Import Errors - {datetime.now()}\n")
         f.write(f"Total: {error_count} errors out of {len(records)} records\n\n")
         for e in errors:
             f.write(f"{e}\n")
-    print(f"\nFull error log: IronClad/import_errors.txt")
+    print(f"\nFull error log: IronClad/data/output/import_errors.txt")
 
 print("\nDone!")
