@@ -115,6 +115,14 @@
 
 /* Table */
 .tracker-table {
+    /* Fixed layout makes the per-column width from the view config authoritative.
+       Under the default auto layout a column has to be at least as wide as its
+       widest nowrap cell, so col.width was only ever a minimum and one 215-char
+       Action value stretched that column to ~1400px against its configured 220px.
+       Fixed layout also switches on the text-overflow: ellipsis below, which auto
+       layout silently ignored. Every column needs an explicit width for this to
+       work, min-width alone is not honoured here. */
+    table-layout: fixed;
     width: max-content;
     min-width: 100%;
     border-collapse: separate;
@@ -148,6 +156,9 @@
 }
 
 .agreements-th {
+    /* Needs an explicit width, not just min-width: under table-layout: fixed an
+       auto-width column collapses instead of holding its floor. */
+    width: 200px;
     min-width: 200px;
 }
 
@@ -228,6 +239,22 @@
 .cell-input:focus {
     outline: 2px solid #0070d2;
     outline-offset: -2px;
+}
+
+/* Editing escapes the column cap. Capping the columns is what stops one long
+   Action stretching the grid, but a 220px input is no way to write a 200-char
+   note, so the active input overflows its cell rather than the whole column
+   being sized for the worst case. Left in normal flow on purpose: absolute
+   positioning would need position: relative on the td, which would break
+   position: sticky on the two frozen columns. Only one cell is ever editing. */
+.tracker-td.editing-cell {
+    overflow: visible;
+}
+
+.editing-cell .cell-input {
+    min-width: 380px;
+    position: relative;
+    z-index: 5;
 }
 
 .cell-checkbox {
@@ -352,6 +379,11 @@ th.frozen-icon-2 {
 /* Agreement badges */
 .agreements-cell {
     padding: 4px 8px;
+    /* These cells hold badges, not text. Now that the column is capped at 200px,
+       let the badges wrap onto another line rather than being clipped by the
+       nowrap + overflow: hidden that .tracker-td applies for text columns. Rows
+       with several agreements get taller; nothing gets hidden. */
+    white-space: normal;
 }
 
 .agreement-badge {

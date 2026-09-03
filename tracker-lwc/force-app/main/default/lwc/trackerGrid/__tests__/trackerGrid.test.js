@@ -67,11 +67,21 @@ jest.mock(
 const VIEW_CONFIG = JSON.stringify({
     columns: [
         { field: 'Name', label: 'Name' },
-        { field: 'StageName', label: 'Stage' }
+        { field: 'StageName', label: 'Stage' },
+        { field: 'Next_Action__c', label: 'Action', width: 220 }
     ],
     sort: { field: 'Name', direction: 'ASC' },
     formatting_rules: []
 });
+
+// 215 chars, the longest Next_Action__c actually in the org. At the grid's 13px
+// font that is roughly 1400px of text inside a column configured for 220px.
+const LONG_ACTION =
+    'AK engaged (owns 18, this + Royal Gardens are the 2 near our fiber). ' +
+    'Melissa picking up and addressing 6 items (renewal terms, balloon, ' +
+    'flat fee, tenant terms) before the next call with the ownership group.';
+
+const SHORT_ACTION = 'Call owner';
 
 // Niraj Patel and Dana Whitfield are deliberately NOT in the hardcoded team
 // lists inside buildOwnerOptions()/buildREAssignedOptions(). They only ever
@@ -83,14 +93,16 @@ const recordsFull = () => [
         Name: 'Test Property',
         StageName: 'Prospecting',
         Owner: { Name: 'Taylor Mauney' },
-        RE_Assigned__r: { Name: 'Justin Barry' }
+        RE_Assigned__r: { Name: 'Justin Barry' },
+        Next_Action__c: SHORT_ACTION
     },
     {
         Id: '006000000000002',
         Name: 'Second Property',
         StageName: 'Negotiation',
         Owner: { Name: 'Niraj Patel' },
-        RE_Assigned__r: { Name: 'Dana Whitfield' }
+        RE_Assigned__r: { Name: 'Dana Whitfield' },
+        Next_Action__c: LONG_ACTION
     }
 ];
 
@@ -340,6 +352,59 @@ describe('c-tracker-grid', () => {
             expect(optionValues('.re-assigned-selector')).not.toContain(
                 'Dana Whitfield'
             );
+        });
+    });
+
+    describe('overflow tooltips', () => {
+        // Addressed by record id, not row index: displayRows is sorted by Name,
+        // so index order is not fixture order.
+        const cell = (recordId, field) =>
+            element.shadowRoot.querySelector(
+                `td[data-record-id="${recordId}"][data-field="${field}"]`
+            );
+
+        const LONG_ROW = '006000000000002';
+        const SHORT_ROW = '006000000000001';
+
+        it('renders one Action cell per row', () => {
+            expect(
+                element.shadowRoot.querySelectorAll(
+                    'td[data-field="Next_Action__c"]'
+                )
+            ).toHaveLength(2);
+        });
+
+        it('puts the full text on a value too long for its column', () => {
+            // The column is capped at 220px and clips, so the only way to read a
+            // 215-char action is the tooltip.
+            expect(cell(LONG_ROW, 'Next_Action__c').title).toBe(LONG_ACTION);
+        });
+
+        it('leaves a value that fits without a tooltip', () => {
+            expect(cell(SHORT_ROW, 'Next_Action__c').title).toBe('');
+        });
+
+        it('marks only the cell being edited so it can widen past the cap', async () => {
+            const target = cell(LONG_ROW, 'Next_Action__c');
+            expect(target.className).not.toContain('editing-cell');
+
+            target.click();
+            await flush();
+            await flush();
+
+            expect(
+                cell(LONG_ROW, 'Next_Action__c').className
+            ).toContain('editing-cell');
+            expect(
+                cell(SHORT_ROW, 'Next_Action__c').className
+            ).not.toContain('editing-cell');
+        });
+
+        it('measures against the column width, not a fixed length', () => {
+            // Name has no configured width so it falls back to 150px. 'Second
+            // Property' is 15 chars, ~116px, which fits. Guards against the
+            // threshold being hardcoded rather than read from col.width.
+            expect(cell(LONG_ROW, 'Name').title).toBe('');
         });
     });
 });

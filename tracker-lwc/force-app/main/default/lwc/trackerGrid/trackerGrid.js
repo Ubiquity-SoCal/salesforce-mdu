@@ -859,6 +859,10 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                 if (colIdx === 0) tdClass += ' frozen-col-1';
                 else if (colIdx === 1) tdClass += ' frozen-col-2';
                 if (isDirty) tdClass += ' dirty-cell';
+                // Columns are sized for scanning, not for typing. Let the one cell
+                // being edited widen past its column cap so a long value is still
+                // workable in the input.
+                if (isEditing) tdClass += ' editing-cell';
                 tdClass += isEditable ? ' editable-cell' : ' readonly-cell';
 
                 const isLink = col.field === 'Name';
@@ -895,10 +899,23 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
                     cellStyle = 'left:' + frozenLeft + 'px;' + (cellStyle ? ' ' + cellStyle : '');
                 }
 
+                // The grid caps every column at its configured width and clips the
+                // overflow, so anything too long to fit needs its full text on hover.
+                // Only tag cells that plausibly overflow, otherwise every short cell
+                // sprouts a pointless tooltip. ~6.4px per char at the 13px grid font,
+                // plus the 20px of horizontal cell padding.
+                const displayValue = this.formatDisplayValue(value, col);
+                const cellTitle =
+                    typeof displayValue === 'string' &&
+                    displayValue.length * 6.4 + 20 > (col.width || 150)
+                        ? displayValue
+                        : '';
+
                 return {
                     key: row.Id + '-' + col.field,
                     field: col.field,
-                    value: this.formatDisplayValue(value, col),
+                    value: displayValue,
+                    title: cellTitle,
                     rawValue: value,
                     label: col.label,
                     editable: (isEditable || isOwner) && !isLink,
