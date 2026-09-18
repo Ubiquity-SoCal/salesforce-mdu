@@ -10,6 +10,13 @@ import getActiveUsers from '@salesforce/apex/TrackerController.getActiveUsers';
 import getAgreementPicklists from '@salesforce/apex/TrackerController.getAgreementPicklists';
 import getContactRoleOptions from '@salesforce/apex/TrackerController.getContactRoleOptions';
 import getPicklistValuesApex from '@salesforce/apex/TrackerController.getPicklistValues';
+import getActiveViewsForApp from '@salesforce/apex/TrackerController.getActiveViewsForApp';
+
+jest.mock(
+    '@salesforce/apex/TrackerController.getActiveViewsForApp',
+    () => ({ default: jest.fn() }),
+    { virtual: true }
+);
 
 jest.mock(
     '@salesforce/apex/TrackerController.getActiveViews',
@@ -405,6 +412,97 @@ describe('c-tracker-grid', () => {
             // Property' is 15 chars, ~116px, which fits. Guards against the
             // threshold being hardcoded rather than read from col.width.
             expect(cell(LONG_ROW, 'Name').title).toBe('');
+        });
+    });
+
+    describe('Save button placement', () => {
+        // The header is one long row of filters. Save sat at its far right end
+        // and was clipped off-screen unless the user zoomed out.
+        const makeDirty = async () => {
+            const target = element.shadowRoot.querySelector(
+                'td[data-record-id="006000000000001"][data-field="Next_Action__c"]'
+            );
+            target.click();
+            await flush();
+            await flush();
+            const input = element.shadowRoot.querySelector(
+                '[data-edit-id="006000000000001-Next_Action__c"]'
+            );
+            expect(input).not.toBeNull();
+            input.value = 'Call owner Tuesday';
+            input.dispatchEvent(new CustomEvent('change'));
+            await flush();
+            await flush();
+        };
+
+        const buttonsIn = (selector) =>
+            [...element.shadowRoot.querySelectorAll(`${selector} lightning-button`)]
+                .map((b) => b.label);
+
+        it('puts Save and Discard in the footer next to the unsaved count', async () => {
+            await makeDirty();
+
+            expect(buttonsIn('.tracker-footer')).toEqual(
+                expect.arrayContaining(['Discard', 'Save (1)'])
+            );
+            expect(
+                element.shadowRoot.querySelector('.tracker-footer .unsaved-indicator')
+            ).not.toBeNull();
+        });
+
+        it('no longer renders Save in the header', async () => {
+            await makeDirty();
+
+            expect(
+                buttonsIn('.tracker-header').filter((l) => /^Save|^Discard/.test(l))
+            ).toEqual([]);
+        });
+
+        it('keeps Save reachable when a filter hides every row mid-edit', async () => {
+            await makeDirty();
+            getTrackerDataFullWithCampaign.mockResolvedValue(dataPayload([], false));
+
+            await setCombobox('.sort-field', 'StageName');
+
+            expect(element.shadowRoot.querySelector('tbody')).toBeNull();
+            expect(buttonsIn('.tracker-footer')).toContain('Save (1)');
+        });
+
+        it('shows no Save until something is edited', () => {
+            expect(
+                buttonsIn('.tracker-container').filter((l) => /^Save \(/.test(l))
+            ).toEqual([]);
+        });
+    });
+
+    describe('RE Assigned filter by app', () => {
+        const mountFor = async (appContext) => {
+            while (document.body.firstChild) {
+                document.body.removeChild(document.body.firstChild);
+            }
+            getActiveViewsForApp.mockResolvedValue([
+                { Id: 'a0V000000000001', Name: 'All Opportunities' }
+            ]);
+            element = createElement('c-tracker-grid', { is: TrackerGrid });
+            element.appContext = appContext;
+            document.body.appendChild(element);
+            await flush();
+            await flush();
+        };
+
+        it('is not shown on the MDU Tracker', async () => {
+            await mountFor('MDU_Sales');
+
+            // Guard: the header rendered, so a missing RE box is not just an
+            // empty page.
+            expect(element.shadowRoot.querySelector('.owner-selector')).not.toBeNull();
+            expect(element.shadowRoot.querySelector('.re-assigned-selector')).toBeNull();
+        });
+
+        it('is still shown on the Business Tracker', async () => {
+            await mountFor('Business_Sales');
+
+            expect(element.shadowRoot.querySelector('.re-assigned-selector')).not.toBeNull();
         });
     });
 });

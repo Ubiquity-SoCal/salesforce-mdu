@@ -21,13 +21,15 @@
                         variant="label-hidden"
                         class="owner-selector"
                     ></lightning-combobox>
-                    <lightning-combobox
-                        value={selectedREAssigned}
-                        options={reAssignedOptions}
-                        onchange={handleREAssignedChange}
-                        variant="label-hidden"
-                        class="re-assigned-selector"
-                    ></lightning-combobox>
+                    <template lwc:if={showREAssignedFilter}>
+                        <lightning-combobox
+                            value={selectedREAssigned}
+                            options={reAssignedOptions}
+                            onchange={handleREAssignedChange}
+                            variant="label-hidden"
+                            class="re-assigned-selector"
+                        ></lightning-combobox>
+                    </template>
                     <lightning-combobox
                         value={selectedDateRange}
                         options={dateRangeOptions}
@@ -107,21 +109,6 @@
                     onclick={handleExport}
                     class="slds-m-left_x-small"
                 ></lightning-button>
-<template lwc:if={hasUnsavedChanges}>
-                    <lightning-button
-                        label="Discard"
-                        variant="neutral"
-                        onclick={handleDiscard}
-                        class="slds-m-left_x-small"
-                    ></lightning-button>
-                    <lightning-button
-                        label={saveButtonLabel}
-                        variant="brand"
-                        onclick={handleSave}
-                        disabled={isSaving}
-                        class="slds-m-left_x-small"
-                    ></lightning-button>
-                </template>
             </div>
         </div>
 
@@ -319,8 +306,9 @@
                     </div>
                 </template>
 
-                <!-- Record count footer -->
-                <template lwc:if={displayRows.length}>
+                <!-- Record count footer. Also stays up while edits are pending, or
+                     filtering to zero rows would hide the only Save button. -->
+                <template lwc:if={showFooter}>
                     <div class="tracker-footer">
                         <span>{recordCountLabel}</span>
                         <template lwc:if={hasMoreRecords}>
@@ -333,8 +321,23 @@
                                 class="load-more-grid-btn"
                             ></lightning-button>
                         </template>
+                        <!-- Save lives here, not in the header: the header row runs
+                             wider than a normal screen and clipped it off the right. -->
                         <template lwc:if={hasUnsavedChanges}>
-                            <span class="unsaved-indicator">{unsavedLabel}</span>
+                            <div class="footer-save">
+                                <span class="unsaved-indicator">{unsavedLabel}</span>
+                                <lightning-button
+                                    label="Discard"
+                                    variant="neutral"
+                                    onclick={handleDiscard}
+                                ></lightning-button>
+                                <lightning-button
+                                    label={saveButtonLabel}
+                                    variant="brand"
+                                    onclick={handleSave}
+                                    disabled={isSaving}
+                                ></lightning-button>
+                            </div>
                         </template>
                     </div>
                 </template>

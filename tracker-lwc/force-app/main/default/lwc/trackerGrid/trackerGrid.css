@@ -17,10 +17,14 @@
 }
 
 /* Header */
+/* Wraps rather than overflowing: the host clips horizontally, so anything past
+   the right edge was unreachable without zooming out. */
 .tracker-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 8px 12px;
     padding: 12px 16px;
     background: #f4f6f9;
     border-bottom: 1px solid #d8dde6;
@@ -28,12 +32,14 @@
 
 .header-left {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 12px;
+    gap: 8px 12px;
 }
 
 .header-right {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
 }
@@ -1075,6 +1081,7 @@ th.frozen-icon-2 {
 .tracker-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 16px;
     background: #f4f6f9;
     border-top: 1px solid #d8dde6;
@@ -1089,4 +1096,10 @@ th.frozen-icon-2 {
 .unsaved-indicator {
     color: #f9a825;
     font-weight: 600;
+}
+
+.footer-save {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

@@ -213,6 +213,16 @@ export default class TrackerGrid extends NavigationMixin(LightningElement) {
         return this.dirtyRecords.size > 0;
     }
 
+    // Koa pulled RE Assigned off the MDU Tracker 2026-09-15. The Business Tracker
+    // shares this component and keeps the filter.
+    get showREAssignedFilter() {
+        return this.appContext !== 'MDU_Sales';
+    }
+
+    get showFooter() {
+        return this.displayRows.length > 0 || this.hasUnsavedChanges;
+    }
+
     get dirtyCount() {
         return this.dirtyRecords.size;
     }
