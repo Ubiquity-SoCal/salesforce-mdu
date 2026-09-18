@@ -142,6 +142,47 @@ it: she now reads all 483 in-scope fields, matching Koa exactly.
 Worth remembering for any future admin onboarding here, this is the same FLS trap that has
 bitten metadata deploys in this org before.
 
+## 2026-09-14: full export and structure pack
+
+Kia asked for (1) a complete production export of every in-scope object with all IDs kept and
+(2) the full field and structure details. Koa chose a curated, rerunnable export over Kia
+running Setup > Data Export herself, because a raw dump walks into every trap in this brief and
+it has to be rerun at cutover regardless. Business Sales is excluded at source.
+
+| Piece | Script | Output |
+|---|---|---|
+| Records, notes, files | `scripts/analysis/export_hubspot_records.py` | `data/output/hubspot-export/<date>/` and zip |
+| File-level check | `scripts/_probes/2026-09-14-verify-hubspot-export-files.py` | pass / fail, self-tested |
+| Structure details | `scripts/analysis/build_hubspot_migration_mapping.py` | `salesforce-hubspot-field-map.xlsx` |
+| Reply to Kia | `scripts/sync/draft_hubspot_export_reply.py` | Outlook draft in her thread |
+
+What the export adds beyond her list, and why:
+
+- **The three junctions.** Her list named every object except `Opportunity_Contact__c`,
+  `Opportunity_Account__c` and `Opportunity_Campaign__c`. The first is the only thing linking a
+  contact to a deal. `CampaignMember` has 0 rows; campaign membership is `Opportunity_Campaign__c`.
+- **User and RecordType tables** so every owner and record type ID resolves.
+- **Archived tasks and events** (queryAll). A standard export leaves them out.
+- **Note bodies.** "Files and attachments" is overwhelmingly Salesforce notes (about 17.4k),
+  plus 132 real files and 179 email attachments. Note text is not in any SOQL result, so each
+  body is downloaded and cached by ContentVersion Id.
+
+Findings worth carrying into the HubSpot build:
+
+- **Forecast Category is Closed on every stage**, including Prospects at 5%. Open versus closed
+  has to come from IsClosed / IsWon, never Forecast Category.
+- **21 roll-up summary fields** carry no formula in the describe; their definitions come from
+  the Tooling API and are in the field map.
+- **Note titles have nowhere to go in HubSpot**, which gives a note only a body. 295 notes are
+  title only (the body is an empty paragraph), so `Notes.csv` carries `EXPORT_NoteForHubSpot`,
+  the title and body joined. Importing `BodyText` alone would bring those in blank.
+- **HubSpot dedupe will merge records:** 83 contacts share 36 email addresses, and 70 accounts
+  share 24 website domains, gmail.com among them. Both are flagged in `EXPORT_*` columns.
+- **Business Sales cascade:** 199 opportunities out, plus their account and campaign links,
+  stage history, tasks, emails and notes, and 12 contacts and 22 accounts linked to nothing
+  else (all small-business leads from the Sales Focus period). 185 Property Units still point
+  at a Business Sales opportunity; they stay in and that one link will not connect.
+
 ## Open items
 
 - The consultant's HubSpot side: a custom "MDU property name" field, rebuilt column set, and

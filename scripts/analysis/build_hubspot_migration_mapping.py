@@ -3,12 +3,17 @@ Build the Salesforce -> HubSpot migration mapping pack.
 
 Produces one workbook the HubSpot consultant can work straight out of:
   - Read Me / Objects / Record Types / Relationships overview
-  - one tab per object: every field, its type, whether it is required, its
-    picklist values, what it points at, and how full it actually is
+  - one tab per object: every field, its type, whether it is required / unique, its
+    formula, default, controlling field, picklist values, what it points at, and how
+    full it actually is
+  - Stages, Picklists by Record Type and Dependent Picklists tabs (added 2026-09-14 for
+    Kia's "property and structure details" ask), from the UI API
   - blank "HubSpot Property / HubSpot Type / Migrate? / Notes" columns on every
     field tab, so the mapping is filled in in place
   - Automation tab: triggers, flows, validation rules (the custom behaviour that
     has to be rebuilt, not imported)
+
+Companion to export_hubspot_records.py, which exports the records these tabs describe.
 
 Scope is deliberately narrow: the objects hanging off the MDU Opportunity, the AVR
 (Case) side of Address Management, and SiteTracker. Business Sales is excluded per
@@ -43,11 +48,10 @@ XLSX = OUT / "salesforce-hubspot-field-map.xlsx"
 # file-link / document-upload objects.
 #
 # The three junction objects (Opportunity_Contact__c, Opportunity_Account__c,
-# Opportunity_Campaign__c) are also dropped, Koa's call: Kia has admin and can
-# discover the structure herself. Note the cost, with them gone nothing in this
-# workbook shows Contact and Opportunity are related, and the payload riding on
-# those junctions (Role__c 96% populated, Is_Primary__c, Tag_Type__c) is not
-# surfaced here. That is covered in the handoff email instead.
+# Opportunity_Campaign__c) were dropped on 8/31 (Kia has admin and could discover
+# them). Reversed 2026-09-14: her full-export ask listed every object EXCEPT the
+# junctions, so the structure was not discovered, and without Opportunity_Contact__c
+# no contact connects to a deal. Added back, with the activity objects the export sends.
 #
 # object -> (tab name, which app it belongs to, one line on what it is)
 OBJECTS = [
@@ -61,13 +65,27 @@ OBJECTS = [
     ("Property_Location__c", "Property Location", "Address Mgmt", "The physical property / building. 18k records, the address backbone the AVR resolves against."),
     ("Property_Unit__c", "Property Unit", "Address Mgmt", "Individual unit inside a property. 46k records, links to Vetro serviceability."),
     ("SiteTracker_Project__c", "SiteTracker Project", "SiteTracker", "Mirror of the SiteTracker construction project. Nightly sync, external system of record."),
+    ("Opportunity_Contact__c", "Opportunity Contact", "MDU Sales", "Junction: how contacts attach to opportunities, with Role__c (owner / manager). The standard OpportunityContactRole is unused."),
+    ("Opportunity_Account__c", "Opportunity Account", "MDU Sales", "Junction: extra management company links beyond Opportunity.AccountId."),
+    ("Opportunity_Campaign__c", "Opportunity Campaign", "MDU Sales", "Junction: campaign (project tag) membership. CampaignMember is empty."),
+    ("CampaignMember", "Campaign Member", "MDU Sales", "Empty in this org. Listed so the absence is explicit; membership lives in Opportunity_Campaign__c."),
+    ("OpportunityHistory", "Opportunity History", "MDU Sales", "Stage history, one row per stage change. Written by Salesforce, read-only."),
+    ("Task", "Task", "Activity", "Tasks. Most hang off Property Units. Record count includes archived tasks."),
+    ("Event", "Event", "Activity", "Calendar events. Record count includes archived events."),
+    ("EmailMessage", "Email Message", "Activity", "Emails, mostly on AVR Cases."),
 ]
+
+# Everything export_hubspot_records.py sends, so a lookup can say whether its target travels.
+EXPORTED = {o[0] for o in OBJECTS} | {"User", "Group", "RecordType"}
+ARCHIVABLE = {"Task", "Event"}
+MASTER_RT = "012000000000000AAA"
 
 # Tab colours so the app a tab belongs to is obvious from the tab strip.
 APP_COLOR = {
     "MDU Sales": "1A3C5E",     # deep blue
     "Address Mgmt": "2E7D32",  # green
     "SiteTracker": "D4880F",   # amber
+    "Activity": "6A4C93",      # purple
 }
 OVERVIEW_COLOR = "808080"      # grey for the non-object tabs
 
@@ -151,6 +169,46 @@ def fill_rates(sf, obj, desc):
     return counts, len(seen_ids), examples
 
 
+def rollup_defs(sf, api, fields):
+    """Roll-up summary fields come back from describe as calculated with NO formula text,
+    so the field map showed 21 of them as a bare "calculated". Their definition lives only
+    in Tooling CustomField.Metadata, which can be selected one record per query."""
+    want = [f["name"] for f in fields if f.get("calculated") and not f.get("calculatedFormula") and f["custom"]]
+    if not want:
+        return {}
+    try:
+        ids = {r["DeveloperName"]: r["Id"] for r in tooling(
+            sf, f"SELECT Id, DeveloperName FROM CustomField WHERE EntityDefinition.QualifiedApiName = '{api}'")["records"]}
+    except Exception as e:
+        print(f"    ! roll-up lookup failed for {api}: {str(e)[:80]}")
+        return {}
+    out = {}
+    for name in want:
+        fid = ids.get(name[:-3] if name.endswith("__c") else name)
+        if not fid:
+            continue
+        try:
+            md = tooling(sf, f"SELECT Metadata FROM CustomField WHERE Id = '{fid}'")["records"][0]["Metadata"]
+        except Exception as e:
+            print(f"    ! roll-up metadata failed for {api}.{name}: {str(e)[:80]}")
+            continue
+        op = (md.get("summaryOperation") or "").upper()
+        if not op:
+            continue
+        child = (md.get("summaryForeignKey") or "").split(".")[0]
+        text = (f"ROLL-UP COUNT of {child} records" if op == "COUNT"
+                else f"ROLL-UP {op} of {md.get('summarizedField')}")
+        # An empty value means "is blank"; left bare it read as a truncated sentence.
+        conds = [f"{fi.get('field')} {fi.get('operation')} {fi.get('value') or fi.get('valueField') or '(blank)'}"
+                 for fi in (md.get("summaryFilterItems") or [])]
+        if conds:
+            text += " WHERE " + " AND ".join(conds)
+            if md.get("booleanFilter"):
+                text += f"  (logic: {md['booleanFilter']})"
+        out[name] = text
+    return out
+
+
 def short(v, n=60):
     s = str(v).replace("\n", " ").replace("\r", " ")
     return s if len(s) <= n else s[:n - 3] + "..."
@@ -188,7 +246,11 @@ def main():
         desc = getattr(sf, api).describe()
         described[api] = desc
         try:
-            counts_by_obj[api] = sf.query(f"SELECT COUNT() FROM {api}")["totalSize"]
+            if api in ARCHIVABLE:
+                counts_by_obj[api] = sf.query(f"SELECT COUNT() FROM {api} WHERE IsDeleted = false",
+                                              include_deleted=True)["totalSize"]
+            else:
+                counts_by_obj[api] = sf.query(f"SELECT COUNT() FROM {api}")["totalSize"]
         except Exception:
             counts_by_obj[api] = -1
         print(f"    fill rates for {api} ({counts_by_obj[api]:,} records) ...")
@@ -233,14 +295,32 @@ def main():
         ("", "body"),
         ("Tab colours", "h"),
         ("Dark blue tabs are MDU Sales. Green tabs are Address Management (the AVR side). Amber is SiteTracker.", "body"),
-        ("Grey tabs are the overview tabs, not a single object.", "body"),
+        ("Purple tabs are activity (tasks, events, emails). Grey tabs are the overview tabs, not a single object.", "body"),
         ("", "body"),
         ("The Populated column is the count of records that actually carry a value in that field, and Populated %", "body"),
         ("is the same thing against the record count. Use it to decide what is worth mapping and what is dead weight.", "body"),
         (f"For reference: of the {n_fields} fields here, {n_empty} have no data at all and {n_thin} more sit under 5%.", "body"),
         ("", "body"),
+        ("Field tab columns", "h"),
+        ("Formula holds the full Salesforce formula, or for a roll-up summary, what it totals from which child records.", "body"),
+        ("The export carries each one's current value, which will not recalculate in HubSpot unless it is rebuilt", "body"),
+        ("as a calculated or rollup property. Picklist Values shows the label,", "body"),
+        ("with the stored value in brackets where the two differ. Controlling Field is set on dependent picklists;", "body"),
+        ("the Dependent Picklists tab shows which values are allowed under each controlling value.", "body"),
+        ("", "body"),
+        ("Stages and record types", "h"),
+        ("Stages lists the opportunity stages each record type allows, in order, with closed / won, probability and", "body"),
+        ("how many opportunities sit in each. Use Closed and Won to decide open versus closed: Forecast Category is", "body"),
+        ("set to Closed on every stage in Salesforce, including Prospects, so it does not mean anything.", "body"),
+        ("Picklists by Record Type shows every picklist's values per record type.", "body"),
+        ("", "body"),
+        ("Relationships", "h"),
+        ("Every lookup from every object, what it points at, and whether that target object is in the export.", "body"),
+        ("Record IDs in the export are 18-character Salesforce IDs and match across files.", "body"),
+        ("", "body"),
         ("What is NOT in here", "h"),
         ("Business Sales. Per the 8/31 call it is out of scope: Sales Focus is gone and John is on HubSpot already.", "body"),
+        ("Business ROE is a different record type and is in scope.", "body"),
         ("", "body"),
         ("The part that is not a field mapping", "h"),
         ("See the Automation tab. Triggers, flows and validation rules are custom behaviour, not data. None of it", "body"),
@@ -283,9 +363,13 @@ def main():
     # ---------------- Record Types ----------------
     ws = wb.create_sheet("Record Types")
     ws.sheet_properties.tabColor = OVERVIEW_COLOR
-    hdr = ["Object", "Record Type", "Developer Name", "Active", "Default", "Records Using It"]
+    hdr = ["Object", "Record Type", "Developer Name", "Record Type Id", "Active", "Default", "Sales Process",
+           "In Scope", "Records Using It"]
     ws.append(hdr)
     style_header(ws, 1, len(hdr))
+    bps = {b["Id"]: b["Name"] for b in sf.query_all("SELECT Id, Name FROM BusinessProcess")["records"]}
+    rt_rows = sf.query_all("SELECT Id, SobjectType, DeveloperName, BusinessProcessId FROM RecordType")["records"]
+    rt_bp = {(r["SobjectType"], r["DeveloperName"]): r for r in rt_rows}
     for api, tab, app, note in OBJECTS:
         rts = [r for r in described[api]["recordTypeInfos"] if r["name"] != "Master"]
         if len(rts) < 1:
@@ -296,38 +380,148 @@ def main():
                 n = sf.query(f"SELECT COUNT() FROM {api} WHERE RecordType.DeveloperName = '{rt['developerName']}'")["totalSize"]
             except Exception:
                 n = "n/a"
-            ws.append([api, rt["name"], rt["developerName"], rt.get("active"), rt.get("defaultRecordTypeMapping"), n])
+            meta = rt_bp.get((api, rt["developerName"]), {})
+            ws.append([api, rt["name"], rt["developerName"], rt["recordTypeId"], rt.get("active"),
+                       rt.get("defaultRecordTypeMapping"), bps.get(meta.get("BusinessProcessId"), ""),
+                       "No (out of scope 8/31)" if rt["name"] == "Business Sales" else "Yes", n])
     for row in ws.iter_rows(min_row=2, max_col=len(hdr)):
         for c in row:
             c.font = BODY
             c.border = BOX
-    autosize(ws, [26, 30, 30, 10, 10, 18])
+    autosize(ws, [26, 24, 22, 20, 8, 9, 22, 22, 16])
+
+    # ---------------- per-record-type picklists (UI API) ----------------
+    ui_cache = {}
+
+    def rt_picklists(obj, rt_id):
+        if (obj, rt_id) not in ui_cache:
+            try:
+                ui_cache[(obj, rt_id)] = sf.restful(
+                    f"ui-api/object-info/{obj}/picklist-values/{rt_id}")["picklistFieldValues"]
+            except Exception as e:
+                print(f"    ! UI API picklists failed for {obj} {rt_id}: {str(e)[:80]}")
+                ui_cache[(obj, rt_id)] = {}
+        return ui_cache[(obj, rt_id)]
+
+    def rts_of(api):
+        rts = [(r["name"], r["recordTypeId"]) for r in described[api]["recordTypeInfos"] if r["name"] != "Master"]
+        return rts or [("(no record types)", MASTER_RT)]
+
+    # ---------------- Stages ----------------
+    ws = wb.create_sheet("Stages")
+    ws.sheet_properties.tabColor = OVERVIEW_COLOR
+    hdr = ["Record Type", "In Scope", "Order", "Stage (stored value)", "Label", "Closed", "Won", "Probability %",
+           "Forecast Category", "Opportunities In Stage"]
+    ws.append(hdr)
+    style_header(ws, 1, len(hdr))
+    stage_meta = {s["ApiName"]: s for s in sf.query_all(
+        "SELECT ApiName, MasterLabel, IsActive, IsClosed, IsWon, DefaultProbability, ForecastCategoryName "
+        "FROM OpportunityStage")["records"]}
+    in_stage = defaultdict(int)
+    for r in sf.query_all("SELECT RecordTypeId, StageName, COUNT(Id) n FROM Opportunity "
+                          "GROUP BY RecordTypeId, StageName")["records"]:
+        in_stage[(r["RecordTypeId"], r["StageName"])] = r["n"]
+    for rt_name, rt_id in rts_of("Opportunity"):
+        scope = "No (out of scope 8/31)" if rt_name == "Business Sales" else "Yes"
+        values = rt_picklists("Opportunity", rt_id).get("StageName", {}).get("values", [])
+        listed = set()
+        for i, v in enumerate(values, 1):
+            m = stage_meta.get(v["value"], {})
+            listed.add(v["value"])
+            ws.append([rt_name, scope, i, v["value"], v["label"], m.get("IsClosed"), m.get("IsWon"),
+                       m.get("DefaultProbability"), m.get("ForecastCategoryName"), in_stage.get((rt_id, v["value"]), 0)])
+        # Values sitting on records that this record type no longer offers still have to import somewhere.
+        for (rid, stage), n in sorted(in_stage.items(), key=lambda x: str(x[0][1])):
+            if rid == rt_id and stage not in listed:
+                m = stage_meta.get(stage, {})
+                ws.append([rt_name, scope, "not offered", stage, m.get("MasterLabel", ""), m.get("IsClosed"),
+                           m.get("IsWon"), m.get("DefaultProbability"), m.get("ForecastCategoryName"), n])
+    no_rt = [(s, n) for (rid, s), n in in_stage.items() if rid is None]
+    for stage, n in sorted(no_rt, key=lambda x: str(x[0])):
+        m = stage_meta.get(stage, {})
+        ws.append(["(no record type)", "Yes", "", stage, m.get("MasterLabel", ""), m.get("IsClosed"), m.get("IsWon"),
+                   m.get("DefaultProbability"), m.get("ForecastCategoryName"), n])
+    for row in ws.iter_rows(min_row=2, max_col=len(hdr)):
+        for c in row:
+            c.font = BODY
+            c.border = BOX
+    autosize(ws, [20, 22, 11, 30, 30, 9, 9, 13, 18, 20])
+
+    # ---------------- Picklists by Record Type ----------------
+    ws = wb.create_sheet("Picklists by Record Type")
+    ws.sheet_properties.tabColor = OVERVIEW_COLOR
+    hdr = ["Object", "Field", "Record Type", "Values Offered", "Default", "Controlling Field"]
+    ws.append(hdr)
+    style_header(ws, 1, len(hdr))
+    dep_rows = []
+    for api, tab, app, note in OBJECTS:
+        fdesc = {f["name"]: f for f in described[api]["fields"]}
+        for rt_name, rt_id in rts_of(api):
+            for fld, pv in sorted(rt_picklists(api, rt_id).items()):
+                vals = pv.get("values") or []
+                ctrl = fdesc.get(fld, {}).get("controllerName") or ""
+                ws.append([api, fld, rt_name, " | ".join(v["label"] if v["label"] == v["value"]
+                                                          else f"{v['label']} [{v['value']}]" for v in vals),
+                           (pv.get("defaultValue") or {}).get("value", ""), ctrl])
+                if ctrl and pv.get("controllerValues"):
+                    by_idx = {i: k for k, i in pv["controllerValues"].items()}
+                    for idx, cval in sorted(by_idx.items()):
+                        allowed = [v["value"] for v in vals if idx in (v.get("validFor") or [])]
+                        dep_rows.append([api, rt_name, ctrl, cval, fld, " | ".join(allowed) or "(none)"])
+    for row in ws.iter_rows(min_row=2, max_col=len(hdr)):
+        for c in row:
+            c.font = BODY
+            c.border = BOX
+    autosize(ws, [24, 30, 20, 90, 16, 22])
+
+    # ---------------- Dependent Picklists ----------------
+    ws = wb.create_sheet("Dependent Picklists")
+    ws.sheet_properties.tabColor = OVERVIEW_COLOR
+    hdr = ["Object", "Record Type", "Controlling Field", "When Controlling Value Is", "Dependent Field",
+           "Allowed Dependent Values"]
+    ws.append(hdr)
+    style_header(ws, 1, len(hdr))
+    for r_ in dep_rows:
+        ws.append(r_)
+    for row in ws.iter_rows(min_row=2, max_col=len(hdr)):
+        for c in row:
+            c.font = BODY
+            c.border = BOX
+    autosize(ws, [16, 20, 22, 30, 22, 90])
 
     # ---------------- Relationships ----------------
     ws = wb.create_sheet("Relationships")
     ws.sheet_properties.tabColor = OVERVIEW_COLOR
-    hdr = ["From Object", "Field", "Field Label", "Points To", "Kind", "Required", "Populated %"]
+    hdr = ["From Object", "Field", "Field Label", "Points To", "Relationship Name", "Kind", "Required",
+           "Populated %", "Target In Export"]
     ws.append(hdr)
     style_header(ws, 1, len(hdr))
-    scope = {api for api, _, _, _ in OBJECTS}
     for api, tab, app, note in OBJECTS:
         desc = described[api]
         cnt, sample_n, _ = fills[api]
         for f in desc["fields"]:
             if f["type"] not in ("reference",):
                 continue
-            refs = ", ".join(f.get("referenceTo") or [])
-            kind = "Master-Detail" if f.get("cascadeDelete") and not f.get("nillable") else "Lookup"
+            targets = f.get("referenceTo") or []
+            refs = ", ".join(targets)
+            if len(targets) > 1:
+                kind = "Polymorphic lookup"
+            else:
+                kind = "Master-Detail" if f.get("cascadeDelete") and not f.get("nillable") else "Lookup"
             pct = (cnt.get(f["name"], 0) / sample_n * 100) if sample_n else 0
-            ws.append([api, f["name"], f["label"], refs, kind,
-                       "Yes" if not f["nillable"] and f["createable"] else "No", round(pct, 1)])
+            travels = [t for t in targets if t in EXPORTED]
+            in_export = ("Yes" if len(travels) == len(targets)
+                         else "Partly: " + ", ".join(travels) if travels else "No")
+            ws.append([api, f["name"], f["label"], refs if len(refs) <= 120 else refs[:117] + "...",
+                       f.get("relationshipName") or "", kind,
+                       "Yes" if not f["nillable"] and f["createable"] else "No", round(pct, 1), in_export])
     for row in ws.iter_rows(min_row=2, max_col=len(hdr)):
         for c in row:
             c.font = BODY
             c.border = BOX
-        if isinstance(row[3].value, str) and row[3].value in scope:
-            row[3].font = Font(size=10, bold=True, name="Calibri", color="2A5A8A")
-    autosize(ws, [26, 34, 30, 30, 15, 10, 12])
+        if row[8].value == "No":
+            row[8].font = Font(size=10, bold=True, name="Calibri", color="B03A2E")
+    autosize(ws, [26, 34, 30, 34, 26, 18, 10, 12, 24])
 
     # ---------------- one tab per object ----------------
     for api, tab, app, note in OBJECTS:
@@ -341,36 +535,54 @@ def main():
             note_txt += f"  [Populated % measured on a sample of {sample_n:,} records]"
         ws.cell(row=2, column=1, value=note_txt).font = Font(size=10, italic=True, name="Calibri")
         hdr = ["Field API Name", "Label", "Type", "Length", "Required", "Unique",
-               "External Id", "Formula", "Points To", "Picklist Values",
+               "External Id", "Formula", "Default Value", "Controlling Field", "Points To",
+               "Relationship Name", "Picklist Values", "Help Text",
                "Populated", "Populated %", "Example",
                "HubSpot Property", "HubSpot Type", "Migrate?", "Notes"]
+        map_from = len(hdr) - 4
         ws.append([])
         ws.append(hdr)
         style_header(ws, 4, len(hdr))
-        for c in range(14, 18):
+        for c in range(map_from + 1, len(hdr) + 1):
             ws.cell(row=4, column=c).fill = MAP_FILL
 
+        rollups = rollup_defs(sf, api, desc["fields"])
         flds = sorted(desc["fields"], key=lambda f: (not f["custom"], f["name"].lower()))
         for f in flds:
             n = cnt.get(f["name"], 0)
             pct = (n / sample_n * 100) if sample_n else 0
             pv = ""
             if f.get("picklistValues"):
-                vals = [p["value"] for p in f["picklistValues"] if p.get("active")]
-                pv = " | ".join(vals[:40])
-                if len(vals) > 40:
-                    pv += f"  (+{len(vals) - 40} more)"
+                pv = " | ".join(p["label"] if p["label"] == p["value"] else f"{p['label']} [{p['value']}]"
+                                for p in f["picklistValues"] if p.get("active"))
+            typ = f["type"]
+            if f.get("calculated") and f.get("calculatedFormula"):
+                typ = f"formula ({typ})"
+            elif f["name"] in rollups:
+                typ = f"roll-up summary ({typ})"
+            elif f.get("autoNumber"):
+                typ = "autonumber"
+            formula = (f.get("calculatedFormula") or rollups.get(f["name"])
+                       or ("calculated by Salesforce" if f.get("calculated") else ""))
+            default = f.get("defaultValueFormula")
+            if default is None and f.get("defaultValue") is not None:
+                default = f["defaultValue"]
+            refs = ", ".join(f.get("referenceTo") or [])
             ws.append([
-                f["name"], f["label"], f["type"],
+                f["name"], f["label"], typ,
                 f.get("length") or f.get("precision") or "",
                 "Yes" if (not f["nillable"] and f["createable"] and not f["defaultedOnCreate"]) else "",
                 "Yes" if f.get("unique") else "",
                 "Yes" if f.get("externalId") else "",
-                "Yes" if f.get("calculated") else "",
-                ", ".join(f.get("referenceTo") or []),
+                formula,
+                "" if default is None else str(default),
+                f.get("controllerName") or "",
+                refs if len(refs) <= 120 else refs[:117] + "...",
+                f.get("relationshipName") or "",
                 # keep 2dp under 1% so a field with a handful of values on a big
                 # object does not display as a flat 0 and get dropped by mistake
-                pv, n, round(pct, 2) if 0 < pct < 1 else round(pct, 1),
+                pv, f.get("inlineHelpText") or "",
+                n, round(pct, 2) if 0 < pct < 1 else round(pct, 1),
                 short(examples.get(f["name"], "")),
                 "", "", "", "",
             ])
@@ -379,12 +591,12 @@ def main():
             for c in row:
                 c.font = BODY
                 c.border = BOX
-            row[9].alignment = Alignment(wrap_text=False)
+            row[hdr.index("Picklist Values")].alignment = Alignment(wrap_text=False)
             # No row shading. The Populated count and % are there; whether a thin
             # field is worth keeping is Kia's call to make, not ours to pre-judge.
-            for c in row[13:17]:
+            for c in row[map_from:len(hdr)]:
                 c.fill = PatternFill("solid", fgColor="FFF6E5")
-        autosize(ws, [36, 30, 14, 8, 9, 8, 10, 9, 22, 55, 10, 12, 32, 26, 16, 11, 34])
+        autosize(ws, [36, 30, 18, 8, 9, 8, 10, 40, 16, 20, 22, 24, 55, 30, 10, 12, 32, 26, 16, 11, 34])
 
     # ---------------- Automation ----------------
     ws = wb.create_sheet("Automation")
